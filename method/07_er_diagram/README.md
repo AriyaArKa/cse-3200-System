@@ -2,8 +2,8 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
+| File                             | Description                          |
+| -------------------------------- | ------------------------------------ |
 | [er_diagram.mmd](er_diagram.mmd) | Complete Entity-Relationship Diagram |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
@@ -166,43 +166,43 @@ erDiagram
 
 ## Entity Descriptions
 
-| Entity | Description | Records |
-|--------|-------------|---------|
-| **USER** | System users (officials, admins) | Hundreds |
-| **DOCUMENT** | Uploaded bilingual documents | Thousands |
-| **DOCUMENT_CHUNK** | Text segments for RAG | Tens of thousands |
-| **EMBEDDING** | Vector representations | Tens of thousands |
-| **TEMPLATE** | Pre-defined card templates | 10-15 |
-| **REPORT** | Generated formatted reports | Thousands |
-| **SUMMARY** | AI-generated summaries | Thousands |
-| **EXPORT_HISTORY** | Export audit trail | Thousands |
-| **QUERY_LOG** | User question history | Thousands |
-| **TEMPLATE_CATEGORY** | Template groupings | 4-5 |
+| Entity                | Description                      | Records           |
+| --------------------- | -------------------------------- | ----------------- |
+| **USER**              | System users (officials, admins) | Hundreds          |
+| **DOCUMENT**          | Uploaded bilingual documents     | Thousands         |
+| **DOCUMENT_CHUNK**    | Text segments for RAG            | Tens of thousands |
+| **EMBEDDING**         | Vector representations           | Tens of thousands |
+| **TEMPLATE**          | Pre-defined card templates       | 10-15             |
+| **REPORT**            | Generated formatted reports      | Thousands         |
+| **SUMMARY**           | AI-generated summaries           | Thousands         |
+| **EXPORT_HISTORY**    | Export audit trail               | Thousands         |
+| **QUERY_LOG**         | User question history            | Thousands         |
+| **TEMPLATE_CATEGORY** | Template groupings               | 4-5               |
 
 ---
 
 ## Relationship Summary
 
-| Relationship | Type | Description |
-|-------------|------|-------------|
-| User → Document | 1:N | One user uploads many documents |
-| Document → Chunk | 1:N | One document splits into many chunks |
-| Chunk → Embedding | 1:1 | Each chunk has one embedding vector |
-| Template → Report | 1:N | One template generates many reports |
-| Category → Template | 1:N | One category has many templates |
-| Document → Summary | 1:N | One document can have multiple summaries |
-| Report → Export | 1:N | One report exported in multiple formats |
+| Relationship        | Type | Description                              |
+| ------------------- | ---- | ---------------------------------------- |
+| User → Document     | 1:N  | One user uploads many documents          |
+| Document → Chunk    | 1:N  | One document splits into many chunks     |
+| Chunk → Embedding   | 1:1  | Each chunk has one embedding vector      |
+| Template → Report   | 1:N  | One template generates many reports      |
+| Category → Template | 1:N  | One category has many templates          |
+| Document → Summary  | 1:N  | One document can have multiple summaries |
+| Report → Export     | 1:N  | One report exported in multiple formats  |
 
 ---
 
 ## Template Categories (Pre-defined)
 
-| Category ID | Name | Templates |
-|------------|------|-----------|
-| 1 | Legal/Government | Affidavit, Notice, Application Form, Court Order |
-| 2 | Administrative | Meeting Minutes, Internal Memo, Official Letter, Circular |
-| 3 | Analytical | Statistical Summary, Progress Report, Budget Report |
-| 4 | Summary Cards | Executive Brief, Highlight Card, Quick Summary |
+| Category ID | Name             | Templates                                                 |
+| ----------- | ---------------- | --------------------------------------------------------- |
+| 1           | Legal/Government | Affidavit, Notice, Application Form, Court Order          |
+| 2           | Administrative   | Meeting Minutes, Internal Memo, Official Letter, Circular |
+| 3           | Analytical       | Statistical Summary, Progress Report, Budget Report       |
+| 4           | Summary Cards    | Executive Brief, Highlight Card, Quick Summary            |
 
 ---
 

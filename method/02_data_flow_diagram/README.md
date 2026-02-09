@@ -2,10 +2,10 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
-| [dfd_level0_context.mmd](dfd_level0_context.mmd) | Level 0 — Context Diagram |
-| [dfd_level1_processes.mmd](dfd_level1_processes.mmd) | Level 1 — Major Process Breakdown |
+| File                                                 | Description                         |
+| ---------------------------------------------------- | ----------------------------------- |
+| [dfd_level0_context.mmd](dfd_level0_context.mmd)     | Level 0 — Context Diagram           |
+| [dfd_level1_processes.mmd](dfd_level1_processes.mmd) | Level 1 — Major Process Breakdown   |
 | [dfd_level2_ingestion.mmd](dfd_level2_ingestion.mmd) | Level 2 — Document Ingestion Detail |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
@@ -17,6 +17,7 @@
 A **Data Flow Diagram (DFD)** shows how data moves through the system — from input sources, through processing stages, to outputs. It focuses on **what data flows where**, not on control logic or timing.
 
 DFDs have multiple levels:
+
 - **Level 0 (Context Diagram)**: Shows the system as a single process with external entities
 - **Level 1**: Breaks the system into major sub-processes
 - **Level 2**: Further decomposes each sub-process
@@ -73,7 +74,7 @@ graph LR
 
 ```mermaid
 graph TB
-    USER["👤 User"] 
+    USER["👤 User"]
 
     subgraph "1.0 Document Ingestion"
         P1["1.1 Upload<br/>Handler"]
@@ -108,16 +109,16 @@ graph TB
     P1 -->|"File Path"| P2
     P2 -->|"Extracted Text"| P3
     P3 -->|"Tagged Text<br/>(BN/EN)"| P4
-    
+
     P4 -->|"Processed Text"| P5
     P5 -->|"Text Chunks"| P6
     P6 -->|"Vectors"| DS2
-    
+
     P7 -->|"Query"| DS2
     DS2 -->|"Relevant Chunks"| P7
     P7 -->|"Context + Query"| P8
     P8 -->|"Generated Text"| P9
-    
+
     P9 -->|"Summary"| P10
     DS3 -->|"Template Definition"| P10
     P10 -->|"Formatted Content"| P11
@@ -180,26 +181,26 @@ graph TB
 
 ## Data Dictionary
 
-| Data Flow | Description | Format | Source → Destination |
-|-----------|-------------|--------|---------------------|
-| Raw Document | User uploaded file | PDF/Image/DOCX/TXT | User → Upload Handler |
-| Extracted Text | OCR output text | UTF-8 String | OCR Engine → Language Detection |
-| Tagged Text | Language-annotated text | JSON {text, lang} | Language Detection → NLP Pipeline |
-| Text Chunks | Segmented text pieces | Array of strings | Text Chunking → Embedding |
-| Vectors | Numerical embeddings | Float Array (768d) | Embedding → Vector DB |
-| Relevant Chunks | Retrieved context | Array of strings | Vector DB → RAG |
-| Generated Text | LLM output | UTF-8 String | LLM → Summarization |
-| Template Definition | Card layout specs | JSON Schema | Template Store → Template Engine |
-| Final Report | Formatted document | HTML/JSON | Report Formatter → Export Engine |
-| Export File | Downloadable file | PDF/DOCX/XLSX | Export Engine → User |
+| Data Flow           | Description             | Format             | Source → Destination              |
+| ------------------- | ----------------------- | ------------------ | --------------------------------- |
+| Raw Document        | User uploaded file      | PDF/Image/DOCX/TXT | User → Upload Handler             |
+| Extracted Text      | OCR output text         | UTF-8 String       | OCR Engine → Language Detection   |
+| Tagged Text         | Language-annotated text | JSON {text, lang}  | Language Detection → NLP Pipeline |
+| Text Chunks         | Segmented text pieces   | Array of strings   | Text Chunking → Embedding         |
+| Vectors             | Numerical embeddings    | Float Array (768d) | Embedding → Vector DB             |
+| Relevant Chunks     | Retrieved context       | Array of strings   | Vector DB → RAG                   |
+| Generated Text      | LLM output              | UTF-8 String       | LLM → Summarization               |
+| Template Definition | Card layout specs       | JSON Schema        | Template Store → Template Engine  |
+| Final Report        | Formatted document      | HTML/JSON          | Report Formatter → Export Engine  |
+| Export File         | Downloadable file       | PDF/DOCX/XLSX      | Export Engine → User              |
 
 ---
 
 ## DFD Symbols Reference
 
-| Symbol | Meaning | Example |
-|--------|---------|---------|
-| ▭ Rectangle | External Entity | User, Admin |
-| ○ Circle/Rounded | Process | OCR Processing |
-| ═ Open Rectangle | Data Store | Vector Database |
-| → Arrow | Data Flow | "Extracted Text" |
+| Symbol           | Meaning         | Example          |
+| ---------------- | --------------- | ---------------- |
+| ▭ Rectangle      | External Entity | User, Admin      |
+| ○ Circle/Rounded | Process         | OCR Processing   |
+| ═ Open Rectangle | Data Store      | Vector Database  |
+| → Arrow          | Data Flow       | "Extracted Text" |

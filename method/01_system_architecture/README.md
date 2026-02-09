@@ -2,8 +2,8 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
+| File                                               | Description                                  |
+| -------------------------------------------------- | -------------------------------------------- |
 | [system_architecture.mmd](system_architecture.mmd) | Complete system architecture with all layers |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
@@ -99,23 +99,23 @@ graph TB
 
 ## Component Breakdown
 
-| Layer | Component | Technology | Purpose |
-|-------|-----------|------------|---------|
-| Client | Web UI | React/Next.js | User interaction interface |
-| Client | Upload Module | Dropzone.js | Document upload handling |
-| Client | Editor | Draft.js/TipTap | Content editing before export |
-| Client | Export | jsPDF, docx, xlsx | Multi-format file generation |
-| API | Gateway | FastAPI/Flask | Request routing & authentication |
-| Processing | OCR Engine | Tesseract/EasyOCR | Text extraction from documents |
-| Processing | NLP Pipeline | spaCy/NLTK | Bilingual text processing |
-| Processing | Summarizer | Ollama + Mistral | AI-powered summarization |
-| Processing | RAG Engine | LangChain | Context-aware generation |
-| Processing | Template Engine | Jinja2 | Template-based output formatting |
-| AI/ML | Mistral LLM | Ollama (local) | Text generation & summarization |
-| AI/ML | Nomic Embed | Ollama (local) | Document embeddings |
-| Data | Vector DB | ChromaDB/FAISS | Similarity search storage |
-| Data | File Storage | Local/S3 | Document file management |
-| Data | Template DB | JSON/SQLite | Template definitions storage |
+| Layer      | Component       | Technology        | Purpose                          |
+| ---------- | --------------- | ----------------- | -------------------------------- |
+| Client     | Web UI          | React/Next.js     | User interaction interface       |
+| Client     | Upload Module   | Dropzone.js       | Document upload handling         |
+| Client     | Editor          | Draft.js/TipTap   | Content editing before export    |
+| Client     | Export          | jsPDF, docx, xlsx | Multi-format file generation     |
+| API        | Gateway         | FastAPI/Flask     | Request routing & authentication |
+| Processing | OCR Engine      | Tesseract/EasyOCR | Text extraction from documents   |
+| Processing | NLP Pipeline    | spaCy/NLTK        | Bilingual text processing        |
+| Processing | Summarizer      | Ollama + Mistral  | AI-powered summarization         |
+| Processing | RAG Engine      | LangChain         | Context-aware generation         |
+| Processing | Template Engine | Jinja2            | Template-based output formatting |
+| AI/ML      | Mistral LLM     | Ollama (local)    | Text generation & summarization  |
+| AI/ML      | Nomic Embed     | Ollama (local)    | Document embeddings              |
+| Data       | Vector DB       | ChromaDB/FAISS    | Similarity search storage        |
+| Data       | File Storage    | Local/S3          | Document file management         |
+| Data       | Template DB     | JSON/SQLite       | Template definitions storage     |
 
 ---
 

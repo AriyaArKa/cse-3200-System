@@ -2,11 +2,11 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
-| [mindmap_project_overview.mmd](mindmap_project_overview.mmd) | Complete Project Overview |
-| [mindmap_tech_stack.mmd](mindmap_tech_stack.mmd) | Technology Stack Breakdown |
-| [mindmap_user_workflow.mmd](mindmap_user_workflow.mmd) | User Workflow Steps |
+| File                                                               | Description                |
+| ------------------------------------------------------------------ | -------------------------- |
+| [mindmap_project_overview.mmd](mindmap_project_overview.mmd)       | Complete Project Overview  |
+| [mindmap_tech_stack.mmd](mindmap_tech_stack.mmd)                   | Technology Stack Breakdown |
+| [mindmap_user_workflow.mmd](mindmap_user_workflow.mmd)             | User Workflow Steps        |
 | [mindmap_template_categories.mmd](mindmap_template_categories.mmd) | Template Categories Detail |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
@@ -292,13 +292,13 @@ mindmap
 
 ## How to Create Mind Maps
 
-| Tool | Type | Best For |
-|------|------|----------|
-| **Mermaid.js** | Code-based | Documentation, version control |
-| **XMind** | Desktop app | Detailed brainstorming |
-| **MindMeister** | Online tool | Collaborative planning |
-| **draw.io** | Free online | Custom styling |
-| **Whimsical** | Online tool | Beautiful presentations |
+| Tool            | Type        | Best For                       |
+| --------------- | ----------- | ------------------------------ |
+| **Mermaid.js**  | Code-based  | Documentation, version control |
+| **XMind**       | Desktop app | Detailed brainstorming         |
+| **MindMeister** | Online tool | Collaborative planning         |
+| **draw.io**     | Free online | Custom styling                 |
+| **Whimsical**   | Online tool | Beautiful presentations        |
 
 ---
 

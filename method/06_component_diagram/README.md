@@ -2,8 +2,8 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
+| File                                           | Description                                   |
+| ---------------------------------------------- | --------------------------------------------- |
 | [component_diagram.mmd](component_diagram.mmd) | Full System Component Diagram with interfaces |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
@@ -122,38 +122,38 @@ graph TB
 
 ## Interface Definitions
 
-| Interface | Component | Methods |
-|-----------|-----------|---------|
-| `ITextExtractor` | OCRService | `extract_text(file) → str` |
-| `ILanguageProcessor` | NLPService | `detect_language(text) → lang`, `process(text) → tokens` |
-| `ITextChunker` | ChunkingService | `chunk(text, size) → chunks[]` |
-| `IEmbedder` | EmbeddingService | `embed(text) → vector[768]` |
-| `IRetriever` | RAGEngine | `retrieve(query, top_k) → chunks[]` |
-| `IGenerator` | RAGEngine | `generate(prompt, context) → str` |
-| `ILLMProvider` | OllamaClient | `generate(model, prompt) → str` |
-| `ISummarizer` | SummarizationEngine | `summarize(document) → str` |
-| `ITemplateRenderer` | TemplateEngine | `render(template_id, data) → html` |
-| `IExporter` | PDF/DOCX/ExcelExporter | `export(content, format) → file` |
-| `IVectorStore` | VectorDBClient | `store(vector, metadata)`, `search(vector) → results[]` |
-| `IFileStore` | FileStorageClient | `save(file) → path`, `load(path) → file` |
-| `IRepository` | TemplateRepository | `get(id) → template`, `list() → templates[]` |
+| Interface            | Component              | Methods                                                  |
+| -------------------- | ---------------------- | -------------------------------------------------------- |
+| `ITextExtractor`     | OCRService             | `extract_text(file) → str`                               |
+| `ILanguageProcessor` | NLPService             | `detect_language(text) → lang`, `process(text) → tokens` |
+| `ITextChunker`       | ChunkingService        | `chunk(text, size) → chunks[]`                           |
+| `IEmbedder`          | EmbeddingService       | `embed(text) → vector[768]`                              |
+| `IRetriever`         | RAGEngine              | `retrieve(query, top_k) → chunks[]`                      |
+| `IGenerator`         | RAGEngine              | `generate(prompt, context) → str`                        |
+| `ILLMProvider`       | OllamaClient           | `generate(model, prompt) → str`                          |
+| `ISummarizer`        | SummarizationEngine    | `summarize(document) → str`                              |
+| `ITemplateRenderer`  | TemplateEngine         | `render(template_id, data) → html`                       |
+| `IExporter`          | PDF/DOCX/ExcelExporter | `export(content, format) → file`                         |
+| `IVectorStore`       | VectorDBClient         | `store(vector, metadata)`, `search(vector) → results[]`  |
+| `IFileStore`         | FileStorageClient      | `save(file) → path`, `load(path) → file`                 |
+| `IRepository`        | TemplateRepository     | `get(id) → template`, `list() → templates[]`             |
 
 ---
 
 ## Component Dependencies Matrix
 
-| Component | Depends On |
-|-----------|-----------|
-| DocumentUploader | AuthController, DocumentController |
-| OCRService | Tesseract/EasyOCR (external lib) |
-| NLPService | spaCy, NLTK (external libs) |
-| EmbeddingService | OllamaClient (Nomic Embed) |
-| RAGEngine | EmbeddingService, VectorDBClient, OllamaClient |
-| SummarizationEngine | OllamaClient (Mistral) |
-| TemplateEngine | TemplateRepository, Jinja2 |
-| PDFExporter | ReportLab/WeasyPrint (external lib) |
-| DOCXExporter | python-docx (external lib) |
-| ExcelExporter | openpyxl (external lib) |
+| Component           | Depends On                                     |
+| ------------------- | ---------------------------------------------- |
+| DocumentUploader    | AuthController, DocumentController             |
+| OCRService          | Tesseract/EasyOCR (external lib)               |
+| NLPService          | spaCy, NLTK (external libs)                    |
+| EmbeddingService    | OllamaClient (Nomic Embed)                     |
+| RAGEngine           | EmbeddingService, VectorDBClient, OllamaClient |
+| SummarizationEngine | OllamaClient (Mistral)                         |
+| TemplateEngine      | TemplateRepository, Jinja2                     |
+| PDFExporter         | ReportLab/WeasyPrint (external lib)            |
+| DOCXExporter        | python-docx (external lib)                     |
+| ExcelExporter       | openpyxl (external lib)                        |
 
 ---
 

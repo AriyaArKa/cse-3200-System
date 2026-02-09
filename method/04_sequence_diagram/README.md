@@ -2,12 +2,12 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
-| [seq_document_upload.mmd](seq_document_upload.mmd) | Document Upload & Processing flow |
-| [seq_summarization.mmd](seq_summarization.mmd) | Document Summarization flow |
+| File                                               | Description                               |
+| -------------------------------------------------- | ----------------------------------------- |
+| [seq_document_upload.mmd](seq_document_upload.mmd) | Document Upload & Processing flow         |
+| [seq_summarization.mmd](seq_summarization.mmd)     | Document Summarization flow               |
 | [seq_template_report.mmd](seq_template_report.mmd) | Template-Based Report Generation & Export |
-| [seq_rag_query.mmd](seq_rag_query.mmd) | RAG Query (Question Answering) |
+| [seq_rag_query.mmd](seq_rag_query.mmd)             | RAG Query (Question Answering)            |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
 
@@ -110,7 +110,7 @@ sequenceDiagram
 
     RAG->>RAG: Build prompt with context
     RAG->>LLM: Generate summary
-    
+
     Note over LLM: Mistral processes<br/>Bengali + English text
 
     LLM-->>RAG: Generated summary
@@ -151,7 +151,7 @@ sequenceDiagram
     TE-->>API: Template schema + layout
 
     API->>LLM: Fill template with document data
-    
+
     Note over LLM: Extract relevant info<br/>for template fields
 
     LLM-->>API: Structured data for template
@@ -211,10 +211,10 @@ sequenceDiagram
 
 ## Key Observations
 
-| Aspect | Detail |
-|--------|--------|
-| **Async Operations** | Embedding generation for chunks happens in a loop |
-| **Conditional Flow** | OCR is only used for scanned/image documents |
-| **Optional Steps** | User editing is optional before export |
+| Aspect               | Detail                                                     |
+| -------------------- | ---------------------------------------------------------- |
+| **Async Operations** | Embedding generation for chunks happens in a loop          |
+| **Conditional Flow** | OCR is only used for scanned/image documents               |
+| **Optional Steps**   | User editing is optional before export                     |
 | **Local Processing** | All AI calls go to local Ollama instance (no external API) |
-| **Multi-format** | Same workflow supports PDF, DOCX, and Excel export |
+| **Multi-format**     | Same workflow supports PDF, DOCX, and Excel export         |

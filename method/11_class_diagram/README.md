@@ -2,8 +2,8 @@
 
 ## Mermaid Files
 
-| File | Description |
-|------|-------------|
+| File                                   | Description                                           |
+| -------------------------------------- | ----------------------------------------------------- |
 | [class_diagram.mmd](class_diagram.mmd) | Core Classes with attributes, methods & relationships |
 
 > Open `.mmd` files in [Mermaid Live Editor](https://mermaid.live), VS Code with Mermaid extension, or any Mermaid-compatible tool.
@@ -180,23 +180,23 @@ classDiagram
 
 ## Relationship Types
 
-| Relationship | Symbol | Example |
-|-------------|--------|---------|
-| **Association** | → | User → Document (uploads) |
-| **Composition** | ◆→ | Document ◆→ DocumentChunk (contains) |
-| **Dependency** | ..> | RAGEngine ..> LLMClient (uses) |
-| **Inheritance** | ▷ | PDFExporter ▷ ExportService |
-| **Multiplicity** | 1..* | One User has many Documents |
+| Relationship     | Symbol | Example                              |
+| ---------------- | ------ | ------------------------------------ |
+| **Association**  | →      | User → Document (uploads)            |
+| **Composition**  | ◆→     | Document ◆→ DocumentChunk (contains) |
+| **Dependency**   | ..>    | RAGEngine ..> LLMClient (uses)       |
+| **Inheritance**  | ▷      | PDFExporter ▷ ExportService          |
+| **Multiplicity** | 1..\*  | One User has many Documents          |
 
 ---
 
 ## Design Patterns Used
 
-| Pattern | Where Applied | Purpose |
-|---------|--------------|---------|
-| **Strategy** | ExportService (PDF/DOCX/Excel) | Swap export formats dynamically |
-| **Factory** | TemplateEngine | Create different template types |
-| **Facade** | RAGEngine | Simplified interface to complex subsystem |
-| **Repository** | VectorDBClient | Abstract data access layer |
-| **Observer** | Document status changes | Notify UI of processing updates |
-| **Singleton** | LLMClient (Ollama connection) | Single connection instance |
+| Pattern        | Where Applied                  | Purpose                                   |
+| -------------- | ------------------------------ | ----------------------------------------- |
+| **Strategy**   | ExportService (PDF/DOCX/Excel) | Swap export formats dynamically           |
+| **Factory**    | TemplateEngine                 | Create different template types           |
+| **Facade**     | RAGEngine                      | Simplified interface to complex subsystem |
+| **Repository** | VectorDBClient                 | Abstract data access layer                |
+| **Observer**   | Document status changes        | Notify UI of processing updates           |
+| **Singleton**  | LLMClient (Ollama connection)  | Single connection instance                |
