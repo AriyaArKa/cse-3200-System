@@ -1,0 +1,48 @@
+flowchart TD
+    START([🟢 START])
+    
+    I1[/"User clicks Export"/]
+    P1["Capture current editor content"]
+    
+    D1{"Selected format?"}
+    
+    subgraph "PDF Export"
+        P2["Render HTML to PDF"]
+        P3["Apply Bengali fonts<br/>(Kalpurush/SolaimanLipi)"]
+        P4["Set page layout<br/>(A4, margins)"]
+    end
+    
+    subgraph "DOCX Export"
+        P5["Convert HTML to DOCX"]
+        P6["Apply document styles"]
+        P7["Embed Bengali fonts"]
+    end
+    
+    subgraph "Excel Export"
+        P8["Parse structured data"]
+        P9["Map to spreadsheet cells"]
+        P10["Apply formatting"]
+    end
+    
+    P11["Generate file"]
+    D2{"File generated<br/>successfully?"}
+    
+    E1[/"❌ Show error<br/>& retry option"/]
+    O1[/"📥 Trigger download"/]
+    
+    ENDNODE([🔴 END])
+
+    START --> I1 --> P1 --> D1
+    D1 -->|"PDF"| P2 --> P3 --> P4 --> P11
+    D1 -->|"DOCX"| P5 --> P6 --> P7 --> P11
+    D1 -->|"Excel"| P8 --> P9 --> P10 --> P11
+    
+    P11 --> D2
+    D2 -->|"No"| E1 --> P1
+    D2 -->|"Yes"| O1 --> ENDNODE
+
+    style START fill:#4CAF50,color:#fff
+    style ENDNODE fill:#F44336,color:#fff
+    style D1 fill:#FFB74D,color:#000
+    style D2 fill:#FFB74D,color:#000
+    style E1 fill:#EF5350,color:#fff

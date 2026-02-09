@@ -1,0 +1,59 @@
+graph TB
+    subgraph "Client Layer"
+        UI["🖥️ Web-Based UI<br/>(React/Next.js)"]
+        UPLOAD["📤 Document Upload<br/>Module"]
+        EDITOR["✏️ Interactive Editor<br/>Module"]
+        EXPORT["📥 Export Module<br/>(PDF/DOCX/Excel)"]
+    end
+
+    subgraph "API Gateway Layer"
+        API["🔌 REST API Gateway<br/>(FastAPI/Flask)"]
+    end
+
+    subgraph "Processing Layer"
+        OCR["👁️ OCR Engine<br/>(Bengali + English)"]
+        NLP["🧠 NLP Pipeline<br/>(Bilingual Processing)"]
+        SUMM["📝 Summarization Module<br/>(Ollama + Mistral)"]
+        RAG["🔍 RAG Engine<br/>(Retrieval Augmented Generation)"]
+        TEMPLATE["📋 Template Engine<br/>(10-15 Cards)"]
+    end
+
+    subgraph "AI/ML Layer"
+        MISTRAL["🤖 Mistral LLM<br/>(via Ollama)"]
+        EMBED["📊 Nomic Embed Text<br/>(Vector Embeddings)"]
+    end
+
+    subgraph "Data Layer"
+        VECTOR["🗄️ Vector Database<br/>(ChromaDB/FAISS)"]
+        FILESTORE["📁 File Storage<br/>(Uploaded Documents)"]
+        TEMPLATEDB["📑 Template Storage<br/>(JSON/DB)"]
+    end
+
+    UI --> API
+    UPLOAD --> API
+    EDITOR --> API
+    EXPORT --> API
+
+    API --> OCR
+    API --> NLP
+    API --> SUMM
+    API --> RAG
+    API --> TEMPLATE
+
+    OCR --> NLP
+    NLP --> SUMM
+    NLP --> RAG
+    RAG --> MISTRAL
+    RAG --> EMBED
+    SUMM --> MISTRAL
+
+    EMBED --> VECTOR
+    UPLOAD --> FILESTORE
+    TEMPLATE --> TEMPLATEDB
+
+    style UI fill:#4FC3F7,color:#000
+    style API fill:#FFB74D,color:#000
+    style MISTRAL fill:#E91E63,color:#fff
+    style EMBED fill:#E91E63,color:#fff
+    style RAG fill:#AB47BC,color:#fff
+    style VECTOR fill:#66BB6A,color:#000

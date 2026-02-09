@@ -1,0 +1,84 @@
+flowchart TD
+    START([🟢 START])
+    
+    I1[/"📤 User uploads document<br/>(PDF/Image/DOCX/TXT)"/]
+    
+    P1["Validate file type & size"]
+    D1{"Valid file?"}
+    E1[/"❌ Show error message"/]
+    
+    D2{"Is it an image<br/>or scanned PDF?"}
+    
+    P2["Run OCR Engine<br/>(Bengali + English)"]
+    P3["Extract text directly"]
+    
+    P4["Detect language<br/>(Bengali/English/Mixed)"]
+    P5["NLP Processing<br/>(Tokenization, Cleaning)"]
+    P6["Split into text chunks"]
+    P7["Generate embeddings<br/>(Nomic Embed Text - 768d)"]
+    P8["Store vectors in<br/>Vector Database"]
+    
+    O1[/"✅ Document processed<br/>successfully"/]
+    
+    D3{"What does<br/>user want?"}
+    
+    P9["RAG: Retrieve relevant chunks<br/>+ Generate with Mistral"]
+    P10["Load template schema<br/>+ Auto-fill with LLM"]
+    P11["Embed query → Search<br/>→ Generate answer"]
+    
+    P12["Display result in<br/>UI Editor"]
+    
+    D4{"User wants<br/>to edit?"}
+    P13["User edits content<br/>in Rich Text Editor"]
+    
+    D5{"Export format?"}
+    P14["Generate PDF"]
+    P15["Generate DOCX"]
+    P16["Generate Excel"]
+    P17["Send to Printer"]
+    
+    O2[/"📥 Download/Print<br/>final document"/]
+    
+    ENDNODE([🔴 END])
+
+    START --> I1 --> P1 --> D1
+    D1 -->|"No"| E1 --> I1
+    D1 -->|"Yes"| D2
+    
+    D2 -->|"Yes"| P2 --> P4
+    D2 -->|"No"| P3 --> P4
+    
+    P4 --> P5 --> P6 --> P7 --> P8 --> O1 --> D3
+    
+    D3 -->|"Summarize"| P9
+    D3 -->|"Use Template"| P10
+    D3 -->|"Ask Question"| P11
+    
+    P9 --> P12
+    P10 --> P12
+    P11 --> P12
+    
+    P12 --> D4
+    D4 -->|"Yes"| P13 --> D4
+    D4 -->|"No, Finalize"| D5
+    
+    D5 -->|"PDF"| P14
+    D5 -->|"DOCX"| P15
+    D5 -->|"Excel"| P16
+    D5 -->|"Print"| P17
+    
+    P14 --> O2
+    P15 --> O2
+    P16 --> O2
+    P17 --> O2
+    
+    O2 --> ENDNODE
+
+    style START fill:#4CAF50,color:#fff
+    style ENDNODE fill:#F44336,color:#fff
+    style D1 fill:#FFB74D,color:#000
+    style D2 fill:#FFB74D,color:#000
+    style D3 fill:#FFB74D,color:#000
+    style D4 fill:#FFB74D,color:#000
+    style D5 fill:#FFB74D,color:#000
+    style E1 fill:#EF5350,color:#fff

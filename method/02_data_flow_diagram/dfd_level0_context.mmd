@@ -1,0 +1,24 @@
+graph LR
+    USER["👤 User"]
+    ADMIN["👨‍💼 Admin"]
+
+    SYSTEM(("📄 Multilingual Document\nProcessing System"))
+
+    USER -->|"Upload Document<br/>(Bengali/English)"| SYSTEM
+    USER -->|"Select Template"| SYSTEM
+    USER -->|"Request Summary"| SYSTEM
+    USER -->|"Edit Content"| SYSTEM
+
+    SYSTEM -->|"Generated Report"| USER
+    SYSTEM -->|"Summary Output"| USER
+    SYSTEM -->|"Exported File<br/>(PDF/DOCX/Excel)"| USER
+
+    ADMIN -->|"Manage Templates"| SYSTEM
+    ADMIN -->|"Configure Models"| SYSTEM
+
+    SYSTEM -->|"System Logs"| ADMIN
+    SYSTEM -->|"Usage Analytics"| ADMIN
+
+    style SYSTEM fill:#FF7043,color:#fff
+    style USER fill:#42A5F5,color:#fff
+    style ADMIN fill:#66BB6A,color:#fff

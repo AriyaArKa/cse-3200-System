@@ -1,0 +1,39 @@
+graph TB
+    INPUT["📄 Uploaded Document"]
+
+    P1_1["1.1.1 Validate<br/>File Type"]
+    P1_2["1.1.2 Extract<br/>Metadata"]
+    P1_3["1.1.3 Save to<br/>Storage"]
+
+    P2_1["1.2.1 Image<br/>Preprocessing"]
+    P2_2["1.2.2 Bengali<br/>OCR"]
+    P2_3["1.2.3 English<br/>OCR"]
+    P2_4["1.2.4 Merge<br/>OCR Results"]
+
+    P3_1["1.3.1 Script<br/>Detection"]
+    P3_2["1.3.2 Language<br/>Tagging"]
+    P3_3["1.3.3 Encoding<br/>Normalization"]
+
+    DS["📁 File Storage"]
+    OUTPUT["📝 Tagged Bilingual Text"]
+
+    INPUT --> P1_1
+    P1_1 -->|"Valid File"| P1_2
+    P1_2 -->|"Metadata"| P1_3
+    P1_3 --> DS
+
+    P1_1 -->|"Image/Scan"| P2_1
+    P2_1 --> P2_2
+    P2_1 --> P2_3
+    P2_2 -->|"Bengali Text"| P2_4
+    P2_3 -->|"English Text"| P2_4
+
+    P1_1 -->|"Digital Text"| P3_1
+    P2_4 --> P3_1
+    P3_1 --> P3_2
+    P3_2 --> P3_3
+    P3_3 --> OUTPUT
+
+    style INPUT fill:#FF7043,color:#fff
+    style OUTPUT fill:#4FC3F7,color:#000
+    style DS fill:#66BB6A,color:#000

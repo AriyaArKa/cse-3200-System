@@ -1,0 +1,36 @@
+stateDiagram-v2
+    [*] --> Template_Selected : User picks template
+
+    Template_Selected --> Data_Loading : Load document data
+    
+    Data_Loading --> Generating : LLM filling template
+    
+    Generating --> Draft : Report generated
+    
+    Draft --> Editing : User opens editor
+    
+    Editing --> Draft : Auto-save
+    Editing --> Preview : User clicks preview
+    
+    Preview --> Editing : User continues editing
+    Preview --> Finalized : User approves
+    
+    Finalized --> Exporting : User selects format
+    
+    Exporting --> Exported_PDF : PDF selected
+    Exporting --> Exported_DOCX : DOCX selected
+    Exporting --> Exported_Excel : Excel selected
+    Exporting --> Printing : Print selected
+    
+    Exported_PDF --> Downloaded : File ready
+    Exported_DOCX --> Downloaded : File ready
+    Exported_Excel --> Downloaded : File ready
+    Printing --> Printed : Print job sent
+    
+    Downloaded --> [*]
+    Printed --> [*]
+    
+    Generating --> Error : Generation fails
+    Exporting --> Error : Export fails
+    Error --> Draft : Retry
+    Error --> [*] : Abandon

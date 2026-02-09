@@ -1,0 +1,53 @@
+graph TB
+    subgraph "System Boundary: Multilingual Document Processing System"
+
+        UC1["📤 Upload Document"]
+        UC2["👁️ OCR Processing"]
+        UC3["🌐 Language Detection"]
+        UC4["📝 Generate Summary"]
+        UC5["📋 Select Template"]
+        UC6["📊 Generate Report"]
+        UC7["✏️ Edit Content in UI"]
+        UC8["📥 Export as PDF"]
+        UC9["📥 Export as DOCX"]
+        UC10["📥 Export as Excel"]
+        UC11["🖨️ Print Document"]
+        UC12["🔍 Search Documents"]
+        UC13["📑 Manage Templates"]
+        UC14["⚙️ Configure AI Models"]
+        UC15["📈 View Analytics"]
+        UC16["🔐 Authentication"]
+
+    end
+
+    USER["👤 End User"]
+    ADMIN["👨‍💼 Administrator"]
+
+    USER --> UC1
+    USER --> UC4
+    USER --> UC5
+    USER --> UC7
+    USER --> UC8
+    USER --> UC9
+    USER --> UC10
+    USER --> UC11
+    USER --> UC12
+    USER --> UC16
+
+    ADMIN --> UC13
+    ADMIN --> UC14
+    ADMIN --> UC15
+    ADMIN --> UC16
+
+    UC1 -.->|"<<include>>"| UC2
+    UC2 -.->|"<<include>>"| UC3
+    UC4 -.->|"<<include>>"| UC3
+    UC5 -.->|"<<include>>"| UC6
+    UC6 -.->|"<<extend>>"| UC7
+
+    UC8 -.->|"<<extend>>"| UC7
+    UC9 -.->|"<<extend>>"| UC7
+    UC10 -.->|"<<extend>>"| UC7
+
+    style USER fill:#42A5F5,color:#fff
+    style ADMIN fill:#66BB6A,color:#fff

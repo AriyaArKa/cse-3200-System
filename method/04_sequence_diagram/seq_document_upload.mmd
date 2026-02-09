@@ -1,0 +1,42 @@
+sequenceDiagram
+    actor User
+    participant UI as Web UI
+    participant API as API Gateway
+    participant OCR as OCR Engine
+    participant NLP as NLP Pipeline
+    participant EMB as Embedding<br/>(Nomic)
+    participant VDB as Vector DB
+    participant FS as File Storage
+
+    User->>UI: Select & Upload Document
+    UI->>API: POST /upload (file)
+    API->>FS: Store original file
+    FS-->>API: file_id, file_path
+
+    alt Document is Image/Scanned PDF
+        API->>OCR: Process image
+        OCR->>OCR: Bengali OCR
+        OCR->>OCR: English OCR
+        OCR-->>API: Extracted text
+    else Document is Digital Text
+        API->>API: Extract text directly
+    end
+
+    API->>NLP: Process bilingual text
+    NLP->>NLP: Language detection
+    NLP->>NLP: Tokenization
+    NLP->>NLP: Text cleaning
+    NLP-->>API: Processed text + metadata
+
+    API->>NLP: Chunk text
+    NLP-->>API: Text chunks[]
+
+    loop For each chunk
+        API->>EMB: Generate embedding
+        EMB-->>API: Vector (768d)
+        API->>VDB: Store (chunk, vector, metadata)
+    end
+
+    VDB-->>API: Confirmation
+    API-->>UI: Upload success + document_id
+    UI-->>User: Show success notification

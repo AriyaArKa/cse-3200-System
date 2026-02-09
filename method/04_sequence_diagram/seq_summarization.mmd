@@ -1,0 +1,38 @@
+sequenceDiagram
+    actor User
+    participant UI as Web UI
+    participant API as API Gateway
+    participant RAG as RAG Engine
+    participant VDB as Vector DB
+    participant EMB as Embedding<br/>(Nomic)
+    participant LLM as Mistral LLM<br/>(Ollama)
+
+    User->>UI: Click "Summarize Document"
+    UI->>API: POST /summarize {doc_id}
+
+    API->>VDB: Fetch all chunks for doc_id
+    VDB-->>API: Document chunks[]
+
+    API->>RAG: Prepare context
+    RAG->>EMB: Embed summary query
+    EMB-->>RAG: Query vector
+
+    RAG->>VDB: Similarity search
+    VDB-->>RAG: Top-K relevant chunks
+
+    RAG->>RAG: Build prompt with context
+    RAG->>LLM: Generate summary
+    
+    Note over LLM: Mistral processes<br/>Bengali + English text
+
+    LLM-->>RAG: Generated summary
+    RAG-->>API: Summary text
+
+    API-->>UI: {summary, metadata}
+    UI-->>User: Display summary in editor
+
+    opt User edits summary
+        User->>UI: Make edits
+        UI->>API: PUT /summary {edited_text}
+        API-->>UI: Saved confirmation
+    end
