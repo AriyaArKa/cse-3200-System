@@ -33,16 +33,26 @@ env/
 *~
 .DS_Store
 
-# Project specific
+# Secrets — NEVER commit
 .env
-*.log
-logs/
+
+# Generated OCR outputs (can be regenerated, may be large)
+output_images/
+output_jsons/
+merged_outputs/
+
+# Input files (may be sensitive)
 *.pdf
 *.jpg
-*.png
 *.jpeg
+*.png
+*.webp
 
-# OCR specific
+# Logs
+*.log
+logs/
+
+# OCR scratch
 models/
 output/
 cache/
