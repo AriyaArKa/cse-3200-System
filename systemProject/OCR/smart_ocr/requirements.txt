@@ -1,0 +1,18 @@
+# Smart OCR System — Dependencies
+# Core
+python-dotenv>=1.0.0
+Pillow>=10.0.0
+PyMuPDF>=1.23.0         # fitz — for native PDF text extraction
+
+# PDF to Image (only for pages that need OCR)
+pdf2image>=1.16.0
+
+# PaddleOCR (optional but recommended)
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
+
+# Gemini API
+google-genai>=1.0.0
+
+# Streamlit Dashboard
+streamlit>=1.30.0
