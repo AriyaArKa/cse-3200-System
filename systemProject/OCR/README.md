@@ -104,6 +104,7 @@ python main.py
 ```
 
 Outputs are saved to:
+
 - `output_jsons/` — one JSON per page
 - `merged_outputs/` — single merged JSON for the whole PDF
 
@@ -128,10 +129,10 @@ OCR/
 
 ## Troubleshooting
 
-| Problem | Fix |
-|---------|-----|
+| Problem                                                 | Fix                                                                                                                  |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | `ImportError: cannot import name 'genai' from 'google'` | Make sure you activated the venv before running: `.\venv\Scripts\Activate.ps1` then `python -m streamlit run app.py` |
-| `GEMINI_API_KEY not found` | Create `.env` from `.env.example` and add your key |
-| `PDF not found` | Place your PDF in the `OCR/` folder and update `PDF_FILE` in `main.py` |
-| Broken Poppler path | Update `POPPLER_PATH` in `pdf.py` to match your Poppler install location |
-| Bangla text garbled | Ensure your terminal / editor uses **UTF-8** encoding |
+| `GEMINI_API_KEY not found`                              | Create `.env` from `.env.example` and add your key                                                                   |
+| `PDF not found`                                         | Place your PDF in the `OCR/` folder and update `PDF_FILE` in `main.py`                                               |
+| Broken Poppler path                                     | Update `POPPLER_PATH` in `pdf.py` to match your Poppler install location                                             |
+| Bangla text garbled                                     | Ensure your terminal / editor uses **UTF-8** encoding                                                                |
