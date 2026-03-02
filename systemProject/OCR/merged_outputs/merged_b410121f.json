@@ -1,0 +1,223 @@
+{
+  "pages": [
+    {
+      "source_file": "invoiceDemo_page_1_00ec6667.json",
+      "data": {
+        "invoice": {
+          "header": {
+            "title": "INVOICE",
+            "company_name": "STUDIO SHODWE",
+            "year": "2028"
+          },
+          "contact_information": {
+            "website": "WWW.REALLYGREATSITE.COM",
+            "phone_number": "+123-456-7890",
+            "email_address": "HELLO@REALLYGREATSITE.COM"
+          },
+          "payment_information": {
+            "recipient_name": "CLAUDIA ALVES",
+            "recipient_company": "STUDIO SHODWE",
+            "recipient_email": "HELLO@REALLYGREATSITE.COM",
+            "recipient_phone": "+123-456-7890"
+          },
+          "invoice_details": {
+            "invoice_number": "123-456-7890",
+            "invoice_date": "FRIDAY, 20 AUGUST 2026",
+            "due_date": "SUNDAY, 22 AUGUST 2026"
+          },
+          "line_items": [
+            {
+              "description": "DESCRIPTION",
+              "hours": "HOURS",
+              "rate": "RATE",
+              "total": "TOTAL",
+              "is_header": true
+            },
+            {
+              "description": "Social Media Management",
+              "hours": "20 Hours",
+              "rate": "$50",
+              "total": "$1000"
+            },
+            {
+              "description": "Content Creation",
+              "hours": "10 Hours",
+              "rate": "$50",
+              "total": "$500"
+            },
+            {
+              "description": "Social Media Marketing",
+              "hours": "10 Hours",
+              "rate": "$25",
+              "total": "$250"
+            },
+            {
+              "description": "Email Marketing",
+              "hours": "25 Hours",
+              "rate": "$10",
+              "total": "$250"
+            }
+          ],
+          "grand_total": {
+            "label": "TOTAL",
+            "amount": "$2000"
+          },
+          "payment_method": {
+            "name": "MARCELINE ANDERSON",
+            "bank_name": "BORCELLE BANK",
+            "account_number": "123-456-7890",
+            "email_address": "HELLO@REALLYGREATSITE.COM"
+          },
+          "signature": {
+            "name": "JONATHAN PATTERSON",
+            "role": "STAFF"
+          },
+          "footer_note": "THANK YOU FOR YOUR BUSINESS!",
+          "contact_message": "If you have any questions about this invoice, please contact us at hello@reallygreatsite.com"
+        }
+      }
+    },
+    {
+      "source_file": "invoiceDemo_page_2_bcc23175.json",
+      "data": {
+        "invoice": {
+          "title": "INVOICE",
+          "studio_name": "STUDIO SHODWE",
+          "year": "2028"
+        },
+        "company_contact_information": {
+          "website": "WWW.REALLYGREATSITE.COM",
+          "phone_number": "+232323232",
+          "email_address": "HELLO@REALLYGREATSITE.COM"
+        },
+        "payment_information": {
+          "client_name": "CLAUDIA ALVES",
+          "client_studio_name": "STUDIO SHODWE",
+          "client_email": "ABCD@ARKA.COM",
+          "client_phone": "+123-456-7890"
+        },
+        "invoice_details": {
+          "invoice_number": "123-456-7891",
+          "invoice_date": "FRIDAY, 20 AUGUST 2026",
+          "due_date": "SUNDAY, 22 AUGUST 2026"
+        },
+        "items": [
+          {
+            "description": "DESCRIPTION",
+            "hours": "HOURS",
+            "rate": "RATE",
+            "total": "TOTAL"
+          },
+          {
+            "description": "Social Media Management",
+            "hours": "20 Hours",
+            "rate": "$50",
+            "total": "$1000"
+          },
+          {
+            "description": "Content Creation",
+            "hours": "10 Hours",
+            "rate": "$50",
+            "total": "$500"
+          },
+          {
+            "description": "Social Media Marketing",
+            "hours": "10 Hours",
+            "rate": "$25",
+            "total": "$250"
+          },
+          {
+            "description": "Email Marketing",
+            "hours": "25 Hours",
+            "rate": "$10",
+            "total": "$250"
+          }
+        ],
+        "grand_total": {
+          "label": "TOTAL",
+          "amount": "$2000"
+        },
+        "payment_method": {
+          "label": "PAYMENT METHOD:",
+          "name": "MARCELINE ANDERSON",
+          "bank_name": "JANATA BANK",
+          "account_number": "123-456-7890",
+          "email_address": "ABCD@ARKA.COM"
+        },
+        "signature": {
+          "name": "JONATHAN PATTERSON",
+          "role": "STAFF"
+        },
+        "closing_message": "THANK YOU FOR YOUR BUSINESS!",
+        "contact_note": "If you have any questions about this invoice, please contact us at hello@reallygreatsite.com"
+      }
+    },
+    {
+      "source_file": "invoiceDemo_page_3_9ac334ae.json",
+      "data": {
+        "invoice_header": {
+          "title": "INVOICE",
+          "studio_name": "STUDIO SHODWE",
+          "year": "2028"
+        },
+        "contact_information": {
+          "website": "WWW.REALLYGREATSITE.COM",
+          "phone_number": "+232323232",
+          "email_address": "HELLO@REALLYGREATSITE.COM"
+        },
+        "payment_information": {
+          "client_name": "CLAUDIA ALVES",
+          "client_company": "STUDIO SHODWE",
+          "client_website": "PRINCE.COM",
+          "client_phone": "+123-456-7890"
+        },
+        "invoice_details": {
+          "invoice_number": "123-456-7892",
+          "invoice_date": "FRIDAY, 20 AUGUST 2026",
+          "due_date": "SUNDAY, 22 AUGUST 2026"
+        },
+        "line_items": [
+          {
+            "description": "Social Media Management",
+            "hours": "20 Hours",
+            "rate": "$50",
+            "total": "$1000"
+          },
+          {
+            "description": "Content Creation",
+            "hours": "10 Hours",
+            "rate": "$50",
+            "total": "$500"
+          },
+          {
+            "description": "Social Media Marketing",
+            "hours": "10 Hours",
+            "rate": "$25",
+            "total": "$250"
+          },
+          {
+            "description": "Email Marketing",
+            "hours": "25 Hours",
+            "rate": "$10",
+            "total": "$250"
+          }
+        ],
+        "grand_total": "$2200",
+        "payment_method": {
+          "name": "MARCELINE ANDERSON",
+          "bank_name": "JANATA BANK",
+          "account_number": "123-456-7890",
+          "email_address": "ABCD@ARKA.COM"
+        },
+        "footer_message": {
+          "thank_you": "THANK YOU FOR YOUR BUSINESS!",
+          "contact_info": "If you have any questions about this invoice, please contact us at hello@reallygreatsite.com"
+        },
+        "authorized_signature": {
+          "name": "JONATHAN PATTERSON",
+          "role": "STAFF"
+        }
+      }
+    }
+  ]
+}

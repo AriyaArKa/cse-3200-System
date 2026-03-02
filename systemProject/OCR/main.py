@@ -26,7 +26,8 @@ if not GOOGLE_API_KEY:
 # -----------------------------------
 # Configuration
 # -----------------------------------
-PDF_FILE = "invoice.pdf"          # Input PDF
+#PDF_FILE = "invoiceDemo.pdf"  # Input PDF
+PDF_FILE = "বিজ্ঞপ্তি_মহান শহীদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবস।.pdf"  # Input PDF
 OUTPUT_IMAGES_DIR = "output_images"
 JSON_OUTPUT_DIR = "output_jsons"  # Individual per-page JSONs
 MERGED_OUTPUT_DIR = "merged_outputs"  # Final merged JSONs
@@ -87,10 +88,12 @@ def merge_json_files(json_files: list) -> dict:
             data = json.loads(cleaned)
         except json.JSONDecodeError:
             data = {"raw_text": cleaned}
-        merged["pages"].append({
-            "source_file": os.path.basename(json_file),
-            "data": data,
-        })
+        merged["pages"].append(
+            {
+                "source_file": os.path.basename(json_file),
+                "data": data,
+            }
+        )
     return merged
 
 
@@ -145,4 +148,3 @@ with open(merged_output_path, "w", encoding="utf-8") as f:
 print(f"\n✅ Done!")
 print(f"   Individual JSONs : {JSON_OUTPUT_DIR}/")
 print(f"   Merged output    : {merged_output_path}")
-
