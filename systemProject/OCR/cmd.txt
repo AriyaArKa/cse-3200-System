@@ -1,0 +1,6 @@
+python -m venv venv
+venv\Scripts\activate
+
+
+pip install google-genai pillow python-dotenv
+pip install pdf2image pillow
