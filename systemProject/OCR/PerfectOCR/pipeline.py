@@ -35,14 +35,14 @@ from . import merger
 from . import correction
 from . import output_handler
 
+logger = logging.getLogger(__name__)
+
 # Try to import fast OCR
 try:
     from .fast_ocr import FastOCREngine, should_use_ai_ocr, TESSERACT_AVAILABLE
 except ImportError:
     TESSERACT_AVAILABLE = False
     logger.warning("Fast OCR not available. Install pytesseract for optimization.")
-
-logger = logging.getLogger(__name__)
 
 # Configure logging
 logging.basicConfig(

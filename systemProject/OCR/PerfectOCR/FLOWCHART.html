@@ -1,0 +1,1411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TurbOCR v3.0 — Complete Pipeline Flowchart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          #0f0c29 0%,
+          #302b63 50%,
+          #24243e 100%
+        );
+        color: #e0e0e0;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 800;
+        background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        text-align: center;
+        color: #9ca3af;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+      }
+
+      /* Section headers */
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #a78bfa;
+        margin: 40px 0 20px 0;
+        padding-left: 15px;
+        border-left: 4px solid #667eea;
+      }
+
+      /* Flow container */
+      .flow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+      }
+
+      /* Flow nodes */
+      .node {
+        position: relative;
+        border-radius: 16px;
+        padding: 20px 30px;
+        min-width: 340px;
+        max-width: 600px;
+        text-align: center;
+        font-size: 0.95rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .node:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .node-start {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border-radius: 50px;
+      }
+      .node-process {
+        background: linear-gradient(135deg, #1e293b, #334155);
+        border: 1px solid #475569;
+      }
+      .node-decision {
+        background: linear-gradient(135deg, #7c3aed, #6d28d9);
+        color: white;
+        border-radius: 16px;
+        transform: none;
+        clip-path: none;
+      }
+      .node-api {
+        background: linear-gradient(135deg, #059669, #047857);
+        color: white;
+      }
+      .node-fast {
+        background: linear-gradient(135deg, #d97706, #b45309);
+        color: white;
+      }
+      .node-output {
+        background: linear-gradient(135deg, #0284c7, #0369a1);
+        color: white;
+      }
+      .node-end {
+        background: linear-gradient(135deg, #dc2626, #b91c1c);
+        color: white;
+        border-radius: 50px;
+      }
+      .node-turbo {
+        background: linear-gradient(135deg, #4f46e5, #7c3aed);
+        color: white;
+        border: 2px solid #a78bfa;
+      }
+      .node-parallel {
+        background: linear-gradient(135deg, #0891b2, #0e7490);
+        color: white;
+      }
+      .node-correction {
+        background: linear-gradient(135deg, #be185d, #9f1239);
+        color: white;
+      }
+
+      .node .title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+      }
+      .node .detail {
+        font-size: 0.85rem;
+        opacity: 0.9;
+        line-height: 1.5;
+      }
+      .node .badge {
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-top: 8px;
+      }
+      .badge-file {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .badge-time {
+        background: rgba(34, 197, 94, 0.3);
+        color: #4ade80;
+      }
+      .badge-model {
+        background: rgba(96, 165, 250, 0.3);
+        color: #93c5fd;
+      }
+      .badge-cost {
+        background: rgba(251, 191, 36, 0.3);
+        color: #fbbf24;
+      }
+
+      /* Arrows */
+      .arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+      }
+      .arrow-line {
+        width: 3px;
+        height: 30px;
+        background: linear-gradient(180deg, #667eea, #764ba2);
+      }
+      .arrow-head {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 10px solid #764ba2;
+      }
+      .arrow-label {
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin: 2px 0;
+        font-style: italic;
+      }
+
+      /* Split/Merge paths */
+      .split-container {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+      }
+      .split-path {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        flex: 1;
+        max-width: 500px;
+      }
+      .split-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #a78bfa;
+        padding: 6px 16px;
+        background: rgba(167, 139, 250, 0.1);
+        border-radius: 20px;
+        border: 1px solid rgba(167, 139, 250, 0.3);
+        margin-bottom: 10px;
+      }
+
+      /* Module map */
+      .module-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+        margin: 20px 0;
+      }
+      .module-card {
+        background: linear-gradient(135deg, #1e293b, #0f172a);
+        border: 1px solid #334155;
+        border-radius: 12px;
+        padding: 16px 20px;
+        transition: border-color 0.2s;
+      }
+      .module-card:hover {
+        border-color: #667eea;
+      }
+      .module-card .mod-name {
+        font-weight: 700;
+        color: #60a5fa;
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .module-card .mod-file {
+        color: #6b7280;
+        font-size: 0.8rem;
+        font-family: "Cascadia Code", monospace;
+        margin-bottom: 6px;
+      }
+      .module-card .mod-desc {
+        color: #9ca3af;
+        font-size: 0.85rem;
+        line-height: 1.4;
+      }
+
+      /* Legend */
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 30px 0;
+        justify-content: center;
+      }
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.85rem;
+        color: #9ca3af;
+      }
+      .legend-dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 4px;
+      }
+
+      /* Stats bar */
+      .stats-bar {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+      }
+      .stat-card {
+        background: rgba(30, 41, 59, 0.8);
+        border: 1px solid #334155;
+        border-radius: 12px;
+        padding: 15px 25px;
+        text-align: center;
+      }
+      .stat-card .stat-value {
+        font-size: 1.8rem;
+        font-weight: 800;
+        background: linear-gradient(90deg, #667eea, #f093fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .stat-card .stat-label {
+        font-size: 0.8rem;
+        color: #6b7280;
+        margin-top: 4px;
+      }
+
+      /* Detail table */
+      .detail-section {
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 25px;
+        margin: 30px 0;
+      }
+      .detail-section h3 {
+        color: #a78bfa;
+        margin-bottom: 15px;
+      }
+      table.detail-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table.detail-table th {
+        text-align: left;
+        padding: 10px 15px;
+        background: rgba(71, 85, 105, 0.3);
+        color: #a78bfa;
+        font-size: 0.85rem;
+        font-weight: 600;
+        border-bottom: 2px solid #334155;
+      }
+      table.detail-table td {
+        padding: 10px 15px;
+        border-bottom: 1px solid #1e293b;
+        color: #d1d5db;
+        font-size: 0.88rem;
+      }
+      table.detail-table tr:hover td {
+        background: rgba(71, 85, 105, 0.15);
+      }
+      code {
+        background: rgba(99, 102, 241, 0.15);
+        color: #a78bfa;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-family: "Cascadia Code", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>⚡ TurbOCR v3.0 — Pipeline Flowchart</h1>
+      <p class="subtitle">
+        Complete processing pipeline from PDF upload to structured JSON output
+      </p>
+
+      <!-- Stats -->
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-value">258</div>
+          <div class="stat-label">Tokens/Page (Native PDF)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">&lt; 2s</div>
+          <div class="stat-label">Per Page Target</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1</div>
+          <div class="stat-label">API Call (Whole Doc)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1000</div>
+          <div class="stat-label">Max Pages Supported</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">50 MB</div>
+          <div class="stat-label">Max PDF Size</div>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="legend">
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #667eea, #764ba2)"
+          ></div>
+          Start/End
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="
+              background: linear-gradient(135deg, #1e293b, #334155);
+              border: 1px solid #475569;
+            "
+          ></div>
+          Process
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #7c3aed, #6d28d9)"
+          ></div>
+          Decision
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #4f46e5, #7c3aed)"
+          ></div>
+          Turbo (Native PDF)
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #059669, #047857)"
+          ></div>
+          API Call
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #d97706, #b45309)"
+          ></div>
+          Fast/Local OCR
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #be185d, #9f1239)"
+          ></div>
+          Correction
+        </div>
+        <div class="legend-item">
+          <div
+            class="legend-dot"
+            style="background: linear-gradient(135deg, #0284c7, #0369a1)"
+          ></div>
+          Output
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- MAIN FLOW: TURBO PIPELINE -->
+      <!-- ============================================ -->
+      <h2 class="section-title">
+        🚀 TurbOCR Pipeline (turbo_app.py → turbo_pipeline.py)
+      </h2>
+
+      <div class="flow">
+        <!-- START -->
+        <div class="node node-start">
+          <div class="title">👤 User Uploads PDF(s)</div>
+          <div class="detail">
+            Streamlit multi-file uploader<br />Accepts: .pdf (up to 50 MB
+            each)<br />Multiple files supported simultaneously
+          </div>
+          <span class="badge badge-file">turbo_app.py</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">Files saved to temp directory</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- TEMP FILE SAVE -->
+        <div class="node node-process">
+          <div class="title">💾 Save to Temp Directory</div>
+          <div class="detail">
+            Each uploaded file → <code>tempfile.mkdtemp()</code><br />Preserves
+            original filename<br />Collects all paths into
+            <code>pdf_paths[]</code> list
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">For each PDF file</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- TURBO ENGINE INIT -->
+        <div class="node node-turbo">
+          <div class="title">⚡ TurboOCREngine Init</div>
+          <div class="detail">
+            Lazy-init Gemini client (<code>google.genai.Client</code>)<br />API
+            key from <code>config.GEMINI_API_KEY</code><br />File upload cache
+            enabled
+          </div>
+          <span class="badge badge-model">gemini-2.5-flash</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">extract_all_pages()</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- PAGE COUNT -->
+        <div class="node node-process">
+          <div class="title">📊 Get Page Count</div>
+          <div class="detail">
+            <code>fitz.open(pdf_path)</code> → count pages<br />PyMuPDF reads
+            PDF structure (no image conversion yet)<br />This is instant — just
+            reading metadata
+          </div>
+          <span class="badge badge-time">~1ms</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- UPLOAD TO GEMINI -->
+        <div class="node node-api">
+          <div class="title">☁️ Upload PDF to Gemini Files API</div>
+          <div class="detail">
+            <code>client.files.upload(file=pdf_path)</code><br />Native PDF
+            binary — NO image conversion<br />Cache key:
+            <code>path + mtime</code> (skip re-upload)<br />Wait for
+            <code>state == ACTIVE</code> (poll every 500ms)
+          </div>
+          <span class="badge badge-cost"
+            >258 tokens/page (vs 1120+ for images)</span
+          >
+          <span class="badge badge-time">~1-3 seconds</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">File reference ready</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- SINGLE API CALL -->
+        <div class="node node-api" style="border: 2px solid #4ade80">
+          <div class="title">🧠 ONE API Call for Entire Document</div>
+          <div class="detail">
+            <code
+              >client.models.generate_content(model, [file_ref, prompt])</code
+            ><br />Sends the uploaded PDF + TURBO_PROMPT<br />Prompt requests
+            JSON array: one object per page<br />Each page → blocks, tables,
+            full_text, notes<br /><strong
+              >This is the core optimization — 1 call for ALL pages</strong
+            >
+          </div>
+          <span class="badge badge-model">gemini-2.5-flash</span>
+          <span class="badge badge-cost">1 API call total</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- DECISION: Success? -->
+        <div class="node node-decision">
+          <div class="title">✅ API Call Succeeded?</div>
+          <div class="detail">Check for exceptions, valid response</div>
+        </div>
+
+        <!-- SPLIT: Success vs Fallback -->
+        <div class="split-container">
+          <div class="split-path">
+            <div class="split-label">✅ YES — Parse Response</div>
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+
+            <div class="node node-process">
+              <div class="title">🔍 Parse JSON Response</div>
+              <div class="detail">
+                Strip markdown fences (<code>```json ... ```</code>)<br /><code
+                  >json.loads(text)</code
+                >
+                → array or dict<br />Handle: array (normal), dict with "pages"
+                key, single dict<br />Fallback: raw text if JSON parse fails
+              </div>
+            </div>
+
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+
+            <div class="node node-process">
+              <div class="title">📦 Build PageOCRResult Objects</div>
+              <div class="detail">
+                For each page in parsed data:<br />• <code>page_number</code>,
+                <code>blocks[]</code>, <code>tables[]</code><br />•
+                <code>full_text</code>, <code>notes[]</code><br />•
+                <code>source = "gemini-native"</code><br />•
+                <code>processing_time_ms</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-path">
+            <div class="split-label">❌ NO — Parallel Fallback</div>
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+
+            <div class="node node-parallel">
+              <div class="title">🔄 Parallel Page Processing</div>
+              <div class="detail">
+                <code>ThreadPoolExecutor(max_workers=5)</code><br />Each page
+                processed independently<br />PDF → JPEG 85% quality @ 200 DPI<br /><code
+                  >pix.tobytes("jpeg", jpg_quality=85)</code
+                ><br />Base64 encode → inline_data to Gemini
+              </div>
+              <span class="badge badge-time">~5 concurrent pages</span>
+            </div>
+
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+
+            <div class="node node-api">
+              <div class="title">🧠 Per-Page Gemini Call</div>
+              <div class="detail">
+                Each page: image + TURBO_PROMPT<br /><code
+                  >inline_data: {mime: "image/jpeg", data: b64}</code
+                ><br />Parse response → page result<br />Individual page errors
+                caught & logged
+              </div>
+              <span class="badge badge-model">gemini-2.5-flash × N pages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line" style="height: 20px"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- BUILD DOCUMENT RESULT -->
+        <div class="node node-output">
+          <div class="title">📋 Build DocumentOCRResult</div>
+          <div class="detail">
+            <code>filename</code>, <code>total_pages</code>, <code>pages[]</code
+            ><br /><code>processing_time_ms</code>,
+            <code>api_calls</code> count<br /><code>to_dict()</code> →
+            serializable dict<br /><code>to_json()</code> → JSON string<br /><code
+              >get_full_text()</code
+            >
+            → concatenated text with page breaks
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">Result sent to turbo_app.py</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- UI DISPLAY -->
+        <div class="node node-output">
+          <div class="title">🖥️ Streamlit Results Display</div>
+          <div class="detail">
+            Statistics: files, pages, avg/page, API calls<br />Download buttons:
+            JSON + Text (all files)<br />Per-file expandable results:<br />•
+            Full extracted text (text_area)<br />• Table rendering (pandas
+            DataFrame)<br />• Page-by-page details<br />• Raw JSON view
+          </div>
+          <span class="badge badge-file">turbo_app.py</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">Cleanup temp files</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <div class="node node-end">
+          <div class="title">✅ Complete — Results Ready</div>
+          <div class="detail">
+            Temp directory cleaned with <code>shutil.rmtree()</code>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- LEGACY PIPELINE FLOW -->
+      <!-- ============================================ -->
+      <h2 class="section-title">
+        🔬 Legacy Pipeline (pipeline.py — Dual-Model Strategy)
+      </h2>
+
+      <div class="flow">
+        <div class="node node-start">
+          <div class="title">📄 Input PDF</div>
+          <div class="detail">
+            PDF file path + strategy config<br />Strategies: dual,
+            gemini_primary, gpt4o_primary, gemini_only, gpt4o_only
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <div class="node node-process">
+          <div class="title">🖼️ PDF → Images (PyMuPDF)</div>
+          <div class="detail">
+            <code>PDFProcessor.convert_to_images(dpi=250)</code><br />Each page
+            → PNG base64 string<br />Images saved to
+            <code>output_images/{run_id}/</code>
+          </div>
+          <span class="badge badge-time">~500ms/page @ 250 DPI</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-label">For each page image</div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- DECISION: Fast OCR? -->
+        <div class="node node-decision">
+          <div class="title">⚡ Tesseract Available?</div>
+          <div class="detail">
+            Check <code>TESSERACT_AVAILABLE</code> flag AND strategy ==
+            gemini_primary
+          </div>
+        </div>
+
+        <div class="split-container">
+          <div class="split-path">
+            <div class="split-label">YES — Try Tesseract First</div>
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+
+            <div class="node node-fast">
+              <div class="title">🏃 Tesseract Fast OCR</div>
+              <div class="detail">
+                <code>FastOCREngine.extract_page(b64, page_num)</code
+                ><br />Local processing — no API call<br />Returns text +
+                per-char confidence
+              </div>
+              <span class="badge badge-cost">FREE — no API cost</span>
+            </div>
+
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+
+            <div class="node node-decision">
+              <div class="title">📊 AI OCR Needed?</div>
+              <div class="detail">
+                <code>should_use_ai_ocr(result)</code><br />YES if: confidence
+                &lt; 75%, non-Latin chars,<br />&lt; 50 chars, many
+                low-confidence blocks
+              </div>
+            </div>
+
+            <div class="split-container">
+              <div class="split-path">
+                <div class="split-label">NO — Tesseract is good enough</div>
+                <div class="arrow">
+                  <div class="arrow-line"></div>
+                  <div class="arrow-head"></div>
+                </div>
+                <div class="node node-fast">
+                  <div class="title">✅ Use Tesseract Result</div>
+                  <div class="detail">
+                    Mark blocks: <code>_source = "tesseract"</code><br /><code
+                      >tracker.record_tesseract_only()</code
+                    ><br />Skip all API calls for this page
+                  </div>
+                </div>
+              </div>
+              <div class="split-path">
+                <div class="split-label">YES — Need AI models</div>
+                <div class="arrow">
+                  <div class="arrow-line"></div>
+                  <div class="arrow-head"></div>
+                </div>
+                <div class="node node-process">
+                  <div class="title">↓ Continue to AI OCR</div>
+                  <div class="detail">
+                    Falls through to strategy-based processing below
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="split-path">
+            <div class="split-label">NO — Direct AI OCR</div>
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+            <div class="node node-process">
+              <div class="title">↓ Strategy-Based Processing</div>
+              <div class="detail">Route to appropriate OCR strategy</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line" style="height: 15px"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- STRATEGY SELECTION -->
+        <div class="node node-decision">
+          <div class="title">🎯 Select Strategy</div>
+          <div class="detail">
+            Based on <code>config.DEFAULT_STRATEGY</code> (default:
+            gemini_primary)
+          </div>
+        </div>
+
+        <div class="split-container">
+          <div class="split-path">
+            <div class="split-label">gemini_primary (Default)</div>
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+            <div class="node node-api">
+              <div class="title">🟢 Gemini OCR (Primary)</div>
+              <div class="detail">
+                <code>GeminiOCREngine.extract_page(b64)</code
+                ><br />MASTER_PROMPT with Bengali numeral rules<br />Returns
+                structured JSON
+              </div>
+              <span class="badge badge-model">gemini-2.5-flash</span>
+            </div>
+            <div class="arrow">
+              <div class="arrow-line" style="height: 15px"></div>
+              <div class="arrow-label">If Gemini fails → GPT-4o fallback</div>
+              <div class="arrow-head"></div>
+            </div>
+            <div class="node node-api" style="opacity: 0.7">
+              <div class="title">🔵 GPT-4o Fallback</div>
+              <div class="detail">
+                Only if Gemini returns empty/error<br />Smart error detection
+                (rate limit, auth, quota)
+              </div>
+              <span class="badge badge-model">gpt-4o</span>
+            </div>
+          </div>
+
+          <div class="split-path">
+            <div class="split-label">dual</div>
+            <div class="arrow">
+              <div class="arrow-line"></div>
+              <div class="arrow-head"></div>
+            </div>
+            <div class="node node-api">
+              <div class="title">🟢🔵 Both Models</div>
+              <div class="detail">
+                Run Gemini + GPT-4o independently<br />Then merge results:<br />•
+                Gemini blocks primary<br />• GPT-4o substituted for
+                low-confidence<br />• Tables: keep richer version
+              </div>
+              <span class="badge badge-model">merger.py</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line" style="height: 15px"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <!-- CORRECTION -->
+        <div class="node node-correction">
+          <div class="title">🔧 Bangla Text Correction</div>
+          <div class="detail">
+            <code>correction.correct_bangla_text(text)</code><br />Fix: wrong
+            mattra, missing hasanta, swapped conjuncts<br />Fix: Bengali numeral
+            errors (৩↔৫, ৮↔৪, ৬↔৯)<br />Fix: Date validation (month ≤ 12, day ≤
+            31)<br />Corrects both <code>full_text</code> AND
+            low/medium-confidence blocks
+          </div>
+          <span class="badge badge-model">gemini-2.5-flash (correction)</span>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <div class="node node-output">
+          <div class="title">💾 Save Results</div>
+          <div class="detail">
+            Individual page JSON → <code>output_jsons/{run_id}/</code
+            ><br />Merged document JSON → <code>merged_outputs/</code><br />Page
+            images → <code>output_images/{run_id}/</code>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div class="arrow-line"></div>
+          <div class="arrow-head"></div>
+        </div>
+
+        <div class="node node-end">
+          <div class="title">📊 DocumentResult</div>
+          <div class="detail">
+            Metadata + all PageResults + processing stats
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- MODULE MAP -->
+      <!-- ============================================ -->
+      <h2 class="section-title">📦 Module Architecture</h2>
+
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="mod-name">⚡ TurboOCREngine</div>
+          <div class="mod-file">turbo_pipeline.py</div>
+          <div class="mod-desc">
+            Core v3.0 engine. Native PDF upload to Gemini Files API. Single API
+            call for entire document. Parallel fallback with
+            ThreadPoolExecutor(5). JPEG 85% @ 200 DPI for image fallback.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">📦 BatchProcessor</div>
+          <div class="mod-file">turbo_pipeline.py</div>
+          <div class="mod-desc">
+            Multi-PDF batch processing. Shared TurboOCREngine instance. Progress
+            callback per file. Streaming generator mode for real-time results.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">🖥️ Turbo Dashboard</div>
+          <div class="mod-file">turbo_app.py</div>
+          <div class="mod-desc">
+            Clean Streamlit UI. No user options — auto-optimized. Multi-file
+            upload. Progress tracking, download buttons (JSON/Text). Per-file
+            expandable results with tables.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">⚙️ Config</div>
+          <div class="mod-file">config.py</div>
+          <div class="mod-desc">
+            Central configuration. API keys (GEMINI, OPENAI from .env). Models:
+            gemini-2.5-flash, gpt-4o. DPI=250, strategy=gemini_primary.
+            Correction=gemini-2.5-flash. Paths, timeouts, cache settings.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">🧠 OCR Engines</div>
+          <div class="mod-file">ocr_engines.py</div>
+          <div class="mod-desc">
+            GeminiOCREngine & GPT4oOCREngine. MASTER_PROMPT: Bengali numeral
+            protocol (6-step), handwriting rules, image descriptions.
+            OCRUsageTracker for call counting. Used by legacy pipeline.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">🏃 Fast OCR</div>
+          <div class="mod-file">fast_ocr.py</div>
+          <div class="mod-desc">
+            Tesseract-based local OCR (FREE). English-only bypass — skip API
+            calls. should_use_ai_ocr() decision function. Confidence threshold:
+            75%. Tesseract path: D:\3-2\Ollama\tesseract.exe
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">🔗 Merger</div>
+          <div class="mod-file">merger.py</div>
+          <div class="mod-desc">
+            Merges Gemini + GPT-4o results. Gemini primary — GPT-4o substitutes
+            low-confidence blocks. Table merge: keeps richer version. Form +
+            notes merging. Used in "dual" strategy.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">🔧 Correction</div>
+          <div class="mod-file">correction.py</div>
+          <div class="mod-desc">
+            Bangla text post-correction. Fixes mattra, hasanta, conjunct errors.
+            Bengali numeral validation (date checks). Uses gemini-2.5-flash.
+            Corrects full text + individual low-confidence blocks.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">🔄 Pipeline</div>
+          <div class="mod-file">pipeline.py</div>
+          <div class="mod-desc">
+            Legacy orchestrator — PerfectOCRPipeline. 5 strategies: dual,
+            gemini_primary, gpt4o_primary, *_only. Hybrid: Tesseract → Gemini →
+            GPT-4o fallback. Full correction + save pipeline.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">📄 PDF Processor</div>
+          <div class="mod-file">pdf_processor.py</div>
+          <div class="mod-desc">
+            PyMuPDF (fitz) based. PDF → PNG images with configurable DPI.
+            PageImage dataclass (page_number, image_b64, image_path). Used by
+            legacy pipeline for image-based OCR.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">📊 Models</div>
+          <div class="mod-file">models.py</div>
+          <div class="mod-desc">
+            Data models: ContentBlock, PageResult, DocumentMetadata,
+            DocumentResult. Structured output matching OCR JSON schema.
+            to_dict() serialization. Feature detection.
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="mod-name">💾 Output Handler</div>
+          <div class="mod-file">output_handler.py</div>
+          <div class="mod-desc">
+            Save JSON results. Per-page JSON files. Merged document JSON.
+            Filename sanitization. Directory auto-creation. UTF-8 encoding for
+            Bangla.
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- DETAILED PROCESSING STEPS -->
+      <!-- ============================================ -->
+      <h2 class="section-title">📋 Detailed Processing Steps</h2>
+
+      <div class="detail-section">
+        <h3>⚡ TurbOCR Pipeline — Step by Step</h3>
+        <table class="detail-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Step</th>
+              <th>Module</th>
+              <th>Operation</th>
+              <th>Time</th>
+              <th>API Calls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>User Upload</td>
+              <td><code>turbo_app.py</code></td>
+              <td>
+                Streamlit
+                <code>file_uploader(accept_multiple_files=True)</code> → save to
+                temp dir
+              </td>
+              <td>Instant</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Init Engine</td>
+              <td><code>turbo_pipeline.py</code></td>
+              <td>
+                Create <code>TurboOCREngine()</code>, lazy-init Gemini client
+              </td>
+              <td>~100ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Count Pages</td>
+              <td><code>turbo_pipeline.py</code></td>
+              <td>
+                <code>fitz.open(pdf)</code> → <code>len(doc)</code> → close
+              </td>
+              <td>~1ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Upload PDF</td>
+              <td><code>turbo_pipeline.py</code></td>
+              <td>
+                <code>client.files.upload(file=path)</code> → wait for ACTIVE
+                state (poll 500ms)
+              </td>
+              <td>1-3s</td>
+              <td>1 (upload)</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>OCR All Pages</td>
+              <td><code>turbo_pipeline.py</code></td>
+              <td>
+                <code>generate_content(model, [file, prompt])</code> — ONE call
+                for ALL pages
+              </td>
+              <td>2-15s</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Parse Response</td>
+              <td><code>turbo_pipeline.py</code></td>
+              <td>
+                Strip markdown fences → <code>json.loads()</code> → array of
+                page dicts
+              </td>
+              <td>~1ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Build Results</td>
+              <td><code>turbo_pipeline.py</code></td>
+              <td>
+                Create <code>PageOCRResult</code> per page →
+                <code>DocumentOCRResult</code>
+              </td>
+              <td>~1ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Display</td>
+              <td><code>turbo_app.py</code></td>
+              <td>
+                Stats metrics, download buttons, text areas, table rendering,
+                JSON view
+              </td>
+              <td>~100ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Cleanup</td>
+              <td><code>turbo_app.py</code></td>
+              <td>
+                <code>shutil.rmtree(temp_dir)</code> — remove uploaded files
+              </td>
+              <td>~1ms</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="detail-section">
+        <h3>🔬 Legacy Pipeline — Step by Step</h3>
+        <table class="detail-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Step</th>
+              <th>Module</th>
+              <th>Operation</th>
+              <th>Time/Page</th>
+              <th>API Calls/Page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>PDF → Images</td>
+              <td><code>pdf_processor.py</code></td>
+              <td>
+                <code>fitz</code> render each page → PNG @ 250 DPI → base64
+              </td>
+              <td>~500ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Fast OCR Check</td>
+              <td><code>fast_ocr.py</code></td>
+              <td>
+                Tesseract → confidence check → skip AI if ≥ 75% + English-only
+              </td>
+              <td>~200ms</td>
+              <td>0 (if pass)</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Gemini OCR</td>
+              <td><code>ocr_engines.py</code></td>
+              <td>Image + MASTER_PROMPT → inline_data → generate_content</td>
+              <td>2-5s</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>GPT-4o Fallback</td>
+              <td><code>ocr_engines.py</code></td>
+              <td>Only if Gemini fails — vision API with base64 image</td>
+              <td>3-8s</td>
+              <td>0 or 1</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Merge (dual only)</td>
+              <td><code>merger.py</code></td>
+              <td>
+                Block-level merge: Gemini primary + GPT-4o for low-confidence
+              </td>
+              <td>~1ms</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Correction</td>
+              <td><code>correction.py</code></td>
+              <td>
+                Bangla text correction: full_text + individual low-confidence
+                blocks
+              </td>
+              <td>1-3s</td>
+              <td>1+</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Save JSON</td>
+              <td><code>output_handler.py</code></td>
+              <td>Per-page JSON + merged document JSON</td>
+              <td>~5ms</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="detail-section">
+        <h3>📊 Performance Comparison</h3>
+        <table class="detail-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>TurbOCR v3.0 (Native PDF)</th>
+              <th>Legacy Pipeline (Image-based)</th>
+              <th>Improvement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tokens per page</td>
+              <td>258</td>
+              <td>1,120+</td>
+              <td style="color: #4ade80">4.3× less</td>
+            </tr>
+            <tr>
+              <td>API calls (10 pages)</td>
+              <td>1</td>
+              <td>10-20</td>
+              <td style="color: #4ade80">10-20× less</td>
+            </tr>
+            <tr>
+              <td>Time per page</td>
+              <td>~1-2 seconds</td>
+              <td>~3-8 seconds</td>
+              <td style="color: #4ade80">3-4× faster</td>
+            </tr>
+            <tr>
+              <td>Image conversion</td>
+              <td>None (native PDF)</td>
+              <td>PNG @ 250 DPI</td>
+              <td style="color: #4ade80">Eliminated</td>
+            </tr>
+            <tr>
+              <td>Multiple files</td>
+              <td>Yes (batch)</td>
+              <td>Single file</td>
+              <td style="color: #4ade80">Multi-PDF</td>
+            </tr>
+            <tr>
+              <td>Cost per 100 pages</td>
+              <td>~$0.02</td>
+              <td>~$0.15+</td>
+              <td style="color: #4ade80">7× cheaper</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- PROMPT DETAILS -->
+      <!-- ============================================ -->
+      <h2 class="section-title">💬 OCR Prompts</h2>
+
+      <div class="detail-section">
+        <h3>TURBO_PROMPT (Compact — turbo_pipeline.py)</h3>
+        <table class="detail-table">
+          <thead>
+            <tr>
+              <th>Rule</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Output Format</td>
+              <td>JSON with: page, blocks[], tables[], full_text, notes[]</td>
+            </tr>
+            <tr>
+              <td>Block Types</td>
+              <td>header, paragraph, list, table, image, signature</td>
+            </tr>
+            <tr>
+              <td>Languages</td>
+              <td>bn (Bangla), en (English), mixed</td>
+            </tr>
+            <tr>
+              <td>Confidence</td>
+              <td>high, med, low</td>
+            </tr>
+            <tr>
+              <td>Bengali Numerals</td>
+              <td>Verify: ০১২৩৪৫৬৭৮৯ — check ৩ vs ৫, ৮ vs ৪</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Describe what you see, never "[IMAGE]"</td>
+            </tr>
+            <tr>
+              <td>Handwritten</td>
+              <td>Set handwritten=true, describe signatures</td>
+            </tr>
+            <tr>
+              <td>Tables</td>
+              <td>Extract all cells as 2D array</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="detail-section">
+        <h3>MASTER_PROMPT (Full — ocr_engines.py)</h3>
+        <table class="detail-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bengali Numerals (HIGHEST PRIORITY)</td>
+              <td>
+                Visual characteristics of each digit ০-৯. Most confused pairs:
+                ৩↔৫, ৮↔৪, ৬↔৯, ২↔৩. 6-step extraction protocol.
+              </td>
+            </tr>
+            <tr>
+              <td>Text Accuracy</td>
+              <td>
+                Preserve mattra, hasanta, nukta, conjuncts. No
+                transliteration/translation.
+              </td>
+            </tr>
+            <tr>
+              <td>Handwriting</td>
+              <td>
+                Signatures → describe or "[Signature of ...]". Complete partial
+                words contextually. Mark [ILLEGIBLE] when needed.
+              </td>
+            </tr>
+            <tr>
+              <td>Layout Detection</td>
+              <td>
+                Tables, forms, columns, boxes, lists, headers/footers, page
+                numbers, stamps.
+              </td>
+            </tr>
+            <tr>
+              <td>Image Description</td>
+              <td>
+                Logos, seals, photos → detailed description (never "[IMAGE]").
+              </td>
+            </tr>
+            <tr>
+              <td>Output JSON</td>
+              <td>
+                page_number, content_blocks[], tables[], forms[],
+                full_text_reading_order, extraction_notes[]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Footer -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 50px;
+          padding: 20px;
+          color: #6b7280;
+          font-size: 0.85rem;
+        "
+      >
+        TurbOCR v3.0 — Built with Gemini 2.5 Flash • PyMuPDF • Streamlit<br />
+        Native PDF processing → 258 tokens/page → 1 API call per document
+      </div>
+    </div>
+  </body>
+</html>

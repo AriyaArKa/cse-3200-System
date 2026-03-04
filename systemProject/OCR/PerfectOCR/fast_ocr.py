@@ -3,6 +3,7 @@ Fast OCR Engine using Tesseract for simple/English-only documents.
 Only calls expensive AI models when needed (Bangla, handwriting, tables, low confidence).
 """
 
+import os
 import logging
 import base64
 from typing import Dict, Any, Optional
@@ -10,11 +11,22 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
+# Tesseract executable path
+TESSERACT_CMD = r"D:\3-2\Ollama\tesseract.exe"
+
 # Check if pytesseract is available
 try:
     import pytesseract
     from PIL import Image
     import io
+
+    # Set Tesseract path
+    if os.path.exists(TESSERACT_CMD):
+        pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
+    elif os.path.exists(r"D:\3-2\Ollama\Tesseract-OCR\tesseract.exe"):
+        pytesseract.pytesseract.tesseract_cmd = (
+            r"D:\3-2\Ollama\Tesseract-OCR\tesseract.exe"
+        )
 
     TESSERACT_AVAILABLE = True
 except ImportError:
