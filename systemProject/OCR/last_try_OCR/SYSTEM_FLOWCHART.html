@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last-Try OCR — System Flowchart</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #0f1117;
+        color: #e2e8f0;
+        padding: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #7dd3fc;
+        margin-bottom: 0.4rem;
+        letter-spacing: 1px;
+      }
+
+      p.subtitle {
+        text-align: center;
+        color: #94a3b8;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+      }
+
+      .diagram-wrapper {
+        background: #1e2130;
+        border: 1px solid #334155;
+        border-radius: 12px;
+        padding: 2rem;
+        overflow-x: auto;
+        margin-bottom: 2.5rem;
+      }
+
+      .diagram-wrapper h2 {
+        color: #38bdf8;
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+        border-bottom: 1px solid #334155;
+        padding-bottom: 0.5rem;
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: #cbd5e1;
+      }
+
+      .legend-color {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Last-Try OCR — System Architecture</h1>
+    <p class="subtitle">
+      End-to-end flow: PDF input → intelligent routing → OCR → validation →
+      structured JSON output
+    </p>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 1 ══ -->
+    <div class="diagram-wrapper">
+      <h2>① Master Pipeline Flow</h2>
+      <div class="mermaid">
+        flowchart TD A([📄 PDF Input]) --> B[pipeline.py\nprocess_pdf] B -->
+        C[Generate Doc ID\nMD5 hash of filename] C --> D[Create Output
+        Dirs\njson / images / merged / logs] D --> E{Multiprocessing\nEnabled?}
+        E -- Yes --> F[ProcessPoolExecutor\nParallel page workers] E -- No -->
+        G[Sequential page\nprocessing] F --> H[_process_single_page\nper page
+        worker] G --> H H --> I[pdf_router.py\nOpen PDF + detect page type] I
+        --> J{Page Type?} J -- digital --> K[Extract digital text\nPyMuPDF
+        get_text] J -- scanned --> L[Render page to PNG\n@ 300 DPI] K -->
+        M[unicode_validator.py\nValidate text quality] M -->
+        N{Validation\nResult?} N -- PASS --> O[Use digital text\nEngine =
+        PyMuPDF] N -- CORRUPTED FONT --> P[Render @ low DPI\nRoute direct to
+        Gemini] N -- FAIL → OCR --> L P --> Q[api_fallback.py\nGemini Direct
+        OCR] Q --> R{Gemini\nSuccess?} R -- Yes --> S[Use Gemini output\nEngine
+        = Gemini-Direct] R -- No --> L L --> T[ocr_engine.py\nOpenCV
+        Preprocessing] T --> U[EasyOCR\nbn + en recognition] U -->
+        V[confidence_scorer.py\nMulti-signal scoring] V -->
+        W{Confidence\nScore?} W -- HIGH ≥ 0.80 --> X[Keep EasyOCR result\nEngine
+        = EasyOCR] W -- LOW < 0.55 --> Y[api_fallback.py\nGemini Fallback OCR] Y
+        --> Z{Gemini API\nSuccess?} Z -- Yes --> AA[Use Gemini output\nEngine =
+        Gemini-Fallback] Z -- No --> X O --> AB[Post-Processing] S --> AB X -->
+        AB AA --> AB AB --> AC[bangla_corrector.py\nStages A→D correction] AC
+        --> AD[numeric_validator.py\nFix digit confusion] AD -->
+        AE[table_handler.py\nDetect & parse tables] AE -->
+        AF[image_processor.py\nExtract embedded images] AF --> AG[PageResult
+        assembled] AG --> AH[json_builder.py\nSave per-page JSON] AH --> AI[All
+        pages done] AI --> AJ[json_builder.py\nMerge → document JSON] AJ -->
+        AK([✅ Final Output\nMerged JSON + per-page JSONs]) style A
+        fill:#1e40af,color:#fff,stroke:#3b82f6 style AK
+        fill:#166534,color:#fff,stroke:#22c55e style Q
+        fill:#7c3aed,color:#fff,stroke:#a855f7 style Y
+        fill:#7c3aed,color:#fff,stroke:#a855f7 style P
+        fill:#92400e,color:#fff,stroke:#f59e0b style T
+        fill:#0f766e,color:#fff,stroke:#14b8a6 style M
+        fill:#065f46,color:#fff,stroke:#10b981
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 2 ══ -->
+    <div class="diagram-wrapper">
+      <h2>② Unicode Validation Detail</h2>
+      <div class="mermaid">
+        flowchart LR A([Raw Digital Text]) --> B[Count chars] B --> C{Enough
+        text?\n≥ 30 chars} C -- No --> SCAN([→ Treat as Scanned]) C -- Yes -->
+        D[control_char_ratio] D --> E{> 5%?} E -- Yes --> CORRUPT([🔴 Corrupted
+        Font\n→ Skip EasyOCR\n→ Gemini Direct]) E -- No -->
+        F[cid_reference_count] F --> G{CID refs > 0?} G -- Yes --> CORRUPT G --
+        No --> H[winansa_artifact_count] H --> I{Legacy font\nartefacts?} I --
+        Yes --> WARN([🟡 Warning\n→ Fall to OCR]) I -- No -->
+        J[bracket_density\nBijoy font check] J --> K{Bracket density\n> 5%?} K
+        -- Yes --> WARN K -- No --> L[symbol_noise_ratio\nSuspicious glyphs] L
+        --> M{Noise > 12%?} M -- Yes --> WARN M -- No --> PASS([✅ Valid Text\n→
+        Use Digital]) style CORRUPT fill:#7f1d1d,color:#fff,stroke:#ef4444 style
+        WARN fill:#78350f,color:#fff,stroke:#f59e0b style PASS
+        fill:#14532d,color:#fff,stroke:#22c55e style SCAN
+        fill:#1e3a5f,color:#fff,stroke:#3b82f6
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 3 ══ -->
+    <div class="diagram-wrapper">
+      <h2>③ Confidence Scoring (Multi-Signal)</h2>
+      <div class="mermaid">
+        flowchart TD A([EasyOCR Blocks]) --> B[Signal 1\nAvg OCR
+        Confidence\nweight = 0.30] A --> C[Signal 2\nBangla Unicode
+        Ratio\nweight = 0.15] A --> D[Signal 3\nDictionary Match Rate\nweight =
+        0.20] A --> E[Signal 4\nSuspicious Glyph Ratio\nweight = 0.15] A -->
+        F[Signal 5\nNumeric Consistency\nweight = 0.10] A --> G[Signal
+        6\nStructural Consistency\nweight = 0.10] B & C & D & E & F & G -->
+        H[Weighted Sum\n0.0 → 1.0] H --> I{Is Bangla-heavy?} I -- Yes -->
+        J{Score ≥ 0.65?} I -- No --> K{Score ≥ 0.55?} J -- Yes --> KEEP([✅ Keep
+        EasyOCR]) J -- No --> FALL([⚡ Gemini API Fallback]) K -- Yes --> KEEP K
+        -- No --> FALL style KEEP fill:#14532d,color:#fff,stroke:#22c55e style
+        FALL fill:#7c3aed,color:#fff,stroke:#a855f7
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 4 ══ -->
+    <div class="diagram-wrapper">
+      <h2>④ Bangla Correction Pipeline (4 Stages)</h2>
+      <div class="mermaid">
+        flowchart LR IN([Raw OCR Text]) --> A A[Stage A\nUnicode
+        Normalization\nNFC + invisible char removal] --> B B[Stage B\nDictionary
+        Validation\nWord validity score] --> C C{Validity\n< 60%?} C -- No --> D
+        C -- Yes --> D D[Stage C\nPattern Correction\nmatra / hasanta / conjunct
+        fixes\ndigit confusion O→0 l→1 S→5] --> E E{Is Bangla-heavy\nAND low
+        validity?} E -- No --> OUT E -- Yes --> F F[Stage D\nGemini LLM
+        Validation\nSend text to Gemini for\nBangla proofreading] --> G
+        G{Gemini\nResponse OK?} G -- Yes --> H[Replace text
+        with\nGemini-corrected version] G -- No --> OUT H --> OUT([✅ Corrected
+        Text]) style F fill:#7c3aed,color:#fff,stroke:#a855f7 style OUT
+        fill:#14532d,color:#fff,stroke:#22c55e style IN
+        fill:#1e3a5f,color:#fff,stroke:#3b82f6
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 5 ══ -->
+    <div class="diagram-wrapper">
+      <h2>⑤ Gemini API Fallback Detail</h2>
+      <div class="mermaid">
+        flowchart TD A([Low-Confidence Page Image]) --> B[Encode PNG as Base64]
+        B --> C[Build structured prompt\nwith Bengali numeral guide] C -->
+        D[Call Gemini API\ngoogle-generativeai] D --> E{HTTP response\nok?} E --
+        No + retries ≤ 3 --> D E -- Fail after 3 --> KEEP([Keep local
+        EasyOCR\nresult unchanged]) E -- Yes --> F[Parse JSON response\nfrom
+        Gemini] F --> G{Valid JSON\nwith text blocks?} G -- No --> KEEP G -- Yes
+        --> H[Map blocks to\nContentBlock models] H --> I[Update API
+        stats\ntotal_calls / tokens / errors] I --> J([✅ Return Gemini
+        blocks\nEngine = Gemini-Fallback]) style KEEP
+        fill:#7f1d1d,color:#fff,stroke:#ef4444 style J
+        fill:#14532d,color:#fff,stroke:#22c55e style D
+        fill:#7c3aed,color:#fff,stroke:#a855f7
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 6 ══ -->
+    <div class="diagram-wrapper">
+      <h2>⑥ Output Structure</h2>
+      <div class="mermaid">
+        flowchart TD A([Document Processed]) --> B[json_builder.py] B -->
+        C[Per-Page JSON\nlast_try_output/output_jsons/\ndoc_id/page_N.json] B
+        --> D[Merged Document
+        JSON\nlast_try_output/merged_outputs/\ndoc_id.json] B --> E[Page
+        Images\nlast_try_output/output_images/\ndoc_id/page_N.png] C --> F[Page
+        JSON contains:\n• page_number\n• text_blocks\n• tables\n• images\n•
+        engine used\n• confidence score\n• decisions log\n• processing_time_ms]
+        D --> G[Merged JSON contains:\n• doc_id\n• total_pages\n• all_pages
+        array\n• api_stats\n• document metadata] E --> H[PNG images at 300
+        DPI\nfor re-processing if needed] F & G & H --> I([Streamlit
+        UI\nstreamlit_ui.py\nVisualises results]) style I
+        fill:#0369a1,color:#fff,stroke:#38bdf8 style A
+        fill:#166534,color:#fff,stroke:#22c55e
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════ DIAGRAM 7 ══ -->
+    <div class="diagram-wrapper">
+      <h2>⑦ Component Map</h2>
+      <div class="mermaid">
+        flowchart LR subgraph INPUT ["📂 Input Layer"] PDF([PDF File]) end
+        subgraph ROUTING ["🔀 Routing Layer"] PL[pipeline.py\nOrchestrator]
+        PR[pdf_router.py\nPage Type Detector] end subgraph VALIDATION ["🔍
+        Validation Layer"] UV[unicode_validator.py\nFont corruption checks]
+        CS[confidence_scorer.py\nMulti-signal scoring] end subgraph OCR_LAYER
+        ["🔠 OCR Layer"] OE[ocr_engine.py\nEasyOCR + OpenCV]
+        AF[api_fallback.py\nGemini API] end subgraph CORRECTION ["✏️ Correction
+        Layer"] BC[bangla_corrector.py\n4-stage correction]
+        NV[numeric_validator.py\nDigit fixing] TH[table_handler.py\nTable
+        detection] IP[image_processor.py\nEmbedded images] end subgraph MODELS
+        ["📐 Data Models"]
+        MO[models.py\nContentBlock\nPageResult\nDocumentResult] end subgraph
+        OUTPUT ["💾 Output Layer"] JB[json_builder.py\nJSON writer]
+        ST[streamlit_ui.py\nWeb UI] end PDF --> PL PL --> PR PR --> UV UV --> OE
+        UV --> AF OE --> CS CS --> AF AF --> BC BC --> NV NV --> TH TH --> IP IP
+        --> JB JB --> ST MO -.->|data model| PL MO -.->|data model| OE MO
+        -.->|data model| AF style INPUT fill:#1e3a5f,color:#fff,stroke:#3b82f6
+        style ROUTING fill:#374151,color:#fff,stroke:#6b7280 style VALIDATION
+        fill:#065f46,color:#fff,stroke:#10b981 style OCR_LAYER
+        fill:#4c1d95,color:#fff,stroke:#8b5cf6 style CORRECTION
+        fill:#78350f,color:#fff,stroke:#f59e0b style MODELS
+        fill:#1e293b,color:#fff,stroke:#475569 style OUTPUT
+        fill:#0c4a6e,color:#fff,stroke:#0ea5e9
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-color" style="background: #1e40af"></div>
+        PDF Input
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #065f46"></div>
+        Validation / Confidence
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #0f766e"></div>
+        EasyOCR Engine
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #7c3aed"></div>
+        Gemini API (Fallback / Direct)
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #78350f"></div>
+        Post-Processing / Correction
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #166534"></div>
+        Success / Final Output
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #7f1d1d"></div>
+        Error / Fallback to local
+      </div>
+    </div>
+
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "dark",
+        themeVariables: {
+          primaryColor: "#1e293b",
+          primaryTextColor: "#e2e8f0",
+          primaryBorderColor: "#475569",
+          lineColor: "#64748b",
+          secondaryColor: "#0f172a",
+          tertiaryColor: "#1e293b",
+          background: "#0f1117",
+          mainBkg: "#1e293b",
+          nodeBorder: "#475569",
+          clusterBkg: "#0f172a",
+          titleColor: "#7dd3fc",
+          edgeLabelBackground: "#0f172a",
+          fontFamily: "Segoe UI, sans-serif",
+          fontSize: "14px",
+        },
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: "basis",
+          padding: 20,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,6 +1,46 @@
-python -m venv venv
-venv\Scripts\activate
+============================
+  LAST_TRY_OCR — STARTUP
+============================
 
+[STEP 1] Open PowerShell in this folder:
+  D:\3-2\Ollama\rag_project\systemProject\OCR
 
-pip install google-genai pillow python-dotenv
-pip install pdf2image pillow
+[STEP 2] Activate the virtual environment:
+  venv\Scripts\activate
+
+[STEP 3] Start Ollama (for Bangla scanned PDFs):
+  ollama serve
+  (keep this terminal open, then open a new one)
+
+  If llava model not installed yet (first time only):
+  ollama pull llava:7b
+
+[STEP 4] Run the Streamlit app (in the venv terminal):
+  streamlit run last_try_OCR/streamlit_ui.py
+
+  Then open: http://localhost:8501
+
+============================
+  FIRST TIME SETUP ONLY
+============================
+
+  python -m venv venv
+  venv\Scripts\activate
+  pip install -r last_try_OCR/requirements.txt
+
+============================
+  TROUBLESHOOTING
+============================
+
+  Ollama not connecting:
+    → Make sure "ollama serve" is running in another terminal
+
+  No Bangla OCR results:
+    → Run: ollama pull llava:7b
+    → Check Ollama status in the sidebar of the UI
+
+  Gemini not working:
+    → Check .env file has GEMINI_API_KEY=your_key_here
+
+  Port 8501 already in use:
+    → Run: streamlit run last_try_OCR/streamlit_ui.py --server.port 8502

@@ -1,0 +1,303 @@
+You are a senior OCR architect and multilingual document AI engineer designing a government-grade PDF ingestion system.
+
+I want to build a highly accurate, cost-optimized hybrid OCR and document understanding system from scratch.
+
+The system must process multiple uploaded PDFs and output fully structured JSON.
+
+The PDFs may contain:
+
+- Digital Unicode English text
+- Digital Bangla text
+- Digitally embedded but corrupted Bangla fonts (custom glyph encoding)
+- Mixed English + Bangla
+- Fully scanned pages
+- Complex tables (merged cells, irregular columns)
+- Embedded images (charts, diagrams, photos)
+- Critical numeric data (must be preserved exactly)
+
+The primary goal is MAXIMUM CONTENT EXTRACTION ACCURACY.
+RAG is NOT required now. Only structured JSON output.
+
+---------------------------------------------------
+CORE ARCHITECTURE REQUIREMENTS
+---------------------------------------------------
+
+1) PAGE TYPE DETECTION (PER PAGE)
+
+Use PyMuPDF:
+
+- Detect if page contains extractable digital text
+- If no text → treat as scanned
+- Do NOT convert entire PDF to images unnecessarily
+
+2) DIGITAL TEXT VALIDATION (BANGLA-SAFE)
+
+After digital extraction:
+
+Perform:
+
+- Unicode validation for Bangla (U+0980–U+09FF)
+- Suspicious glyph detection (¢, ¤, Ø, ÿ, ç etc.)
+- Bangla character ratio scoring
+- ASCII dominance detection
+- Entropy anomaly detection
+
+If corruption suspected:
+    Render page to image
+    Send to OCR pipeline
+
+3) PRIMARY OCR ENGINE (LOCAL FIRST)
+
+Use PaddleOCR as primary OCR system:
+
+- Multilingual model (Bangla + English)
+- Layout detection enabled
+- Table structure recognition (PP-Structure)
+- Use 300 DPI rendering
+- Apply OpenCV preprocessing:
+    - Grayscale
+    - Adaptive threshold
+    - Morphological cleaning
+    - Deskew if needed
+
+Capture:
+- Word-level bounding boxes
+- Confidence scores
+- Layout segmentation
+
+4) BANGLA TEXT CORRECTION LAYER (CRITICAL)
+
+After OCR or digital extraction:
+
+Apply multi-stage correction:
+
+Stage A — Unicode normalization
+- NFC normalization
+- Remove invisible characters
+- Validate combining characters
+
+Stage B — Dictionary validation
+- Use Bangla word corpus
+- Compute valid word ratio
+- Flag unknown token frequency
+
+Stage C — Language model scoring (local only)
+Use free multilingual transformer models:
+
+- mBERT
+- XLM-RoBERTa
+
+Score:
+- Sentence likelihood
+- Token anomaly detection
+- Contextual consistency
+
+Stage D — Optional local LLM correction
+Use small open-source LLM to:
+- Correct OCR errors
+- Fix broken conjunct characters
+- Preserve numbers strictly
+- Do NOT hallucinate content
+
+Correction rules:
+- Never change numeric tokens
+- Never remove original line breaks without logging
+- Log all corrections
+
+5) OCR CONFIDENCE VALIDATION
+
+Compute:
+
+- Average word confidence
+- Bangla validity ratio
+- Correction distance score
+
+If:
+    Bangla-heavy page AND
+    confidence < threshold
+
+Then:
+    Send ONLY that page to external API (Gemini or Qwen-VL)
+    Do NOT send entire PDF
+    Track API usage
+
+6) TABLE HANDLING (ACCURATE STRUCTURE)
+
+If digital:
+    Use pdfplumber to extract structured tables
+
+If scanned:
+    Use PaddleOCR PP-Structure
+    Reconstruct rows and columns
+
+Validate:
+- Numeric consistency
+- Row alignment integrity
+- Cell count consistency
+
+Output structured table JSON:
+
+{
+  "table_id": 1,
+  "structure_confidence": 0.95,
+  "rows": [
+    ["Header1", "Header2"],
+    ["Value1", "Value2"]
+  ]
+}
+
+7) IMAGE EXTRACTION + DETAILED DESCRIPTION
+
+Extract images using PyMuPDF.
+
+For each image:
+
+- Store original image file
+- Generate detailed caption using local vision-language model
+  (e.g., BLIP or similar open model)
+
+Extract:
+
+- Image type (chart/photo/diagram)
+- Detected text inside image (run OCR on image region)
+- Caption
+- Confidence score
+
+Output:
+
+{
+  "image_id": 3,
+  "type": "chart",
+  "detected_text": "...",
+  "description": "A bar chart showing revenue growth from 2020 to 2023",
+  "confidence": 0.93
+}
+
+8) NUMERIC PRESERVATION SAFEGUARD
+
+Implement strict numeric validation:
+
+- Compare OCR output with regex numeric detection
+- Prevent digit substitution (0 vs O, 1 vs l)
+- Validate table numeric alignment
+- Log discrepancies
+
+9) MULTIPROCESSING
+
+- Process pages independently
+- Use multiprocessing Pool
+- Maintain original page order
+- Avoid unnecessary rendering
+- Cache intermediate outputs
+
+10) FINAL JSON OUTPUT FORMAT
+
+
+{
+  "document": {
+    "source": "tmpziisidxd.pdf",
+    "total_pages": 2,
+    "language_detected": ["bn", "en"],
+    "has_handwriting": false,
+    "has_tables": true,
+    "has_images": true,
+    "processing_summary": {
+      "pages_processed_locally": 2,
+      "pages_sent_to_api": 1,
+      "overall_confidence": 0.96
+    }
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "extraction": {
+        "method": "ocr_local",
+        "engine": "PaddleOCR",
+        "confidence_score": 0.95,
+        "correction_applied": true,
+        "numeric_validation_passed": true
+      },
+      "content_blocks": [
+        {
+          "block_id": 1,
+          "type": "header",
+          "language": "bn",
+          "text": "মুক্তিযুদ্ধ: আমাদের স্বাধীনতার গৌরবময় ইতিহাস",
+          "confidence": 0.98,
+          "bbox": [x1, y1, x2, y2]
+        }
+      ],
+      "tables": [
+        {
+          "table_id": 1,
+          "structure_confidence": 0.94,
+          "rows": [
+            ["Name", "Amount"],
+            ["Rahim", "5000"]
+          ]
+        }
+      ],
+      "images": [
+        {
+          "image_id": 1,
+          "type": "chart",
+          "description": "A bar chart showing yearly revenue growth",
+          "ocr_text_inside_image": "...",
+          "confidence": 0.92
+        }
+      ]
+    }
+  ]
+}
+
+ouptut format :
+folder 
+output_jsons
+output images 
+merged output_jsons
+
+11) LOGGING AND TRACEABILITY
+
+Log per page:
+
+- Extraction method used
+- Validation scores
+- Correction distance
+- API fallback trigger reason
+- Final confidence score
+
+12) PERFORMANCE CONSTRAINTS
+
+- Handle 100+ page PDFs
+- Minimize memory spikes
+- Avoid full PDF image conversion
+- API calls must be minimal and page-specific
+
+-----------------------------------------------
+DELIVERABLES REQUIRED
+-----------------------------------------------
+
+Provide:
+
+1) Full production-grade system architecture
+2) Folder structure
+3) Complete Python modules:
+   - pdf_router.py
+   - unicode_validator.py
+   - ocr_engine.py
+   - bangla_corrector.py
+   - table_handler.py
+   - image_processor.py
+   - numeric_validator.py
+   - api_fallback.py
+   - json_builder.py
+4) Multiprocessing integration
+5) Confidence scoring algorithm
+6) FastAPI upload endpoint
+7) Performance optimization techniques
+8) Scaling strategy (CPU vs GPU)
+9) a simple sreamlit which will take multiple pdf and show ocr output 
+
+Design like a national-scale document ingestion system focused on Bangla accuracy.
+
+Provide structured implementation-ready solution, not just theory.
