@@ -29,6 +29,7 @@ _api_stats = {
     "total_calls": 0,
     "total_tokens": 0,
     "errors": 0,
+    "last_engine_used": None,  # 'gemini' | 'ollama' | None
 }
 
 _service_status = {
@@ -435,8 +436,18 @@ def ocr_page_with_gemini(
 
     if result:
         logger.info(f"OCR page {page_number} completed with {engine_used}")
+        # Track which engine actually produced the result
+        if engine_used and engine_used.startswith("Ollama"):
+            _api_stats["last_engine_used"] = "ollama"
+        elif engine_used == "Gemini":
+            _api_stats["last_engine_used"] = "gemini"
+        else:
+            _api_stats["last_engine_used"] = None
     else:
-        logger.warning(f"All OCR engines failed for page {page_number}")
+        logger.warning(
+            f"All OCR engines (Gemini + Ollama) failed for page {page_number}"
+        )
+        _api_stats["last_engine_used"] = None
         _api_stats["errors"] += 1
 
     return result
@@ -448,16 +459,20 @@ def ocr_page_with_fallback(
 ) -> Tuple[Optional[str], str]:
     """
     OCR with explicit engine tracking.
+    Chain: Local OCR (caller) → Gemini → Ollama (final fallback).
     Returns: (extracted_text, engine_name)
     """
     result = ocr_page_with_gemini(img_bytes, page_number)
 
-    if result and _service_status.get("gemini_available"):
-        return result, "Gemini"
-    elif result and _service_status.get("ollama_available"):
-        return result, f"Ollama ({_service_status.get('ollama_model', 'unknown')})"
-    else:
+    if result is None:
         return None, "None"
+
+    last_engine = _api_stats.get("last_engine_used")
+    if last_engine == "ollama":
+        model = _service_status.get("ollama_model", "unknown")
+        return result, f"Ollama ({model})"
+    else:
+        return result, "Gemini"
 
 
 # ══════════════════════════════════════════════════════════════════════

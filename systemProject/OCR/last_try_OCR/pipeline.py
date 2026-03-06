@@ -83,6 +83,19 @@ def _extract_page_decisions(page_log: dict, page_num: int) -> list:
                 "GEMINI_OK",
                 "Gemini produced OCR output directly (EasyOCR skipped)",
             )
+        elif step.startswith("ollama_direct_success"):
+            engine = step.split(":", 1)[1].strip() if ":" in step else "Ollama"
+            _add(
+                "OLLAMA_OK",
+                f"Gemini failed — {engine} produced OCR output directly (EasyOCR skipped)",
+                "warning",
+            )
+        elif step == "all_apis_direct_failed_falling_to_ocr":
+            _add(
+                "ALL_API_FAILED",
+                "Gemini + Ollama both failed — falling back to local OCR (EasyOCR)",
+                "error",
+            )
         elif step == "gemini_direct_failed_falling_to_ocr":
             _add(
                 "GEMINI_FAILED",
@@ -102,6 +115,19 @@ def _extract_page_decisions(page_log: dict, page_num: int) -> list:
             )
         elif step == "api_fallback_success":
             _add("GEMINI_OK", "Gemini API returned improved text")
+        elif step.startswith("ollama_fallback_success"):
+            engine = step.split(":", 1)[1].strip() if ":" in step else "Ollama"
+            _add(
+                "OLLAMA_OK",
+                f"Gemini failed — {engine} returned improved text (final fallback)",
+                "warning",
+            )
+        elif step == "api_fallback_failed_all_engines":
+            _add(
+                "ALL_API_FAILED",
+                "Gemini + Ollama both failed — keeping local OCR result",
+                "error",
+            )
         elif step == "api_fallback_failed_keeping_local":
             _add("GEMINI_FAILED", "Gemini API failed — kept local OCR result", "error")
         elif step.startswith("images_extracted:"):
@@ -225,7 +251,7 @@ def _process_single_page(
     from .table_handler import extract_tables_digital, extract_tables_scanned
     from .image_processor import process_page_images
     from .confidence_scorer import score_blocks, needs_api_fallback
-    from .api_fallback import ocr_page_with_gemini, gemini_text_to_blocks
+    from .api_fallback import ocr_page_with_fallback, gemini_text_to_blocks
     from .json_builder import ensure_output_dirs
 
     page_log = {"page_number": page_num, "steps": []}
@@ -299,10 +325,10 @@ def _process_single_page(
             img_bytes = render_page_to_image(page, dpi=config.DPI)
             page_log["steps"].append(f"rendered_for_gemini_direct (DPI={config.DPI})")
 
-            api_text = ocr_page_with_gemini(img_bytes, page_num)
+            api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
             if api_text:
                 content_blocks = gemini_text_to_blocks(api_text, page_num)
-                # Apply correction to Gemini output
+                # Apply correction to API output
                 for block in content_blocks:
                     if block.language in ("bn", "mixed"):
                         block.text, corr_log = correct_bangla_text(block.text)
@@ -312,13 +338,16 @@ def _process_single_page(
                     if num_disc:
                         page_log.setdefault("numeric_fixes", []).extend(num_disc)
                 method = "ocr_api"
-                engine = "Gemini"
+                engine = api_engine
                 sent_to_api = True
-                page_log["steps"].append("gemini_direct_success")
+                if api_engine.startswith("Ollama"):
+                    page_log["steps"].append(f"ollama_direct_success:{api_engine}")
+                else:
+                    page_log["steps"].append("gemini_direct_success")
             else:
-                # Gemini failed — fall back to EasyOCR as last resort
+                # Gemini + Ollama both failed — fall back to local OCR
                 page_type = "scanned"
-                page_log["steps"].append("gemini_direct_failed_falling_to_ocr")
+                page_log["steps"].append("all_apis_direct_failed_falling_to_ocr")
 
             # Tables from corrupted digital — try digital first
             if content_blocks:
@@ -364,7 +393,8 @@ def _process_single_page(
 
         if needs_api_fallback(confidence, is_bangla_heavy):
             page_log["steps"].append("api_fallback_triggered")
-            api_text = ocr_page_with_gemini(img_bytes, page_num)
+            # Chain: Gemini → Ollama (final fallback)
+            api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
             if api_text:
                 api_blocks = gemini_text_to_blocks(api_text, page_num)
                 if api_blocks:
@@ -376,11 +406,17 @@ def _process_single_page(
 
                     content_blocks = api_blocks
                     method = "ocr_api"
-                    engine = "Gemini"
+                    engine = api_engine
                     sent_to_api = True
-                    page_log["steps"].append("api_fallback_success")
+                    if api_engine.startswith("Ollama"):
+                        page_log["steps"].append(
+                            f"ollama_fallback_success:{api_engine}"
+                        )
+                    else:
+                        page_log["steps"].append("api_fallback_success")
             else:
-                page_log["steps"].append("api_fallback_failed_keeping_local")
+                # Both Gemini and Ollama failed — keep local OCR result
+                page_log["steps"].append("api_fallback_failed_all_engines")
 
         # Tables from scanned
         tables = extract_tables_scanned(img_bytes, detections, page_num)

@@ -26,7 +26,7 @@ LOG_DIR = OUTPUT_DIR / "logs"
 # ══════════════════════════════════════════════════════════════════════
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 GEMINI_MODEL = (
-    "gemini-2.0-flash"  # Options: gemini-2.0-flash, gemini-1.5-flash, gemini-1.5-pro
+    "gemini-2.5-flash"  # Options: gemini-2.0-flash, gemini-1.5-flash, gemini-1.5-pro
 )
 GEMINI_MAX_RETRIES = 2  # Reduced for faster fallback to local LLM
 GEMINI_RETRY_DELAY = 1.0  # Seconds between retries
@@ -42,15 +42,16 @@ OLLAMA_ENABLED = True  # Set False to disable local LLM fallback
 # Ordered list of vision-capable models to try (first available will be used)
 # Only vision models can do OCR - text-only models are skipped
 OLLAMA_MODEL_PRIORITY = [
+    "minicpm-v:8b",  # Specialized OCR model (best choice if available)
+    "minicpm-v",  # Fast vision model
     "llava:7b",  # Best for OCR - vision model
     "llava:13b",  # Higher quality vision
     "llama3.2-vision",  # Good for multilingual
-    "minicpm-v",  # Fast vision model
     "moondream",  # Lightweight vision
     "bakllava",  # Alternative vision model
 ]
-OLLAMA_TIMEOUT = 45  # Timeout for local LLM calls (reduced for speed)
-OLLAMA_MAX_RETRIES = 1  # Local LLM retries (keep low - it's the fallback)
+OLLAMA_TIMEOUT = 75  # Timeout for local LLM calls (reduced for speed)
+OLLAMA_MAX_RETRIES = 2  # Local LLM retries (keep low - it's the fallback)
 
 # ══════════════════════════════════════════════════════════════════════
 # PDF PROCESSING
