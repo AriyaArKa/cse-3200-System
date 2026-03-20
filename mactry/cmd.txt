@@ -1,0 +1,258 @@
+================================================================
+LAST-TRY OCR — SETUP GUIDE
+Your situation: Python 3.14.3, qwen2.5vl:7b installed, all
+project files already in last_try_ocr folder.
+================================================================
+Do every step in order. Do not skip.
+================================================================
+
+
+STEP 1 — GO TO YOUR PROJECT FOLDER
+----------------------------------------------------------------
+You are already here. Confirm with:
+
+    ls
+
+You should see: pipeline.py, config.py, requirements.txt etc.
+If yes, continue to Step 2.
+
+
+STEP 2 — CREATE VIRTUAL ENVIRONMENT
+----------------------------------------------------------------
+    python3 -m venv venv
+
+Verify it was created:
+
+    ls
+
+You should now see a "venv" folder appear.
+
+
+STEP 3 — ACTIVATE THE VIRTUAL ENVIRONMENT
+----------------------------------------------------------------
+    source venv/bin/activate
+
+Your terminal prompt will change to:
+    (venv) arkabrajaprasadnath@Arkas-Mac-mini last_try_ocr %
+
+IMPORTANT: Every time you open a new terminal window,
+you must run this activate command before doing anything.
+
+
+STEP 4 — UPGRADE PIP
+----------------------------------------------------------------
+    pip install --upgrade pip
+
+
+STEP 5 — INSTALL ALL DEPENDENCIES
+----------------------------------------------------------------
+    pip install -r requirements.txt
+
+This will take 5-10 minutes. Let it finish completely.
+
+
+STEP 6 — INSTALL PADDLEPADDLE FOR MAC M4
+----------------------------------------------------------------
+    pip install paddlepaddle
+
+DO NOT run paddlepaddle-gpu — that is for NVIDIA only.
+
+Verify:
+
+    python3 -c "import paddle; print(paddle.__version__)"
+
+You should see a version number with no errors.
+
+
+STEP 7 — INSTALL EASYOCR
+----------------------------------------------------------------
+    pip install easyocr
+
+If it fails with "no module named torch", run this first:
+
+    pip install torch torchvision
+    pip install easyocr
+
+Verify:
+
+    python3 -c "import easyocr; print('EasyOCR OK')"
+
+
+STEP 8 — CREATE YOUR .env FILE
+----------------------------------------------------------------
+    touch .env
+    open -e .env
+
+This opens TextEdit. Type these lines exactly:
+
+    USE_OLLAMA_FIRST=true
+    GEMINI_API_KEY=
+    LOG_LEVEL=INFO
+    FAST_MODE=false
+    DISABLE_MP=false
+
+Save and close.
+
+
+STEP 9 — CHECK config.py HAS CORRECT MODEL PRIORITY
+----------------------------------------------------------------
+Open config.py and find OLLAMA_MODEL_PRIORITY.
+Make sure qwen2.5vl:7b is FIRST in the list:
+
+    OLLAMA_MODEL_PRIORITY = [
+        "qwen2.5vl:7b",      <- must be first
+        "minicpm-v:8b",
+        "minicpm-v",
+        "llava:13b",
+        "llava:7b",
+        "llama3.2-vision",
+        "moondream",
+        "bakllava",
+    ]
+
+If it is not first, move it to the top and save the file.
+
+
+STEP 10 — VERIFY ALL IMPORTS WORK
+----------------------------------------------------------------
+    python3 -c "
+    import fitz
+    import easyocr
+    import cv2
+    import numpy
+    import fastapi
+    import streamlit
+    print('All imports OK')
+    "
+
+If you see "All imports OK" you are ready to run.
+If any import fails, see TROUBLESHOOTING at the bottom.
+
+
+================================================================
+HOW TO RUN (every time you want to use the system)
+================================================================
+
+STEP A — Open TWO terminal tabs (Cmd + T for new tab)
+----------------------------------------------------------------
+
+TAB 1 — Start Ollama (keep this running, never close it):
+
+    ollama serve
+
+You should see: "Ollama is running"
+
+
+TAB 2 — Activate environment and run the app:
+
+    cd ~/Desktop/last_try_ocr    <- change path if different
+    source venv/bin/activate
+
+
+STEP B — Choose how to run
+----------------------------------------------------------------
+
+OPTION 1 — Streamlit web interface (easiest, use this first):
+
+    streamlit run streamlit_ui.py
+
+Open browser at: http://localhost:8501
+
+
+OPTION 2 — FastAPI server:
+
+    python3 -m uvicorn app:app --reload --port 8000
+
+Open browser at: http://localhost:8000
+API docs at:     http://localhost:8000/docs
+
+
+OPTION 3 — Command line:
+
+    python3 main.py yourfile.pdf
+    python3 main.py yourfile.pdf --verbose
+
+
+================================================================
+WHERE YOUR OUTPUT FILES GO
+================================================================
+
+    last_try_ocr/
+    └── last_try_output/
+        ├── output_images/     page images from PDFs
+        ├── output_jsons/      per-page JSON results
+        ├── merged_outputs/    one full JSON per document
+        └── logs/              processing logs
+
+
+================================================================
+DAILY STARTUP (once fully set up, this is all you do)
+================================================================
+
+    Tab 1:  ollama serve
+    Tab 2:  cd ~/Desktop/last_try_ocr
+            source venv/bin/activate
+            streamlit run streamlit_ui.py
+
+
+================================================================
+TROUBLESHOOTING
+================================================================
+
+PROBLEM: "No module named paddle" after install
+SOLUTION:
+    pip uninstall paddlepaddle -y
+    pip install paddlepaddle==2.6.0
+
+PROBLEM: easyocr install fails
+SOLUTION:
+    pip install torch torchvision
+    pip install easyocr
+
+PROBLEM: "Cannot connect to Ollama" when processing
+SOLUTION: Ollama is not running.
+    Open new terminal tab and run: ollama serve
+    Keep that tab open.
+
+PROBLEM: System uses Gemini instead of qwen2.5vl
+SOLUTION: Two things to check:
+    1. ollama serve is running in another tab
+    2. qwen2.5vl:7b is first in OLLAMA_MODEL_PRIORITY in config.py
+
+PROBLEM: "No module named last_try_OCR"
+SOLUTION: You are running from inside the package folder.
+Run from the parent folder:
+    cd ..
+    python3 -m last_try_ocr.main yourfile.pdf
+
+PROBLEM: Streamlit crashes immediately
+SOLUTION:
+    pip install --upgrade streamlit
+    streamlit run streamlit_ui.py --server.port 8502
+
+PROBLEM: Processing is slow
+SOLUTION: Add this line to your .env file:
+    FAST_MODE=true
+
+PROBLEM: Memory errors on large PDFs
+SOLUTION: Add this line to your .env file:
+    DISABLE_MP=true
+
+PROBLEM: venv not activating
+SOLUTION: Make sure you are in the right folder first:
+    cd ~/Desktop/last_try_ocr
+    source venv/bin/activate
+
+
+================================================================
+YOUR CURRENT STATUS
+----------------------------------------------------------------
+Python version  :  3.14.3          READY - no install needed
+Project folder  :  last_try_ocr    READY - files all present
+Model installed :  qwen2.5vl:7b    READY - no download needed
+venv            :  not yet         START FROM STEP 2
+Dependencies    :  not yet         DO STEP 5
+.env file       :  not yet         DO STEP 8
+================================================================
+END OF SETUP GUIDE
+================================================================

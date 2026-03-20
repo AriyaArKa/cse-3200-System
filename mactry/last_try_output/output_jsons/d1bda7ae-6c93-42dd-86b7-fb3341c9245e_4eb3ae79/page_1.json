@@ -1,0 +1,131 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "ocr_api",
+    "engine": "Ollama (qwen2.5vl:7b)",
+    "confidence_score": 0.7957,
+    "correction_applied": true,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "বাংলা একাডেমি\n৩ কাজী নজরুল ইসলাম এভিনিউ, ঢাকা ১০০০\nফোন: ৫৮৬১১২১৫, ফ্যাক্স: ২২৩৩৬১০৮০\nইমেইল: dgbang1aacademy@gmai1.com\nওয়েবসাইট: www.bang1aacademy.gov.bd\nতারিখ: ২৩.০২.২০২৬",
+      "confidence": 0.9
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সংবাদ বিজ্ঞপ্তি",
+      "confidence": 0.9
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫ ঘোষণা",
+      "confidence": 0.9
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫-এর 'প্রস্তাবক কমিটি'র প্রস্তাবনার পরিপ্রেক্ষিতে এবং 'বাংলা একাডেমি সাহিত্য পুরস্কার কমিটি'র সিদ্ধান্তক্রমে বাংলা একাডেমি নির্বাহী পরিষদ 'বাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫' অনুমোদন করে। আগামী ২৬শে ফেব্রুয়ারি ২০২৬ বাংলা একাডেমি আয়োজিত অমর একুশে বইমেলা ২০২৬-এর উদ্বোধন অনুষ্ঠানে গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের মাননীয় প্রধানমন্ত্রী জানব তারেক রহমান এমপি আনুষ্ঠানিকভাবে এ পুরস্কার প্রদান করবেন।",
+      "confidence": 0.9
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫ ঘোষণা-\nক. কবিতা - মোহিন রায়হান\nখ. কথাসাহিত্য - নাসিমা আনিস\nগ. প্রবন্ধ/গণ্ড্য - সৈয়দ আজিজুল হক\nঘ. শিশুসাহিত্য - হাসান হাফিজ\nঙ. অনুবাদ - আলী আহমদ\nচ. গবেষণা - মুক্তাফা মজিদ ও ইসরাইল খান\nছ. বিজ্ঞান - ফারসীম মামান মোহাম্মদী\nজ. মুক্তিযুদ্ধ - মঈনুল হাসান",
+      "confidence": 0.9
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "২৩/০২/২০২৬\nঅধ্যাপক মোহাম্দ আজম\nমহাপরিচালক\nবাংলা একাডেমি, ঢাকা",
+      "confidence": 0.9
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1184x1600)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "বাংলা একাডেমি\n৩ কাজী নজরুল ইসলাম এভিনিউ, ঢাকা ১০০০\nফোন: ৫৮৬১১২১৫, ফ্যাক্স: ২২৩৩৬১০৮০\nইমেইল: dgbang1aacademy@gmai1.com\nওয়েবসাইট: www.bang1aacademy.gov.bd\nতারিখ: ২৩.০২.২০২৬\nসংবাদ বিজ্ঞপ্তি\nবাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫ ঘোষণা\nবাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫-এর 'প্রস্তাবক কমিটি'র প্রস্তাবনার পরিপ্রেক্ষিতে এবং 'বাংলা একাডেমি সাহিত্য পুরস্কার কমিটি'র সিদ্ধান্তক্রমে বাংলা একাডেমি নির্বাহী পরিষদ 'বাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫' অনুমোদন করে। আগামী ২৬শে ফেব্রুয়ারি ২০২৬ বাংলা একাডেমি আয়োজিত অমর একুশে বইমেলা ২০২৬-এর উদ্বোধন অনুষ্ঠানে গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের মাননীয় প্রধানমন্ত্রী জানব তারেক রহমান এমপি আনুষ্ঠানিকভাবে এ পুরস্কার প্রদান করবেন।\nবাংলা একাডেমি সাহিত্য পুরস্কার ২০২৫ ঘোষণা-\nক. কবিতা - মোহিন রায়হান\nখ. কথাসাহিত্য - নাসিমা আনিস\nগ. প্রবন্ধ/গণ্ড্য - সৈয়দ আজিজুল হক\nঘ. শিশুসাহিত্য - হাসান হাফিজ\nঙ. অনুবাদ - আলী আহমদ\nচ. গবেষণা - মুক্তাফা মজিদ ও ইসরাইল খান\nছ. বিজ্ঞান - ফারসীম মামান মোহাম্মদী\nজ. মুক্তিযুদ্ধ - মঈনুল হাসান\n২৩/০২/২০২৬\nঅধ্যাপক মোহাম্দ আজম\nমহাপরিচালক\nবাংলা একাডেমি, ঢাকা",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/d1bda7ae-6c93-42dd-86b7-fb3341c9245e_4eb3ae79/page_1.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "SCANNED",
+      "detail": "Page classified as SCANNED",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "IMAGE_RENDER",
+      "detail": "Page rendered to image for OCR (DPI=300)",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "EASYOCR",
+      "detail": "EasyOCR found 56 detections",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "API_FALLBACK",
+      "detail": "Low confidence — Gemini API fallback triggered",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "OLLAMA_OK",
+      "detail": "Gemini failed — Ollama (qwen2.5vl:7b) returned improved text (final fallback)",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "IMAGES",
+      "detail": "Extracted 1",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "Final output produced by: **Ollama (qwen2.5vl:7b)**",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_METHOD",
+      "detail": "Extraction method: ocr_api",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "CONFIDENCE",
+      "detail": "Local OCR confidence: 69.4%",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "TIMING",
+      "detail": "Page processed in 244612ms",
+      "severity": "info"
+    }
+  ]
+}

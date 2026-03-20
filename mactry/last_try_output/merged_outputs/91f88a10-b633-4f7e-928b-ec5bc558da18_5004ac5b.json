@@ -1,0 +1,826 @@
+{
+  "document": {
+    "source": "91f88a10-b633-4f7e-928b-ec5bc558da18.pdf",
+    "total_pages": 1,
+    "language_detected": [
+      "bn",
+      "en"
+    ],
+    "has_handwriting": false,
+    "has_tables": false,
+    "has_images": true,
+    "processing_summary": {
+      "pages_processed_locally": 1,
+      "pages_sent_to_api": 0,
+      "overall_confidence": 0.7247,
+      "processing_time_ms": 97757.22
+    },
+    "decision_summary": {
+      "total": 18,
+      "by_severity": {
+        "info": 9,
+        "warning": 8,
+        "error": 1
+      },
+      "unique_keywords": [
+        "ALL_API_FAILED",
+        "CONFIDENCE",
+        "CTRL_CHARS",
+        "DIGITAL",
+        "EASYOCR",
+        "FINAL_ENGINE",
+        "FINAL_METHOD",
+        "GEMINI_DIRECT",
+        "IMAGES",
+        "IMAGE_RENDER",
+        "LEGACY_FONT",
+        "SYMBOL_NOISE",
+        "TEXT_EXTRACTED",
+        "TEXT_REJECTED",
+        "TIMING",
+        "UNICODE_REJECT"
+      ]
+    },
+    "all_decisions": [
+      {
+        "page": 1,
+        "keyword": "DIGITAL",
+        "detail": "Page classified as DIGITAL",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "TEXT_EXTRACTED",
+        "detail": "Digital text extracted (1322 chars)",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "TEXT_REJECTED",
+        "detail": "Corrupted font detected — sending directly to Gemini (skipping EasyOCR)",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "GEMINI_DIRECT",
+        "detail": "Page rendered at low DPI for fast Gemini OCR",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "ALL_API_FAILED",
+        "detail": "Gemini + Ollama both failed — falling back to local OCR (EasyOCR)",
+        "severity": "error"
+      },
+      {
+        "page": 1,
+        "keyword": "IMAGE_RENDER",
+        "detail": "Page rendered to image for OCR (DPI=200)",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "EASYOCR",
+        "detail": "EasyOCR found 76 detections",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "IMAGES",
+        "detail": "Extracted 1",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "FINAL_ENGINE",
+        "detail": "Final output produced by: **EasyOCR**",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "FINAL_METHOD",
+        "detail": "Extraction method: ocr_local",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "UNICODE_REJECT",
+        "detail": "High control-char ratio (32.1%): legacy font encoding",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "UNICODE_REJECT",
+        "detail": "WinAnsi legacy Bangla font artefacts (18 chars)",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "UNICODE_REJECT",
+        "detail": "High symbol noise (31.8%) with no Bangla Unicode: corrupted encoding",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "CTRL_CHARS",
+        "detail": "Control-char ratio: 32.1%",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "LEGACY_FONT",
+        "detail": "WinAnsi/SutonnyMJ artefacts: 18",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "SYMBOL_NOISE",
+        "detail": "Symbol noise ratio: 31.9%",
+        "severity": "warning"
+      },
+      {
+        "page": 1,
+        "keyword": "CONFIDENCE",
+        "detail": "Local OCR confidence: 72.5%",
+        "severity": "info"
+      },
+      {
+        "page": 1,
+        "keyword": "TIMING",
+        "detail": "Page processed in 96876ms",
+        "severity": "info"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "extraction": {
+        "method": "ocr_local",
+        "engine": "EasyOCR",
+        "confidence_score": 0.7247,
+        "correction_applied": true,
+        "numeric_validation_passed": true
+      },
+      "content_blocks": [
+        {
+          "block_id": 1,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "রেজস্টাড নং ডি এ-১",
+          "confidence": 0.5562
+        },
+        {
+          "block_id": 2,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বাংলাদেশ",
+          "confidence": 0.6662
+        },
+        {
+          "block_id": 3,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "গেজেট",
+          "confidence": 0.7122
+        },
+        {
+          "block_id": 4,
+          "type": "paragraph",
+          "language": "en",
+          "text": "/",
+          "confidence": 0.1467
+        },
+        {
+          "block_id": 5,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আতরিক্ত সংখ্যা",
+          "confidence": 0.434
+        },
+        {
+          "block_id": 6,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "কর্তৃপক্ষ কর্তৃক প্রকাশিত",
+          "confidence": 0.6299
+        },
+        {
+          "block_id": 7,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বৃহস্পতিবার , মার্চ ১২ ,",
+          "confidence": 0.592
+        },
+        {
+          "block_id": 8,
+          "type": "paragraph",
+          "language": "en",
+          "text": "২০২৬",
+          "confidence": 0.4525
+        },
+        {
+          "block_id": 9,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার",
+          "confidence": 0.3902
+        },
+        {
+          "block_id": 10,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মন্ত্রিপরিষদ বিভাগ",
+          "confidence": 0.4617
+        },
+        {
+          "block_id": 11,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রজ্ঞাপন",
+          "confidence": 0.7804
+        },
+        {
+          "block_id": 12,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ঢাকা;",
+          "confidence": 0.3968
+        },
+        {
+          "block_id": 13,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "২৭ ফাল্গুন ১৪৩২ ১২ মার্চ ২০২৬",
+          "confidence": 0.7881
+        },
+        {
+          "block_id": 14,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নমবর: ১৪.০০.০০০০ ০০০ ৪২১.৫৭.০০১২.২৬১০১",
+          "confidence": 0.2246
+        },
+        {
+          "block_id": 15,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের মাননীয়",
+          "confidence": 0.5063
+        },
+        {
+          "block_id": 16,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রধানমন্ত্রীর সদয় অভিপ্রায়",
+          "confidence": 0.4506
+        },
+        {
+          "block_id": 17,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মন্ত্রিপরিষদ বিভাগের গত ২৪",
+          "confidence": 0.8503
+        },
+        {
+          "block_id": 18,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "২০২৬ তারিখের ১৪.০০.",
+          "confidence": 0.5733
+        },
+        {
+          "block_id": 19,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১০০০৩০০.8২১.৫.00১২.২৬.৭১",
+          "confidence": 0.2288
+        },
+        {
+          "block_id": 20,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সংখ্যক প্রজ্ঞাপন",
+          "confidence": 0.7174
+        },
+        {
+          "block_id": 21,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "এবং",
+          "confidence": 0.9977
+        },
+        {
+          "block_id": 22,
+          "type": "paragraph",
+          "language": "en",
+          "text": "8",
+          "confidence": 0.9655
+        },
+        {
+          "block_id": 23,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মাচ ২০২৬",
+          "confidence": 0.7316
+        },
+        {
+          "block_id": 24,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তারখের",
+          "confidence": 0.9375
+        },
+        {
+          "block_id": 25,
+          "type": "paragraph",
+          "language": "en",
+          "text": "08.00.0000",
+          "confidence": 0.5354
+        },
+        {
+          "block_id": 26,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১০০.৪২১.৫৭.০০১২.২৬.>8",
+          "confidence": 0.3912
+        },
+        {
+          "block_id": 27,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সংখ্যক",
+          "confidence": 0.8563
+        },
+        {
+          "block_id": 28,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রজ্ঞাপনমূলে",
+          "confidence": 0.6373
+        },
+        {
+          "block_id": 29,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মাননীয়",
+          "confidence": 0.9337
+        },
+        {
+          "block_id": 30,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রধানমন্ত্রীর উপদেষ্টাগণের",
+          "confidence": 0.6996
+        },
+        {
+          "block_id": 31,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "দায়িত্ব দপ্তর",
+          "confidence": 0.6845
+        },
+        {
+          "block_id": 32,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বণ্টন পুনর্বণ্টন করা হয়",
+          "confidence": 0.4039
+        },
+        {
+          "block_id": 33,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মাননীয় প্রধানমন্ত্রীর সদয় অভিপ্রায়",
+          "confidence": 0.5847
+        },
+        {
+          "block_id": 34,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রতিমন্ত্রীর পদমর্যাদায় নিয়োগপ্রাপ্ত",
+          "confidence": 0.7537
+        },
+        {
+          "block_id": 35,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উপদেষ্টী ডাঃ জাহেদ উর রহমানের দায়িত্ব নিম্নরূপভাবে পুনর্বণ্টন করা হলো:",
+          "confidence": 0.3509
+        },
+        {
+          "block_id": 36,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ক্রম",
+          "confidence": 0.6801
+        },
+        {
+          "block_id": 37,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উপদেষ্টার নাম",
+          "confidence": 0.4496
+        },
+        {
+          "block_id": 38,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বিদ্যমান দায়িত্ব/দপ্তর",
+          "confidence": 0.559
+        },
+        {
+          "block_id": 39,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পুনর্বণ্টনকৃত দায়িত্বদপ্তর",
+          "confidence": 0.4436
+        },
+        {
+          "block_id": 40,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১",
+          "confidence": 0.9518
+        },
+        {
+          "block_id": 41,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ডাঃ জাহেদ উর রহমান",
+          "confidence": 0.465
+        },
+        {
+          "block_id": 42,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পলিসি",
+          "confidence": 0.7706
+        },
+        {
+          "block_id": 43,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "স্ট্র্যাটেজি",
+          "confidence": 0.9049
+        },
+        {
+          "block_id": 44,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পলিসি",
+          "confidence": 0.993
+        },
+        {
+          "block_id": 45,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "স্ট্র্যাটেজি;",
+          "confidence": 0.9082
+        },
+        {
+          "block_id": 46,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তথ্য",
+          "confidence": 0.9509
+        },
+        {
+          "block_id": 47,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সম্প্রচার মন্ত্রণালয় এবং",
+          "confidence": 0.4992
+        },
+        {
+          "block_id": 48,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সংস্কৃাত",
+          "confidence": 0.579
+        },
+        {
+          "block_id": 49,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বিষয়ক মন্ত্রণালয়/",
+          "confidence": 0.4545
+        },
+        {
+          "block_id": 50,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১৪",
+          "confidence": 0.8306
+        },
+        {
+          "block_id": 51,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "২০২৬ তারিখের ১৪.০০০০০০০০০৪ ১৫৭১০১২ ২৬৭১",
+          "confidence": 0.2894
+        },
+        {
+          "block_id": 52,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সংখ্যক প্রজ্ঞাপন",
+          "confidence": 0.5855
+        },
+        {
+          "block_id": 53,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "এবং",
+          "confidence": 0.8194
+        },
+        {
+          "block_id": 54,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "৪ মাচ ২০২৬ তারিখের ১৮.১০০০০০০০০৪ ১৫৭ ১০১২২৬৮৪ সংখ্যক প্রজ্ঞাপনের অন্যান্য",
+          "confidence": 0.3591
+        },
+        {
+          "block_id": 55,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বিষয় অপরিবতিত থাকবে",
+          "confidence": 0.3567
+        },
+        {
+          "block_id": 56,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আদেশ অবিলমে কার্যকর হবে",
+          "confidence": 0.5187
+        },
+        {
+          "block_id": 57,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "রাষ্ট্রপতির আদেশক্রমে",
+          "confidence": 0.5398
+        },
+        {
+          "block_id": 58,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মন্ত্রপরিষদ সচিব",
+          "confidence": 0.3991
+        },
+        {
+          "block_id": 59,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মোহাম্মদ আবু",
+          "confidence": 0.7776
+        },
+        {
+          "block_id": 60,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উপপরিচালক (উপসচিব) , বাংলাদেশ সরকারী মুদ্রণালয় , তেজগাঁও ,",
+          "confidence": 0.6459
+        },
+        {
+          "block_id": 61,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ঢাকা কর্তৃক মুদ্রিত /",
+          "confidence": 0.4432
+        },
+        {
+          "block_id": 62,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মোঃ নজরুল ইসলাম , উপপরিচালক (উপসচিব) , বাংলাদেশ ফরম",
+          "confidence": 0.5748
+        },
+        {
+          "block_id": 63,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রকাশনা অফিস , তেজগাঁও ,",
+          "confidence": 0.6868
+        },
+        {
+          "block_id": 64,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ঢাকা কর্তৃক প্রকাশিত",
+          "confidence": 0.8423
+        },
+        {
+          "block_id": 65,
+          "type": "paragraph",
+          "language": "en",
+          "text": "vebsite: TT",
+          "confidence": 0.5251
+        },
+        {
+          "block_id": 66,
+          "type": "paragraph",
+          "language": "en",
+          "text": "bgpress govbd",
+          "confidence": 0.9793
+        },
+        {
+          "block_id": 67,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১৩৮৩১",
+          "confidence": 0.6092
+        },
+        {
+          "block_id": 68,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "টাকা ৪ ০০",
+          "confidence": 0.5969
+        },
+        {
+          "block_id": 69,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পজাতন্রী",
+          "confidence": 0.5239
+        },
+        {
+          "block_id": 70,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ব্াংলাছে",
+          "confidence": 0.3466
+        },
+        {
+          "block_id": 71,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অনুযায়ী",
+          "confidence": 0.5229
+        },
+        {
+          "block_id": 72,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ফেব্রুয়ারি",
+          "confidence": 0.874
+        },
+        {
+          "block_id": 73,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অনুযায়ী",
+          "confidence": 0.524
+        },
+        {
+          "block_id": 74,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ফেব্রুয়ারি",
+          "confidence": 0.5356
+        },
+        {
+          "block_id": 75,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নাসিমুল",
+          "confidence": 0.9613
+        },
+        {
+          "block_id": 76,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ইউসুফ",
+          "confidence": 0.9975
+        }
+      ],
+      "tables": [],
+      "images": [
+        {
+          "image_id": 1,
+          "type": "photo",
+          "detected_text": "",
+          "description": "A photograph or image (263x263)",
+          "confidence": 0.6
+        }
+      ],
+      "full_text": "রেজস্টাড নং ডি এ-১\nবাংলাদেশ\nগেজেট\n/\nআতরিক্ত সংখ্যা\nকর্তৃপক্ষ কর্তৃক প্রকাশিত\nবৃহস্পতিবার , মার্চ ১২ ,\n২০২৬\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার\nমন্ত্রিপরিষদ বিভাগ\nপ্রজ্ঞাপন\nঢাকা;\n২৭ ফাল্গুন ১৪৩২ ১২ মার্চ ২০২৬\nনমবর: ১৪.০০.০০০০ ০০০ ৪২১.৫৭.০০১২.২৬১০১\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকারের মাননীয়\nপ্রধানমন্ত্রীর সদয় অভিপ্রায়\nমন্ত্রিপরিষদ বিভাগের গত ২৪\n২০২৬ তারিখের ১৪.০০.\n১০০০৩০০.8২১.৫.00১২.২৬.৭১\nসংখ্যক প্রজ্ঞাপন\nএবং\n8\nমাচ ২০২৬\nতারখের\n08.00.0000\n১০০.৪২১.৫৭.০০১২.২৬.>8\nসংখ্যক\nপ্রজ্ঞাপনমূলে\nমাননীয়\nপ্রধানমন্ত্রীর উপদেষ্টাগণের\nদায়িত্ব দপ্তর\nবণ্টন পুনর্বণ্টন করা হয়\nমাননীয় প্রধানমন্ত্রীর সদয় অভিপ্রায়\nপ্রতিমন্ত্রীর পদমর্যাদায় নিয়োগপ্রাপ্ত\nউপদেষ্টী ডাঃ জাহেদ উর রহমানের দায়িত্ব নিম্নরূপভাবে পুনর্বণ্টন করা হলো:\nক্রম\nউপদেষ্টার নাম\nবিদ্যমান দায়িত্ব/দপ্তর\nপুনর্বণ্টনকৃত দায়িত্বদপ্তর\n১\nডাঃ জাহেদ উর রহমান\nপলিসি\nস্ট্র্যাটেজি\nপলিসি\nস্ট্র্যাটেজি;\nতথ্য\nসম্প্রচার মন্ত্রণালয় এবং\nসংস্কৃাত\nবিষয়ক মন্ত্রণালয়/\n১৪\n২০২৬ তারিখের ১৪.০০০০০০০০০৪ ১৫৭১০১২ ২৬৭১\nসংখ্যক প্রজ্ঞাপন\nএবং\n৪ মাচ ২০২৬ তারিখের ১৮.১০০০০০০০০৪ ১৫৭ ১০১২২৬৮৪ সংখ্যক প্রজ্ঞাপনের অন্যান্য\nবিষয় অপরিবতিত থাকবে \nআদেশ অবিলমে কার্যকর হবে\nরাষ্ট্রপতির আদেশক্রমে\nমন্ত্রপরিষদ সচিব\nমোহাম্মদ আবু\nউপপরিচালক (উপসচিব) , বাংলাদেশ সরকারী মুদ্রণালয় , তেজগাঁও ,\nঢাকা কর্তৃক মুদ্রিত /\nমোঃ নজরুল ইসলাম , উপপরিচালক (উপসচিব) , বাংলাদেশ ফরম\nপ্রকাশনা অফিস , তেজগাঁও ,\nঢাকা কর্তৃক প্রকাশিত\nvebsite: TT\nbgpress govbd\n১৩৮৩১\nটাকা ৪ ০০\nপজাতন্রী\nব্াংলাছে\nঅনুযায়ী\nফেব্রুয়ারি\nঅনুযায়ী\nফেব্রুয়ারি\nনাসিমুল\nইউসুফ",
+      "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/91f88a10-b633-4f7e-928b-ec5bc558da18_5004ac5b/page_1.png",
+      "verified": false,
+      "domain": "unknown",
+      "confidence_tier": "silver",
+      "decisions": [
+        {
+          "page": 1,
+          "keyword": "DIGITAL",
+          "detail": "Page classified as DIGITAL",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "TEXT_EXTRACTED",
+          "detail": "Digital text extracted (1322 chars)",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "TEXT_REJECTED",
+          "detail": "Corrupted font detected — sending directly to Gemini (skipping EasyOCR)",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "GEMINI_DIRECT",
+          "detail": "Page rendered at low DPI for fast Gemini OCR",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "ALL_API_FAILED",
+          "detail": "Gemini + Ollama both failed — falling back to local OCR (EasyOCR)",
+          "severity": "error"
+        },
+        {
+          "page": 1,
+          "keyword": "IMAGE_RENDER",
+          "detail": "Page rendered to image for OCR (DPI=200)",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "EASYOCR",
+          "detail": "EasyOCR found 76 detections",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "IMAGES",
+          "detail": "Extracted 1",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "FINAL_ENGINE",
+          "detail": "Final output produced by: **EasyOCR**",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "FINAL_METHOD",
+          "detail": "Extraction method: ocr_local",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "UNICODE_REJECT",
+          "detail": "High control-char ratio (32.1%): legacy font encoding",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "UNICODE_REJECT",
+          "detail": "WinAnsi legacy Bangla font artefacts (18 chars)",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "UNICODE_REJECT",
+          "detail": "High symbol noise (31.8%) with no Bangla Unicode: corrupted encoding",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "CTRL_CHARS",
+          "detail": "Control-char ratio: 32.1%",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "LEGACY_FONT",
+          "detail": "WinAnsi/SutonnyMJ artefacts: 18",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "SYMBOL_NOISE",
+          "detail": "Symbol noise ratio: 31.9%",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "CONFIDENCE",
+          "detail": "Local OCR confidence: 72.5%",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "TIMING",
+          "detail": "Page processed in 96876ms",
+          "severity": "info"
+        }
+      ]
+    }
+  ]
+}

@@ -131,28 +131,42 @@ def _ocr_with_ollama(
 ) -> Optional[str]:
     """Send image to Ollama for OCR using a vision-capable model."""
     try:
-        # Convert to base64
         img_b64 = base64.b64encode(img_bytes).decode("utf-8")
 
-        # Simple, fast prompt for local LLM
-        prompt = "You are a document OCR expert. Extract ALL text from this image exactly as it appears.\nThis document contains Bangla (Bengali) and possibly English text.\n\nRules:\n1. Preserve every Bangla Unicode character exactly — matras, hasanta, conjuncts\n2. Preserve Bangla numerals (০১২৩৪৫৬৭৮৯) digit by digit — do NOT guess\n3. Keep original line breaks\n4. For tables, preserve rows with | separators\n5. Output ONLY the extracted text — no explanation, no markdown\n"
-
-        # Check if it's a vision model
-        is_vision = any(
-            v in model.lower()
-            for v in [
-                "llava",
-                "bakllava",
-                "moondream",
-                "cogvlm",
-                "minicpm",
-                "qwen",
-                "llama3.2-vision",
-            ]
+        prompt = (
+            "You are a document OCR expert. Extract ALL text from this image exactly as it appears.\n"
+            "This document contains Bangla (Bengali) and possibly English text.\n\n"
+            "Rules:\n"
+            "1. Preserve every Bangla Unicode character exactly — matras, hasanta, conjuncts\n"
+            "2. Preserve Bangla numerals (০১২৩৪৫৬৭৮৯) digit by digit — do NOT guess\n"
+            "3. Keep original line breaks\n"
+            "4. For tables, preserve rows with | separators\n"
+            "5. Output ONLY the extracted text — no explanation, no markdown\n"
         )
 
-        if is_vision:
-            # Vision model - can handle images directly
+        is_qwen = "qwen" in model.lower()
+
+        if is_qwen:
+            # qwen2.5vl uses /api/chat with content array
+            payload = {
+                "model": model,
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": prompt,
+                        "images": [img_b64],
+                    }
+                ],
+                "stream": False,
+                "options": {
+                    "temperature": 0.1,
+                    "num_predict": 4096,
+                    "num_ctx": 8192,
+                },
+            }
+            endpoint = f"{config.OLLAMA_BASE_URL}/api/chat"
+        else:
+            # llava and others use /api/generate with images array
             payload = {
                 "model": model,
                 "prompt": prompt,
@@ -160,17 +174,14 @@ def _ocr_with_ollama(
                 "stream": False,
                 "options": {
                     "temperature": 0.1,
-                    "num_predict": 2048,  # Reduced for speed
-                    "num_ctx": 2048,  # Smaller context for speed
+                    "num_predict": 2048,
+                    "num_ctx": 2048,
                 },
             }
-        else:
-            # Text-only model cannot do OCR
-            logger.warning(f"Model {model} is not vision-capable, skipping OCR")
-            return None
+            endpoint = f"{config.OLLAMA_BASE_URL}/api/generate"
 
         resp = requests.post(
-            f"{config.OLLAMA_BASE_URL}/api/generate",
+            endpoint,
             json=payload,
             timeout=config.OLLAMA_TIMEOUT,
         )
@@ -181,7 +192,12 @@ def _ocr_with_ollama(
             return None
 
         result = resp.json()
-        text = result.get("response", "").strip()
+
+        # qwen returns message.content, llava returns response
+        if is_qwen:
+            text = (result.get("message", {}).get("content") or "").strip()
+        else:
+            text = result.get("response", "").strip()
 
         if text:
             _api_stats["ollama_calls"] += 1

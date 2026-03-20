@@ -1,5 +1,4 @@
 # Last-Try OCR — Requirements
-# Mac M4: pip install paddlepaddle (not paddlepaddle-gpu)
 # Enable MPS: export PADDLE_DEVICE=mps
 
 # Core PDF / Image
@@ -10,8 +9,6 @@ opencv-python-headless>=4.8.0
 
 # OCR - Multi-engine support
 easyocr>=1.7.0
-paddleocr>=3.0.0
-paddlepaddle>=3.0.0
 # torch intentionally omitted: install manually per platform (CPU/CUDA/MPS)
 
 # API fallback

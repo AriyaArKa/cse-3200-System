@@ -1,0 +1,482 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.7196,
+    "correction_applied": true,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "রেজস্টাড নং ডি এ-১",
+      "confidence": 0.5562
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলাদেশ",
+      "confidence": 0.6662
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গেজেট",
+      "confidence": 0.7122
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অতরিক্ত সংখ্যা",
+      "confidence": 0.4245
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কর্তৃপক্ষ কর্তৃক প্রকাশিত",
+      "confidence": 0.5764
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বৃহস্পতিবার , মার্চ ১২ ,",
+      "confidence": 0.592
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২০২৬",
+      "confidence": 0.7908
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার",
+      "confidence": 0.8861
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মন্ত্রিপরিষদ বিভাগ",
+      "confidence": 0.5479
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রজ্ঞাপন",
+      "confidence": 0.7127
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঢাকা,",
+      "confidence": 0.4857
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "২৭ ফাল্গুন ১৪৩২ ১২ মার্চ ২০২৬",
+      "confidence": 0.8425
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নম্র:",
+      "confidence": 0.4898
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "en",
+      "text": "০8.০০.০০০০.০০০.8২১.৫৬.0০১১.২৬.১০০",
+      "confidence": 0.1476
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গণপ্রজাতন্ত্রী",
+      "confidence": 0.607
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলাদেশ",
+      "confidence": 0.7204
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সরকারের",
+      "confidence": 0.9692
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয়ের মাননীয় মন্ত্রী জনাব হাফিজ উদ্দিন আহমেদ বীর বিক্রম এবং ভূমি",
+      "confidence": 0.3862
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মন্ত্রণালয়ের মাননীয় প্রতিমন্ত্রী ব্যারিস্টার কায়সার কামাল-এর পদত্যাগপত্র মহামান্য রাষ্ট্রপতি কর্তৃক",
+      "confidence": 0.5856
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গৃহীত হয়েছে",
+      "confidence": 0.4377
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২1",
+      "confidence": 0.2235
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পদত্যাগ ১২ মার্চ ২০২৬ তারিখ পূর্বাহ্ণ হতে কার্যকর হবে/",
+      "confidence": 0.3749
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "রাষ্ট্রপতির আদেশক্রমে",
+      "confidence": 0.7835
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নাসিমুল",
+      "confidence": 0.8123
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মান্ত্রপারষদ সাচব",
+      "confidence": 0.2674
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মোহাম্মদ আবু ইউসুফ , উপপরিচালক (উপসচিব) , বাংলাদেশ সরকারী মুদ্রণালয় , তেজগাঁও , ঢাকা কর্তৃক মুদ্রিত !",
+      "confidence": 0.3541
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মোঃ নজরুল ইসলাম , উপপরিচালক",
+      "confidence": 0.7647
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(উপসচিব) , বাংলাদেশ ফরম ও প্রকাশনা অফিস , তেজগাঁও ,",
+      "confidence": 0.7169
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঢাকা কর্তৃক প্রকাশিত",
+      "confidence": 0.7128
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "en",
+      "text": "websire: \"wTbgpress govbd",
+      "confidence": 0.4066
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১৩৮২_",
+      "confidence": 0.451
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মূল্য",
+      "confidence": 0.9442
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঢাকা ৪ ০০",
+      "confidence": 0.5703
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পজাতন্রী",
+      "confidence": 0.5239
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ব্াংলাছে",
+      "confidence": 0.3466
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কা",
+      "confidence": 0.8186
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.808,
+      "rows": [
+        [
+          "রেজস্টাড নং ডি এ-১",
+          "ব্াংলাছে"
+        ],
+        [
+          "পজাতন্রী"
+        ],
+        [
+          "গেজেট"
+        ],
+        [
+          "বাংলাদেশ"
+        ],
+        [
+          "কা"
+        ],
+        [
+          "অতরিক্ত সংখ্যা"
+        ],
+        [
+          "কর্তৃপক্ষ কর্তৃক প্রকাশিত"
+        ],
+        [
+          "বৃহস্পতিবার , মার্চ ১২ ,",
+          "২০২৬"
+        ],
+        [
+          "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার"
+        ],
+        [
+          "মন্ত্রিপরিষদ বিভাগ"
+        ],
+        [
+          "প্রজ্ঞাপন"
+        ],
+        [
+          "ঢাকা,",
+          "২৭ ফাল্গুন ১৪৩২ ১২ মার্চ ২০২৬"
+        ],
+        [
+          "নম্র:",
+          "০8.০০.০০০০.০০০.8২১.৫৬.0০১১.২৬.১০০",
+          "গণপ্রজাতন্ত্রী",
+          "বাংলাদেশ",
+          "সরকারের"
+        ],
+        [
+          "মুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয়ের মাননীয় মন্ত্রী জনাব হাফিজ উদ্দিন আহমেদ বীর বিক্রম এবং ভূমি"
+        ],
+        [
+          "মন্ত্রণালয়ের মাননীয় প্রতিমন্ত্রী ব্যারিস্টার কায়সার কামাল-এর পদত্যাগপত্র মহামান্য রাষ্ট্রপতি কর্তৃক"
+        ],
+        [
+          "গৃহীত হয়েছে"
+        ],
+        [
+          "২1",
+          "পদত্যাগ ১২ মার্চ ২০২৬ তারিখ পূর্বাহ্ণ হতে কার্যকর হবে/"
+        ],
+        [
+          "রাষ্ট্রপতির আদেশক্রমে"
+        ],
+        [
+          "নাসিমুল"
+        ],
+        [
+          "মান্ত্রপারষদ সাচব"
+        ],
+        [
+          "মোহাম্মদ আবু ইউসুফ , উপপরিচালক (উপসচিব) , বাংলাদেশ সরকারী মুদ্রণালয় , তেজগাঁও , ঢাকা কর্তৃক মুদ্রিত !"
+        ],
+        [
+          "মোঃ নজরুল ইসলাম , উপপরিচালক",
+          "(উপসচিব) , বাংলাদেশ ফরম ও প্রকাশনা অফিস , তেজগাঁও ,"
+        ],
+        [
+          "ঢাকা কর্তৃক প্রকাশিত",
+          "websire: \"wTbgpress govbd"
+        ],
+        [
+          "১৩৮২_"
+        ],
+        [
+          "মূল্য",
+          "ঢাকা ৪ ০০"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (263x263)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "রেজস্টাড নং ডি এ-১\nবাংলাদেশ\nগেজেট\nঅতরিক্ত সংখ্যা\nকর্তৃপক্ষ কর্তৃক প্রকাশিত\nবৃহস্পতিবার , মার্চ ১২ ,\n২০২৬\nগণপ্রজাতন্ত্রী বাংলাদেশ সরকার\nমন্ত্রিপরিষদ বিভাগ\nপ্রজ্ঞাপন\nঢাকা,\n২৭ ফাল্গুন ১৪৩২ ১২ মার্চ ২০২৬\nনম্র:\n০8.০০.০০০০.০০০.8২১.৫৬.0০১১.২৬.১০০\nগণপ্রজাতন্ত্রী\nবাংলাদেশ\nসরকারের\nমুক্তিযুদ্ধ বিষয়ক মন্ত্রণালয়ের মাননীয় মন্ত্রী জনাব হাফিজ উদ্দিন আহমেদ বীর বিক্রম এবং ভূমি\nমন্ত্রণালয়ের মাননীয় প্রতিমন্ত্রী ব্যারিস্টার কায়সার কামাল-এর পদত্যাগপত্র মহামান্য রাষ্ট্রপতি কর্তৃক\nগৃহীত হয়েছে \n২1\nপদত্যাগ ১২ মার্চ ২০২৬ তারিখ পূর্বাহ্ণ হতে কার্যকর হবে/\nরাষ্ট্রপতির আদেশক্রমে\nনাসিমুল\nমান্ত্রপারষদ সাচব\nমোহাম্মদ আবু ইউসুফ , উপপরিচালক (উপসচিব) , বাংলাদেশ সরকারী মুদ্রণালয় , তেজগাঁও , ঢাকা কর্তৃক মুদ্রিত !\nমোঃ নজরুল ইসলাম , উপপরিচালক\n(উপসচিব) , বাংলাদেশ ফরম ও প্রকাশনা অফিস , তেজগাঁও ,\nঢাকা কর্তৃক প্রকাশিত\nwebsire: \"wTbgpress govbd\n১৩৮২_\nমূল্য\nঢাকা ৪ ০০\nপজাতন্রী\nব্াংলাছে\nকা",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/b89c4883-daee-4f01-9c36-6e9481ba1f5d-11_7f56d671/page_1.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "DIGITAL",
+      "detail": "Page classified as DIGITAL",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "TEXT_EXTRACTED",
+      "detail": "Digital text extracted (780 chars)",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "TEXT_REJECTED",
+      "detail": "Corrupted font detected — sending directly to Gemini (skipping EasyOCR)",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "GEMINI_DIRECT",
+      "detail": "Page rendered at low DPI for fast Gemini OCR",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "ALL_API_FAILED",
+      "detail": "Gemini + Ollama both failed — falling back to local OCR (EasyOCR)",
+      "severity": "error"
+    },
+    {
+      "page": 1,
+      "keyword": "IMAGE_RENDER",
+      "detail": "Page rendered to image for OCR (DPI=200)",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "EASYOCR",
+      "detail": "EasyOCR found 36 detections",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "IMAGES",
+      "detail": "Extracted 1",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "Final output produced by: **EasyOCR**",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_METHOD",
+      "detail": "Extraction method: ocr_local",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "UNICODE_REJECT",
+      "detail": "High control-char ratio (27.2%): legacy font encoding",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "UNICODE_REJECT",
+      "detail": "WinAnsi legacy Bangla font artefacts (18 chars)",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "UNICODE_REJECT",
+      "detail": "High symbol noise (30.1%) with no Bangla Unicode: corrupted encoding",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "CTRL_CHARS",
+      "detail": "Control-char ratio: 27.2%",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "LEGACY_FONT",
+      "detail": "WinAnsi/SutonnyMJ artefacts: 18",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "SYMBOL_NOISE",
+      "detail": "Symbol noise ratio: 30.1%",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "CONFIDENCE",
+      "detail": "Local OCR confidence: 72.0%",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "TIMING",
+      "detail": "Page processed in 88947ms",
+      "severity": "info"
+    }
+  ]
+}

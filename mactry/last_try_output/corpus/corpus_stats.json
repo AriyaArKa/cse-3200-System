@@ -1,0 +1,16 @@
+{
+  "total_records": 9,
+  "by_domain": {
+    "unknown": 9
+  },
+  "by_tier": {
+    "silver": 9
+  },
+  "by_engine": {
+    "EasyOCR": 8,
+    "Ollama (qwen2.5vl:7b)": 1
+  },
+  "avg_confidence": 0.7197,
+  "total_words": 1609,
+  "total_chars": 11135
+}

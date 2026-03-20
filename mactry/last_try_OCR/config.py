@@ -52,14 +52,14 @@ OLLAMA_MODEL_PRIORITY = [
     "moondream",
     "bakllava",
 ]
-OLLAMA_TIMEOUT = 75  # Timeout for local LLM calls (reduced for speed)
+OLLAMA_TIMEOUT = 300  # Timeout for local LLM calls (reduced for speed)
 OLLAMA_MAX_RETRIES = 2  # Local LLM retries (keep low - it's the fallback)
 
 # ══════════════════════════════════════════════════════════════════════
 # PDF PROCESSING
 # ══════════════════════════════════════════════════════════════════════
-DPI = 200  # Render DPI for OCR (200 = good balance of speed/quality)
-DPI_HIGH = 300  # High quality DPI (for critical documents)
+DPI = 300  # Render DPI for OCR (200 = good balance of speed/quality)
+DPI_HIGH = 400  # High quality DPI (for critical documents)
 DPI_LOW = 150  # Fast preview DPI
 MAX_PDF_SIZE_MB = 100
 OUTPUT_FORMAT = "png"
@@ -73,7 +73,7 @@ EASYOCR_USE_GPU = USE_GPU
 
 # OCR engine priority (first available will be used)
 # PaddleOCR is faster for Bangla; EasyOCR as fallback
-OCR_ENGINE_PRIORITY = ["paddleocr", "easyocr"]  # Order of preference
+OCR_ENGINE_PRIORITY = ["easyocr"]  # Order of preference
 
 # PaddleOCR specific
 PADDLE_DET_DB_THRESH = 0.3  # Detection threshold
@@ -106,9 +106,9 @@ WEIGHT_STRUCTURAL = 0.10
 # CONFIDENCE THRESHOLDS
 # ══════════════════════════════════════════════════════════════════════
 HIGH_CONFIDENCE = 0.80
-MEDIUM_CONFIDENCE = 0.55
+MEDIUM_CONFIDENCE = 0.80
 BANGLA_HIGH_CONFIDENCE = 0.85
-BANGLA_MEDIUM_CONFIDENCE = 0.65
+BANGLA_MEDIUM_CONFIDENCE = 0.85
 
 # Fallback trigger thresholds
 API_FALLBACK_THRESHOLD_ENGLISH = 0.55  # Below this → try API/LLM

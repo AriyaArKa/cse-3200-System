@@ -1,0 +1,525 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.7113,
+    "correction_applied": true,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলা একাডেম",
+      "confidence": 0.4723
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কাঙী নজরুল ইসলাম এভিনিড; রমনা, ঢাকা ১০০০",
+      "confidence": 0.3744
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "ই-শেইল : bacadennyea@gmai1 con",
+      "confidence": 0.3779
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ওযেব সাহট",
+      "confidence": 0.4727
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "en",
+      "text": "wwwbanশlaacadenigovibd",
+      "confidence": 0.1756
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পত্র সংখ্যা",
+      "confidence": 0.8776
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তারিখ",
+      "confidence": 0.897
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রমাপ-সা-৩৬১/২০২৫ / 969 তণ >",
+      "confidence": 0.1653
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সত9য",
+      "confidence": 0.1225
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অফিস বিজ্ঞাপত",
+      "confidence": 0.7476
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পবিত্র রমজান মাস উপলক্ষ্যে বাংলা একাডেমির বই বিক্রয়কেন্দ্ের বিক্রয় কার্যক্রম সকাল ৯০০টা থেকে বিকাল",
+      "confidence": 0.3609
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "৩:৩০টা, ঈদ-উল-ফিতরের ছুটি শেষে ৩১.০৩ ২০২৬ তারিখ পর্যন্ত সকাল ৯০০টা থেকে বিকাল ৫০০টা এবং",
+      "confidence": 0.3447
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "০১.০৪. ২০২৬ তারিখ থেকে পরবর্তী নির্দেশ না দেওয়া পর্যন্ত বিক্রয়কেন্দ্ের বই বিক্রয় কার্যক্রম সকাল ৯:০০টা",
+      "confidence": 0.3938
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "থেকে রাত ৭:৩০টা পর্যত্ত চলবে",
+      "confidence": 0.5777
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মহাপরিচালকের নির্দেশে",
+      "confidence": 0.662
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "স্বাক্ষর",
+      "confidence": 0.7702
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সমীর কুমার সরকার",
+      "confidence": 0.7617
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পরিচালক",
+      "confidence": 0.6492
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রশাসন, মানবসম্পদ উন্নয়ন ও পরিকল্পনা বিভাগ",
+      "confidence": 0.4994
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলা একাডেমি; ঢাকা",
+      "confidence": 0.3541
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিতরণ",
+      "confidence": 0.9999
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১.",
+      "confidence": 0.9957
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পরিচালক (সকল) , বাংলা একাডেমি; ঢাকা (বিভাগীয় সকল কর্মকর্তা ও কর্মচারীকে অবগতকরণের অনুরোধসহ)",
+      "confidence": 0.4939
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২.",
+      "confidence": 0.3952
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "উপপরিচালক (সকল) ব্যেবস্থাপক (প্রেস) সিনিয়র প্রশিক্ষক সহযোগী সম্পাদক বাণিজ্যিক ব্যবস্থাপক; বাংলা একাডেমি,",
+      "confidence": 0.2737
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঢাকা (উপবিভাগীয় সকল কর্মকর্তা ও কর্মচারীকে অবগতকরণের অনুরোধসহ)",
+      "confidence": 0.7061
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৩",
+      "confidence": 1.0
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মহাপরিচালক মহোদয়ের একাস্ত সচিব, বাংলা একাডেমি, ঢাকা (মহাপরিচালক মহোদয়ের সদয় অবগতির জন্য)",
+      "confidence": 0.3145
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "en",
+      "text": "8",
+      "confidence": 0.6713
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সচিব মহোদয়ের ব্যক্তিগত কর্মকর্তা, বাংলা একাডেমি, ঢাকা (সচিব মহোদয়ের সদয় অবগতির জন্য)",
+      "confidence": 0.3609
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৫",
+      "confidence": 0.557
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ওয়েবসাইট সংশ্লিষ্ট কর্মকর্তা, বাংলা একাডেমি, ঢাকা (ওয়েবসাইটে প্রকাশের জন্য)",
+      "confidence": 0.3719
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৬",
+      "confidence": 1.0
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নোটিশ বোর্ড, বাংলা একাডেমি; ঢাকা",
+      "confidence": 0.4574
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৭",
+      "confidence": 0.4707
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সংশ্লিষ্ট নথি",
+      "confidence": 0.588
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৫[6/242|-",
+      "confidence": 0.1065
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ইমরুল",
+      "confidence": 0.659
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "উপপরিচালক",
+      "confidence": 0.6804
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রশাসন উপবিভাগ",
+      "confidence": 0.7044
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাংলা একাডেমি; ঢাকা",
+      "confidence": 0.7433
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "en",
+      "text": "81",
+      "confidence": 0.4227
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Office Order-2026 Biggopti doc",
+      "confidence": 0.9026
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Scanned with",
+      "confidence": 0.72
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "en",
+      "text": "cs CamScanner\"",
+      "confidence": 0.6256
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ইউসুফ",
+      "confidence": 0.9244
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7636,
+      "rows": [
+        [
+          "বাংলা একাডেম"
+        ],
+        [
+          "কাঙী নজরুল ইসলাম এভিনিড; রমনা, ঢাকা ১০০০"
+        ],
+        [
+          "ই-শেইল : bacadennyea@gmail con"
+        ],
+        [
+          "ওযেব সাহট",
+          "wwwbanশlaacadenigovibd"
+        ],
+        [
+          "প্রমাপ-সা-৩৬১/২০২৫ / 969 তণ >",
+          "তারিখ"
+        ],
+        [
+          "পত্র সংখ্যা",
+          "সত9য"
+        ],
+        [
+          "অফিস বিজ্ঞাপত"
+        ],
+        [
+          "পবিত্র রমজান মাস উপলক্ষ্যে বাংলা একাডেমির বই বিক্রয়কেন্দ্ের বিক্রয় কার্যক্রম সকাল ৯০০টা থেকে বিকাল"
+        ],
+        [
+          "৩:৩০টা, ঈদ-উল-ফিতরের ছুটি শেষে ৩১.০৩ ২০২৬ তারিখ পর্যন্ত সকাল ৯০০টা থেকে বিকাল ৫০০টা এবং"
+        ],
+        [
+          "০১.০৪. ২০২৬ তারিখ থেকে পরবর্তী নির্দেশ না দেওয়া পর্যন্ত বিক্রয়কেন্দ্ের বই বিক্রয় কার্যক্রম সকাল ৯:০০টা"
+        ],
+        [
+          "থেকে রাত ৭:৩০টা পর্যত্ত চলবে"
+        ],
+        [
+          "মহাপরিচালকের নির্দেশে"
+        ],
+        [
+          "স্বাক্ষর",
+          "সমীর কুমার সরকার"
+        ],
+        [
+          "পরিচালক"
+        ],
+        [
+          "প্রশাসন, মানবসম্পদ উন্নয়ন ও পরিকল্পনা বিভাগ"
+        ],
+        [
+          "বাংলা একাডেমি; ঢাকা"
+        ],
+        [
+          "বিতরণ"
+        ],
+        [
+          "১.",
+          "পরিচালক (সকল) , বাংলা একাডেমি; ঢাকা (বিভাগীয় সকল কর্মকর্তা ও কর্মচারীকে অবগতকরণের অনুরোধসহ)"
+        ],
+        [
+          "২.",
+          "উপপরিচালক (সকল) ব্যেবস্থাপক (প্রেস) সিনিয়র প্রশিক্ষক সহযোগী সম্পাদক বাণিজ্যিক ব্যবস্থাপক; বাংলা একাডেমি,"
+        ],
+        [
+          "ঢাকা (উপবিভাগীয় সকল কর্মকর্তা ও কর্মচারীকে অবগতকরণের অনুরোধসহ)"
+        ],
+        [
+          "৩",
+          "মহাপরিচালক মহোদয়ের একাস্ত সচিব, বাংলা একাডেমি, ঢাকা (মহাপরিচালক মহোদয়ের সদয় অবগতির জন্য)"
+        ],
+        [
+          "8",
+          "সচিব মহোদয়ের ব্যক্তিগত কর্মকর্তা, বাংলা একাডেমি, ঢাকা (সচিব মহোদয়ের সদয় অবগতির জন্য)"
+        ],
+        [
+          "৫",
+          "ওয়েবসাইট সংশ্লিষ্ট কর্মকর্তা, বাংলা একাডেমি, ঢাকা (ওয়েবসাইটে প্রকাশের জন্য)"
+        ],
+        [
+          "৬",
+          "নোটিশ বোর্ড, বাংলা একাডেমি; ঢাকা"
+        ],
+        [
+          "৭",
+          "সংশ্লিষ্ট নথি"
+        ],
+        [
+          "৫[6/242|-"
+        ],
+        [
+          "ইমরুল",
+          "ইউসুফ"
+        ],
+        [
+          "উপপরিচালক"
+        ],
+        [
+          "প্রশাসন উপবিভাগ"
+        ],
+        [
+          "বাংলা একাডেমি; ঢাকা"
+        ],
+        [
+          "81",
+          "Office Order-2026 Biggopti doc"
+        ],
+        [
+          "Scanned with"
+        ],
+        [
+          "cs CamScanner\""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1936x2736)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (240x90)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "বাংলা একাডেম\nকাঙী নজরুল ইসলাম এভিনিড; রমনা, ঢাকা ১০০০\nই-শেইল : bacadennyea@gmai1 con\nওযেব সাহট\nwwwbanশlaacadenigovibd\nপত্র সংখ্যা\nতারিখ\nপ্রমাপ-সা-৩৬১/২০২৫ / 969 তণ >\nসত9য\nঅফিস বিজ্ঞাপত\nপবিত্র রমজান মাস উপলক্ষ্যে বাংলা একাডেমির বই বিক্রয়কেন্দ্ের বিক্রয় কার্যক্রম সকাল ৯০০টা থেকে বিকাল\n৩:৩০টা, ঈদ-উল-ফিতরের ছুটি শেষে ৩১.০৩ ২০২৬ তারিখ পর্যন্ত সকাল ৯০০টা থেকে বিকাল ৫০০টা এবং\n০১.০৪. ২০২৬ তারিখ থেকে পরবর্তী নির্দেশ না দেওয়া পর্যন্ত বিক্রয়কেন্দ্ের বই বিক্রয় কার্যক্রম সকাল ৯:০০টা\nথেকে রাত ৭:৩০টা পর্যত্ত চলবে\nমহাপরিচালকের নির্দেশে\nস্বাক্ষর\nসমীর কুমার সরকার\nপরিচালক\nপ্রশাসন, মানবসম্পদ উন্নয়ন ও পরিকল্পনা বিভাগ\nবাংলা একাডেমি; ঢাকা\nবিতরণ\n১.\nপরিচালক (সকল) , বাংলা একাডেমি; ঢাকা (বিভাগীয় সকল কর্মকর্তা ও কর্মচারীকে অবগতকরণের অনুরোধসহ)\n২.\nউপপরিচালক (সকল) ব্যেবস্থাপক (প্রেস) সিনিয়র প্রশিক্ষক সহযোগী সম্পাদক বাণিজ্যিক ব্যবস্থাপক; বাংলা একাডেমি,\nঢাকা (উপবিভাগীয় সকল কর্মকর্তা ও কর্মচারীকে অবগতকরণের অনুরোধসহ)\n৩\nমহাপরিচালক মহোদয়ের একাস্ত সচিব, বাংলা একাডেমি, ঢাকা (মহাপরিচালক মহোদয়ের সদয় অবগতির জন্য)\n8\nসচিব মহোদয়ের ব্যক্তিগত কর্মকর্তা, বাংলা একাডেমি, ঢাকা (সচিব মহোদয়ের সদয় অবগতির জন্য)\n৫\nওয়েবসাইট সংশ্লিষ্ট কর্মকর্তা, বাংলা একাডেমি, ঢাকা (ওয়েবসাইটে প্রকাশের জন্য)\n৬\nনোটিশ বোর্ড, বাংলা একাডেমি; ঢাকা\n৭\nসংশ্লিষ্ট নথি\n৫[6/242|-\nইমরুল\nউপপরিচালক\nপ্রশাসন উপবিভাগ\nবাংলা একাডেমি; ঢাকা\n81\nOffice Order-2026 Biggopti doc\nScanned with\ncs CamScanner\"\nইউসুফ",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/61a90746-612b-436e-9713-54bc12ea2dcc-3_7a8532d6/page_1.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "SCANNED",
+      "detail": "Page classified as SCANNED",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "IMAGE_RENDER",
+      "detail": "Page rendered to image for OCR (DPI=200)",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "EASYOCR",
+      "detail": "EasyOCR found 46 detections",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "IMAGES",
+      "detail": "Extracted 2",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "Final output produced by: **EasyOCR**",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_METHOD",
+      "detail": "Extraction method: ocr_local",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "CONFIDENCE",
+      "detail": "Local OCR confidence: 71.1%",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "TIMING",
+      "detail": "Page processed in 80115ms",
+      "severity": "info"
+    }
+  ]
+}
