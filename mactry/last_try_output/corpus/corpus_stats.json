@@ -1,16 +1,16 @@
 {
-  "total_records": 9,
+  "total_records": 17,
   "by_domain": {
-    "unknown": 9
+    "unknown": 17
   },
   "by_tier": {
-    "silver": 9
+    "silver": 17
   },
   "by_engine": {
-    "EasyOCR": 8,
-    "Ollama (qwen2.5vl:7b)": 1
+    "EasyOCR": 14,
+    "Ollama (qwen2.5vl:7b)": 3
   },
-  "avg_confidence": 0.7197,
-  "total_words": 1609,
-  "total_chars": 11135
+  "avg_confidence": 0.7247,
+  "total_words": 3377,
+  "total_chars": 23497
 }

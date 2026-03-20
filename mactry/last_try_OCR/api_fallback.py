@@ -131,17 +131,65 @@ def _ocr_with_ollama(
 ) -> Optional[str]:
     """Send image to Ollama for OCR using a vision-capable model."""
     try:
-        img_b64 = base64.b64encode(img_bytes).decode("utf-8")
+        from PIL import Image as PILImage
+        import io as _io
+        pil_img = PILImage.open(_io.BytesIO(img_bytes))
+        max_side = 1600
+        if max(pil_img.size) > max_side:
+            pil_img.thumbnail((max_side, max_side), PILImage.LANCZOS)
+        buf = _io.BytesIO()
+        pil_img.save(buf, format="PNG")
+        img_b64 = base64.b64encode(buf.getvalue()).decode("utf-8")
 
         prompt = (
-            "You are a document OCR expert. Extract ALL text from this image exactly as it appears.\n"
-            "This document contains Bangla (Bengali) and possibly English text.\n\n"
-            "Rules:\n"
-            "1. Preserve every Bangla Unicode character exactly — matras, hasanta, conjuncts\n"
-            "2. Preserve Bangla numerals (০১২৩৪৫৬৭৮৯) digit by digit — do NOT guess\n"
-            "3. Keep original line breaks\n"
-            "4. For tables, preserve rows with | separators\n"
-            "5. Output ONLY the extracted text — no explanation, no markdown\n"
+            "You are an expert OCR engine for Bangla and English documents. "
+            "Extract ALL text from this image with 100% accuracy.\n\n"
+            "DOCUMENT TYPES YOU MAY SEE:\n"
+            "Government notices, official letters, press releases, academic documents, "
+            "court orders, land records, newspaper articles, forms, tables, certificates, "
+            "memos, circulars, advertisements, seminar notices, university notices.\n\n"
+            "EXTRACTION RULES:\n"
+            "1. Extract every word exactly as printed — do not paraphrase or summarize\n"
+            "2. Preserve all Bangla Unicode exactly — matras (া ি ী ু ূ ে ৈ ো ৌ), "
+            "hasanta (্), anusvara (ং), visarga (ঃ), chandrabindu (ঁ), and all conjuncts\n"
+            "3. Bangla numerals (০১২৩৪৫৬৭৮৯) — extract digit by digit, never guess from context\n"
+            "4. English mixed in Bangla text — preserve exactly including capitalization\n"
+            "5. Dates: preserve exactly as written — ২৩.০৬.২০২৫ or ২৩/০৬/২০২৫ or June 23, 2025\n"
+            "6. Reference numbers, memo numbers, phone numbers — preserve every digit exactly\n"
+            "7. Email addresses and URLs — use only letters, never replace l with 1 or O with 0\n"
+            "8. Institution names — use correct standard spelling:\n"
+            "   ঢাকা বিশ্ববিদ্যালয়, জাহাঙ্গীরনগর বিশ্ববিদ্যালয়, চট্টগ্রাম বিশ্ববিদ্যালয়,\n"
+            "   রাজশাহী বিশ্ববিদ্যালয়, বুয়েট, বাংলা একাডেমি, জাতীয় বিশ্ববিদ্যালয়,\n"
+            "   ইসলামী বিশ্ববিদ্যালয়, খুলনা বিশ্ববিদ্যালয়, শাহজালাল বিশ্ববিদ্যালয়\n"
+            "9. Person titles — use correct standard forms:\n"
+            "   জনাব, ড., অধ্যাপক, সহযোগী অধ্যাপক, সহকারী অধ্যাপক, প্রভাষক,\n"
+            "   মহাপরিচালক, পরিচালক, সচিব, উপসচিব, যুগ্মসচিব, অতিরিক্ত সচিব\n"
+            "10. Government ministry names — use correct standard forms:\n"
+            "    শিক্ষা মন্ত্রণালয়, স্বাস্থ্য মন্ত্রণালয়, অর্থ মন্ত্রণালয়,\n"
+            "    আইন মন্ত্রণালয়, তথ্য মন্ত্রণালয়, গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\n\n"
+            "LAYOUT RULES:\n"
+            "11. Tables — preserve with rows, use | to separate columns\n"
+            "12. Multi-column layout — read left column fully first, then right column\n"
+            "13. Headers and footers — include them, mark with [HEADER] and [FOOTER]\n"
+            "14. Stamps and seals — describe as [SEAL: description] or [STAMP: text]\n"
+            "15. Signatures — write [SIGNATURE] do not guess the name unless clearly printed\n"
+            "16. Checkboxes — ☑ for checked, ☐ for unchecked\n"
+            "17. Strikethrough text — wrap as ~~text~~\n"
+            "18. Handwritten text — extract if legible, mark illegible parts as [ILLEGIBLE]\n"
+            "19. Page numbers — include as printed\n"
+            "20. Logos and emblems — describe as [LOGO: description]\n\n"
+            "COMMON BANGLA OCR ERRORS TO AVOID:\n"
+            "- র and ব look similar — check carefully\n"
+            "- ণ and ন look similar — check carefully\n"
+            "- শ and স look similar — check carefully\n"
+            "- ৩ vs ৫: ৩ has curved top, ৫ has flat horizontal top bar\n"
+            "- ৬ vs ৯: ৬ curves left at bottom, ৯ curves right at bottom\n"
+            "- ৮ vs ৪: ৮ has two loops, ৪ has one open curve\n"
+            "- ২ vs ৩: ২ has one belly, ৩ has two bellies\n"
+            "- Do not split conjuncts — ক্ষ, জ্ঞ, ত্র, ন্ত, ন্দ, ম্ব, ল্ল must stay intact\n\n"
+            "OUTPUT FORMAT:\n"
+            "Return only the extracted text in reading order — top to bottom, left to right.\n"
+            "No explanation. No commentary. No markdown formatting. Just the text.\n"
         )
 
         is_qwen = "qwen" in model.lower()
@@ -160,8 +208,8 @@ def _ocr_with_ollama(
                 "stream": False,
                 "options": {
                     "temperature": 0.1,
-                    "num_predict": 4096,
-                    "num_ctx": 8192,
+                    "num_predict": 2048,
+                    "num_ctx": 4096,
                 },
             }
             endpoint = f"{config.OLLAMA_BASE_URL}/api/chat"

@@ -81,10 +81,9 @@ def validate_and_fix_numbers(text: str) -> Tuple[str, List[dict]]:
 
 
 def _looks_numeric_context(token: str) -> bool:
-    """
-    Determine if a token is likely a number based on
-    the ratio of digit-like characters.
-    """
+    # Never fix inside email addresses or URLs
+    if "@" in token or ("." in token and any(c.isalpha() for c in token)):
+        return False
     digit_like = sum(
         1 for ch in token if ch.isdigit() or ch in _CONFUSION_MAP or ch in ".,"
     )

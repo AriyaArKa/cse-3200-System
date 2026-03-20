@@ -32,7 +32,7 @@ GEMINI_MAX_RETRIES = 2  # Reduced for faster fallback to local LLM
 GEMINI_RETRY_DELAY = 1.0  # Seconds between retries
 GEMINI_TIMEOUT = 30  # Timeout in seconds
 USE_OLLAMA_FIRST = os.getenv("USE_OLLAMA_FIRST", "true").lower() == "true"
-GEMINI_ENABLED = bool(GEMINI_API_KEY) and not USE_OLLAMA_FIRST
+GEMINI_ENABLED = False
 
 # ══════════════════════════════════════════════════════════════════════
 # LOCAL LLM SETTINGS (Ollama fallback)
@@ -58,8 +58,8 @@ OLLAMA_MAX_RETRIES = 2  # Local LLM retries (keep low - it's the fallback)
 # ══════════════════════════════════════════════════════════════════════
 # PDF PROCESSING
 # ══════════════════════════════════════════════════════════════════════
-DPI = 300  # Render DPI for OCR (200 = good balance of speed/quality)
-DPI_HIGH = 400  # High quality DPI (for critical documents)
+DPI = 200  # Render DPI for OCR (200 = good balance of speed/quality)
+DPI_HIGH = 300  # High quality DPI (for critical documents)
 DPI_LOW = 150  # Fast preview DPI
 MAX_PDF_SIZE_MB = 100
 OUTPUT_FORMAT = "png"
@@ -118,7 +118,7 @@ API_FALLBACK_THRESHOLD_BANGLA = 0.65  # Bangla needs higher threshold
 # SPEED OPTIMIZATION
 # ══════════════════════════════════════════════════════════════════════
 # Skip EasyOCR for large images (use Gemini/LLM directly)
-SKIP_LOCAL_OCR_ABOVE_PIXELS = 2_000_000  # ~1400x1400 pixels
+SKIP_LOCAL_OCR_ABOVE_PIXELS = 0  # ~1400x1400 pixels
 # Maximum image dimension for API calls (resize if larger)
 MAX_IMAGE_DIMENSION = 2048
 # Enable fast mode (lower DPI, skip some validations)
