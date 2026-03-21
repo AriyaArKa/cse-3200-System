@@ -41,6 +41,8 @@ OLLAMA_MODEL_PRIORITY = [
 ]
 OLLAMA_TIMEOUT = 180
 OLLAMA_MAX_RETRIES = 1
+OLLAMA_MIN_IMAGE_EDGE = 896
+OLLAMA_MAX_IMAGE_EDGE = 1280
 
 # ── PDF Processing ─────────────────────────────────────────────────────────
 DPI = 180
@@ -107,7 +109,7 @@ API_FALLBACK_THRESHOLD_ENGLISH = 0.55
 
 # LLM confidence floor — applied after Ollama/Gemini processes a Bangla page.
 # Prevents the dictionary penalty from misrepresenting correct LLM output.
-LLM_BANGLA_CONFIDENCE_FLOOR = 0.78
+LLM_BANGLA_CONFIDENCE_FLOOR = 0.86
 
 # ── Performance (M4 16 GB tuning) ─────────────────────────────────────────
 # MEMORY LIMIT: 2 EasyOCR threads × ~1.5 GB = ~3 GB for workers.
