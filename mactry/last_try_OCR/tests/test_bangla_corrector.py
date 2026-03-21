@@ -1,16 +1,11 @@
-import pytest
-
 from last_try_OCR.nlp.bangla_corrector import (
-    compute_word_validity,
-    correct_bangla_text,
-    fix_combining_sequences,
-    fix_hasanta,
-    fix_matra_errors,
-    normalize_unicode,
+    normalize_unicode, fix_combining_sequences,
+    fix_matra_errors, fix_hasanta,
+    correct_bangla_text, compute_word_validity,
 )
 
 
-def test_normalize_unicode_removes_invisible():
+def test_normalize_removes_zero_width():
     text = "বাংলা\u200b\u200cটেক্সট"
     result = normalize_unicode(text)
     assert "\u200b" not in result
@@ -18,33 +13,30 @@ def test_normalize_unicode_removes_invisible():
 
 
 def test_fix_matra_errors_double_aa():
-    text = "বাংলা\u09be\u09beদেশ"
-    fixed = fix_matra_errors(text)
-    assert "\u09be\u09be" not in fixed
+    assert "\u09be\u09be" not in fix_matra_errors("বা\u09be\u09beংলা")
 
 
 def test_fix_hasanta_double():
-    text = "বাংলা\u09cd\u09cdদেশ"
-    fixed = fix_hasanta(text)
-    assert "\u09cd\u09cd" not in fixed
+    assert "\u09cd\u09cd" not in fix_hasanta("ক\u09cd\u09cdষ")
 
 
-def test_compute_word_validity_known_words():
-    score_valid = compute_word_validity("বাংলাদেশ সরকার শিক্ষা বিভাগ")
-    score_garbage = compute_word_validity("ক্ষঞঢখঝঢ পখফগঘঙ")
-    assert score_valid >= score_garbage
+def test_word_validity_returns_float():
+    score = compute_word_validity("বাংলাদেশ সরকার শিক্ষা বিভাগ")
+    assert 0.0 <= score <= 1.0
 
 
-def test_correct_bangla_text_returns_tuple():
-    text = "বাংলাদেশ সরকারের নির্দেশনা"
-    result, log = correct_bangla_text(text)
-    assert isinstance(result, str)
-    assert isinstance(log, dict)
-    assert "corrections" in log
+def test_word_validity_known_beats_garbage():
+    known = compute_word_validity("বাংলাদেশ সরকার শিক্ষা বিভাগ এবং জন্য")
+    garb = compute_word_validity("ক্ষঞঢখঝঢ পখফগঘঙ ঝড়ঢ়বব")
+    assert known >= garb
 
 
-def test_correct_bangla_text_preserves_english():
-    text = "বাংলা text এবং English mixed"
-    result, _ = correct_bangla_text(text)
+def test_correct_text_returns_tuple():
+    result, log = correct_bangla_text("বাংলাদেশ সরকারের নির্দেশনা")
+    assert isinstance(result, str) and "corrections" in log
+
+
+def test_correct_text_preserves_english():
+    result, _ = correct_bangla_text("বাংলা text এবং English mixed")
     assert "English" in result
     assert "text" in result

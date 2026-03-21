@@ -51,6 +51,22 @@ def main():
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     )
 
+    # Preflight: check Ollama availability and warn if missing
+    try:
+        from last_try_OCR.fallback.llm_fallback import get_service_status
+
+        svc = get_service_status()
+        if svc.get("ollama_available") is False:
+            print(
+                f"⚠  Ollama unavailable: {svc.get('ollama_error', 'unknown')}\n"
+                "   Bangla pages will use EasyOCR only. For better accuracy:\n"
+                "   ollama pull qwen2.5vl:7b && ollama serve"
+            )
+        elif svc.get("ollama_available") is True:
+            print(f"✓  Ollama ready: {svc.get('ollama_model')}")
+    except Exception:
+        pass
+
     for pdf_path in args.pdf_paths:
         if not Path(pdf_path).exists():
             print(f"ERROR: File not found: {pdf_path}")

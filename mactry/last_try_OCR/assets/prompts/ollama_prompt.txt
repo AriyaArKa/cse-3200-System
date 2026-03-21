@@ -1,22 +1,39 @@
-Extract all text from this document image exactly.
+Extract all text from this document image exactly as printed.
 
-Rules:
-1. Preserve Bangla Unicode exactly, including matras and conjuncts.
-2. Bengali digits (০-৯): extract digit by digit.
-3. Never guess missing digits from context.
-4. Confusion checks:
-   - ৩ vs ৫: ৩ curved top, ৫ flat top bar
-   - ৮ vs ৪: ৮ two loops, ৪ one open curve
-   - ৬ vs ৯: ৬ curves left, ৯ curves right
-   - ২ vs ৩: ২ one belly, ৩ two bellies
-5. Keep mixed Bangla + English exactly as written.
-6. Keep dates and স্মারক নং values exactly.
-7. Keep punctuation and line breaks.
-8. Tables: use | between columns and newline between rows.
-9. Seals/stamps: write [SEAL: description].
-10. Handwriting: mark [HANDWRITTEN].
-11. Do not split conjuncts: ক্ষ, জ্ঞ, ত্র, ন্ত, ন্দ, ন্ধ, ম্ব, ল্ল.
-12. Output plain text only.
-13. No JSON.
-14. No markdown.
-15. No explanation.
+BANGLA RULES:
+1. Preserve every matra (া ি ী ু ূ ে ো ৌ), hasanta (্), anusvara (ং), chandrabindu (ঁ).
+2. Do NOT split conjuncts: ক্ষ জ্ঞ ত্র ন্ত ন্দ ন্ধ ম্ব ল্ল ষ্ট ষ্ঠ হ্ম ব্র দ্ব দ্ধ
+3. Bengali digits (০১২৩৪৫৬৭৮৯) — read each digit individually, never guess:
+   ৩ vs ৫ → ৩ has curved top, ৫ has FLAT horizontal top bar
+   ৮ vs ৪ → ৮ has TWO loops, ৪ has ONE open curve
+   ৬ vs ৯ → ৬ curves LEFT at bottom, ৯ curves RIGHT
+   ২ vs ৩ → ২ has ONE belly, ৩ has TWO bellies
+   ১ vs ৭ → ১ is a simple stroke, ৭ has a hooked top
+
+GOVERNMENT DOCUMENT PATTERNS — preserve exactly:
+- স্মারক নং (Smarak No): reference number, preserve every digit
+- তারিখ (Date): e.g. ২৩/০৬/২০২৫ — verify day 1-31, month 01-12
+- বিষয়: (Subject): copy the full line
+- গণপ্রজাতন্ত্রী বাংলাদেশ সরকার — standard header spelling
+- মহোদয় — preserve as-is
+- অনুলিপি — preserve as-is
+
+COMMON BANGLA OCR MISTAKES TO AVOID:
+- র and ব look similar in some fonts — check carefully
+- ণ and ন look similar — check carefully
+- শ and স look similar — check carefully
+- রেফ (র্) is written above the consonant — do not drop it
+- হসন্ত (্) joins two consonants into a conjunct — keep them joined
+- দন্ড (।) is the Bangla full stop — do not read it as the digit 1
+
+LAYOUT:
+- Tables: use | between columns, newline between rows
+- Seals/stamps: write [SEAL: description]
+- Signatures: write [SIGNATURE]
+- Handwritten text: mark [HANDWRITTEN]
+- Headers/footers: include them
+
+OUTPUT:
+- Plain text only
+- Reading order: top to bottom, left to right
+- No JSON, no markdown, no explanation

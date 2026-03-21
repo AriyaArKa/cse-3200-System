@@ -168,6 +168,70 @@ def _save_cache(pdf_path: str, result: DocumentResult) -> None:
     )
 
 
+def _estimate_bangla_ratio_quick(img_bytes: bytes) -> float:
+    """
+    Estimate Bangla ratio by running EasyOCR on a small center crop.
+    Fast (300×200px strip) — used to decide Bangla-direct routing.
+    Returns 0.0 on any error (conservative: won't skip EasyOCR if unsure).
+    """
+    try:
+        import cv2
+        import numpy as np
+
+        from .core.ocr_engine import _init_easyocr
+
+        nparr = np.frombuffer(img_bytes, np.uint8)
+        img = cv2.imdecode(nparr, cv2.IMREAD_GRAYSCALE)
+        if img is None:
+            return 0.0
+        h, w = img.shape
+        cy, cx = h // 2, w // 2
+        crop = img[max(0, cy - 100):cy + 100, max(0, cx - 150):cx + 150]
+        reader = _init_easyocr()
+        texts = reader.readtext(crop, detail=0)
+        sample = " ".join(texts)
+        return bangla_char_ratio(sample) if sample else 0.0
+    except Exception:
+        return 0.0
+
+
+def _ollama_is_available() -> bool:
+    """Return Ollama availability from cached service status."""
+    from .fallback.llm_fallback import _service_status, _check_ollama_available
+
+    status = _service_status.get("ollama_available")
+    if status is True:
+        return True
+    if status is False:
+        return False
+    avail, model, err = _check_ollama_available()
+    _service_status["ollama_available"] = avail
+    _service_status["ollama_model"] = model
+    _service_status["ollama_error"] = err
+    config.set_status("ollama_available", avail)
+    config.set_status("ollama_model", model)
+    return avail
+
+
+def _apply_corrections(
+    blocks: list,
+    page_log: dict,
+) -> tuple:
+    """Apply Bangla correction + numeric validation to a block list.
+    Returns (blocks, correction_applied_bool).
+    """
+    correction_applied = False
+    for block in blocks:
+        if block.language in ("bn", "mixed"):
+            block.text, corr_log = correct_bangla_text(block.text)
+            if corr_log.get("corrections"):
+                correction_applied = True
+        block.text, num_disc = validate_and_fix_numbers(block.text)
+        if num_disc:
+            page_log.setdefault("numeric_fixes", []).extend(num_disc)
+    return blocks, correction_applied
+
+
 def _process_single_page(pdf_path: str, page_num: int, doc_id: str, domain: str = "unknown") -> PageResult:
     page_log: dict = {"page_number": page_num, "steps": []}
     start = time.time()
@@ -244,14 +308,7 @@ def _process_single_page(pdf_path: str, page_num: int, doc_id: str, domain: str 
             api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
             if api_text:
                 content_blocks = gemini_text_to_blocks(api_text, page_num)
-                for block in content_blocks:
-                    if block.language in ("bn", "mixed"):
-                        block.text, corr_log = correct_bangla_text(block.text)
-                        if corr_log.get("corrections"):
-                            correction_applied = True
-                    block.text, num_disc = validate_and_fix_numbers(block.text)
-                    if num_disc:
-                        page_log.setdefault("numeric_fixes", []).extend(num_disc)
+                content_blocks, correction_applied = _apply_corrections(content_blocks, page_log)
                 method = "ocr_api"
                 engine = api_engine
                 sent_to_api = True
@@ -264,38 +321,76 @@ def _process_single_page(pdf_path: str, page_num: int, doc_id: str, domain: str 
         source_image_path = _persist_page_image(img_bytes)
         page_log["steps"].append(f"rendered_to_image (DPI={config.DPI})")
 
-        method = "ocr_local"
-        engine = "EasyOCR"
-        detections = run_dual_ocr(img_bytes)
-        page_log["steps"].append(f"easyocr: {len(detections)} detections")
+        # ── Bangla-direct path ─────────────────────────────────────────────
+        # If Ollama is running and this looks like a Bangla-heavy page,
+        # skip EasyOCR entirely and send directly to Ollama.
+        # Why: EasyOCR always scores < threshold on Bangla → always falls back
+        # to Ollama anyway. Skipping saves 3-8 seconds per page.
+        used_direct = False
+        detections = []  # keep in scope for table extraction below
 
-        content_blocks = detections_to_blocks(detections)
-        for block in content_blocks:
-            if block.language in ("bn", "mixed"):
-                block.text, corr_log = correct_bangla_text(block.text)
-                if corr_log.get("corrections"):
-                    correction_applied = True
-            block.text, num_disc = validate_and_fix_numbers(block.text)
-            if num_disc:
-                page_log.setdefault("numeric_fixes", []).extend(num_disc)
+        if _ollama_is_available():
+            quick_bn = _estimate_bangla_ratio_quick(img_bytes)
+            page_log["steps"].append(f"quick_bangla_estimate: {quick_bn:.2f}")
 
-        is_bangla_heavy = any(b.language in ("bn", "mixed") for b in content_blocks)
-        confidence = score_blocks(content_blocks, is_bangla_heavy)
-        page_log["local_confidence"] = confidence
-
-        if needs_api_fallback(confidence, is_bangla_heavy):
-            page_log["steps"].append("api_fallback_triggered")
-            api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
-            if api_text:
-                api_blocks = gemini_text_to_blocks(api_text, page_num)
-                if api_blocks:
-                    content_blocks = api_blocks
+            if quick_bn >= config.BANGLA_DIRECT_LLM_THRESHOLD:
+                page_log["steps"].append("bangla_direct_to_ollama")
+                api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
+                if api_text:
+                    content_blocks = gemini_text_to_blocks(api_text, page_num)
+                    content_blocks, correction_applied = _apply_corrections(
+                        content_blocks, page_log
+                    )
                     method = "ocr_api"
                     engine = api_engine
                     sent_to_api = True
-                    page_log["steps"].append("api_fallback_success")
-            else:
-                page_log["steps"].append("api_fallback_failed_all_engines")
+                    used_direct = True
+                    page_log["steps"].append("bangla_direct_success")
+                else:
+                    page_log["steps"].append("bangla_direct_failed_falling_to_easyocr")
+
+        # ── EasyOCR path ───────────────────────────────────────────────────
+        # Used when: English page, Ollama unavailable, or bangla-direct failed.
+        if not used_direct:
+            method = "ocr_local"
+            engine = "EasyOCR"
+            detections = run_dual_ocr(img_bytes)
+            page_log["steps"].append(f"easyocr: {len(detections)} detections")
+
+            content_blocks = detections_to_blocks(detections)
+            content_blocks, correction_applied = _apply_corrections(
+                content_blocks, page_log
+            )
+
+            is_bn = any(b.language in ("bn", "mixed") for b in content_blocks)
+            local_conf = score_blocks(content_blocks, is_bn)
+            page_log["local_confidence"] = local_conf
+
+            if needs_api_fallback(local_conf, is_bn):
+                page_log["steps"].append("api_fallback_triggered")
+                api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
+                if api_text:
+                    api_blocks = gemini_text_to_blocks(api_text, page_num)
+                    if api_blocks:
+                        api_blocks, _ = _apply_corrections(api_blocks, page_log)
+                        content_blocks = api_blocks
+                        method = "ocr_api"
+                        engine = api_engine
+                        sent_to_api = True
+                        page_log["steps"].append("api_fallback_success")
+                else:
+                    page_log["steps"].append("api_fallback_failed_all_engines")
+                    # DPI escalation — last resort before giving up
+                    if local_conf < 0.55:
+                        page_log["steps"].append("dpi_escalation_retry")
+                        img_hq = render_page_to_image(page, dpi=config.DPI_HIGH)
+                        dets_hq = run_dual_ocr(img_hq)
+                        if len(dets_hq) > len(detections):
+                            content_blocks = detections_to_blocks(dets_hq)
+                            content_blocks, _ = _apply_corrections(content_blocks, page_log)
+                            page_log["steps"].append(
+                                f"dpi_escalation_improved: {len(dets_hq)} detections"
+                            )
 
         tables = extract_tables_scanned(img_bytes, detections, page_num)
         for t in tables:
@@ -313,6 +408,21 @@ def _process_single_page(pdf_path: str, page_num: int, doc_id: str, domain: str 
     full_text = "\n".join(b.text for b in content_blocks)
     is_bangla_heavy = any(b.language in ("bn", "mixed") for b in content_blocks)
     final_confidence = score_blocks(content_blocks, is_bangla_heavy)
+
+    # ── LLM confidence floor ───────────────────────────────────────────────
+    # When Ollama/Gemini processed a Bangla page, the dictionary penalty on
+    # proper nouns still makes score_blocks() return a low number even when
+    # the text is actually correct. Apply a floor of 0.78 when:
+    #   1. An LLM was used (method == "ocr_api")
+    #   2. Output contains real Bangla Unicode (bn_ratio > 0.3)
+    #   3. Raw score is below the floor
+    if method == "ocr_api" and is_bangla_heavy:
+        _bn = bangla_char_ratio(full_text)
+        if _bn > 0.3 and final_confidence < config.LLM_BANGLA_CONFIDENCE_FLOOR:
+            final_confidence = config.LLM_BANGLA_CONFIDENCE_FLOOR
+            page_log["steps"].append(
+                f"llm_confidence_floor_applied: {final_confidence:.2f}"
+            )
 
     page_log["processing_time_ms"] = round((time.time() - start) * 1000, 2)
     decisions = _build_page_decisions(page_num, page_log, method, engine)

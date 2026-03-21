@@ -76,6 +76,12 @@ _OCR_PROGRESS = {
     "current_page": 0,
     "total_pages": 0,
 }
+_progress_lock = asyncio.Lock()
+
+
+async def _update_progress(**kwargs) -> None:
+    async with _progress_lock:
+        _OCR_PROGRESS.update(kwargs)
 
 
 def _compute_doc_id(filename: str) -> str:
@@ -87,6 +93,26 @@ def _compute_doc_id(filename: str) -> str:
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok"}
+
+
+@app.get("/corpus/stats")
+def corpus_stats() -> dict:
+    """Return corpus statistics if available."""
+    stats_path = config.OUTPUT_DIR / "corpus" / "corpus_stats.json"
+    try:
+        if stats_path.exists():
+            return json.loads(stats_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        logger.warning("Failed reading corpus stats: %s", exc)
+    return {
+        "total_records": 0,
+        "by_domain": {},
+        "by_tier": {},
+        "by_engine": {},
+        "avg_confidence": 0.0,
+        "total_words": 0,
+        "total_chars": 0,
+    }
 
 
 @app.get("/stats")
@@ -172,24 +198,28 @@ async def ocr_upload(
                     fh.write(content)
 
                 doc_id = _compute_doc_id(upload_file.filename)
-                _OCR_PROGRESS.update(
-                    {
-                        "is_processing": True,
-                        "current_file": upload_file.filename,
-                        "current_page": 0,
-                        "total_pages": 0,
-                    }
+                await _update_progress(
+                    is_processing=True,
+                    current_file=upload_file.filename,
+                    current_page=0,
+                    total_pages=0,
                 )
+                loop = asyncio.get_running_loop()
 
                 def _progress_cb(current_page: int, total_pages: int) -> None:
-                    _OCR_PROGRESS.update(
-                        {
-                            "is_processing": True,
-                            "current_file": upload_file.filename,
-                            "current_page": current_page,
-                            "total_pages": total_pages,
-                        }
+                    fut = asyncio.run_coroutine_threadsafe(
+                        _update_progress(
+                            is_processing=True,
+                            current_file=upload_file.filename,
+                            current_page=current_page,
+                            total_pages=total_pages,
+                        ),
+                        loop,
                     )
+                    try:
+                        fut.result(timeout=1)
+                    except Exception:
+                        pass
 
                 doc_result = await asyncio.to_thread(process_pdf, tmp_path, True, domain, _progress_cb)
                 result_dict = doc_result.to_dict()
@@ -203,13 +233,11 @@ async def ocr_upload(
                 logger.exception("Failed to process %s", upload_file.filename)
                 results.append({"filename": upload_file.filename, "error": str(exc)})
             finally:
-                _OCR_PROGRESS.update(
-                    {
-                        "is_processing": False,
-                        "current_file": "",
-                        "current_page": 0,
-                        "total_pages": 0,
-                    }
+                await _update_progress(
+                    is_processing=False,
+                    current_file="",
+                    current_page=0,
+                    total_pages=0,
                 )
                 shutil.rmtree(tmp_dir, ignore_errors=True)
 

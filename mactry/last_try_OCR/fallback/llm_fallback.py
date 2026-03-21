@@ -218,11 +218,8 @@ def _ocr_with_gemini(img_bytes: bytes, page_number: int) -> Optional[str]:
 
 
 def ocr_with_llm_chain(img_bytes: bytes, page_number: int) -> str:
-    """Try Gemini first (if enabled), then Ollama, otherwise raise."""
-    text = _ocr_with_gemini(img_bytes, page_number)
-    if text:
-        _api_stats["last_engine_used"] = "gemini"
-        return text
+    """Try Ollama first (local, no rate limit), then Gemini if enabled."""
+    # ── Try Ollama first ────────────────────────────────────────────────────
 
     if _service_status.get("ollama_available") is None:
         avail, model, err = _check_ollama_available()
@@ -239,9 +236,15 @@ def ocr_with_llm_chain(img_bytes: bytes, page_number: int) -> str:
             _api_stats["last_engine_used"] = "ollama"
             return text
 
+    # ── Gemini fallback (only if enabled and key is set) ────────────────────
+    text = _ocr_with_gemini(img_bytes, page_number)
+    if text:
+        _api_stats["last_engine_used"] = "gemini"
+        return text
+
     _api_stats["errors"] += 1
     _api_stats["last_engine_used"] = None
-    raise LLMFallbackError(f"All LLM fallback engines failed on page {page_number}")
+    raise LLMFallbackError(f"All LLM engines failed on page {page_number}")
 
 
 def ocr_page_with_fallback(img_bytes: bytes, page_number: int) -> Tuple[Optional[str], str]:
@@ -356,3 +359,28 @@ def _try_parse_gemini_json(text: str, offset: int) -> Optional[List[ContentBlock
         )
 
     return blocks or None
+
+
+# ── Startup availability check ─────────────────────────────────────────────
+# Called once when the module is first imported. Warns loudly if Ollama is
+# missing so the operator knows Bangla pages will use EasyOCR-only fallback.
+def _warn_if_ollama_unavailable() -> None:
+    avail, model, err = _check_ollama_available()
+    _service_status["ollama_available"] = avail
+    _service_status["ollama_model"] = model
+    _service_status["ollama_error"] = err
+    if avail:
+        logger.info("✓ Ollama ready: model=%s", model)
+    else:
+        logger.warning(
+            "⚠  Ollama not available: %s\n"
+            "   Bangla scanned pages will use EasyOCR only (lower accuracy).\n"
+            "   Fix: ollama pull qwen2.5vl:7b && ollama serve",
+            err,
+        )
+
+
+try:
+    _warn_if_ollama_unavailable()
+except Exception:
+    pass  # never crash on import
