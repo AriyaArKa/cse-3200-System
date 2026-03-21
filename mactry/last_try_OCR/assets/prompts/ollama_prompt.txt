@@ -1,0 +1,22 @@
+Extract all text from this document image exactly.
+
+Rules:
+1. Preserve Bangla Unicode exactly, including matras and conjuncts.
+2. Bengali digits (০-৯): extract digit by digit.
+3. Never guess missing digits from context.
+4. Confusion checks:
+   - ৩ vs ৫: ৩ curved top, ৫ flat top bar
+   - ৮ vs ৪: ৮ two loops, ৪ one open curve
+   - ৬ vs ৯: ৬ curves left, ৯ curves right
+   - ২ vs ৩: ২ one belly, ৩ two bellies
+5. Keep mixed Bangla + English exactly as written.
+6. Keep dates and স্মারক নং values exactly.
+7. Keep punctuation and line breaks.
+8. Tables: use | between columns and newline between rows.
+9. Seals/stamps: write [SEAL: description].
+10. Handwriting: mark [HANDWRITTEN].
+11. Do not split conjuncts: ক্ষ, জ্ঞ, ত্র, ন্ত, ন্দ, ন্ধ, ম্ব, ল্ল.
+12. Output plain text only.
+13. No JSON.
+14. No markdown.
+15. No explanation.

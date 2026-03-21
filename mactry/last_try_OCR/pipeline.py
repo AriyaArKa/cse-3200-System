@@ -1,320 +1,227 @@
-"""
-Pipeline — Main OCR processing pipeline with multiprocessing.
-Orchestrates page routing, OCR, correction, validation, and output.
-"""
+"""Main OCR processing pipeline with thread-based batching."""
 
+from __future__ import annotations
+
+import gc
 import hashlib
+import json
 import logging
-import os
 import time
-from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import Callable, List, Optional
+from typing import Callable, Optional
 
 import fitz
 
 from . import config
-from .models import (
-    ContentBlock,
-    DocumentResult,
-    ImageResult,
-    PageExtraction,
-    PageResult,
-    TableResult,
+from .core.ocr_engine import detections_to_blocks, run_dual_ocr
+from .core.pdf_router import (
+    detect_page_type,
+    extract_digital_text,
+    extract_page_images,
+    open_pdf,
+    render_page_to_image,
 )
+from .exceptions import LLMFallbackError
+from .extraction.image_processor import process_page_images
+from .extraction.table_handler import extract_tables_digital, extract_tables_scanned
+from .fallback.llm_fallback import gemini_text_to_blocks, ocr_page_with_fallback
+from .models import ContentBlock, DocumentResult, ImageResult, PageExtraction, PageResult, TableResult
+from .nlp.bangla_corrector import (
+    correct_bangla_text,
+    fix_combining_sequences,
+    normalize_unicode,
+)
+from .nlp.confidence_scorer import needs_api_fallback, score_blocks
+from .nlp.numeric_validator import validate_and_fix_numbers, validate_table_numerics
+from .nlp.unicode_validator import bangla_char_ratio, validate_digital_text
+from .output.json_builder import ensure_output_dirs, save_document_json, to_json_compatible
 
 logger = logging.getLogger(__name__)
 
 
-def _generate_doc_id(pdf_path: str) -> str:
-    """Generate a short unique ID from the filename."""
-    name = Path(pdf_path).stem
-    h = hashlib.md5(name.encode()).hexdigest()[:8]
-    return f"{name}_{h}"
+def _build_page_decisions(page_num: int, page_log: dict, method: str, engine: str) -> list[dict]:
+    """Convert internal page log steps into UI-facing decision entries."""
+    decisions: list[dict] = []
 
-
-# ── Decision Extraction ──────────────────────────────────────────────
-
-
-def _extract_page_decisions(page_log: dict, page_num: int) -> list:
-    """Convert raw page-processing log into human-readable decision entries.
-
-    Each entry: { page, keyword, detail, severity }
-    severity: 'info' | 'warning' | 'error'
-    """
-    decisions: list = []
-
-    def _add(keyword: str, detail: str, severity: str = "info") -> None:
+    for step in page_log.get("steps", []):
+        severity = "info"
+        if "failed" in step or "error" in step:
+            severity = "warning"
         decisions.append(
             {
                 "page": page_num,
-                "keyword": keyword,
-                "detail": detail,
+                "keyword": "PIPELINE_STEP",
+                "detail": step,
                 "severity": severity,
             }
         )
 
-    for step in page_log.get("steps", []):
-        if step.startswith("type_detection:"):
-            ptype = step.split(":", 1)[1].strip()
-            _add(
-                "DIGITAL" if ptype == "digital" else "SCANNED",
-                f"Page classified as {ptype.upper()}",
-            )
-        elif step.startswith("digital_extraction:"):
-            chars = step.split(":", 1)[1].strip()
-            _add("TEXT_EXTRACTED", f"Digital text extracted ({chars})")
-        elif step == "digital_rejected_falling_to_ocr":
-            _add(
-                "TEXT_REJECTED",
-                "Digital text failed validation — routed to OCR",
-                "warning",
-            )
-        elif step == "digital_rejected_corrupted_font":
-            _add(
-                "TEXT_REJECTED",
-                "Corrupted font detected — sending directly to Gemini (skipping EasyOCR)",
-                "warning",
-            )
-        elif step.startswith("rendered_for_gemini_direct"):
-            _add("GEMINI_DIRECT", "Page rendered at low DPI for fast Gemini OCR")
-        elif step == "gemini_direct_success":
-            _add(
-                "GEMINI_OK",
-                "Gemini produced OCR output directly (EasyOCR skipped)",
-            )
-        elif step.startswith("ollama_direct_success"):
-            engine = step.split(":", 1)[1].strip() if ":" in step else "Ollama"
-            _add(
-                "OLLAMA_OK",
-                f"Gemini failed — {engine} produced OCR output directly (EasyOCR skipped)",
-                "warning",
-            )
-        elif step == "all_apis_direct_failed_falling_to_ocr":
-            _add(
-                "ALL_API_FAILED",
-                "Gemini + Ollama both failed — falling back to local OCR (EasyOCR)",
-                "error",
-            )
-        elif step == "gemini_direct_failed_falling_to_ocr":
-            _add(
-                "GEMINI_FAILED",
-                "Gemini direct OCR failed — falling back to EasyOCR",
-                "error",
-            )
-        elif step.startswith("rendered_to_image"):
-            _add("IMAGE_RENDER", f"Page rendered to image for OCR (DPI={config.DPI})")
-        elif step.startswith("easyocr:"):
-            n = step.split(":", 1)[1].strip()
-            _add("EASYOCR", f"EasyOCR found {n}")
-        elif step == "api_fallback_triggered":
-            _add(
-                "API_FALLBACK",
-                "Low confidence — Gemini API fallback triggered",
-                "warning",
-            )
-        elif step == "api_fallback_success":
-            _add("GEMINI_OK", "Gemini API returned improved text")
-        elif step.startswith("ollama_fallback_success"):
-            engine = step.split(":", 1)[1].strip() if ":" in step else "Ollama"
-            _add(
-                "OLLAMA_OK",
-                f"Gemini failed — {engine} returned improved text (final fallback)",
-                "warning",
-            )
-        elif step == "api_fallback_failed_all_engines":
-            _add(
-                "ALL_API_FAILED",
-                "Gemini + Ollama both failed — keeping local OCR result",
-                "error",
-            )
-        elif step == "api_fallback_failed_keeping_local":
-            _add("GEMINI_FAILED", "Gemini API failed — kept local OCR result", "error")
-        elif step.startswith("images_extracted:"):
-            n = step.split(":", 1)[1].strip()
-            _add("IMAGES", f"Extracted {n}")
-        elif step.startswith("final_engine:"):
-            eng = step.split(":", 1)[1].strip()
-            _add(
-                "FINAL_ENGINE",
-                f"Final output produced by: **{eng}**",
-                "info" if eng == "PyMuPDF" else "warning",
-            )
-        elif step.startswith("final_method:"):
-            meth = step.split(":", 1)[1].strip()
-            _add("FINAL_METHOD", f"Extraction method: {meth}")
-
-    # Unicode validation decisions
-    val = page_log.get("unicode_validation", {})
-    if val:
-        for reason in val.get("rejection_reasons", []):
-            _add("UNICODE_REJECT", reason, "warning")
-        ctrl_r = val.get("control_char_ratio", 0) or 0
-        if ctrl_r > 0.01:
-            _add(
-                "CTRL_CHARS",
-                f"Control-char ratio: {ctrl_r:.1%}",
-                "warning" if ctrl_r > 0.05 else "info",
-            )
-        cid_n = val.get("cid_reference_count", 0) or 0
-        if cid_n:
-            _add("CID_FONT", f"CID font references: {cid_n}", "warning")
-        win_n = val.get("winansa_artifact_count", 0) or 0
-        if win_n:
-            _add("LEGACY_FONT", f"WinAnsi/SutonnyMJ artefacts: {win_n}", "warning")
-        brk_d = val.get("bracket_density", 0) or 0
-        if brk_d > 0.02:
-            _add(
-                "BIJOY_FONT",
-                f"Bracket density: {brk_d:.1%} — Bijoy/BijoyBaijra encoding",
-                "warning" if brk_d > 0.05 else "info",
-            )
-        sym_n = val.get("symbol_noise_ratio", 0) or 0
-        if sym_n > 0.05:
-            _add(
-                "SYMBOL_NOISE",
-                f"Symbol noise ratio: {sym_n:.1%}",
-                "warning" if sym_n > 0.12 else "info",
-            )
-
-    # Bangla correction
-    corr = page_log.get("correction", {})
-    if corr:
-        n_corr = len(corr.get("corrections", []))
-        if n_corr:
-            corr_types = ", ".join(corr.get("corrections", []))
-            _add("BANGLA_CORRECTION", f"Applied {n_corr} correction(s): {corr_types}")
-            if "gemini_bangla_validation" in corr.get("corrections", []):
-                _add(
-                    "GEMINI_BANGLA",
-                    "Bangla text validated & corrected by Gemini LLM",
-                )
-
-    # Numeric fixes
-    num_fixes = page_log.get("numeric_fixes", [])
-    if num_fixes:
-        _add("NUMERIC_FIX", f"Fixed {len(num_fixes)} numeric value(s)", "warning")
-
-    # Table numeric fixes
-    tbl_fixes = page_log.get("table_numeric_fixes", [])
-    if tbl_fixes:
-        _add(
-            "TABLE_NUMERIC_FIX",
-            f"Fixed {len(tbl_fixes)} table numeric value(s)",
-            "warning",
-        )
-
-    # Local confidence score
-    conf = page_log.get("local_confidence")
-    if conf is not None:
-        sev = "info" if conf >= 0.7 else "warning" if conf >= 0.4 else "error"
-        _add("CONFIDENCE", f"Local OCR confidence: {conf:.1%}", sev)
-
-    # Processing error
-    err = page_log.get("error")
-    if err:
-        _add("PAGE_ERROR", str(err), "error")
-
-    # Processing time
-    proc_time = page_log.get("processing_time_ms")
-    if proc_time is not None:
-        _add("TIMING", f"Page processed in {proc_time:.0f}ms")
-
+    decisions.append(
+        {
+            "page": page_num,
+            "keyword": "FINAL_ENGINE",
+            "detail": f"method={method}, engine={engine}",
+            "severity": "info",
+        }
+    )
     return decisions
 
 
-# ── Single-Page Processing (runs in worker) ──────────────────────────
+def _generate_doc_id(pdf_path: str) -> str:
+    stem = Path(pdf_path).stem
+    return f"{stem}_{hashlib.md5(stem.encode()).hexdigest()[:8]}"
 
 
-def _process_single_page(
-    pdf_path: str,
-    page_num: int,  # 1-indexed
-    doc_id: str,
-    domain: str = "unknown",
-) -> dict:
-    """
-    Process a single page end-to-end.
-    Returns a serialisable dict (for multiprocessing compatibility).
-    """
-    # Re-import inside worker to avoid pickling issues
-    from . import config
-    from .pdf_router import (
-        open_pdf,
-        detect_page_type,
-        extract_digital_text,
-        render_page_to_image,
-        extract_page_images,
+def _get_file_hash(pdf_path: str) -> str:
+    h = hashlib.sha256()
+    with open(pdf_path, "rb") as fh:
+        h.update(fh.read(65536))
+    return h.hexdigest()[:16]
+
+
+def _dict_to_document_result(raw: dict) -> DocumentResult:
+    document = raw.get("document", {})
+    summary = document.get("processing_summary", {})
+    pages: list[PageResult] = []
+
+    for p in raw.get("pages", []):
+        ext = p.get("extraction", {})
+        page = PageResult(
+            page_number=int(p.get("page_number", 0)),
+            extraction=PageExtraction(
+                method=str(ext.get("method", "error")),
+                engine=str(ext.get("engine", "none")),
+                confidence_score=float(ext.get("confidence_score", 0.0)),
+                correction_applied=bool(ext.get("correction_applied", False)),
+                numeric_validation_passed=bool(ext.get("numeric_validation_passed", False)),
+            ),
+            content_blocks=[
+                ContentBlock(
+                    block_id=int(b.get("block_id", 0)),
+                    type=str(b.get("type", "paragraph")),
+                    language=str(b.get("language", "en")),
+                    text=str(b.get("text", "")),
+                    confidence=float(b.get("confidence", 0.0)),
+                    is_handwritten=bool(b.get("is_handwritten", False)),
+                )
+                for b in p.get("content_blocks", [])
+            ],
+            tables=[
+                TableResult(
+                    table_id=int(t.get("table_id", 0)),
+                    structure_confidence=float(t.get("structure_confidence", 0.0)),
+                    rows=t.get("rows", []),
+                )
+                for t in p.get("tables", [])
+            ],
+            images=[
+                ImageResult(
+                    image_id=int(i.get("image_id", 0)),
+                    type=str(i.get("type", "unknown")),
+                    detected_text=str(i.get("detected_text", "")),
+                    description=str(i.get("description", "")),
+                    confidence=float(i.get("confidence", 0.0)),
+                )
+                for i in p.get("images", [])
+            ],
+            full_text=str(p.get("full_text", "")),
+            source_image_path=str(p.get("source_image_path", "")),
+            verified=bool(p.get("verified", False)),
+            domain=str(p.get("domain", "unknown")),
+            decisions=p.get("decisions", []),
+        )
+        pages.append(page)
+
+    return DocumentResult(
+        source=str(document.get("source", "")),
+        total_pages=int(document.get("total_pages", 0)),
+        language_detected=document.get("language_detected", []),
+        has_handwriting=bool(document.get("has_handwriting", False)),
+        has_tables=bool(document.get("has_tables", False)),
+        has_images=bool(document.get("has_images", False)),
+        pages_processed_locally=int(summary.get("pages_processed_locally", 0)),
+        pages_sent_to_api=int(summary.get("pages_sent_to_api", 0)),
+        overall_confidence=float(summary.get("overall_confidence", 0.0)),
+        pages=pages,
+        processing_time_ms=float(summary.get("processing_time_ms", 0.0)),
+        document_decisions=document.get("all_decisions", []),
     )
-    from .unicode_validator import validate_digital_text, bangla_char_ratio
-    from .ocr_engine import run_dual_ocr, detections_to_blocks
-    from .bangla_corrector import correct_bangla_text
-    from .numeric_validator import validate_and_fix_numbers, validate_table_numerics
-    from .table_handler import extract_tables_digital, extract_tables_scanned
-    from .image_processor import process_page_images
-    from .confidence_scorer import score_blocks, needs_api_fallback
-    from .api_fallback import ocr_page_with_fallback, gemini_text_to_blocks
-    from .json_builder import ensure_output_dirs
 
-    page_log = {"page_number": page_num, "steps": []}
+
+def _load_cached(pdf_path: str) -> Optional[DocumentResult]:
+    file_hash = _get_file_hash(pdf_path)
+    cache_path = config.MERGED_OUTPUT_DIR / f"_cache_{file_hash}.json"
+    if cache_path.exists():
+        logger.info("Cache hit for %s (hash=%s)", Path(pdf_path).name, file_hash)
+        return _dict_to_document_result(json.loads(cache_path.read_text(encoding="utf-8")))
+    return None
+
+
+def _save_cache(pdf_path: str, result: DocumentResult) -> None:
+    file_hash = _get_file_hash(pdf_path)
+    cache_path = config.MERGED_OUTPUT_DIR / f"_cache_{file_hash}.json"
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(
+        json.dumps(to_json_compatible(result.to_dict()), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def _process_single_page(pdf_path: str, page_num: int, doc_id: str, domain: str = "unknown") -> PageResult:
+    page_log: dict = {"page_number": page_num, "steps": []}
     start = time.time()
 
     doc = open_pdf(pdf_path)
     page = doc[page_num - 1]
-
     dirs = ensure_output_dirs(doc_id)
 
     def _persist_page_image(image_bytes: bytes) -> str:
-        """Persist OCR render image and return filesystem path string."""
         image_path = dirs["images"] / f"page_{page_num}.png"
         try:
-            with open(image_path, "wb") as f:
-                f.write(image_bytes)
+            image_path.write_bytes(image_bytes)
             return str(image_path)
-        except Exception as e:
-            logger.warning("Failed to save page render image %s: %s", image_path, e)
+        except Exception as exc:
+            logger.warning("Failed to save page render image %s: %s", image_path, exc)
             return ""
 
     source_image_path = ""
-
-    # ── Step 1: Page Type Detection ──────────────────────────────
     page_type = detect_page_type(page)
     page_log["steps"].append(f"type_detection: {page_type}")
 
-    content_blocks: List[ContentBlock] = []
-    tables: List[TableResult] = []
-    images: List[ImageResult] = []
+    content_blocks: list[ContentBlock] = []
+    tables: list[TableResult] = []
+    images: list[ImageResult] = []
     method = "digital"
     engine = "PyMuPDF"
     correction_applied = False
     sent_to_api = False
 
     if page_type == "digital":
-        # ── Step 2: Extract Digital Text ─────────────────────────
         raw_text = extract_digital_text(page)
         page_log["steps"].append(f"digital_extraction: {len(raw_text)} chars")
 
-        # ── Step 3: Validate Unicode ─────────────────────────────
         is_valid, val_report = validate_digital_text(raw_text)
         page_log["unicode_validation"] = val_report
 
         if is_valid:
-            # Use digital text — still run correction
             bn_ratio = bangla_char_ratio(raw_text)
-            if bn_ratio > 0.1:
+            if bn_ratio > 0.3 and len(raw_text) > 50:
+                raw_text = normalize_unicode(raw_text)
+                raw_text = fix_combining_sequences(raw_text)
+            elif bn_ratio > 0.1:
                 raw_text, corr_log = correct_bangla_text(raw_text)
                 correction_applied = bool(corr_log.get("corrections"))
                 page_log["correction"] = corr_log
 
-            # Fix numerics
             raw_text, num_disc = validate_and_fix_numbers(raw_text)
             if num_disc:
                 page_log["numeric_fixes"] = num_disc
 
-            # Build blocks from paragraphs
             paragraphs = [p.strip() for p in raw_text.split("\n\n") if p.strip()]
             for i, para in enumerate(paragraphs):
-                bn_r = bangla_char_ratio(para)
-                lang = "bn" if bn_r > 0.5 else ("mixed" if bn_r > 0.1 else "en")
+                b_ratio = bangla_char_ratio(para)
+                lang = "bn" if b_ratio > 0.5 else ("mixed" if b_ratio > 0.1 else "en")
                 content_blocks.append(
                     ContentBlock(
                         block_id=i + 1,
@@ -325,25 +232,18 @@ def _process_single_page(
                     )
                 )
 
-            # Tables from digital
             tables = extract_tables_digital(pdf_path, page_num)
-            if tables:
-                for t in tables:
-                    t.rows, t_disc = validate_table_numerics(t.rows)
-                    if t_disc:
-                        page_log.setdefault("table_numeric_fixes", []).extend(t_disc)
-
+            for t in tables:
+                t.rows, t_disc = validate_table_numerics(t.rows)
+                if t_disc:
+                    page_log.setdefault("table_numeric_fixes", []).extend(t_disc)
         else:
-            # Corrupted digital text — send DIRECTLY to Gemini (skip EasyOCR)
             page_log["steps"].append("digital_rejected_corrupted_font")
             img_bytes = render_page_to_image(page, dpi=config.DPI)
-            page_log["steps"].append(f"rendered_for_gemini_direct (DPI={config.DPI})")
             source_image_path = _persist_page_image(img_bytes)
-
             api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
             if api_text:
                 content_blocks = gemini_text_to_blocks(api_text, page_num)
-                # Apply correction to API output
                 for block in content_blocks:
                     if block.language in ("bn", "mixed"):
                         block.text, corr_log = correct_bangla_text(block.text)
@@ -355,94 +255,54 @@ def _process_single_page(
                 method = "ocr_api"
                 engine = api_engine
                 sent_to_api = True
-                if api_engine.startswith("Ollama"):
-                    page_log["steps"].append(f"ollama_direct_success:{api_engine}")
-                else:
-                    page_log["steps"].append("gemini_direct_success")
             else:
-                # Gemini + Ollama both failed — fall back to local OCR
                 page_type = "scanned"
                 page_log["steps"].append("all_apis_direct_failed_falling_to_ocr")
 
-            # Tables from corrupted digital — try digital first
-            if content_blocks:
-                tables = extract_tables_digital(pdf_path, page_num)
-                if tables:
-                    for t in tables:
-                        t.rows, t_disc = validate_table_numerics(t.rows)
-                        if t_disc:
-                            page_log.setdefault("table_numeric_fixes", []).extend(
-                                t_disc
-                            )
-
     if page_type == "scanned":
-        # ── Step 4: Render & OCR ─────────────────────────────────
         img_bytes = render_page_to_image(page, dpi=config.DPI)
-        page_log["steps"].append(f"rendered_to_image (DPI={config.DPI})")
         source_image_path = _persist_page_image(img_bytes)
+        page_log["steps"].append(f"rendered_to_image (DPI={config.DPI})")
 
         method = "ocr_local"
         engine = "EasyOCR"
-
         detections = run_dual_ocr(img_bytes)
         page_log["steps"].append(f"easyocr: {len(detections)} detections")
 
         content_blocks = detections_to_blocks(detections)
-
-        # Apply Bangla correction on each block
         for block in content_blocks:
             if block.language in ("bn", "mixed"):
                 block.text, corr_log = correct_bangla_text(block.text)
                 if corr_log.get("corrections"):
                     correction_applied = True
-
-        # Fix numerics
-        for block in content_blocks:
             block.text, num_disc = validate_and_fix_numbers(block.text)
             if num_disc:
                 page_log.setdefault("numeric_fixes", []).extend(num_disc)
 
-        # ── Step 5: Confidence Check & API Fallback ──────────────
         is_bangla_heavy = any(b.language in ("bn", "mixed") for b in content_blocks)
         confidence = score_blocks(content_blocks, is_bangla_heavy)
         page_log["local_confidence"] = confidence
 
         if needs_api_fallback(confidence, is_bangla_heavy):
             page_log["steps"].append("api_fallback_triggered")
-            # Chain: Gemini → Ollama (final fallback)
             api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
             if api_text:
                 api_blocks = gemini_text_to_blocks(api_text, page_num)
                 if api_blocks:
-                    # Apply correction to API output too
-                    for block in api_blocks:
-                        if block.language in ("bn", "mixed"):
-                            block.text, _ = correct_bangla_text(block.text)
-                        block.text, _ = validate_and_fix_numbers(block.text)
-
                     content_blocks = api_blocks
                     method = "ocr_api"
                     engine = api_engine
                     sent_to_api = True
-                    if api_engine.startswith("Ollama"):
-                        page_log["steps"].append(
-                            f"ollama_fallback_success:{api_engine}"
-                        )
-                    else:
-                        page_log["steps"].append("api_fallback_success")
+                    page_log["steps"].append("api_fallback_success")
             else:
-                # Both Gemini and Ollama failed — keep local OCR result
                 page_log["steps"].append("api_fallback_failed_all_engines")
 
-        # Tables from scanned
         tables = extract_tables_scanned(img_bytes, detections, page_num)
-        if tables:
-            for t in tables:
-                t.rows, t_disc = validate_table_numerics(t.rows)
-                if t_disc:
-                    page_log.setdefault("table_numeric_fixes", []).extend(t_disc)
+        for t in tables:
+            t.rows, t_disc = validate_table_numerics(t.rows)
+            if t_disc:
+                page_log.setdefault("table_numeric_fixes", []).extend(t_disc)
 
-    # ── Step 6: Extract Images ───────────────────────────────────
     page_images_raw = extract_page_images(page)
     if page_images_raw:
         images = process_page_images(page_images_raw, page_num, dirs["images"])
@@ -450,45 +310,32 @@ def _process_single_page(
 
     doc.close()
 
-    # ── Build Full Text ──────────────────────────────────────────
     full_text = "\n".join(b.text for b in content_blocks)
-
-    # Final confidence
     is_bangla_heavy = any(b.language in ("bn", "mixed") for b in content_blocks)
     final_confidence = score_blocks(content_blocks, is_bangla_heavy)
 
-    # Numeric validation pass check
-    numeric_ok = "numeric_fixes" not in page_log
-
     page_log["processing_time_ms"] = round((time.time() - start) * 1000, 2)
-    page_log["steps"].append(f"final_engine: {engine}")
-    page_log["steps"].append(f"final_method: {method}")
+    decisions = _build_page_decisions(page_num, page_log, method, engine)
 
-    # Serialize for multiprocessing return
-    return {
-        "page_number": page_num,
-        "extraction": {
-            "method": method,
-            "engine": engine,
-            "confidence_score": final_confidence,
-            "correction_applied": correction_applied,
-            "numeric_validation_passed": numeric_ok,
-        },
-        "content_blocks": (
-            [b.to_dict() for b in content_blocks] if content_blocks else []
+    return PageResult(
+        page_number=page_num,
+        extraction=PageExtraction(
+            method=method,
+            engine=engine,
+            confidence_score=final_confidence,
+            correction_applied=correction_applied,
+            numeric_validation_passed="numeric_fixes" not in page_log,
         ),
-        "tables": [t.to_dict() for t in tables],
-        "images": [i.to_dict() for i in images],
-        "full_text": full_text,
-        "source_image_path": source_image_path,
-        "verified": False,
-        "domain": domain,
-        "sent_to_api": sent_to_api,
-        "log": page_log,
-    }
-
-
-# ── Document-Level Processing ────────────────────────────────────────
+        content_blocks=content_blocks,
+        tables=tables,
+        images=images,
+        full_text=full_text,
+        source_image_path=source_image_path,
+        verified=False,
+        domain=domain,
+        log=page_log,
+        decisions=decisions,
+    )
 
 
 def process_pdf(
@@ -497,66 +344,59 @@ def process_pdf(
     domain: str = "unknown",
     progress_callback: Optional[Callable[[int, int], None]] = None,
 ) -> DocumentResult:
-    """
-    Process an entire PDF document.
-    Returns a fully structured DocumentResult.
-    """
+    """Process an entire PDF into a DocumentResult."""
     start_time = time.time()
     pdf_path = str(Path(pdf_path).resolve())
+
+    cached = _load_cached(pdf_path)
+    if cached is not None:
+        return cached
+
     doc_id = _generate_doc_id(pdf_path)
-
-    logger.info("Processing PDF: %s (doc_id=%s)", pdf_path, doc_id)
-
     doc = fitz.open(pdf_path)
     total_pages = len(doc)
     doc.close()
 
-    logger.info("Total pages: %d", total_pages)
-
-    # Process pages
-    page_results_raw = []
-
     pages_completed = 0
+    page_results: list[PageResult] = []
+    page_ranges = [
+        range(i, min(i + config.PAGE_BATCH_SIZE, total_pages + 1))
+        for i in range(1, total_pages + 1, config.PAGE_BATCH_SIZE)
+    ]
 
-    if use_multiprocessing and total_pages > 1:
-        workers = min(config.MAX_WORKERS, total_pages)
-        logger.info("Using %d workers for %d pages", workers, total_pages)
-
-        with ProcessPoolExecutor(max_workers=workers) as executor:
+    for batch in page_ranges:
+        workers = min(config.MAX_WORKERS, len(batch))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
             futures = {
-                executor.submit(
-                    _process_single_page,
-                    pdf_path,
-                    pn,
-                    doc_id,
-                    domain,
-                ): pn
-                for pn in range(1, total_pages + 1)
+                executor.submit(_process_single_page, pdf_path, pn, doc_id, domain): pn
+                for pn in batch
             }
             for future in as_completed(futures):
                 pn = futures[future]
                 try:
-                    result = future.result()
-                    page_results_raw.append(result)
-                except Exception as e:
-                    logger.error("Page %d failed: %s", pn, e)
-                    page_results_raw.append(
-                        {
-                            "page_number": pn,
-                            "extraction": {
-                                "method": "error",
-                                "engine": "none",
-                                "confidence_score": 0.0,
-                                "correction_applied": False,
-                                "numeric_validation_passed": False,
-                            },
-                            "content_blocks": [],
-                            "tables": [],
-                            "images": [],
-                            "full_text": "",
-                            "sent_to_api": False,
-                            "log": {"error": str(e)},
-                        }
+                    page_results.append(future.result())
+                except Exception as exc:
+                    logger.error("Page %d failed: %s", pn, exc)
+                    page_results.append(
+                        PageResult(
+                            page_number=pn,
+                            extraction=PageExtraction(
+                                method="error",
+                                engine="none",
+                                confidence_score=0.0,
+                                correction_applied=False,
+                                numeric_validation_passed=False,
+                            ),
+                            content_blocks=[],
+                            tables=[],
+                            images=[],
+                            full_text="",
+                            source_image_path="",
+                            verified=False,
+                            domain=domain,
+                            log={"error": str(exc)},
+                            decisions=[],
+                        )
                     )
                 finally:
                     pages_completed += 1
@@ -565,45 +405,10 @@ def process_pdf(
                             progress_callback(pages_completed, total_pages)
                         except Exception:
                             pass
-    else:
-        for pn in range(1, total_pages + 1):
-            try:
-                result = _process_single_page(pdf_path, pn, doc_id, domain)
-                page_results_raw.append(result)
-            except Exception as e:
-                logger.error("Page %d failed: %s", pn, e)
-                page_results_raw.append(
-                    {
-                        "page_number": pn,
-                        "extraction": {
-                            "method": "error",
-                            "engine": "none",
-                            "confidence_score": 0.0,
-                            "correction_applied": False,
-                            "numeric_validation_passed": False,
-                        },
-                        "content_blocks": [],
-                        "tables": [],
-                        "images": [],
-                        "full_text": "",
-                        "sent_to_api": False,
-                        "log": {"error": str(e)},
-                    }
-                )
-            finally:
-                pages_completed += 1
-                if progress_callback:
-                    try:
-                        progress_callback(pages_completed, total_pages)
-                    except Exception:
-                        pass
+        gc.collect()
 
-    # Sort by page number
-    page_results_raw.sort(key=lambda x: x["page_number"])
+    page_results.sort(key=lambda p: p.page_number)
 
-    # ── Assemble DocumentResult ──────────────────────────────────
-    pages = []
-    all_decisions: list = []
     all_languages = set()
     has_tables = False
     has_images = False
@@ -612,112 +417,36 @@ def process_pdf(
     api_count = 0
     confidence_sum = 0.0
 
-    for pr in page_results_raw:
-        ext = pr["extraction"]
-        pg_decisions = _extract_page_decisions(pr.get("log", {}), pr["page_number"])
-        all_decisions.extend(pg_decisions)
-        page_result = PageResult(
-            page_number=pr["page_number"],
-            extraction=PageExtraction(
-                method=ext["method"],
-                engine=ext["engine"],
-                confidence_score=ext["confidence_score"],
-                correction_applied=ext["correction_applied"],
-                numeric_validation_passed=ext["numeric_validation_passed"],
-            ),
-            content_blocks=[
-                ContentBlock(
-                    block_id=b["block_id"],
-                    type=b["type"],
-                    language=b["language"],
-                    text=b["text"],
-                    confidence=b["confidence"],
-                    is_handwritten=b.get("is_handwritten", False),
-                )
-                for b in pr["content_blocks"]
-            ],
-            tables=[
-                TableResult(
-                    table_id=t["table_id"],
-                    structure_confidence=t["structure_confidence"],
-                    rows=t["rows"],
-                )
-                for t in pr["tables"]
-            ],
-            images=[
-                ImageResult(
-                    image_id=i["image_id"],
-                    type=i["type"],
-                    detected_text=i["detected_text"],
-                    description=i["description"],
-                    confidence=i["confidence"],
-                )
-                for i in pr["images"]
-            ],
-            full_text=pr["full_text"],
-            source_image_path=pr.get("source_image_path", ""),
-            verified=bool(pr.get("verified", False)),
-            domain=pr.get("domain", domain),
-            log=pr.get("log", {}),
-            decisions=pg_decisions,
-        )
-        pages.append(page_result)
-
-        # Aggregates
-        for b in pr["content_blocks"]:
-            all_languages.add(b["language"])
-            if b.get("is_handwritten"):
+    for page in page_results:
+        for block in page.content_blocks:
+            all_languages.add(block.language)
+            if block.is_handwritten:
                 has_handwriting = True
-        if pr["tables"]:
-            has_tables = True
-        if pr["images"]:
-            has_images = True
-        if pr["sent_to_api"]:
+        has_tables = has_tables or bool(page.tables)
+        has_images = has_images or bool(page.images)
+        if page.extraction.method == "ocr_api":
             api_count += 1
         else:
             local_count += 1
-        confidence_sum += ext["confidence_score"]
+        confidence_sum += page.extraction.confidence_score
 
-    # Normalize languages
-    lang_set = set()
-    for l in all_languages:
-        if l == "bn":
-            lang_set.add("bn")
-        elif l == "en":
-            lang_set.add("en")
-        elif l == "mixed":
-            lang_set.add("bn")
-            lang_set.add("en")
+    language_detected = sorted({"bn" if l in ("bn", "mixed") else "en" for l in all_languages if l in ("bn", "mixed", "en")})
 
-    elapsed = (time.time() - start_time) * 1000
-
-    doc_result = DocumentResult(
+    result = DocumentResult(
         source=Path(pdf_path).name,
         total_pages=total_pages,
-        language_detected=sorted(lang_set),
+        language_detected=language_detected,
         has_handwriting=has_handwriting,
         has_tables=has_tables,
         has_images=has_images,
         pages_processed_locally=local_count,
         pages_sent_to_api=api_count,
         overall_confidence=confidence_sum / max(total_pages, 1),
-        pages=pages,
-        processing_time_ms=elapsed,
-        document_decisions=all_decisions,
+        pages=page_results,
+        processing_time_ms=(time.time() - start_time) * 1000,
+        document_decisions=[],
     )
 
-    # Save outputs
-    from .json_builder import save_document_json
-
-    save_document_json(doc_result, doc_id)
-
-    logger.info(
-        "PDF processed: %d pages in %.1fs (local=%d, api=%d, conf=%.2f)",
-        total_pages,
-        elapsed / 1000,
-        local_count,
-        api_count,
-        doc_result.overall_confidence,
-    )
-
-    return doc_result
+    save_document_json(result, doc_id)
+    _save_cache(pdf_path, result)
+    return result

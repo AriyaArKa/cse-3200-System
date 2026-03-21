@@ -35,5 +35,8 @@ build/
 *.log
 
 # Project-generated outputs
-last_try_output/
+last_try_output/**
+!last_try_output/
+!last_try_output/**/
+!last_try_output/**/.gitkeep
 last_try_OCR/__pycache__/

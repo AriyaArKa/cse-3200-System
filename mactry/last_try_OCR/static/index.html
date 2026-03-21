@@ -58,6 +58,136 @@
       background: rgba(255,255,255,0.02);
     }
 
+    .file-list {
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px;
+      background: #0d121b;
+    }
+
+    .file-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 6px 4px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .file-item:last-child {
+      border-bottom: none;
+    }
+
+    .doc-block {
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: rgba(255,255,255,0.01);
+    }
+
+    .doc-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 8px;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+
+    .summary-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      background: #0d121b;
+    }
+
+    .summary-box .k {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .summary-box .v {
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+
+    .doc-index {
+      margin-top: 8px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      background: #0d121b;
+    }
+
+    .chip-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .chip {
+      font-size: 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 7px;
+      color: var(--text);
+      text-decoration: none;
+      background: #121826;
+    }
+
+    .chip.ok {
+      border-color: #2f785d;
+      color: #8cf0c4;
+    }
+
+    .chip.miss {
+      border-color: #844930;
+      color: #ffb18d;
+      opacity: 0.85;
+      cursor: not-allowed;
+    }
+
+    .global-summary {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #0d121b;
+    }
+
+    .global-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 6px 0;
+    }
+
+    .global-row:last-child {
+      border-bottom: none;
+    }
+
+    .page-details {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px;
+      margin-top: 8px;
+      background: rgba(255,255,255,0.01);
+    }
+
+    .page-details > summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .page-details > summary::-webkit-details-marker {
+      display: none;
+    }
+
     .dropzone.dragover {
       border-color: var(--accent);
       background: rgba(77,163,255,0.08);
@@ -157,23 +287,6 @@
 
     .muted { color: var(--muted); font-size: 13px; }
 
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .stat {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px;
-      background: #101622;
-    }
-
-    .stat .k { color: var(--muted); font-size: 12px; }
-    .stat .v { font-size: 18px; font-weight: 700; }
-
     .error { color: var(--bad); font-size: 13px; margin-top: 8px; }
   </style>
 </head>
@@ -189,10 +302,11 @@
       </div>
 
       <div id="dropzone" class="dropzone">
-        Drop PDF here or click to choose a file
+        Drop PDF files here or click to choose files
         <div id="fileLabel" class="muted" style="margin-top:8px">No file selected</div>
       </div>
-      <input id="fileInput" type="file" accept="application/pdf" hidden />
+      <input id="fileInput" type="file" accept="application/pdf" multiple hidden />
+      <div id="selectedFilesList" class="file-list muted">No files in queue.</div>
 
       <div class="row">
         <label for="domain">Domain</label>
@@ -215,19 +329,12 @@
       <div id="results" class="muted">No OCR result yet.</div>
     </div>
 
-    <div class="card">
-      <h2 style="margin:0 0 8px; font-size:18px;">Corpus Stats</h2>
-      <button id="refreshStats">Refresh Stats</button>
-      <a id="downloadCorpus" href="#" style="margin-left:8px; color:#8ec5ff;">Download Corpus</a>
-      <div id="stats" class="stats-grid"></div>
-    </div>
   </div>
 
   <script>
     const state = {
-      file: null,
-      progressTimer: null,
-      lastDocId: ""
+      files: [],
+      progressTimer: null
     };
 
     const el = {
@@ -235,15 +342,13 @@
       dropzone: document.getElementById("dropzone"),
       fileInput: document.getElementById("fileInput"),
       fileLabel: document.getElementById("fileLabel"),
+      selectedFilesList: document.getElementById("selectedFilesList"),
       domain: document.getElementById("domain"),
       uploadBtn: document.getElementById("uploadBtn"),
       progressBar: document.getElementById("progressBar"),
       progressText: document.getElementById("progressText"),
       error: document.getElementById("error"),
-      results: document.getElementById("results"),
-      refreshStats: document.getElementById("refreshStats"),
-      stats: document.getElementById("stats"),
-      downloadCorpus: document.getElementById("downloadCorpus")
+      results: document.getElementById("results")
     };
 
     function getDefaultBase() {
@@ -251,6 +356,88 @@
         return window.location.origin;
       }
       return "http://localhost:8000";
+    }
+
+    function fileId(file) {
+      return `${file.name}::${file.size}::${file.lastModified}`;
+    }
+
+    function formatSize(bytes) {
+      if (bytes < 1024) return `${bytes} B`;
+      if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)} KB`;
+      return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+    }
+
+    function formatDuration(ms) {
+      const value = Number(ms || 0);
+      if (!Number.isFinite(value) || value <= 0) return "n/a";
+      if (value < 1000) return `${Math.round(value)} ms`;
+      const sec = value / 1000;
+      if (sec < 60) return `${sec.toFixed(2)} s`;
+      const min = Math.floor(sec / 60);
+      const rem = sec % 60;
+      return `${min}m ${rem.toFixed(1)}s`;
+    }
+
+    function renderSelectedFiles() {
+      if (!state.files.length) {
+        el.fileLabel.textContent = "No file selected";
+        el.selectedFilesList.innerHTML = "No files in queue.";
+        return;
+      }
+
+      const selectedCount = state.files.filter((f) => f.selected).length;
+      el.fileLabel.textContent = `${selectedCount}/${state.files.length} selected`;
+
+      let html = "";
+      for (const entry of state.files) {
+        const safeName = escapeHtml(entry.file.name);
+        const checked = entry.selected ? "checked" : "";
+        html += `
+          <div class="file-item">
+            <label class="muted" style="display:flex;align-items:center;gap:8px;">
+              <input type="checkbox" data-file-toggle="${entry.id}" ${checked} />
+              <span>${safeName} (${formatSize(entry.file.size)})</span>
+            </label>
+            <button type="button" data-file-remove="${entry.id}" style="padding:6px 8px;">Remove</button>
+          </div>
+        `;
+      }
+      el.selectedFilesList.innerHTML = html;
+
+      el.selectedFilesList.querySelectorAll("input[data-file-toggle]").forEach((input) => {
+        input.addEventListener("change", () => {
+          const id = input.getAttribute("data-file-toggle");
+          const entry = state.files.find((f) => f.id === id);
+          if (entry) {
+            entry.selected = input.checked;
+            renderSelectedFiles();
+          }
+        });
+      });
+
+      el.selectedFilesList.querySelectorAll("button[data-file-remove]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("data-file-remove");
+          state.files = state.files.filter((f) => f.id !== id);
+          renderSelectedFiles();
+        });
+      });
+    }
+
+    function addFiles(fileList) {
+      const incoming = Array.from(fileList || []);
+      if (!incoming.length) return;
+
+      for (const file of incoming) {
+        const isPdf = (file.type === "application/pdf") || file.name.toLowerCase().endsWith(".pdf");
+        if (!isPdf) continue;
+        const id = fileId(file);
+        if (state.files.some((f) => f.id === id)) continue;
+        state.files.push({ id, file, selected: true });
+      }
+
+      renderSelectedFiles();
     }
 
     function api(path) {
@@ -303,6 +490,15 @@
       return "digital";
     }
 
+    function escapeHtml(text) {
+      return String(text || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
     async function markVerified(docId, pageNumber, verified, button) {
       button.disabled = true;
       try {
@@ -320,7 +516,6 @@
         alert("Verify update failed: " + err.message);
       } finally {
         button.disabled = false;
-        loadStats();
       }
     }
 
@@ -332,42 +527,139 @@
       }
 
       let html = "";
-      for (const doc of docs) {
+      const globalRows = [];
+      docs.forEach((doc, idx) => {
         if (doc.error) {
           html += `<div class="error">${doc.filename || "file"}: ${doc.error}</div>`;
-          continue;
+          globalRows.push(
+            `<div class="global-row"><span>${escapeHtml(doc.filename || `Document ${idx + 1}`)}</span><span class="error">Failed</span></div>`
+          );
+          return;
         }
 
         const docId = doc.doc_id || "";
-        state.lastDocId = docId;
-        const pages = doc.pages || [];
-        html += `<div class="muted" style="margin:8px 0;">doc_id: ${docId}</div>`;
+        const sourceName = (doc.document && doc.document.source) || doc.filename || `Document ${idx + 1}`;
+        const pages = Array.isArray(doc.pages) ? [...doc.pages] : [];
+        pages.sort((a, b) => (a.page_number || 0) - (b.page_number || 0));
 
-        for (const page of pages) {
+        const expectedPagesRaw = doc.document && Number(doc.document.total_pages);
+        const expectedPages = Number.isFinite(expectedPagesRaw) && expectedPagesRaw > 0
+          ? expectedPagesRaw
+          : pages.length;
+        const processingMs = doc.document && doc.document.processing_summary
+          ? Number(doc.document.processing_summary.processing_time_ms || 0)
+          : 0;
+        const processingTime = formatDuration(processingMs);
+
+        const presentSet = new Set(pages.map((p) => Number(p.page_number || 0)).filter((n) => n > 0));
+        const presentPages = Array.from(presentSet).sort((a, b) => a - b);
+
+        const missingPages = [];
+        for (let p = 1; p <= expectedPages; p += 1) {
+          if (!presentSet.has(p)) missingPages.push(p);
+        }
+
+        const completion = `${presentPages.length}/${expectedPages}`;
+        const status = missingPages.length ? `Missing ${missingPages.length}` : "Complete";
+        globalRows.push(
+          `<div class="global-row"><span>${escapeHtml(sourceName)}</span><span class="muted">${completion} pages · ${status} · ${processingTime}</span></div>`
+        );
+
+        let pageIndexHtml = "";
+        if (expectedPages <= 120) {
+          for (let p = 1; p <= expectedPages; p += 1) {
+            if (presentSet.has(p)) {
+              pageIndexHtml += `<a class="chip ok" href="#doc-${idx}-page-${p}">P${p}</a>`;
+            } else {
+              pageIndexHtml += `<span class="chip miss">P${p}</span>`;
+            }
+          }
+        } else {
+          pageIndexHtml = `<span class="muted">Document has ${expectedPages} pages. Use page cards below to review.</span>`;
+        }
+
+        html += `
+          <div class="doc-block">
+            <div class="meta" style="margin-bottom:10px;">
+              <strong>${escapeHtml(sourceName)}</strong>
+              <span class="muted">doc_id: ${escapeHtml(docId)}</span>
+              <span class="muted">pages returned: ${presentPages.length}</span>
+            </div>
+            <div class="doc-summary">
+              <div class="summary-box">
+                <div class="k">Page Coverage</div>
+                <div class="v">${completion}</div>
+              </div>
+              <div class="summary-box">
+                <div class="k">Status</div>
+                <div class="v">${missingPages.length ? `Missing: ${missingPages.join(", ")}` : "All pages present"}</div>
+              </div>
+              <div class="summary-box">
+                <div class="k">Processing Time</div>
+                <div class="v">${processingTime}</div>
+              </div>
+            </div>
+            <div class="doc-index">
+              <div class="muted">Quick page check</div>
+              <div class="chip-wrap">${pageIndexHtml}</div>
+            </div>
+        `;
+
+        pages.forEach((page, pageIdx) => {
           const engine = (page.extraction && page.extraction.engine) || "unknown";
           const tag = normalizeEngine(engine);
           const score = page.extraction && typeof page.extraction.confidence_score === "number"
             ? page.extraction.confidence_score.toFixed(4)
             : "0.0000";
-          const safeText = (page.full_text || "").replace(/</g, "&lt;");
+          const safeText = escapeHtml(page.full_text || "");
+          const decisions = Array.isArray(page.decisions) ? page.decisions : [];
+          const decisionsHtml = decisions.length
+            ? decisions.map((d) => {
+                const detail = escapeHtml(d.detail || "");
+                const keyword = escapeHtml(d.keyword || "DECISION");
+                const sev = escapeHtml(d.severity || "info");
+                return `<div class="muted" style="margin-top:4px;">[${sev}] ${keyword}: ${detail}</div>`;
+              }).join("")
+            : `<div class="muted" style="margin-top:4px;">No decision log available.</div>`;
           const verified = !!page.verified;
+          const pn = Number(page.page_number || 0);
 
           html += `
-            <div class="result-page">
-              <div class="meta">
-                <strong>Page ${page.page_number}</strong>
-                <span class="badge ${tag}">${engine}</span>
-                <span class="muted">Confidence: ${score}</span>
+            <details class="page-details" ${pageIdx === 0 ? "open" : ""} id="doc-${idx}-page-${pn}">
+              <summary>
+                <div class="meta" style="margin-bottom:0;">
+                  <strong>Page ${pn}</strong>
+                  <span class="badge ${tag}">${engine}</span>
+                  <span class="muted">Confidence: ${score}</span>
+                  <span class="muted">${verified ? "Verified" : "Not verified"}</span>
+                </div>
+              </summary>
+              <div class="result-page" style="margin-top:8px;">
+                <div class="text-box">${safeText || "(empty)"}</div>
+                <details style="margin-top:8px;">
+                  <summary class="muted">Show decisions</summary>
+                  <div style="margin-top:6px;">${decisionsHtml}</div>
+                </details>
+                <div class="row" style="margin-top:8px;">
+                  <button data-doc="${docId}" data-page="${pn}" data-verified="${verified ? "0" : "1"}">
+                    ${verified ? "Verified" : "Mark as Verified"}
+                  </button>
+                </div>
               </div>
-              <div class="text-box">${safeText || "(empty)"}</div>
-              <div class="row" style="margin-top:8px;">
-                <button data-doc="${docId}" data-page="${page.page_number}" data-verified="${verified ? "0" : "1"}">
-                  ${verified ? "Verified" : "Mark as Verified"}
-                </button>
-              </div>
-            </div>
+            </details>
           `;
-        }
+        });
+
+        html += `</div>`;
+      });
+
+      if (globalRows.length) {
+        html = `
+          <div class="global-summary">
+            <strong>Documents Overview</strong>
+            <div style="margin-top:6px;">${globalRows.join("")}</div>
+          </div>
+        ` + html;
       }
 
       el.results.innerHTML = html;
@@ -384,43 +676,22 @@
       });
     }
 
-    async function loadStats() {
-      try {
-        const res = await fetch(api("/corpus/stats"));
-        const data = res.ok ? await res.json() : { total_records: 0 };
-
-        const blocks = [
-          ["Total Records", data.total_records || 0],
-          ["Avg Confidence", data.avg_confidence || 0],
-          ["Total Words", data.total_words || 0],
-          ["Total Chars", data.total_chars || 0]
-        ];
-
-        let html = "";
-        for (const [k, v] of blocks) {
-          html += `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`;
-        }
-        el.stats.innerHTML = html;
-      } catch (err) {
-        el.stats.innerHTML = `<div class="error">Failed to load stats: ${err.message}</div>`;
-      }
-
-      el.downloadCorpus.href = api("/corpus/export");
-    }
-
     async function upload() {
-      if (!state.file) {
-        el.error.textContent = "Please choose a PDF file first.";
+      const selectedFiles = state.files.filter((f) => f.selected).map((f) => f.file);
+      if (!selectedFiles.length) {
+        el.error.textContent = "Please select at least one PDF file.";
         return;
       }
 
       el.error.textContent = "";
       el.progressBar.style.width = "0%";
-      el.progressText.textContent = "Submitting file...";
+      el.progressText.textContent = `Submitting ${selectedFiles.length} file(s)...`;
       startPolling();
 
       const fd = new FormData();
-      fd.append("files", state.file);
+      for (const file of selectedFiles) {
+        fd.append("files", file);
+      }
       fd.append("domain", el.domain.value);
 
       try {
@@ -432,7 +703,6 @@
         el.progressBar.style.width = "100%";
         el.progressText.textContent = "Processing complete.";
         renderResults(data);
-        loadStats();
       } catch (err) {
         el.error.textContent = err.message;
       } finally {
@@ -440,13 +710,11 @@
       }
     }
 
-    function onFileSelected(file) {
-      state.file = file;
-      el.fileLabel.textContent = file ? `${file.name} (${Math.round(file.size / 1024)} KB)` : "No file selected";
-    }
-
     el.dropzone.addEventListener("click", () => el.fileInput.click());
-    el.fileInput.addEventListener("change", (e) => onFileSelected(e.target.files[0]));
+    el.fileInput.addEventListener("change", (e) => {
+      addFiles(e.target.files);
+      e.target.value = "";
+    });
 
     el.dropzone.addEventListener("dragover", (e) => {
       e.preventDefault();
@@ -458,16 +726,13 @@
     el.dropzone.addEventListener("drop", (e) => {
       e.preventDefault();
       el.dropzone.classList.remove("dragover");
-      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-        onFileSelected(e.dataTransfer.files[0]);
+      if (e.dataTransfer.files && e.dataTransfer.files.length) {
+        addFiles(e.dataTransfer.files);
       }
     });
 
     el.uploadBtn.addEventListener("click", upload);
-    el.refreshStats.addEventListener("click", loadStats);
-
     el.apiBase.value = getDefaultBase();
-    loadStats();
   </script>
 </body>
 </html>
