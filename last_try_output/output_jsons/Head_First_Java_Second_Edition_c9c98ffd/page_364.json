@@ -1,0 +1,268 @@
+{
+  "page_number": 364,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "330 chapter 11\nExceptions are objects, remember. There’5 nothing all that \nspecial about one, except that it is a thing that can be thrown. \n50 like all good objects, Exceptions can be referred to \npolymorphically. A LingerieException object, for example, \ncould be assigned to a ClothingException reference. A \nPantsException could be assigned to an Exception reference. \nYou get the idea. The benefit for exceptions is that a method \ndoesn’t have to explicitly declare every possible exception it \nmight throw; it can declare a superclass of the exceptions. \nSame thing with catch blocks—you don’t have to write a catch \nfor each possible exception as long as the catch (or catches) \nyou have can handle any exception thrown.\nExceptions are polymorphic\nYou can DECLARE exceptions using \na supertype of the exceptions you \nthrow.\nAll exceptions have \nException as a \nsuperclass.\nException\nIOException\n1\n public void doLaundry() throws ClothingException {\n \nDeclaring a ClothingException lets you throw \nany subclass of ClothingException . That means \ndoLaundry() can throw a PantsException, \nLingerieException, TeeShirtException, and \nDressShirtException without explicitly declaring them \nindividually.\nYou can CATCH exceptions using a \nsupertype of the exception thrown.\n2\ntry {\n laundry.doLaundry();\n} catch(ClothingException cex) {\n // recovery code\n}\n \ntry {\n laundry.doLaundry();\n} catch(ShirtException sex) {\n // recovery code\n}\n \ncan catch only \nTeeShirtException and \nDressShirtException \ncan catch any \nClothingException \nsubclass\nClothingException\nPantsException\nLingerieException\nShirtException\nTeeShirtException\nDressShirtException\npolymorphic exceptions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6533,
+      "rows": [
+        [
+          "Exception",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Exception",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "",
+          "IOException",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6267,
+      "rows": [
+        [
+          "ClothingException",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.68,
+      "rows": [
+        [
+          "",
+          "PantsException",
+          "LingerieException",
+          "ShirtException",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.6286,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "TeeShirtException",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "DressShirtException",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (108x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (43x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (71x62)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (75x42)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (30x69)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x44)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x89)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (77x71)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "330 chapter 11\nExceptions are objects, remember. There’5 nothing all that \nspecial about one, except that it is a thing that can be thrown. \n50 like all good objects, Exceptions can be referred to \npolymorphically. A LingerieException object, for example, \ncould be assigned to a ClothingException reference. A \nPantsException could be assigned to an Exception reference. \nYou get the idea. The benefit for exceptions is that a method \ndoesn’t have to explicitly declare every possible exception it \nmight throw; it can declare a superclass of the exceptions. \nSame thing with catch blocks—you don’t have to write a catch \nfor each possible exception as long as the catch (or catches) \nyou have can handle any exception thrown.\nExceptions are polymorphic\nYou can DECLARE exceptions using \na supertype of the exceptions you \nthrow.\nAll exceptions have \nException as a \nsuperclass.\nException\nIOException\n1\n public void doLaundry() throws ClothingException {\n \nDeclaring a ClothingException lets you throw \nany subclass of ClothingException . That means \ndoLaundry() can throw a PantsException, \nLingerieException, TeeShirtException, and \nDressShirtException without explicitly declaring them \nindividually.\nYou can CATCH exceptions using a \nsupertype of the exception thrown.\n2\ntry {\n laundry.doLaundry();\n} catch(ClothingException cex) {\n // recovery code\n}\n \ntry {\n laundry.doLaundry();\n} catch(ShirtException sex) {\n // recovery code\n}\n \ncan catch only \nTeeShirtException and \nDressShirtException \ncan catch any \nClothingException \nsubclass\nClothingException\nPantsException\nLingerieException\nShirtException\nTeeShirtException\nDressShirtException\npolymorphic exceptions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 364,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 364,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1695 chars",
+      "severity": "info"
+    },
+    {
+      "page": 364,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 8",
+      "severity": "info"
+    },
+    {
+      "page": 364,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

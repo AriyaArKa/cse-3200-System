@@ -1,0 +1,46 @@
+{
+  "page_number": 407,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n373\nHow do you get action events for two different buttons, \nwhen each button needs to do something different? \n1 option one\nImplement two actionPerformed() methods\nFlaw: You can’t! You can’t implement the same method twice in a Java class. It won’t compile. \nAnd even if you could, how would the event source know which of the two methods to call?\nclass MyGui implements ActionListener {\n // lots of code here and then:\n public void actionPerformed(ActionEvent event) {\n frame.repaint();\n }\n public void actionPerformed(ActionEvent event) {\n label.setText(“That hurt!”);\n }\n}\n2 option two\nRegister the same listener with both buttons.\nFlaw: this does work, but in most cases it’5 not very 00. One event handler \ndoing many different things means that you have a single method doing many different things. \nIf you need to change how one source is handled, you have to mess with everybody’5 event \nhandler. Sometimes it is a good solution, but usually it hurts maintainability and extensibility.\nRegister the same listener \nwith both buttons\nclass MyGui implements ActionListener {\n // declare a bunch of instance variables here\n public void go() {\n // build gui\n colorButton = new JButton();\n labelButton = new JButton();\n colorButton.addActionListener(this);\n labelButton.addActionListener(this);\n // more gui code here ...\n } \n public void actionPerformed(ActionEvent event) {\n if (event.getSource() == colorButton) {\n frame.repaint();\n } else { \n label.setText(“That hurt!”);\n }\n }\n}\nQuery the event object \nto find out which button \nactually fired it, and use \nthat to decide what to do.\nBut this is impossible!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "getting gui\nyou are here\n373\nHow do you get action events for two different buttons, \nwhen each button needs to do something different? \n1 option one\nImplement two actionPerformed() methods\nFlaw: You can’t! You can’t implement the same method twice in a Java class. It won’t compile. \nAnd even if you could, how would the event source know which of the two methods to call?\nclass MyGui implements ActionListener {\n // lots of code here and then:\n public void actionPerformed(ActionEvent event) {\n frame.repaint();\n }\n public void actionPerformed(ActionEvent event) {\n label.setText(“That hurt!”);\n }\n}\n2 option two\nRegister the same listener with both buttons.\nFlaw: this does work, but in most cases it’5 not very 00. One event handler \ndoing many different things means that you have a single method doing many different things. \nIf you need to change how one source is handled, you have to mess with everybody’5 event \nhandler. Sometimes it is a good solution, but usually it hurts maintainability and extensibility.\nRegister the same listener \nwith both buttons\nclass MyGui implements ActionListener {\n // declare a bunch of instance variables here\n public void go() {\n // build gui\n colorButton = new JButton();\n labelButton = new JButton();\n colorButton.addActionListener(this);\n labelButton.addActionListener(this);\n // more gui code here ...\n } \n public void actionPerformed(ActionEvent event) {\n if (event.getSource() == colorButton) {\n frame.repaint();\n } else { \n label.setText(“That hurt!”);\n }\n }\n}\nQuery the event object \nto find out which button \nactually fired it, and use \nthat to decide what to do.\nBut this is impossible!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 407,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 407,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1776 chars",
+      "severity": "info"
+    },
+    {
+      "page": 407,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

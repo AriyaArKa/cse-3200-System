@@ -1,0 +1,46 @@
+{
+  "page_number": 400,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.8625,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "366 \nchapter 12\nThe argument to paintComponent() is declared as type \nGraphics (java.awt.Graphics). \nBehind every good Graphics reference \nis a Graphics2D object.\ndrawing gradients with Graphics2D\npublic void paintComponent(Graphics g) { }\nMethods you can call on a \nGraphics reference:\ndrawImage()\ndrawLine()\ndrawPolygon\ndrawRect()\ndrawOval()\nfillRect()\nfillRoundRect()\nsetColor()\n50 the parameter ‘g’ 15-A Graphics object. Which means it \ncould be a subclass of Graphics (because of polymorphism). \nAnd in fact, it is. \nThe object referenced by the ‘g’ parameter is actually an \ninstance of the Graphics2D class. \nWhy do you care? Because there are things you can do with \na Graphics2D reference that you can’t do with a Graphics \nreference. A Graphics2D object can do more than a Graphics \nobject, and it really is a Graphics2D object lurking behind the \nGraphics reference.\nRemember your polymorphism. The compiler decides which \nmethods you can call based on the reference type, not the \nobject type. If you have a Dog object referenced by an Animal \nreference variable:\nAnimal a = new Dog();\nYou CANNOT say:\na.bark();\nEven though you know it’5 really a Dog back there. The \ncompiler looks at ‘a’, sees that it’5 of type Animal, and finds \nthat there’5 no remote control button for bark() in the Animal \nclass. But you can still get the object back to the Dog it really is \nby saying:\nDog d = (Dog) a;\nd.bark();\n50 the bottom line with the Graphics object is this:\nIf you need to use a method from the Graphics2D class, you \ncan’t use the the paintComponent parameter (‘g’) straight \nfrom the method. But you can cast it with a new Graphics2D \nvariable.\nGraphics2D g2d = (Graphics2D) g;\nMethods you can call on \na Graphics2D reference:\nfill3DRect()\ndraw3DRect()\nrotate()\nscale()\nshear()\ntransform()\nsetRenderingHints()\n(these are not complete method lists, \ncheck the API for more)\nTo cast the Graphics2D object to \na Graphics2D reference:\nGraphics2D g2d = (Graphics2D) g;",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "366 \nchapter 12\nThe argument to paintComponent() is declared as type \nGraphics (java.awt.Graphics). \nBehind every good Graphics reference \nis a Graphics2D object.\ndrawing gradients with Graphics2D\npublic void paintComponent(Graphics g) { }\nMethods you can call on a \nGraphics reference:\ndrawImage()\ndrawLine()\ndrawPolygon\ndrawRect()\ndrawOval()\nfillRect()\nfillRoundRect()\nsetColor()\n50 the parameter ‘g’ 15-A Graphics object. Which means it \ncould be a subclass of Graphics (because of polymorphism). \nAnd in fact, it is. \nThe object referenced by the ‘g’ parameter is actually an \ninstance of the Graphics2D class. \nWhy do you care? Because there are things you can do with \na Graphics2D reference that you can’t do with a Graphics \nreference. A Graphics2D object can do more than a Graphics \nobject, and it really is a Graphics2D object lurking behind the \nGraphics reference.\nRemember your polymorphism. The compiler decides which \nmethods you can call based on the reference type, not the \nobject type. If you have a Dog object referenced by an Animal \nreference variable:\nAnimal a = new Dog();\nYou CANNOT say:\na.bark();\nEven though you know it’5 really a Dog back there. The \ncompiler looks at ‘a’, sees that it’5 of type Animal, and finds \nthat there’5 no remote control button for bark() in the Animal \nclass. But you can still get the object back to the Dog it really is \nby saying:\nDog d = (Dog) a;\nd.bark();\n50 the bottom line with the Graphics object is this:\nIf you need to use a method from the Graphics2D class, you \ncan’t use the the paintComponent parameter (‘g’) straight \nfrom the method. But you can cast it with a new Graphics2D \nvariable.\nGraphics2D g2d = (Graphics2D) g;\nMethods you can call on \na Graphics2D reference:\nfill3DRect()\ndraw3DRect()\nrotate()\nscale()\nshear()\ntransform()\nsetRenderingHints()\n(these are not complete method lists, \ncheck the API for more)\nTo cast the Graphics2D object to \na Graphics2D reference:\nGraphics2D g2d = (Graphics2D) g;",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 400,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 400,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1980 chars",
+      "severity": "info"
+    },
+    {
+      "page": 400,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

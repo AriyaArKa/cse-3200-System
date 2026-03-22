@@ -1,0 +1,67 @@
+{
+  "page_number": 55,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\ndive In A Quick Dip\n21\n \n \nC\nclass Exercise1b {\n int x = 5;\n while ( x > 1 ) {\n x = x - 1;\n if ( x < 3) {\n System.out.println(“small x”);\n }\n }\n} \n \n \nA\nclass Exercise1b {\n public static void main(String [] args) {\n int x = 1;\n while ( x < 10 ) {\n if ( x > 3) {\n System.out.println(“big x”);\n }\n }\n }\n} \n \n \n8\npublic static void main(String [] args) {\n int x = 5;\n while ( x > 1 ) {\n x = x - 1;\n if ( x < 3) {\n System.out.println(“small x”);\n }\n }\n} \nEach of the Java files on this page \nrepresents a complete source file. \nYour job is to play compiler and \ndetermine whether each of these files \nwill compile. If they won’t \ncompile, how would you \nfix them?\nBE the compiler\nExercise",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (300x347)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x121)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\ndive In A Quick Dip\n21\n \n \nC\nclass Exercise1b {\n int x = 5;\n while ( x > 1 ) {\n x = x - 1;\n if ( x < 3) {\n System.out.println(“small x”);\n }\n }\n} \n \n \nA\nclass Exercise1b {\n public static void main(String [] args) {\n int x = 1;\n while ( x < 10 ) {\n if ( x > 3) {\n System.out.println(“big x”);\n }\n }\n }\n} \n \n \n8\npublic static void main(String [] args) {\n int x = 5;\n while ( x > 1 ) {\n x = x - 1;\n if ( x < 3) {\n System.out.println(“small x”);\n }\n }\n} \nEach of the Java files on this page \nrepresents a complete source file. \nYour job is to play compiler and \ndetermine whether each of these files \nwill compile. If they won’t \ncompile, how would you \nfix them?\nBE the compiler\nExercise",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 55,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 55,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 791 chars",
+      "severity": "info"
+    },
+    {
+      "page": 55,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 55,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 680,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9325,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "646 \nchapter 18\n public MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {\n MidiEvent event = null;\n try {\n ShortMessage a = new ShortMessage();\n a.setMessage(comd, chan, one, two);\n event = new MidiEvent(a, tick);\n \n }catch(Exception e) { }\n return event;\n }\n class MyDrawPanel extends JPanel implements ControllerEventListener {\n \n // only if we got an event do we want to paint\n boolean msg = false;\n public void controlChange(ShortMessage event) {\n msg = true; \n repaint(); \n }\n public Dimension getPreferredSize() {\n return new Dimension(300,300);\n }\n public void paintComponent(Graphics g) {\n if (msg) {\n \n Graphics2D g2 = (Graphics2D) g;\n int r = (int) (Math.random() * 250);\n int gr = (int) (Math.random() * 250);\n int b = (int) (Math.random() * 250);\n g.setColor(new Color(r,gr,b));\n int ht = (int) ((Math.random() * 120) + 10);\n int width = (int) ((Math.random() * 120) + 10);\n int x = (int) ((Math.random() * 40) + 10);\n int y = (int) ((Math.random() * 40) + 10); \n \n g.fillRect(x,y,ht, width);\n msg = false;\n } // close if\n } // close method\n } // close inner class\n} // close class\nclass MiniMusicService, continued...\nMiniMusicService code\nNothing new on this entire page. You’ve \nseen it all in the graphics CodeKitchen. \nIf you want another exercise, try \nannotating this code yourself, then \ncompare it with the CodeKitchen in \nthe “A very graphic story” chapter.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "646 \nchapter 18\n public MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {\n MidiEvent event = null;\n try {\n ShortMessage a = new ShortMessage();\n a.setMessage(comd, chan, one, two);\n event = new MidiEvent(a, tick);\n \n }catch(Exception e) { }\n return event;\n }\n class MyDrawPanel extends JPanel implements ControllerEventListener {\n \n // only if we got an event do we want to paint\n boolean msg = false;\n public void controlChange(ShortMessage event) {\n msg = true; \n repaint(); \n }\n public Dimension getPreferredSize() {\n return new Dimension(300,300);\n }\n public void paintComponent(Graphics g) {\n if (msg) {\n \n Graphics2D g2 = (Graphics2D) g;\n int r = (int) (Math.random() * 250);\n int gr = (int) (Math.random() * 250);\n int b = (int) (Math.random() * 250);\n g.setColor(new Color(r,gr,b));\n int ht = (int) ((Math.random() * 120) + 10);\n int width = (int) ((Math.random() * 120) + 10);\n int x = (int) ((Math.random() * 40) + 10);\n int y = (int) ((Math.random() * 40) + 10); \n \n g.fillRect(x,y,ht, width);\n msg = false;\n } // close if\n } // close method\n } // close inner class\n} // close class\nclass MiniMusicService, continued...\nMiniMusicService code\nNothing new on this entire page. You’ve \nseen it all in the graphics CodeKitchen. \nIf you want another exercise, try \nannotating this code yourself, then \ncompare it with the CodeKitchen in \nthe “A very graphic story” chapter.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 680,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 680,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1710 chars",
+      "severity": "info"
+    },
+    {
+      "page": 680,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

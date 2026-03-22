@@ -1,0 +1,79 @@
+{
+  "page_number": 142,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "108 \nchapter 5\npublic static void main (String [] args)\n \n \nDECLARE an int variable to hold the number of user guesses, named numOfGuesses, set it to 0.\n \n \nMAKE a new SimpleDotCom instance\n COMPUTE a random number between 0 and 4 that will be the starting location cell position\n \n \nMAKE an int array with 3 ints using the randomly-generated number, that number incremented by 1, \n \n \nand that number incremented by 2 (example: 3,4,5)\n \n \nINVOKE the setLocationCells() method on the SimpleDotCom instance\n \n \nDECLARE a boolean variable representing the state of the game, named isAlive. SET it to true\n WHILE the dot com is still alive (isAlive == true) :\n \n \n \n \nGET user input from the command line\n \n \n \n \n// CHECK the user guess\n \n \n \n \nINVOKE the checkYourself() method on the SimpleDotCom instance\n \n \n \n \nINCREMENT numOfGuesses variable\n \n \n \n \n// CHECK for dot com death\n \n \n \n \nIF result is “kill”\n \n \n \n \n \n \nSET isAlive to false (which means we won’t enter the loop again)\n \n \n \n \n \n PRINT the number of user guesses\n \n \n \n \nEND IF\n \n \nEND WHILE\nEND METHOD\n prep code \ntest code\nreal code\n prep code \nPrepcode for the SimpleDotComGame class\nEverything happens in main()\nThere are some things you’11 have to take on faith. For example, we have one \nline of prepcode that says, “GET user input from command-line”. Let me tell \nyou, that’5 a little more than we want to implement from scratch right now. But \nhappily, we’re using 00. And that means you get to ask some other class/object \nto do something for you, without worrying about how it does it. When you write \nprepcode, you should assume that somehow you’11 be able to do whatever you \nneed to do, 50 you can put all your brainpower into working out the logic. \nmetacognitive tip\nDon’t work one part of the brain for too long a stretch at one time. \nWorking just the left side of the brain for more than 30 minutes is \nlike working just your left arm for 30 minutes. Give each side of \nyour brain a break by switching sides at regular intervals. When \nyou shift to one side, the other side gets to rest and recover. \nLeft-brain activities include things like step-by-step se-\nquences, logical problem-solving, and analysis, while the \nright-brain kicks in for metaphors, creative problem-solving, \npattern-matching, and visualizing.\nSimpleDotCom class",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "pprreepp ccooddee",
+          "te",
+          "st code",
+          "real code"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (195x195)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "108 \nchapter 5\npublic static void main (String [] args)\n \n \nDECLARE an int variable to hold the number of user guesses, named numOfGuesses, set it to 0.\n \n \nMAKE a new SimpleDotCom instance\n COMPUTE a random number between 0 and 4 that will be the starting location cell position\n \n \nMAKE an int array with 3 ints using the randomly-generated number, that number incremented by 1, \n \n \nand that number incremented by 2 (example: 3,4,5)\n \n \nINVOKE the setLocationCells() method on the SimpleDotCom instance\n \n \nDECLARE a boolean variable representing the state of the game, named isAlive. SET it to true\n WHILE the dot com is still alive (isAlive == true) :\n \n \n \n \nGET user input from the command line\n \n \n \n \n// CHECK the user guess\n \n \n \n \nINVOKE the checkYourself() method on the SimpleDotCom instance\n \n \n \n \nINCREMENT numOfGuesses variable\n \n \n \n \n// CHECK for dot com death\n \n \n \n \nIF result is “kill”\n \n \n \n \n \n \nSET isAlive to false (which means we won’t enter the loop again)\n \n \n \n \n \n PRINT the number of user guesses\n \n \n \n \nEND IF\n \n \nEND WHILE\nEND METHOD\n prep code \ntest code\nreal code\n prep code \nPrepcode for the SimpleDotComGame class\nEverything happens in main()\nThere are some things you’11 have to take on faith. For example, we have one \nline of prepcode that says, “GET user input from command-line”. Let me tell \nyou, that’5 a little more than we want to implement from scratch right now. But \nhappily, we’re using 00. And that means you get to ask some other class/object \nto do something for you, without worrying about how it does it. When you write \nprepcode, you should assume that somehow you’11 be able to do whatever you \nneed to do, 50 you can put all your brainpower into working out the logic. \nmetacognitive tip\nDon’t work one part of the brain for too long a stretch at one time. \nWorking just the left side of the brain for more than 30 minutes is \nlike working just your left arm for 30 minutes. Give each side of \nyour brain a break by switching sides at regular intervals. When \nyou shift to one side, the other side gets to rest and recover. \nLeft-brain activities include things like step-by-step se-\nquences, logical problem-solving, and analysis, while the \nright-brain kicks in for metaphors, creative problem-solving, \npattern-matching, and visualizing.\nSimpleDotCom class",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 142,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 142,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2342 chars",
+      "severity": "info"
+    },
+    {
+      "page": 142,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 142,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

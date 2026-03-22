@@ -1,0 +1,77 @@
+{
+  "page_number": 8,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Overall global cooperation\nF 1 6 U R E 1\nSource: McKinsey & Company\nThe main drags on overall cooperation since 2020 \nhave been declines in cooperation in the health and \nwellness pillar and the peace and security pillar. For \nthe latter pillar, the trend was broadly negative from \n2016 until the pandemic and deteriorated rapidly \nafter 2020 due to significant increases in forcibly \ndisplaced people and deaths from conflict.\nDespite this concerning trend, there have been \nsigns of growing cooperation. The level of \ncooperation for climate and natural capital has been \nrising steadily, due in large measure to cooperative \nefforts since 2020 around commitments. In the \ntrade and capital pillar, cooperation showed signs of \ngrowing through the pandemic disruption (but signs \nare of moderation in 2023).\nThe following chapter examines the changes in \nglobal cooperation in each of the five pillars and is \nfollowed by a series of recommendations for helping \nleaders reimagine global cooperation in a new era.\nCooperation trends by pillar\nF 1 6 U R E 2\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\nAverage index of cooperation metrics [2020=1]\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\nOverall global cooperation \nSource: McKinsey & Company\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\nAverage index of cooperation metrics [2020=1]\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\nInnovation and technology\nHealth and wellness\nClimate and nature \nPeace and security \nTrade and capital",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Average index of cooperati\n1.1\n1.0\n0.9\n0.8\n0.7\n0.6\n2012 2013 201\nSource: McKinsey & Company",
+          "on metrics [2020=1]\nOverall global cooperation\n4 2015 2016 2017 2018 2019 2020 2021 2022"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "Overall global cooperation\nF 1 6 U R E 1\nSource: McKinsey & Company\nThe main drags on overall cooperation since 2020 \nhave been declines in cooperation in the health and \nwellness pillar and the peace and security pillar. For \nthe latter pillar, the trend was broadly negative from \n2016 until the pandemic and deteriorated rapidly \nafter 2020 due to significant increases in forcibly \ndisplaced people and deaths from conflict.\nDespite this concerning trend, there have been \nsigns of growing cooperation. The level of \ncooperation for climate and natural capital has been \nrising steadily, due in large measure to cooperative \nefforts since 2020 around commitments. In the \ntrade and capital pillar, cooperation showed signs of \ngrowing through the pandemic disruption (but signs \nare of moderation in 2023).\nThe following chapter examines the changes in \nglobal cooperation in each of the five pillars and is \nfollowed by a series of recommendations for helping \nleaders reimagine global cooperation in a new era.\nCooperation trends by pillar\nF 1 6 U R E 2\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\nAverage index of cooperation metrics [2020=1]\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\nOverall global cooperation \nSource: McKinsey & Company\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\nAverage index of cooperation metrics [2020=1]\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\nInnovation and technology\nHealth and wellness\nClimate and nature \nPeace and security \nTrade and capital",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 8,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 8,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1472 chars",
+      "severity": "info"
+    },
+    {
+      "page": 8,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

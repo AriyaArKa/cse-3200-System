@@ -1,0 +1,74 @@
+{
+  "page_number": 159,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "6 get to know the Java API \nthis is a new chapter\n125\nJava ships with hundreds of pre-built classes. You don’t have to \nreinvent the wheel if you know how to find what you need in the Java library, known as the \nJava API. You’ve got better things to do. If you’re going to write code, you might as well \nwrite only the parts that are truly custom for your application. You know those programmers \nwho walk out the door each night at 5 PM? The ones who don’t even show up until 10 AM? \nThey use the Java API. And about eight pages from now, 50 will you. The core Java library \nis a giant pile of classes just waiting for you to use like building blocks, to assemble your own \nprogram out of largely pre-built code. The Ready-bake Java we use in this book is code you \ndon’t have to create from scratch, but you still have to type it. The Java API is full of code you \ndon’t even have to type. All you need to do is learn to use it.\nUsing the Java Library\n1 can lift \nheavy objects.\n50 it’5 true? \nWe don’t have to \nbuild it ourselves?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (628x780)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "6 get to know the Java API \nthis is a new chapter\n125\nJava ships with hundreds of pre-built classes. You don’t have to \nreinvent the wheel if you know how to find what you need in the Java library, known as the \nJava API. You’ve got better things to do. If you’re going to write code, you might as well \nwrite only the parts that are truly custom for your application. You know those programmers \nwho walk out the door each night at 5 PM? The ones who don’t even show up until 10 AM? \nThey use the Java API. And about eight pages from now, 50 will you. The core Java library \nis a giant pile of classes just waiting for you to use like building blocks, to assemble your own \nprogram out of largely pre-built code. The Ready-bake Java we use in this book is code you \ndon’t have to create from scratch, but you still have to type it. The Java API is full of code you \ndon’t even have to type. All you need to do is learn to use it.\nUsing the Java Library\n1 can lift \nheavy objects.\n50 it’5 true? \nWe don’t have to \nbuild it ourselves?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 159,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 159,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1045 chars",
+      "severity": "info"
+    },
+    {
+      "page": 159,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 159,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

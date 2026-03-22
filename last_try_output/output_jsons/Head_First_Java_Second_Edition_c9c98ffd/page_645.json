@@ -1,0 +1,95 @@
+{
+  "page_number": 645,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n611\nA design for remote method calls \nCreate four things: server, client, \nserver helper, client helper\n1\nCreate client and server apps. The server app is the \nremote service that has an object with the method \nthat the client wants to invoke.\n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nServer heap\nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nClient heap\n2\nCreate client and server ‘helpers’. They’11 handle all \nthe low-level networking and 1/0 details 50 your client \nand service can pretend like they’re in the same heap.\n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nServer heap\nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nClient heap\nC\nli\ne\nn\nt\n \nh\ne\n1\np\ner\n5\ne\nr\nv\ni\nc\ne\n \nh\ne\n1\np\ne\nr",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x136)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (53x75)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (50x105)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x97)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n611\nA design for remote method calls \nCreate four things: server, client, \nserver helper, client helper\n1\nCreate client and server apps. The server app is the \nremote service that has an object with the method \nthat the client wants to invoke.\n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nServer heap\nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nClient heap\n2\nCreate client and server ‘helpers’. They’11 handle all \nthe low-level networking and 1/0 details 50 your client \nand service can pretend like they’re in the same heap.\n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nServer heap\nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nClient heap\nC\nli\ne\nn\nt\n \nh\ne\n1\np\ner\n5\ne\nr\nv\ni\nc\ne\n \nh\ne\n1\np\ne\nr",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 645,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 645,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 665 chars",
+      "severity": "info"
+    },
+    {
+      "page": 645,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 645,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

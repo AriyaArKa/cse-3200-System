@@ -1,0 +1,46 @@
+{
+  "page_number": 718,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the index \n684 \nindex\nobjects\nabout 55\narrays 59, 60, 83\ncomparing 209\ncreation 55, 240–256\neligible for garbage collection 260–263\nequality 560\nequals() 209, 561\nlife 258–263\nlocks 509\nObject class\nabout 208–216\nequals() 561\nhashCode() 561\noverriding methods 563\nobject graph 436, 438\nobject references 54, 56\nassignment 55, 262\ncasting 216\ncomparing 86\nequality 560\nnulling 262\npolymorphism 185–186\n00\ncontracts 190–191, 218\ndeadly diamond of death 223\ndesign 34, 41, 79, 166–191\nHAS-A 177–181\ninheritance 166–192\ninterfaces 219–227\n15-A 177–181, 251\noverload 191\noverride 167–192\npolymorphism 183, 183–191, 206–217\nsuperclass 251–256\noperators\nand autoboxing 291\nbitwise 660\ncomparison 151\nconditional 11\ndecrement 115\nincrement 105, 115\nlogical 151\nshift 660\noverload 191\nconstructors 256\noverride\nabout 32, 167–192\npolymorphism. See polymorphism\nP\npackages 154–155, 157, 587–593\ndirectory structure 589\norganizing code 589\npaintComponent() 364–368\nparameter. See arguments\nparameterized types 137\nparsing an int. See wrapper\nparsing text with String.split() 458\npass-by-copy. See pass-by-value\npass-by-value 77\nphrase-0-matic 16\npolymorphism 183–191\nabstract classes 206–217\nand exceptions 330\narguments and return types 187\nreferences of type Object 211–213\npool puzzle. See puzzles\nports 475\nprep code 99–102\nprimitives 53\n== operator 86\nautoboxing 288–289\nboolean 51\nbyte 51\nchar 51\ndouble 51\nfloat 51\nint 51",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "the index \n684 \nindex\nobjects\nabout 55\narrays 59, 60, 83\ncomparing 209\ncreation 55, 240–256\neligible for garbage collection 260–263\nequality 560\nequals() 209, 561\nlife 258–263\nlocks 509\nObject class\nabout 208–216\nequals() 561\nhashCode() 561\noverriding methods 563\nobject graph 436, 438\nobject references 54, 56\nassignment 55, 262\ncasting 216\ncomparing 86\nequality 560\nnulling 262\npolymorphism 185–186\n00\ncontracts 190–191, 218\ndeadly diamond of death 223\ndesign 34, 41, 79, 166–191\nHAS-A 177–181\ninheritance 166–192\ninterfaces 219–227\n15-A 177–181, 251\noverload 191\noverride 167–192\npolymorphism 183, 183–191, 206–217\nsuperclass 251–256\noperators\nand autoboxing 291\nbitwise 660\ncomparison 151\nconditional 11\ndecrement 115\nincrement 105, 115\nlogical 151\nshift 660\noverload 191\nconstructors 256\noverride\nabout 32, 167–192\npolymorphism. See polymorphism\nP\npackages 154–155, 157, 587–593\ndirectory structure 589\norganizing code 589\npaintComponent() 364–368\nparameter. See arguments\nparameterized types 137\nparsing an int. See wrapper\nparsing text with String.split() 458\npass-by-copy. See pass-by-value\npass-by-value 77\nphrase-0-matic 16\npolymorphism 183–191\nabstract classes 206–217\nand exceptions 330\narguments and return types 187\nreferences of type Object 211–213\npool puzzle. See puzzles\nports 475\nprep code 99–102\nprimitives 53\n== operator 86\nautoboxing 288–289\nboolean 51\nbyte 51\nchar 51\ndouble 51\nfloat 51\nint 51",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 718,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 718,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1484 chars",
+      "severity": "info"
+    },
+    {
+      "page": 718,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

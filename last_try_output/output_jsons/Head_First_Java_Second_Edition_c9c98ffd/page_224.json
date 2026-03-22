@@ -1,0 +1,86 @@
+{
+  "page_number": 224,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "190 \nchapter 7\nWhen you override a method from a superclass, you’re agreeing to \nfulfill the contract. The contract that says, for example, “1 take no \narguments and 1 return a boolean.” In other words, the arguments \nand return types of your overriding method must look to the outside \nworld exactly like the overridden method in the superclass.\nThe methods are the contract.\nIf polymorphism is going to work, the Toaster’5 version of the \noverridden method from Appliance has to work at runtime. \nRemember, the compiler looks at the reference type to decide \nwhether you can call a particular method on that reference. With \nan Appliance reference to a Toaster, the compiler cares only if class \nAppliance has the method you’re invoking on an Appliance reference. \nBut at runtime, the JVM looks not at the reference type (Appliance) but \nat the actual Toaster object on the heap. 50 if the compiler has already \napproved the method call, the only way it can work is if the overriding \nmethod has the same arguments and return types. Otherwise, \nsomeone with an Appliance reference will call turnOn() as a no-\narg method, even though there’5 a version in Toaster that takes an \nint. Which one is called at runtime? The one in Appliance. In other \nwords, the turnOn(int level) method in Toaster is not an override!\nKeeping the contract: rules for overriding\nToaster\nboolean turnOn(int level)\nThis is NOT an \noverride!\nCan’t change the \narguments in an \noverriding method!\nAppliance\nboolean turnOn()\nboolean turnOff()\n1\nArguments must be the same, and return \ntypes must be compatible.\nThe contract of superclass defines how other code can use a method. \nWhatever the superclass takes as an argument, the subclass over-\nriding the method must use that same argument. And whatever the \nsuperclass declares as a return type, the overriding method must de-\nclare either the same type, or a subclass type. Remember, a subclass \nobject is guaranteed to be able to do anything its superclass declares, \n50 it’5 safe to return a subclass where the superclass is expected.\n2\nThe method can’t be less accessible.\nThat means the access level must be the same, or friendlier. That \nmeans you can’t, for example, override a public method and make \nit private. What a shock that would be to the code invoking what it \nthinks (at compile time) is a public method, if suddenly at runtime \nthe JVM slammed the door shut because the overriding version \ncalled at runtime is private!\n50 far we’ve learned about two access levels: private and public. \nThe other two are in the deployment chapter (Release your Code) \nand appendix 8. There’5 also another rule about overriding related \nto exception handling, but we’11 wait until the chapter on exceptions \n(Risky Behavior) to cover that.\nThis is actually a legal \noverLOAD, but not an \noverRIDE.\nToaster\nprivate boolean turnOn()\nAppliance\npublic boolean turnOn()\npublic boolean turnOff()\nNOT LEGAL!\nIt’5 not a legal \noverride because you \nrestricted the access \nlevel. Nor is it a legal \noverLOAD, because \nyou didn’t change \narguments.\noverriding methods",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Appliance"
+        ],
+        [
+          "boolean turnOn()\nboolean turnOff()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Toaster"
+        ],
+        [
+          "boolean turnOn(int level)"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Appliance"
+        ],
+        [
+          "public boolean turnOn()\npublic boolean turnOff()"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "190 \nchapter 7\nWhen you override a method from a superclass, you’re agreeing to \nfulfill the contract. The contract that says, for example, “1 take no \narguments and 1 return a boolean.” In other words, the arguments \nand return types of your overriding method must look to the outside \nworld exactly like the overridden method in the superclass.\nThe methods are the contract.\nIf polymorphism is going to work, the Toaster’5 version of the \noverridden method from Appliance has to work at runtime. \nRemember, the compiler looks at the reference type to decide \nwhether you can call a particular method on that reference. With \nan Appliance reference to a Toaster, the compiler cares only if class \nAppliance has the method you’re invoking on an Appliance reference. \nBut at runtime, the JVM looks not at the reference type (Appliance) but \nat the actual Toaster object on the heap. 50 if the compiler has already \napproved the method call, the only way it can work is if the overriding \nmethod has the same arguments and return types. Otherwise, \nsomeone with an Appliance reference will call turnOn() as a no-\narg method, even though there’5 a version in Toaster that takes an \nint. Which one is called at runtime? The one in Appliance. In other \nwords, the turnOn(int level) method in Toaster is not an override!\nKeeping the contract: rules for overriding\nToaster\nboolean turnOn(int level)\nThis is NOT an \noverride!\nCan’t change the \narguments in an \noverriding method!\nAppliance\nboolean turnOn()\nboolean turnOff()\n1\nArguments must be the same, and return \ntypes must be compatible.\nThe contract of superclass defines how other code can use a method. \nWhatever the superclass takes as an argument, the subclass over-\nriding the method must use that same argument. And whatever the \nsuperclass declares as a return type, the overriding method must de-\nclare either the same type, or a subclass type. Remember, a subclass \nobject is guaranteed to be able to do anything its superclass declares, \n50 it’5 safe to return a subclass where the superclass is expected.\n2\nThe method can’t be less accessible.\nThat means the access level must be the same, or friendlier. That \nmeans you can’t, for example, override a public method and make \nit private. What a shock that would be to the code invoking what it \nthinks (at compile time) is a public method, if suddenly at runtime \nthe JVM slammed the door shut because the overriding version \ncalled at runtime is private!\n50 far we’ve learned about two access levels: private and public. \nThe other two are in the deployment chapter (Release your Code) \nand appendix 8. There’5 also another rule about overriding related \nto exception handling, but we’11 wait until the chapter on exceptions \n(Risky Behavior) to cover that.\nThis is actually a legal \noverLOAD, but not an \noverRIDE.\nToaster\nprivate boolean turnOn()\nAppliance\npublic boolean turnOn()\npublic boolean turnOff()\nNOT LEGAL!\nIt’5 not a legal \noverride because you \nrestricted the access \nlevel. Nor is it a legal \noverLOAD, because \nyou didn’t change \narguments.\noverriding methods",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 224,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 224,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3087 chars",
+      "severity": "info"
+    },
+    {
+      "page": 224,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

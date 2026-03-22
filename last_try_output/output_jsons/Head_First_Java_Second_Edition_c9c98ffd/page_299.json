@@ -1,0 +1,46 @@
+{
+  "page_number": 299,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n265\nWe saw an educational video about it once. \nLooks like a pretty brutal ending. 1 mean, \nwhen that method hits its ending curly brace, \nthe frame is literally blown off the Stack! Now \nthat’5 gotta hurt.\n1 live on the Heap, with the objects. Well, not \nwith the objects, actually in an object. The \nobject whose state 1 store. 1 have to admit life \ncan be pretty luxurious on the Heap. A lot of \nus feel guilty, especially around the holidays.\nOK, hypothetically, yes, if 1’m an instance \nvariable of the Collar and the Collar gets \nGC’d, then the Collar’5 instance variables \nwould indeed be tossed out like 50 many pizza \nboxes. But 1 was told that this almost never \nhappens.\nThey let us drink? \nframe gets to run again. On the one hand, we \nget to be active again. On the other hand, the \nclock starts ticking again on our short lives. \nThe more time our method spends running, \nthe closer we get to the end of the method. \nWe all know what happens then.\nTell me about it. In computer science they use \nthe term popped as in “the frame was popped \noff the Stack”. That makes it sound fun, or \nmaybe like an extreme sport. But, well, you \nsaw the footage. 50 why don’t we talk about \nyou? 1 know what my little Stack frame looks \nlike, but where do you live?\nBut you don’t always live as long as the object \nwho declared you, right? Say there’5 a Dog \nobject with a Collar instance variable. Imagine \nyou’re an instance variable of the Collar object, \nmaybe a reference to a Buckle or something, \nsitting there all happy inside the Collar object \nwho’5 all happy inside the Dog object. But... \nwhat happens if the Dog wants a new Collar, \nor nulls out its Collar instance variable? That \nmakes the Collar object eligible for GC. 50... \nif you’re an instance variable inside the Collar, \nand the whole Collar is abandoned, what \nhappens to you?\nAnd you believed it? That’5 what they say to \nkeep us motivated and productive. But aren’t \nyou forgetting something else? What if you’re \nan instance variable inside an object, and that \nobject is referenced only by a local variable? If \n1’m the only reference to the object you’re in, \nwhen 1 go, you’re coming with me. Like it or \nnot, our fates may be connected. 50 1 say we \nforget about all this and go get drunk while \nwe still can. Carpe RAM and all that.\nInstance Variable\nLocal Variable",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "constructors and gc\nyou are here\n265\nWe saw an educational video about it once. \nLooks like a pretty brutal ending. 1 mean, \nwhen that method hits its ending curly brace, \nthe frame is literally blown off the Stack! Now \nthat’5 gotta hurt.\n1 live on the Heap, with the objects. Well, not \nwith the objects, actually in an object. The \nobject whose state 1 store. 1 have to admit life \ncan be pretty luxurious on the Heap. A lot of \nus feel guilty, especially around the holidays.\nOK, hypothetically, yes, if 1’m an instance \nvariable of the Collar and the Collar gets \nGC’d, then the Collar’5 instance variables \nwould indeed be tossed out like 50 many pizza \nboxes. But 1 was told that this almost never \nhappens.\nThey let us drink? \nframe gets to run again. On the one hand, we \nget to be active again. On the other hand, the \nclock starts ticking again on our short lives. \nThe more time our method spends running, \nthe closer we get to the end of the method. \nWe all know what happens then.\nTell me about it. In computer science they use \nthe term popped as in “the frame was popped \noff the Stack”. That makes it sound fun, or \nmaybe like an extreme sport. But, well, you \nsaw the footage. 50 why don’t we talk about \nyou? 1 know what my little Stack frame looks \nlike, but where do you live?\nBut you don’t always live as long as the object \nwho declared you, right? Say there’5 a Dog \nobject with a Collar instance variable. Imagine \nyou’re an instance variable of the Collar object, \nmaybe a reference to a Buckle or something, \nsitting there all happy inside the Collar object \nwho’5 all happy inside the Dog object. But... \nwhat happens if the Dog wants a new Collar, \nor nulls out its Collar instance variable? That \nmakes the Collar object eligible for GC. 50... \nif you’re an instance variable inside the Collar, \nand the whole Collar is abandoned, what \nhappens to you?\nAnd you believed it? That’5 what they say to \nkeep us motivated and productive. But aren’t \nyou forgetting something else? What if you’re \nan instance variable inside an object, and that \nobject is referenced only by a local variable? If \n1’m the only reference to the object you’re in, \nwhen 1 go, you’re coming with me. Like it or \nnot, our fates may be connected. 50 1 say we \nforget about all this and go get drunk while \nwe still can. Carpe RAM and all that.\nInstance Variable\nLocal Variable",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 299,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 299,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2382 chars",
+      "severity": "info"
+    },
+    {
+      "page": 299,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

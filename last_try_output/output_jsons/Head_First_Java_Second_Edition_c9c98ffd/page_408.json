@@ -1,0 +1,46 @@
+{
+  "page_number": 408,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "374 \nchapter 12\n3 option three\nCreate two separate ActionListener classes\nFlaw: these classes won’t have access to the variables they need \nto act on, ‘frame’ and ‘label’. You could fix it, but you’d have to give each of the \nlistener classes a reference to the main GUI class, 50 that inside the actionPerformed() \nmethods the listener could use the GUI class reference to access the variables of the GUI \nclass. But that’5 breaking encapsulation, 50 we’d probably need to make getter methods \nfor the gui widgets (getFrame(), getLabel(), etc.). And you’d probably need to add a \nconstructor to the listener class 50 that you can pass the GUI reference to the listener at \nthe time the listener is instantiated. And, well, it gets messier and more complicated.\nThere has got to be a better way!\nclass MyGui {\n JFrame frame;\n JLabel label;\n void gui() {\n // code to instantiate the two listeners and register one \n // with the color button and the other with the label button\n } \n} // close class\nclass ColorButtonListener implements ActionListener {\n public void actionPerformed(ActionEvent event) {\n frame.repaint();\n }\n}\nclass LabelButtonListener implements ActionListener {\n public void actionPerformed(ActionEvent event) {\n label.setText(“That hurt!”);\n }\n}\nProblem! This class has no reference to the variable ‘label’\nWon’t work! This class doesn’t have a reference to \nthe ‘frame’ variable of the MyGui class\nmultiple listeners\nHow do you get action events for two different buttons, \nwhen each button needs to do something different?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "374 \nchapter 12\n3 option three\nCreate two separate ActionListener classes\nFlaw: these classes won’t have access to the variables they need \nto act on, ‘frame’ and ‘label’. You could fix it, but you’d have to give each of the \nlistener classes a reference to the main GUI class, 50 that inside the actionPerformed() \nmethods the listener could use the GUI class reference to access the variables of the GUI \nclass. But that’5 breaking encapsulation, 50 we’d probably need to make getter methods \nfor the gui widgets (getFrame(), getLabel(), etc.). And you’d probably need to add a \nconstructor to the listener class 50 that you can pass the GUI reference to the listener at \nthe time the listener is instantiated. And, well, it gets messier and more complicated.\nThere has got to be a better way!\nclass MyGui {\n JFrame frame;\n JLabel label;\n void gui() {\n // code to instantiate the two listeners and register one \n // with the color button and the other with the label button\n } \n} // close class\nclass ColorButtonListener implements ActionListener {\n public void actionPerformed(ActionEvent event) {\n frame.repaint();\n }\n}\nclass LabelButtonListener implements ActionListener {\n public void actionPerformed(ActionEvent event) {\n label.setText(“That hurt!”);\n }\n}\nProblem! This class has no reference to the variable ‘label’\nWon’t work! This class doesn’t have a reference to \nthe ‘frame’ variable of the MyGui class\nmultiple listeners\nHow do you get action events for two different buttons, \nwhen each button needs to do something different?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 408,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 408,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1591 chars",
+      "severity": "info"
+    },
+    {
+      "page": 408,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

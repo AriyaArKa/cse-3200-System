@@ -1,0 +1,108 @@
+{
+  "page_number": 64,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "once upon a time in Objectville\n30 \nchapter 2\nAmeoba rotation point in Larry \nand Brad’5 version:\nWhere the ameba rotation\npoint should be:\nWhat the spec conveniently\nforgot to mention\n(Hah! 50 much for that foofy 00 nonsense). But the smirk on Larry’5 face melted when the \nReally Annoying Project Manager said (with that tone of disappointment), “Oh, no, that’5 not \nhow the amoeba is supposed to rotate...” \nTurns out, both programmers had written their rotate code like this:\n 1) determine the rectangle that surrounds the shape\n 2) calculate the center of that rectangle, and rotate the shape around that point.\nBut the amoeba shape was supposed to rotate around a point on one end, like a clock hand.\n“1’m toast.” thought Larry, visualizing charred Wonderbread™. “Although, hmmmm. 1 could \njust add another if/else to the rotate procedure, and then just hard-code the rotation point \ncode for the amoeba. That probably won’t break anything.” But the little voice at the back of \nhis head said, “Big Mistake. Do you honestly think the spec won’t change again?”\nLarry snuck in just moments ahead of Brad.\nBack in Larry’5 cube\nHe figured he better add rotation point arguments \nto the rotate procedure. A lot of code was affected. \nTesting, recompiling, the whole nine yards all over \nagain. Things that used to work, didn’t.\n rotate(shapeNum, xPt, yPt) {\n // if the shape is not an amoeba,\n // calculate the center point\n // based on a rectangle,\n // then rotate\n // else\n // use the xPt and yPt as\n // the rotation point offset\n // and then rotate\n }\n At Brad’5 laptop on his lawn \nchair at the Telluride Bluegrass Festival\nWithout missing a beat, Brad modified the rotate \nmethod, but only in the Amoeba class. He never \ntouched the tested, working, \ncompiled code for the other \nparts of the program. To \ngive the Amoeba a rota-\ntion point, he added an \nattribute that all Amoebas \nwould have. He modi-\nfied, tested, and delivered \n(wirelessly) the revised \nprogram during a single \nBela Fleck set.\nAmoeba\nint xPoint\nint yPoint\nrotate() {\n // code to rotate an amoeba\n // using amoeba’5 x and y \n }\nplaySound() {\n // code to play the new \n // .hif file for an amoeba\n }",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Amoeba"
+        ],
+        [
+          "int xPoint\nint yPoint\nrotate() {\n// code to rotate an amoeba\n// using amoeba’5 x and y\n}\nplaySound() {\n// code to play the new\n// .hif file for an amoeba\n}"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (236x228)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (78x80)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (78x78)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (61x39)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (41x40)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (431x513)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "once upon a time in Objectville\n30 \nchapter 2\nAmeoba rotation point in Larry \nand Brad’5 version:\nWhere the ameba rotation\npoint should be:\nWhat the spec conveniently\nforgot to mention\n(Hah! 50 much for that foofy 00 nonsense). But the smirk on Larry’5 face melted when the \nReally Annoying Project Manager said (with that tone of disappointment), “Oh, no, that’5 not \nhow the amoeba is supposed to rotate...” \nTurns out, both programmers had written their rotate code like this:\n 1) determine the rectangle that surrounds the shape\n 2) calculate the center of that rectangle, and rotate the shape around that point.\nBut the amoeba shape was supposed to rotate around a point on one end, like a clock hand.\n“1’m toast.” thought Larry, visualizing charred Wonderbread™. “Although, hmmmm. 1 could \njust add another if/else to the rotate procedure, and then just hard-code the rotation point \ncode for the amoeba. That probably won’t break anything.” But the little voice at the back of \nhis head said, “Big Mistake. Do you honestly think the spec won’t change again?”\nLarry snuck in just moments ahead of Brad.\nBack in Larry’5 cube\nHe figured he better add rotation point arguments \nto the rotate procedure. A lot of code was affected. \nTesting, recompiling, the whole nine yards all over \nagain. Things that used to work, didn’t.\n rotate(shapeNum, xPt, yPt) {\n // if the shape is not an amoeba,\n // calculate the center point\n // based on a rectangle,\n // then rotate\n // else\n // use the xPt and yPt as\n // the rotation point offset\n // and then rotate\n }\n At Brad’5 laptop on his lawn \nchair at the Telluride Bluegrass Festival\nWithout missing a beat, Brad modified the rotate \nmethod, but only in the Amoeba class. He never \ntouched the tested, working, \ncompiled code for the other \nparts of the program. To \ngive the Amoeba a rota-\ntion point, he added an \nattribute that all Amoebas \nwould have. He modi-\nfied, tested, and delivered \n(wirelessly) the revised \nprogram during a single \nBela Fleck set.\nAmoeba\nint xPoint\nint yPoint\nrotate() {\n // code to rotate an amoeba\n // using amoeba’5 x and y \n }\nplaySound() {\n // code to play the new \n // .hif file for an amoeba\n }",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 64,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 64,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2233 chars",
+      "severity": "info"
+    },
+    {
+      "page": 64,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 64,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

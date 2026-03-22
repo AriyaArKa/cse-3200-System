@@ -1,0 +1,88 @@
+{
+  "page_number": 117,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n83\nHow do objects in an array \nbehave?\nDog array object (Dog[])\nDog[]\npets\npets[0] = new Dog();\npets[1] = new Dog();\nDog[] pets;\npets = new Dog[7];\nCreate two new Dog objects, \nand assign them to the first \ntwo array elements.\nDog Dog Dog Dog Dog Dog Dog\nDog array object (Dog[])\nDog[]\npets\nDog Dog Dog Dog Dog Dog Dog\nD\nog \n0\nb\nj\nec\nt\nD\nog \n0\nb\nj\nec\nt\nDeclare and create a Dog array, \nto hold 7 Dog references.\n1\nJust like any other object. The only difference is \nhow you get to them. In other words, how you get \nthe remote control. Let’5 try calling methods on \nDog objects in an array. \n2\npets[0].setSize(30);\nint x = pets[0].getSize();\npets[1].setSize(8);\nCall methods on the two Dog \nobjects.\n3\n30\nsize\n8\nsize",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (710x261)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (710x261)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (52x74)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n83\nHow do objects in an array \nbehave?\nDog array object (Dog[])\nDog[]\npets\npets[0] = new Dog();\npets[1] = new Dog();\nDog[] pets;\npets = new Dog[7];\nCreate two new Dog objects, \nand assign them to the first \ntwo array elements.\nDog Dog Dog Dog Dog Dog Dog\nDog array object (Dog[])\nDog[]\npets\nDog Dog Dog Dog Dog Dog Dog\nD\nog \n0\nb\nj\nec\nt\nD\nog \n0\nb\nj\nec\nt\nDeclare and create a Dog array, \nto hold 7 Dog references.\n1\nJust like any other object. The only difference is \nhow you get to them. In other words, how you get \nthe remote control. Let’5 try calling methods on \nDog objects in an array. \n2\npets[0].setSize(30);\nint x = pets[0].getSize();\npets[1].setSize(8);\nCall methods on the two Dog \nobjects.\n3\n30\nsize\n8\nsize",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 117,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 117,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 827 chars",
+      "severity": "info"
+    },
+    {
+      "page": 117,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 117,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

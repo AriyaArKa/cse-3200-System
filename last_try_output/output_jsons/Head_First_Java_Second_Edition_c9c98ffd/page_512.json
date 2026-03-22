@@ -1,0 +1,74 @@
+{
+  "page_number": 512,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "478 \nchapter 15\nTo communicate over a Socket connection, you use streams. \nRegular old 1/0 streams, just like we used in the last chapter. One \nof the coolest features in Java is that most of your 1/0 work won’t \ncare what your high-level chain stream is actually connected to. In \nother words, you can use a BufferedReader just like you did when \nyou were writing to a file, the difference is that the underlying \nconnection stream is connected to a Socket rather than a File!\nTo read data from a Socket, use a \nBufferedReader\nSocket chatSocket = new Socket(“127.0.0.1”, 5000);\n127.0.0.1 is the IP address for “localhost”, in \nother words, the one this code is running on. You \ncan use this when you’re testing your client and \nserver on a single, stand-alone machine.\n1\nMake a Socket connection to the server\nBufferedReader reader = new BufferedReader(stream);\nString message = reader.readLine();\n3\nMake a BufferedReader and read!\nChain the BufferedReader to the \nInputStreamReader(which was chained to the low-\nlevel connection stream we got from the Socket.)\nThe port number, which you know \nbecause we TOLD you that 5000 is \nthe port number for our chat server.\nInputStreamReader stream = new InputStreamReader(chatSocket.getInputStream());\n2\nMake an InputStreamReader chained to the Socket’5 \nlow-level (connection) input stream\nInputStreamReader is a ‘bridge’ between a low-\nlevel byte stream (like the one coming from the \nSocket) and a high-level character stream (like \nthe BufferedReader we’re after as our top of \nthe chain stream).\nClient\nSocket’5 input stream \n(we don’t need to know \nthe actual class)\n011010011\nbytes from server\nsource\nchained to\nAll we have to do is ASK the socket for \nan input stream! It’5 a low-level connection \nstream, but we’re just gonna chain it to \nsomething more text-friendly.\nData on the \nserver\ncharacters\ndestination\nInputStreamReader\nchained to\nbuffered \ncharacters\nBufferedReader\nconverted to characters\nbuffered characters\nServer\ninput and output streams \nto and from the Socket \nconnections \nreading from a socket",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (211x149)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (127x122)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (455x237)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "478 \nchapter 15\nTo communicate over a Socket connection, you use streams. \nRegular old 1/0 streams, just like we used in the last chapter. One \nof the coolest features in Java is that most of your 1/0 work won’t \ncare what your high-level chain stream is actually connected to. In \nother words, you can use a BufferedReader just like you did when \nyou were writing to a file, the difference is that the underlying \nconnection stream is connected to a Socket rather than a File!\nTo read data from a Socket, use a \nBufferedReader\nSocket chatSocket = new Socket(“127.0.0.1”, 5000);\n127.0.0.1 is the IP address for “localhost”, in \nother words, the one this code is running on. You \ncan use this when you’re testing your client and \nserver on a single, stand-alone machine.\n1\nMake a Socket connection to the server\nBufferedReader reader = new BufferedReader(stream);\nString message = reader.readLine();\n3\nMake a BufferedReader and read!\nChain the BufferedReader to the \nInputStreamReader(which was chained to the low-\nlevel connection stream we got from the Socket.)\nThe port number, which you know \nbecause we TOLD you that 5000 is \nthe port number for our chat server.\nInputStreamReader stream = new InputStreamReader(chatSocket.getInputStream());\n2\nMake an InputStreamReader chained to the Socket’5 \nlow-level (connection) input stream\nInputStreamReader is a ‘bridge’ between a low-\nlevel byte stream (like the one coming from the \nSocket) and a high-level character stream (like \nthe BufferedReader we’re after as our top of \nthe chain stream).\nClient\nSocket’5 input stream \n(we don’t need to know \nthe actual class)\n011010011\nbytes from server\nsource\nchained to\nAll we have to do is ASK the socket for \nan input stream! It’5 a low-level connection \nstream, but we’re just gonna chain it to \nsomething more text-friendly.\nData on the \nserver\ncharacters\ndestination\nInputStreamReader\nchained to\nbuffered \ncharacters\nBufferedReader\nconverted to characters\nbuffered characters\nServer\ninput and output streams \nto and from the Socket \nconnections \nreading from a socket",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 512,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 512,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2066 chars",
+      "severity": "info"
+    },
+    {
+      "page": 512,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 512,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

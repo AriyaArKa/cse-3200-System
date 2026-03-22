@@ -1,0 +1,97 @@
+{
+  "page_number": 209,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inheritance and polymorphism\nyou are here\n175\nWolf w = new Wolf();\nw.makeNoise();\nw.roam();\nw.eat();\nw.sleep();\nWhich method is called?\nThe Wolf class has four methods. One \ninherited from Animal, one inherited from \nCanine (which is actually an overridden \nversion of a method in class Animal), and \ntwo overridden in the Wolf class. When \nyou create a Wolf object and assign it to \na variable, you can use the dot operator \non that reference variable to invoke all \nfour methods. But which version of those \nmethods gets called?\nmake a new Wolf object\ncalls the version in Wolf\ncalls the version in Canine\ncalls the version in Wolf\ncalls the version in Animal\nsize\npicture\nfood\nprey\nWolf\nCanine\nroam()\nmakeNoise()\neat()\nAnimal\nmakeNoise()\neat()\nsleep()\nroam()\nWhen you call a method on an object \nreference, you’re calling the most specific \nversion of the method for that object type.\n In other words, the lowest one wins! \n“Lowest” meaning lowest on the \ninheritance tree. Canine is lower than \nAnimal, and Wolf is lower than Canine, \n50 invoking a method on a reference \nto a Wolf object means the JVM starts \nlooking first in the Wolf class. If the JVM \ndoesn’t find a version of the method in \nthe Wolf class, it starts walking back up \nthe inheritance hierarchy until it finds a \nmatch.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Canine"
+        ],
+        [
+          "roam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Wolf"
+        ],
+        [
+          "size\nmpicatkuerNeoise()\nefoaot(d)\nprey"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "inheritance and polymorphism\nyou are here\n175\nWolf w = new Wolf();\nw.makeNoise();\nw.roam();\nw.eat();\nw.sleep();\nWhich method is called?\nThe Wolf class has four methods. One \ninherited from Animal, one inherited from \nCanine (which is actually an overridden \nversion of a method in class Animal), and \ntwo overridden in the Wolf class. When \nyou create a Wolf object and assign it to \na variable, you can use the dot operator \non that reference variable to invoke all \nfour methods. But which version of those \nmethods gets called?\nmake a new Wolf object\ncalls the version in Wolf\ncalls the version in Canine\ncalls the version in Wolf\ncalls the version in Animal\nsize\npicture\nfood\nprey\nWolf\nCanine\nroam()\nmakeNoise()\neat()\nAnimal\nmakeNoise()\neat()\nsleep()\nroam()\nWhen you call a method on an object \nreference, you’re calling the most specific \nversion of the method for that object type.\n In other words, the lowest one wins! \n“Lowest” meaning lowest on the \ninheritance tree. Canine is lower than \nAnimal, and Wolf is lower than Canine, \n50 invoking a method on a reference \nto a Wolf object means the JVM starts \nlooking first in the Wolf class. If the JVM \ndoesn’t find a version of the method in \nthe Wolf class, it starts walking back up \nthe inheritance hierarchy until it finds a \nmatch.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 209,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 209,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1296 chars",
+      "severity": "info"
+    },
+    {
+      "page": 209,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 209,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

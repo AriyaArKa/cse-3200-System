@@ -1,0 +1,81 @@
+{
+  "page_number": 363,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n329\npublic class Foo {\n public void go() {\n Laundry laundry = new Laundry();\n try {\n laundry.doLaundry();\n } catch(PantsException pex) {\n // recovery code\n } catch(LingerieException lex) {\n // recovery code\n }\n }\n}\nA method can throw multiple exceptions if it darn well needs to. But \na method’5 declaration must declare all the checked exceptions it can \nthrow (although if two or more exceptions have a common superclass, the \nmethod can declare just the superclass.)\nDid we mention that a method can \nthrow more than one exception?\nThe compiler will make sure that you’ve handled all the checked excep-\ntions thrown by the method you’re calling. Stack the catch blocks under \nthe try, one after the other. Sometimes the order in which you stack the \ncatch blocks matters, but we’11 get to that a little later.\nCatching multiple exceptions\npublic class Laundry {\n public void doLaundry() throws PantsException, LingerieException {\n // code that could throw either exception\n }\n}\nThis method declares two, count ‘em, \nTWO exceptions. \nif doLaundry() throws a \nPantsException, it lands in the \nPantsException catch block.\nif doLaundry() throws a \nLingerieException, it lands in the \nLingerieException catch block.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (108x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (43x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (153x85)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (61x140)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n329\npublic class Foo {\n public void go() {\n Laundry laundry = new Laundry();\n try {\n laundry.doLaundry();\n } catch(PantsException pex) {\n // recovery code\n } catch(LingerieException lex) {\n // recovery code\n }\n }\n}\nA method can throw multiple exceptions if it darn well needs to. But \na method’5 declaration must declare all the checked exceptions it can \nthrow (although if two or more exceptions have a common superclass, the \nmethod can declare just the superclass.)\nDid we mention that a method can \nthrow more than one exception?\nThe compiler will make sure that you’ve handled all the checked excep-\ntions thrown by the method you’re calling. Stack the catch blocks under \nthe try, one after the other. Sometimes the order in which you stack the \ncatch blocks matters, but we’11 get to that a little later.\nCatching multiple exceptions\npublic class Laundry {\n public void doLaundry() throws PantsException, LingerieException {\n // code that could throw either exception\n }\n}\nThis method declares two, count ‘em, \nTWO exceptions. \nif doLaundry() throws a \nPantsException, it lands in the \nPantsException catch block.\nif doLaundry() throws a \nLingerieException, it lands in the \nLingerieException catch block.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 363,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 363,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1331 chars",
+      "severity": "info"
+    },
+    {
+      "page": 363,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 363,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

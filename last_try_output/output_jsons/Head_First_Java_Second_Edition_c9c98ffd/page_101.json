@@ -1,0 +1,67 @@
+{
+  "page_number": 101,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nprimitives and references\n67\nThe case of the pilfered references\n It was a dark and stormy night. Tawny strolled into the programmers’ bullpen like she \nowned the place. She knew that all the programmers would still be hard at work, and she \nwanted help. She needed a new method added to the pivotal class that was to be loaded into the \nclient’5 new top-secret Java-enabled cell phone. Heap space in the cell phone’5 memory was \nas tight as Tawny’5 top, and everyone knew it. The normally raucous buzz in the bullpen fell to \nsilence as Tawny eased her way to the white board. She sketched a quick overview of the new \nmethod’5 functionality and slowly scanned the room. “Well boys, it’5 crunch time”, she purred. \n“Whoever creates the most memory efficient version of this method is coming with me to the \nclient’5 launch party on Maui tomorrow... to help me install the new software.” \n The next morning Tawny glided into the bullpen wearing her short Aloha dress. \n“Gentlemen”, she smiled, “the plane leaves in a few hours, show me what you’ve got!”. \nBob went first; as he began to sketch his design on the white board Tawny said, “Let’5 \nget to the point Bob, show me how you handled updating the list of contact objects.” \nBob quickly drew a code fragment on the board:\n Contact [] ca = new Contact[10];\n while ( x < 10 ) { // make 10 contact objects\n ca[x] = new Contact();\n x = x + 1;\n }\n // do complicated Contact list updating stuff with ca\n “Tawny 1 know we’re tight on memory, but your spec said that we had to be able to access \nindividual contact information for all ten allowable contacts, this was the best scheme 1 could \ncook up”, said Bob. Kent was next, already imagining coconut cocktails with Tawny, “Bob,” \nhe said, “your solution’5 a bit kludgy don’t you think?” Kent smirked, “Take a look at this \nbaby”:\n Contact refc;\n while ( x < 10 ) { // make 10 contact objects\n refc = new Contact();\n x = x + 1;\n }\n // do complicated Contact list updating stuff with refc\n “1 saved a bunch of reference variables worth of memory, Bob-0-rino, 50 put away your \nsunscreen”, mocked Kent. “Not 50 fast Kent!”, said Tawny, “you’ve saved a little memory, but \nBob’5 coming with me.”.\nWhy did Tawny choose Bob’5 method over Kent’5, when Kent’5 used less memory?\nFive-Minute\nMystery",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (304x238)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nprimitives and references\n67\nThe case of the pilfered references\n It was a dark and stormy night. Tawny strolled into the programmers’ bullpen like she \nowned the place. She knew that all the programmers would still be hard at work, and she \nwanted help. She needed a new method added to the pivotal class that was to be loaded into the \nclient’5 new top-secret Java-enabled cell phone. Heap space in the cell phone’5 memory was \nas tight as Tawny’5 top, and everyone knew it. The normally raucous buzz in the bullpen fell to \nsilence as Tawny eased her way to the white board. She sketched a quick overview of the new \nmethod’5 functionality and slowly scanned the room. “Well boys, it’5 crunch time”, she purred. \n“Whoever creates the most memory efficient version of this method is coming with me to the \nclient’5 launch party on Maui tomorrow... to help me install the new software.” \n The next morning Tawny glided into the bullpen wearing her short Aloha dress. \n“Gentlemen”, she smiled, “the plane leaves in a few hours, show me what you’ve got!”. \nBob went first; as he began to sketch his design on the white board Tawny said, “Let’5 \nget to the point Bob, show me how you handled updating the list of contact objects.” \nBob quickly drew a code fragment on the board:\n Contact [] ca = new Contact[10];\n while ( x < 10 ) { // make 10 contact objects\n ca[x] = new Contact();\n x = x + 1;\n }\n // do complicated Contact list updating stuff with ca\n “Tawny 1 know we’re tight on memory, but your spec said that we had to be able to access \nindividual contact information for all ten allowable contacts, this was the best scheme 1 could \ncook up”, said Bob. Kent was next, already imagining coconut cocktails with Tawny, “Bob,” \nhe said, “your solution’5 a bit kludgy don’t you think?” Kent smirked, “Take a look at this \nbaby”:\n Contact refc;\n while ( x < 10 ) { // make 10 contact objects\n refc = new Contact();\n x = x + 1;\n }\n // do complicated Contact list updating stuff with refc\n “1 saved a bunch of reference variables worth of memory, Bob-0-rino, 50 put away your \nsunscreen”, mocked Kent. “Not 50 fast Kent!”, said Tawny, “you’ve saved a little memory, but \nBob’5 coming with me.”.\nWhy did Tawny choose Bob’5 method over Kent’5, when Kent’5 used less memory?\nFive-Minute\nMystery",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 101,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 101,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2391 chars",
+      "severity": "info"
+    },
+    {
+      "page": 101,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 101,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

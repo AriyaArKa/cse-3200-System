@@ -1,0 +1,174 @@
+{
+  "page_number": 368,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "334 chapter 11\npolymorphic puzzle\nBiffEx\nFooEx\nBarEx\ntry {\n x.doRisky();\n} catch(AlphaEx a) {\n // recovery from AlphaEx\n} catch(BetaEx b) {\n // recovery from BetaEx\n} catch(GammaEx c) {\n // recovery from GammaEx\n} catch(DeltaEx d) {\n // recovery from DeltaEx\n}\nBazEx\nBoinkEx\nAssume the try/catch block here is legally coded. Your task is to draw two \ndifferent class diagrams that can accurately reflect the Exception classes. \nIn other words, what class inheritance structures would make the try/\ncatch blocks in the sample code legal?\nYour task is to create two different legal try / catch structures (similar to \nthe one above left), to accurately represent the class diagram shown on \nthe left. Assume ALL of these exceptions might be thrown by the method \nwith the try block.\nSharpen your pencil",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6533,
+      "rows": [
+        [
+          "BazEx",
+          "",
+          ""
+        ],
+        [
+          "",
+          "BazEx",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6533,
+      "rows": [
+        [
+          "FooEx",
+          "",
+          ""
+        ],
+        [
+          "",
+          "FooEx",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "",
+          "BarEx",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "BiffEx",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.68,
+      "rows": [
+        [
+          "BoinkEx",
+          ""
+        ],
+        [
+          "BoinkEx",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "334 chapter 11\npolymorphic puzzle\nBiffEx\nFooEx\nBarEx\ntry {\n x.doRisky();\n} catch(AlphaEx a) {\n // recovery from AlphaEx\n} catch(BetaEx b) {\n // recovery from BetaEx\n} catch(GammaEx c) {\n // recovery from GammaEx\n} catch(DeltaEx d) {\n // recovery from DeltaEx\n}\nBazEx\nBoinkEx\nAssume the try/catch block here is legally coded. Your task is to draw two \ndifferent class diagrams that can accurately reflect the Exception classes. \nIn other words, what class inheritance structures would make the try/\ncatch blocks in the sample code legal?\nYour task is to create two different legal try / catch structures (similar to \nthe one above left), to accurately represent the class diagram shown on \nthe left. Assume ALL of these exceptions might be thrown by the method \nwith the try block.\nSharpen your pencil",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 368,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 368,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 817 chars",
+      "severity": "info"
+    },
+    {
+      "page": 368,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

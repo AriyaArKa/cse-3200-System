@@ -1,0 +1,74 @@
+{
+  "page_number": 83,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "3 primitives and references\nthis is a new chapter\n49\nVariables come in two flavors: primitive and reference. 50 far you’ve \nused variables in two places—as object state (instance variables), and as local variables \n(variables declared within a method). Later, we’11 use variables as arguments (values sent to a \nmethod by the calling code), and as return types (values sent back to the caller of the method). \nYou’ve seen variables declared as simple primitive integer values (type int). You’ve seen \nvariables declared as something more complex like a String or an array. But there’5 gotta be \nmore to life than integers, Strings, and arrays. What if you have a PetOwner object with a Dog \ninstance variable? Or a Car with an Engine? In this chapter we’11 unwrap the mysteries of Java \ntypes and look at what you can declare as a variable, what you can put in a variable, and what you \ncan do with a variable. And we’11 finally see what life is truly like on the garbage-collectible heap.\n Know Your Variables",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (774x624)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "3 primitives and references\nthis is a new chapter\n49\nVariables come in two flavors: primitive and reference. 50 far you’ve \nused variables in two places—as object state (instance variables), and as local variables \n(variables declared within a method). Later, we’11 use variables as arguments (values sent to a \nmethod by the calling code), and as return types (values sent back to the caller of the method). \nYou’ve seen variables declared as simple primitive integer values (type int). You’ve seen \nvariables declared as something more complex like a String or an array. But there’5 gotta be \nmore to life than integers, Strings, and arrays. What if you have a PetOwner object with a Dog \ninstance variable? Or a Car with an Engine? In this chapter we’11 unwrap the mysteries of Java \ntypes and look at what you can declare as a variable, what you can put in a variable, and what you \ncan do with a variable. And we’11 finally see what life is truly like on the garbage-collectible heap.\n Know Your Variables",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 83,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 83,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1015 chars",
+      "severity": "info"
+    },
+    {
+      "page": 83,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 83,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

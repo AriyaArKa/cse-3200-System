@@ -1,0 +1,148 @@
+{
+  "page_number": 87,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nprimitives and references\n53\nMake it Stick\nThe eight primitive types are:\nboolean char byte short int long float double\nAnd here’5 a mnemonic for remembering them:\nBe Careful! Bears Shouldn’t Ingest Large \nFurry Dogs\nIf you make up your own, it’11 stick even better.\nB_ C_ B_ S_ I_ L_ F_ D_\nBack away from that keyword!\nYou know you need a name and a type for your variables. \nYou already know the primitive types.\nBut what can you use as names? The rules are simple. You \ncan name a class, method, or variable according to the \nfollowing rules (the real rules are slightly more flexible, \nbut these will keep you safe):\n■ It must start with a letter, underscore (_), or \ndollar sign ($). You can’t start a name with a \nnumber.\n■ After the first character, you can use numbers as \nwell. Just don’t start it with a number.\n■ It can be anything you like, subject to those two \nrules, just 50 long as it isn’t one of Java’5 reserved \nwords. \nReserved words are keywords (and other things) that the \ncompiler recognizes. And if you really want to play confuse-a-\ncompiler, then just try using a reserved word as a name.\nYou’ve already seen some reserved words when we looked at \nwriting our first main class:\npublic static void\nAnd the primitive types are reserved as well:\nboolean char byte short int long float double\nBut there are a lot more we haven’t discussed yet. Even if you don’t \nneed to know what they mean, you still need to know you can’t use \n‘em yourself. Do not–under any circumstances–try to memorize these \nnow. To make room for these in your head, you’d probably have to \nlose something else. Like where your car is parked. Don’t worry, by \nthe end of the book you’11 have most of them down cold.\ndon’t use any of these \nfor your own names.\nboolean\nbyte\nchar\ndouble\nfloat\nint\nlong\nshort\npublic\nprivate\nprotected\nabstract\nfinal\nnative\nstatic\nstrictfp\nsynchronized\ntransient\nvolatile\nif\nelse\ndo\nwhile\nswitch\ncase\ndefault\nfor\nbreak\ncontinue\nassert\nclass\nextends\nimplements\nimport\ninstanceof\ninterface\nnew\npackage\nsuper\nthis\ncatch\nfinally\ntry\nthrow\nthrows\nreturn\nvoid\nconst\ngoto\nenum\nThis table reserved. \nJava’5 keywords and other reserved words (in no useful order). If you use these for names, the compiler will be very, very upset.\nNo matter what \nyou hear, do not, 1 repeat, \ndo not let me ingest \nanother large furry dog.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "boolean",
+          "byte",
+          "char",
+          "double",
+          "float",
+          "int",
+          "long",
+          "short",
+          "public",
+          "private"
+        ],
+        [
+          "protected",
+          "abstract",
+          "final",
+          "native",
+          "static",
+          "strictfp",
+          "synchronized",
+          "transient",
+          "volatile",
+          "if"
+        ],
+        [
+          "else",
+          "do",
+          "while",
+          "switch",
+          "case",
+          "default",
+          "for",
+          "break",
+          "continue",
+          "assert"
+        ],
+        [
+          "class",
+          "extends",
+          "implements",
+          "import",
+          "instanceof",
+          "interface",
+          "new",
+          "package",
+          "super",
+          "this"
+        ],
+        [
+          "catch",
+          "finally",
+          "try",
+          "throw",
+          "throws",
+          "return",
+          "void",
+          "const",
+          "goto",
+          "enum"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (66x64)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (290x368)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nprimitives and references\n53\nMake it Stick\nThe eight primitive types are:\nboolean char byte short int long float double\nAnd here’5 a mnemonic for remembering them:\nBe Careful! Bears Shouldn’t Ingest Large \nFurry Dogs\nIf you make up your own, it’11 stick even better.\nB_ C_ B_ S_ I_ L_ F_ D_\nBack away from that keyword!\nYou know you need a name and a type for your variables. \nYou already know the primitive types.\nBut what can you use as names? The rules are simple. You \ncan name a class, method, or variable according to the \nfollowing rules (the real rules are slightly more flexible, \nbut these will keep you safe):\n■ It must start with a letter, underscore (_), or \ndollar sign ($). You can’t start a name with a \nnumber.\n■ After the first character, you can use numbers as \nwell. Just don’t start it with a number.\n■ It can be anything you like, subject to those two \nrules, just 50 long as it isn’t one of Java’5 reserved \nwords. \nReserved words are keywords (and other things) that the \ncompiler recognizes. And if you really want to play confuse-a-\ncompiler, then just try using a reserved word as a name.\nYou’ve already seen some reserved words when we looked at \nwriting our first main class:\npublic static void\nAnd the primitive types are reserved as well:\nboolean char byte short int long float double\nBut there are a lot more we haven’t discussed yet. Even if you don’t \nneed to know what they mean, you still need to know you can’t use \n‘em yourself. Do not–under any circumstances–try to memorize these \nnow. To make room for these in your head, you’d probably have to \nlose something else. Like where your car is parked. Don’t worry, by \nthe end of the book you’11 have most of them down cold.\ndon’t use any of these \nfor your own names.\nboolean\nbyte\nchar\ndouble\nfloat\nint\nlong\nshort\npublic\nprivate\nprotected\nabstract\nfinal\nnative\nstatic\nstrictfp\nsynchronized\ntransient\nvolatile\nif\nelse\ndo\nwhile\nswitch\ncase\ndefault\nfor\nbreak\ncontinue\nassert\nclass\nextends\nimplements\nimport\ninstanceof\ninterface\nnew\npackage\nsuper\nthis\ncatch\nfinally\ntry\nthrow\nthrows\nreturn\nvoid\nconst\ngoto\nenum\nThis table reserved. \nJava’5 keywords and other reserved words (in no useful order). If you use these for names, the compiler will be very, very upset.\nNo matter what \nyou hear, do not, 1 repeat, \ndo not let me ingest \nanother large furry dog.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 87,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 87,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2366 chars",
+      "severity": "info"
+    },
+    {
+      "page": 87,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 87,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

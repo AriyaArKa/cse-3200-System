@@ -1,0 +1,74 @@
+{
+  "page_number": 467,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n433\nThe Java 1/0 API has connection streams, that represent connections to destinations and \nsources such as files or network sockets, and chain streams that work only if chained to \nother streams. \nOften, it takes at least two streams hooked together to do something useful—one to \nrepresent the connection and another to call methods on. Why two? Because connection \nstreams are usually too low-level. FileOutputStream (a connection stream), for example, \nhas methods for writing bytes. But we don’t want to write bytes! We want to write objects, 50 \nwe need a higher-level chain stream.\nOK, then why not have just a single stream that does exactly what you want? One that lets \nyou write objects but underneath converts them to bytes? Think good 00. Each class \ndoes one thing well. FileOutputStreams write bytes to a file. ObjectOutputStreams turn \nobjects into data that can be written to a stream. 50 we make a FileOutputStream that lets \nus write to a file, and we hook an ObjectOutputStream (a chain stream) on the end of it. \nWhen we call writeObject() on the ObjectOutputStream, the object gets pumped into the \nstream and then moves to the FileOutputStream where it ultimately gets written as bytes \nto a file.\nThe ability to mix and match different combinations of connection and chain streams \ngives you tremendous flexibility! If you were forced to use only a single stream class, you’d \nbe at the mercy of the API designers, hoping they’d thought of everything you might ever \nwant to do. But with chaining, you can patch together your own custom chains.\nData moves in streams from one place to another.\nSource\nDestination\nObject\nObjectOutputStream \n(a chain stream)\nis written to\nobject is flattened (serialized)\nFileOutputStream \n(a connection stream)\n011010010110111001\nobject is written as bytes to\n01101001\n01101110\n01\nFile\ndestination\nConnection \nstreams represent \na connection \nto a source or \ndestination (file, \nsocket, etc.) while \nchain streams \ncan’t connect on \ntheir own and must \nbe chained to a \nconnection stream.\nis chained to",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (664x530)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (82x86)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (15x123)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "serialization and file 1/0\nyou are here\n433\nThe Java 1/0 API has connection streams, that represent connections to destinations and \nsources such as files or network sockets, and chain streams that work only if chained to \nother streams. \nOften, it takes at least two streams hooked together to do something useful—one to \nrepresent the connection and another to call methods on. Why two? Because connection \nstreams are usually too low-level. FileOutputStream (a connection stream), for example, \nhas methods for writing bytes. But we don’t want to write bytes! We want to write objects, 50 \nwe need a higher-level chain stream.\nOK, then why not have just a single stream that does exactly what you want? One that lets \nyou write objects but underneath converts them to bytes? Think good 00. Each class \ndoes one thing well. FileOutputStreams write bytes to a file. ObjectOutputStreams turn \nobjects into data that can be written to a stream. 50 we make a FileOutputStream that lets \nus write to a file, and we hook an ObjectOutputStream (a chain stream) on the end of it. \nWhen we call writeObject() on the ObjectOutputStream, the object gets pumped into the \nstream and then moves to the FileOutputStream where it ultimately gets written as bytes \nto a file.\nThe ability to mix and match different combinations of connection and chain streams \ngives you tremendous flexibility! If you were forced to use only a single stream class, you’d \nbe at the mercy of the API designers, hoping they’d thought of everything you might ever \nwant to do. But with chaining, you can patch together your own custom chains.\nData moves in streams from one place to another.\nSource\nDestination\nObject\nObjectOutputStream \n(a chain stream)\nis written to\nobject is flattened (serialized)\nFileOutputStream \n(a connection stream)\n011010010110111001\nobject is written as bytes to\n01101001\n01101110\n01\nFile\ndestination\nConnection \nstreams represent \na connection \nto a source or \ndestination (file, \nsocket, etc.) while \nchain streams \ncan’t connect on \ntheir own and must \nbe chained to a \nconnection stream.\nis chained to",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 467,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 467,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2109 chars",
+      "severity": "info"
+    },
+    {
+      "page": 467,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 467,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

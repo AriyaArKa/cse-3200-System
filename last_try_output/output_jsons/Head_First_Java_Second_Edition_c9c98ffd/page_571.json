@@ -1,0 +1,46 @@
+{
+  "page_number": 571,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n537\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox3 {\n \nArrayList<Song> songList = new ArrayList<Song>(); \n \npublic static void main(String[] args) {\n \n \nnew Jukebox3().go();\n \n} \n \npublic void go() { \n \n \n \ngetSongs(); \n \n \nSystem.out.println(songList);\n \n \nCollections.sort(songList);\n \n \nSystem.out.println(songList); \n \n \n} \n \nvoid getSongs() {\n \n \ntry {\n \n \n \nFile file = new File(“SongListMore.txt”);\n \n \n \nBufferedReader reader = new BufferedReader(new FileReader(file));\n \n \n \nString line = null;\n \n \n \nwhile ((line= reader.readLine()) != null) {\n \n \n \n \naddSong(line);\n \n \n \n}\n \n \n} catch(Exception ex) {\n \n \n \nex.printStackTrace();\n \n \n}\n \n}\n \nvoid addSong(String lineToParse) {\n \n \nString[] tokens = lineToParse.split(“/”);\n \n \nSong nextSong = new Song(tokens[0], tokens[1], tokens[2], tokens[3]);\n \n \nsongList.add(nextSong); \n \n \n} \n \n}\nChange to an ArrayList of Song \nobjects instead of String.\nCreate a new Song object using the four tokens \n(which means the four pieces of info in the song file \nfor this line), then add the Song to the list.\nChanging the Jukebox code to use Songs \ninstead of Strings\nYour code changes only a little—the file 1/0 code is the same, \nand the parsing is the same (String.split()), except this time \nthere will be four tokens for each song/line, and all four will be \nused to create a new Song object. And of course the ArrayList \nwill be of type <Song> instead of <String>.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n537\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox3 {\n \nArrayList<Song> songList = new ArrayList<Song>(); \n \npublic static void main(String[] args) {\n \n \nnew Jukebox3().go();\n \n} \n \npublic void go() { \n \n \n \ngetSongs(); \n \n \nSystem.out.println(songList);\n \n \nCollections.sort(songList);\n \n \nSystem.out.println(songList); \n \n \n} \n \nvoid getSongs() {\n \n \ntry {\n \n \n \nFile file = new File(“SongListMore.txt”);\n \n \n \nBufferedReader reader = new BufferedReader(new FileReader(file));\n \n \n \nString line = null;\n \n \n \nwhile ((line= reader.readLine()) != null) {\n \n \n \n \naddSong(line);\n \n \n \n}\n \n \n} catch(Exception ex) {\n \n \n \nex.printStackTrace();\n \n \n}\n \n}\n \nvoid addSong(String lineToParse) {\n \n \nString[] tokens = lineToParse.split(“/”);\n \n \nSong nextSong = new Song(tokens[0], tokens[1], tokens[2], tokens[3]);\n \n \nsongList.add(nextSong); \n \n \n} \n \n}\nChange to an ArrayList of Song \nobjects instead of String.\nCreate a new Song object using the four tokens \n(which means the four pieces of info in the song file \nfor this line), then add the Song to the list.\nChanging the Jukebox code to use Songs \ninstead of Strings\nYour code changes only a little—the file 1/0 code is the same, \nand the parsing is the same (String.split()), except this time \nthere will be four tokens for each song/line, and all four will be \nused to create a new Song object. And of course the ArrayList \nwill be of type <Song> instead of <String>.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 571,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 571,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1474 chars",
+      "severity": "info"
+    },
+    {
+      "page": 571,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "page_number": 534,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "socket connections\n500 \nchapter 15\n BULLET POINTS\n \nA thread with a lower-case ‘t’ is a separate thread of \nexecution in Java.\n \nEvery thread in Java has its own call stack. \n \nA Thread with a capital ‘T’ is the java.lang.Thread \nclass. A Thread object represents a thread of \nexecution.\n \nA Thread needs a job to do. A Thread’5 job is an \ninstance of something that implements the Runnable \ninterface.\n \nThe Runnable interface has just a single method, run(). \nThis is the method that goes on the bottom of the new \ncall stack. In other words, it is the first method to run in \nthe new thread.\n \nTo launch a new thread, you need a Runnable to pass \nto the Thread’5 constructor.\n \nA thread is in the NEW state when you have \ninstantiated a Thread object but have not yet called \nstart(). \n \nWhen you start a thread (by calling the Thread object’5 \nstart() method), a new stack is created, with the \nRunnable’5 run() method on the bottom of the stack. \nThe thread is now in the RUNNABLE state, waiting to \nbe chosen to run.\n \nA thread is said to be RUNNING when the JVM’5 \nthread scheduler has selected it to be the currently-\nrunning thread. On a single-processor machine, there \ncan be only one currently-running thread.\n \nSometimes a thread can be moved from the RUNNING \nstate to a BLOCKED (temporarily non-runnable) state. \nA thread might be blocked because it’5 waiting for data \nfrom a stream, or because it has gone to sleep, or \nbecause it is waiting for an object’5 lock.\n \nThread scheduling is not guaranteed to work in any \nparticular way, 50 you cannot be certain that threads \nwill take turns nicely. You can help influence turn-taking \nby putting your threads to sleep periodically.\nthere are no\nDumb Questions\nQ: 1’ve seen examples that don’t use a separate \nRunnable implementation, but instead just make a \nsubclass of Thread and override the Thread’5 run() \nmethod. That way, you call the Thread’5 no-arg \nconstructor when you make the new thread;\nThread t = new Thread(); // no Runnable\nA: Yes, that is another way of making your own \nthread, but think about it from an 00 perspective. \nWhat’5 the purpose of subclassing? Remember that \nwe’re talking about two different things here—the \nThread and the thread’5 job. From an 00 view, those \ntwo are very separate activities, and belong in separate \nclasses. The only time you want to subclass/extend \nthe Thread class, is if you are making a new and more \nspecific type of Thread. In other words, if you think of \nthe Thread as the worker, don’t extend the Thread class \nunless you need more specific worker behaviors. But if \nall you need is a new job to be run by a Thread/worker, \nthen implement Runnable in a separate, job-specific \n(not worker-specific) class.\nThis is a design issue and not a performance or \nlanguage issue. It’5 perfectly legal to subclass Thread \nand override the run() method, but it’5 rarely a good \nidea.\nQ: Can you reuse a Thread object? Can you give it \na new job to do and then restart it by calling start() \nagain? \nA: No. Once a thread’5 run() method has \ncompleted, the thread can never be restarted. In fact, \nat that point the thread moves into a state we haven’t \ntalked about—dead. In the dead state, the thread has \nfinished its run() method and can never be restarted. \nThe Thread object might still be on the heap, as a \nliving object that you can call other methods on (if \nappropriate), but the Thread object has permanently lost \nits ‘threadness’. In other words, there is no longer a separate \ncall stack, and the Thread object is no longer a thread. It’5 \njust an object, at that point, like all other objects.\nBut, there are design patterns for making a pool of \nthreads that you can keep using to perform different \njobs. But you don’t do it by restarting() a dead thread.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "OINTS",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "socket connections\n500 \nchapter 15\n BULLET POINTS\n \nA thread with a lower-case ‘t’ is a separate thread of \nexecution in Java.\n \nEvery thread in Java has its own call stack. \n \nA Thread with a capital ‘T’ is the java.lang.Thread \nclass. A Thread object represents a thread of \nexecution.\n \nA Thread needs a job to do. A Thread’5 job is an \ninstance of something that implements the Runnable \ninterface.\n \nThe Runnable interface has just a single method, run(). \nThis is the method that goes on the bottom of the new \ncall stack. In other words, it is the first method to run in \nthe new thread.\n \nTo launch a new thread, you need a Runnable to pass \nto the Thread’5 constructor.\n \nA thread is in the NEW state when you have \ninstantiated a Thread object but have not yet called \nstart(). \n \nWhen you start a thread (by calling the Thread object’5 \nstart() method), a new stack is created, with the \nRunnable’5 run() method on the bottom of the stack. \nThe thread is now in the RUNNABLE state, waiting to \nbe chosen to run.\n \nA thread is said to be RUNNING when the JVM’5 \nthread scheduler has selected it to be the currently-\nrunning thread. On a single-processor machine, there \ncan be only one currently-running thread.\n \nSometimes a thread can be moved from the RUNNING \nstate to a BLOCKED (temporarily non-runnable) state. \nA thread might be blocked because it’5 waiting for data \nfrom a stream, or because it has gone to sleep, or \nbecause it is waiting for an object’5 lock.\n \nThread scheduling is not guaranteed to work in any \nparticular way, 50 you cannot be certain that threads \nwill take turns nicely. You can help influence turn-taking \nby putting your threads to sleep periodically.\nthere are no\nDumb Questions\nQ: 1’ve seen examples that don’t use a separate \nRunnable implementation, but instead just make a \nsubclass of Thread and override the Thread’5 run() \nmethod. That way, you call the Thread’5 no-arg \nconstructor when you make the new thread;\nThread t = new Thread(); // no Runnable\nA: Yes, that is another way of making your own \nthread, but think about it from an 00 perspective. \nWhat’5 the purpose of subclassing? Remember that \nwe’re talking about two different things here—the \nThread and the thread’5 job. From an 00 view, those \ntwo are very separate activities, and belong in separate \nclasses. The only time you want to subclass/extend \nthe Thread class, is if you are making a new and more \nspecific type of Thread. In other words, if you think of \nthe Thread as the worker, don’t extend the Thread class \nunless you need more specific worker behaviors. But if \nall you need is a new job to be run by a Thread/worker, \nthen implement Runnable in a separate, job-specific \n(not worker-specific) class.\nThis is a design issue and not a performance or \nlanguage issue. It’5 perfectly legal to subclass Thread \nand override the run() method, but it’5 rarely a good \nidea.\nQ: Can you reuse a Thread object? Can you give it \na new job to do and then restart it by calling start() \nagain? \nA: No. Once a thread’5 run() method has \ncompleted, the thread can never be restarted. In fact, \nat that point the thread moves into a state we haven’t \ntalked about—dead. In the dead state, the thread has \nfinished its run() method and can never be restarted. \nThe Thread object might still be on the heap, as a \nliving object that you can call other methods on (if \nappropriate), but the Thread object has permanently lost \nits ‘threadness’. In other words, there is no longer a separate \ncall stack, and the Thread object is no longer a thread. It’5 \njust an object, at that point, like all other objects.\nBut, there are design patterns for making a pool of \nthreads that you can keep using to perform different \njobs. But you don’t do it by restarting() a dead thread.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 534,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 534,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3803 chars",
+      "severity": "info"
+    },
+    {
+      "page": 534,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 534,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

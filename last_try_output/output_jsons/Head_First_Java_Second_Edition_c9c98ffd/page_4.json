@@ -1,0 +1,46 @@
+{
+  "page_number": 4,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "“Read Head First Java and you will once again experience fun in learning...For people who like to learn \nnew programming languages, and do not come from a computer science or programming background, \nthis book is a gem... This is one book that makes learning a complex computer language fun. 1 hope \nthat there are more authors who are willing to break out of the same old mold of ‘traditional’ writing \nstyles. Learning computer languages should be fun, not onerous.” \n \n— Judith Taylor, Southeast Ohio Macromedia User Group \n“A few days ago 1 received my copy of Head First Java by Kathy Sierra and Bert Bates. 1’m only part way \nthrough the book, but what’5 amazed me is that even in my sleep-deprived state that first evening, 1 found \nmyself thinking, ‘OK, just one more page, then 1’11 go to bed.’ “\n \n­— Joe Litton\n“If you’re relatively new to programming and you are interested in Java, here’5 your book...Covering \neverything from objects to creating graphical user interfaces (GUI), exception (error) handling to net-\nworking (sockets) and multithreading, even packaging up your pile of classes into one installation file, \nthis book is quite complete...If you like the style...1’m certain you’11 love the book and, like me, hope \nthat the Head First series will expand to many other subjects!” \n \n­— LinuxQuestions.org\n“1 was ADDICTED to the book’5 short stories, annotated code, mock interviews, and brain exercises.”\n \n— Michael Yuan, author, Enterprise J2ME\nPraise for Head First Java\n“ ‘Head First Java’... gives new meaning to their marketing phrase `There’5 an 0 Reilly for that.` 1 \npicked this up because several others 1 respect had described it in terms like ‘revolutionary’ and a \ndescribed a radically different approach to the textbook. They were (are) right... In typical 0’Reilly \nfashion, they’ve taken a scientific and well considered approach. The result is funny, irreverent, topical, \ninteractive, and brilliant...Reading this book is like sitting in the speakers lounge at a view conference, \nlearning from – and laughing with – peers... If you want to UNDERSTAND Java, go buy this book.” \n \n­— Andrew Pollack, www.thenorth.com\n“If you want to learn Java, look no further: welcome to the first GUI-based technical book! This \nperfectly-executed, ground-breaking format delivers benefits other Java texts simply can’t... \nPrepare yourself for a truly remarkable ride through Java land.”\n \n— Neil R. Bauman, Captain & CEO, Geek Cruises (www.GeekCruises.com)\n“If anyone in the world is familiar with the concept of ‘Head First,’ it would be me. This \nbook is 50 good, 1’d marry it on TV!”\n \n— Rick Rockwell, Comedian\n \n The original FOX Television “Who Wants to Marry a Millionaire” groom\n“This stuff is 50 fricking good it makes me wanna WEEP! 1’m stunned.”\n \n— Floyd Jones, Senior Technical Writer/Poolboy, BEA",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "“Read Head First Java and you will once again experience fun in learning...For people who like to learn \nnew programming languages, and do not come from a computer science or programming background, \nthis book is a gem... This is one book that makes learning a complex computer language fun. 1 hope \nthat there are more authors who are willing to break out of the same old mold of ‘traditional’ writing \nstyles. Learning computer languages should be fun, not onerous.” \n \n— Judith Taylor, Southeast Ohio Macromedia User Group \n“A few days ago 1 received my copy of Head First Java by Kathy Sierra and Bert Bates. 1’m only part way \nthrough the book, but what’5 amazed me is that even in my sleep-deprived state that first evening, 1 found \nmyself thinking, ‘OK, just one more page, then 1’11 go to bed.’ “\n \n­— Joe Litton\n“If you’re relatively new to programming and you are interested in Java, here’5 your book...Covering \neverything from objects to creating graphical user interfaces (GUI), exception (error) handling to net-\nworking (sockets) and multithreading, even packaging up your pile of classes into one installation file, \nthis book is quite complete...If you like the style...1’m certain you’11 love the book and, like me, hope \nthat the Head First series will expand to many other subjects!” \n \n­— LinuxQuestions.org\n“1 was ADDICTED to the book’5 short stories, annotated code, mock interviews, and brain exercises.”\n \n— Michael Yuan, author, Enterprise J2ME\nPraise for Head First Java\n“ ‘Head First Java’... gives new meaning to their marketing phrase `There’5 an 0 Reilly for that.` 1 \npicked this up because several others 1 respect had described it in terms like ‘revolutionary’ and a \ndescribed a radically different approach to the textbook. They were (are) right... In typical 0’Reilly \nfashion, they’ve taken a scientific and well considered approach. The result is funny, irreverent, topical, \ninteractive, and brilliant...Reading this book is like sitting in the speakers lounge at a view conference, \nlearning from – and laughing with – peers... If you want to UNDERSTAND Java, go buy this book.” \n \n­— Andrew Pollack, www.thenorth.com\n“If you want to learn Java, look no further: welcome to the first GUI-based technical book! This \nperfectly-executed, ground-breaking format delivers benefits other Java texts simply can’t... \nPrepare yourself for a truly remarkable ride through Java land.”\n \n— Neil R. Bauman, Captain & CEO, Geek Cruises (www.GeekCruises.com)\n“If anyone in the world is familiar with the concept of ‘Head First,’ it would be me. This \nbook is 50 good, 1’d marry it on TV!”\n \n— Rick Rockwell, Comedian\n \n The original FOX Television “Who Wants to Marry a Millionaire” groom\n“This stuff is 50 fricking good it makes me wanna WEEP! 1’m stunned.”\n \n— Floyd Jones, Senior Technical Writer/Poolboy, BEA",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 4,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 4,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2854 chars",
+      "severity": "info"
+    },
+    {
+      "page": 4,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

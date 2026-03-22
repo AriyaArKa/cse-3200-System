@@ -1,0 +1,46 @@
+{
+  "page_number": 576,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "542 \nchapter 16\nUsing generic CLASSES\nSince ArrayList is our most-used generified type, we’11 \nstart by looking at its documentation. The two key areas \nto look at in a generified class are:\n1) The class declaration\n2) The method declarations that let you add elements\npublic boolean add(E 0)\n// more code\npublic class ArrayList<E> extends AbstractList<E> implements List<E> ... { \n \n} \n \nUnderstanding ArrayList documentation\n(Or, what’5 the true meaning of “E”?)\nThink of “E” as a stand-in for \n“the type of element you want \nthis collection to hold and \nreturn.” (E is for Element.)\nThe “E” is a placeholder for the \nREAL type you use when you \ndeclare and create an ArrayList\nArrayList is a subclass of AbstractList, \n50 whatever type you specify for the \nArrayList is automatically used for the \ntype of the AbstractList.\nThe type (the value of <E>) \nbecomes the type of the List \ninterface as well.\nHere’5 the important part! Whatever “E” is \ndetermines what kind of things you’re allowed \nto add to the ArrayList.\nThe “E” represents the type used to create an instance \nof ArrayList. When you see an “E” in the ArrayList \ndocumentation, you can do a mental find/replace to \nexchange it for whatever <type> you use to instantiate \nArrayList. \n50, new ArrayList<Song> means that “E” becomes “Song”, \nin any method or variable declaration that uses “E”.\ngeneric classes",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "542 \nchapter 16\nUsing generic CLASSES\nSince ArrayList is our most-used generified type, we’11 \nstart by looking at its documentation. The two key areas \nto look at in a generified class are:\n1) The class declaration\n2) The method declarations that let you add elements\npublic boolean add(E 0)\n// more code\npublic class ArrayList<E> extends AbstractList<E> implements List<E> ... { \n \n} \n \nUnderstanding ArrayList documentation\n(Or, what’5 the true meaning of “E”?)\nThink of “E” as a stand-in for \n“the type of element you want \nthis collection to hold and \nreturn.” (E is for Element.)\nThe “E” is a placeholder for the \nREAL type you use when you \ndeclare and create an ArrayList\nArrayList is a subclass of AbstractList, \n50 whatever type you specify for the \nArrayList is automatically used for the \ntype of the AbstractList.\nThe type (the value of <E>) \nbecomes the type of the List \ninterface as well.\nHere’5 the important part! Whatever “E” is \ndetermines what kind of things you’re allowed \nto add to the ArrayList.\nThe “E” represents the type used to create an instance \nof ArrayList. When you see an “E” in the ArrayList \ndocumentation, you can do a mental find/replace to \nexchange it for whatever <type> you use to instantiate \nArrayList. \n50, new ArrayList<Song> means that “E” becomes “Song”, \nin any method or variable declaration that uses “E”.\ngeneric classes",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 576,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 576,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1387 chars",
+      "severity": "info"
+    },
+    {
+      "page": 576,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

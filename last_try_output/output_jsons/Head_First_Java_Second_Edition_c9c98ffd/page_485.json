@@ -1,0 +1,46 @@
+{
+  "page_number": 485,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n451\n \n JMenuItem saveMenuItem = new JMenuItem(“Save”);\n newMenuItem.addActionListener(new NewMenuListener());\n \n saveMenuItem.addActionListener(new SaveMenuListener());\n fileMenu.add(newMenuItem); \n fileMenu.add(saveMenuItem);\n menuBar.add(fileMenu);\n frame.setJMenuBar(menuBar); \n frame.getContentPane().add(BorderLayout.CENTER, mainPanel);\n frame.setSize(500,600);\n frame.setVisible(true); \n }\n public class NextCardListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n \n QuizCard card = new QuizCard(question.getText(), answer.getText());\n cardList.add(card);\n clearCard(); \n }\n }\n public class SaveMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) { \n QuizCard card = new QuizCard(question.getText(), answer.getText());\n cardList.add(card);\n \n JFileChooser fileSave = new JFileChooser();\n fileSave.showSaveDialog(frame);\n saveFile(fileSave.getSelectedFile());\n }\n }\n public class NewMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n cardList.clear();\n clearCard(); \n }\n }\n \n private void clearCard() {\n question.setText(“”);\n answer.setText(“”);\n question.requestFocus();\n }\n private void saveFile(File file) { \n try {\n BufferedWriter writer = new BufferedWriter(new FileWriter(file));\n \n for(QuizCard card:cardList) {\n writer.write(card.getQuestion() + “/”);\n writer.write(card.getAnswer() + “\\n”);\n }\n writer.close();\n } catch(IOException ex) {\n System.out.println(“couldn’t write the cardList out”);\n ex.printStackTrace();\n } \n } \n}\n \n \n \n \n \nBrings up a file dialog box and waits on this \nline until the user chooses ‘Save’ from the \ndialog box. All the file dialog navigation and \nselecting a file, etc. is done for you by the \nJFileChooser! It really is this easy.\nThe method that does the actual file writing \n(called by the SaveMenuListener’5 event handler). \nThe argument is the ‘File’ object the user is saving. \nWe’11 look at the File class on the next page.\nWe chain a BufferedWriter on to a new \nFileWriter to make writing more efficient. \n(We’11 talk about that in a few pages).\nWalk through the ArrayList of \ncards and write them out, one card \nper line, with the question and an-\nswer separated by a “/”, and then \nadd a newline character (“\\n”)\nWe make a menu bar, make a File \nmenu, then put ‘new’ and ‘save’ menu \nitems into the File menu. We add the \nmenu to the menu bar, then tell the \nframe to use this menu bar. Menu \nitems can fire an ActionEvent",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n451\n \n JMenuItem saveMenuItem = new JMenuItem(“Save”);\n newMenuItem.addActionListener(new NewMenuListener());\n \n saveMenuItem.addActionListener(new SaveMenuListener());\n fileMenu.add(newMenuItem); \n fileMenu.add(saveMenuItem);\n menuBar.add(fileMenu);\n frame.setJMenuBar(menuBar); \n frame.getContentPane().add(BorderLayout.CENTER, mainPanel);\n frame.setSize(500,600);\n frame.setVisible(true); \n }\n public class NextCardListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n \n QuizCard card = new QuizCard(question.getText(), answer.getText());\n cardList.add(card);\n clearCard(); \n }\n }\n public class SaveMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) { \n QuizCard card = new QuizCard(question.getText(), answer.getText());\n cardList.add(card);\n \n JFileChooser fileSave = new JFileChooser();\n fileSave.showSaveDialog(frame);\n saveFile(fileSave.getSelectedFile());\n }\n }\n public class NewMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n cardList.clear();\n clearCard(); \n }\n }\n \n private void clearCard() {\n question.setText(“”);\n answer.setText(“”);\n question.requestFocus();\n }\n private void saveFile(File file) { \n try {\n BufferedWriter writer = new BufferedWriter(new FileWriter(file));\n \n for(QuizCard card:cardList) {\n writer.write(card.getQuestion() + “/”);\n writer.write(card.getAnswer() + “\\n”);\n }\n writer.close();\n } catch(IOException ex) {\n System.out.println(“couldn’t write the cardList out”);\n ex.printStackTrace();\n } \n } \n}\n \n \n \n \n \nBrings up a file dialog box and waits on this \nline until the user chooses ‘Save’ from the \ndialog box. All the file dialog navigation and \nselecting a file, etc. is done for you by the \nJFileChooser! It really is this easy.\nThe method that does the actual file writing \n(called by the SaveMenuListener’5 event handler). \nThe argument is the ‘File’ object the user is saving. \nWe’11 look at the File class on the next page.\nWe chain a BufferedWriter on to a new \nFileWriter to make writing more efficient. \n(We’11 talk about that in a few pages).\nWalk through the ArrayList of \ncards and write them out, one card \nper line, with the question and an-\nswer separated by a “/”, and then \nadd a newline character (“\\n”)\nWe make a menu bar, make a File \nmenu, then put ‘new’ and ‘save’ menu \nitems into the File menu. We add the \nmenu to the menu bar, then tell the \nframe to use this menu bar. Menu \nitems can fire an ActionEvent",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 485,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 485,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3015 chars",
+      "severity": "info"
+    },
+    {
+      "page": 485,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

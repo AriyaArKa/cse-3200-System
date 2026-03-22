@@ -1,0 +1,59 @@
+{
+  "page_number": 326,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "292 \nchapter 10\nBut wait! There’5 more! Wrappers \nhave static utility methods too!\nBesides acting like a normal class, the wrappers have a \nbunch of really useful static methods. We’ve used one in \nthis book before—Integer.parseInt().\nThe parse methods take a String and give you back a \nprimitive value. \nString 5 = “2”;\nint x = Integer.parseInt(5);\ndouble d = Double.parseDouble(“420.24”);\nboolean b = Boolean.parseBoolean(“True”);\nConverting a String to a \nprimitive value is easy:\nNo problem to parse \n“2” into 2.\nUh-oh. This compiles just fine, but \nat runtime it blows up. Anything \nthat can’t be parsed as a number \nwill cause a NumberFormatException\nFile Edit Window Help Clue\n% java Wrappers\nException in thread “main” \njava.lang.NumberFormatException: two\nat java.lang.Integer.parseInt(Integer.java:409)\nat java.lang.Integer.parseInt(Integer.java:458)\nat Wrappers.main(Wrappers.java:9)\nString t = “two”;\nint y = Integer.parseInt(t);\nBut if you try to do this:\nYou’11 get a runtime exception:\nThe (new to 1.5) parseBoolean() method ignores \nthe cases of the characters in the String \nargument. \nEvery method or \nconstructor that parses \na String can throw a \nNumberFormatException. \nIt’5 a runtime exception, \n50 you don’t have to \nhandle or declare it. \nBut you might want to.\nwrapper methods\n(We’11 talk about Exceptions in the \nnext chapter.)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Clue"
+        ],
+        [
+          "% java Wrappers\nException in thread “main”\njava.lang.NumberFormatException: two\nat java.lang.Integer.parseInt(Integer.java:409)\nat java.lang.Integer.parseInt(Integer.java:458)\nat Wrappers.main(Wrappers.java:9)"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "292 \nchapter 10\nBut wait! There’5 more! Wrappers \nhave static utility methods too!\nBesides acting like a normal class, the wrappers have a \nbunch of really useful static methods. We’ve used one in \nthis book before—Integer.parseInt().\nThe parse methods take a String and give you back a \nprimitive value. \nString 5 = “2”;\nint x = Integer.parseInt(5);\ndouble d = Double.parseDouble(“420.24”);\nboolean b = Boolean.parseBoolean(“True”);\nConverting a String to a \nprimitive value is easy:\nNo problem to parse \n“2” into 2.\nUh-oh. This compiles just fine, but \nat runtime it blows up. Anything \nthat can’t be parsed as a number \nwill cause a NumberFormatException\nFile Edit Window Help Clue\n% java Wrappers\nException in thread “main” \njava.lang.NumberFormatException: two\nat java.lang.Integer.parseInt(Integer.java:409)\nat java.lang.Integer.parseInt(Integer.java:458)\nat Wrappers.main(Wrappers.java:9)\nString t = “two”;\nint y = Integer.parseInt(t);\nBut if you try to do this:\nYou’11 get a runtime exception:\nThe (new to 1.5) parseBoolean() method ignores \nthe cases of the characters in the String \nargument. \nEvery method or \nconstructor that parses \na String can throw a \nNumberFormatException. \nIt’5 a runtime exception, \n50 you don’t have to \nhandle or declare it. \nBut you might want to.\nwrapper methods\n(We’11 talk about Exceptions in the \nnext chapter.)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 326,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 326,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1366 chars",
+      "severity": "info"
+    },
+    {
+      "page": 326,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

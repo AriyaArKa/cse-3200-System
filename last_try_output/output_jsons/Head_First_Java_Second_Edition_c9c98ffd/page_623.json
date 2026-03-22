@@ -1,0 +1,67 @@
+{
+  "page_number": 623,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "package, jars and deployment\nyou are here\n589\npackage structure\nMyProject\nsource\nclasses\n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \nPackageExercise.class\ncom\nheadfirstjava\ncom\nheadfirstjava\n Lorper \niure eugue \ntat vero \nconse \neugueroLore \ndo eliquis \ndo del dip \nPackageExercise.java\n1\nChoose a package name\nWe’re using com.headfirstjava as our \nexample. The class name is PackageExercise, \n50 the fully-qualified name of the class is now: \ncom.headfirstjava.PackageExercise.\nTo put your class in a package:\n2\nPut a package statement in your class\npackage com.headfirstjava;\nimport javax.swing.*;\npublic class PackageExercise {\n // life-altering code here\n}\n3\nSet up a matching directory structure\nIt must be the first statement in the source \ncode file, above any import statements. There \ncan be only one package statement per source \ncode file, 50 all classes in a source file must \nbe in the same package. That includes inner \nclasses, of course.\nIt’5 not enough to say your class is in a package, \nby merely putting a package statement in \nthe code. Your class isn’t truly in a package \nuntil you put the class in a matching directory \nstructure. 50, if the fully-qualified class name \nis com.headfirstjava.PackageExercise, you \nmust put the PackageExercise source code in a \ndirectory named headfirstjava, which must be in \na directory named com. \nIt is possible to compile without doing that, but \ntrust us—it’5 not worth the other problems \nyou’11 have. Keep your source code in a directory \nstructure that matches the package structure, \nand you’11 avoid a ton of painful headaches down \nthe road.\nYou must put a class \ninto a directory \nstructure that matches \nthe package hierarchy.\nSet up a matching directory structure for \nboth the source and classes trees.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (214x170)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (210x167)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "package, jars and deployment\nyou are here\n589\npackage structure\nMyProject\nsource\nclasses\n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \nPackageExercise.class\ncom\nheadfirstjava\ncom\nheadfirstjava\n Lorper \niure eugue \ntat vero \nconse \neugueroLore \ndo eliquis \ndo del dip \nPackageExercise.java\n1\nChoose a package name\nWe’re using com.headfirstjava as our \nexample. The class name is PackageExercise, \n50 the fully-qualified name of the class is now: \ncom.headfirstjava.PackageExercise.\nTo put your class in a package:\n2\nPut a package statement in your class\npackage com.headfirstjava;\nimport javax.swing.*;\npublic class PackageExercise {\n // life-altering code here\n}\n3\nSet up a matching directory structure\nIt must be the first statement in the source \ncode file, above any import statements. There \ncan be only one package statement per source \ncode file, 50 all classes in a source file must \nbe in the same package. That includes inner \nclasses, of course.\nIt’5 not enough to say your class is in a package, \nby merely putting a package statement in \nthe code. Your class isn’t truly in a package \nuntil you put the class in a matching directory \nstructure. 50, if the fully-qualified class name \nis com.headfirstjava.PackageExercise, you \nmust put the PackageExercise source code in a \ndirectory named headfirstjava, which must be in \na directory named com. \nIt is possible to compile without doing that, but \ntrust us—it’5 not worth the other problems \nyou’11 have. Keep your source code in a directory \nstructure that matches the package structure, \nand you’11 avoid a ton of painful headaches down \nthe road.\nYou must put a class \ninto a directory \nstructure that matches \nthe package hierarchy.\nSet up a matching directory structure for \nboth the source and classes trees.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 623,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 623,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1816 chars",
+      "severity": "info"
+    },
+    {
+      "page": 623,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 623,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

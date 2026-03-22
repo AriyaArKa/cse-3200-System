@@ -1,0 +1,60 @@
+{
+  "page_number": 622,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "588 \nchapter 17\nPreventing package name conflicts\nPutting your class in a package reduces the chances of naming \nconflicts with other classes, but what’5 to stop two programmers \nfrom coming up with identical package names? In other words, \nwhat’5 to stop two programmers, each with a class named Account, \nfrom putting the class in a package named shopping.customers? \nBoth classes, in that case, would still have the same name:\nshopping.customers.Account\nSun strongly suggests a package naming convention that greatly \nreduces that risk—prepend every class with your reverse domain \nname. Remember, domain names are guaranteed to be unique. \nTwo different guys can be named Bartholomew Simpson, but two \ndifferent domains cannot be named doh.com.\n...50 1 finally settled on \nfoo.bar.Heisenberg for my \nquantum baking class\nWhy, that’5 the same name \n1 was thinking of for my \nsub-atomic ironing class! \nGuess 1’11 just have to come \nup with something else.\nReverse domain package names\ncom.headfirstjava.projects.Chart\nstart the package with your reverse \ndomain, separated by a dot (.), \nthen add your own organizational \nstructure after that\nthe class name is \nalways capitalized\nprojects.Chart might be a common \nname, but adding com.headfirstjava \nmeans we have to worry about only \nour own in-house developers.\nPackages can prevent name \nconflicts, but only if you \nchoose a package name \nthat’5 guaranteed to be \nunique. The best way to \ndo that is to preface your \npackages with your reverse \ndomain name.\ncom.headfirstbooks.Book\npackage name\nclass name\npackage naming",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (567x451)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "588 \nchapter 17\nPreventing package name conflicts\nPutting your class in a package reduces the chances of naming \nconflicts with other classes, but what’5 to stop two programmers \nfrom coming up with identical package names? In other words, \nwhat’5 to stop two programmers, each with a class named Account, \nfrom putting the class in a package named shopping.customers? \nBoth classes, in that case, would still have the same name:\nshopping.customers.Account\nSun strongly suggests a package naming convention that greatly \nreduces that risk—prepend every class with your reverse domain \nname. Remember, domain names are guaranteed to be unique. \nTwo different guys can be named Bartholomew Simpson, but two \ndifferent domains cannot be named doh.com.\n...50 1 finally settled on \nfoo.bar.Heisenberg for my \nquantum baking class\nWhy, that’5 the same name \n1 was thinking of for my \nsub-atomic ironing class! \nGuess 1’11 just have to come \nup with something else.\nReverse domain package names\ncom.headfirstjava.projects.Chart\nstart the package with your reverse \ndomain, separated by a dot (.), \nthen add your own organizational \nstructure after that\nthe class name is \nalways capitalized\nprojects.Chart might be a common \nname, but adding com.headfirstjava \nmeans we have to worry about only \nour own in-house developers.\nPackages can prevent name \nconflicts, but only if you \nchoose a package name \nthat’5 guaranteed to be \nunique. The best way to \ndo that is to preface your \npackages with your reverse \ndomain name.\ncom.headfirstbooks.Book\npackage name\nclass name\npackage naming",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 622,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 622,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1578 chars",
+      "severity": "info"
+    },
+    {
+      "page": 622,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 622,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

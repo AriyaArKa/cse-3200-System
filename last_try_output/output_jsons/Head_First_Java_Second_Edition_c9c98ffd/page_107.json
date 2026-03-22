@@ -1,0 +1,111 @@
+{
+  "page_number": 107,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n73\nThe size affects the bark\nA small Dog’5 bark is different from a big Dog’5 bark.\nThe Dog class has an instance variable size, that the \nbark() method uses to decide what kind of bark sound \nto make.\nDog\nsize\nname\nbark()\nclass Dog {\n int size;\n String name;\n void bark() {\n if (size > 60) {\n System.out.println(“Wooof! Wooof!”);\n } else if (size > 14) {\n System.out.println(“Ruff! Ruff!”);\n } else {\n System.out.println(“Yip! Yip!”);\n }\n }\n}\nclass DogTestDrive {\n public static void main (String[] args) {\n Dog one = new Dog();\n one.size = 70;\n Dog two = new Dog();\n two.size = 8;\n Dog three = new Dog();\n three.size = 35;\n one.bark();\n two.bark();\n three.bark();\n }\n}\nFile Edit Window Help Playdead\n%java DogTestDrive\nWooof! Wooof!\nYip! Yip!\nRuff! Ruff!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "Dog",
+          ""
+        ],
+        [
+          "Dog",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "size\nname",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "bark()",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Playdead"
+        ],
+        [
+          "%java DogTestDrive\nWooof! Wooof!\nYip! Yip!\nRuff! Ruff!"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (579x867)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n73\nThe size affects the bark\nA small Dog’5 bark is different from a big Dog’5 bark.\nThe Dog class has an instance variable size, that the \nbark() method uses to decide what kind of bark sound \nto make.\nDog\nsize\nname\nbark()\nclass Dog {\n int size;\n String name;\n void bark() {\n if (size > 60) {\n System.out.println(“Wooof! Wooof!”);\n } else if (size > 14) {\n System.out.println(“Ruff! Ruff!”);\n } else {\n System.out.println(“Yip! Yip!”);\n }\n }\n}\nclass DogTestDrive {\n public static void main (String[] args) {\n Dog one = new Dog();\n one.size = 70;\n Dog two = new Dog();\n two.size = 8;\n Dog three = new Dog();\n three.size = 35;\n one.bark();\n two.bark();\n three.bark();\n }\n}\nFile Edit Window Help Playdead\n%java DogTestDrive\nWooof! Wooof!\nYip! Yip!\nRuff! Ruff!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 107,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 107,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 883 chars",
+      "severity": "info"
+    },
+    {
+      "page": 107,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 107,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

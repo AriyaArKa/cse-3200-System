@@ -1,0 +1,46 @@
+{
+  "page_number": 332,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "298 \nchapter 10\nThe format specifier\nEverything after the percent sign up to and including the type indicator (like \n“d” or “f”) are part of the formatting instructions. After the type indicator, the \nformatter assumes the next set of characters are meant to be part of the output \nString, until or unless it hits another percent (%) sign. Hmmmm... is that even \npossible? Can you have more than one formatted argument variable? Put that \nthought on hold for right now; we’11 come back to it in a few minutes. For now, \nlet’5 look at the syntax for the format specifiers—the things that go after the \npercent (%) sign and describe how the argument should be formatted.\nA format specifier can have up to five different parts (not \nincluding the “%”). Everything in brackets [ ] below is optional, 50 \nonly the percent (%) and the type are required. But the order is \nalso mandatory, 50 any parts you DO use must go in this order.\n%[argument number][flags][width][.precision]type\nWe’11 get to this later... \nit lets you say WHICH \nargument if there’5 more \nthan one. (Don’t worry \nabout it just yet.)\nThese are for \nspecial formatting \noptions like inserting \ncommas, or putting \nnegative numbers in \nparentheses, or to \nmake the numbers \nleft justified. \nThis defines the \nMINIMUM number \nof characters that \nwill be used. That’5 \n*minimum* not \nTOTAL. If the number \nis longer than the \nwidth, it’11 still be used \nin full, but if it’5 less \nthan the width, it’11 be \npadded with zeroes.\nYou already know \nthis one...it defines \nthe precision. In \nother words, it \nsets the number \nof decimal places. \nDon’t forget to \ninclude the “.” in \nthere.\nType is mandatory \n(see the next page) \nand will usually be \n“d” for a decimal \ninteger or “f” for \na floating point \nnumber.\n%[argument number][flags][width][.precision]type\nformat(“%,6.1f”, 42.000);\nThere’5 no “argument number” \nspecified in this format String, \nbut all the other pieces are there.\nformat specifier",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "298 \nchapter 10\nThe format specifier\nEverything after the percent sign up to and including the type indicator (like \n“d” or “f”) are part of the formatting instructions. After the type indicator, the \nformatter assumes the next set of characters are meant to be part of the output \nString, until or unless it hits another percent (%) sign. Hmmmm... is that even \npossible? Can you have more than one formatted argument variable? Put that \nthought on hold for right now; we’11 come back to it in a few minutes. For now, \nlet’5 look at the syntax for the format specifiers—the things that go after the \npercent (%) sign and describe how the argument should be formatted.\nA format specifier can have up to five different parts (not \nincluding the “%”). Everything in brackets [ ] below is optional, 50 \nonly the percent (%) and the type are required. But the order is \nalso mandatory, 50 any parts you DO use must go in this order.\n%[argument number][flags][width][.precision]type\nWe’11 get to this later... \nit lets you say WHICH \nargument if there’5 more \nthan one. (Don’t worry \nabout it just yet.)\nThese are for \nspecial formatting \noptions like inserting \ncommas, or putting \nnegative numbers in \nparentheses, or to \nmake the numbers \nleft justified. \nThis defines the \nMINIMUM number \nof characters that \nwill be used. That’5 \n*minimum* not \nTOTAL. If the number \nis longer than the \nwidth, it’11 still be used \nin full, but if it’5 less \nthan the width, it’11 be \npadded with zeroes.\nYou already know \nthis one...it defines \nthe precision. In \nother words, it \nsets the number \nof decimal places. \nDon’t forget to \ninclude the “.” in \nthere.\nType is mandatory \n(see the next page) \nand will usually be \n“d” for a decimal \ninteger or “f” for \na floating point \nnumber.\n%[argument number][flags][width][.precision]type\nformat(“%,6.1f”, 42.000);\nThere’5 no “argument number” \nspecified in this format String, \nbut all the other pieces are there.\nformat specifier",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 332,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 332,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1965 chars",
+      "severity": "info"
+    },
+    {
+      "page": 332,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

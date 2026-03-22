@@ -1,0 +1,190 @@
+{
+  "page_number": 358,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "324 chapter 11\nthere are no\nDumb Questions\nQ: Wait just a minute! How come this is the FIRST time \nwe’ve had to try/catch an Exception? What about the \nexceptions 1’ve already gotten like NullPointerException \nand the exception for DivideByZero. 1 even got a \nNumberFormatException from the Integer.parseInt() \nmethod. How come we didn’t have to catch those?\nA: The compiler cares about all subclasses of Exception, \nunless they are a special type, RuntimeException. Any \nexception class that extends RuntimeException gets a \nfree pass. RuntimeExceptions can be thrown anywhere, \nwith or without throws declarations or try/catch blocks. \nThe compiler doesn’t bother checking whether a method \ndeclares that it throws a RuntimeException, or whether the \ncaller acknowledges that they might get that exception at \nruntime.\nQ: 1’11 bite. WHY doesn’t the compiler care about those \nruntime exceptions? Aren’t they just as likely to bring the \nwhole show to a stop?\nA: Most RuntimeExceptions come from a problem in \nyour code logic, rather than a condition that fails at runtime \nin ways that you cannot predict or prevent. You cannot \nguarantee the file is there. You cannot guarantee the server \nis up. But you can make sure your code doesn’t index off the \nend of an array (that’5 what the .length attribute is for). \nYou WANT RuntimeExceptions to happen at development \nand testing time. You don’t want to code in a try/catch, for \nexample, and have the overhead that goes with it, to catch \nsomething that shouldn’t happen in the first place. \nA try/catch is for handling exceptional situations, not flaws \nin your code. Use your catch blocks to try to recover from \nsituations you can’t guarantee will succeed. Or at the very \nleast, print out a message to the user and a stack trace, 50 \nsomebody can figure out what happened.\nThe compiler checks for everything \nexcept RuntimeExceptions.\nThe compiler guarantees:\nRuntimeExceptions are NOT checked by the \ncompiler. They’re known as (big surprise here) \n“unchecked exceptions”. You can throw, catch, \nand declare RuntimeExceptions, but you don’t \nhave to, and the compiler won’t check.\nInterruptedException\nException\nIOException\nRuntimeException\nNullPointerException\nClassCastException\nExceptions that are NOT subclasses of \nRuntimeException are checked for by \nthe compiler. They’re called “checked \nexceptions”\nIf you throw an exception in your code you must declare it using \nthe throws keyword in your method declaration.\nIf you call a method that throws an exception (in other words, \na method that declares it throws an exception), you must \nacknowledge that you’re aware of the exception possibility. \nOne way to satisfy the compiler is to wrap the call in a try/catch. \n(There’5 a second way we’11 look at a little later in this chapter.) \nchecked and unchecked exceptions\n1\n2",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6533,
+      "rows": [
+        [
+          "Exception",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Exception",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.65,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "InterruptedException",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "",
+          "IOException",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "",
+          "RuntimeException",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.6333,
+      "rows": [
+        [
+          "",
+          "ClassCastException",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 0.65,
+      "rows": [
+        [
+          "NullPointerException",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "324 chapter 11\nthere are no\nDumb Questions\nQ: Wait just a minute! How come this is the FIRST time \nwe’ve had to try/catch an Exception? What about the \nexceptions 1’ve already gotten like NullPointerException \nand the exception for DivideByZero. 1 even got a \nNumberFormatException from the Integer.parseInt() \nmethod. How come we didn’t have to catch those?\nA: The compiler cares about all subclasses of Exception, \nunless they are a special type, RuntimeException. Any \nexception class that extends RuntimeException gets a \nfree pass. RuntimeExceptions can be thrown anywhere, \nwith or without throws declarations or try/catch blocks. \nThe compiler doesn’t bother checking whether a method \ndeclares that it throws a RuntimeException, or whether the \ncaller acknowledges that they might get that exception at \nruntime.\nQ: 1’11 bite. WHY doesn’t the compiler care about those \nruntime exceptions? Aren’t they just as likely to bring the \nwhole show to a stop?\nA: Most RuntimeExceptions come from a problem in \nyour code logic, rather than a condition that fails at runtime \nin ways that you cannot predict or prevent. You cannot \nguarantee the file is there. You cannot guarantee the server \nis up. But you can make sure your code doesn’t index off the \nend of an array (that’5 what the .length attribute is for). \nYou WANT RuntimeExceptions to happen at development \nand testing time. You don’t want to code in a try/catch, for \nexample, and have the overhead that goes with it, to catch \nsomething that shouldn’t happen in the first place. \nA try/catch is for handling exceptional situations, not flaws \nin your code. Use your catch blocks to try to recover from \nsituations you can’t guarantee will succeed. Or at the very \nleast, print out a message to the user and a stack trace, 50 \nsomebody can figure out what happened.\nThe compiler checks for everything \nexcept RuntimeExceptions.\nThe compiler guarantees:\nRuntimeExceptions are NOT checked by the \ncompiler. They’re known as (big surprise here) \n“unchecked exceptions”. You can throw, catch, \nand declare RuntimeExceptions, but you don’t \nhave to, and the compiler won’t check.\nInterruptedException\nException\nIOException\nRuntimeException\nNullPointerException\nClassCastException\nExceptions that are NOT subclasses of \nRuntimeException are checked for by \nthe compiler. They’re called “checked \nexceptions”\nIf you throw an exception in your code you must declare it using \nthe throws keyword in your method declaration.\nIf you call a method that throws an exception (in other words, \na method that declares it throws an exception), you must \nacknowledge that you’re aware of the exception possibility. \nOne way to satisfy the compiler is to wrap the call in a try/catch. \n(There’5 a second way we’11 look at a little later in this chapter.) \nchecked and unchecked exceptions\n1\n2",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 358,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 358,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2841 chars",
+      "severity": "info"
+    },
+    {
+      "page": 358,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

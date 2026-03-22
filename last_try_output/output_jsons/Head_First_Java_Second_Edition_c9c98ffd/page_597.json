@@ -1,0 +1,46 @@
+{
+  "page_number": 597,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n563\nJava Object Law For HashCode() \nand equals()\nThe API docs for class Object state the \nrules you MUST follow:\n$ If two objects are equal, they MUST \nhave matching hashcodes.\n$ If two objects are equal, calling \nequals() on either object MUST return \ntrue. In other words, if (a.equals(b)) then \n(b.equals(a)).\n$ If two objects have the same hashcode \nvalue, they are NOT required to be equal. \nBut if they’re equal, they MUST have the \nsame hashcode value.\n$ 50, if you override equals(), you MUST \noverride hashCode().\n$ The default behavior of hashCode() \nis to generate a unique integer for each \nobject on the heap. 50 if you don’t override \nhashCode() in a class, no two objects of \nthat type can EVER be considered equal.\n$ The default behavior of equals() is to \ndo an == comparison. In other words, to \ntest whether the two references refer to a \nsingle object on the heap. 50 if you don’t \noverride equals() in a class, no two objects \ncan EVER be considered equal since \nreferences to two different objects will \nalways contain a different bit pattern.\na.equals(b) must also mean that\na.hashCode() == b.hashCode()\nBut a.hashCode() == b.hashCode()\ndoes NOT have to mean a.equals(b)\nthere are no\nDumb Questions\nQ: How come hashcodes can be the same \neven if objects aren’t equal?\nA: HashSets use hashcodes to store the ele-\nments in a way that makes it much faster to access. \nIf you try to find an object in an ArrayList by giving \nthe ArrayList a copy of the object (as opposed to \nan index value), the ArrayList has to start searching \nfrom the beginning, looking at each element in \nthe list to see if it matches. But a HashSet can find \nan object much more quickly, because it uses the \nhashcode as a kind of label on the “bucket” where \nit stored the element. 50 if you say, “1 want you \nto find an object in the set that’5 exactly like this \none...” the HashSet gets the hashcode value from \nthe copy of the Song you give it (say, 742), and \nthen the HashSet says, “Oh, 1 know exactly where \nthe object with hashcode #742 is stored...”, and it \ngoes right to the #742 bucket.\nThis isn’t the whole story you get in a computer \nscience class, but it’5 enough for you to use Hash-\nSets effectively. In reality, developing a good hash-\ncode algorithm is the subject of many a PhD thesis, \nand more than we want to cover in this book. \nThe point is that hashcodes can be the same \nwithout necessarily guaranteeing that the objects \nare equal, because the “hashing algorithm” used in \nthe hashCode() method might happen to return \nthe same value for multiple objects. And yes, that \nmeans that multiple objects would all land in the \nsame bucket in the HashSet (because each bucket \nrepresents a single hashcode value), but that’5 not \nthe end of the world. It might mean that the Hash-\nSet is just a little less efficient (or that it’5 filled \nwith an extremely large number of elements), but \nif the HashSet finds more than one object in the \nsame hashcode bucket, the HashSet will simply \nuse the equals() method to see if there’5 a perfect \nmatch. In other words, hashcode values are some-\ntimes used to narrow down the search, but to find \nthe one exact match, the HashSet still has to take \nall the objects in that one bucket (the bucket for \nall objects with the same hashcode) and then call \nequals() on them to see if the object it’5 looking for \nis in that bucket.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n563\nJava Object Law For HashCode() \nand equals()\nThe API docs for class Object state the \nrules you MUST follow:\n$ If two objects are equal, they MUST \nhave matching hashcodes.\n$ If two objects are equal, calling \nequals() on either object MUST return \ntrue. In other words, if (a.equals(b)) then \n(b.equals(a)).\n$ If two objects have the same hashcode \nvalue, they are NOT required to be equal. \nBut if they’re equal, they MUST have the \nsame hashcode value.\n$ 50, if you override equals(), you MUST \noverride hashCode().\n$ The default behavior of hashCode() \nis to generate a unique integer for each \nobject on the heap. 50 if you don’t override \nhashCode() in a class, no two objects of \nthat type can EVER be considered equal.\n$ The default behavior of equals() is to \ndo an == comparison. In other words, to \ntest whether the two references refer to a \nsingle object on the heap. 50 if you don’t \noverride equals() in a class, no two objects \ncan EVER be considered equal since \nreferences to two different objects will \nalways contain a different bit pattern.\na.equals(b) must also mean that\na.hashCode() == b.hashCode()\nBut a.hashCode() == b.hashCode()\ndoes NOT have to mean a.equals(b)\nthere are no\nDumb Questions\nQ: How come hashcodes can be the same \neven if objects aren’t equal?\nA: HashSets use hashcodes to store the ele-\nments in a way that makes it much faster to access. \nIf you try to find an object in an ArrayList by giving \nthe ArrayList a copy of the object (as opposed to \nan index value), the ArrayList has to start searching \nfrom the beginning, looking at each element in \nthe list to see if it matches. But a HashSet can find \nan object much more quickly, because it uses the \nhashcode as a kind of label on the “bucket” where \nit stored the element. 50 if you say, “1 want you \nto find an object in the set that’5 exactly like this \none...” the HashSet gets the hashcode value from \nthe copy of the Song you give it (say, 742), and \nthen the HashSet says, “Oh, 1 know exactly where \nthe object with hashcode #742 is stored...”, and it \ngoes right to the #742 bucket.\nThis isn’t the whole story you get in a computer \nscience class, but it’5 enough for you to use Hash-\nSets effectively. In reality, developing a good hash-\ncode algorithm is the subject of many a PhD thesis, \nand more than we want to cover in this book. \nThe point is that hashcodes can be the same \nwithout necessarily guaranteeing that the objects \nare equal, because the “hashing algorithm” used in \nthe hashCode() method might happen to return \nthe same value for multiple objects. And yes, that \nmeans that multiple objects would all land in the \nsame bucket in the HashSet (because each bucket \nrepresents a single hashcode value), but that’5 not \nthe end of the world. It might mean that the Hash-\nSet is just a little less efficient (or that it’5 filled \nwith an extremely large number of elements), but \nif the HashSet finds more than one object in the \nsame hashcode bucket, the HashSet will simply \nuse the equals() method to see if there’5 a perfect \nmatch. In other words, hashcode values are some-\ntimes used to narrow down the search, but to find \nthe one exact match, the HashSet still has to take \nall the objects in that one bucket (the bucket for \nall objects with the same hashcode) and then call \nequals() on them to see if the object it’5 looking for \nis in that bucket.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 597,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 597,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3435 chars",
+      "severity": "info"
+    },
+    {
+      "page": 597,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

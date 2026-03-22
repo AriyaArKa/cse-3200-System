@@ -1,0 +1,58 @@
+{
+  "page_number": 138,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "104 \nchapter 5\nThere isn’t a perfect mapping from prepcode to javacode; you’11 see a few \nadjustments. The prepcode gave us a much better idea of what the code needs to \ndo, and now we have to find the Java code that can do the how.\nIn the back of your mind, be thinking about parts of this code you might want \n(or need) to improve. The numbers are for things (syntax and language \nfeatures) you haven’t seen yet. They’re explained on the opposite page.\npublic String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++;\n break;\n } // end if\n } // end for\n if (numOfHits == locationCells.length) {\n result = “kill”;\n } // end if\n System.out.println(result);\n return result;\n} // end method\nThe checkYourself() method\nconvert the String \nto an int\nmake a variable to hold the result we’11 \nreturn. put “miss” in as the default \n(i.e. we assume a “miss”)\nrepeat with each cell in the locationCells \narray (each cell location of the object)\ncompare the user guess to this \nelement (cell) in the array\nwe got a hit!\nget out of the loop, no need \nto test the other cells\nwe’re out of the loop, but let’5 see if we’re \nnow ‘dead’ (hit 3 times) and change the \nresult String to “Kill”\ndisplay the result for the user\n(“Miss”, unless it was changed to “Hit” or “Kill”)\nreturn the result back to \nthe calling method\nGET the user \nguess\nCONVERT \nthe user guess to \nan int\nREPEAT with \neach cell in the int \narray \nIF the user guess \nmatches\nINCREMENT \nthe number of \nhits\n// FIND OUT if \nit was the last cell\nIF number of hits \nis 3, \nRETURN “kill” \nas the result\nELSE it was \nnot a kill, 50 \nRETURN“hit”\n ELSE \nRETURN \n“miss” \n1\n prep code \ntest code\nreal code\nreal code \n2\n3\n4\n1\nSimpleDotCom class",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "104 \nchapter 5\nThere isn’t a perfect mapping from prepcode to javacode; you’11 see a few \nadjustments. The prepcode gave us a much better idea of what the code needs to \ndo, and now we have to find the Java code that can do the how.\nIn the back of your mind, be thinking about parts of this code you might want \n(or need) to improve. The numbers are for things (syntax and language \nfeatures) you haven’t seen yet. They’re explained on the opposite page.\npublic String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++;\n break;\n } // end if\n } // end for\n if (numOfHits == locationCells.length) {\n result = “kill”;\n } // end if\n System.out.println(result);\n return result;\n} // end method\nThe checkYourself() method\nconvert the String \nto an int\nmake a variable to hold the result we’11 \nreturn. put “miss” in as the default \n(i.e. we assume a “miss”)\nrepeat with each cell in the locationCells \narray (each cell location of the object)\ncompare the user guess to this \nelement (cell) in the array\nwe got a hit!\nget out of the loop, no need \nto test the other cells\nwe’re out of the loop, but let’5 see if we’re \nnow ‘dead’ (hit 3 times) and change the \nresult String to “Kill”\ndisplay the result for the user\n(“Miss”, unless it was changed to “Hit” or “Kill”)\nreturn the result back to \nthe calling method\nGET the user \nguess\nCONVERT \nthe user guess to \nan int\nREPEAT with \neach cell in the int \narray \nIF the user guess \nmatches\nINCREMENT \nthe number of \nhits\n// FIND OUT if \nit was the last cell\nIF number of hits \nis 3, \nRETURN “kill” \nas the result\nELSE it was \nnot a kill, 50 \nRETURN“hit”\n ELSE \nRETURN \n“miss” \n1\n prep code \ntest code\nreal code\nreal code \n2\n3\n4\n1\nSimpleDotCom class",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 138,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 138,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1915 chars",
+      "severity": "info"
+    },
+    {
+      "page": 138,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

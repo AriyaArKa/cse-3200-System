@@ -1,0 +1,81 @@
+{
+  "page_number": 514,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "480 \nchapter 15\nBefore we start building the Chat app, \nlet’5 start with something a little smaller. \nThe Advice Guy is a server program that \noffers up practical, inspirational tips \nto get you through those long days of \ncoding.\nWe’re building a client for The Advice \nGuy program, which pulls a message \nfrom the server each time it connects.\nWhat are you waiting for? Who knows \nwhat opportunities you’ve missed \nwithout this app.\nThe DailyAdviceClient\nTreat yourself to \na cold one! You \ndeserve it!\nTell your boss \nthe report will \nhave to wait. There’5 \npowder at Aspen!\nThat shade of \ngreen isn’t really \nworkin’ for you...\nThe Advice Guy\nConnect\n1\nClient connects to the server and gets an \ninput stream from it\nClient \nadvice server \nat 190.165.1.103, \nport 4242\nMake a socket connection to \n190.165.1.103 at port 4242\nServer\nRead\n2\nClient reads a message from the server\nClient A\nadvice server \ncomposes \nadvice and \nsends it\nadvice = reader.readLine()\nServer\nsocket.getInputStream()\nwriting a client",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (230x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x146)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (416x522)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x146)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "480 \nchapter 15\nBefore we start building the Chat app, \nlet’5 start with something a little smaller. \nThe Advice Guy is a server program that \noffers up practical, inspirational tips \nto get you through those long days of \ncoding.\nWe’re building a client for The Advice \nGuy program, which pulls a message \nfrom the server each time it connects.\nWhat are you waiting for? Who knows \nwhat opportunities you’ve missed \nwithout this app.\nThe DailyAdviceClient\nTreat yourself to \na cold one! You \ndeserve it!\nTell your boss \nthe report will \nhave to wait. There’5 \npowder at Aspen!\nThat shade of \ngreen isn’t really \nworkin’ for you...\nThe Advice Guy\nConnect\n1\nClient connects to the server and gets an \ninput stream from it\nClient \nadvice server \nat 190.165.1.103, \nport 4242\nMake a socket connection to \n190.165.1.103 at port 4242\nServer\nRead\n2\nClient reads a message from the server\nClient A\nadvice server \ncomposes \nadvice and \nsends it\nadvice = reader.readLine()\nServer\nsocket.getInputStream()\nwriting a client",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 514,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 514,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1012 chars",
+      "severity": "info"
+    },
+    {
+      "page": 514,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 514,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

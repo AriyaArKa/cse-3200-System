@@ -1,0 +1,60 @@
+{
+  "page_number": 450,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "416 \nchapter 13\nJCheckBox\nConstructor\nJCheckBox check = new JCheckBox(“Goes to 11”);\nHow to use it\nListen for an item event (when it’5 selected or deselected)\ncheck.addItemListener(this);\n1\nHandle the event (and find out whether or not it’5 selected)\n public void itemStateChanged(ItemEvent ev) {\n String onOrOff = “off”;\n if (check.isSelected()) onOrOff = “on”; \n System.out.println(“Check box is “ + onOrOff); \n }\n2\nSelect or deselect it in code\ncheck.setSelected(true);\ncheck.setSelected(false);\n3\ncheck box\nthere are no\nDumb Questions\nQ: Aren’t the layout manag-\ners just more trouble than they’re \nworth? If 1 have to go to all this \ntrouble, 1 might as well just hard-\ncode the size and coordinates for \nwhere everything should go.\nA: Getting the exact layout \nyou want from a layout man-\nager can be a challenge. But think \nabout what the layout manager \nis really doing for you. Even the \nseemingly simple task of figuring \nout where things should go on \nthe screen can be complex. For \nexample, the layout manager takes \ncare of keeping your components \nfrom overlapping one another. \nIn other words, it knows how to \nmanage the spacing between \ncomponents (and between the \nedge of the frame). Sure you can \ndo that yourself, but what happens \nif you want components to be \nvery tightly packed? You might get \nthem placed just right, by hand, \nbut that’5 only good for your JVM!\nWhy? Because the components \ncan be slightly different from \nplatform to platform, especially if \nthey use the underlying platform’5 \nnative ‘look and feel’. Subtle things \nlike the bevel of the buttons can \nbe different in such a way that \ncomponents that line up neatly \non one platform suddenly squish \ntogether on another. \nAnd we’re still not at the really Big \nThing that layout managers do. \nThink about what happens when \nthe user resizes the window! Or \nyour GUI is dynamic, where com-\nponents come and go. If you had \nto keep track of re-laying out all \nthe components every time there’5 \na change in the size or contents of \na background component...yikes!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (150x102)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "416 \nchapter 13\nJCheckBox\nConstructor\nJCheckBox check = new JCheckBox(“Goes to 11”);\nHow to use it\nListen for an item event (when it’5 selected or deselected)\ncheck.addItemListener(this);\n1\nHandle the event (and find out whether or not it’5 selected)\n public void itemStateChanged(ItemEvent ev) {\n String onOrOff = “off”;\n if (check.isSelected()) onOrOff = “on”; \n System.out.println(“Check box is “ + onOrOff); \n }\n2\nSelect or deselect it in code\ncheck.setSelected(true);\ncheck.setSelected(false);\n3\ncheck box\nthere are no\nDumb Questions\nQ: Aren’t the layout manag-\ners just more trouble than they’re \nworth? If 1 have to go to all this \ntrouble, 1 might as well just hard-\ncode the size and coordinates for \nwhere everything should go.\nA: Getting the exact layout \nyou want from a layout man-\nager can be a challenge. But think \nabout what the layout manager \nis really doing for you. Even the \nseemingly simple task of figuring \nout where things should go on \nthe screen can be complex. For \nexample, the layout manager takes \ncare of keeping your components \nfrom overlapping one another. \nIn other words, it knows how to \nmanage the spacing between \ncomponents (and between the \nedge of the frame). Sure you can \ndo that yourself, but what happens \nif you want components to be \nvery tightly packed? You might get \nthem placed just right, by hand, \nbut that’5 only good for your JVM!\nWhy? Because the components \ncan be slightly different from \nplatform to platform, especially if \nthey use the underlying platform’5 \nnative ‘look and feel’. Subtle things \nlike the bevel of the buttons can \nbe different in such a way that \ncomponents that line up neatly \non one platform suddenly squish \ntogether on another. \nAnd we’re still not at the really Big \nThing that layout managers do. \nThink about what happens when \nthe user resizes the window! Or \nyour GUI is dynamic, where com-\nponents come and go. If you had \nto keep track of re-laying out all \nthe components every time there’5 \na change in the size or contents of \na background component...yikes!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 450,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 450,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2083 chars",
+      "severity": "info"
+    },
+    {
+      "page": 450,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 450,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

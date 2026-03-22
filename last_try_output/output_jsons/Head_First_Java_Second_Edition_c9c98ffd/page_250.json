@@ -1,0 +1,95 @@
+{
+  "page_number": 250,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "216 \nchapter 8\nWait a minute... what good \nis a Dog if it comes out of an \nArrayList<Object> and it can’t do \nany Dog things? There’5 gotta be a \nway to get the Dog back to a state \nof Dogness...\n1 hope it doesn’t hurt. \nAnd what’5 50 wrong with \nstaying an Object? OK, 1 can’t \nfetch, sure, but 1 can give you \na real nice hashcode.\ncasting objects\nCasting an object reference \nback to its real type.\nObject\n 0\nIt’5 really still a Dog object, but if you want to call \nDog-specific methods, you need a reference declared \nas type Dog. If you’re sure* the object is really a \nDog, you can make a new Dog reference to it by \ncopying the Object reference, and forcing that \ncopy to go into a Dog reference variable, using a \ncast (Dog). You can use the new Dog reference to \ncall Dog methods.\nObject 0 = al.get(index);\nDog d = (Dog) 0;\nd.roam();\nObject\n 0\n \n \n \nD\n0\ng\n \n0\nb\nj\nect\nDog\nd\n*If you’re not sure it’5 a Dog, you can use the \ninstanceof operator to check. Because if \nyou’re wrong when you do the cast, you’11 get a \nClassCastException at runtime and come to a \ngrinding halt.\n if (0 instanceof Dog) {\n Dog d = (Dog) 0;\n }\n \n \n \nD\n0\ng\n \n0\nb\nj\nect\ncast the Object back to \na Dog we know is there.\nCast the 50-called ‘Object’ (but \nwe know he’5 actually a Dog) to \ntype Dog, 50 that you can treat \nhim like the Dog he really is.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (276x866)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (263x347)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (98x185)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (97x182)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (76x77)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "216 \nchapter 8\nWait a minute... what good \nis a Dog if it comes out of an \nArrayList<Object> and it can’t do \nany Dog things? There’5 gotta be a \nway to get the Dog back to a state \nof Dogness...\n1 hope it doesn’t hurt. \nAnd what’5 50 wrong with \nstaying an Object? OK, 1 can’t \nfetch, sure, but 1 can give you \na real nice hashcode.\ncasting objects\nCasting an object reference \nback to its real type.\nObject\n 0\nIt’5 really still a Dog object, but if you want to call \nDog-specific methods, you need a reference declared \nas type Dog. If you’re sure* the object is really a \nDog, you can make a new Dog reference to it by \ncopying the Object reference, and forcing that \ncopy to go into a Dog reference variable, using a \ncast (Dog). You can use the new Dog reference to \ncall Dog methods.\nObject 0 = al.get(index);\nDog d = (Dog) 0;\nd.roam();\nObject\n 0\n \n \n \nD\n0\ng\n \n0\nb\nj\nect\nDog\nd\n*If you’re not sure it’5 a Dog, you can use the \ninstanceof operator to check. Because if \nyou’re wrong when you do the cast, you’11 get a \nClassCastException at runtime and come to a \ngrinding halt.\n if (0 instanceof Dog) {\n Dog d = (Dog) 0;\n }\n \n \n \nD\n0\ng\n \n0\nb\nj\nect\ncast the Object back to \na Dog we know is there.\nCast the 50-called ‘Object’ (but \nwe know he’5 actually a Dog) to \ntype Dog, 50 that you can treat \nhim like the Dog he really is.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 250,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 250,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1350 chars",
+      "severity": "info"
+    },
+    {
+      "page": 250,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 250,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

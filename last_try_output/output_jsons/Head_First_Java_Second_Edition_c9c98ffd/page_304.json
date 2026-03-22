@@ -1,0 +1,60 @@
+{
+  "page_number": 304,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "object lifecycle\n270 \nchapter 9\npublic class Honey {\n public static void main(String [] args) {\n Honey honeyPot = new Honey();\n Honey [] ha = {honeyPot, honeyPot, \n honeyPot, honeyPot};\n Bees b1 = new Bees();\n b1.beeHA = ha;\n Bear [] ba = new Bear[5];\n for (int x=0; x < 5; x++) {\n ba[x] = new Bear();\n ba[x].hunny = honeyPot;\n }\n Kit k = new Kit();\n k.kh = honeyPot;\n Raccoon r = new Raccoon();\n r.rh = honeyPot;\n r.k = k;\n k = null;\n } // end of main\n}\nHoney\n Object\n( ends up null )\nPopular \n Objects\nIt probably wasn’t too hard to figure out that the Honey object first referred to by the honeyPot variable is by \nfar the most ‘popular’ object in this class. But maybe it was a little trickier to see that all of the variables that \npoint from the code to the Honey object refer to the same object! There are a total of 12 active references to \nthis object right before the main( ) method completes. The k.kh variable is valid for a while, but k gets nulled \nat the end. Since r.k still refers to the Kit object, r.k.kh (although never explicity declared), refers to the object!\n1\n2\n3\n4\n5\n6\n7\n8\n9\ncopyGC = null;\ngc2 = null; \nnewGC = gc3;\ngc1 = null; \nnewGC = null;\ngc4 = null; \ngc3 = gc2; \ngc1 = gc4; \ngc3 = null; \nNo - this line attempts to access a variable \nthat is out of scope.\nOK - gc2 was the only reference variable \nreferring to that object.\nNo - another out of scope variable.\nOK - gc1 had the only reference because \nnewGC is out of scope.\nNo - newGC is out of scope.\nNo - gc3 is still referring to that object.\nNo - gc4 is still referring to that object.\nOK - Reassigning the only reference to \nthat object.\nNo - gc4 is still referring to that object.\nG.C.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x122)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "object lifecycle\n270 \nchapter 9\npublic class Honey {\n public static void main(String [] args) {\n Honey honeyPot = new Honey();\n Honey [] ha = {honeyPot, honeyPot, \n honeyPot, honeyPot};\n Bees b1 = new Bees();\n b1.beeHA = ha;\n Bear [] ba = new Bear[5];\n for (int x=0; x < 5; x++) {\n ba[x] = new Bear();\n ba[x].hunny = honeyPot;\n }\n Kit k = new Kit();\n k.kh = honeyPot;\n Raccoon r = new Raccoon();\n r.rh = honeyPot;\n r.k = k;\n k = null;\n } // end of main\n}\nHoney\n Object\n( ends up null )\nPopular \n Objects\nIt probably wasn’t too hard to figure out that the Honey object first referred to by the honeyPot variable is by \nfar the most ‘popular’ object in this class. But maybe it was a little trickier to see that all of the variables that \npoint from the code to the Honey object refer to the same object! There are a total of 12 active references to \nthis object right before the main( ) method completes. The k.kh variable is valid for a while, but k gets nulled \nat the end. Since r.k still refers to the Kit object, r.k.kh (although never explicity declared), refers to the object!\n1\n2\n3\n4\n5\n6\n7\n8\n9\ncopyGC = null;\ngc2 = null; \nnewGC = gc3;\ngc1 = null; \nnewGC = null;\ngc4 = null; \ngc3 = gc2; \ngc1 = gc4; \ngc3 = null; \nNo - this line attempts to access a variable \nthat is out of scope.\nOK - gc2 was the only reference variable \nreferring to that object.\nNo - another out of scope variable.\nOK - gc1 had the only reference because \nnewGC is out of scope.\nNo - newGC is out of scope.\nNo - gc3 is still referring to that object.\nNo - gc4 is still referring to that object.\nOK - Reassigning the only reference to \nthat object.\nNo - gc4 is still referring to that object.\nG.C.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 304,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 304,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1758 chars",
+      "severity": "info"
+    },
+    {
+      "page": 304,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 304,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

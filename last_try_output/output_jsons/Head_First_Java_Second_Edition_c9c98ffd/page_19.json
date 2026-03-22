@@ -1,0 +1,60 @@
+{
+  "page_number": 19,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "xvii\n15\nMake a Connection\nConnect with the outside world. It’5 easy. All the low-level networking \ndetails are taken care of by classes in the java.net library. One of Java’5 best features is \nthat sending and receiving data over a network is really just 1/0 with a slightly different \nconnection stream at the end of the chain. In this chapter we’11 make client sockets. We’11 \nmake server sockets. We’11 make clients and servers. Before the chapter’5 done, you’11 have a \nfully-functional, multithreaded chat client. Did we just say multithreaded? \nSocket connection \nto port 5000 \non the server at \n196.164.1.103\nSocket connection \nback to the client \nat 196.164.1.100, \nport 4242\nServer\nClient\nChat program overview \n473\nConnecting, sending, and receiving \n474\nNetwork sockets \n475\nTCP ports \n476\nReading data from a socket (using BufferedReader) \n478\nWriting data to a socket (using PrintWriter) \n479\nWriting the Daily Advice Client program \n480\nWriting a simple server \n483\nDaily Advice Server code \n484\nWriting a chat client \n486\nMultiple call stacks \n490\nLaunching a new thread (make it, start it) \n492\nThe Runnable interface (the thread’5 job) \n494\nThree states of a new Thread object (new, runnable, running) \n495\nThe runnable-running loop \n496\nThread scheduler (it’5 his decision, not yours) \n497\nPutting a thread to sleep \n501\nMaking and starting two threads \n503\nConcurrency issues: can this couple be saved? \n505\nThe Ryan and Monica concurrency problem, in code \n506\nLocking to make things atomic \n510\nEvery object has a lock \n511\nThe dreaded “Lost Update” problem \n512\nSynchronized methods (using a lock) \n514\nDeadlock! \n516\nMultithreaded ChatClient code \n518\nReady-bake SimpleChatServer \n520\nExercises and puzzles \n524",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (482x221)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "xvii\n15\nMake a Connection\nConnect with the outside world. It’5 easy. All the low-level networking \ndetails are taken care of by classes in the java.net library. One of Java’5 best features is \nthat sending and receiving data over a network is really just 1/0 with a slightly different \nconnection stream at the end of the chain. In this chapter we’11 make client sockets. We’11 \nmake server sockets. We’11 make clients and servers. Before the chapter’5 done, you’11 have a \nfully-functional, multithreaded chat client. Did we just say multithreaded? \nSocket connection \nto port 5000 \non the server at \n196.164.1.103\nSocket connection \nback to the client \nat 196.164.1.100, \nport 4242\nServer\nClient\nChat program overview \n473\nConnecting, sending, and receiving \n474\nNetwork sockets \n475\nTCP ports \n476\nReading data from a socket (using BufferedReader) \n478\nWriting data to a socket (using PrintWriter) \n479\nWriting the Daily Advice Client program \n480\nWriting a simple server \n483\nDaily Advice Server code \n484\nWriting a chat client \n486\nMultiple call stacks \n490\nLaunching a new thread (make it, start it) \n492\nThe Runnable interface (the thread’5 job) \n494\nThree states of a new Thread object (new, runnable, running) \n495\nThe runnable-running loop \n496\nThread scheduler (it’5 his decision, not yours) \n497\nPutting a thread to sleep \n501\nMaking and starting two threads \n503\nConcurrency issues: can this couple be saved? \n505\nThe Ryan and Monica concurrency problem, in code \n506\nLocking to make things atomic \n510\nEvery object has a lock \n511\nThe dreaded “Lost Update” problem \n512\nSynchronized methods (using a lock) \n514\nDeadlock! \n516\nMultithreaded ChatClient code \n518\nReady-bake SimpleChatServer \n520\nExercises and puzzles \n524",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 19,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 19,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1739 chars",
+      "severity": "info"
+    },
+    {
+      "page": 19,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 19,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

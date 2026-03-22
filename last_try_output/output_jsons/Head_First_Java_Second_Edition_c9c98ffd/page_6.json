@@ -1,0 +1,67 @@
+{
+  "page_number": 6,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Other related books from 0’Reilly\nAnt: The Definitive Guide\nBetter, Faster, Lighter Java™\nEnterprise JavaBeans™ 3.0\nHibernate: A Developer’5 Notebook\nJava™ 1.5 Tiger: A Developer’5 Notebook\nJava™ Cookbook\nJava™ in a Nutshell\nJava™ Network Programming\nJava™ Servlet & JSP Cookbook\nJava™ Swing\nJavaServer™ Faces\nJavaServer Pages™\nProgramming Jakarta Struts\nTomcat: The Definitive Guide\nOther books in 0’Reilly’5 Head First series\nHead First Java™\nHead First Object-Oriented Analysis and Design (OOA&D)\nHead Rush Ajax\nHead First HTML with CSS and XHTML\nHead First Design Patterns\nHead First EJB™\nHead First PMP\nHead First SQL\nHead First Software Development\nHead First C#\nHead First JavaScript\nHead First Programming (2008)\nHead First Ajax (2008)\nHead First Physics (2008)\nHead First Statistics (2008)\nHead First Ruby on Rails (2008)\nHead First PHP & MySQL (2008)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "Other related books from 0’Reilly\nAnt: The Definitive Guide\nBetter, Faster, Lighter Java™\nEnterprise JavaBeans™ 3.0\nHibernate: A Developer’5 Notebook\nJava™ 1.5 Tiger: A Developer’5 Notebook\nJava™ Cookbook\nJava™ in a Nutshell\nJava™ Network Programming\nJava™ Servlet & JSP Cookbook\nJava™ Swing\nJavaServer™ Faces\nJavaServer Pages™\nProgramming Jakarta Struts\nTomcat: The Definitive Guide\nOther books in 0’Reilly’5 Head First series\nHead First Java™\nHead First Object-Oriented Analysis and Design (OOA&D)\nHead Rush Ajax\nHead First HTML with CSS and XHTML\nHead First Design Patterns\nHead First EJB™\nHead First PMP\nHead First SQL\nHead First Software Development\nHead First C#\nHead First JavaScript\nHead First Programming (2008)\nHead First Ajax (2008)\nHead First Physics (2008)\nHead First Statistics (2008)\nHead First Ruby on Rails (2008)\nHead First PHP & MySQL (2008)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 6,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 6,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 861 chars",
+      "severity": "info"
+    },
+    {
+      "page": 6,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 6,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

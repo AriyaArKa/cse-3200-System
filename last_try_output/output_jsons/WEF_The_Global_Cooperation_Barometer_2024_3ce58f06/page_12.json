@@ -1,0 +1,60 @@
+{
+  "page_number": 12,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Yet, total factor productivity (TFP; also called \nmultifactor productivity), while not the only indicator \nof technological progress, is a useful measurement \nof overall innovation – it measures the ratio of overall \noutput (GDP) to overall inputs, with innovation a \nkey factor in increasing the productivity level.20 This \nmetric remained virtually stagnant from 2012-2020, \naveraging -0.1% annual growth over the past \ndecade after a strong start of annual growth of \n0.4% in the early 20105.\nSince the outset of the COVID-19 pandemic, trends \nin technology and innovation have become more \nmixed. While the pandemic drove widespread \nremote working for white-collar workers that \nsupported continued growth in cross-border data \nflows and relatively robust IT services growth, other \ntrends in global cooperation have experienced \nbroad deceleration. \nPerceived risks to national security have contributed \nto the deceleration. The race to dominate the frontiers \nof technology development has led to import and \nexport bans on 56 network technologies, limitations \non semiconductors and bans on some social \nmedia platforms.21 From 2021-2022, restrictions on \nproducts in the IT goods sector grew five times faster \nthan trade restrictions overall. Trade in IT goods and \nintermediates (e.g. laptop components) as a share \nof GDP declined by 5% during the same period. The \nshare of cross-border patents also fell sharply to the \nlowest point in the past decade. And cross-border \ndata flows declined by 2%.\nRedoubling efforts to promote \ninnovation through public and \nprivate sector partnerships\nGiven recent trends and the growing uncertainty \nover the continued path of equitable technological \nprogress, global leaders will need to address (at \nleast) two critical areas of cooperation.\nThe first is to commit to greater cross-border \ncollaboration through foundational R&D, international \nstudent exchanges and cross-border patent \napplications. For example, the US and China \ncollaborated on AI publications more than any other \ncountry pair from 2010 to 2021. The number of \npublications grew roughly four-fold since 2010, but \nonly 2.1% from 2020 to 2021.22 Broadening the \npotential base of collaborative networks (potentially \nthrough the continued expansion of universities in low- \nand middle-income countries (LMICs) or increased \npublic sector support of exchange programmes \nfor researchers) will be important to minimizing the \npotential for the gains of innovation and technology to \nbecome increasingly concentrated in fewer hands.\nThe second area is working to harmonize and \nsimplify approaches to global regulation of frontier \ntechnologies. Generative AI is the most recent \nprominent example – this technology has the \npotential to add up to $4.4 trillion in value to the \nglobal economy,23 but there are significant risks and \nconcerns that need to be allayed for successful \ndeployment of the technology (e.g. AI-related \nincidents and controversies have risen 26-fold \nsince 2012).24 There have been multiple regulatory \nframeworks advanced to manage generative AI, \nbut despite efforts from public-sector leaders,25 no \nconsistent global framework has yet emerged.\nThe Global Cooperation Barometer 2024\n12",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1195x689)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "Yet, total factor productivity (TFP; also called \nmultifactor productivity), while not the only indicator \nof technological progress, is a useful measurement \nof overall innovation – it measures the ratio of overall \noutput (GDP) to overall inputs, with innovation a \nkey factor in increasing the productivity level.20 This \nmetric remained virtually stagnant from 2012-2020, \naveraging -0.1% annual growth over the past \ndecade after a strong start of annual growth of \n0.4% in the early 20105.\nSince the outset of the COVID-19 pandemic, trends \nin technology and innovation have become more \nmixed. While the pandemic drove widespread \nremote working for white-collar workers that \nsupported continued growth in cross-border data \nflows and relatively robust IT services growth, other \ntrends in global cooperation have experienced \nbroad deceleration. \nPerceived risks to national security have contributed \nto the deceleration. The race to dominate the frontiers \nof technology development has led to import and \nexport bans on 56 network technologies, limitations \non semiconductors and bans on some social \nmedia platforms.21 From 2021-2022, restrictions on \nproducts in the IT goods sector grew five times faster \nthan trade restrictions overall. Trade in IT goods and \nintermediates (e.g. laptop components) as a share \nof GDP declined by 5% during the same period. The \nshare of cross-border patents also fell sharply to the \nlowest point in the past decade. And cross-border \ndata flows declined by 2%.\nRedoubling efforts to promote \ninnovation through public and \nprivate sector partnerships\nGiven recent trends and the growing uncertainty \nover the continued path of equitable technological \nprogress, global leaders will need to address (at \nleast) two critical areas of cooperation.\nThe first is to commit to greater cross-border \ncollaboration through foundational R&D, international \nstudent exchanges and cross-border patent \napplications. For example, the US and China \ncollaborated on AI publications more than any other \ncountry pair from 2010 to 2021. The number of \npublications grew roughly four-fold since 2010, but \nonly 2.1% from 2020 to 2021.22 Broadening the \npotential base of collaborative networks (potentially \nthrough the continued expansion of universities in low- \nand middle-income countries (LMICs) or increased \npublic sector support of exchange programmes \nfor researchers) will be important to minimizing the \npotential for the gains of innovation and technology to \nbecome increasingly concentrated in fewer hands.\nThe second area is working to harmonize and \nsimplify approaches to global regulation of frontier \ntechnologies. Generative AI is the most recent \nprominent example – this technology has the \npotential to add up to $4.4 trillion in value to the \nglobal economy,23 but there are significant risks and \nconcerns that need to be allayed for successful \ndeployment of the technology (e.g. AI-related \nincidents and controversies have risen 26-fold \nsince 2012).24 There have been multiple regulatory \nframeworks advanced to manage generative AI, \nbut despite efforts from public-sector leaders,25 no \nconsistent global framework has yet emerged.\nThe Global Cooperation Barometer 2024\n12",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 12,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 12,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3239 chars",
+      "severity": "info"
+    },
+    {
+      "page": 12,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 12,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

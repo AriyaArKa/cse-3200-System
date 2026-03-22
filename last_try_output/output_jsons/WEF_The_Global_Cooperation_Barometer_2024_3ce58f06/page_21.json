@@ -1,0 +1,46 @@
+{
+  "page_number": 21,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "IT services trade (as a % of GDP)\nSource: UNCTAD\nTotal factor productivity\nSource: The Conference Board\nIndividuals using the internet\nSource: International Telecommunication Union\nAverage price of a lithium-ion battery\nSource: BloombergNEF\nMethodological notes: Two published charts were used to \nconstruct the decade trendline: one presenting data from \n2010-2018 and on presenting data from 2013-2022. Data \nfrom the former chart was used for years 2012-2018 and \n2019-2022 was extrapolated using the y-0-y growth rates \nfrom the latter chart.\nClimate and natural capital\nMitigation finance (as a % of GDP)\nSource: Climate Policy Initiative\nMethodological notes: Mitigation finance includes dual-\nuse finance as it is assumed to be total climate finance \nminus adaptation finance. The 2021 figure is a low-bound \nestimate by CPI. The 2022 figure for total climate finance was \nextrapolated based on the 2011-2020 CAGR.\nAdaptation finance (as a % of GDP)\nSource: Climate Policy Initiative\nMethodological notes: 2021 and 2022 figures were \nextrapolated based on 2011-2020 CAGR.\nLow carbon goods trade (as a % of GDP)\nSource: IMF\nTerrestrial protected area\nSource: Protected Planet\nMethodological notes: The 2022 figure was extrapolated \nbased on the 2012-2021 CAGR.\nMarine protected area\nSource: Protected Planet\nGHG emissions\nSource: IMF\nGHG emissions intensity (ratio of emissions to GDP)\nSource: IMF\nBiodiversity Intactness Index\nSource: The National History Museum\nOcean Health Index\nSource: Ocean Health Index\nHealth and wellness \nCross-border health-related R&D (as a % of GDP)\nSource: Policy Cures Research\nMethodological notes: Total health-related R&D is used in this \ninstance as a proxy for cross-border R&D, given that cross-\nborder R&D data is scant.\nHealth-related goods trade (as a % of GDP)\nSource: UN Comtrade\nMethodological notes: The 2022 figure was extrapolated by \napplying the rate of change between 2021 Q1-Q3 and 2022 \nQ1-Q3 was to the 2021 figure.\nDevelopment assistance for health (DAH) (as a \n% of GDP)\nSource: Institute for Health Metrics and Evaluation (IHME)\nInternational Health Regulations (IHR) score\nSource: World Health Organization\nMethodological notes: All capacities average score used.\nLife expectancy at birth\nSource: United Nations\nMethodological notes: Medium variant UN forecast was used \nfor the 2022 figure.\nDisability-adjusted life years (DALYs)\nSource: IHME\nMethodological notes: IHME’5 forecasted values were used for \n2020-2022 figures.\nUnder-5 mortality \nSource: IHME\nMethodological notes: IHME’5 forecasted value was used for \nthe 2022 figure.\nMaternal mortality\nSource: IHME\nMethodological notes: IHME’5 forecasted value was used for \nthe 2022 figure.\nPeace and security\nConflicts\nSource: Uppsala Conflict Data Program\nUNSC resolutions\nSource: United Nations\nMultilateral peacekeeping operations\nSource: Stockholm International Peace Research Institute \n(SIPRI)\nFatalities\nSource: Uppsala Conflict Data Program\nForcibly displaced people\nSource: United Nations High Commissioner for Refugees \n(UNHCR)\nSignificant cyber incidents\nSource: Center for Strategic and International Studies\nMethodological notes: Significant cyber incidents are defined \nby CSIS as cyberattacks on government agencies, defense \nand high-tech companies, or economic crimes with losses of \nmore than a million dollars.\nThe Global Cooperation Barometer 2024\n21",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "IT services trade (as a % of GDP)\nSource: UNCTAD\nTotal factor productivity\nSource: The Conference Board\nIndividuals using the internet\nSource: International Telecommunication Union\nAverage price of a lithium-ion battery\nSource: BloombergNEF\nMethodological notes: Two published charts were used to \nconstruct the decade trendline: one presenting data from \n2010-2018 and on presenting data from 2013-2022. Data \nfrom the former chart was used for years 2012-2018 and \n2019-2022 was extrapolated using the y-0-y growth rates \nfrom the latter chart.\nClimate and natural capital\nMitigation finance (as a % of GDP)\nSource: Climate Policy Initiative\nMethodological notes: Mitigation finance includes dual-\nuse finance as it is assumed to be total climate finance \nminus adaptation finance. The 2021 figure is a low-bound \nestimate by CPI. The 2022 figure for total climate finance was \nextrapolated based on the 2011-2020 CAGR.\nAdaptation finance (as a % of GDP)\nSource: Climate Policy Initiative\nMethodological notes: 2021 and 2022 figures were \nextrapolated based on 2011-2020 CAGR.\nLow carbon goods trade (as a % of GDP)\nSource: IMF\nTerrestrial protected area\nSource: Protected Planet\nMethodological notes: The 2022 figure was extrapolated \nbased on the 2012-2021 CAGR.\nMarine protected area\nSource: Protected Planet\nGHG emissions\nSource: IMF\nGHG emissions intensity (ratio of emissions to GDP)\nSource: IMF\nBiodiversity Intactness Index\nSource: The National History Museum\nOcean Health Index\nSource: Ocean Health Index\nHealth and wellness \nCross-border health-related R&D (as a % of GDP)\nSource: Policy Cures Research\nMethodological notes: Total health-related R&D is used in this \ninstance as a proxy for cross-border R&D, given that cross-\nborder R&D data is scant.\nHealth-related goods trade (as a % of GDP)\nSource: UN Comtrade\nMethodological notes: The 2022 figure was extrapolated by \napplying the rate of change between 2021 Q1-Q3 and 2022 \nQ1-Q3 was to the 2021 figure.\nDevelopment assistance for health (DAH) (as a \n% of GDP)\nSource: Institute for Health Metrics and Evaluation (IHME)\nInternational Health Regulations (IHR) score\nSource: World Health Organization\nMethodological notes: All capacities average score used.\nLife expectancy at birth\nSource: United Nations\nMethodological notes: Medium variant UN forecast was used \nfor the 2022 figure.\nDisability-adjusted life years (DALYs)\nSource: IHME\nMethodological notes: IHME’5 forecasted values were used for \n2020-2022 figures.\nUnder-5 mortality \nSource: IHME\nMethodological notes: IHME’5 forecasted value was used for \nthe 2022 figure.\nMaternal mortality\nSource: IHME\nMethodological notes: IHME’5 forecasted value was used for \nthe 2022 figure.\nPeace and security\nConflicts\nSource: Uppsala Conflict Data Program\nUNSC resolutions\nSource: United Nations\nMultilateral peacekeeping operations\nSource: Stockholm International Peace Research Institute \n(SIPRI)\nFatalities\nSource: Uppsala Conflict Data Program\nForcibly displaced people\nSource: United Nations High Commissioner for Refugees \n(UNHCR)\nSignificant cyber incidents\nSource: Center for Strategic and International Studies\nMethodological notes: Significant cyber incidents are defined \nby CSIS as cyberattacks on government agencies, defense \nand high-tech companies, or economic crimes with losses of \nmore than a million dollars.\nThe Global Cooperation Barometer 2024\n21",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 21,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 21,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3386 chars",
+      "severity": "info"
+    },
+    {
+      "page": 21,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 185,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n151\nSuper Powerful Boolean Expressions\n50 far, when we’ve used boolean expressions for our loops or \nif tests, they’ve been pretty simple. We will be using more \npowerful boolean expressions in some of the Ready-Bake code \nyou’re about to see, and even though we know you wouldn’t \npeek, we thought this would be a good time to discuss how to \nenergize your expressions.\n‘And’ and ‘Or’ Operators ( &&, || ) \nLet’5 say you’re writing a chooseCamera( ) method, with lots of rules \nabout which camera to select. Maybe you can choose cameras \nranging from $50 to $1000, but in some cases you want to limit the \nprice range more precisely. You want to say something like:\n‘If the price range is between $300 and $400 then choose X.’ \n if (price >= 300 && price < 400) {\n camera = “X”;\n}\nLet’5 say that of the ten camera brands available, you have some \nlogic that applies to only a few of the list:\n if (brand.equals(“A”) || brand.equals(“8”) ) {\n // do stuff for only brand A or brand 8\n}\nBoolean expressions can get really big and complicated:\n if ((zoomType.equals(“optical”) &&\n (zoomDegree >= 3 && zoomDegree <= 8)) ||\n (zoomType.equals(“digital”) &&\n (zoomDegree >= 5 && zoomDegree <= 12))) {\n // do appropriate zoom stuff\n}\nIf you want to get really technical, you might wonder about the \nprecedence of these operators. Instead of becoming an expert \nin the arcane world of precedence, we recommend that you use \nparentheses to make your code clear. \nNot equals ( != and ! )\nLet’5 say that you have a logic like, “of the ten available \ncamera models, a certain thing is true for all but one. “\n if (model != 2000) {\n // do non-model 2000 stuff\n}\nor for comparing objects like strings...\n if (!brand.equals(“X”)) {\n // do non-brand X stuff\n}\nShort Circuit Operators ( && , || )\nThe operators we’ve looked at 50 far, && and ||, are \nknown as short circuit operators. In the case of &&, \nthe expression will be true only if both sides of the && \nare true. 50 if the JVM sees that the left side of a && \nexpression is false, it stops right there! Doesn’t even \nbother to look at the right side.\nSimilarly, with ||, the expression will be true if either side is \ntrue, 50 if the JVM sees that the left side is true, it declares \nthe entire statement to be true and doesn’t bother to \ncheck the right side.\nWhy is this great? Let’5 say that you have a reference \nvariable and you’re not sure whether it’5 been assigned \nto an object. If you try to call a method using this null \nreference variable (i.e. no object has been assigned), \nyou’11 get a NullPointerException. 50, try this:\n if (refVar != null && \n refVar.isValidType() ) {\n // do ‘got a valid type’ stuff\n}\nNon Short Circuit Operators ( & , | )\nWhen used in boolean expressions, the & and | operators \nact like their && and || counterparts, except that \nthey force the JVM to always check both sides of the \nexpression. Typically, & and | are used in another context, \nfor manipulating bits.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "get to know the Java API \nyou are here\n151\nSuper Powerful Boolean Expressions\n50 far, when we’ve used boolean expressions for our loops or \nif tests, they’ve been pretty simple. We will be using more \npowerful boolean expressions in some of the Ready-Bake code \nyou’re about to see, and even though we know you wouldn’t \npeek, we thought this would be a good time to discuss how to \nenergize your expressions.\n‘And’ and ‘Or’ Operators ( &&, || ) \nLet’5 say you’re writing a chooseCamera( ) method, with lots of rules \nabout which camera to select. Maybe you can choose cameras \nranging from $50 to $1000, but in some cases you want to limit the \nprice range more precisely. You want to say something like:\n‘If the price range is between $300 and $400 then choose X.’ \n if (price >= 300 && price < 400) {\n camera = “X”;\n}\nLet’5 say that of the ten camera brands available, you have some \nlogic that applies to only a few of the list:\n if (brand.equals(“A”) || brand.equals(“8”) ) {\n // do stuff for only brand A or brand 8\n}\nBoolean expressions can get really big and complicated:\n if ((zoomType.equals(“optical”) &&\n (zoomDegree >= 3 && zoomDegree <= 8)) ||\n (zoomType.equals(“digital”) &&\n (zoomDegree >= 5 && zoomDegree <= 12))) {\n // do appropriate zoom stuff\n}\nIf you want to get really technical, you might wonder about the \nprecedence of these operators. Instead of becoming an expert \nin the arcane world of precedence, we recommend that you use \nparentheses to make your code clear. \nNot equals ( != and ! )\nLet’5 say that you have a logic like, “of the ten available \ncamera models, a certain thing is true for all but one. “\n if (model != 2000) {\n // do non-model 2000 stuff\n}\nor for comparing objects like strings...\n if (!brand.equals(“X”)) {\n // do non-brand X stuff\n}\nShort Circuit Operators ( && , || )\nThe operators we’ve looked at 50 far, && and ||, are \nknown as short circuit operators. In the case of &&, \nthe expression will be true only if both sides of the && \nare true. 50 if the JVM sees that the left side of a && \nexpression is false, it stops right there! Doesn’t even \nbother to look at the right side.\nSimilarly, with ||, the expression will be true if either side is \ntrue, 50 if the JVM sees that the left side is true, it declares \nthe entire statement to be true and doesn’t bother to \ncheck the right side.\nWhy is this great? Let’5 say that you have a reference \nvariable and you’re not sure whether it’5 been assigned \nto an object. If you try to call a method using this null \nreference variable (i.e. no object has been assigned), \nyou’11 get a NullPointerException. 50, try this:\n if (refVar != null && \n refVar.isValidType() ) {\n // do ‘got a valid type’ stuff\n}\nNon Short Circuit Operators ( & , | )\nWhen used in boolean expressions, the & and | operators \nact like their && and || counterparts, except that \nthey force the JVM to always check both sides of the \nexpression. Typically, & and | are used in another context, \nfor manipulating bits.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 185,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 185,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3042 chars",
+      "severity": "info"
+    },
+    {
+      "page": 185,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

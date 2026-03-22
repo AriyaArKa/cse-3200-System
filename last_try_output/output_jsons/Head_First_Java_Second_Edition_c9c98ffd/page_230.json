@@ -1,0 +1,60 @@
+{
+  "page_number": 230,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "196 \nchapter 7\npublic class Rowboat extends Boat {\n public void rowTheBoat() {\n System.out.print(“stroke natasha”);\n }\n}\npublic class Boat {\n private int length ;\n public void setLength ( int len ) {\n length = len;\n }\n public int getLength() {\n return length ;\n }\n public void move() {\n System.out.print(“drift ”);\n }\n}\npublic class TestBoats {\n public static void main(String[] args){\n Boat b1 = new Boat();\n Sailboat b2 = new Sailboat();\n Rowboat b3 = new Rowboat();\n b2.setLength(32);\n b1.move();\n b3.move();\n b2.move();\n }\n}\npublic class Sailboat extends Boat {\n public void move() {\n System.out.print(“hoist sail ”);\n }\n}\n drift drift hoist sail \nOUTPUT:\npuzzle answers",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "196 \nchapter 7\npublic class Rowboat extends Boat {\n public void rowTheBoat() {\n System.out.print(“stroke natasha”);\n }\n}\npublic class Boat {\n private int length ;\n public void setLength ( int len ) {\n length = len;\n }\n public int getLength() {\n return length ;\n }\n public void move() {\n System.out.print(“drift ”);\n }\n}\npublic class TestBoats {\n public static void main(String[] args){\n Boat b1 = new Boat();\n Sailboat b2 = new Sailboat();\n Rowboat b3 = new Rowboat();\n b2.setLength(32);\n b1.move();\n b3.move();\n b2.move();\n }\n}\npublic class Sailboat extends Boat {\n public void move() {\n System.out.print(“hoist sail ”);\n }\n}\n drift drift hoist sail \nOUTPUT:\npuzzle answers",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 230,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 230,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 764 chars",
+      "severity": "info"
+    },
+    {
+      "page": 230,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 230,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

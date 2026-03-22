@@ -1,0 +1,103 @@
+{
+  "page_number": 151,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n117\nIn chapter 3 we talked about the sizes of the various primitives, and how you \ncan’t shove a big thing directly into a small thing: \n \n \n \n \n long y = 42;\n \n int x = y; // won’t compile\nA long is bigger than an int and the compiler can’t be sure where that long has \nbeen. It might have been out drinking with the other longs, and taking on really \nbig values. To force the compiler to jam the value of a bigger primitive variable \ninto a smaller one, you can use the cast operator. It looks like this:\n \n long y = 42; // 50 far 50 good\n \n int x = (int) y; // x = 42 cool!\nPutting in the cast tells the compiler to take the value of y, chop it down to int \nsize, and set x equal to whatever is left. If the value of y was bigger than the \nmaximum value of x, then what’5 left will be a weird (but calculable*) number: \n \n long y = 40002; \n \n // 40002 exceeds the 16-bit limit of a short \n \n \n \n \n \n short x = (short) y; // x now equals -25534! \nStill, the point is that the compiler lets you do it. And let’5 say you have a float-\ning point number, and you just want to get at the whole number (int) part of it:\n \n float f = 3.14f;\n \n int x = (int) f; // x will equal 3\n And don’t even think about casting anything to a boolean or vice versa—just \nwalk away. \n *It involves sign bits, binary, ‘two’5 complement’ and other geekery, all of which \nare discussed at the beginning of appendix 8.\nint guess = Integer.parseInt(stringGuess);\nThe user types his guess at the command-\nline, when the game prompts him. That \nguess comes in as a String (“2”, “0”, etc.) , \nand the game passes that String into the \ncheckYourself() method.\nBut the cell locations are simply ints in an \narray, and you can’t compare an int to a \nString. \nFor example, this won’t work:\nString num = “2”;\nint x = 2;\nif (x == num) // horrible explosion!\nTrying to compile that makes the compiler \nlaugh and mock you:\n operator == cannot be applied to \n \nint,java.lang.String\n if (x == num) { }\n \n ^\n50 to get around the whole apples and \noranges thing, we have to make the String \n“2” into the int 2. Built into the Java class \nlibrary is a class called Integer (that’5 right, \nan Integer class, not the int primitive), \nand one of its jobs is to take Strings that \nrepresent numbers and convert them into \nactual numbers. \nInteger.parseInt(“3”)\na class that ships \nwith Java\na method in the Integer \nclass that knows how to \n“parse” a String into the \nint it represents.\ntakes a String\nConverting a String to an int\nCasting \nprimitives\nlong\nshort\ncan be cast to\n01011101\n1101\nbut you might \nlose something\nbits on the left \nside were cut off",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Converting a String to an int"
+        ],
+        [
+          "int guess = Integer.parseInt(stringGuess);"
+        ],
+        [
+          "The user types his guess at the command-\nline, when the game prompts him. That\nguess comes in as a String (“2”, “0”, etc.) ,\nand the game passes that String into the\ncheckYourself() method.\nBut the cell locations are simply ints in an\narray, and you can’t compare an int to a\nString.\nFor example, this won’t work:\nString num = “2”;\nint x = 2;\nif (x == num) // horrible explosion!\nTrying to compile that makes the compiler\nlaugh and mock you:"
+        ],
+        [
+          "operator == cannot be applied to\nint,java.lang.String\nif (x == num) { }\n^"
+        ],
+        [
+          "50 to get around the whole apples and\noranges thing, we have to make the String\n“2” into the int 2. Built into the Java class\nlibrary is a class called Integer (that’5 right,\nan Integer class, not the int primitive),\nand one of its jobs is to take Strings that\nrepresent numbers and convert them into\nactual numbers."
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (303x344)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (303x344)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (49x69)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nwriting a program\n117\nIn chapter 3 we talked about the sizes of the various primitives, and how you \ncan’t shove a big thing directly into a small thing: \n \n \n \n \n long y = 42;\n \n int x = y; // won’t compile\nA long is bigger than an int and the compiler can’t be sure where that long has \nbeen. It might have been out drinking with the other longs, and taking on really \nbig values. To force the compiler to jam the value of a bigger primitive variable \ninto a smaller one, you can use the cast operator. It looks like this:\n \n long y = 42; // 50 far 50 good\n \n int x = (int) y; // x = 42 cool!\nPutting in the cast tells the compiler to take the value of y, chop it down to int \nsize, and set x equal to whatever is left. If the value of y was bigger than the \nmaximum value of x, then what’5 left will be a weird (but calculable*) number: \n \n long y = 40002; \n \n // 40002 exceeds the 16-bit limit of a short \n \n \n \n \n \n short x = (short) y; // x now equals -25534! \nStill, the point is that the compiler lets you do it. And let’5 say you have a float-\ning point number, and you just want to get at the whole number (int) part of it:\n \n float f = 3.14f;\n \n int x = (int) f; // x will equal 3\n And don’t even think about casting anything to a boolean or vice versa—just \nwalk away. \n *It involves sign bits, binary, ‘two’5 complement’ and other geekery, all of which \nare discussed at the beginning of appendix 8.\nint guess = Integer.parseInt(stringGuess);\nThe user types his guess at the command-\nline, when the game prompts him. That \nguess comes in as a String (“2”, “0”, etc.) , \nand the game passes that String into the \ncheckYourself() method.\nBut the cell locations are simply ints in an \narray, and you can’t compare an int to a \nString. \nFor example, this won’t work:\nString num = “2”;\nint x = 2;\nif (x == num) // horrible explosion!\nTrying to compile that makes the compiler \nlaugh and mock you:\n operator == cannot be applied to \n \nint,java.lang.String\n if (x == num) { }\n \n ^\n50 to get around the whole apples and \noranges thing, we have to make the String \n“2” into the int 2. Built into the Java class \nlibrary is a class called Integer (that’5 right, \nan Integer class, not the int primitive), \nand one of its jobs is to take Strings that \nrepresent numbers and convert them into \nactual numbers. \nInteger.parseInt(“3”)\na class that ships \nwith Java\na method in the Integer \nclass that knows how to \n“parse” a String into the \nint it represents.\ntakes a String\nConverting a String to an int\nCasting \nprimitives\nlong\nshort\ncan be cast to\n01011101\n1101\nbut you might \nlose something\nbits on the left \nside were cut off",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 151,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 151,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2688 chars",
+      "severity": "info"
+    },
+    {
+      "page": 151,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 151,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

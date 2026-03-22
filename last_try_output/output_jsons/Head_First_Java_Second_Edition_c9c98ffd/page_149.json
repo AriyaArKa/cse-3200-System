@@ -1,0 +1,73 @@
+{
+  "page_number": 149,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n115\n \n++ --\nPre and Post Increment/Decrement Operator\nThe shortcut for adding or subtracting 1 from a variable.\n x++;\nis the same as: \n x = x + 1;\nThey both mean the same thing in this context:\n“add 1 to the current value of x” or “increment x by 1”\nAnd:\n x--;\nis the same as: \n x = x - 1;\nOf course that’5 never the whole story. The placement of the \noperator (either before or after the variable) can affect the re-\nsult. Putting the operator before the variable (for example, ++x), \nmeans, “first, increment x by 1, and then use this new value of x.” \nThis only matters when the ++x is part of some larger expres-\nsion rather than just in a single statement.\n int x = 0; int z = ++x;\nproduces: x is 1, z is 1\nBut putting the ++ after the x give you a different result:\n int x = 0; int z = x++;\nproduces: x is 1, but z is 0! z gets the value of x and then x is \nincremented.\nDifference between for and while \nTrips through a loop\nfor (int i = 0; i < 8; i++) {\n System.out.println(i);\n}\nSystem.out.println(“done”);\noutput:\nFile Edit Window Help Repeat \n%java Test\n0\n1\n2\n3\n4\n5\n6\n7\ndone\ndeclare int i\nset i to 0\nis i < 8?\n(the boolean \ntest)\ntrue\nenter loop \nbody\nfalse\nprint “done”\n(jump below loop)\nprint the value \nof i\nincrement i\n(the iteration \nexpression)\nA while loop has only the boolean test; it doesn’t have \na built-in initialization or iteration expression. A while \nloop is good when you don’t know how many times to \nloop and just want to keep going while some condi-\ntion is true. But if you know how many times to loop \n(e.g. the length of an array, 7 times, etc.), a for loop is \ncleaner. Here’5 the loop above rewritten using while:\nint i = 0;\nwhile (i < 8) {\n System.out.println(i);\n i++;\n}\nSystem.out.println(“done”);\nwe have to increment \nthe counter \nwe have to declare and \ninitialize the counter",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Repeat"
+        ],
+        [
+          "%java Test\n0\n1\n2\n3\n4\n5\n6\n7\ndone"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x68)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nwriting a program\n115\n \n++ --\nPre and Post Increment/Decrement Operator\nThe shortcut for adding or subtracting 1 from a variable.\n x++;\nis the same as: \n x = x + 1;\nThey both mean the same thing in this context:\n“add 1 to the current value of x” or “increment x by 1”\nAnd:\n x--;\nis the same as: \n x = x - 1;\nOf course that’5 never the whole story. The placement of the \noperator (either before or after the variable) can affect the re-\nsult. Putting the operator before the variable (for example, ++x), \nmeans, “first, increment x by 1, and then use this new value of x.” \nThis only matters when the ++x is part of some larger expres-\nsion rather than just in a single statement.\n int x = 0; int z = ++x;\nproduces: x is 1, z is 1\nBut putting the ++ after the x give you a different result:\n int x = 0; int z = x++;\nproduces: x is 1, but z is 0! z gets the value of x and then x is \nincremented.\nDifference between for and while \nTrips through a loop\nfor (int i = 0; i < 8; i++) {\n System.out.println(i);\n}\nSystem.out.println(“done”);\noutput:\nFile Edit Window Help Repeat \n%java Test\n0\n1\n2\n3\n4\n5\n6\n7\ndone\ndeclare int i\nset i to 0\nis i < 8?\n(the boolean \ntest)\ntrue\nenter loop \nbody\nfalse\nprint “done”\n(jump below loop)\nprint the value \nof i\nincrement i\n(the iteration \nexpression)\nA while loop has only the boolean test; it doesn’t have \na built-in initialization or iteration expression. A while \nloop is good when you don’t know how many times to \nloop and just want to keep going while some condi-\ntion is true. But if you know how many times to loop \n(e.g. the length of an array, 7 times, etc.), a for loop is \ncleaner. Here’5 the loop above rewritten using while:\nint i = 0;\nwhile (i < 8) {\n System.out.println(i);\n i++;\n}\nSystem.out.println(“done”);\nwe have to increment \nthe counter \nwe have to declare and \ninitialize the counter",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 149,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 149,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1910 chars",
+      "severity": "info"
+    },
+    {
+      "page": 149,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 149,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

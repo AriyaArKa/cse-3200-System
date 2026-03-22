@@ -1,0 +1,67 @@
+{
+  "page_number": 300,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "266 \nchapter 9\nWhich of the lines of code on the right, if added to \nthe class on the left at point A, would cause exactly \none additional object to be eligible for the Garbage \nCollector? (Assume that point A (//call more methods) \nwill execute for a long time, giving the Garbage \nCollector time to do its stuff.)\nExercise\nBE the Garbage Collector\npublic class GC {\n public static GC doStuff() {\n GC newGC = new GC();\n doStuff2(newGC);\n return newGC;\n }\n public static void main(String [] args) {\n GC gc1;\n GC gc2 = new GC();\n GC gc3 = new GC();\n GC gc4 = gc3;\n gc1 = doStuff();\n // call more methods\n }\n public static void doStuff2(GC copyGC) {\n GC localGC = copyGC; \n }\n}\nA\n1\n2\n3\n4\n5\n6\n7\n8\n9\ncopyGC = null; \ngc2 = null; \nnewGC = gc3; \ngc1 = null; \nnewGC = null;\ngc4 = null; \ngc3 = gc2; \ngc1 = gc4; \ngc3 = null; \nexercise: Be the Garbage Collector",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (189x219)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (162x136)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "266 \nchapter 9\nWhich of the lines of code on the right, if added to \nthe class on the left at point A, would cause exactly \none additional object to be eligible for the Garbage \nCollector? (Assume that point A (//call more methods) \nwill execute for a long time, giving the Garbage \nCollector time to do its stuff.)\nExercise\nBE the Garbage Collector\npublic class GC {\n public static GC doStuff() {\n GC newGC = new GC();\n doStuff2(newGC);\n return newGC;\n }\n public static void main(String [] args) {\n GC gc1;\n GC gc2 = new GC();\n GC gc3 = new GC();\n GC gc4 = gc3;\n gc1 = doStuff();\n // call more methods\n }\n public static void doStuff2(GC copyGC) {\n GC localGC = copyGC; \n }\n}\nA\n1\n2\n3\n4\n5\n6\n7\n8\n9\ncopyGC = null; \ngc2 = null; \nnewGC = gc3; \ngc1 = null; \nnewGC = null;\ngc4 = null; \ngc3 = gc2; \ngc1 = gc4; \ngc3 = null; \nexercise: Be the Garbage Collector",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 300,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 300,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 892 chars",
+      "severity": "info"
+    },
+    {
+      "page": 300,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 300,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

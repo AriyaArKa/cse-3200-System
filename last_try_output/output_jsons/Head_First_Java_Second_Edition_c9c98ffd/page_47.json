@@ -1,0 +1,59 @@
+{
+  "page_number": 47,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\ndive In A Quick Dip\n13\nConditional branching\nIn Java, an if test is basically the same as the boolean test in a \nwhile loop – except instead of saying, “while there’5 still beer...”, \nyou’11 say, “if there’5 still beer...” \nclass IfTest {\n public static void main (String[] args) {\n int x = 3;\n if (x == 3) {\n System.out.println(“x must be 3”);\n }\n System.out.println(“This runs no matter what”);\n }\n}\n% java IfTest\nx must be 3\nThis runs no matter what\ncode output\nThe code above executes the line that prints “x must be 3” only \nif the condition (x is equal to 3) is true. Regardless of whether \nit’5 true, though, the line that prints, “This runs no matter what” \nwill run. 50 depending on the value of x, either one statement \nor two will print out.\nBut we can add an else to the condition, 50 that we can \nsay something like, “If there’5 still beer, keep coding, else \n(otherwise) get more beer, and then continue on...”\nclass IfTest2 {\n public static void main (String[] args) {\n int x = 2;\n if (x == 3) {\n System.out.println(“x must be 3”);\n } else {\n System.out.println(“x is NOT 3”);\n }\n System.out.println(“This runs no matter what”);\n }\n}\n% java IfTest2\nx is NOT 3\nThis runs no matter what\nnew output\nSharpen your pencil\nGiven the output:\n% java DooBee\nDooBeeDooBeeDo\nFill in the missing code: \npublic class DooBee {\n public static void main (String[] args) {\n int x = 1;\n while (x < _____ ) {\n System.out._________(“Doo”);\n System.out._________(“Bee”);\n x = x + 1;\n }\n if (x == ______ ) {\n System.out.print(“Do”);\n }\n }\n}\n \nSystem.out.print vs. \nSystem.out.println\nIf you’ve been paying attention (of \ncourse you have) then you’ve noticed us \nswitching between print and println.\nDid you spot the difference?\nSystem.out.println inserts a newline \n(think of println as printnewline while \nSystem.out.print keeps printing to \nthe same line. If you want each thing \nyou print out to be on its own line, use \nprintln. If you want everything to stick \ntogether on one line, use print.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Sharpen your pencil"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "you are here\ndive In A Quick Dip\n13\nConditional branching\nIn Java, an if test is basically the same as the boolean test in a \nwhile loop – except instead of saying, “while there’5 still beer...”, \nyou’11 say, “if there’5 still beer...” \nclass IfTest {\n public static void main (String[] args) {\n int x = 3;\n if (x == 3) {\n System.out.println(“x must be 3”);\n }\n System.out.println(“This runs no matter what”);\n }\n}\n% java IfTest\nx must be 3\nThis runs no matter what\ncode output\nThe code above executes the line that prints “x must be 3” only \nif the condition (x is equal to 3) is true. Regardless of whether \nit’5 true, though, the line that prints, “This runs no matter what” \nwill run. 50 depending on the value of x, either one statement \nor two will print out.\nBut we can add an else to the condition, 50 that we can \nsay something like, “If there’5 still beer, keep coding, else \n(otherwise) get more beer, and then continue on...”\nclass IfTest2 {\n public static void main (String[] args) {\n int x = 2;\n if (x == 3) {\n System.out.println(“x must be 3”);\n } else {\n System.out.println(“x is NOT 3”);\n }\n System.out.println(“This runs no matter what”);\n }\n}\n% java IfTest2\nx is NOT 3\nThis runs no matter what\nnew output\nSharpen your pencil\nGiven the output:\n% java DooBee\nDooBeeDooBeeDo\nFill in the missing code: \npublic class DooBee {\n public static void main (String[] args) {\n int x = 1;\n while (x < _____ ) {\n System.out._________(“Doo”);\n System.out._________(“Bee”);\n x = x + 1;\n }\n if (x == ______ ) {\n System.out.print(“Do”);\n }\n }\n}\n \nSystem.out.print vs. \nSystem.out.println\nIf you’ve been paying attention (of \ncourse you have) then you’ve noticed us \nswitching between print and println.\nDid you spot the difference?\nSystem.out.println inserts a newline \n(think of println as printnewline while \nSystem.out.print keeps printing to \nthe same line. If you want each thing \nyou print out to be on its own line, use \nprintln. If you want everything to stick \ntogether on one line, use print.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 47,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 47,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2108 chars",
+      "severity": "info"
+    },
+    {
+      "page": 47,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

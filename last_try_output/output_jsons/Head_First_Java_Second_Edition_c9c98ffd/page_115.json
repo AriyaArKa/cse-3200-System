@@ -1,0 +1,60 @@
+{
+  "page_number": 115,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n81\n“Sadly, Bill forgot to \nencapsulate his Cat class and \nended up with a flat cat.”\n(overheard at the water cooler).\nHide the data \nYes it is that simple to go from \nan implementation that’5 just \nbegging for bad data to one \nthat protects your data and \nprotects your right to modify \nyour implementation later.\nOK, 50 how exactly do you \nhide the data? With the \npublic and private \naccess modifiers. You’re \nfamiliar with public–we use \nit with every main method.\nHere’5 an encapsulation \nstarter rule of thumb (all stan-\ndard disclaimers about rules \nof thumb are in effect): mark \nyour instance variables private \nand provide public getters \nand setters for access control. \nWhen you have more design \nand coding savvy in Java, you \nwill probably do things a little \ndifferently, but for now, this \napproach will keep you safe.\nMark instance \nvariables private.\nMark getters and \nsetters public.\nHeadFirst: What’5 the big deal about encapsulation? \nObject: OK, you know that dream where you’re giving a talk to 500 people when you \nsuddenly realize– you’re naked?\nHeadFirst: Yeah, we’ve had that one. It’5 right up there with the one about the Pilates \nmachine and... no, we won’t go there. OK, 50 you feel naked. But other than being a little \nexposed, is there any danger?\nObject: 15 there any danger? 15 there any danger? [starts laughing] Hey, did all you other \ninstances hear that, “15 there any danger?” he asks? [falls on the floor laughing] \nHeadFirst: What’5 funny about that? Seems like a reasonable question. \nObject: OK, 1’11 explain it. It’5 [bursts out laughing again, uncontrollably]\nHeadFirst: Can 1 get you anything? Water?\nObject: Whew! Oh boy. No 1’m fine, really. 1’11 be serious. Deep breath. OK, go on.\nHeadFirst: 50 what does encapsulation protect you from?\nObject: Encapsulation puts a force-field around my instance variables, 50 nobody can set \nthem to, let’5 say, something inappropriate. \nHeadFirst: Can you give me an example?\nObject: Doesn’t take a PhD here. Most instance variable values are coded with certain \nassumptions about the boundaries of the values. Like, think of all the things that would \nbreak if negative numbers were allowed. Number of bathrooms in an office. Velocity of \nan airplane. Birthdays. Barbell weight. Cell phone numbers. Microwave oven power.\nHeadFirst: 1 see what you mean. 50 how does encapsulation let you set boundaries?\nObject: By forcing other code to go through setter methods. That way, the setter method \ncan validate the parameter and decide if it’5 do-able. Maybe the method will reject it and \ndo nothing, or maybe it’11 throw an Exception (like if it’5 a null social security number \nfor a credit card application), or maybe the method will round the parameter sent in to \nthe nearest acceptable value. The point is, you can do whatever you want in the setter \nmethod, whereas you can’t do anything if your instance variables are public.\nHeadFirst: But sometimes 1 see setter methods that simply set the value without check-\ning anything. If you have an instance variable that doesn’t have a boundary, doesn’t that \nsetter method create unnecessary overhead? A performance hit?\nObject: The point to setters (and getters, too) is that you can change your mind later, \nwithout breaking anybody else’5 code! Imagine if half the people in your company \nused your class with public instance variables, and one day you suddenly realized, “Oops– \nthere’5 something 1 didn’t plan for with that value, 1’m going to have to switch to a setter \nmethod.” You break everyone’5 code. The cool thing about encapsulation is that you get \nto change your mind. And nobody gets hurt. The performance gain from using variables \ndirectly is 50 miniscule and would rarely—if ever— be worth it.\nThis week’5 interview:\nAn Object gets candid about encapsulation. \nJava Exposed",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (199x185)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n81\n“Sadly, Bill forgot to \nencapsulate his Cat class and \nended up with a flat cat.”\n(overheard at the water cooler).\nHide the data \nYes it is that simple to go from \nan implementation that’5 just \nbegging for bad data to one \nthat protects your data and \nprotects your right to modify \nyour implementation later.\nOK, 50 how exactly do you \nhide the data? With the \npublic and private \naccess modifiers. You’re \nfamiliar with public–we use \nit with every main method.\nHere’5 an encapsulation \nstarter rule of thumb (all stan-\ndard disclaimers about rules \nof thumb are in effect): mark \nyour instance variables private \nand provide public getters \nand setters for access control. \nWhen you have more design \nand coding savvy in Java, you \nwill probably do things a little \ndifferently, but for now, this \napproach will keep you safe.\nMark instance \nvariables private.\nMark getters and \nsetters public.\nHeadFirst: What’5 the big deal about encapsulation? \nObject: OK, you know that dream where you’re giving a talk to 500 people when you \nsuddenly realize– you’re naked?\nHeadFirst: Yeah, we’ve had that one. It’5 right up there with the one about the Pilates \nmachine and... no, we won’t go there. OK, 50 you feel naked. But other than being a little \nexposed, is there any danger?\nObject: 15 there any danger? 15 there any danger? [starts laughing] Hey, did all you other \ninstances hear that, “15 there any danger?” he asks? [falls on the floor laughing] \nHeadFirst: What’5 funny about that? Seems like a reasonable question. \nObject: OK, 1’11 explain it. It’5 [bursts out laughing again, uncontrollably]\nHeadFirst: Can 1 get you anything? Water?\nObject: Whew! Oh boy. No 1’m fine, really. 1’11 be serious. Deep breath. OK, go on.\nHeadFirst: 50 what does encapsulation protect you from?\nObject: Encapsulation puts a force-field around my instance variables, 50 nobody can set \nthem to, let’5 say, something inappropriate. \nHeadFirst: Can you give me an example?\nObject: Doesn’t take a PhD here. Most instance variable values are coded with certain \nassumptions about the boundaries of the values. Like, think of all the things that would \nbreak if negative numbers were allowed. Number of bathrooms in an office. Velocity of \nan airplane. Birthdays. Barbell weight. Cell phone numbers. Microwave oven power.\nHeadFirst: 1 see what you mean. 50 how does encapsulation let you set boundaries?\nObject: By forcing other code to go through setter methods. That way, the setter method \ncan validate the parameter and decide if it’5 do-able. Maybe the method will reject it and \ndo nothing, or maybe it’11 throw an Exception (like if it’5 a null social security number \nfor a credit card application), or maybe the method will round the parameter sent in to \nthe nearest acceptable value. The point is, you can do whatever you want in the setter \nmethod, whereas you can’t do anything if your instance variables are public.\nHeadFirst: But sometimes 1 see setter methods that simply set the value without check-\ning anything. If you have an instance variable that doesn’t have a boundary, doesn’t that \nsetter method create unnecessary overhead? A performance hit?\nObject: The point to setters (and getters, too) is that you can change your mind later, \nwithout breaking anybody else’5 code! Imagine if half the people in your company \nused your class with public instance variables, and one day you suddenly realized, “Oops– \nthere’5 something 1 didn’t plan for with that value, 1’m going to have to switch to a setter \nmethod.” You break everyone’5 code. The cool thing about encapsulation is that you get \nto change your mind. And nobody gets hurt. The performance gain from using variables \ndirectly is 50 miniscule and would rarely—if ever— be worth it.\nThis week’5 interview:\nAn Object gets candid about encapsulation. \nJava Exposed",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 115,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 115,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3879 chars",
+      "severity": "info"
+    },
+    {
+      "page": 115,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 115,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

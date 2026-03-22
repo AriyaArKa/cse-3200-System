@@ -1,0 +1,67 @@
+{
+  "page_number": 561,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n527\nAs Sarah joined the on-board development team’5 design review meeting , she gazed out \nthe portal at sunrise over the Indian Ocean. Even though the ship’5 conference room was \nincredibly claustrophobic, the sight of the growing blue and white crescent overtaking night on \nthe planet below filled Sarah with awe and appreciation.\n \nThis morning’5 meeting was focused on the control systems for the orbiter’5 airlocks. \nAs the final construction phases were nearing their end, the number of spacewalks was \nscheduled to increase dramatically, and traffic was high both in and out of the ship’5 \nairlocks. “Good morning Sarah”, said Tom, “Your timing is perfect, we’re just starting \nthe detailed design review.” \n “As you all know”, said Tom, “Each airlock is outfitted with space-hardened GUI \nterminals, both inside and out. Whenever spacewalkers are entering or exiting the orbiter \nthey will use these terminals to initiate the airlock sequences.” Sarah nodded, “Tom can \nyou tell us what the method sequences are for entry and exit?” Tom rose, and floated to the \nwhiteboard, “First, here’5 the exit sequence method’5 pseudocode”, Tom quickly wrote on the \nboard.\n orbiterAirlockExitSequence() \n \nverifyPortalStatus();\n \npressurizeAirlock();\n \nopenInnerHatch();\n \nconfirmAirlockOccupied();\n \ncloseInnerHatch();\n \ndecompressAirlock();\n \nopenOuterHatch();\n \nconfirmAirlockVacated();\n \ncloseOuterHatch();\n \n“To ensure that the sequence is not interrupted, we have synchronized all of the \nmethods called by the orbiterAirlockExitSequence() method”, Tom explained. “We’d hate to \nsee a returning spacewalker inadvertently catch a buddy with his space pants down!” \n Everyone chuckled as Tom erased the whiteboard, but something didn’t feel right \nto Sarah and it finally clicked as Tom began to write the entry sequence pseudocode on the \nwhiteboard. “Wait a minute Tom!”, cried Sarah, “1 think we’ve got a big flaw in the exit \nsequence design, let’5 go back and revisit it, it could be critical!”\n \nWhy did Sarah stop the meeting? What did she suspect?\nFive-Minute\nMystery\nNear-miss at the Airlock",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (304x238)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (204x204)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n527\nAs Sarah joined the on-board development team’5 design review meeting , she gazed out \nthe portal at sunrise over the Indian Ocean. Even though the ship’5 conference room was \nincredibly claustrophobic, the sight of the growing blue and white crescent overtaking night on \nthe planet below filled Sarah with awe and appreciation.\n \nThis morning’5 meeting was focused on the control systems for the orbiter’5 airlocks. \nAs the final construction phases were nearing their end, the number of spacewalks was \nscheduled to increase dramatically, and traffic was high both in and out of the ship’5 \nairlocks. “Good morning Sarah”, said Tom, “Your timing is perfect, we’re just starting \nthe detailed design review.” \n “As you all know”, said Tom, “Each airlock is outfitted with space-hardened GUI \nterminals, both inside and out. Whenever spacewalkers are entering or exiting the orbiter \nthey will use these terminals to initiate the airlock sequences.” Sarah nodded, “Tom can \nyou tell us what the method sequences are for entry and exit?” Tom rose, and floated to the \nwhiteboard, “First, here’5 the exit sequence method’5 pseudocode”, Tom quickly wrote on the \nboard.\n orbiterAirlockExitSequence() \n \nverifyPortalStatus();\n \npressurizeAirlock();\n \nopenInnerHatch();\n \nconfirmAirlockOccupied();\n \ncloseInnerHatch();\n \ndecompressAirlock();\n \nopenOuterHatch();\n \nconfirmAirlockVacated();\n \ncloseOuterHatch();\n \n“To ensure that the sequence is not interrupted, we have synchronized all of the \nmethods called by the orbiterAirlockExitSequence() method”, Tom explained. “We’d hate to \nsee a returning spacewalker inadvertently catch a buddy with his space pants down!” \n Everyone chuckled as Tom erased the whiteboard, but something didn’t feel right \nto Sarah and it finally clicked as Tom began to write the entry sequence pseudocode on the \nwhiteboard. “Wait a minute Tom!”, cried Sarah, “1 think we’ve got a big flaw in the exit \nsequence design, let’5 go back and revisit it, it could be critical!”\n \nWhy did Sarah stop the meeting? What did she suspect?\nFive-Minute\nMystery\nNear-miss at the Airlock",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 561,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 561,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2171 chars",
+      "severity": "info"
+    },
+    {
+      "page": 561,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 561,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

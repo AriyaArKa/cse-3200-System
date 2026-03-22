@@ -1,0 +1,81 @@
+{
+  "page_number": 120,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "86 \nchapter 4\nobject equality \nSometimes you want to know if two primitives are the same. That’5 easy \nenough, just use the == operator. Sometimes you want to know if two \nreference variables refer to a single object on the heap. Easy as well, just use \nthe == operator. But sometimes you want to know if two objects are equal. \nAnd for that, you need the .equals() method. The idea of equality for \nobjects depends on the type of object. For example, if two different String \nobjects have the same characters (say, “expeditious”), they are meaningfully \nequivalent, regardless of whether they are two distinct objects on the heap. \nBut what about a Dog? Do you want to treat two Dogs as being equal if they \nhappen to have the same size and weight? Probably not. 50 whether two \ndifferent objects should be treated as equal depends on what makes sense for \nthat particular object type. We’11 explore the notion of object equality again \nin later chapters (and appendix 8), but for now, we need to understand that \nthe == operator is used only to compare the bits in two variables. What those \nbits represent doesn’t matter. The bits are either the same, or they’re not.\nTo compare two primitives, use the == operator\nThe == operator can be used to compare two variables of any kind, and it \nsimply compares the bits.\nif (a == b) {...} looks at the bits in a and b and returns true if the bit pattern \nis the same (although it doesn’t care about the size of the variable, 50 all the \nextra zeroes on the left end don’t matter).\n int a = 3;\n byte b = 3;\n if (a == b) { // true }\nTo see if two references are the same (which means they \nrefer to the same object on the heap) use the == operator\nRemember, the == operator cares only about the pattern of bits in the \nvariable. The rules are the same whether the variable is a reference or \nprimitive. 50 the == operator returns true if two reference variables refer to \nthe same object! In that case, we don’t know what the bit pattern is (because \nit’5 dependent on the JVM, and hidden from us) but we do know that whatever \nit looks like, it will be the same for two references to a single object.\n Foo a = new Foo();\n Foo b = new Foo();\n Foo c = a;\n if (a == b) { // false }\n if (a == c) { // true }\n if (b == c) { // false }\nComparing variables (primitives or references)\n00000011\nint\na\n00000011\nbyte\nb\n==\n(there are more zeroes on \nthe left side of the int, \nbut we don’t care about \nthat here)\nthe bit patterns are the \nsame, 50 these two are \nequal using ==\nFoo\na\nFoo\n b\nFoo\nC\na == c is true\na == b is false\nthe bit patterns are the \nsame for a and c, 50 they \nare equal using ==\nUse == to compare \ntwo primitives, \nor to see if two \nreferences refer to \nthe same object. \nUse the equals() \nmethod to see \nif two different \nobjects are equal. \n(Such as two different \nString objects that both \nrepresent the characters \nin “Fred”)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (75x75)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (76x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (76x160)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "86 \nchapter 4\nobject equality \nSometimes you want to know if two primitives are the same. That’5 easy \nenough, just use the == operator. Sometimes you want to know if two \nreference variables refer to a single object on the heap. Easy as well, just use \nthe == operator. But sometimes you want to know if two objects are equal. \nAnd for that, you need the .equals() method. The idea of equality for \nobjects depends on the type of object. For example, if two different String \nobjects have the same characters (say, “expeditious”), they are meaningfully \nequivalent, regardless of whether they are two distinct objects on the heap. \nBut what about a Dog? Do you want to treat two Dogs as being equal if they \nhappen to have the same size and weight? Probably not. 50 whether two \ndifferent objects should be treated as equal depends on what makes sense for \nthat particular object type. We’11 explore the notion of object equality again \nin later chapters (and appendix 8), but for now, we need to understand that \nthe == operator is used only to compare the bits in two variables. What those \nbits represent doesn’t matter. The bits are either the same, or they’re not.\nTo compare two primitives, use the == operator\nThe == operator can be used to compare two variables of any kind, and it \nsimply compares the bits.\nif (a == b) {...} looks at the bits in a and b and returns true if the bit pattern \nis the same (although it doesn’t care about the size of the variable, 50 all the \nextra zeroes on the left end don’t matter).\n int a = 3;\n byte b = 3;\n if (a == b) { // true }\nTo see if two references are the same (which means they \nrefer to the same object on the heap) use the == operator\nRemember, the == operator cares only about the pattern of bits in the \nvariable. The rules are the same whether the variable is a reference or \nprimitive. 50 the == operator returns true if two reference variables refer to \nthe same object! In that case, we don’t know what the bit pattern is (because \nit’5 dependent on the JVM, and hidden from us) but we do know that whatever \nit looks like, it will be the same for two references to a single object.\n Foo a = new Foo();\n Foo b = new Foo();\n Foo c = a;\n if (a == b) { // false }\n if (a == c) { // true }\n if (b == c) { // false }\nComparing variables (primitives or references)\n00000011\nint\na\n00000011\nbyte\nb\n==\n(there are more zeroes on \nthe left side of the int, \nbut we don’t care about \nthat here)\nthe bit patterns are the \nsame, 50 these two are \nequal using ==\nFoo\na\nFoo\n b\nFoo\nC\na == c is true\na == b is false\nthe bit patterns are the \nsame for a and c, 50 they \nare equal using ==\nUse == to compare \ntwo primitives, \nor to see if two \nreferences refer to \nthe same object. \nUse the equals() \nmethod to see \nif two different \nobjects are equal. \n(Such as two different \nString objects that both \nrepresent the characters \nin “Fred”)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 120,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 120,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2910 chars",
+      "severity": "info"
+    },
+    {
+      "page": 120,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 120,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

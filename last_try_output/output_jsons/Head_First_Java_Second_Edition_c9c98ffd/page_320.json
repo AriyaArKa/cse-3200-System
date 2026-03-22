@@ -1,0 +1,46 @@
+{
+  "page_number": 320,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "286 \nchapter 10\nMath methods\nNow that we know how static \nmethods work, let’5 look \nat some static methods in \nclass Math. This isn’t all of \nthem, just the highlights. \nCheck your API for the rest \nincluding sqrt(), tan(), ceil(), \nfloor(), and asin().\nMath.random()\nReturns a double between 0.0 through (but \nnot including) 1.0.\ndouble r1 = Math.random();\nint r2 = (int) (Math.random() * 5);\nMath.abs()\nReturns a double that is the absolute value of \nthe argument. The method is overloaded, 50 \nif you pass it an int it returns an int. Pass it a \ndouble it returns a double.\nint x = Math.abs(-240); // returns 240\ndouble d = Math.abs(240.45); // returns 240.45\nMath.round()\nReturns an int or a long (depending on \nwhether the argument is a float or a double) \nrounded to the nearest integer value. \nint x = Math.round(-24.8f); // returns -25\nint y = Math.round(24.45f); // returns 24\nRemember, floating point literals are assumed \nto be doubles unless you add the ‘f’.\nMath.min()\nReturns a value that is the minimum of the \ntwo arguments. The method is overloaded to \ntake ints, longs, floats, or doubles.\nint x = Math.min(24,240); // returns 24\ndouble y = Math.min(90876.5, 90876.49); // returns 90876.49\nMath.max()\nReturns a value that is the maximum of the \ntwo arguments. The method is overloaded to \ntake ints, longs, floats, or doubles.\nint x = Math.max(24,240); // returns 240\ndouble y = Math.max(90876.5, 90876.49); // returns 90876.5\nMath methods",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "286 \nchapter 10\nMath methods\nNow that we know how static \nmethods work, let’5 look \nat some static methods in \nclass Math. This isn’t all of \nthem, just the highlights. \nCheck your API for the rest \nincluding sqrt(), tan(), ceil(), \nfloor(), and asin().\nMath.random()\nReturns a double between 0.0 through (but \nnot including) 1.0.\ndouble r1 = Math.random();\nint r2 = (int) (Math.random() * 5);\nMath.abs()\nReturns a double that is the absolute value of \nthe argument. The method is overloaded, 50 \nif you pass it an int it returns an int. Pass it a \ndouble it returns a double.\nint x = Math.abs(-240); // returns 240\ndouble d = Math.abs(240.45); // returns 240.45\nMath.round()\nReturns an int or a long (depending on \nwhether the argument is a float or a double) \nrounded to the nearest integer value. \nint x = Math.round(-24.8f); // returns -25\nint y = Math.round(24.45f); // returns 24\nRemember, floating point literals are assumed \nto be doubles unless you add the ‘f’.\nMath.min()\nReturns a value that is the minimum of the \ntwo arguments. The method is overloaded to \ntake ints, longs, floats, or doubles.\nint x = Math.min(24,240); // returns 24\ndouble y = Math.min(90876.5, 90876.49); // returns 90876.49\nMath.max()\nReturns a value that is the maximum of the \ntwo arguments. The method is overloaded to \ntake ints, longs, floats, or doubles.\nint x = Math.max(24,240); // returns 240\ndouble y = Math.max(90876.5, 90876.49); // returns 90876.5\nMath methods",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 320,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 320,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1467 chars",
+      "severity": "info"
+    },
+    {
+      "page": 320,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

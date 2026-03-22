@@ -1,0 +1,46 @@
+{
+  "page_number": 166,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "when arrays aren’t enough\n132 \nchapter 6\nWake up and smell the library\nAs if by magic, there really is such a thing.\nBut it’5 not an array, it’5 an ArrayList.\nA class in the core Java library (the API).\nThe Java Standard Edition (which is what you have unless you’re work-\ning on the Micro Edition for small devices and believe me, you’d know) \nships with hundreds of pre-built classes. Just like our Ready-Bake code \nexcept that these built-in classes are already compiled. \nThat means no typing.\nJust use ‘em.\nOne of a gazillion classes in \nthe Java library.\nYou can use it in your code \nas if you wrote it yourself. \nArrayList\nadd(Object elem)\n \nremove(int index)\nremove(Object elem)\ncontains(Object elem)\nisEmpty()\nindexOf(Object elem)\nsize()\nget(int index)\nAdds the object parameter to the list.\nRemoves the object at the index parameter.\nReturns ‘true’ if there’5 a match for the object parameter\nReturns ‘true’ if the list has no elements\nReturns either the index of the object parameter, or -1\nReturns the number of elements currently in the list\nReturns the object currently at the index parameter\nRemoves this object (if it’5 in the ArrayList).\n(Note: the add(Object elem) method \nactually looks a little stranger than the \none we’ve shown here... we’11 get to the \nreal one later in the book. For now, just \nthink of it as an add() method that \ntakes the object you want to add.)\nThis is just a sample of SOME of \nthe methods in ArrayList.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "when arrays aren’t enough\n132 \nchapter 6\nWake up and smell the library\nAs if by magic, there really is such a thing.\nBut it’5 not an array, it’5 an ArrayList.\nA class in the core Java library (the API).\nThe Java Standard Edition (which is what you have unless you’re work-\ning on the Micro Edition for small devices and believe me, you’d know) \nships with hundreds of pre-built classes. Just like our Ready-Bake code \nexcept that these built-in classes are already compiled. \nThat means no typing.\nJust use ‘em.\nOne of a gazillion classes in \nthe Java library.\nYou can use it in your code \nas if you wrote it yourself. \nArrayList\nadd(Object elem)\n \nremove(int index)\nremove(Object elem)\ncontains(Object elem)\nisEmpty()\nindexOf(Object elem)\nsize()\nget(int index)\nAdds the object parameter to the list.\nRemoves the object at the index parameter.\nReturns ‘true’ if there’5 a match for the object parameter\nReturns ‘true’ if the list has no elements\nReturns either the index of the object parameter, or -1\nReturns the number of elements currently in the list\nReturns the object currently at the index parameter\nRemoves this object (if it’5 in the ArrayList).\n(Note: the add(Object elem) method \nactually looks a little stranger than the \none we’ve shown here... we’11 get to the \nreal one later in the book. For now, just \nthink of it as an add() method that \ntakes the object you want to add.)\nThis is just a sample of SOME of \nthe methods in ArrayList.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 166,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 166,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1452 chars",
+      "severity": "info"
+    },
+    {
+      "page": 166,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

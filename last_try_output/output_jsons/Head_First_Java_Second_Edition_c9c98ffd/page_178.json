@@ -1,0 +1,71 @@
+{
+  "page_number": 178,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "144 \nchapter 6\nGameHelper helper\nArrayList dotComsList\nint numOfGuesses\nsetUpGame()\nstartPlaying()\ncheckUserGuess()\nfinishGame()\n prep code \ntest code\nreal code\n prep code \nDECLARE and instantiate the GameHelper instance variable, named helper.\nDECLARE and instantiate an ArrayList to hold the list of DotComs (initially three) Call it \ndotComsList.\nDECLARE an int variable to hold the number of user guesses (50 that we can give the user a \nscore at the end of the game). Name it numOfGuesses and set it to 0.\nDECLARE a setUpGame() method to create and initialize the DotCom objects with names \nand locations. Display brief instructions to the user.\nDECLARE a startPlaying() method that asks the player for guesses and calls the \ncheckUserGuess() method until all the DotCom objects are removed from play.\nDECLARE a checkUserGuess() method that loops through all remaining DotCom objects and \ncalls each DotCom object’5 checkYourself() method.\nDECLARE a finishGame() method that prints a message about the user’5 performance, based \non how many guesses it took to sink all of the DotCom objects.\nMETHOD: void setUpGame()\n // make three DotCom objects and name them\n CREATE three DotCom objects.\n SET a name for each DotCom.\n ADD the DotComs to the dotComsList ( the ArrayList).\n REPEAT with each of the DotCom objects in the dotComsList array \n CALL the placeDotCom() method on the helper object, to get a randomly-selected \n location for this DotCom (three cells, vertically or horizontally aligned, on a 7 X 7 grid).\n SET the location for each DotCom based on the result of the placeDotCom() call.\n END REPEAT\nEND METHOD\nDotComBust\nThe DotComBust class has three main jobs: set up the game, play the game \nuntil the DotComs are dead, and end the game. Although we could map \nthose three jobs directly into three methods, we split the middle job (play the \ngame) into two methods, to keep the granularity smaller. Smaller methods \n(meaning smaller chunks of functionality) help us test, debug, and modify \nthe code more easily.\nPrep code for the real DotComBust class\nVariable\nDeclarations\nMethod\nDeclarations\nMethod\nImplementations\nthe DotComBust class (the game)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7667,
+      "rows": [
+        [
+          "pprreepp ccooddee",
+          "te",
+          "st code",
+          "real code"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "DotComBust\nGameHelper helper\nArrayList dotComsList\nint numOfGuesses\nsetUpGame()\nstartPlaying()\ncheckUserGuess()\nfinishGame()",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "144 \nchapter 6\nGameHelper helper\nArrayList dotComsList\nint numOfGuesses\nsetUpGame()\nstartPlaying()\ncheckUserGuess()\nfinishGame()\n prep code \ntest code\nreal code\n prep code \nDECLARE and instantiate the GameHelper instance variable, named helper.\nDECLARE and instantiate an ArrayList to hold the list of DotComs (initially three) Call it \ndotComsList.\nDECLARE an int variable to hold the number of user guesses (50 that we can give the user a \nscore at the end of the game). Name it numOfGuesses and set it to 0.\nDECLARE a setUpGame() method to create and initialize the DotCom objects with names \nand locations. Display brief instructions to the user.\nDECLARE a startPlaying() method that asks the player for guesses and calls the \ncheckUserGuess() method until all the DotCom objects are removed from play.\nDECLARE a checkUserGuess() method that loops through all remaining DotCom objects and \ncalls each DotCom object’5 checkYourself() method.\nDECLARE a finishGame() method that prints a message about the user’5 performance, based \non how many guesses it took to sink all of the DotCom objects.\nMETHOD: void setUpGame()\n // make three DotCom objects and name them\n CREATE three DotCom objects.\n SET a name for each DotCom.\n ADD the DotComs to the dotComsList ( the ArrayList).\n REPEAT with each of the DotCom objects in the dotComsList array \n CALL the placeDotCom() method on the helper object, to get a randomly-selected \n location for this DotCom (three cells, vertically or horizontally aligned, on a 7 X 7 grid).\n SET the location for each DotCom based on the result of the placeDotCom() call.\n END REPEAT\nEND METHOD\nDotComBust\nThe DotComBust class has three main jobs: set up the game, play the game \nuntil the DotComs are dead, and end the game. Although we could map \nthose three jobs directly into three methods, we split the middle job (play the \ngame) into two methods, to keep the granularity smaller. Smaller methods \n(meaning smaller chunks of functionality) help us test, debug, and modify \nthe code more easily.\nPrep code for the real DotComBust class\nVariable\nDeclarations\nMethod\nDeclarations\nMethod\nImplementations\nthe DotComBust class (the game)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 178,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 178,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2208 chars",
+      "severity": "info"
+    },
+    {
+      "page": 178,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

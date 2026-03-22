@@ -1,0 +1,87 @@
+{
+  "page_number": 266,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "232 \nchapter 8\npublic int iMethod( ) ;\npublic int iMethod { } \npublic int iMethod ( ) {\npublic int iMethod ( ) { }\nclass\nextends\ninterface\nimplements\nYour job is to take code snippets from the pool and \nplace them into the blank lines in the code and out-\nput. You may use the same snippet more than once, \nand you won’t need to use all the snippets. Your goal \nis to make a set of classes that will compile and run \nand produce the output listed. \nNote: Each snippet \nfrom the pool can be \nused more than once!\nFile Edit Window Help BeAfraid\n%java ______________\n5 class Acts\n7 class Clowns\n________Of76\nOutput\n____________ Nose {\n ________________________\n}\nabstract class Picasso implements ______{ \n _________________________\n return 7;\n }\n}\nclass _________ ________ __________ { }\nclass _________ ________ __________ {\n ___________________________\n return 5;\n }\n}\npublic ___________ ________ extends Clowns {\n public static void main(String [] args) {\n ____________________________\n i[0] = new __________\n i[1] = new __________\n i[2] = new __________\n for(int x = 0; x < 3; x++) {\n System.out.println(__________________ \n \n \n+ “ “ + _______.getClass( ) );\n }\n }\n}\nActs( );\nNose( );\nOf76( );\nClowns( );\nPicasso( );\nActs\nNose\nOf76\nClowns\nPicasso\ni\ni( )\ni(x)\ni[x]\ni.iMethod(x)\ni(x).iMethod[ ]\ni[x].iMethod( )\ni[x].iMethod[ ] \nOf76 [ ] i = new Nose[3];\nOf76 [ 3 ] i;\nNose [ ] i = new Nose( );\nNose [ ] i = new Nose[3];\nclass \n5 class\n7 class\n7 public class\nPool \nPuzzle\npuzzle: Pool Puzzle",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help BeAfraid"
+        ],
+        [
+          "%java ______________\n5 class Acts\n7 class Clowns\n________Of76"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (1278x549)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "232 \nchapter 8\npublic int iMethod( ) ;\npublic int iMethod { } \npublic int iMethod ( ) {\npublic int iMethod ( ) { }\nclass\nextends\ninterface\nimplements\nYour job is to take code snippets from the pool and \nplace them into the blank lines in the code and out-\nput. You may use the same snippet more than once, \nand you won’t need to use all the snippets. Your goal \nis to make a set of classes that will compile and run \nand produce the output listed. \nNote: Each snippet \nfrom the pool can be \nused more than once!\nFile Edit Window Help BeAfraid\n%java ______________\n5 class Acts\n7 class Clowns\n________Of76\nOutput\n____________ Nose {\n ________________________\n}\nabstract class Picasso implements ______{ \n _________________________\n return 7;\n }\n}\nclass _________ ________ __________ { }\nclass _________ ________ __________ {\n ___________________________\n return 5;\n }\n}\npublic ___________ ________ extends Clowns {\n public static void main(String [] args) {\n ____________________________\n i[0] = new __________\n i[1] = new __________\n i[2] = new __________\n for(int x = 0; x < 3; x++) {\n System.out.println(__________________ \n \n \n+ “ “ + _______.getClass( ) );\n }\n }\n}\nActs( );\nNose( );\nOf76( );\nClowns( );\nPicasso( );\nActs\nNose\nOf76\nClowns\nPicasso\ni\ni( )\ni(x)\ni[x]\ni.iMethod(x)\ni(x).iMethod[ ]\ni[x].iMethod( )\ni[x].iMethod[ ] \nOf76 [ ] i = new Nose[3];\nOf76 [ 3 ] i;\nNose [ ] i = new Nose( );\nNose [ ] i = new Nose[3];\nclass \n5 class\n7 class\n7 public class\nPool \nPuzzle\npuzzle: Pool Puzzle",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 266,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 266,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1541 chars",
+      "severity": "info"
+    },
+    {
+      "page": 266,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 266,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

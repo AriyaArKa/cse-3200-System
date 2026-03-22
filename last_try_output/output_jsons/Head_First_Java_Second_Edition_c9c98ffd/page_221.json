@@ -1,0 +1,88 @@
+{
+  "page_number": 221,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inheritance and polymorphism\nyou are here\n187\na\nBut wait! There’5 more!\nYou can have polymorphic \narguments and return types.\nIf you can declare a reference variable \nof a supertype, say, Animal, and assign a \nsubclass object to it, say, Dog, think of how \nthat might work when the reference is an \nargument to a method...\nclass Vet {\n public void giveShot(Animal a) {\n // do horrible things to the Animal at \n // the other end of the ‘a’ parameter\n a.makeNoise();\n }\n}\nclass PetOwner {\n public void start() {\n Vet v = new Vet();\n Dog d = new Dog();\n Hippo h = new Hippo();\n v.giveShot(d);\n v.giveShot(h);\n }\n}\nThe ‘a’ parameter can take ANY Animal \ntype as the argument. And when the Vet is \ndone giving the shot, it tells the Animal to \nmakeNoise(), and whatever Animal is really \nout there on the heap, that’5 whose make-\nNoise() method will run.\nThe Vet’5 giveShot() method can take any \nAnimal you give it. As long as the object \nyou pass in as the argument is a subclass of \nAnimal, it will work. \nDog’5 makeNoise() runs\nHippo’5 makeNoise() runs",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (48x75)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x87)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (129x79)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x88)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "inheritance and polymorphism\nyou are here\n187\na\nBut wait! There’5 more!\nYou can have polymorphic \narguments and return types.\nIf you can declare a reference variable \nof a supertype, say, Animal, and assign a \nsubclass object to it, say, Dog, think of how \nthat might work when the reference is an \nargument to a method...\nclass Vet {\n public void giveShot(Animal a) {\n // do horrible things to the Animal at \n // the other end of the ‘a’ parameter\n a.makeNoise();\n }\n}\nclass PetOwner {\n public void start() {\n Vet v = new Vet();\n Dog d = new Dog();\n Hippo h = new Hippo();\n v.giveShot(d);\n v.giveShot(h);\n }\n}\nThe ‘a’ parameter can take ANY Animal \ntype as the argument. And when the Vet is \ndone giving the shot, it tells the Animal to \nmakeNoise(), and whatever Animal is really \nout there on the heap, that’5 whose make-\nNoise() method will run.\nThe Vet’5 giveShot() method can take any \nAnimal you give it. As long as the object \nyou pass in as the argument is a subclass of \nAnimal, it will work. \nDog’5 makeNoise() runs\nHippo’5 makeNoise() runs",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 221,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 221,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1100 chars",
+      "severity": "info"
+    },
+    {
+      "page": 221,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 221,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

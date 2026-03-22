@@ -1,0 +1,81 @@
+{
+  "page_number": 44,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "10 \nchapter 1\nOnce you’re inside main (or any method), the fun \nbegins. You can say all the normal things that you say \nin most programming languages to make the computer \ndo something. \nYour code can tell the JVM to:\n1\ndo something\nStatements: declarations, assignments, \nmethod calls, etc.\nint x = 3;\nString name = “Dirk”;\nx = x * 17;\nSystem.out.print(“x is ” + x);\ndouble d = Math.random();\n// this is a comment\n2\ndo something again and again\nLoops: for and while\nwhile (x > 12) {\n x = x - 1;\n}\nfor (int x = 0; x < 10; x = x + 1) {\n System.out.print(“x is now ” + x);\n}\n3\ndo something under this condition\nBranching: if/else tests\nif (x == 10) {\n System.out.print(“x must be 10”);\n} else {\n System.out.print(“x isn’t 10”);\n}\nif ((x < 3) & (name.equals(“Dirk”))) {\n System.out.println(“Gently”);\n}\nSystem.out.print(“this line runs no matter what”);\n± Each statement must end in a \nsemicolon.\nx = x + 1;\n± A single-line comment begins \nwith two forward slashes.\nx = 22;\n// this line disturbs me\n± Most white space doesn’t matter.\nx = 3 ;\n± Variables are declared with a \nname and a type (you’11 learn about \nall the Java types in chapter 3).\nint weight;\n//type: int, name: weight\n± Classes and methods must be \ndefined within a pair of curly braces.\npublic void go() {\n // amazing code here\n}\nWhat can you say in the main method?\nloops\nbranching\nstatements\nSyntax\n Fun\nstatements, looping, branching",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x68)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (79x85)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (169x115)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (336x692)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "10 \nchapter 1\nOnce you’re inside main (or any method), the fun \nbegins. You can say all the normal things that you say \nin most programming languages to make the computer \ndo something. \nYour code can tell the JVM to:\n1\ndo something\nStatements: declarations, assignments, \nmethod calls, etc.\nint x = 3;\nString name = “Dirk”;\nx = x * 17;\nSystem.out.print(“x is ” + x);\ndouble d = Math.random();\n// this is a comment\n2\ndo something again and again\nLoops: for and while\nwhile (x > 12) {\n x = x - 1;\n}\nfor (int x = 0; x < 10; x = x + 1) {\n System.out.print(“x is now ” + x);\n}\n3\ndo something under this condition\nBranching: if/else tests\nif (x == 10) {\n System.out.print(“x must be 10”);\n} else {\n System.out.print(“x isn’t 10”);\n}\nif ((x < 3) & (name.equals(“Dirk”))) {\n System.out.println(“Gently”);\n}\nSystem.out.print(“this line runs no matter what”);\n± Each statement must end in a \nsemicolon.\nx = x + 1;\n± A single-line comment begins \nwith two forward slashes.\nx = 22;\n// this line disturbs me\n± Most white space doesn’t matter.\nx = 3 ;\n± Variables are declared with a \nname and a type (you’11 learn about \nall the Java types in chapter 3).\nint weight;\n//type: int, name: weight\n± Classes and methods must be \ndefined within a pair of curly braces.\npublic void go() {\n // amazing code here\n}\nWhat can you say in the main method?\nloops\nbranching\nstatements\nSyntax\n Fun\nstatements, looping, branching",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 44,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 44,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1425 chars",
+      "severity": "info"
+    },
+    {
+      "page": 44,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 44,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

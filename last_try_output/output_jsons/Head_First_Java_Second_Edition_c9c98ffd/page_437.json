@@ -1,0 +1,46 @@
+{
+  "page_number": 437,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n403\nThe Big Three layout managers: \nborder, flow, and box.\nBorderLayout\nA BorderLayout manager divides a background \ncomponent into five regions. You can add only one \ncomponent per region to a background controlled \nby a BorderLayout manager. Components laid out \nby this manager usually don’t get to have their \npreferred size. BorderLayout is the default layout \nmanager for a frame!\nFlowLayout\nA FlowLayout manager acts kind of like a word \nprocessor, except with components instead of \nwords. Each component is the size it wants to be, \nand they’re laid out left to right in the order that \nthey’re added, with “word-wrap” turned on. 50 \nwhen a component won’t fit horizontally, it drops \nto the next “line” in the layout. FlowLayout is the \ndefault layout manager for a panel!\nBoxLayout\nA BoxLayout manager is like FlowLayout in that \neach component gets to have its own size, and \nthe components are placed in the order in which \nthey’re added. But, unlike FlowLayout, a BoxLayout \nmanager can stack the components vertically (or \nhorizontally, but usually we’re just concerned with \nvertically). It’5 like a FlowLayout but instead of \nhaving automatic ‘component wrapping’, you can \ninsert a sort of ‘component return key’ and force \nthe components to start a new line.\none component \nper region\ncomponents added left \nto right, wrapping to a \nnew line when needed\ncomponents added top \nto bottom, one per ‘line’",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "using swing\nyou are here\n403\nThe Big Three layout managers: \nborder, flow, and box.\nBorderLayout\nA BorderLayout manager divides a background \ncomponent into five regions. You can add only one \ncomponent per region to a background controlled \nby a BorderLayout manager. Components laid out \nby this manager usually don’t get to have their \npreferred size. BorderLayout is the default layout \nmanager for a frame!\nFlowLayout\nA FlowLayout manager acts kind of like a word \nprocessor, except with components instead of \nwords. Each component is the size it wants to be, \nand they’re laid out left to right in the order that \nthey’re added, with “word-wrap” turned on. 50 \nwhen a component won’t fit horizontally, it drops \nto the next “line” in the layout. FlowLayout is the \ndefault layout manager for a panel!\nBoxLayout\nA BoxLayout manager is like FlowLayout in that \neach component gets to have its own size, and \nthe components are placed in the order in which \nthey’re added. But, unlike FlowLayout, a BoxLayout \nmanager can stack the components vertically (or \nhorizontally, but usually we’re just concerned with \nvertically). It’5 like a FlowLayout but instead of \nhaving automatic ‘component wrapping’, you can \ninsert a sort of ‘component return key’ and force \nthe components to start a new line.\none component \nper region\ncomponents added left \nto right, wrapping to a \nnew line when needed\ncomponents added top \nto bottom, one per ‘line’",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 437,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 437,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1447 chars",
+      "severity": "info"
+    },
+    {
+      "page": 437,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

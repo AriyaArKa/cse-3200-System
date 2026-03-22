@@ -1,0 +1,59 @@
+{
+  "page_number": 604,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9275,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "570 \nchapter 16\nBut will it work with ArrayList<Dog> ?\nBecause of polymorphism, the compiler let us pass a Dog array \nto a method with an Animal array argument. No problem. And \nan ArrayList<Animal> can be passed to a method with an \nArrayList<Animal> argument. 50 the big question is, will the \nArrayList<Animal> argument accept an ArrayList<Dog>? If it works \nwith arrays, shouldn’t it work here too?\n public void go() {\n ArrayList<Animal> animals = new ArrayList<Animal>();\n animals.add(new Dog());\n animals.add(new Cat());\n animals.add(new Dog());\n takeAnimals(animals);\n ArrayList<Dog> dogs = new ArrayList<Dog>();\n dogs.add(new Dog());\n dogs.add(new Dog());\n takeAnimals(dogs); \n }\n public void takeAnimals(ArrayList<Animal> animals) {\n for(Animal a: animals) {\n a.eat();\n }\n }\nWe know this line worked fine.\nMake a Dog ArrayList and put a couple dogs in.\nPassing in just ArrayList<Dog>\n%java TestGenerics3\nTestGenerics3.java:21: takeAnimals(java.util.\nArrayList<Animal>) in TestGenerics3 cannot be applied to \n(java.util.ArrayList<Dog>)\n takeAnimals(dogs);\n ^\n1 error\nFile Edit Window Help CatsAreSmarter\nWhen we compile it:\nIt looked 50 right, \nbut went 50 wrong...\nWill this work now that we changed \nfrom an array to an ArrayList?\npolymorphism and generics",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help CatsAreSmarter"
+        ],
+        [
+          "%java TestGenerics3\nTestGenerics3.java:21: takeAnimals(java.util.\nArrayList<Animal>) in TestGenerics3 cannot be applied to\n(java.util.ArrayList<Dog>)\ntakeAnimals(dogs);\n^\n1 error"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "570 \nchapter 16\nBut will it work with ArrayList<Dog> ?\nBecause of polymorphism, the compiler let us pass a Dog array \nto a method with an Animal array argument. No problem. And \nan ArrayList<Animal> can be passed to a method with an \nArrayList<Animal> argument. 50 the big question is, will the \nArrayList<Animal> argument accept an ArrayList<Dog>? If it works \nwith arrays, shouldn’t it work here too?\n public void go() {\n ArrayList<Animal> animals = new ArrayList<Animal>();\n animals.add(new Dog());\n animals.add(new Cat());\n animals.add(new Dog());\n takeAnimals(animals);\n ArrayList<Dog> dogs = new ArrayList<Dog>();\n dogs.add(new Dog());\n dogs.add(new Dog());\n takeAnimals(dogs); \n }\n public void takeAnimals(ArrayList<Animal> animals) {\n for(Animal a: animals) {\n a.eat();\n }\n }\nWe know this line worked fine.\nMake a Dog ArrayList and put a couple dogs in.\nPassing in just ArrayList<Dog>\n%java TestGenerics3\nTestGenerics3.java:21: takeAnimals(java.util.\nArrayList<Animal>) in TestGenerics3 cannot be applied to \n(java.util.ArrayList<Dog>)\n takeAnimals(dogs);\n ^\n1 error\nFile Edit Window Help CatsAreSmarter\nWhen we compile it:\nIt looked 50 right, \nbut went 50 wrong...\nWill this work now that we changed \nfrom an array to an ArrayList?\npolymorphism and generics",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 604,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 604,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1334 chars",
+      "severity": "info"
+    },
+    {
+      "page": 604,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

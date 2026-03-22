@@ -1,0 +1,46 @@
+{
+  "page_number": 515,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n481\nimport java.io.*;\nimport java.net.*;\npublic class DailyAdviceClient { \n public void go() {\n try {\n Socket 5 = new Socket(“127.0.0.1”, 4242);\n InputStreamReader streamReader = new InputStreamReader(s.getInputStream());\n BufferedReader reader = new BufferedReader(streamReader);\n String advice = reader.readLine();\n System.out.println(“Today you should: “ + advice);\n reader.close();\n } catch(IOException ex) {\n ex.printStackTrace();\n }\n } \n public static void main(String[] args) {\n DailyAdviceClient client = new DailyAdviceClient();\n client.go();\n } \n}\nDailyAdviceClient code\nclass Socket is in java.net\nmake a Socket connection to whatever is \nrunning on port 4242, on the same host \nthis code is running on. (The ‘localhost’)\na lot can go wrong here\nchain a BufferedReader to \nan InputStreamReader to \nthe input stream from the \nSocket.\nthis readLine() is EXACTLY \nthe same as if you were using a \nBufferedReader chained to a FILE.. \nIn other words, by the time you \ncall a BufferedReader method, the \nreader doesn’t know or care where \nthe characters came from.\nthis closes ALL the streams\nThis program makes a Socket, makes a BufferedReader (with the \nhelp of other streams), and reads a single line from the server \napplication (whatever is running at port 4242).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "networking and threads\nyou are here\n481\nimport java.io.*;\nimport java.net.*;\npublic class DailyAdviceClient { \n public void go() {\n try {\n Socket 5 = new Socket(“127.0.0.1”, 4242);\n InputStreamReader streamReader = new InputStreamReader(s.getInputStream());\n BufferedReader reader = new BufferedReader(streamReader);\n String advice = reader.readLine();\n System.out.println(“Today you should: “ + advice);\n reader.close();\n } catch(IOException ex) {\n ex.printStackTrace();\n }\n } \n public static void main(String[] args) {\n DailyAdviceClient client = new DailyAdviceClient();\n client.go();\n } \n}\nDailyAdviceClient code\nclass Socket is in java.net\nmake a Socket connection to whatever is \nrunning on port 4242, on the same host \nthis code is running on. (The ‘localhost’)\na lot can go wrong here\nchain a BufferedReader to \nan InputStreamReader to \nthe input stream from the \nSocket.\nthis readLine() is EXACTLY \nthe same as if you were using a \nBufferedReader chained to a FILE.. \nIn other words, by the time you \ncall a BufferedReader method, the \nreader doesn’t know or care where \nthe characters came from.\nthis closes ALL the streams\nThis program makes a Socket, makes a BufferedReader (with the \nhelp of other streams), and reads a single line from the server \napplication (whatever is running at port 4242).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 515,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 515,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1438 chars",
+      "severity": "info"
+    },
+    {
+      "page": 515,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

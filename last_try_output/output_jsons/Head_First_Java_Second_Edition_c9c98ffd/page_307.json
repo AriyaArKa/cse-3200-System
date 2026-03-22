@@ -1,0 +1,74 @@
+{
+  "page_number": 307,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "this is a new chapter\n273\n10 numbers and statics\nNumbers Matter\nDo the Math. But there’5 more to working with numbers than just doing primitive \narithmetic. You might want to get the absolute value of a number, or round a number, or find \nthe larger of two numbers. You might want your numbers to print with exactly two decimal \nplaces, or you might want to put commas into your large numbers to make them easier to read. \nAnd what about working with dates? You might want to print dates in a variety of ways, or even \nmanipulate dates to say things like, “add three weeks to today’5 date”. And what about parsing \na String into a number? Or turning a number into a String? You’re in luck. The Java API is full of \nhandy number-tweaking methods ready and easy to use. But most of them are static, 50 we’11 \nstart by learning what it means for a variable or method to be static, including constants in \nJava—static final variables.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (562x754)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "this is a new chapter\n273\n10 numbers and statics\nNumbers Matter\nDo the Math. But there’5 more to working with numbers than just doing primitive \narithmetic. You might want to get the absolute value of a number, or round a number, or find \nthe larger of two numbers. You might want your numbers to print with exactly two decimal \nplaces, or you might want to put commas into your large numbers to make them easier to read. \nAnd what about working with dates? You might want to print dates in a variety of ways, or even \nmanipulate dates to say things like, “add three weeks to today’5 date”. And what about parsing \na String into a number? Or turning a number into a String? You’re in luck. The Java API is full of \nhandy number-tweaking methods ready and easy to use. But most of them are static, 50 we’11 \nstart by learning what it means for a variable or method to be static, including constants in \nJava—static final variables.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 307,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 307,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 934 chars",
+      "severity": "info"
+    },
+    {
+      "page": 307,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 307,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

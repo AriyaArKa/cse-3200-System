@@ -1,0 +1,59 @@
+{
+  "page_number": 590,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "556 \nchapter 16\nUh-oh. The sorting all works, but now we have duplicates...\nThe sorting works great, now we know how to sort on both title (using the Song object’5 \ncompareTo() method) and artist (using the Comparator’5 compare() method). But there’5 \na new problem we didn’t notice with a test sample of the jukebox text file—the sorted list \ncontains duplicates. \nIt appears that the diner jukebox just keeps writing to the file regardless of whether the \nsame song has already been played (and thus written) to the text file. The SongListMore.txt \njukebox text file is a complete record of every song that was played, and might contain the \nsame song multiple times.\nFile Edit Window Help TooManyNotes\n%java Jukebox4\n[Pink Moon: Nick Drake, Somersault: Zero 7, Shiva Moon: Prem \nJoshua, Circles: BT, Deep Channel: Afro Celts, Passenger: \nHeadmix, Listen: Tahiti 80, Listen: Tahiti 80, Listen: Tahiti \n80, Circles: BT]\n[Circles: BT, Circles: BT, Deep Channel: Afro Celts, Listen: \nTahiti 80, Listen: Tahiti 80, Listen: Tahiti 80, Passenger: \nHeadmix, Pink Moon: Nick Drake, Shiva Moon: Prem Joshua, \nSomersault: Zero 7]\n[Deep Channel: Afro Celts, Circles: BT, Circles: BT, Passenger: \nHeadmix, Pink Moon: Nick Drake, Shiva Moon: Prem Joshua, Listen: \nTahiti 80, Listen: Tahiti 80, Listen: Tahiti 80, Somersault: \nZero 7]\nBefore sorting.\nSongListMore.txt\nPink Moon/Nick Drake/5/80\nSomersault/Zero 7/4/84\nShiva Moon/Prem Joshua/6/120\nCircles/BT/5/110\nDeep Channel/Afro Celts/4/120\nPassenger/Headmix/4/100\nListen/Tahiti 80/5/90\nListen/Tahiti 80/5/90\nListen/Tahiti 80/5/90\nCircles/BT/5/110\nThe SongListMore text file now has duplicates in \nit, because the jukebox machine is writing every song \nplayed, in order. Somebody decided to play “Listen” \nthree times in a row, followed by “Circles”, a song \nthat had been played earlier.\nWe can’t change the way the text file is written \nbecause sometimes we’re going to need all that \ninformation. We have to change the java code.\nAfter sorting using \nthe Song’5 own \ncompareTo() method \n(sort by title).\nAfter sorting using \nthe ArtistCompare \nComparator (sort by \nartist name).\ndealing with duplicates",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help TooManyNotes"
+        ],
+        [
+          "%java Jukebox4\n[Pink Moon: Nick Drake, Somersault: Zero 7, Shiva Moon: Prem\nJoshua, Circles: BT, Deep Channel: Afro Celts, Passenger:\nHeadmix, Listen: Tahiti 80, Listen: Tahiti 80, Listen: Tahiti\n80, Circles: BT]\n[Circles: BT, Circles: BT, Deep Channel: Afro Celts, Listen:\nTahiti 80, Listen: Tahiti 80, Listen: Tahiti 80, Passenger:\nHeadmix, Pink Moon: Nick Drake, Shiva Moon: Prem Joshua,\nSomersault: Zero 7]\n[Deep Channel: Afro Celts, Circles: BT, Circles: BT, Passenger:\nHeadmix, Pink Moon: Nick Drake, Shiva Moon: Prem Joshua, Listen:\nTahiti 80, Listen: Tahiti 80, Listen: Tahiti 80, Somersault:\nZero 7]"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "556 \nchapter 16\nUh-oh. The sorting all works, but now we have duplicates...\nThe sorting works great, now we know how to sort on both title (using the Song object’5 \ncompareTo() method) and artist (using the Comparator’5 compare() method). But there’5 \na new problem we didn’t notice with a test sample of the jukebox text file—the sorted list \ncontains duplicates. \nIt appears that the diner jukebox just keeps writing to the file regardless of whether the \nsame song has already been played (and thus written) to the text file. The SongListMore.txt \njukebox text file is a complete record of every song that was played, and might contain the \nsame song multiple times.\nFile Edit Window Help TooManyNotes\n%java Jukebox4\n[Pink Moon: Nick Drake, Somersault: Zero 7, Shiva Moon: Prem \nJoshua, Circles: BT, Deep Channel: Afro Celts, Passenger: \nHeadmix, Listen: Tahiti 80, Listen: Tahiti 80, Listen: Tahiti \n80, Circles: BT]\n[Circles: BT, Circles: BT, Deep Channel: Afro Celts, Listen: \nTahiti 80, Listen: Tahiti 80, Listen: Tahiti 80, Passenger: \nHeadmix, Pink Moon: Nick Drake, Shiva Moon: Prem Joshua, \nSomersault: Zero 7]\n[Deep Channel: Afro Celts, Circles: BT, Circles: BT, Passenger: \nHeadmix, Pink Moon: Nick Drake, Shiva Moon: Prem Joshua, Listen: \nTahiti 80, Listen: Tahiti 80, Listen: Tahiti 80, Somersault: \nZero 7]\nBefore sorting.\nSongListMore.txt\nPink Moon/Nick Drake/5/80\nSomersault/Zero 7/4/84\nShiva Moon/Prem Joshua/6/120\nCircles/BT/5/110\nDeep Channel/Afro Celts/4/120\nPassenger/Headmix/4/100\nListen/Tahiti 80/5/90\nListen/Tahiti 80/5/90\nListen/Tahiti 80/5/90\nCircles/BT/5/110\nThe SongListMore text file now has duplicates in \nit, because the jukebox machine is writing every song \nplayed, in order. Somebody decided to play “Listen” \nthree times in a row, followed by “Circles”, a song \nthat had been played earlier.\nWe can’t change the way the text file is written \nbecause sometimes we’re going to need all that \ninformation. We have to change the java code.\nAfter sorting using \nthe Song’5 own \ncompareTo() method \n(sort by title).\nAfter sorting using \nthe ArtistCompare \nComparator (sort by \nartist name).\ndealing with duplicates",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 590,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 590,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2151 chars",
+      "severity": "info"
+    },
+    {
+      "page": 590,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

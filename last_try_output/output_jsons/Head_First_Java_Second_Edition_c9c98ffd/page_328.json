@@ -1,0 +1,46 @@
+{
+  "page_number": 328,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "294 \nchapter 10\nNumber formatting\nIn Java, formatting numbers and dates doesn’t have to be coupled with 1/0. Think \nabout it. One of the most typical ways to display numbers to a user is through a \nGUI. You put Strings into a scrolling text area, or maybe a table. If formatting was \nbuilt only into print statements, you’d never be able to format a number into a nice \nString to display in a GUI. Before Java 5.0, most formatting was handled through \nclasses in the java.text package that we won’t even look at in this version of the \nbook, now that things have changed.\nIn Java 5.0, the Java team added more powerful and flexible formatting through a \nFormatter class in java.util. But you don’t need to create and call methods on the \nFormatter class yourself, because Java 5.0 added convenience methods to some of \nthe 1/0 classes (including printf()) and the String class. 50 it’5 a simple matter of \ncalling a static String.format() method and passing it the thing you want formatted \nalong with formatting instructions. \nOf course, you do have to know how to supply the formatting instructions, and \nthat takes a little effort unless you’re familiar with the printf() function in C/C++. \nFortunately, even if you don’t know printf() you can simply follow recipes for the \nmost basic things (that we’re showing in this chapter). But you will want to learn \nhow to format if you want to mix and match to get anything you want. \nWe’11 start here with a basic example, then look at how it works. (Note: we’11 revisit \nformatting again in the 1/0 chapter.)\npublic class TestFormats {\n public static void main (String[] args) {\n \n String 5 = String.format(“%, d”, 1000000000);\n System.out.println(5);\n }\n}\nFormatting a number to use commas\nThe number to format (we \nwant it to have commas).\nNow we get commas inserted into the number.\n 1,000,000,000\nnumber formatting\nThe formatting instructions for how to format the \nsecond argument (which in this case is an int value). \nRemember, there are only two arguments to this method \nhere—the first comma is INSIDE the String literal, 50 \nit isn’t separating arguments to the format method.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "294 \nchapter 10\nNumber formatting\nIn Java, formatting numbers and dates doesn’t have to be coupled with 1/0. Think \nabout it. One of the most typical ways to display numbers to a user is through a \nGUI. You put Strings into a scrolling text area, or maybe a table. If formatting was \nbuilt only into print statements, you’d never be able to format a number into a nice \nString to display in a GUI. Before Java 5.0, most formatting was handled through \nclasses in the java.text package that we won’t even look at in this version of the \nbook, now that things have changed.\nIn Java 5.0, the Java team added more powerful and flexible formatting through a \nFormatter class in java.util. But you don’t need to create and call methods on the \nFormatter class yourself, because Java 5.0 added convenience methods to some of \nthe 1/0 classes (including printf()) and the String class. 50 it’5 a simple matter of \ncalling a static String.format() method and passing it the thing you want formatted \nalong with formatting instructions. \nOf course, you do have to know how to supply the formatting instructions, and \nthat takes a little effort unless you’re familiar with the printf() function in C/C++. \nFortunately, even if you don’t know printf() you can simply follow recipes for the \nmost basic things (that we’re showing in this chapter). But you will want to learn \nhow to format if you want to mix and match to get anything you want. \nWe’11 start here with a basic example, then look at how it works. (Note: we’11 revisit \nformatting again in the 1/0 chapter.)\npublic class TestFormats {\n public static void main (String[] args) {\n \n String 5 = String.format(“%, d”, 1000000000);\n System.out.println(5);\n }\n}\nFormatting a number to use commas\nThe number to format (we \nwant it to have commas).\nNow we get commas inserted into the number.\n 1,000,000,000\nnumber formatting\nThe formatting instructions for how to format the \nsecond argument (which in this case is an int value). \nRemember, there are only two arguments to this method \nhere—the first comma is INSIDE the String literal, 50 \nit isn’t separating arguments to the format method.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 328,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 328,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2158 chars",
+      "severity": "info"
+    },
+    {
+      "page": 328,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

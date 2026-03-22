@@ -1,0 +1,165 @@
+{
+  "page_number": 289,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n255\nSuperclass constructors with arguments\nWhat if the superclass constructor has arguments? Can you pass something in to \nthe super() call? Of course. If you couldn’t, you’d never be able to extend a class \nthat didn’t have a no-arg constructor. Imagine this scenario: all animals have a \nname. There’5 a getName() method in class Animal that returns the value of the \nname instance variable. The instance variable is marked private, but the subclass \n(in this case, Hippo) inherits the getName() method. 50 here’5 the problem: \nHippo has a getName() method (through inheritance), but does not have the name \ninstance variable. Hippo has to depend on the Animal part of himself to keep the \nname instance variable, and return it when someone calls getName() on a Hippo \nobject. But... how does the Animal part get the name? The only reference Hippo \nhas to the Animal part of himself is through super(), 50 that’5 the place where \nHippo sends the Hippo’5 name up to the Animal part of himself, 50 that the \nAnimal part can store it in the private name instance variable.\nAnimal\nprivate String name\nAnimal(String n)\nString getName()\nHippo\nHippo(String n)\n[other Hippo-spe-\ncific methods]\npublic abstract class Animal {\n private String name;\n public String getName() {\n return name;\n }\n public Animal(String theName) {\n name = theName;\n }\n}\nA getter method that \nHippo inherits\nThe constructor that \ntakes the name and assigns \nit the name instance \nvariable \nAll animals (including \nsubclasses) have a name\npublic class Hippo extends Animal {\n public Hippo(String name) {\n super(name);\n }\n}\npublic class MakeHippo {\n public static void main(String[] args) {\n Hippo h = new Hippo(“Buffy”);\n System.out.println(h.getName());\n }\n}\nHippo constructor takes a name\nit sends the name up the Stack to \nthe Animal constructor\nThe Animal part of \nme needs to know my name, \n50 1 take a name in my own \nHippo constructor, then pass \nthe name to super()\nMake a Hippo, passing the \nname “Buffy” to the Hippo \nconstructor. Then call the \nHippo’5 inherited getName()\nFile Edit Window Help Hide\n%java MakeHippo\nBuffy",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6909,
+      "rows": [
+        [
+          "Animal",
+          ""
+        ],
+        [
+          "Animal",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "private String name",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "Animal(String n)",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "String getName()",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "Hippo",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "Hippo(String n)",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "[other Hippo-spe-\ncific methods]",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Hide"
+        ],
+        [
+          "%java MakeHippo\nBuffy"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (213x220)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n255\nSuperclass constructors with arguments\nWhat if the superclass constructor has arguments? Can you pass something in to \nthe super() call? Of course. If you couldn’t, you’d never be able to extend a class \nthat didn’t have a no-arg constructor. Imagine this scenario: all animals have a \nname. There’5 a getName() method in class Animal that returns the value of the \nname instance variable. The instance variable is marked private, but the subclass \n(in this case, Hippo) inherits the getName() method. 50 here’5 the problem: \nHippo has a getName() method (through inheritance), but does not have the name \ninstance variable. Hippo has to depend on the Animal part of himself to keep the \nname instance variable, and return it when someone calls getName() on a Hippo \nobject. But... how does the Animal part get the name? The only reference Hippo \nhas to the Animal part of himself is through super(), 50 that’5 the place where \nHippo sends the Hippo’5 name up to the Animal part of himself, 50 that the \nAnimal part can store it in the private name instance variable.\nAnimal\nprivate String name\nAnimal(String n)\nString getName()\nHippo\nHippo(String n)\n[other Hippo-spe-\ncific methods]\npublic abstract class Animal {\n private String name;\n public String getName() {\n return name;\n }\n public Animal(String theName) {\n name = theName;\n }\n}\nA getter method that \nHippo inherits\nThe constructor that \ntakes the name and assigns \nit the name instance \nvariable \nAll animals (including \nsubclasses) have a name\npublic class Hippo extends Animal {\n public Hippo(String name) {\n super(name);\n }\n}\npublic class MakeHippo {\n public static void main(String[] args) {\n Hippo h = new Hippo(“Buffy”);\n System.out.println(h.getName());\n }\n}\nHippo constructor takes a name\nit sends the name up the Stack to \nthe Animal constructor\nThe Animal part of \nme needs to know my name, \n50 1 take a name in my own \nHippo constructor, then pass \nthe name to super()\nMake a Hippo, passing the \nname “Buffy” to the Hippo \nconstructor. Then call the \nHippo’5 inherited getName()\nFile Edit Window Help Hide\n%java MakeHippo\nBuffy",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 289,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 289,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2184 chars",
+      "severity": "info"
+    },
+    {
+      "page": 289,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 289,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

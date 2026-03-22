@@ -1,0 +1,82 @@
+{
+  "page_number": 446,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "412 \nchapter 13\nlayout managers\nthere are no\nDumb Questions\nQ: How come you can’t add directly to a frame the way \nyou can to a panel? \nA: A JFrame is special because it’5 where the rubber \nmeets the road in making something appear on the screen. \nWhile all your Swing components are pure Java, a JFrame \nhas to connect to the underlying 05 in order to access the \ndisplay. Think of the content pane as a 100% pure Java layer \nthat sits on top of the JFrame. Or think of it as though JFrame \nis the window frame and the content pane is the... glass. You \nknow, the window pane. And you can even swap the content \npane with your own JPanel, to make your JPanel the frame’5 \ncontent pane, using, \nmyFrame.setContentPane(myPanel);\nQ: Can 1 change the layout manager of the frame? \nWhat if 1 want the frame to use flow instead of border?\nA:The easiest way to do this is to make a panel, build \nthe GUI the way you want in the panel, and then make that \npanel the frame’5 content pane using the code in the previ-\nous answer (rather than using the default content pane).\nQ: What if 1 want a different preferred size? 15 there a \nsetSize() method for components?\nA:Yes, there is a setSize(), but the layout managers will \nignore it. There’5 a distinction between the preferred size of \nthe component and the size you want it to be. The preferred \nsize is based on the size the component actually needs \n(the component makes that decision for itself). The layout \nmanager calls the component’5 getPreferredSize() method, \nand that method doesn’t care if you’ve previously called \nsetSize() on the component. \nQ:Can’t 1 just put things where 1 want them? Can 1 turn \nthe layout managers off?\nA:Yep. On a component by component basis, you can call \nsetLayout(null) and then it’5 up to you to hard-code \nthe exact screen locations and dimensions. In the long run, \nthough, it’5 almost always easier to use layout managers.\n BULLET POINTS\n \nLayout managers control the size and location of \ncomponents nested within other components.\n \nWhen you add a component to another component \n(sometimes referred to as a background component, \nbut that’5 not a technical distinction), the added \ncomponent is controlled by the layout manager of the \nbackground component.\n \nA layout manager asks components for their \npreferred size, before making a decision about \nthe layout. Depending on the layout manager’5 \npolicies, it might respect all, some, or none of the \ncomponent’5 wishes.\n \nThe BorderLayout manager lets you add a \ncomponent to one of five regions. You must specify \nthe region when you add the component, using the \nfollowing syntax: \nadd(BorderLayout.EAST, panel);\n \nWith BorderLayout, components in the north and \nsouth get their preferred height, but not width. \nComponents in the east and west get their preferred \nwidth, but not height. The component in the center \ngets whatever is left over (unless you use pack()).\n \nThe pack() method is like shrink-wrap for the \ncomponents; it uses the full preferred size of the \ncenter component, then determines the size of the \nframe using the center as a starting point, building \nthe rest based on what’5 in the other regions.\n \nFlowLayout places components left to right, top to \nbottom, in the order they were added, wrapping to a \nnew line of components only when the components \nwon’t fit horizontally.\n \nFlowLayout gives components their preferred size in \nboth dimensions.\n \nBoxLayout lets you align components stacked \nvertically, even if they could fit side-by-side. Like \nFlowLayout, BoxLayout uses the preferred size of \nthe component in both dimensions.\n \nBorderLayout is the default layout manager for a \nframe; FlowLayout is the default for a panel.\n \nIf you want a panel to use something other than flow, \nyou have to call setLayout() on the panel.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "412 \nchapter 13\nlayout managers\nthere are no\nDumb Questions\nQ: How come you can’t add directly to a frame the way \nyou can to a panel? \nA: A JFrame is special because it’5 where the rubber \nmeets the road in making something appear on the screen. \nWhile all your Swing components are pure Java, a JFrame \nhas to connect to the underlying 05 in order to access the \ndisplay. Think of the content pane as a 100% pure Java layer \nthat sits on top of the JFrame. Or think of it as though JFrame \nis the window frame and the content pane is the... glass. You \nknow, the window pane. And you can even swap the content \npane with your own JPanel, to make your JPanel the frame’5 \ncontent pane, using, \nmyFrame.setContentPane(myPanel);\nQ: Can 1 change the layout manager of the frame? \nWhat if 1 want the frame to use flow instead of border?\nA:The easiest way to do this is to make a panel, build \nthe GUI the way you want in the panel, and then make that \npanel the frame’5 content pane using the code in the previ-\nous answer (rather than using the default content pane).\nQ: What if 1 want a different preferred size? 15 there a \nsetSize() method for components?\nA:Yes, there is a setSize(), but the layout managers will \nignore it. There’5 a distinction between the preferred size of \nthe component and the size you want it to be. The preferred \nsize is based on the size the component actually needs \n(the component makes that decision for itself). The layout \nmanager calls the component’5 getPreferredSize() method, \nand that method doesn’t care if you’ve previously called \nsetSize() on the component. \nQ:Can’t 1 just put things where 1 want them? Can 1 turn \nthe layout managers off?\nA:Yep. On a component by component basis, you can call \nsetLayout(null) and then it’5 up to you to hard-code \nthe exact screen locations and dimensions. In the long run, \nthough, it’5 almost always easier to use layout managers.\n BULLET POINTS\n \nLayout managers control the size and location of \ncomponents nested within other components.\n \nWhen you add a component to another component \n(sometimes referred to as a background component, \nbut that’5 not a technical distinction), the added \ncomponent is controlled by the layout manager of the \nbackground component.\n \nA layout manager asks components for their \npreferred size, before making a decision about \nthe layout. Depending on the layout manager’5 \npolicies, it might respect all, some, or none of the \ncomponent’5 wishes.\n \nThe BorderLayout manager lets you add a \ncomponent to one of five regions. You must specify \nthe region when you add the component, using the \nfollowing syntax: \nadd(BorderLayout.EAST, panel);\n \nWith BorderLayout, components in the north and \nsouth get their preferred height, but not width. \nComponents in the east and west get their preferred \nwidth, but not height. The component in the center \ngets whatever is left over (unless you use pack()).\n \nThe pack() method is like shrink-wrap for the \ncomponents; it uses the full preferred size of the \ncenter component, then determines the size of the \nframe using the center as a starting point, building \nthe rest based on what’5 in the other regions.\n \nFlowLayout places components left to right, top to \nbottom, in the order they were added, wrapping to a \nnew line of components only when the components \nwon’t fit horizontally.\n \nFlowLayout gives components their preferred size in \nboth dimensions.\n \nBoxLayout lets you align components stacked \nvertically, even if they could fit side-by-side. Like \nFlowLayout, BoxLayout uses the preferred size of \nthe component in both dimensions.\n \nBorderLayout is the default layout manager for a \nframe; FlowLayout is the default for a panel.\n \nIf you want a panel to use something other than flow, \nyou have to call setLayout() on the panel.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 446,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 446,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3819 chars",
+      "severity": "info"
+    },
+    {
+      "page": 446,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 446,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "page_number": 348,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "314 \nchapter 10\nExercise Solutions\nimport java.util.*;\nimport static java.lang.System.out; \nclass FullMoons {\n static int DAY_IM = 1000 * 60 * 60 * 24; \n public static void main(String [] args) {\n Calendar c = Calendar.getInstance();\n c.set(2004,0,7,15,40); \n long day1 = c.getTimeInMillis();\n for (int x = 0; x < 60; x++) {\n day1 += (DAY_IM * 29.52)\n c.setTimeInMillis(day1);\n out.println(String.format(“full moon on %tc”, c));\n }\n }\n}\n \nFile Edit Window Help Howl\n% java FullMoons\nfull moon on Fri Feb 06 04:09:35 MST 2004\nfull moon on Sat Mar 06 16:38:23 MST 2004\nfull moon on Mon Apr 05 06:07:11 MDT 2004\nNotes on the Lunar Code Magnet:\nYou might discover that a few of the \ndates produced by this program are \noff by a day. This astronomical stuff \nis a little tricky, and if we made it \nperfect, it would be too complex to \nmake an exercise here.\nHint: one problem you might try to \nsolve is based on differences in time \nzones. Can you spot the issue?\ncode magnets solution",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Howl"
+        ],
+        [
+          "% java FullMoons\nfull moon on Fri Feb 06 04:09:35 MST 2004\nfull moon on Sat Mar 06 16:38:23 MST 2004\nfull moon on Mon Apr 05 06:07:11 MDT 2004"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (144x121)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "314 \nchapter 10\nExercise Solutions\nimport java.util.*;\nimport static java.lang.System.out; \nclass FullMoons {\n static int DAY_IM = 1000 * 60 * 60 * 24; \n public static void main(String [] args) {\n Calendar c = Calendar.getInstance();\n c.set(2004,0,7,15,40); \n long day1 = c.getTimeInMillis();\n for (int x = 0; x < 60; x++) {\n day1 += (DAY_IM * 29.52)\n c.setTimeInMillis(day1);\n out.println(String.format(“full moon on %tc”, c));\n }\n }\n}\n \nFile Edit Window Help Howl\n% java FullMoons\nfull moon on Fri Feb 06 04:09:35 MST 2004\nfull moon on Sat Mar 06 16:38:23 MST 2004\nfull moon on Mon Apr 05 06:07:11 MDT 2004\nNotes on the Lunar Code Magnet:\nYou might discover that a few of the \ndates produced by this program are \noff by a day. This astronomical stuff \nis a little tricky, and if we made it \nperfect, it would be too complex to \nmake an exercise here.\nHint: one problem you might try to \nsolve is based on differences in time \nzones. Can you spot the issue?\ncode magnets solution",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 348,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 348,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1028 chars",
+      "severity": "info"
+    },
+    {
+      "page": 348,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 348,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

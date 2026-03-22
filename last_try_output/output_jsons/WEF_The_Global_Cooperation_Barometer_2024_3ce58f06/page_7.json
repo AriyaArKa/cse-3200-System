@@ -1,0 +1,46 @@
+{
+  "page_number": 7,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Introduction \nThe state of global \ncooperation\nThe world is facing a plethora of challenges \nthat require global cooperation to solve. Global \ntemperatures shattered previous highs and last year \nwas the hottest on record.7 And, over 114 million \npeople have been forcibly displaced worldwide – \nthe highest level ever.8 At the same time, ongoing \nthreats of a pandemic and the risks of new, \nunregulated technologies warrant concern.\nCooperation is not only necessary as a reactive \nmechanism to address threatening global \ndevelopments, but it is also needed to unlock \nnew opportunities. Indeed, generative AI has \nthe potential to contribute as much as $2.6 \ntrillion to $4.4 trillion to the global economy, but \nrequires substantial coordination across the global \necosystem to mitigate risks and ensure benefits are \nshared widely.9 \nRecent history has shown that global cooperation \ncan deliver profound benefits. During the first \nquarter-century after the end of the Cold War – \na period largely seen as a high point for global \ncooperation – expanded trade lifted global incomes \nand as a result, the number of people living in \nextreme poverty was cut in half.10 Instances of the \ninternational community reflexively coming together \nduring this period are most evident through security \ncoordination in the aftermath of the September 11, \n2001 attacks, financial coordination in the wake of \nthe global financial crisis in 2008, which included \nupgrading the 620, and global commitments to \naddress the growing danger of climate change \nthrough the 2015 signing of the Paris Climate \nAgreement.\nBy many accounts, the geopolitical dial turned from \ncooperation to competition in the mid-20105, as \nnationalist forces increased in many countries and \nprotectionist policies rose.11 The dial then turned \nfurther away from cooperation as conflict broke \nout in Europe, Africa and the Middle East in recent \nyears, with the UN warning in early 2023 that the \nworld was witnessing the highest level of violent \nconflict since World War II.12 \nDespite the challenging context, the story about \nglobal cooperation is not black and white. \nCountries and companies can compete while also \ncooperating. Competition, and even confrontation, \ncan spike in one area while cooperation can deepen \nin others. In a notable example, in 2022, amid \nheightened tensions between the United States \nand China, as climate negotiations between both \ncountries were suspended and talk of decoupling \ndominated airwaves, bilateral trade reached record \nlevels.13 \nTo help develop a better understanding of the \ncurrent state of global cooperation, this report \npresents the Global Cooperation Barometer – a \ntool that examines cooperation in five pillars: trade \nand capital, innovation and technology, climate \nand natural capital, health and wellness, and peace \nand security. The five pillars were chosen because, \ngiven the interconnected nature of the world, \ncooperation at the global level is necessary to see \nadvancements in each of these areas. \nOverall, the barometer indicates that after trending \npositively for much of the past decade, global \ncooperation has been mildly reversing (down \n2%) since 2020 (Figure 1). The period from \n2012 to the pandemic was marked by increased \ncooperation across four of the five pillars (peace \nand security was the exception), led by innovation \nand technology’5 more than 30% increase in \ncooperation (Figure 2). However, in more recent \nyears new questions have arisen about how to \nwork together to harness opportunities that arise \nfrom innovation.\nMeasuring cooperation is a critical step in \nidentifying ways to strengthening it. \n Overall, the \nbarometer \nindicates that \nafter trending \npositively for much \nof the past decade, \nglobal cooperation \nhas been mildly \nreversing (down \n2%) since 2020.\nThe Global Cooperation Barometer 2024\n7",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "Introduction \nThe state of global \ncooperation\nThe world is facing a plethora of challenges \nthat require global cooperation to solve. Global \ntemperatures shattered previous highs and last year \nwas the hottest on record.7 And, over 114 million \npeople have been forcibly displaced worldwide – \nthe highest level ever.8 At the same time, ongoing \nthreats of a pandemic and the risks of new, \nunregulated technologies warrant concern.\nCooperation is not only necessary as a reactive \nmechanism to address threatening global \ndevelopments, but it is also needed to unlock \nnew opportunities. Indeed, generative AI has \nthe potential to contribute as much as $2.6 \ntrillion to $4.4 trillion to the global economy, but \nrequires substantial coordination across the global \necosystem to mitigate risks and ensure benefits are \nshared widely.9 \nRecent history has shown that global cooperation \ncan deliver profound benefits. During the first \nquarter-century after the end of the Cold War – \na period largely seen as a high point for global \ncooperation – expanded trade lifted global incomes \nand as a result, the number of people living in \nextreme poverty was cut in half.10 Instances of the \ninternational community reflexively coming together \nduring this period are most evident through security \ncoordination in the aftermath of the September 11, \n2001 attacks, financial coordination in the wake of \nthe global financial crisis in 2008, which included \nupgrading the 620, and global commitments to \naddress the growing danger of climate change \nthrough the 2015 signing of the Paris Climate \nAgreement.\nBy many accounts, the geopolitical dial turned from \ncooperation to competition in the mid-20105, as \nnationalist forces increased in many countries and \nprotectionist policies rose.11 The dial then turned \nfurther away from cooperation as conflict broke \nout in Europe, Africa and the Middle East in recent \nyears, with the UN warning in early 2023 that the \nworld was witnessing the highest level of violent \nconflict since World War II.12 \nDespite the challenging context, the story about \nglobal cooperation is not black and white. \nCountries and companies can compete while also \ncooperating. Competition, and even confrontation, \ncan spike in one area while cooperation can deepen \nin others. In a notable example, in 2022, amid \nheightened tensions between the United States \nand China, as climate negotiations between both \ncountries were suspended and talk of decoupling \ndominated airwaves, bilateral trade reached record \nlevels.13 \nTo help develop a better understanding of the \ncurrent state of global cooperation, this report \npresents the Global Cooperation Barometer – a \ntool that examines cooperation in five pillars: trade \nand capital, innovation and technology, climate \nand natural capital, health and wellness, and peace \nand security. The five pillars were chosen because, \ngiven the interconnected nature of the world, \ncooperation at the global level is necessary to see \nadvancements in each of these areas. \nOverall, the barometer indicates that after trending \npositively for much of the past decade, global \ncooperation has been mildly reversing (down \n2%) since 2020 (Figure 1). The period from \n2012 to the pandemic was marked by increased \ncooperation across four of the five pillars (peace \nand security was the exception), led by innovation \nand technology’5 more than 30% increase in \ncooperation (Figure 2). However, in more recent \nyears new questions have arisen about how to \nwork together to harness opportunities that arise \nfrom innovation.\nMeasuring cooperation is a critical step in \nidentifying ways to strengthening it. \n Overall, the \nbarometer \nindicates that \nafter trending \npositively for much \nof the past decade, \nglobal cooperation \nhas been mildly \nreversing (down \n2%) since 2020.\nThe Global Cooperation Barometer 2024\n7",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 7,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 7,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3888 chars",
+      "severity": "info"
+    },
+    {
+      "page": 7,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

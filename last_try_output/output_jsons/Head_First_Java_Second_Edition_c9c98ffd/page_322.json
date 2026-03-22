@@ -1,0 +1,60 @@
+{
+  "page_number": 322,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "static methods\n288 \nchapter 10\nBefore Java 5.0, YOU had to do the work...\nShe’5 right. In all versions of Java prior to 5.0, primitives were primitives \nand object references were object references, and they were NEVER \ntreated interchangeably. It was always up to you, the programmer, to do \nthe wrapping and unwrapping. There was no way to pass a primitive to a \nmethod expecting an object reference, and no way to assign the result of a \nmethod returning an object reference directly to a primitive variable—even \nwhen the returned reference is to an Integer and the primitive variable is \nan int. There was simply no relationship between an Integer and an int, \nother than the fact that Integer has an instance variable of type int (to hold \nthe primitive the Integer wraps). All the work was up to you.\nThis is stupid. You mean 1 can’t \njust make an ArrayList of ints??? 1 \nhave to wrap every single frickin’ one in a new \nInteger object, then unwrap it when 1 try \nto access that value in the ArrayList? \nThat’5 a waste of time and an error \nwaiting to happen...\nAn ArrayList of primitive ints\npublic void doNumsOldWay() {\n ArrayList listOfNumbers = new ArrayList(); \n \n listOfNumbers.add(new Integer(3));\n Integer one = (Integer) listOfNumbers.get(0);\n int intOne = one.intValue();\n}\nWithout autoboxing (Java versions before 5.0)\nMake an ArrayList. (Remember, before 5.0 you could not \nspecify the TYPE, 50 all ArrayLists were lists of Objects.)\nYou can’t add the primitive ‘3’ to the list, \n50 you have to wrap it in an Integer first.\nIt comes out as type \nObject, but you can cast \nthe Object to an Integer.\nFinally you can get the primitive \nout of the Integer.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (171x649)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "static methods\n288 \nchapter 10\nBefore Java 5.0, YOU had to do the work...\nShe’5 right. In all versions of Java prior to 5.0, primitives were primitives \nand object references were object references, and they were NEVER \ntreated interchangeably. It was always up to you, the programmer, to do \nthe wrapping and unwrapping. There was no way to pass a primitive to a \nmethod expecting an object reference, and no way to assign the result of a \nmethod returning an object reference directly to a primitive variable—even \nwhen the returned reference is to an Integer and the primitive variable is \nan int. There was simply no relationship between an Integer and an int, \nother than the fact that Integer has an instance variable of type int (to hold \nthe primitive the Integer wraps). All the work was up to you.\nThis is stupid. You mean 1 can’t \njust make an ArrayList of ints??? 1 \nhave to wrap every single frickin’ one in a new \nInteger object, then unwrap it when 1 try \nto access that value in the ArrayList? \nThat’5 a waste of time and an error \nwaiting to happen...\nAn ArrayList of primitive ints\npublic void doNumsOldWay() {\n ArrayList listOfNumbers = new ArrayList(); \n \n listOfNumbers.add(new Integer(3));\n Integer one = (Integer) listOfNumbers.get(0);\n int intOne = one.intValue();\n}\nWithout autoboxing (Java versions before 5.0)\nMake an ArrayList. (Remember, before 5.0 you could not \nspecify the TYPE, 50 all ArrayLists were lists of Objects.)\nYou can’t add the primitive ‘3’ to the list, \n50 you have to wrap it in an Integer first.\nIt comes out as type \nObject, but you can cast \nthe Object to an Integer.\nFinally you can get the primitive \nout of the Integer.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 322,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 322,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1687 chars",
+      "severity": "info"
+    },
+    {
+      "page": 322,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 322,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "page_number": 365,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n331\nYou could write your exception-handling code 50 that \nyou specify only one catch block, using the supertype \nException in the catch clause, 50 that you’11 be able to \ncatch any exception that might be thrown.\nJust because you CAN catch everything \nwith one big super polymorphic catch, \ndoesn’t always mean you SHOULD.\ntry {\n laundry.doLaundry();\n} catch(Exception ex) {\n // recovery code... \n}\n \nRecovery from WHAT? This catch block will \ncatch ANY and all exceptions, 50 you won’t \nautomatically know what went wrong. \nFor example, if your code deals with (or recovers \nfrom) a TeeShirtException differently than it handles a \nLingerieException, write a catch block for each. But if you \ntreat all other types of ClothingException in the same way, \nthen add a ClothingException catch to handle the rest.\nWrite a different catch block for each \nexception that you need to handle \nuniquely.\ntry {\n laundry.doLaundry();\n} catch(TeeShirtException tex) {\n // recovery from TeeShirtException\n} catch(LingerieException lex) {\n // recovery from LingerieException\n} catch(ClothingException cex) {\n // recovery from all others\n}\nTeeShirtExceptions and \nLingerieExceptions need different \nrecovery code, 50 you should use \ndifferent catch blocks.\nAll other ClothingExceptions \nare caught here.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (30x69)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (108x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x44)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (77x71)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n331\nYou could write your exception-handling code 50 that \nyou specify only one catch block, using the supertype \nException in the catch clause, 50 that you’11 be able to \ncatch any exception that might be thrown.\nJust because you CAN catch everything \nwith one big super polymorphic catch, \ndoesn’t always mean you SHOULD.\ntry {\n laundry.doLaundry();\n} catch(Exception ex) {\n // recovery code... \n}\n \nRecovery from WHAT? This catch block will \ncatch ANY and all exceptions, 50 you won’t \nautomatically know what went wrong. \nFor example, if your code deals with (or recovers \nfrom) a TeeShirtException differently than it handles a \nLingerieException, write a catch block for each. But if you \ntreat all other types of ClothingException in the same way, \nthen add a ClothingException catch to handle the rest.\nWrite a different catch block for each \nexception that you need to handle \nuniquely.\ntry {\n laundry.doLaundry();\n} catch(TeeShirtException tex) {\n // recovery from TeeShirtException\n} catch(LingerieException lex) {\n // recovery from LingerieException\n} catch(ClothingException cex) {\n // recovery from all others\n}\nTeeShirtExceptions and \nLingerieExceptions need different \nrecovery code, 50 you should use \ndifferent catch blocks.\nAll other ClothingExceptions \nare caught here.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 365,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 365,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1346 chars",
+      "severity": "info"
+    },
+    {
+      "page": 365,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 365,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

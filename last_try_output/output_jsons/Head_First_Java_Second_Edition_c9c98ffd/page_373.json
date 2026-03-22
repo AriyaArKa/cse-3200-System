@@ -1,0 +1,67 @@
+{
+  "page_number": 373,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n339\nCode Kitchen\nThere is NO way \n1’m letting Betty win the \ncode-off this year, 50 1’m \ngonna make it myself from \nscratch.\nBut why don’t \nyou just use \nReady-bake code?\nYou don’t have to do it \nyourself, but it’5 a lot \nmore fun if you do.\nThe rest of this chapter \nis optional; you can use \nReady-bake code for all \nthe music apps.\nBut if you want to learn \nmore about JavaSound, \nturn the page.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (729x919)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (82x82)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n339\nCode Kitchen\nThere is NO way \n1’m letting Betty win the \ncode-off this year, 50 1’m \ngonna make it myself from \nscratch.\nBut why don’t \nyou just use \nReady-bake code?\nYou don’t have to do it \nyourself, but it’5 a lot \nmore fun if you do.\nThe rest of this chapter \nis optional; you can use \nReady-bake code for all \nthe music apps.\nBut if you want to learn \nmore about JavaSound, \nturn the page.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 373,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 373,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 432 chars",
+      "severity": "info"
+    },
+    {
+      "page": 373,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 373,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "page_number": 109,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n75\n00101010\nint\nint theSecret = life.giveSecret(); \nint giveSecret() {\n return 42;\n} \nYou can get things back from a method.\nMethods can return values. Every method is declared with a return \ntype, but until now we’ve made all of our methods with a void \nreturn type, which means they don’t give anything back. \nvoid go() {\n}\nBut we can declare a method to give a specific type of value \nback to the caller, such as:\nint giveSecret() {\n return 42;\n}\nIf you declare a method to return a value, you must \nreturn a value of the declared type! (Or a value \nthat is compatible with the declared type. We’11 get \ninto that more when we talk about polymorphism \nin chapter 7 and chapter 8.)\nWhatever you say \nyou’11 give back, you \nbetter give back!\nThe compiler won’t let you return the wrong type of thing.\n Cute... \nbut not exactly what 1\n was expecting.\nThe bits representing 42 are returned from \nthe giveSecret() method, and land in the \nvariable named theSecret.\nthis must fit\nin an int!\nThese types \nmust match",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (591x511)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n75\n00101010\nint\nint theSecret = life.giveSecret(); \nint giveSecret() {\n return 42;\n} \nYou can get things back from a method.\nMethods can return values. Every method is declared with a return \ntype, but until now we’ve made all of our methods with a void \nreturn type, which means they don’t give anything back. \nvoid go() {\n}\nBut we can declare a method to give a specific type of value \nback to the caller, such as:\nint giveSecret() {\n return 42;\n}\nIf you declare a method to return a value, you must \nreturn a value of the declared type! (Or a value \nthat is compatible with the declared type. We’11 get \ninto that more when we talk about polymorphism \nin chapter 7 and chapter 8.)\nWhatever you say \nyou’11 give back, you \nbetter give back!\nThe compiler won’t let you return the wrong type of thing.\n Cute... \nbut not exactly what 1\n was expecting.\nThe bits representing 42 are returned from \nthe giveSecret() method, and land in the \nvariable named theSecret.\nthis must fit\nin an int!\nThese types \nmust match",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 109,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 109,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1078 chars",
+      "severity": "info"
+    },
+    {
+      "page": 109,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 109,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

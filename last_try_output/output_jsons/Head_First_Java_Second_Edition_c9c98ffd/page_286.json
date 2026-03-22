@@ -1,0 +1,111 @@
+{
+  "page_number": 286,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "252 \nchapter 9\n1\nCode from another \nclass says new \nHippo()and the \nHippo() constructor \ngoes into a stack \nframe at the top of \nthe stack.\nHippo()\nAnimal()\nHippo()\n2 Hippo() invokes \nthe superclass \nconstructor which \npushes the Animal() \nconstructor onto the \ntop of the stack. \nObject()\nHippo()\nAnimal()\n3\n4 Object() completes, \nand its stack frame \nis popped off the \nstack. Execution goes \nback to the Animal() \nconstructor, and \npicks up at the line \nfollowing Animal’5 \ncall to its superclass \nconstructor\nAnimal() invokes \nthe superclass \nconstructor which \npushes the Object() \nconstructor onto \nthe top of the stack, \nsince Object is the \nsuperclass of Animal.\nAnimal()\nHippo()\nMaking a Hippo means making the \nAnimal and Object parts too...\npublic class Animal {\n public Animal() {\n System.out.println(“Making an Animal”);\n }\n}\npublic class Hippo extends Animal {\n public Hippo() {\n System.out.println(“Making a Hippo”);\n }\n}\npublic class TestHippo {\n public static void main (String[] args) {\n System.out.println(“Starting...”);\n Hippo h = new Hippo();\n }\n}\nFile Edit Window Help Swear\n% java TestHippo\nStarting...\nMaking an Animal\nMaking a Hippo\nFile Edit Window Help Swear\n% java TestHippo\nStarting...\nMaking a Hippo\nMaking an Animal\nSharpen your pencil\nA\n8\nWhat’5 the real output? Given the \ncode on the left, what prints out \nwhen you run TestHippo? A or 8?\n(the answer is at the bottom of the page)\nobject construction\nThe first one, A. The Hippo() constructor is invoked first, but \nit’5 the Animal constructor that finishes first.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Sharpen your pencil"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Swear"
+        ],
+        [
+          "% java TestHippo\nStarting...\nMaking an Animal\nMaking a Hippo"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Swear"
+        ],
+        [
+          "% java TestHippo\nStarting...\nMaking a Hippo\nMaking an Animal"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (240x108)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x174)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x239)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "252 \nchapter 9\n1\nCode from another \nclass says new \nHippo()and the \nHippo() constructor \ngoes into a stack \nframe at the top of \nthe stack.\nHippo()\nAnimal()\nHippo()\n2 Hippo() invokes \nthe superclass \nconstructor which \npushes the Animal() \nconstructor onto the \ntop of the stack. \nObject()\nHippo()\nAnimal()\n3\n4 Object() completes, \nand its stack frame \nis popped off the \nstack. Execution goes \nback to the Animal() \nconstructor, and \npicks up at the line \nfollowing Animal’5 \ncall to its superclass \nconstructor\nAnimal() invokes \nthe superclass \nconstructor which \npushes the Object() \nconstructor onto \nthe top of the stack, \nsince Object is the \nsuperclass of Animal.\nAnimal()\nHippo()\nMaking a Hippo means making the \nAnimal and Object parts too...\npublic class Animal {\n public Animal() {\n System.out.println(“Making an Animal”);\n }\n}\npublic class Hippo extends Animal {\n public Hippo() {\n System.out.println(“Making a Hippo”);\n }\n}\npublic class TestHippo {\n public static void main (String[] args) {\n System.out.println(“Starting...”);\n Hippo h = new Hippo();\n }\n}\nFile Edit Window Help Swear\n% java TestHippo\nStarting...\nMaking an Animal\nMaking a Hippo\nFile Edit Window Help Swear\n% java TestHippo\nStarting...\nMaking a Hippo\nMaking an Animal\nSharpen your pencil\nA\n8\nWhat’5 the real output? Given the \ncode on the left, what prints out \nwhen you run TestHippo? A or 8?\n(the answer is at the bottom of the page)\nobject construction\nThe first one, A. The Hippo() constructor is invoked first, but \nit’5 the Animal constructor that finishes first.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 286,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 286,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1594 chars",
+      "severity": "info"
+    },
+    {
+      "page": 286,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 286,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

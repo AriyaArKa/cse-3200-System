@@ -1,0 +1,46 @@
+{
+  "page_number": 455,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n421\n downTempo.addActionListener(new MyDownTempoListener());\n buttonBox.add(downTempo);\n Box nameBox = new Box(BoxLayout.Y_AXIS);\n for (int i = 0; i < 16; i++) {\n nameBox.add(new Label(instrumentNames[i]));\n }\n \n background.add(BorderLayout.EAST, buttonBox);\n background.add(BorderLayout.WEST, nameBox);\n theFrame.getContentPane().add(background);\n \n GridLayout grid = new GridLayout(16,16);\n grid.setVgap(1);\n grid.setHgap(2);\n mainPanel = new JPanel(grid);\n background.add(BorderLayout.CENTER, mainPanel);\n for (int i = 0; i < 256; i++) { \n JCheckBox c = new JCheckBox();\n c.setSelected(false);\n checkboxList.add(c);\n mainPanel.add(c); \n } // end loop\n setUpMidi();\n theFrame.setBounds(50,50,300,300);\n theFrame.pack();\n theFrame.setVisible(true);\n } // close method\n public void setUpMidi() {\n try {\n sequencer = MidiSystem.getSequencer();\n sequencer.open();\n sequence = new Sequence(Sequence.PPQ,4);\n track = sequence.createTrack();\n sequencer.setTempoInBPM(120);\n \n } catch(Exception e) {e.printStackTrace();}\n } // close method\nStill more GUI set-up code. \nNothing remarkable.\nMake the checkboxes, set them to \n‘false’ (50 they aren’t checked) and \nadd them to the ArrayList AND to \nthe GUI panel.\nThe usual MIDI set-up stuff for \ngetting the Sequencer, the Sequence, \nand the Track. Again, nothing special.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "using swing\nyou are here\n421\n downTempo.addActionListener(new MyDownTempoListener());\n buttonBox.add(downTempo);\n Box nameBox = new Box(BoxLayout.Y_AXIS);\n for (int i = 0; i < 16; i++) {\n nameBox.add(new Label(instrumentNames[i]));\n }\n \n background.add(BorderLayout.EAST, buttonBox);\n background.add(BorderLayout.WEST, nameBox);\n theFrame.getContentPane().add(background);\n \n GridLayout grid = new GridLayout(16,16);\n grid.setVgap(1);\n grid.setHgap(2);\n mainPanel = new JPanel(grid);\n background.add(BorderLayout.CENTER, mainPanel);\n for (int i = 0; i < 256; i++) { \n JCheckBox c = new JCheckBox();\n c.setSelected(false);\n checkboxList.add(c);\n mainPanel.add(c); \n } // end loop\n setUpMidi();\n theFrame.setBounds(50,50,300,300);\n theFrame.pack();\n theFrame.setVisible(true);\n } // close method\n public void setUpMidi() {\n try {\n sequencer = MidiSystem.getSequencer();\n sequencer.open();\n sequence = new Sequence(Sequence.PPQ,4);\n track = sequence.createTrack();\n sequencer.setTempoInBPM(120);\n \n } catch(Exception e) {e.printStackTrace();}\n } // close method\nStill more GUI set-up code. \nNothing remarkable.\nMake the checkboxes, set them to \n‘false’ (50 they aren’t checked) and \nadd them to the ArrayList AND to \nthe GUI panel.\nThe usual MIDI set-up stuff for \ngetting the Sequencer, the Sequence, \nand the Track. Again, nothing special.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 455,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 455,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1634 chars",
+      "severity": "info"
+    },
+    {
+      "page": 455,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

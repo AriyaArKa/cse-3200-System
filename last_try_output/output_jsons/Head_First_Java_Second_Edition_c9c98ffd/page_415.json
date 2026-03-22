@@ -1,0 +1,60 @@
+{
+  "page_number": 415,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n381\nHeadFirst: Oh, well you just... hmmm. 1 think 1’m get-\nting it. You can always implement more than one interface, \nbut you can extend only one class. You can only be one kind \nof 15-A when it comes to class types.\nInner object: Well done! Yes, you can’t be both a Dog \nand a Button. But if you’re a Dog that needs to some-\ntimes be a Button (in order to pass yourself to methods \nthat take a Button), the Dog class (which extends Animal \n50 it can’t extend Button) can have an inner class that acts \non the Dog’5 behalf as a Button, by extending Button, \nand thus wherever a Button is required the Dog can \npass his inner Button instead of himself. In other words, \ninstead of saying x.takeButton(this), the Dog object calls \nx.takeButton(new MyInnerButton()).\nHeadFirst: Can 1 get a clear example?\nInner object: Remember the drawing panel we used, \nwhere we made our own subclass of JPanel? Right now, \nthat class is a separate, non-inner, class. And that’5 fine, \nbecause the class doesn’t need special access to the instance \nvariables of the main GUI. But what if it did? What if \nwe’re doing an animation on that panel, and it’5 getting its \ncoordinates from the main application (say, based on some-\nthing the user does elsewhere in the GUI). In that case, if \nwe make the drawing panel an inner class, the drawing \npanel class gets to be a subclass of JPanel, while the outer \nclass is still free to be a subclass of something else. \nHeadFirst: Yes 1 see! And the drawing panel isn’t reus-\nable enough to be a separate class anyway, since what it’5 \nactually painting is specific to this one GUI application.\nInner object: Yes! You’ve got it! \nHeadFirst: Good. Then we can move on to the nature of \nthe relationship between you and the outer instance.\nInner object: What is it with you people? Not enough \nsordid gossip in a serious topic like polymorphism?\nHeadFirst: Hey, you have no idea how much the public is \nwilling to pay for some good old tabloid dirt. 50, someone \ncreates you and becomes instantly bonded to the outer \nobject, is that right?\nInner object: Yes that’5 right. And yes, some have \ncompared it to an arranged marriage. We don’t have a say \nin which object we’re bonded to.\nHeadFirst: Alright, 1’11 go with the marriage analogy. \nCan you get a divorce and remarry something else?\nInner object: No, it’5 for life. \nHeadFirst: Whose life? Yours? The outer object? Both?\nInner object: Mine. 1 can’t be tied to any other outer \nobject. My only way out is garbage collection.\nHeadFirst: What about the outer object? Can it be \nassociated with any other inner objects? \nInner object: 50 now we have it. This is what you really \nwanted. Yes, yes. My 50-called ‘mate’ can have as many \ninner objects as it wants.\nHeadFirst: 15 that like, serial monogamy? Or can it have \nthem all at the same time?\nInner object: All at the same time. There. Satisfied?\nHeadFirst: Well, it does make sense. And let’5 not \nforget, it was you extolling the virtues of “multiple \nimplementations of the same interface”. 50 it makes sense \nthat if the outer class has three buttons, it would need \nthree different inner classes (and thus three different inner \nclass objects) to handle the events. Thanks for everything. \nHere’5 a tissue.\nHe thinks he’5 \ngot it made, having two \ninner class objects. But we \nhave access to all his private \ndata, 50 just imagine the damage \nwe could do...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (291x468)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n381\nHeadFirst: Oh, well you just... hmmm. 1 think 1’m get-\nting it. You can always implement more than one interface, \nbut you can extend only one class. You can only be one kind \nof 15-A when it comes to class types.\nInner object: Well done! Yes, you can’t be both a Dog \nand a Button. But if you’re a Dog that needs to some-\ntimes be a Button (in order to pass yourself to methods \nthat take a Button), the Dog class (which extends Animal \n50 it can’t extend Button) can have an inner class that acts \non the Dog’5 behalf as a Button, by extending Button, \nand thus wherever a Button is required the Dog can \npass his inner Button instead of himself. In other words, \ninstead of saying x.takeButton(this), the Dog object calls \nx.takeButton(new MyInnerButton()).\nHeadFirst: Can 1 get a clear example?\nInner object: Remember the drawing panel we used, \nwhere we made our own subclass of JPanel? Right now, \nthat class is a separate, non-inner, class. And that’5 fine, \nbecause the class doesn’t need special access to the instance \nvariables of the main GUI. But what if it did? What if \nwe’re doing an animation on that panel, and it’5 getting its \ncoordinates from the main application (say, based on some-\nthing the user does elsewhere in the GUI). In that case, if \nwe make the drawing panel an inner class, the drawing \npanel class gets to be a subclass of JPanel, while the outer \nclass is still free to be a subclass of something else. \nHeadFirst: Yes 1 see! And the drawing panel isn’t reus-\nable enough to be a separate class anyway, since what it’5 \nactually painting is specific to this one GUI application.\nInner object: Yes! You’ve got it! \nHeadFirst: Good. Then we can move on to the nature of \nthe relationship between you and the outer instance.\nInner object: What is it with you people? Not enough \nsordid gossip in a serious topic like polymorphism?\nHeadFirst: Hey, you have no idea how much the public is \nwilling to pay for some good old tabloid dirt. 50, someone \ncreates you and becomes instantly bonded to the outer \nobject, is that right?\nInner object: Yes that’5 right. And yes, some have \ncompared it to an arranged marriage. We don’t have a say \nin which object we’re bonded to.\nHeadFirst: Alright, 1’11 go with the marriage analogy. \nCan you get a divorce and remarry something else?\nInner object: No, it’5 for life. \nHeadFirst: Whose life? Yours? The outer object? Both?\nInner object: Mine. 1 can’t be tied to any other outer \nobject. My only way out is garbage collection.\nHeadFirst: What about the outer object? Can it be \nassociated with any other inner objects? \nInner object: 50 now we have it. This is what you really \nwanted. Yes, yes. My 50-called ‘mate’ can have as many \ninner objects as it wants.\nHeadFirst: 15 that like, serial monogamy? Or can it have \nthem all at the same time?\nInner object: All at the same time. There. Satisfied?\nHeadFirst: Well, it does make sense. And let’5 not \nforget, it was you extolling the virtues of “multiple \nimplementations of the same interface”. 50 it makes sense \nthat if the outer class has three buttons, it would need \nthree different inner classes (and thus three different inner \nclass objects) to handle the events. Thanks for everything. \nHere’5 a tissue.\nHe thinks he’5 \ngot it made, having two \ninner class objects. But we \nhave access to all his private \ndata, 50 just imagine the damage \nwe could do...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 415,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 415,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3425 chars",
+      "severity": "info"
+    },
+    {
+      "page": 415,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 415,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

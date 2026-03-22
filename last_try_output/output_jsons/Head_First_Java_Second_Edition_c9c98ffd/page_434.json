@@ -1,0 +1,81 @@
+{
+  "page_number": 434,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "400 \nchapter 13\nComponent is the more correct term for what we’ve been calling a widget. \nThe things you put in a GUI. The things a user sees and interacts with. Text \nfields, buttons, scrollable lists, radio buttons, etc. are all components. In \nfact, they all extend javax.swing.JComponent. \ncomponents and containers\nSwing components\nIn Swing, virtually all components are capable of holding other \ncomponents. In other words, you can stick just about anything into anything \nelse. But most of the time, you’11 add user interactive components such as \nbuttons and lists into background components such as frames and panels. \nAlthough it’5 possible to put, say, a panel inside a button, that’5 pretty \nweird, and won’t win you any usability awards. \nWith the exception of JFrame, though, the distinction between interactive \ncomponents and background components is artificial. A JPanel, for \nexample, is usually used as a background for grouping other components, \nbut even a JPanel can be interactive. Just as with other components, you \ncan register for the JPanel’5 events including mouse clicks and keystrokes.\nComponents can be nested\nFour steps to making a GUI (review)\nJFrame frame = new JFrame();\nMake a window (a JFrame)\nJButton button = new JButton(“click me”);\nframe.getContentPane().add(BorderLayout.EAST, button);\n1\nMake a component (button, text field, etc.)\n2\nAdd the component to the frame\n3\nframe.setSize(300,300);\nframe.setVisible(true);\nDisplay it (give it a size and make it visible)\n4\nPut interactive components:\nInto background components:\nJButton\nJCheckBox\nJTextField\nJFrame\nJPanel\nA widget is technically \na Swing Component. \nAlmost every thing \nyou can stick in a GUI \nextends from javax.\nswing.JComponent.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (112x31)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (96x24)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (208x21)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (224x227)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "400 \nchapter 13\nComponent is the more correct term for what we’ve been calling a widget. \nThe things you put in a GUI. The things a user sees and interacts with. Text \nfields, buttons, scrollable lists, radio buttons, etc. are all components. In \nfact, they all extend javax.swing.JComponent. \ncomponents and containers\nSwing components\nIn Swing, virtually all components are capable of holding other \ncomponents. In other words, you can stick just about anything into anything \nelse. But most of the time, you’11 add user interactive components such as \nbuttons and lists into background components such as frames and panels. \nAlthough it’5 possible to put, say, a panel inside a button, that’5 pretty \nweird, and won’t win you any usability awards. \nWith the exception of JFrame, though, the distinction between interactive \ncomponents and background components is artificial. A JPanel, for \nexample, is usually used as a background for grouping other components, \nbut even a JPanel can be interactive. Just as with other components, you \ncan register for the JPanel’5 events including mouse clicks and keystrokes.\nComponents can be nested\nFour steps to making a GUI (review)\nJFrame frame = new JFrame();\nMake a window (a JFrame)\nJButton button = new JButton(“click me”);\nframe.getContentPane().add(BorderLayout.EAST, button);\n1\nMake a component (button, text field, etc.)\n2\nAdd the component to the frame\n3\nframe.setSize(300,300);\nframe.setVisible(true);\nDisplay it (give it a size and make it visible)\n4\nPut interactive components:\nInto background components:\nJButton\nJCheckBox\nJTextField\nJFrame\nJPanel\nA widget is technically \na Swing Component. \nAlmost every thing \nyou can stick in a GUI \nextends from javax.\nswing.JComponent.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 434,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 434,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1735 chars",
+      "severity": "info"
+    },
+    {
+      "page": 434,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 434,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

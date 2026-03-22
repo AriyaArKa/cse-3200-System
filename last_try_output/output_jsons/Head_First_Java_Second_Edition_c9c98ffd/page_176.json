@@ -1,0 +1,88 @@
+{
+  "page_number": 176,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "142 \nchapter 6\nWho does what in the DotComBust game \n(and when)\n1\ndetailed structure of the game \nDotComBust\nThe game \nclass. \nDotComBust \nobject\ninstantiates\nThe main() method \nin the DotComBust \nclass instantiates the \nDotComBust object that \ndoes all the game stuff.\n2\ninstantiates\nThe DotComBust (game) \nobject instantiates an \ninstance of GameHelper, \nthe object that will help \nthe game do its work.\nhelper\nDotComBust \nobject\nGameHelper \nobject\n3\nArrayList object (to \nhold DotCom objects)\nThe DotComBust object \ninstantiates an ArrayList \nthat will hold the 3 DotCom \nobjects.\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (182x184)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (85x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (85x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "142 \nchapter 6\nWho does what in the DotComBust game \n(and when)\n1\ndetailed structure of the game \nDotComBust\nThe game \nclass. \nDotComBust \nobject\ninstantiates\nThe main() method \nin the DotComBust \nclass instantiates the \nDotComBust object that \ndoes all the game stuff.\n2\ninstantiates\nThe DotComBust (game) \nobject instantiates an \ninstance of GameHelper, \nthe object that will help \nthe game do its work.\nhelper\nDotComBust \nobject\nGameHelper \nobject\n3\nArrayList object (to \nhold DotCom objects)\nThe DotComBust object \ninstantiates an ArrayList \nthat will hold the 3 DotCom \nobjects.\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 176,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 176,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 641 chars",
+      "severity": "info"
+    },
+    {
+      "page": 176,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 176,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

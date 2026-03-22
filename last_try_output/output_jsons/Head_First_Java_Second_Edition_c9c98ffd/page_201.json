@@ -1,0 +1,170 @@
+{
+  "page_number": 201,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inheritance and polymorphism\nyou are here\n167\nWhat about the Amoeba rotate()?\nLARRY: Wasn’t that the whole problem here — that the amoeba shape \nhad a completely different rotate and playSound procedure? \nHow can amoeba do something different if it inherits its \nfunctionality from the Shape class?\nBRAD: That’5 the last step. The Amoeba class overrides the \nmethods of the Shape class. Then at runtime, the JVM knows \nexactly which rotate() method to run when someone tells the \nAmoeba to rotate.\n0\nv\ne\nr\nr\ni\nd\ne\n \nN\n0\nw\nA\n5\nk\n \nM\ne\n \nH\n0\nw\n1 made the Amoeba class override \nthe rotate() method of the \nsuperclass Shape.\nOverriding just means that a \nsubclass redefines one of its \ninherited methods when it needs \nto change or extend the behavior \nof that method.\n4\nTriangle\n \nSquare\nCircle\nAmoeba\n rotate()\n // amoeba-specific // rotate code\n playSound()\n // amoeba-specific\n // sound code\nShape\n rotate() \n playSound() \nsuperclass\n(more abstract)\nsubclasses\n(more specific)\nOverriding methods\nHow would you represent a house cat and a tiger, in an \ninheritance structure. 15 a domestic cat a specialized \nversion of a tiger? Which would be the subclass and \nwhich would be the superclass? Or are they both \nsubclasses to some other class? \nHow would you design an inheritance structure? What \nmethods would be overridden? \nThink about it. Before you turn the page.\n1 made the Amoeba class override the \nrotate() and playSound() methods \nof the superclass Shape. Overriding \njust means that a subclass redefines \none of its inherited methods when \nit needs to change or extend the \nbehavior of that method.\nbrain\npower\nA",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Shape"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Square"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Circle"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Triangle"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Amoeba"
+        ],
+        [
+          "rotate()\n// amoeba-specific\n// rotate code\nplaySound()\n// amoeba-specific\n// sound code"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (193x182)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (186x253)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x162)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (71x111)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (229x108)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "inheritance and polymorphism\nyou are here\n167\nWhat about the Amoeba rotate()?\nLARRY: Wasn’t that the whole problem here — that the amoeba shape \nhad a completely different rotate and playSound procedure? \nHow can amoeba do something different if it inherits its \nfunctionality from the Shape class?\nBRAD: That’5 the last step. The Amoeba class overrides the \nmethods of the Shape class. Then at runtime, the JVM knows \nexactly which rotate() method to run when someone tells the \nAmoeba to rotate.\n0\nv\ne\nr\nr\ni\nd\ne\n \nN\n0\nw\nA\n5\nk\n \nM\ne\n \nH\n0\nw\n1 made the Amoeba class override \nthe rotate() method of the \nsuperclass Shape.\nOverriding just means that a \nsubclass redefines one of its \ninherited methods when it needs \nto change or extend the behavior \nof that method.\n4\nTriangle\n \nSquare\nCircle\nAmoeba\n rotate()\n // amoeba-specific // rotate code\n playSound()\n // amoeba-specific\n // sound code\nShape\n rotate() \n playSound() \nsuperclass\n(more abstract)\nsubclasses\n(more specific)\nOverriding methods\nHow would you represent a house cat and a tiger, in an \ninheritance structure. 15 a domestic cat a specialized \nversion of a tiger? Which would be the subclass and \nwhich would be the superclass? Or are they both \nsubclasses to some other class? \nHow would you design an inheritance structure? What \nmethods would be overridden? \nThink about it. Before you turn the page.\n1 made the Amoeba class override the \nrotate() and playSound() methods \nof the superclass Shape. Overriding \njust means that a subclass redefines \none of its inherited methods when \nit needs to change or extend the \nbehavior of that method.\nbrain\npower\nA",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 201,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 201,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1632 chars",
+      "severity": "info"
+    },
+    {
+      "page": 201,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 8",
+      "severity": "info"
+    },
+    {
+      "page": 201,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

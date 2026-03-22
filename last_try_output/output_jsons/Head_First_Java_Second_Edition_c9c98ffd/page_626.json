@@ -1,0 +1,88 @@
+{
+  "page_number": 626,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "592 \nchapter 17\nWhen your class is in a package, the package directory structure \nmust be inside the JAR! You can’t just pop your classes in the \nJAR the way we did pre-packages. And you must be sure that you \ndon’t include any other directories above your package. The \nfirst directory of your package (usually com) must be the first \ndirectory within the JAR! If you were to accidentally include the \ndirectory above the package (e.g. the “classes” directory), the JAR \nwouldn’t work correctly.\nPackageExercise.class\nclasses\ncom\nheadfirstjava\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMaking an executable JAR with packages\nJAR\nMaking an executable JAR\n1\nMake sure all of your class files are \nwithin the correct package structure, \nunder the classes directory.\n2\nCreate a manifest.txt file that states \nwhich class has the main() method, \nand be sure to use the fully-qualified \nclass name!\nMake a text file named manifest.txt that has a \nsingle line:\nMain-Class: com.headfirstjava.PackageExercise\nPut the manifest file into the classes directory\n3\nRun the jar tool to create a JAR file \nthat contains the package directories \nplus the manifest\n%cd MyProject/classes \n%jar -cvmf manifest.txt packEx.jar com\npackEx.jar\nclasses\nmanifest.txt\nclasses\ncom\nheadfirstjava\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMain-Class: MiniApp\nPackageExercise.class\ncom\nheadfirstjava\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nPackageExercise.class\nAll you specify is the \ncom directory! And you’11 \nget everything in it!\nThe only thing you need to include is the ‘com’ \ndirectory, and the entire package (and all classes) \nwill go into the JAR.\nJARs and packages",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (136x108)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (134x106)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (151x243)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (88x139)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (140x112)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "592 \nchapter 17\nWhen your class is in a package, the package directory structure \nmust be inside the JAR! You can’t just pop your classes in the \nJAR the way we did pre-packages. And you must be sure that you \ndon’t include any other directories above your package. The \nfirst directory of your package (usually com) must be the first \ndirectory within the JAR! If you were to accidentally include the \ndirectory above the package (e.g. the “classes” directory), the JAR \nwouldn’t work correctly.\nPackageExercise.class\nclasses\ncom\nheadfirstjava\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMaking an executable JAR with packages\nJAR\nMaking an executable JAR\n1\nMake sure all of your class files are \nwithin the correct package structure, \nunder the classes directory.\n2\nCreate a manifest.txt file that states \nwhich class has the main() method, \nand be sure to use the fully-qualified \nclass name!\nMake a text file named manifest.txt that has a \nsingle line:\nMain-Class: com.headfirstjava.PackageExercise\nPut the manifest file into the classes directory\n3\nRun the jar tool to create a JAR file \nthat contains the package directories \nplus the manifest\n%cd MyProject/classes \n%jar -cvmf manifest.txt packEx.jar com\npackEx.jar\nclasses\nmanifest.txt\nclasses\ncom\nheadfirstjava\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMain-Class: MiniApp\nPackageExercise.class\ncom\nheadfirstjava\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nPackageExercise.class\nAll you specify is the \ncom directory! And you’11 \nget everything in it!\nThe only thing you need to include is the ‘com’ \ndirectory, and the entire package (and all classes) \nwill go into the JAR.\nJARs and packages",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 626,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 626,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1660 chars",
+      "severity": "info"
+    },
+    {
+      "page": 626,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 626,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

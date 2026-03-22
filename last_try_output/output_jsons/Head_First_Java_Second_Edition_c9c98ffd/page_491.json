@@ -1,0 +1,46 @@
+{
+  "page_number": 491,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n457\n public class NextCardListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n if (isShowAnswer) {\n // show the answer because they’ve seen the question\n display.setText(currentCard.getAnswer());\n nextButton.setText(“Next Card”);\n isShowAnswer = false;\n } else {\n // show the next question\n if (currentCardIndex < cardList.size()) {\n \n showNextCard();\n \n } else {\n // there are no more cards!\n display.setText(“That was last card”);\n nextButton.setEnabled(false);\n }\n }\n } \n } \n \n public class OpenMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n JFileChooser fileOpen = new JFileChooser();\n fileOpen.showOpenDialog(frame);\n loadFile(fileOpen.getSelectedFile());\n }\n }\n private void loadFile(File file) {\n cardList = new ArrayList<QuizCard>();\n try {\n BufferedReader reader = new BufferedReader(new FileReader(file));\n String line = null;\n while ((line = reader.readLine()) != null) {\n makeCard(line);\n }\n reader.close(); \n } catch(Exception ex) {\n System.out.println(“couldn’t read the card file”);\n ex.printStackTrace();\n }\n // now time to start by showing the first card \n showNextCard();\n }\n private void makeCard(String lineToParse) {\n String[] result = lineToParse.split(“/”);\n QuizCard card = new QuizCard(result[0], result[1]);\n cardList.add(card); \n System.out.println(“made a card”); \n }\n \n private void showNextCard() {\n currentCard = cardList.get(currentCardIndex);\n currentCardIndex++;\n display.setText(currentCard.getQuestion());\n nextButton.setText(“Show Answer”);\n isShowAnswer = true;\n }\n} // close class\n \nCheck the isShowAnswer boolean flag to \nsee if they’re currently viewing a question \nor an answer, and do the appropriate \nthing depending on the answer.\nBring up the file dialog box and let them \nnavigate to and choose the file to open.\nMake a BufferedReader chained \nto a new FileReader, giving the \nFileReader the File object the user \nchose from the open file dialog.\nRead a line at a time, passing the \nline to the makeCard() method \nthat parses it and turns it into a \nreal QuizCard and adds it to the \nArrayList.\nEach line of text corresponds to a single \nflashcard, but we have to parse out the \nquestion and answer as separate pieces. We \nuse the String split() method to break the \nline into two tokens (one for the question \nand one for the answer). We’11 look at the \nsplit() method on the next page.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n457\n public class NextCardListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n if (isShowAnswer) {\n // show the answer because they’ve seen the question\n display.setText(currentCard.getAnswer());\n nextButton.setText(“Next Card”);\n isShowAnswer = false;\n } else {\n // show the next question\n if (currentCardIndex < cardList.size()) {\n \n showNextCard();\n \n } else {\n // there are no more cards!\n display.setText(“That was last card”);\n nextButton.setEnabled(false);\n }\n }\n } \n } \n \n public class OpenMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n JFileChooser fileOpen = new JFileChooser();\n fileOpen.showOpenDialog(frame);\n loadFile(fileOpen.getSelectedFile());\n }\n }\n private void loadFile(File file) {\n cardList = new ArrayList<QuizCard>();\n try {\n BufferedReader reader = new BufferedReader(new FileReader(file));\n String line = null;\n while ((line = reader.readLine()) != null) {\n makeCard(line);\n }\n reader.close(); \n } catch(Exception ex) {\n System.out.println(“couldn’t read the card file”);\n ex.printStackTrace();\n }\n // now time to start by showing the first card \n showNextCard();\n }\n private void makeCard(String lineToParse) {\n String[] result = lineToParse.split(“/”);\n QuizCard card = new QuizCard(result[0], result[1]);\n cardList.add(card); \n System.out.println(“made a card”); \n }\n \n private void showNextCard() {\n currentCard = cardList.get(currentCardIndex);\n currentCardIndex++;\n display.setText(currentCard.getQuestion());\n nextButton.setText(“Show Answer”);\n isShowAnswer = true;\n }\n} // close class\n \nCheck the isShowAnswer boolean flag to \nsee if they’re currently viewing a question \nor an answer, and do the appropriate \nthing depending on the answer.\nBring up the file dialog box and let them \nnavigate to and choose the file to open.\nMake a BufferedReader chained \nto a new FileReader, giving the \nFileReader the File object the user \nchose from the open file dialog.\nRead a line at a time, passing the \nline to the makeCard() method \nthat parses it and turns it into a \nreal QuizCard and adds it to the \nArrayList.\nEach line of text corresponds to a single \nflashcard, but we have to parse out the \nquestion and answer as separate pieces. We \nuse the String split() method to break the \nline into two tokens (one for the question \nand one for the answer). We’11 look at the \nsplit() method on the next page.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 491,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 491,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2928 chars",
+      "severity": "info"
+    },
+    {
+      "page": 491,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

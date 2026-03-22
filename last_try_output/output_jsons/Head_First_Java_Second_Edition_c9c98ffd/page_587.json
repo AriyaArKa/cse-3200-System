@@ -1,0 +1,46 @@
+{
+  "page_number": 587,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n553\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox5 { \n ArrayList<Song> songList = new ArrayList<Song>(); \n public static void main(String[] args) {\n new Jukebox5().go();\n }\n class ArtistCompare implements Comparator<Song> {\n public int compare(Song one, Song two) { \n return one.getArtist().compareTo(two.getArtist());\n }\n }\n \n public void go() { \n \n getSongs(); \n System.out.println(songList);\n Collections.sort(songList);\n System.out.println(songList);\n ArtistCompare artistCompare = new ArtistCompare(); \n Collections.sort(songList, artistCompare);\n System.out.println(songList); \n \n }\n \n void getSongs() {\n // 1/0 code here\n }\n \n void addSong(String lineToParse) {\n // parse line and add to song list \n } \n \n}\nCreate a new inner class that implements \nComparator (note that its type \nparameter matches the type we’re going \nto compare—in this case Song objects.)\nUpdating the Jukebox to use a Comparator\nWe did three new things in this code:\n1) Created an inner class that implements Comparator (and thus the compare() \nmethod that does the work previously done by compareTo()).\n2) Made an instance of the Comparator inner class.\n3) Called the overloaded sort() method, giving it both the song list and the \ninstance of the Comparator inner class.\nNote: we also updated the Song class toString() method to print both the song \ntitle and the artist. (It prints title: artist regardless of how the list is sorted.)\nWe’re letting the String variables (for artist) \ndo the actual comparison, since Strings already \nknow how to alphabetize themselves.\nMake an instance of the \nComparator inner class.\nInvoke sort(), passing it the list \nand a reference to the new \ncustom Comparator object.\nNote: we’ve made sort-by-title the default sort, by \nkeeping the compareTo() method in Song use the \ntitles. But another way to design this would be to \nimplement both the title sorting and artist sorting as \ninner Comparator classes, and not have Song implement \nComparable at all. That means we’d always use the two-\narg version of Collections.sort().\nThis becomes a String (the artist)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n553\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox5 { \n ArrayList<Song> songList = new ArrayList<Song>(); \n public static void main(String[] args) {\n new Jukebox5().go();\n }\n class ArtistCompare implements Comparator<Song> {\n public int compare(Song one, Song two) { \n return one.getArtist().compareTo(two.getArtist());\n }\n }\n \n public void go() { \n \n getSongs(); \n System.out.println(songList);\n Collections.sort(songList);\n System.out.println(songList);\n ArtistCompare artistCompare = new ArtistCompare(); \n Collections.sort(songList, artistCompare);\n System.out.println(songList); \n \n }\n \n void getSongs() {\n // 1/0 code here\n }\n \n void addSong(String lineToParse) {\n // parse line and add to song list \n } \n \n}\nCreate a new inner class that implements \nComparator (note that its type \nparameter matches the type we’re going \nto compare—in this case Song objects.)\nUpdating the Jukebox to use a Comparator\nWe did three new things in this code:\n1) Created an inner class that implements Comparator (and thus the compare() \nmethod that does the work previously done by compareTo()).\n2) Made an instance of the Comparator inner class.\n3) Called the overloaded sort() method, giving it both the song list and the \ninstance of the Comparator inner class.\nNote: we also updated the Song class toString() method to print both the song \ntitle and the artist. (It prints title: artist regardless of how the list is sorted.)\nWe’re letting the String variables (for artist) \ndo the actual comparison, since Strings already \nknow how to alphabetize themselves.\nMake an instance of the \nComparator inner class.\nInvoke sort(), passing it the list \nand a reference to the new \ncustom Comparator object.\nNote: we’ve made sort-by-title the default sort, by \nkeeping the compareTo() method in Song use the \ntitles. But another way to design this would be to \nimplement both the title sorting and artist sorting as \ninner Comparator classes, and not have Song implement \nComparable at all. That means we’d always use the two-\narg version of Collections.sort().\nThis becomes a String (the artist)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 587,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 587,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2219 chars",
+      "severity": "info"
+    },
+    {
+      "page": 587,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 722,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the index \n688 \nindex\nDon’t you know about the web site? \nWe’ve got answers to some of the \nSharpens, examples, the Code Kitchens, \nReady-bake Code, and daily updates \nfrom the Head First author blogs!\nThis isn’t goodbye \nBring your brain over to\nwickedlysmart.com",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (312x375)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "the index \n688 \nindex\nDon’t you know about the web site? \nWe’ve got answers to some of the \nSharpens, examples, the Code Kitchens, \nReady-bake Code, and daily updates \nfrom the Head First author blogs!\nThis isn’t goodbye \nBring your brain over to\nwickedlysmart.com",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 722,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 722,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 266 chars",
+      "severity": "info"
+    },
+    {
+      "page": 722,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 722,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

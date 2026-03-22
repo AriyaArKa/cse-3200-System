@@ -1,0 +1,60 @@
+{
+  "page_number": 398,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "364 \nchapter 12\nIf you want to put your own graphics on the screen, your best \nbet is to make your own paintable widget. You plop that widget \non the frame, just like a button or any other widget, but when it \nshows up it will have your images on it. You can even make those \nimages move, in an animation, or make the colors on the screen \nchange every time you click a button. \nIt’5 a piece of cake.\nMake a subclass of JPanel and override one \nmethod, paintComponent(). \nAll of your graphics code goes inside the paintComponent() \nmethod. Think of the paintComponent() method as the method \ncalled by the system to say, “Hey widget, time to paint yourself.” \nIf you want to draw a circle, the paintComponent() method will \nhave code for drawing a circle. When the frame holding your \ndrawing panel is displayed, paintComponent() is called and your \ncircle appears. If the user iconifies/minimizes the window, the \nJVM knows the frame needs “repair” when it gets de-iconified, \n50 it calls paintComponent() again. Anytime the JVM thinks the \ndisplay needs refreshing, your paintComponent() method will be \ncalled. \nOne more thing, you never call this method yourself! The argument \nto this method (a Graphics object) is the actual drawing canvas \nthat gets slapped onto the real display. You can’t get this by \nyourself; it must be handed to you by the system. You’11 see \nlater, however, that you can ask the system to refresh the display \n(repaint()), which ultimately leads to paintComponent() being \ncalled. \nMake your own drawing widget\nmaking a drawing panel\nimport java.awt.*;\nimport javax.swing.*;\nclass MyDrawPanel extends JPanel {\n \n public void paintComponent(Graphics g) {\n g.setColor(Color.orange);\n g.fillRect(20,50,100,100);\n }\n}\nyou need both of these\nMake a subclass of JPanel, a widget \nthat you can add to a frame just like \nanything else. Except this one is your \nown customized widget.\nThis is the Big Important Graphics method. \nYou will NEVER call this yourself. The \nsystem calls it and says, “Here’5 a nice \nfresh drawing surface, of type Graphics, \nthat you may paint on now.”.\nImagine that ‘g’ is a painting machine. You’re \ntelling it what color to paint with and then \nwhat shape to paint (with coordinates for \nwhere it goes and how big it is)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x158)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "364 \nchapter 12\nIf you want to put your own graphics on the screen, your best \nbet is to make your own paintable widget. You plop that widget \non the frame, just like a button or any other widget, but when it \nshows up it will have your images on it. You can even make those \nimages move, in an animation, or make the colors on the screen \nchange every time you click a button. \nIt’5 a piece of cake.\nMake a subclass of JPanel and override one \nmethod, paintComponent(). \nAll of your graphics code goes inside the paintComponent() \nmethod. Think of the paintComponent() method as the method \ncalled by the system to say, “Hey widget, time to paint yourself.” \nIf you want to draw a circle, the paintComponent() method will \nhave code for drawing a circle. When the frame holding your \ndrawing panel is displayed, paintComponent() is called and your \ncircle appears. If the user iconifies/minimizes the window, the \nJVM knows the frame needs “repair” when it gets de-iconified, \n50 it calls paintComponent() again. Anytime the JVM thinks the \ndisplay needs refreshing, your paintComponent() method will be \ncalled. \nOne more thing, you never call this method yourself! The argument \nto this method (a Graphics object) is the actual drawing canvas \nthat gets slapped onto the real display. You can’t get this by \nyourself; it must be handed to you by the system. You’11 see \nlater, however, that you can ask the system to refresh the display \n(repaint()), which ultimately leads to paintComponent() being \ncalled. \nMake your own drawing widget\nmaking a drawing panel\nimport java.awt.*;\nimport javax.swing.*;\nclass MyDrawPanel extends JPanel {\n \n public void paintComponent(Graphics g) {\n g.setColor(Color.orange);\n g.fillRect(20,50,100,100);\n }\n}\nyou need both of these\nMake a subclass of JPanel, a widget \nthat you can add to a frame just like \nanything else. Except this one is your \nown customized widget.\nThis is the Big Important Graphics method. \nYou will NEVER call this yourself. The \nsystem calls it and says, “Here’5 a nice \nfresh drawing surface, of type Graphics, \nthat you may paint on now.”.\nImagine that ‘g’ is a painting machine. You’re \ntelling it what color to paint with and then \nwhat shape to paint (with coordinates for \nwhere it goes and how big it is)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 398,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 398,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2304 chars",
+      "severity": "info"
+    },
+    {
+      "page": 398,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 398,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

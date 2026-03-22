@@ -1,0 +1,345 @@
+{
+  "page_number": 60,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "26 \nchapter 1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\nJ A V A\nR\nR\nA\nY\n5\n8 A N C H\n5\nT\nA\nT\n1\nC\nM\nA\n1\nN\nY T E 0 U T P R 1 N T\nW\n1\nL\nN T\n5 R 1 6\nD E C L A R E\nC 0 M M A N D\nJ\nV\nM\nT\nH\n0\n1 C\nP\nU\n8\nL\n1\nV\nA\nR\nA\n8\nE\nC\n0\nM\n1\nL\nR\nV\n0\n1\nD\nF\nL\n0\nA\n0 P\nclass PoolPuzzleOne {\n public static void main(String [] args) {\n int x = 0;\n while ( X < 4 ) {\n System.out.print(“a”);\n if ( x < 1 ) {\n System.out.print(“ “);\n }\n System.out.print(“n”);\n if ( X > 1 ) {\n \n System.out.print(“ oyster”);\n x = x + 2; \n }\n if ( x == 1 ) {\n System.out.print(“noys”);\n }\n if ( X < 1 ) {\n System.out.print(“oise”);\n }\n System.out.println(““);\n X = X + 1;\n }\n }\n}\nFile Edit Window Help Cheat\n%java PoolPuzzleOne\na noise\nannoys\nan oyster\nclass Test {\n public static void main(String [] args) {\n int x = 0;\n int y = 0; \n while ( x < 5 ) {\n \n \n \n \n System.out.print(x + ““ + y +“ “);\n x = x + 1;\n \n }\n }\n} \ny = x - y;\ny = y + x;\ny = y + 2;\nif( y > 4 ) {\n y = y - 1;\n}\nx = x + 1;\ny = y + x;\nif ( y < 5 ) {\n x = x + 1;\n if ( y < 3 ) {\n x = x - 1;\n }\n}\ny = y + 2;\n22 46\n11 34 59\n02 14 26 38\n02 14 36 48\n00 11 21 32 42\n11 21 32 42 53\n00 11 23 36 410\n02 14 25 36 47\nCandidates: \n \n \n \n Possible output:\npuzzle answers",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7661,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1\nF",
+          "",
+          "2\nV",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "3\nP"
+        ],
+        [
+          "4\nJ",
+          "5\nA",
+          "V",
+          "A",
+          "",
+          "",
+          "",
+          "6\nL",
+          "0",
+          "0",
+          "P",
+          "",
+          "",
+          "",
+          "",
+          "U"
+        ],
+        [
+          "",
+          "R",
+          "",
+          "",
+          "",
+          "7\nW",
+          "",
+          "0",
+          "",
+          "1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "8"
+        ],
+        [
+          "8\n8",
+          "R",
+          "A",
+          "N",
+          "C",
+          "H",
+          "",
+          "A",
+          "",
+          "9\nD",
+          "10\nC",
+          "",
+          "11\nV",
+          "",
+          "",
+          "L"
+        ],
+        [
+          "",
+          "A",
+          "",
+          "",
+          "",
+          "12\n1",
+          "N",
+          "T",
+          "",
+          "",
+          "0",
+          "",
+          "A",
+          "",
+          "",
+          "1"
+        ],
+        [
+          "",
+          "Y",
+          "",
+          "",
+          "",
+          "L",
+          "",
+          "",
+          "",
+          "",
+          "M",
+          "",
+          "R",
+          "",
+          "13\n1",
+          "C"
+        ],
+        [
+          "",
+          "14\n5",
+          "Y",
+          "15\n5",
+          "T",
+          "E",
+          "16\nM",
+          "0",
+          "U",
+          "T",
+          "P",
+          "R",
+          "1",
+          "N",
+          "T",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "T",
+          "",
+          "",
+          "A",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "A",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "A",
+          "",
+          "",
+          "1",
+          "",
+          "",
+          "",
+          "L",
+          "",
+          "8",
+          "",
+          "",
+          "17\nM"
+        ],
+        [
+          "",
+          "",
+          "18\n5",
+          "T",
+          "R",
+          "1",
+          "N",
+          "6",
+          "",
+          "19\nD",
+          "E",
+          "C",
+          "L",
+          "A",
+          "R",
+          "E"
+        ],
+        [
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "R",
+          "",
+          "E",
+          "",
+          "",
+          "T"
+        ],
+        [
+          "",
+          "",
+          "",
+          "C",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "20\nJ",
+          "",
+          "",
+          "",
+          "H"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "V",
+          "",
+          "",
+          "",
+          "0"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "21C",
+          "0",
+          "M",
+          "M",
+          "A",
+          "N",
+          "D"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "y = y + 2;\nif( y > 4\ny = y -\n}",
+          ") {\n1;"
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Cheat"
+        ],
+        [
+          "%java PoolPuzzleOne\na noise\nannoys\nan oyster"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "26 \nchapter 1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\nJ A V A\nR\nR\nA\nY\n5\n8 A N C H\n5\nT\nA\nT\n1\nC\nM\nA\n1\nN\nY T E 0 U T P R 1 N T\nW\n1\nL\nN T\n5 R 1 6\nD E C L A R E\nC 0 M M A N D\nJ\nV\nM\nT\nH\n0\n1 C\nP\nU\n8\nL\n1\nV\nA\nR\nA\n8\nE\nC\n0\nM\n1\nL\nR\nV\n0\n1\nD\nF\nL\n0\nA\n0 P\nclass PoolPuzzleOne {\n public static void main(String [] args) {\n int x = 0;\n while ( X < 4 ) {\n System.out.print(“a”);\n if ( x < 1 ) {\n System.out.print(“ “);\n }\n System.out.print(“n”);\n if ( X > 1 ) {\n \n System.out.print(“ oyster”);\n x = x + 2; \n }\n if ( x == 1 ) {\n System.out.print(“noys”);\n }\n if ( X < 1 ) {\n System.out.print(“oise”);\n }\n System.out.println(““);\n X = X + 1;\n }\n }\n}\nFile Edit Window Help Cheat\n%java PoolPuzzleOne\na noise\nannoys\nan oyster\nclass Test {\n public static void main(String [] args) {\n int x = 0;\n int y = 0; \n while ( x < 5 ) {\n \n \n \n \n System.out.print(x + ““ + y +“ “);\n x = x + 1;\n \n }\n }\n} \ny = x - y;\ny = y + x;\ny = y + 2;\nif( y > 4 ) {\n y = y - 1;\n}\nx = x + 1;\ny = y + x;\nif ( y < 5 ) {\n x = x + 1;\n if ( y < 3 ) {\n x = x - 1;\n }\n}\ny = y + 2;\n22 46\n11 34 59\n02 14 26 38\n02 14 36 48\n00 11 21 32 42\n11 21 32 42 53\n00 11 23 36 410\n02 14 25 36 47\nCandidates: \n \n \n \n Possible output:\npuzzle answers",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 60,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 60,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1466 chars",
+      "severity": "info"
+    },
+    {
+      "page": 60,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 60,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

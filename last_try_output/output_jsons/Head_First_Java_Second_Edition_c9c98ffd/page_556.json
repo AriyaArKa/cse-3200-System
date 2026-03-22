@@ -1,0 +1,46 @@
+{
+  "page_number": 556,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "522 \nchapter 15\nthere are no\nDumb Questions\nQ: What about protecting static \nvariable state? If you have static \nmethods that change the static variable \nstate, can you still use synchronization?\nA: Yes! Remember that static \nmethods run against the class and not \nagainst an individual instance of the class. \n50 you might wonder whose object’5 lock \nwould be used on a static method? After \nall, there might not even be any instances \nof that class. Fortunately, just as each \nobject has its own lock, each loaded class \nhas a lock. That means that if you have \nthree Dog objects on your heap, you have \na total of four Dog-related locks. Three \nbelonging to the three Dog instances, \nand one belonging to the Dog class itself. \nWhen you synchronize a static method, \nJava uses the lock of the class itself. 50 if \nyou synchronize two static methods in a \nsingle class, a thread will need the class \nlock to enter either of the methods.\nQ: What are thread priorities? 1’ve \nheard that’5 a way you can control \nscheduling.\nA: Thread priorities might help \nyou influence the scheduler, but they \nstill don’t offer any guarantee. Thread \npriorities are numerical values that tell \nthe scheduler (if it cares) how important a \nthread is to you. In general, the scheduler \nwill kick a lower priority thread out of the \nrunning state if a higher priority thread \nsuddenly becomes runnable. But... one \nmore time, say it with me now, “there \nis no guarantee.” We recommend that \nyou use priorities only if you want to \ninfluence performance, but never, ever \nrely on them for program correctness.\nQ: Why don’t you just synchronize \nall the getters and setters from the \nclass with the data you’re trying to \nprotect? Like, why couldn’t we have \nsynchronized just the checkBalance() \nand withdraw() methods from class \nBankAccount, instead of synchronizing \nthe makeWithdrawal() method from \nthe Runnable’5 class?\nA: Actually, we should have \nsynchronized those methods, to prevent \nother threads from accessing those \nmethods in other ways. We didn’t \nbother, because our example didn’t have \nany other code accessing the account. \nBut synchronizing the getters \nand setters (or in this case the \ncheckBalance() and withdraw()) isn’t \nenough. Remember, the point of \nsynchronization is to make a specific \nsection of code work ATOMICALLY. In \nother words, it’5 not just the individual \nmethods we care about, it’5 methods \nthat require more than one step to \ncomplete! Think about it. If we had not \nsynchronized the makeWithdrawal() \nmethod, Ryan would have checked the \nbalance (by calling the synchronized \ncheckBalance()), and then immediately \nexited the method and returned the key!\nOf course he would grab the key again, \nafter he wakes up, 50 that he can call \nthe synchronized withdraw() method, \nbut this still leaves us with the same \nproblem we had before synchronization! \nRyan can check the balance, go to sleep, \nand Monica can come in and also check \nthe balance before Ryan has a chance to \nwakes up and completes his withdrawal.\n50 synchronizing all the access methods \nis probably a good idea, to prevent \nother threads from getting in, but you \nstill need to synchronize the methods \nthat have statements that must execute \nas one atomic unit.\nsynchronization questions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "522 \nchapter 15\nthere are no\nDumb Questions\nQ: What about protecting static \nvariable state? If you have static \nmethods that change the static variable \nstate, can you still use synchronization?\nA: Yes! Remember that static \nmethods run against the class and not \nagainst an individual instance of the class. \n50 you might wonder whose object’5 lock \nwould be used on a static method? After \nall, there might not even be any instances \nof that class. Fortunately, just as each \nobject has its own lock, each loaded class \nhas a lock. That means that if you have \nthree Dog objects on your heap, you have \na total of four Dog-related locks. Three \nbelonging to the three Dog instances, \nand one belonging to the Dog class itself. \nWhen you synchronize a static method, \nJava uses the lock of the class itself. 50 if \nyou synchronize two static methods in a \nsingle class, a thread will need the class \nlock to enter either of the methods.\nQ: What are thread priorities? 1’ve \nheard that’5 a way you can control \nscheduling.\nA: Thread priorities might help \nyou influence the scheduler, but they \nstill don’t offer any guarantee. Thread \npriorities are numerical values that tell \nthe scheduler (if it cares) how important a \nthread is to you. In general, the scheduler \nwill kick a lower priority thread out of the \nrunning state if a higher priority thread \nsuddenly becomes runnable. But... one \nmore time, say it with me now, “there \nis no guarantee.” We recommend that \nyou use priorities only if you want to \ninfluence performance, but never, ever \nrely on them for program correctness.\nQ: Why don’t you just synchronize \nall the getters and setters from the \nclass with the data you’re trying to \nprotect? Like, why couldn’t we have \nsynchronized just the checkBalance() \nand withdraw() methods from class \nBankAccount, instead of synchronizing \nthe makeWithdrawal() method from \nthe Runnable’5 class?\nA: Actually, we should have \nsynchronized those methods, to prevent \nother threads from accessing those \nmethods in other ways. We didn’t \nbother, because our example didn’t have \nany other code accessing the account. \nBut synchronizing the getters \nand setters (or in this case the \ncheckBalance() and withdraw()) isn’t \nenough. Remember, the point of \nsynchronization is to make a specific \nsection of code work ATOMICALLY. In \nother words, it’5 not just the individual \nmethods we care about, it’5 methods \nthat require more than one step to \ncomplete! Think about it. If we had not \nsynchronized the makeWithdrawal() \nmethod, Ryan would have checked the \nbalance (by calling the synchronized \ncheckBalance()), and then immediately \nexited the method and returned the key!\nOf course he would grab the key again, \nafter he wakes up, 50 that he can call \nthe synchronized withdraw() method, \nbut this still leaves us with the same \nproblem we had before synchronization! \nRyan can check the balance, go to sleep, \nand Monica can come in and also check \nthe balance before Ryan has a chance to \nwakes up and completes his withdrawal.\n50 synchronizing all the access methods \nis probably a good idea, to prevent \nother threads from getting in, but you \nstill need to synchronize the methods \nthat have statements that must execute \nas one atomic unit.\nsynchronization questions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 556,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 556,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3288 chars",
+      "severity": "info"
+    },
+    {
+      "page": 556,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

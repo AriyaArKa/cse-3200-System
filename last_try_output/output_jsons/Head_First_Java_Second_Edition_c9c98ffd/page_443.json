@@ -1,0 +1,95 @@
+{
+  "page_number": 443,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n409\n public void go() {\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n JButton button = new JButton(“shock me”);\n panel.add(button);\n frame.getContentPane().add(BorderLayout.EAST, panel);\n frame.setSize(250,200);\n frame.setVisible(true);\n }\nLet’5 add a button to the panel\nAdd the button to the panel and add the \npanel to the frame. The panel’5 layout manager \n(flow) controls the button, and the frame’5 \nlayout manager (border) controls the panel.\nThe panel expanded!\nAnd the button got its \npreferred size in both \ndimensions, because the panel \nuses flow layout, and the \nbutton is part of the panel \n(not the frame).\nP\na\nn\ne\n1\n \n0\nb\nje\nc\nt\n \n1 have a button now, \n50 my layout manager’5 \ngonna have to figure out \nhow big 1 need to be...\n8\nu\nt\nt\n0\nn\n \n0\nb\nj\ne\nc\nt\n \nThe frame’5 \nBorderLayout manager\nBased on my font size \nand the number of \ncharacters, 1 want to be 70 \npixels wide and 20 pixels tall.\nOk... 1 need to \nknow how big the \npanel wants to be...\nThe panel’5 \nFlowLayout manager\n1 need \nto know how big the \nbutton wants to \nbe...\ncontrols\ncontrols\npanel\npanel",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (257x206)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (164x434)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (106x107)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (135x416)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (206x206)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (87x33)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "using swing\nyou are here\n409\n public void go() {\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n JButton button = new JButton(“shock me”);\n panel.add(button);\n frame.getContentPane().add(BorderLayout.EAST, panel);\n frame.setSize(250,200);\n frame.setVisible(true);\n }\nLet’5 add a button to the panel\nAdd the button to the panel and add the \npanel to the frame. The panel’5 layout manager \n(flow) controls the button, and the frame’5 \nlayout manager (border) controls the panel.\nThe panel expanded!\nAnd the button got its \npreferred size in both \ndimensions, because the panel \nuses flow layout, and the \nbutton is part of the panel \n(not the frame).\nP\na\nn\ne\n1\n \n0\nb\nje\nc\nt\n \n1 have a button now, \n50 my layout manager’5 \ngonna have to figure out \nhow big 1 need to be...\n8\nu\nt\nt\n0\nn\n \n0\nb\nj\ne\nc\nt\n \nThe frame’5 \nBorderLayout manager\nBased on my font size \nand the number of \ncharacters, 1 want to be 70 \npixels wide and 20 pixels tall.\nOk... 1 need to \nknow how big the \npanel wants to be...\nThe panel’5 \nFlowLayout manager\n1 need \nto know how big the \nbutton wants to \nbe...\ncontrols\ncontrols\npanel\npanel",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 443,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 443,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1214 chars",
+      "severity": "info"
+    },
+    {
+      "page": 443,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 443,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

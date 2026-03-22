@@ -1,0 +1,73 @@
+{
+  "page_number": 580,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "546 \nchapter 16\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox3 {\n \nArrayList<Song> songList = new ArrayList<Song>(); \n \npublic static void main(String[] args) {\n \n \nnew Jukebox3().go();\n \n} \n \npublic void go() { \n \n \n \ngetSongs(); \n \n \nSystem.out.println(songList);\n \n \nCollections.sort(songList);\n \n \nSystem.out.println(songList); \n \n \n} \n \nvoid getSongs() {\n \n \ntry {\n \n \n \nFile file = new File(“SongListMore.txt”);\n \n \n \nBufferedReader reader = new BufferedReader(new FileReader(file));\n \n \n \nString line = null;\n \n \n \nwhile ((line= reader.readLine()) != null) {\n \n \n \n \naddSong(line);\n \n \n \n}\n \n \n} catch(Exception ex) {\n \n \n \nex.printStackTrace();\n \n \n}\n \n}\n \nvoid addSong(String lineToParse) {\n \n \nString[] tokens = lineToParse.split(“/”);\n \n \nSong nextSong = new Song(tokens[0], tokens[1], tokens[2], tokens[3]);\n \n \nsongList.add(nextSong); \n \n \n} \n \n}\nThis still doesn’t \nexplain why the sort method \nfailed on an ArrayList of Songs \nbut worked for an ArrayList of \nStrings...\nRemember where we were...\nThis is where it breaks! It worked fine when \npassed in an ArrayList<String>, but as soon as we \ntried to sort an ArrayList<Song>, it failed.\nFile Edit Window Help Bummer\n%javac Jukebox3.java\nJukebox3.java:15: cannot find symbol\nsymbol : method sort(java.util.ArrayList<Song>)\nlocation: class java.util.Collections\n Collections.sort(songList);\n ^\n1 error\nsorting a Song",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Bummer"
+        ],
+        [
+          "%javac Jukebox3.java\nJukebox3.java:15: cannot find symbol\nsymbol : method sort(java.util.ArrayList<Song>)\nlocation: class java.util.Collections\nCollections.sort(songList);\n^\n1 error"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (345x407)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "546 \nchapter 16\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox3 {\n \nArrayList<Song> songList = new ArrayList<Song>(); \n \npublic static void main(String[] args) {\n \n \nnew Jukebox3().go();\n \n} \n \npublic void go() { \n \n \n \ngetSongs(); \n \n \nSystem.out.println(songList);\n \n \nCollections.sort(songList);\n \n \nSystem.out.println(songList); \n \n \n} \n \nvoid getSongs() {\n \n \ntry {\n \n \n \nFile file = new File(“SongListMore.txt”);\n \n \n \nBufferedReader reader = new BufferedReader(new FileReader(file));\n \n \n \nString line = null;\n \n \n \nwhile ((line= reader.readLine()) != null) {\n \n \n \n \naddSong(line);\n \n \n \n}\n \n \n} catch(Exception ex) {\n \n \n \nex.printStackTrace();\n \n \n}\n \n}\n \nvoid addSong(String lineToParse) {\n \n \nString[] tokens = lineToParse.split(“/”);\n \n \nSong nextSong = new Song(tokens[0], tokens[1], tokens[2], tokens[3]);\n \n \nsongList.add(nextSong); \n \n \n} \n \n}\nThis still doesn’t \nexplain why the sort method \nfailed on an ArrayList of Songs \nbut worked for an ArrayList of \nStrings...\nRemember where we were...\nThis is where it breaks! It worked fine when \npassed in an ArrayList<String>, but as soon as we \ntried to sort an ArrayList<Song>, it failed.\nFile Edit Window Help Bummer\n%javac Jukebox3.java\nJukebox3.java:15: cannot find symbol\nsymbol : method sort(java.util.ArrayList<Song>)\nlocation: class java.util.Collections\n Collections.sort(songList);\n ^\n1 error\nsorting a Song",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 580,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 580,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1443 chars",
+      "severity": "info"
+    },
+    {
+      "page": 580,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 580,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 453,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n419\nThis is the full code listing for this version of the BeatBox, with buttons for starting, \nstopping, and changing the tempo. The code listing is complete, and fully-\nannotated, but here’5 the overview:\nMaking the BeatBox\n1\n2\n3\n4\nBuild a GUI that has 256 checkboxes (JCheckBox) that start out \nunchecked, 16 labels (JLabel) for the instrument names, and four \nbuttons.\nRegister an ActionListener for each of the four buttons. We don’t \nneed listeners for the individual checkboxes, because we aren’t \ntrying to change the pattern sound dynamically (i.e. as soon as the \nuser checks a box). Instead, we wait until the user hits the ‘start’ \nbutton, and then walk through all 256 checkboxes to get their state \nand make a MIDI track.\nSet-up the MIDI system (you’ve done this before) including getting \na Sequencer, making a Sequence, and creating a track. We are using \na sequencer method that’5 new to Java 5.0, setLoopCount( ). This \nmethod allows you to specify how many times you want a sequence \nto loop. We’re also using the sequence’5 tempo factor to adjust the \ntempo up or down, and maintain the new tempo from one iteration of \nthe loop to the next.\nWhen the user hits ‘start’, the real action begins. The event-handling \nmethod for the ‘start’ button calls the buildTrackAndStart() method. \nIn that method, we walk through all 256 checkboxes (one row at \na time, a single instrument across all 16 beats) to get their state, \nthen use the information to build a MIDI track (using the handy \nmakeEvent() method we used in the previous chapter). Once the track \nis built, we start the sequencer, which keeps playing (because we’re \nlooping it) until the user hits ‘stop’.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "using swing\nyou are here\n419\nThis is the full code listing for this version of the BeatBox, with buttons for starting, \nstopping, and changing the tempo. The code listing is complete, and fully-\nannotated, but here’5 the overview:\nMaking the BeatBox\n1\n2\n3\n4\nBuild a GUI that has 256 checkboxes (JCheckBox) that start out \nunchecked, 16 labels (JLabel) for the instrument names, and four \nbuttons.\nRegister an ActionListener for each of the four buttons. We don’t \nneed listeners for the individual checkboxes, because we aren’t \ntrying to change the pattern sound dynamically (i.e. as soon as the \nuser checks a box). Instead, we wait until the user hits the ‘start’ \nbutton, and then walk through all 256 checkboxes to get their state \nand make a MIDI track.\nSet-up the MIDI system (you’ve done this before) including getting \na Sequencer, making a Sequence, and creating a track. We are using \na sequencer method that’5 new to Java 5.0, setLoopCount( ). This \nmethod allows you to specify how many times you want a sequence \nto loop. We’re also using the sequence’5 tempo factor to adjust the \ntempo up or down, and maintain the new tempo from one iteration of \nthe loop to the next.\nWhen the user hits ‘start’, the real action begins. The event-handling \nmethod for the ‘start’ button calls the buildTrackAndStart() method. \nIn that method, we walk through all 256 checkboxes (one row at \na time, a single instrument across all 16 beats) to get their state, \nthen use the information to build a MIDI track (using the handy \nmakeEvent() method we used in the previous chapter). Once the track \nis built, we start the sequencer, which keeps playing (because we’re \nlooping it) until the user hits ‘stop’.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 453,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 453,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1707 chars",
+      "severity": "info"
+    },
+    {
+      "page": 453,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

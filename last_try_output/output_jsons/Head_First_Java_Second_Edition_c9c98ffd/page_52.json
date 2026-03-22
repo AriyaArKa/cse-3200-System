@@ -1,0 +1,60 @@
+{
+  "page_number": 52,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "18 \nchapter 1\nThe Java Virtual Machine\nWhat, are you kidding? HELLO. 1 am Java. \n1’m the guy who actually makes a program \nrun. The compiler just gives you a file. That’5 \nit. Just a file. You can print it out and use it \nfor wall paper, kindling, lining the bird cage \nwhatever, but the file doesn’t do anything un-\nless 1’m there to run it.\nAnd that’5 another thing, the compiler has \nno sense of humor. Then again, if you had to \nspend all day checking nit-picky little syntax \nviolations...\n1’m not saying you’re, like, completely useless. \nBut really, what is it that you do? Seriously. 1 \nhave no idea. A programmer could just write \nbytecode by hand, and 1’d take it. You might \nbe out of a job soon, buddy.\n(1 rest my case on the humor thing.) But you \nstill didn’t answer my question, what do you \nactually do?\nThe Compiler\n1 don’t appreciate that tone.\nExcuse me, but without me, what exactly \nwould you run? There’5 a reason Java was \ndesigned to use a bytecode compiler, for your \ninformation. If Java were a purely interpreted \nlanguage, where—at runtime—the virtual \nmachine had to translate straight-from-a-text-\neditor source code, a Java program would \nrun at a ludicrously glacial pace. Java’5 had a \nchallenging enough time convincing people \nthat it’5 finally fast and powerful enough for \nmost jobs.\nExcuse me, but that’5 quite an ignorant (not \nto mention arrogant) perspective. While it \nis true that­—theoretically—you can run any \nproperly formatted bytecode even if it didn’t \ncome out of a Java compiler, in practice that’5 \nabsurd. A programmer writing bytecode by \nhand is like doing your word processing by \nwriting raw postscript. And 1 would appreciate \nit if you would not refer to me as “buddy.”\nTonight’5 Talk: The compiler and \nthe JVM battle over the question, \n“Who’5 more important?”\nthe compiler and the JVM",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (362x192)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "18 \nchapter 1\nThe Java Virtual Machine\nWhat, are you kidding? HELLO. 1 am Java. \n1’m the guy who actually makes a program \nrun. The compiler just gives you a file. That’5 \nit. Just a file. You can print it out and use it \nfor wall paper, kindling, lining the bird cage \nwhatever, but the file doesn’t do anything un-\nless 1’m there to run it.\nAnd that’5 another thing, the compiler has \nno sense of humor. Then again, if you had to \nspend all day checking nit-picky little syntax \nviolations...\n1’m not saying you’re, like, completely useless. \nBut really, what is it that you do? Seriously. 1 \nhave no idea. A programmer could just write \nbytecode by hand, and 1’d take it. You might \nbe out of a job soon, buddy.\n(1 rest my case on the humor thing.) But you \nstill didn’t answer my question, what do you \nactually do?\nThe Compiler\n1 don’t appreciate that tone.\nExcuse me, but without me, what exactly \nwould you run? There’5 a reason Java was \ndesigned to use a bytecode compiler, for your \ninformation. If Java were a purely interpreted \nlanguage, where—at runtime—the virtual \nmachine had to translate straight-from-a-text-\neditor source code, a Java program would \nrun at a ludicrously glacial pace. Java’5 had a \nchallenging enough time convincing people \nthat it’5 finally fast and powerful enough for \nmost jobs.\nExcuse me, but that’5 quite an ignorant (not \nto mention arrogant) perspective. While it \nis true that­—theoretically—you can run any \nproperly formatted bytecode even if it didn’t \ncome out of a Java compiler, in practice that’5 \nabsurd. A programmer writing bytecode by \nhand is like doing your word processing by \nwriting raw postscript. And 1 would appreciate \nit if you would not refer to me as “buddy.”\nTonight’5 Talk: The compiler and \nthe JVM battle over the question, \n“Who’5 more important?”\nthe compiler and the JVM",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 52,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 52,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1848 chars",
+      "severity": "info"
+    },
+    {
+      "page": 52,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 52,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

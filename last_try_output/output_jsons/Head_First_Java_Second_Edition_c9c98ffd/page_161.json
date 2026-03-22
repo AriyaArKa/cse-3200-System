@@ -1,0 +1,46 @@
+{
+  "page_number": 161,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n127\n50 what happened?\npublic String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++;\n break;\n } // end if\n } // end for\n if (numOfHits == locationCells.length) {\n result = “kill”;\n } // end if\n System.out.println(result);\n return result;\n} // end method\nConvert the String \nto an int.\nMake a variable to hold the result we’11 \nreturn. Put “miss” in as the default \n(i.e. we assume a “miss”).\nRepeat with each \nthing in the array. \nCompare the user \nguess to this element \n(cell), in the array.\nwe got a hit!\nGet out of the loop, no need \nto test the other cells.\nWe’re out of the loop, but \nlet’5 see if we’re now ‘dead’ \n(hit 3 times) and change the \nresult String to “kill”.\nDisplay the result for the user\n(“miss”, unless it was changed to “hit” or “kill”).\nReturn the result back to \nthe calling method.\nHere’5 where it \ngoes wrong. We \ncounted a hit every \ntime the user \nguessed a cell \nlocation, even if \nthat location had \nalready been hit!\nWe need a way to \nknow that when \na user makes \na hit, he hasn’t \npreviously hit that \ncell. If he has, then \nwe don’t want to \ncount it as a hit.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "get to know the Java API \nyou are here\n127\n50 what happened?\npublic String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++;\n break;\n } // end if\n } // end for\n if (numOfHits == locationCells.length) {\n result = “kill”;\n } // end if\n System.out.println(result);\n return result;\n} // end method\nConvert the String \nto an int.\nMake a variable to hold the result we’11 \nreturn. Put “miss” in as the default \n(i.e. we assume a “miss”).\nRepeat with each \nthing in the array. \nCompare the user \nguess to this element \n(cell), in the array.\nwe got a hit!\nGet out of the loop, no need \nto test the other cells.\nWe’re out of the loop, but \nlet’5 see if we’re now ‘dead’ \n(hit 3 times) and change the \nresult String to “kill”.\nDisplay the result for the user\n(“miss”, unless it was changed to “hit” or “kill”).\nReturn the result back to \nthe calling method.\nHere’5 where it \ngoes wrong. We \ncounted a hit every \ntime the user \nguessed a cell \nlocation, even if \nthat location had \nalready been hit!\nWe need a way to \nknow that when \na user makes \na hit, he hasn’t \npreviously hit that \ncell. If he has, then \nwe don’t want to \ncount it as a hit.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 161,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 161,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1352 chars",
+      "severity": "info"
+    },
+    {
+      "page": 161,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

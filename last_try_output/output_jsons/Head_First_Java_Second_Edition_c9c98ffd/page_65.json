@@ -1,0 +1,261 @@
+{
+  "page_number": 65,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nclasses and objects\n31\n50, Brad the 00 guy got the chair, right?\nNot 50 fast. Larry found a flaw in Brad’5 approach. And, \nsince he was sure that if he got the chair he’d also get Lucy \nin accounting, he had to turn this thing around.\nLARRY: You’ve got duplicated code! The rotate \nprocedure is in all four Shape things.\nBRAD: It’5 a method, not a procedure. And they’re classes, \nnot things.\nLARRY: Whatever. It’5 a stupid design. You have to \nmaintain four different rotate “methods”. How can that \never be good?\nBRAD: Oh, 1 guess you didn’t see the final design. Let me \nshow you how 00 inheritance works, Larry. \nWhat Larry wanted\n(figured the chair would impress her)\nThey’re Shapes, and they all rotate and \nplaySound. 50 1 abstracted out the \ncommon features and put them into a \nnew class called Shape.\nShape\n rotate() \n playSound() \nTriangle\n \nSquare\nCircle\nAmoeba\nShape\n rotate() \n playSound() \nsuperclass\nsubclasses\nThen 1 linked the other \nfour shape classes to \nthe new Shape class, \nin a relationship called \ninheritance. \nTriangle\n rotate() \n playSound() \nSquare\n rotate() \n playSound() \nCircle\n rotate() \n playSound() \n1 looked at what all four \nclasses have in common.\nAmoeba\n rotate() \n playSound() \n1\n2\n3\nYou can read this as, “Square inherits from Shape”, \n“Circle inherits from Shape”, and 50 on. 1 removed \nrotate() and playSound() from the other shapes, 50 now \nthere’5 only one copy to maintain.\nThe Shape class is called the superclass of the other four \nclasses. The other four are the subclasses of Shape. The \nsubclasses inherit the methods of the superclass. In other \nwords, if the Shape class has the functionality, then the \nsubclasses automatically get that same functionality.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Square"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Circle"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Triangle"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Amoeba"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Shape"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Shape"
+        ],
+        [
+          "rotate()\nplaySound()"
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 0.75,
+      "rows": [
+        [
+          "subclas",
+          "ses"
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          "Triangle"
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 8,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Square"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 9,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Circle"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 10,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Amoeba"
+        ],
+        [
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (542x442)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x162)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 9,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 10,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x163)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 11,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x163)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nclasses and objects\n31\n50, Brad the 00 guy got the chair, right?\nNot 50 fast. Larry found a flaw in Brad’5 approach. And, \nsince he was sure that if he got the chair he’d also get Lucy \nin accounting, he had to turn this thing around.\nLARRY: You’ve got duplicated code! The rotate \nprocedure is in all four Shape things.\nBRAD: It’5 a method, not a procedure. And they’re classes, \nnot things.\nLARRY: Whatever. It’5 a stupid design. You have to \nmaintain four different rotate “methods”. How can that \never be good?\nBRAD: Oh, 1 guess you didn’t see the final design. Let me \nshow you how 00 inheritance works, Larry. \nWhat Larry wanted\n(figured the chair would impress her)\nThey’re Shapes, and they all rotate and \nplaySound. 50 1 abstracted out the \ncommon features and put them into a \nnew class called Shape.\nShape\n rotate() \n playSound() \nTriangle\n \nSquare\nCircle\nAmoeba\nShape\n rotate() \n playSound() \nsuperclass\nsubclasses\nThen 1 linked the other \nfour shape classes to \nthe new Shape class, \nin a relationship called \ninheritance. \nTriangle\n rotate() \n playSound() \nSquare\n rotate() \n playSound() \nCircle\n rotate() \n playSound() \n1 looked at what all four \nclasses have in common.\nAmoeba\n rotate() \n playSound() \n1\n2\n3\nYou can read this as, “Square inherits from Shape”, \n“Circle inherits from Shape”, and 50 on. 1 removed \nrotate() and playSound() from the other shapes, 50 now \nthere’5 only one copy to maintain.\nThe Shape class is called the superclass of the other four \nclasses. The other four are the subclasses of Shape. The \nsubclasses inherit the methods of the superclass. In other \nwords, if the Shape class has the functionality, then the \nsubclasses automatically get that same functionality.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 65,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 65,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1729 chars",
+      "severity": "info"
+    },
+    {
+      "page": 65,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 11",
+      "severity": "info"
+    },
+    {
+      "page": 65,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "page_number": 67,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nclasses and objects\n33\nmetacognitive tip\nIf you’re stuck on an exercise, try talking about \nit out loud. Speaking (and hearing) activates \na different part of your brain. Although it \nworks best if you have another person to \ndiscuss it with, pets work too. That’5 how \nour dog learned polymorphism. \nThe suspense is killing me. \nWho got the chair?\nAmy from the second floor.\n(unbeknownst to all, the Project \nManager had given the spec to \nthree programmers.)\n“It helps me design in a more natural way. Things \nhave a way of evolving.” \n \n-Joy, 27, software architect\n“Not messing around with code 1’ve already \ntested, just to add a new feature.” \n \n-Brad, 32, programmer\n“1 like that the data and the methods that oper-\nate on that data are together in one class.” \n \n-Josh, 22, beer drinker\n“Reusing code in other applications. When 1 write \na new class, 1 can make it flexible enough to be \nused in something new, later.” \n \n-Chris, 39, project manager\n“1 can’t believe Chris just said that. He hasn’t \nwritten a line of code in 5 years.” \n \n-Daryl, 44, works for Chris\n“Besides the chair?” \n \n-Amy, 34, programmer\nWhat do you like about 00?\nTime to pump some neurons.\nYou just read a story bout a procedural \nprogrammer going head-to-head with an 00 \nprogrammer. You got a quick overview of some \nkey 00 concepts including classes, methods, and \nattributes. We’11 spend the rest of the chapter \nlooking at classes and objects (we’11 return to \ninheritance and overriding in later chapters).\nBased on what you’ve seen 50 far (and what you \nmay know from a previous 00 language you’ve \nworked with), take a moment to think about \nthese questions:\nWhat are the fundamental things you need to \nthink about when you design a Java class? What \nare the questions you need to ask yourself? \nIf you could design a checklist to use when \nyou’re designing a class, what would be on the \nchecklist?\nbrain\npower\nA",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (195x195)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (134x195)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nclasses and objects\n33\nmetacognitive tip\nIf you’re stuck on an exercise, try talking about \nit out loud. Speaking (and hearing) activates \na different part of your brain. Although it \nworks best if you have another person to \ndiscuss it with, pets work too. That’5 how \nour dog learned polymorphism. \nThe suspense is killing me. \nWho got the chair?\nAmy from the second floor.\n(unbeknownst to all, the Project \nManager had given the spec to \nthree programmers.)\n“It helps me design in a more natural way. Things \nhave a way of evolving.” \n \n-Joy, 27, software architect\n“Not messing around with code 1’ve already \ntested, just to add a new feature.” \n \n-Brad, 32, programmer\n“1 like that the data and the methods that oper-\nate on that data are together in one class.” \n \n-Josh, 22, beer drinker\n“Reusing code in other applications. When 1 write \na new class, 1 can make it flexible enough to be \nused in something new, later.” \n \n-Chris, 39, project manager\n“1 can’t believe Chris just said that. He hasn’t \nwritten a line of code in 5 years.” \n \n-Daryl, 44, works for Chris\n“Besides the chair?” \n \n-Amy, 34, programmer\nWhat do you like about 00?\nTime to pump some neurons.\nYou just read a story bout a procedural \nprogrammer going head-to-head with an 00 \nprogrammer. You got a quick overview of some \nkey 00 concepts including classes, methods, and \nattributes. We’11 spend the rest of the chapter \nlooking at classes and objects (we’11 return to \ninheritance and overriding in later chapters).\nBased on what you’ve seen 50 far (and what you \nmay know from a previous 00 language you’ve \nworked with), take a moment to think about \nthese questions:\nWhat are the fundamental things you need to \nthink about when you design a Java class? What \nare the questions you need to ask yourself? \nIf you could design a checklist to use when \nyou’re designing a class, what would be on the \nchecklist?\nbrain\npower\nA",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 67,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 67,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1959 chars",
+      "severity": "info"
+    },
+    {
+      "page": 67,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 67,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

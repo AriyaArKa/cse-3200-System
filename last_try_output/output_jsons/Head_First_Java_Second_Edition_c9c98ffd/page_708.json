@@ -1,0 +1,67 @@
+{
+  "page_number": 708,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "when arrays aren’t enough\n674\nappendix 8\nCaptain Byte of the Flatland starship “Traverser” had received an urgent, Top Secret transmission \nfrom headquarters. The message contained 30 heavily encrypted navigational codes that the \nTraverser would need to successfully plot a course home through enemy sectors. The enemy \nHackarians, from a neighboring galaxy, had devised a devilish code-scrambling ray that was capable \nof creating bogus objects on the heap of the Traverser’5 only navigational computer. In \naddition, the alien ray could alter valid reference variables 50 that they referred to these \nbogus objects. The only defense the Traverser crew had against this evil Hackarian ray was \nto run an inline virus checker which could be imbedded into the Traverser’5 state of the art \nJava 6 code. \nCaptain Byte gave Ensign Smith the following programming instructions to process the critical \nnavigational codes:\n“Put the first five codes in an array of type ParsecKey. Put the last 25 codes in a five by five, two \ndimensional array of type QuadrantKey. Pass these two arrays into the plotCourse() method of the \npublic final class ShipNavigation. Once the course object is returned run the inline virus checker \nagainst all the programs reference variables and then run the NavSim program and bring me the \nresults.”\nA few minutes later Ensign Smith returned with the NavSim output. “NavSim output ready for \nreview, sir”, declared Ensign Smith. “Fine”, replied the Captain, “Please review your work”. “Yes \nsir!”, responded the Ensign, “First 1 declared and constructed an array of type ParsecKey with the \nfollowing code; ParsecKey [] p = new ParsecKey[5]; , next 1 declared and constructed an array \nof type QuadrantKey with the following code: QuadrantKey [] [] q = new QuadrantKey [5] [5]; . \nNext, 1 loaded the first 5 codes into the ParsecKey array using a ‘for’ loop, and then 1 loaded the last \n25 codes into the QuadrantKey array using nested ‘for’ loops. Next, 1 ran the virus checker against \nall 32 reference variables, 1 for the ParsecKey array, and 5 for its elements, 1 for the QuadrantKey \narray, and 25 for its elements. Once the virus check returned with no viruses detected, 1 ran the \nNavSim program and re-ran the virus checker, just to be safe… Sir ! “\nCaptain Byte gave the Ensign a cool, long stare and said calmly, “Ensign, you are confined to \nquarters for endangering the safety of this ship, 1 don’t want to see your face on this bridge again \nuntil you have properly learned your Java! Lieutenant Boolean, take over for the Ensign and do this \njob correctly!”\nWhy did the captain confine the Ensign to his quarters?\nFive-Minute\nMystery\nA Long Trip Home",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (304x238)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "when arrays aren’t enough\n674\nappendix 8\nCaptain Byte of the Flatland starship “Traverser” had received an urgent, Top Secret transmission \nfrom headquarters. The message contained 30 heavily encrypted navigational codes that the \nTraverser would need to successfully plot a course home through enemy sectors. The enemy \nHackarians, from a neighboring galaxy, had devised a devilish code-scrambling ray that was capable \nof creating bogus objects on the heap of the Traverser’5 only navigational computer. In \naddition, the alien ray could alter valid reference variables 50 that they referred to these \nbogus objects. The only defense the Traverser crew had against this evil Hackarian ray was \nto run an inline virus checker which could be imbedded into the Traverser’5 state of the art \nJava 6 code. \nCaptain Byte gave Ensign Smith the following programming instructions to process the critical \nnavigational codes:\n“Put the first five codes in an array of type ParsecKey. Put the last 25 codes in a five by five, two \ndimensional array of type QuadrantKey. Pass these two arrays into the plotCourse() method of the \npublic final class ShipNavigation. Once the course object is returned run the inline virus checker \nagainst all the programs reference variables and then run the NavSim program and bring me the \nresults.”\nA few minutes later Ensign Smith returned with the NavSim output. “NavSim output ready for \nreview, sir”, declared Ensign Smith. “Fine”, replied the Captain, “Please review your work”. “Yes \nsir!”, responded the Ensign, “First 1 declared and constructed an array of type ParsecKey with the \nfollowing code; ParsecKey [] p = new ParsecKey[5]; , next 1 declared and constructed an array \nof type QuadrantKey with the following code: QuadrantKey [] [] q = new QuadrantKey [5] [5]; . \nNext, 1 loaded the first 5 codes into the ParsecKey array using a ‘for’ loop, and then 1 loaded the last \n25 codes into the QuadrantKey array using nested ‘for’ loops. Next, 1 ran the virus checker against \nall 32 reference variables, 1 for the ParsecKey array, and 5 for its elements, 1 for the QuadrantKey \narray, and 25 for its elements. Once the virus check returned with no viruses detected, 1 ran the \nNavSim program and re-ran the virus checker, just to be safe… Sir ! “\nCaptain Byte gave the Ensign a cool, long stare and said calmly, “Ensign, you are confined to \nquarters for endangering the safety of this ship, 1 don’t want to see your face on this bridge again \nuntil you have properly learned your Java! Lieutenant Boolean, take over for the Ensign and do this \njob correctly!”\nWhy did the captain confine the Ensign to his quarters?\nFive-Minute\nMystery\nA Long Trip Home",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 708,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 708,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2711 chars",
+      "severity": "info"
+    },
+    {
+      "page": 708,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 708,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

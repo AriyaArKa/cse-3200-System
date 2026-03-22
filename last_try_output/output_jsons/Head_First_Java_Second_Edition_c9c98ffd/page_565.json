@@ -1,0 +1,59 @@
+{
+  "page_number": 565,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n531\nHere’5 what you have 50 far, without the sort:\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox1 {\n \n \nArrayList<String> songList = new ArrayList<String>();\n \n \npublic static void main(String[] args) {\n \n \nnew Jukebox1().go();\n \n}\n \n \npublic void go() { \n \n \n \ngetSongs(); \n \n \nSystem.out.println(songList); \n \n}\n \n \nvoid getSongs() {\n \n \ntry {\n \n \n \nFile file = new File(“SongList.txt”);\n \n \n \nBufferedReader reader = new BufferedReader(new FileReader(file));\n \n \n \nString line = null;\n \n \n \nwhile ((line= reader.readLine()) != null) {\n \n \n \n \naddSong(line);\n \n \n \n}\n \n \n} catch(Exception ex) {\n \n \n \nex.printStackTrace();\n \n \n}\n \n}\n \n \nvoid addSong(String lineToParse) {\n \n \nString[] tokens = lineToParse.split(“/”);\n \n \nsongList.add(tokens[0]); \n \n \n}\n \n \n}\nWe’11 store the song titles in \nan ArrayList of Strings.\nNothing special here... just read the file and \ncall the addSong() method for each line.\nThe addSong method works just like the Quiz-\nCard in the 1/0 chapter--you break the line \n(that has both the title and artist) into two \npieces (tokens) using the split() method.\nWe only want the song title, 50 \nadd only the first token to the \nSongList (the ArrayList).\nThe method that starts loading the \nfile and then prints the contents of \nthe songList ArrayList.\nFile Edit Window Help Dance\n%java Jukebox1\n[Pink Moon, Somersault, \nShiva Moon, Circles, \nDeep Channel, Passenger, \nListen]\nThe songList prints out with the \nsongs in the order in which they \nwere added to the ArrayList (which \nis the same order the songs are in \nwithin the original text file).\nThis is definitely NOT alphabetical!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Dance"
+        ],
+        [
+          "%java Jukebox1\n[Pink Moon, Somersault,\nShiva Moon, Circles,\nDeep Channel, Passenger,\nListen]"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n531\nHere’5 what you have 50 far, without the sort:\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox1 {\n \n \nArrayList<String> songList = new ArrayList<String>();\n \n \npublic static void main(String[] args) {\n \n \nnew Jukebox1().go();\n \n}\n \n \npublic void go() { \n \n \n \ngetSongs(); \n \n \nSystem.out.println(songList); \n \n}\n \n \nvoid getSongs() {\n \n \ntry {\n \n \n \nFile file = new File(“SongList.txt”);\n \n \n \nBufferedReader reader = new BufferedReader(new FileReader(file));\n \n \n \nString line = null;\n \n \n \nwhile ((line= reader.readLine()) != null) {\n \n \n \n \naddSong(line);\n \n \n \n}\n \n \n} catch(Exception ex) {\n \n \n \nex.printStackTrace();\n \n \n}\n \n}\n \n \nvoid addSong(String lineToParse) {\n \n \nString[] tokens = lineToParse.split(“/”);\n \n \nsongList.add(tokens[0]); \n \n \n}\n \n \n}\nWe’11 store the song titles in \nan ArrayList of Strings.\nNothing special here... just read the file and \ncall the addSong() method for each line.\nThe addSong method works just like the Quiz-\nCard in the 1/0 chapter--you break the line \n(that has both the title and artist) into two \npieces (tokens) using the split() method.\nWe only want the song title, 50 \nadd only the first token to the \nSongList (the ArrayList).\nThe method that starts loading the \nfile and then prints the contents of \nthe songList ArrayList.\nFile Edit Window Help Dance\n%java Jukebox1\n[Pink Moon, Somersault, \nShiva Moon, Circles, \nDeep Channel, Passenger, \nListen]\nThe songList prints out with the \nsongs in the order in which they \nwere added to the ArrayList (which \nis the same order the songs are in \nwithin the original text file).\nThis is definitely NOT alphabetical!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 565,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 565,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1669 chars",
+      "severity": "info"
+    },
+    {
+      "page": 565,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "page_number": 98,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "64 \nchapter 3\nA working Java program is all scrambled up \non the fridge. Can you reconstruct the code \nsnippets to make a working Java program \nthat produces the output listed below? \nSome of the curly braces fell on the floor \nand they were too small to pick up, 50 feel \nfree to add as many of those as you need!\nislands[0] = “Bermuda”;\nislands[1] = “Fiji”;\nislands[2] = “Azores”;\nislands[3] = “Cozumel”;\nclass TestArrays {\n \n public static void main(String [] args) {\n int ref;\n while (y < 4) {\n String [] islands = new String[4];\nSystem.out.print(“island = “);\n int [] index = new int[4];\n System.out.println(islands[ref]);\nFile Edit Window Help Bikini\n% java TestArrays\nisland = Fiji\nisland = Cozumel\nisland = Bermuda\nisland = Azores\nindex[0] = 1;\nindex[1] = 3;\nindex[2] = 0;\nindex[3] = 2;\ny = y + 1;\nint y = 0;\nref = index[y];\nExercise\nCode Magnets\nexercise: Code Magnets",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "int y = 0;\nref",
+          ""
+        ],
+        [
+          "",
+          "ref"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "",
+          "i i i 5 i 5 5 1 5 1 1 a 1 a a n a n n d n d d 5 d 5 5 [ 5 [ [ 3 [ 2 1 ] 0 ] ] ] = = = = “ “ “ C “ A F 0 8 z i z e 0 j u r r i m m e ” e u 5 ; 1 d ” ” a ; ; ”;\nref;"
+        ],
+        [
+          "int ref;\nwhile (y < 4) {",
+          "",
+          "ref;"
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          "int [] index\n= new int[4];\ny + 1;"
+        ],
+        [
+          "y = y + 1;",
+          "y + 1;"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Bikini"
+        ],
+        [
+          "% java TestArrays\nisland = Fiji\nisland = Cozumel\nisland = Bermuda\nisland = Azores"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (142x119)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x200)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "64 \nchapter 3\nA working Java program is all scrambled up \non the fridge. Can you reconstruct the code \nsnippets to make a working Java program \nthat produces the output listed below? \nSome of the curly braces fell on the floor \nand they were too small to pick up, 50 feel \nfree to add as many of those as you need!\nislands[0] = “Bermuda”;\nislands[1] = “Fiji”;\nislands[2] = “Azores”;\nislands[3] = “Cozumel”;\nclass TestArrays {\n \n public static void main(String [] args) {\n int ref;\n while (y < 4) {\n String [] islands = new String[4];\nSystem.out.print(“island = “);\n int [] index = new int[4];\n System.out.println(islands[ref]);\nFile Edit Window Help Bikini\n% java TestArrays\nisland = Fiji\nisland = Cozumel\nisland = Bermuda\nisland = Azores\nindex[0] = 1;\nindex[1] = 3;\nindex[2] = 0;\nindex[3] = 2;\ny = y + 1;\nint y = 0;\nref = index[y];\nExercise\nCode Magnets\nexercise: Code Magnets",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 98,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 98,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 905 chars",
+      "severity": "info"
+    },
+    {
+      "page": 98,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 98,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

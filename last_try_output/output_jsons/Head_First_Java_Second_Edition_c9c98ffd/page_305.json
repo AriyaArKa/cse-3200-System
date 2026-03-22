@@ -1,0 +1,60 @@
+{
+  "page_number": 305,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n271\nFive-Minute Mystery Solution\n \nTom noticed that the constructor for the V2Radiator class took an \nArrayList. That meant that every time the V3Radiator constructor was called, \nit passed an ArrayList in its super() call to the V2Radiator constructor. That \nmeant that an extra five V2Radiator SimUnits were created. If Tom was right, \ntotal power use would have been 120, not the 100 that Sarah’5 expected ratios \npredicted.\n \nSince all the Bot classes create SimUnits, writing a constructor for \nthe SimUnit class, that printed out a line everytime a SimUnit was created, \nwould have quickly highlighted the problem!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n271\nFive-Minute Mystery Solution\n \nTom noticed that the constructor for the V2Radiator class took an \nArrayList. That meant that every time the V3Radiator constructor was called, \nit passed an ArrayList in its super() call to the V2Radiator constructor. That \nmeant that an extra five V2Radiator SimUnits were created. If Tom was right, \ntotal power use would have been 120, not the 100 that Sarah’5 expected ratios \npredicted.\n \nSince all the Bot classes create SimUnits, writing a constructor for \nthe SimUnit class, that printed out a line everytime a SimUnit was created, \nwould have quickly highlighted the problem!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 305,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 305,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 659 chars",
+      "severity": "info"
+    },
+    {
+      "page": 305,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 305,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "page_number": 240,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "206 \nchapter 8\npolymorphism examples\nPolymorphism in action\nLet’5 say that we want to write our own kind of list class, one that will hold \nDog objects, but pretend for a moment that we don’t know about the \nArrayList class. For the first pass, we’11 give it just an add() method. We’11 use \na simple Dog array (Dog []) to keep the added Dog objects, and give it a \nlength of 5. When we reach the limit of 5 Dog objects, you can still call the \nadd() method but it won’t do anything. If we’re not at the limit, the add() \nmethod puts the Dog in the array at the next available index position, then \nincrements that next available index (nextIndex).\npublic class MyDogList {\n private Dog [] dogs = new Dog[5];\n private int nextIndex = 0;\n \n public void add(Dog d) {\n if (nextIndex < dogs.length) {\n dogs[nextIndex] = d;\n System.out.println(“Dog added at “ + nextIndex);\n nextIndex++; \n }\n }\n}\nMyDogList\nDog[] dogs\nint nextIndex\nadd(Dog d)\nUse a plain old Dog array \nbehind the scenes.\nWe’11 increment this each \ntime a new Dog is added.\nIf we’re not already at the limit \nof the dogs array, add the Dog \nand print a message.\nincrement, to give us the \nnext index to use\nBuilding our own Dog-specific list \n(Perhaps the world’5 worst attempt at making our \nown ArrayList kind of class, from scratch.)\nv\ne\nr\n5\ni\n0\nn\n1",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "MyDogList",
+          ""
+        ],
+        [
+          "MyDogList",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "Dog[] dogs\nint nextIndex",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "add(Dog d)",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "206 \nchapter 8\npolymorphism examples\nPolymorphism in action\nLet’5 say that we want to write our own kind of list class, one that will hold \nDog objects, but pretend for a moment that we don’t know about the \nArrayList class. For the first pass, we’11 give it just an add() method. We’11 use \na simple Dog array (Dog []) to keep the added Dog objects, and give it a \nlength of 5. When we reach the limit of 5 Dog objects, you can still call the \nadd() method but it won’t do anything. If we’re not at the limit, the add() \nmethod puts the Dog in the array at the next available index position, then \nincrements that next available index (nextIndex).\npublic class MyDogList {\n private Dog [] dogs = new Dog[5];\n private int nextIndex = 0;\n \n public void add(Dog d) {\n if (nextIndex < dogs.length) {\n dogs[nextIndex] = d;\n System.out.println(“Dog added at “ + nextIndex);\n nextIndex++; \n }\n }\n}\nMyDogList\nDog[] dogs\nint nextIndex\nadd(Dog d)\nUse a plain old Dog array \nbehind the scenes.\nWe’11 increment this each \ntime a new Dog is added.\nIf we’re not already at the limit \nof the dogs array, add the Dog \nand print a message.\nincrement, to give us the \nnext index to use\nBuilding our own Dog-specific list \n(Perhaps the world’5 worst attempt at making our \nown ArrayList kind of class, from scratch.)\nv\ne\nr\n5\ni\n0\nn\n1",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 240,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 240,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1373 chars",
+      "severity": "info"
+    },
+    {
+      "page": 240,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

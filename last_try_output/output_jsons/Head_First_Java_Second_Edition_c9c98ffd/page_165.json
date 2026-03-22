@@ -1,0 +1,60 @@
+{
+  "page_number": 165,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n131\nIf only 1 could find an array \nthat could shrink when you remove \nsomething. And one that you didn’t have \nto loop through to check each element, but \ninstead you could just ask it if it contains \nwhat you’re looking for. And it would let you \nget things out of it, without having to know \nexactly which slot the things are in. \nThat would be dreamy. But 1 know it’5 \njust a fantasy...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (606x747)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "get to know the Java API \nyou are here\n131\nIf only 1 could find an array \nthat could shrink when you remove \nsomething. And one that you didn’t have \nto loop through to check each element, but \ninstead you could just ask it if it contains \nwhat you’re looking for. And it would let you \nget things out of it, without having to know \nexactly which slot the things are in. \nThat would be dreamy. But 1 know it’5 \njust a fantasy...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 165,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 165,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 430 chars",
+      "severity": "info"
+    },
+    {
+      "page": 165,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 165,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

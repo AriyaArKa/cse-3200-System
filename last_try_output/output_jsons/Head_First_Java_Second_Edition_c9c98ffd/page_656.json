@@ -1,0 +1,95 @@
+{
+  "page_number": 656,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "622 \nchapter 18\nBe sure each machine has the class \nfiles it needs.\nThe top three things programmers do wrong with RMI are:\n1) Forget to start rmiregistry before starting remote service \n(when you register the service using Naming.rebind(), the \nrmiregistry must be running!)\n2) Forget to make arguments and return types serializable \n(you won’t know until runtime; this is not something the \ncompiler will detect.)\n3) Forget to give the stub class to the client. \n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \n5\nt\nu\nb\n5\nk\ne\n1\ne\nt\n0\nn\nServer\nClient\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemoteImpl_Stub.class\nClient.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemoteImpl_Stub.class\n5\nt\nu\nb\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemote.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemote.class\nMyRemoteImpl.class\nMyRemoteImpl_Skel.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nDon’t forget, the client \nuses the interface to call \nmethods on the stub. The \nclient JVM needs the stub \nclass, but the client never \nrefers to the stub class \nin code. The client always \nuses the remote interface, \nas though the remote \ninterface WERE the \nactual remote object.\nServer needs both the Stub and Skeleton \nclasses, as well as the service and the \nremote interface. It needs the stub class \nbecause remember, the stub is substituted \nfor the real service, when the real service \nis bound to the RMI registry.\nRMI class files\nThe remote interface.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x136)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x97)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (53x75)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (50x105)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x97)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "622 \nchapter 18\nBe sure each machine has the class \nfiles it needs.\nThe top three things programmers do wrong with RMI are:\n1) Forget to start rmiregistry before starting remote service \n(when you register the service using Naming.rebind(), the \nrmiregistry must be running!)\n2) Forget to make arguments and return types serializable \n(you won’t know until runtime; this is not something the \ncompiler will detect.)\n3) Forget to give the stub class to the client. \n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \n5\nt\nu\nb\n5\nk\ne\n1\ne\nt\n0\nn\nServer\nClient\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemoteImpl_Stub.class\nClient.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemoteImpl_Stub.class\n5\nt\nu\nb\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemote.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyRemote.class\nMyRemoteImpl.class\nMyRemoteImpl_Skel.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nDon’t forget, the client \nuses the interface to call \nmethods on the stub. The \nclient JVM needs the stub \nclass, but the client never \nrefers to the stub class \nin code. The client always \nuses the remote interface, \nas though the remote \ninterface WERE the \nactual remote object.\nServer needs both the Stub and Skeleton \nclasses, as well as the service and the \nremote interface. It needs the stub class \nbecause remember, the stub is substituted \nfor the real service, when the real service \nis bound to the RMI registry.\nRMI class files\nThe remote interface.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 656,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 656,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1557 chars",
+      "severity": "info"
+    },
+    {
+      "page": 656,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 656,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

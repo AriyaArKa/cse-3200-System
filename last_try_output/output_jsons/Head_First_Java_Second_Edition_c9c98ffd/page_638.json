@@ -1,0 +1,129 @@
+{
+  "page_number": 638,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "604 \nchapter 17\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nuser clicks a Web page link \nbrowser requests a .jnlp file \nfrom the Web server\nthe Web server sends a .jnlp \nfile to the browser\nthe Web browser starts up \nthe JWS helper app\nthe JWS helper app requests \nthe JAR file\nthe Web server sends a JAR \nfile to the JWS helper app\nthe JWS helper app invokes \nthe JAR’5 main() method\n1. The Java compiler has a flag, -d, that lets you decide where your .class files should go.\n2. A JAR is a standard directory where your .class files should reside.\n3. When creating a Java Archive you must create a file called jar,mf.\n4. The supporting file in a Java Archive declares which class has the main() method.\n5. JAR files must be unzipped before the JVM can use the classes inside.\n6. At the command line, Java Archives are invoked using the -arch flag.\n7. Package structures are meaningfully represented using hierarchies.\n8. Using your company’5 domain name is not recommended when naming packages. \n9. Different classes within a source file can belong to different packages.\n10. When compiling classes in a package, the -p flag is highly recommended. \n11. When compiling classes in a package, the full name must mirror the directory tree.\n12. Judicious use of the -d flag can help to assure that there are no typos in your tree.\n13. Extracting a JAR with packages will create a directory called meta-inf. \n14. Extracting a JAR with packages will create a file called manifest.mf.\n15. The JWS helper app always runs in conjunction with a browser. \n16. JWS applications require a .nlp (Network Launch Protocol) file to work properly.\n17. A JWS’5 main method is specified in its JAR file.\nTrue\nFalse\nFalse\nTrue\nFalse\nFalse\nTrue\nFalse\nFalse\nFalse\nTrue\nTrue \nTrue\nTrue\nFalse\nFalse\nFalse\nExercise\nSolutions\nexercise solutions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "user clicks a Web page link",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "browser requests a .jnlp file\nfrom the Web server",
+          ""
+        ],
+        [
+          "the Web server sends a .jnlp\nfile to the browser",
+          ""
+        ],
+        [
+          "the Web browser starts up\nthe JWS helper app",
+          ""
+        ],
+        [
+          "pp requests",
+          ""
+        ],
+        [
+          "the JWS helper a\nthe JAR file",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "the Web server sends a JAR\nfile to the JWS helper app",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "the JWS helper app invokes\nthe JAR’5 main() method",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (155x130)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (290x243)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "604 \nchapter 17\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nuser clicks a Web page link \nbrowser requests a .jnlp file \nfrom the Web server\nthe Web server sends a .jnlp \nfile to the browser\nthe Web browser starts up \nthe JWS helper app\nthe JWS helper app requests \nthe JAR file\nthe Web server sends a JAR \nfile to the JWS helper app\nthe JWS helper app invokes \nthe JAR’5 main() method\n1. The Java compiler has a flag, -d, that lets you decide where your .class files should go.\n2. A JAR is a standard directory where your .class files should reside.\n3. When creating a Java Archive you must create a file called jar,mf.\n4. The supporting file in a Java Archive declares which class has the main() method.\n5. JAR files must be unzipped before the JVM can use the classes inside.\n6. At the command line, Java Archives are invoked using the -arch flag.\n7. Package structures are meaningfully represented using hierarchies.\n8. Using your company’5 domain name is not recommended when naming packages. \n9. Different classes within a source file can belong to different packages.\n10. When compiling classes in a package, the -p flag is highly recommended. \n11. When compiling classes in a package, the full name must mirror the directory tree.\n12. Judicious use of the -d flag can help to assure that there are no typos in your tree.\n13. Extracting a JAR with packages will create a directory called meta-inf. \n14. Extracting a JAR with packages will create a file called manifest.mf.\n15. The JWS helper app always runs in conjunction with a browser. \n16. JWS applications require a .nlp (Network Launch Protocol) file to work properly.\n17. A JWS’5 main method is specified in its JAR file.\nTrue\nFalse\nFalse\nTrue\nFalse\nFalse\nTrue\nFalse\nFalse\nFalse\nTrue\nTrue \nTrue\nTrue\nFalse\nFalse\nFalse\nExercise\nSolutions\nexercise solutions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 638,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 638,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1816 chars",
+      "severity": "info"
+    },
+    {
+      "page": 638,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 638,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

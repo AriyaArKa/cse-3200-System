@@ -1,0 +1,46 @@
+{
+  "page_number": 481,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n447\nWriting a String to a Text File\nSaving objects, through serialization, is the easiest way to save and \nrestore data between runnings of a Java program. But sometimes you \nneed to save data to a plain old text file. Imagine your Java program \nhas to write data to a simple text file that some other (perhaps non-\nJava) program needs to read. You might, for example, have a servlet \n(Java code running within your web server) that takes form data the \nuser typed into a browser, and writes it to a text file that somebody else \nloads into a spreadsheet for analysis. \nWriting text data (a String, actually) is similar to writing an object, \nexcept you write a String instead of an object, and you use a \nFileWriter instead of a FileOutputStream (and you don’t chain it to an \nObjectOutputStream).\n50,Elf,bow,sword,dust\n200,Troll,bare hands,big ax\n120,Magician,spells,invisibility\nWhat the game character data \nmight look like if you wrote it \nout as a human-readable text file.\nTo write a serialized object:\nobjectOutputStream.writeObject(someObject);\nTo write a String:\nfileWriter.write(“My first String to save”);\nimport java.io.*;\nclass WriteAFile {\n public static void main (String[] args) {\n try {\n FileWriter writer = new FileWriter(“Foo.txt”);\n writer.write(“hello foo!”);\n writer.close();\n } catch(IOException ex) {\n ex.printStackTrace();\n }\n } \n}\nWe need the java.io package for FileWriter \nALL the 1/0 stuff \nmust be in a try/catch. \nEverything can throw an \nIOException!!\nIf the file “Foo.txt” does not \nexist, FileWriter will create it.\nThe write() method takes \na String\nClose it when you’re done!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n447\nWriting a String to a Text File\nSaving objects, through serialization, is the easiest way to save and \nrestore data between runnings of a Java program. But sometimes you \nneed to save data to a plain old text file. Imagine your Java program \nhas to write data to a simple text file that some other (perhaps non-\nJava) program needs to read. You might, for example, have a servlet \n(Java code running within your web server) that takes form data the \nuser typed into a browser, and writes it to a text file that somebody else \nloads into a spreadsheet for analysis. \nWriting text data (a String, actually) is similar to writing an object, \nexcept you write a String instead of an object, and you use a \nFileWriter instead of a FileOutputStream (and you don’t chain it to an \nObjectOutputStream).\n50,Elf,bow,sword,dust\n200,Troll,bare hands,big ax\n120,Magician,spells,invisibility\nWhat the game character data \nmight look like if you wrote it \nout as a human-readable text file.\nTo write a serialized object:\nobjectOutputStream.writeObject(someObject);\nTo write a String:\nfileWriter.write(“My first String to save”);\nimport java.io.*;\nclass WriteAFile {\n public static void main (String[] args) {\n try {\n FileWriter writer = new FileWriter(“Foo.txt”);\n writer.write(“hello foo!”);\n writer.close();\n } catch(IOException ex) {\n ex.printStackTrace();\n }\n } \n}\nWe need the java.io package for FileWriter \nALL the 1/0 stuff \nmust be in a try/catch. \nEverything can throw an \nIOException!!\nIf the file “Foo.txt” does not \nexist, FileWriter will create it.\nThe write() method takes \na String\nClose it when you’re done!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 481,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 481,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1719 chars",
+      "severity": "info"
+    },
+    {
+      "page": 481,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

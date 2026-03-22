@@ -1,0 +1,60 @@
+{
+  "page_number": 280,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "246 \nchapter 9\nYou might think that if you write only \na constructor with arguments, the \ncompiler will see that you don’t have a \nno-arg constructor, and stick one in for \nyou. But that’5 not how it works. The \ncompiler gets involved with constructor-\nmaking only if you don’t say anything at all \nabout constructors.\nIf you write a constructor that \ntakes arguments, and you still \nwant a no-arg constructor, \nyou’11 have to build the no-arg \nconstructor yourself!\nAs soon as you provide a constructor, \nANY kind of constructor, the compiler \nbacks off and says, “OK Buddy, looks like \nyou’re in charge of constructors now.”\nIf you have more than one \nconstructor in a class, the \nconstructors MUST have \ndifferent argument lists.\nThe argument list includes the order \nand types of the arguments. As long as \nthey’re different, you can have more \nthan one constructor. You can do this \nwith methods as well, but we’11 get to that \nin another chapter. \noverloaded and default constructors\nDoesn’t the compiler always \nmake a no-arg constructor \nfor you?\nOK, let’5 see here... “You \nhave the right to your own \nconstructor.” Makes sense. \n“If you cannot afford a constructor, \none will be provided for you by the \ncompiler.” Good to know. \nNo!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (544x692)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "246 \nchapter 9\nYou might think that if you write only \na constructor with arguments, the \ncompiler will see that you don’t have a \nno-arg constructor, and stick one in for \nyou. But that’5 not how it works. The \ncompiler gets involved with constructor-\nmaking only if you don’t say anything at all \nabout constructors.\nIf you write a constructor that \ntakes arguments, and you still \nwant a no-arg constructor, \nyou’11 have to build the no-arg \nconstructor yourself!\nAs soon as you provide a constructor, \nANY kind of constructor, the compiler \nbacks off and says, “OK Buddy, looks like \nyou’re in charge of constructors now.”\nIf you have more than one \nconstructor in a class, the \nconstructors MUST have \ndifferent argument lists.\nThe argument list includes the order \nand types of the arguments. As long as \nthey’re different, you can have more \nthan one constructor. You can do this \nwith methods as well, but we’11 get to that \nin another chapter. \noverloaded and default constructors\nDoesn’t the compiler always \nmake a no-arg constructor \nfor you?\nOK, let’5 see here... “You \nhave the right to your own \nconstructor.” Makes sense. \n“If you cannot afford a constructor, \none will be provided for you by the \ncompiler.” Good to know. \nNo!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 280,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 280,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1249 chars",
+      "severity": "info"
+    },
+    {
+      "page": 280,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 280,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

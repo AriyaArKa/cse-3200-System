@@ -1,0 +1,168 @@
+{
+  "page_number": 619,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "package, jars and deployment\nyou are here\n585\nPut your Java in a JAR\nA JAR file is a Java ARchive. It’5 based on the pkzip file format, and it lets you bundle \nall your classes 50 that instead of presenting your client with 28 class files, you hand \nover just a single JAR file. If you’re familiar with the tar command on UNIX, you’11 \nrecognize the jar tool commands. (Note: when we say JAR in all caps, we’re referring \nto the archive file. When we use lowercase, we’re referring to the jar tool you use to \ncreate JAR files.)\nThe question is, what does the client do with the JAR? How do you get it to run? \nYou make the JAR executable.\nAn executable JAR means the end-user doesn’t have to pull the class files out before \nrunning the program. The user can run the app while the class files are still in the \nJAR. The trick is to create a manifest file, that goes in the JAR and holds information \nabout the files in the JAR. To make a JAR executable, the manifest must tell the JVM \nwhich class has the main() method!\nJAR\n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \nMaking an executable JAR\n1\nMake sure all of your class files are in \nthe classes directory\nWe’re going to refine this in a few pages, but \nfor now, keep all your class files sitting in the \ndirectory named ‘classes’. \n2\nCreate a manifest.txt file that states \nwhich class has the main() method\nMake a text file named manifest.txt that has \none line:\nMain-Class: MyApp\nPress the return key after typing the Main-\nClass line, or your manifest may not work \ncorrectly. Put the manifest file into the “classes” \ndirectory.\n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \nMain-Class: MyiApp\n3\nRun the jar tool to create a JAR file \nthat contains everything in the classes \ndirectory, plus the manifest.\n%cd MyProject/classes \n%jar -cvmf manifest.txt app1.jar *.class\nOR\n%jar -cvmf manifest.txt app1.jar MyApp.class\nclasses\nMyProject\n101101 \n101101 \nclasses\n101101 \n101101 \n101101 \n101101 \nMyProject\nMain-Class: MiniApp\nmanifest.txt\napp1.jar\n101101 \n101101 \n101101 \n101101 \n101101 \n101101 \nMain-Class: MiniApp\ndon’t put the .class \non the end\nno source \ncode (.java) \nin the JAR\nMyApp.class\nclasses\nmanifest.txt",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "",
+          "1\n1",
+          ""
+        ],
+        [
+          "0110",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "1",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "0 110 0001\n0 01 10 0\n0 1100 1"
+        ],
+        [
+          "01111000111\n01110001110",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.75,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "10\n10",
+          "110",
+          "1",
+          ""
+        ],
+        [
+          "",
+          "110110",
+          "110 1\n101",
+          ""
+        ],
+        [
+          "101\n101",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "1011\n1011011",
+          "01",
+          ""
+        ],
+        [
+          "",
+          "0110 1\n101",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (151x243)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (196x156)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (140x112)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (88x139)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "package, jars and deployment\nyou are here\n585\nPut your Java in a JAR\nA JAR file is a Java ARchive. It’5 based on the pkzip file format, and it lets you bundle \nall your classes 50 that instead of presenting your client with 28 class files, you hand \nover just a single JAR file. If you’re familiar with the tar command on UNIX, you’11 \nrecognize the jar tool commands. (Note: when we say JAR in all caps, we’re referring \nto the archive file. When we use lowercase, we’re referring to the jar tool you use to \ncreate JAR files.)\nThe question is, what does the client do with the JAR? How do you get it to run? \nYou make the JAR executable.\nAn executable JAR means the end-user doesn’t have to pull the class files out before \nrunning the program. The user can run the app while the class files are still in the \nJAR. The trick is to create a manifest file, that goes in the JAR and holds information \nabout the files in the JAR. To make a JAR executable, the manifest must tell the JVM \nwhich class has the main() method!\nJAR\n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \nMaking an executable JAR\n1\nMake sure all of your class files are in \nthe classes directory\nWe’re going to refine this in a few pages, but \nfor now, keep all your class files sitting in the \ndirectory named ‘classes’. \n2\nCreate a manifest.txt file that states \nwhich class has the main() method\nMake a text file named manifest.txt that has \none line:\nMain-Class: MyApp\nPress the return key after typing the Main-\nClass line, or your manifest may not work \ncorrectly. Put the manifest file into the “classes” \ndirectory.\n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \n101101 \n101101 \n10101000010 \n1010 10 0 \n01010 1 \n1010101 \n10101010 \n1001010101 \nMain-Class: MyiApp\n3\nRun the jar tool to create a JAR file \nthat contains everything in the classes \ndirectory, plus the manifest.\n%cd MyProject/classes \n%jar -cvmf manifest.txt app1.jar *.class\nOR\n%jar -cvmf manifest.txt app1.jar MyApp.class\nclasses\nMyProject\n101101 \n101101 \nclasses\n101101 \n101101 \n101101 \n101101 \nMyProject\nMain-Class: MiniApp\nmanifest.txt\napp1.jar\n101101 \n101101 \n101101 \n101101 \n101101 \n101101 \nMain-Class: MiniApp\ndon’t put the .class \non the end\nno source \ncode (.java) \nin the JAR\nMyApp.class\nclasses\nmanifest.txt",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 619,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 619,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2330 chars",
+      "severity": "info"
+    },
+    {
+      "page": 619,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 619,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

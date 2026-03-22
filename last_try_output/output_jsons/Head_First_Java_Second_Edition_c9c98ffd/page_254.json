@@ -1,0 +1,177 @@
+{
+  "page_number": 254,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "220 \nchapter 8\n \nWe start with Option One, putting the pet methods \nin class Animal, but we make the methods abstract, \nforcing the Animal subclasses to override them.\n2\nOption two\nThat would give us all the benefits of Option One, but with-\nout the drawback of having non-pet Animals running around \nwith pet methods (like beFriendly()). All Animal classes \nwould have the method (because it’5 in class Animal), but \nbecause it’5 abstract the non-pet Animal classes won’t \ninherit any functionality. All classes MUST override the \nmethods, but they can make the methods “do-nothings”.\nPros:\nBecause the pet methods in the Animal class are all \nabstract, the concrete Animal subclasses are forced to \nimplement all of them. (Remember, all abstract methods \nMUST be implemented by the first concrete subclass \ndown the inheritance tree.) What a waste of time! \nYou have to sit there and type in each and every \npet method into each and every concrete non-\npet class, and all future subclasses as well. \nAnd while this does solve the problem of \nnon-pets actually DOING pet things \n(as they would if they inherited pet \nfunctionality from class Animal), the \ncontract is bad. Every non-pet \nclass would be announcing to the \nworld that it, too, has those \npet methods, even though \nthe methods wouldn’t \nactually DO anything \nwhen called.\nThis approach doesn’t \nlook good at all. It just \nseems wrong to stuff \neverything into class Animal \nthat more than one Animal type \nmight need, UNLESS it applies to \nALL Animal subclasses.\nCons:\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline\nput all the pet methods \nup here, but with no \nimplementations. Make all \npet methods abstract.\nAsk me to be friendly. \nNo, seriously... ask me. \n1 have the method.\nmodifying existing classes",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.66,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Canine",
+          ""
+        ],
+        [
+          "Hippo",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Hippo",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.65,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cat",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Cat",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Dog",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x109)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (193x91)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x110)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x93)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (75x77)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "220 \nchapter 8\n \nWe start with Option One, putting the pet methods \nin class Animal, but we make the methods abstract, \nforcing the Animal subclasses to override them.\n2\nOption two\nThat would give us all the benefits of Option One, but with-\nout the drawback of having non-pet Animals running around \nwith pet methods (like beFriendly()). All Animal classes \nwould have the method (because it’5 in class Animal), but \nbecause it’5 abstract the non-pet Animal classes won’t \ninherit any functionality. All classes MUST override the \nmethods, but they can make the methods “do-nothings”.\nPros:\nBecause the pet methods in the Animal class are all \nabstract, the concrete Animal subclasses are forced to \nimplement all of them. (Remember, all abstract methods \nMUST be implemented by the first concrete subclass \ndown the inheritance tree.) What a waste of time! \nYou have to sit there and type in each and every \npet method into each and every concrete non-\npet class, and all future subclasses as well. \nAnd while this does solve the problem of \nnon-pets actually DOING pet things \n(as they would if they inherited pet \nfunctionality from class Animal), the \ncontract is bad. Every non-pet \nclass would be announcing to the \nworld that it, too, has those \npet methods, even though \nthe methods wouldn’t \nactually DO anything \nwhen called.\nThis approach doesn’t \nlook good at all. It just \nseems wrong to stuff \neverything into class Animal \nthat more than one Animal type \nmight need, UNLESS it applies to \nALL Animal subclasses.\nCons:\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline\nput all the pet methods \nup here, but with no \nimplementations. Make all \npet methods abstract.\nAsk me to be friendly. \nNo, seriously... ask me. \n1 have the method.\nmodifying existing classes",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 254,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 254,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1778 chars",
+      "severity": "info"
+    },
+    {
+      "page": 254,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 7",
+      "severity": "info"
+    },
+    {
+      "page": 254,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

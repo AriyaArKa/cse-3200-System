@@ -1,0 +1,88 @@
+{
+  "page_number": 164,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "130 \nchapter 6\n REPEAT with each of the location cells in the int array \n // COMPARE the user guess to the location cell \n IF the user guess matches\n INCREMENT the number of hits\n // FIND OUT if it was the last location cell:\n IF number of hits is 3, RETURN “kill”\n ELSE it was not a kill, 50 RETURN“hit”\n END IF\n ELSE user guess did not match, 50 RETURN “miss”\n END IF\n END REPEAT\n REPEAT with each of the remaining location cells \n // COMPARE the user guess to the location cell \n IF the user guess matches\n REMOVE this cell from the array\n // FIND OUT if it was the last location cell:\n IF the array is now empty, RETURN “kill” \n ELSE it was not a kill, 50 RETURN“hit”\n END IF\n ELSE user guess did not match, 50 RETURN “miss”\n END IF\n END REPEAT\nThe original prepcode for part of the \ncheckYourself() method:\nLife would be good if only we could \nchange it to:\n prep code \ntest code\nreal code\n prep code \nWe delete each cell location as it gets hit, and then modify the array to \nbe smaller. Except arrays can’t change their size, 50 we have to make a \nnew array and copy the remaining cells from the old array into the new \nsmaller array.\n3\nOption three\n0\n1\n2\n4\n5\nlocationCells array \nBEFORE any cells \nhave been hit\nThe array starts out with a size \nof 3, and we loop through all 3 cells \n(positions in the array) to look for \na match between the user guess and \nthe cell value (4,5, 6).\nWhen cell ‘5’ is hit, we make a new, \nsmaller array with only the remain-\ning cell locations, and assign it to the \noriginal locationCells reference.\n6\nlocationCells array \nAFTER cell ‘5’, which \nwas at index 1 in the \narray, has been hit\n0\n1\n4\n6\nOption three would be much better if the array could shrink, 50 that we wouldn’t have \nto make a new smaller array, copy the remaining values in, and reassign the reference.\nprep code",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7067,
+      "rows": [
+        [
+          "pprreepp ccooddee",
+          "",
+          "te",
+          "st code",
+          "real code"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "130 \nchapter 6\n REPEAT with each of the location cells in the int array \n // COMPARE the user guess to the location cell \n IF the user guess matches\n INCREMENT the number of hits\n // FIND OUT if it was the last location cell:\n IF number of hits is 3, RETURN “kill”\n ELSE it was not a kill, 50 RETURN“hit”\n END IF\n ELSE user guess did not match, 50 RETURN “miss”\n END IF\n END REPEAT\n REPEAT with each of the remaining location cells \n // COMPARE the user guess to the location cell \n IF the user guess matches\n REMOVE this cell from the array\n // FIND OUT if it was the last location cell:\n IF the array is now empty, RETURN “kill” \n ELSE it was not a kill, 50 RETURN“hit”\n END IF\n ELSE user guess did not match, 50 RETURN “miss”\n END IF\n END REPEAT\nThe original prepcode for part of the \ncheckYourself() method:\nLife would be good if only we could \nchange it to:\n prep code \ntest code\nreal code\n prep code \nWe delete each cell location as it gets hit, and then modify the array to \nbe smaller. Except arrays can’t change their size, 50 we have to make a \nnew array and copy the remaining cells from the old array into the new \nsmaller array.\n3\nOption three\n0\n1\n2\n4\n5\nlocationCells array \nBEFORE any cells \nhave been hit\nThe array starts out with a size \nof 3, and we loop through all 3 cells \n(positions in the array) to look for \na match between the user guess and \nthe cell value (4,5, 6).\nWhen cell ‘5’ is hit, we make a new, \nsmaller array with only the remain-\ning cell locations, and assign it to the \noriginal locationCells reference.\n6\nlocationCells array \nAFTER cell ‘5’, which \nwas at index 1 in the \narray, has been hit\n0\n1\n4\n6\nOption three would be much better if the array could shrink, 50 that we wouldn’t have \nto make a new smaller array, copy the remaining values in, and reassign the reference.\nprep code",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 164,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 164,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2137 chars",
+      "severity": "info"
+    },
+    {
+      "page": 164,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 164,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

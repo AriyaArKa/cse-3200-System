@@ -1,0 +1,74 @@
+{
+  "page_number": 379,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n345\nb.setMessage(128, 1, 44, 100);\nMidiEvent noteOff = new MidiEvent(b, 3 );\nNow that you know what’5 in a Midi message, you can start experimenting. You \ncan change the note that’5 played, how long the note is held, add more notes, \nand even change the instrument.\nChange a message\nChange the note\nTry a number between 0 and 127 in the note \non and note off messages.\n1\na.setMessage(144, 1, 20, 100);\nChange the duration of the note\nChange the note off event (not the message) 50 \nthat it happens at an earlier or later beat.\n2\n1\n0\n2 3 4 5 6 7 8\n127\nfirst.setMessage(192, 1, 102, 0);\nChange the instrument\nAdd a new message, BEFORE the note-playing message, \nthat sets the instrument in channel 1 to something other \nthan the default piano. The change-instrument message \nis ‘192’, and the third argument represents the actual \ninstrument (try a number between 0 and 127)\n3\nchange-instrument message\nin channel 1 (musician 1)\nto instrument 102",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (288x197)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (415x286)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (237x274)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n345\nb.setMessage(128, 1, 44, 100);\nMidiEvent noteOff = new MidiEvent(b, 3 );\nNow that you know what’5 in a Midi message, you can start experimenting. You \ncan change the note that’5 played, how long the note is held, add more notes, \nand even change the instrument.\nChange a message\nChange the note\nTry a number between 0 and 127 in the note \non and note off messages.\n1\na.setMessage(144, 1, 20, 100);\nChange the duration of the note\nChange the note off event (not the message) 50 \nthat it happens at an earlier or later beat.\n2\n1\n0\n2 3 4 5 6 7 8\n127\nfirst.setMessage(192, 1, 102, 0);\nChange the instrument\nAdd a new message, BEFORE the note-playing message, \nthat sets the instrument in channel 1 to something other \nthan the default piano. The change-instrument message \nis ‘192’, and the third argument represents the actual \ninstrument (try a number between 0 and 127)\n3\nchange-instrument message\nin channel 1 (musician 1)\nto instrument 102",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 379,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 379,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 978 chars",
+      "severity": "info"
+    },
+    {
+      "page": 379,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 379,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

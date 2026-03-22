@@ -1,0 +1,46 @@
+{
+  "page_number": 702,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "when arrays aren’t enough\n668\nappendix 8\ndefault and protected\ndefault\nBoth protected and default access levels are tied to packages. Default access is simple—it \nmeans that only code within the same package can access code with default access. 50 a de-\nfault class, for example (which means a class that isn’t explicitly declared as public) can \nbe accessed by only classes within the same package as the default class.\nBut what does it really mean to access a class? Code that does not have access to a class is \nnot allowed to even think about the class. And by think, we mean use the class in code. \nFor example, if you don’t have access to a class, because of access restriction, you aren’t \nallowed to instantiate the class or even declare it as a type for a variable, argument, or \nreturn value. You simply can’t type it into your code at all! If you do, the compiler will \ncomplain.\nThink about the implications—a default class with public methods means the public \nmethods aren’t really public at all. You can’t access a method if you can’t see the class.\nWhy would anyone want to restrict access to code within the same package? Typically, \npackages are designed as a group of classes that work together as a related set. 50 it \nmight make sense that classes within the same package need to access one another’5 \ncode, while as a package, only a small number of classes and methods are exposed to \nthe outside world (i.e. code outside that package).\nOK, that’5 default. It’5 simple—if something has default access (which, remember, \nmeans no explicit access modifier!), only code within the same package as the default \nthing (class, variable, method, inner class) can access that thing.\nThen what’5 protected for?\nprotected\nProtected access is almost identical to default access, with one exception: it allows \nsubclasses to inherit the protected thing, even if those subclasses are outside the package of the \nsuperclass they extend. That’5 it. That’5 all protected buys you—the ability to let your sub-\nclasses be outside your superclass package, yet still inherit pieces of the class, including \nmethods and constructors.\nMany developers find very little reason to use protected, but it is used in some designs, \nand some day you might find it to be exactly what you need. One of the interesting \nthings about protected is that—unlike the other access levels—protected access applies \nonly to inheritance. If a subclass-outside-the-package has a reference to an instance of the \nsuperclass (the superclass that has, say, a protected method), the subclass can’t access \nthe protected method using that superclass reference! The only way the subclass can \naccess that method is by inheriting it. In other words, the subclass-outside-the-package \ndoesn’t have access to the protected method, it just has the method, through inheritance.\n#4 Access Levels and Access Modifiers, cont.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "when arrays aren’t enough\n668\nappendix 8\ndefault and protected\ndefault\nBoth protected and default access levels are tied to packages. Default access is simple—it \nmeans that only code within the same package can access code with default access. 50 a de-\nfault class, for example (which means a class that isn’t explicitly declared as public) can \nbe accessed by only classes within the same package as the default class.\nBut what does it really mean to access a class? Code that does not have access to a class is \nnot allowed to even think about the class. And by think, we mean use the class in code. \nFor example, if you don’t have access to a class, because of access restriction, you aren’t \nallowed to instantiate the class or even declare it as a type for a variable, argument, or \nreturn value. You simply can’t type it into your code at all! If you do, the compiler will \ncomplain.\nThink about the implications—a default class with public methods means the public \nmethods aren’t really public at all. You can’t access a method if you can’t see the class.\nWhy would anyone want to restrict access to code within the same package? Typically, \npackages are designed as a group of classes that work together as a related set. 50 it \nmight make sense that classes within the same package need to access one another’5 \ncode, while as a package, only a small number of classes and methods are exposed to \nthe outside world (i.e. code outside that package).\nOK, that’5 default. It’5 simple—if something has default access (which, remember, \nmeans no explicit access modifier!), only code within the same package as the default \nthing (class, variable, method, inner class) can access that thing.\nThen what’5 protected for?\nprotected\nProtected access is almost identical to default access, with one exception: it allows \nsubclasses to inherit the protected thing, even if those subclasses are outside the package of the \nsuperclass they extend. That’5 it. That’5 all protected buys you—the ability to let your sub-\nclasses be outside your superclass package, yet still inherit pieces of the class, including \nmethods and constructors.\nMany developers find very little reason to use protected, but it is used in some designs, \nand some day you might find it to be exactly what you need. One of the interesting \nthings about protected is that—unlike the other access levels—protected access applies \nonly to inheritance. If a subclass-outside-the-package has a reference to an instance of the \nsuperclass (the superclass that has, say, a protected method), the subclass can’t access \nthe protected method using that superclass reference! The only way the subclass can \naccess that method is by inheriting it. In other words, the subclass-outside-the-package \ndoesn’t have access to the protected method, it just has the method, through inheritance.\n#4 Access Levels and Access Modifiers, cont.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 702,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 702,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2896 chars",
+      "severity": "info"
+    },
+    {
+      "page": 702,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 333,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "numbers and statics\nyou are here\n299\nThe only required specifier is for TYPE\nAlthough type is the only required specifier, remember that if you do put \nin anything else, type must always come last! There are more than a dozen \ndifferent type modifiers (not including dates and times; they have their own \nset), but most of the time you’11 probably use %d (decimal) or %f (floating \npoint). And typically you’11 combine %f with a precision indicator to set the \nnumber of decimal places you want in your output.\nformat(“%d”, 42);\nThe TYPE is mandatory, everything else is optional.\n42\n%d \ndecimal\nformat(“%.3f”, 42.000000);\n42.000\n%f \nfloating point\nformat(“%x”, 42);\n2a\n%x \nhexadecimal\nformat(“%c”, 42);\n*\n%c \ncharacter\nThe argument must be compatible with an int, 50 that means \nonly byte, short, int, and char (or their wrapper types).\nThe argument must be of a floating point type, 50 that \nmeans only a float or double (primitive or wrapper) as well \nas something called BigDecimal (which we don’t look at in \nthis book).\nA 42.25 would not work! It \nwould be the same as trying to \ndirectly assign a double to an \nint variable.\nHere we combined the “f” \nwith a precision indicator \n“.3” 50 we ended up with \nthree zeroes.\nThe argument must be a byte, short, int, long (including \nboth primitive and wrapper types), and BigInteger. \nYou must include a \ntype in your format \ninstructions, and if you \nspecify things besides \ntype, the type must \nalways come last. \nMost of the time, \nyou’11 probably format \nnumbers using either \n“d” for decimal or “f” \nfor f loating point.\nThe argument must be a byte, short, char, or int (including \nboth primitive and wrapper types).\nThe number 42 represents \nthe char “*”.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "numbers and statics\nyou are here\n299\nThe only required specifier is for TYPE\nAlthough type is the only required specifier, remember that if you do put \nin anything else, type must always come last! There are more than a dozen \ndifferent type modifiers (not including dates and times; they have their own \nset), but most of the time you’11 probably use %d (decimal) or %f (floating \npoint). And typically you’11 combine %f with a precision indicator to set the \nnumber of decimal places you want in your output.\nformat(“%d”, 42);\nThe TYPE is mandatory, everything else is optional.\n42\n%d \ndecimal\nformat(“%.3f”, 42.000000);\n42.000\n%f \nfloating point\nformat(“%x”, 42);\n2a\n%x \nhexadecimal\nformat(“%c”, 42);\n*\n%c \ncharacter\nThe argument must be compatible with an int, 50 that means \nonly byte, short, int, and char (or their wrapper types).\nThe argument must be of a floating point type, 50 that \nmeans only a float or double (primitive or wrapper) as well \nas something called BigDecimal (which we don’t look at in \nthis book).\nA 42.25 would not work! It \nwould be the same as trying to \ndirectly assign a double to an \nint variable.\nHere we combined the “f” \nwith a precision indicator \n“.3” 50 we ended up with \nthree zeroes.\nThe argument must be a byte, short, int, long (including \nboth primitive and wrapper types), and BigInteger. \nYou must include a \ntype in your format \ninstructions, and if you \nspecify things besides \ntype, the type must \nalways come last. \nMost of the time, \nyou’11 probably format \nnumbers using either \n“d” for decimal or “f” \nfor f loating point.\nThe argument must be a byte, short, char, or int (including \nboth primitive and wrapper types).\nThe number 42 represents \nthe char “*”.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 333,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 333,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1715 chars",
+      "severity": "info"
+    },
+    {
+      "page": 333,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

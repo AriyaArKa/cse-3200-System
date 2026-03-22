@@ -1,0 +1,67 @@
+{
+  "page_number": 123,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n89\nWho am 1?\nA class can have any number of these.\nA method can have only one of these.\nThis can be implicitly promoted.\n1 prefer my instance variables private.\nIt really means ‘make a copy’.\nOnly setters should update these.\nA method can have many of these.\n1 return something by definition.\n1 shouldn’t be used with instance variables.\n1 can have many arguments.\nBy definition, 1 take one argument.\nThese help create encapsulation.\n1 always fly 5010.\nA bunch of Java components, in full costume, are playing a party \ngame, “Who am 1?” They give you a clue, and you try to guess who \nthey are, based on what they say. Assume they always tell the truth \nabout themselves. If they happen to say something that could be true \nfor more than one guy, then write down all for whom that sentence \napplies. Fill in the blanks next to the sentence with the names of one \nor more attendees. \nTonight’5 attendees:\ninstance variable, argument, return, getter, setter, \nencapsulation, public, private, pass by value, method\nExercise",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (246x234)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (129x109)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n89\nWho am 1?\nA class can have any number of these.\nA method can have only one of these.\nThis can be implicitly promoted.\n1 prefer my instance variables private.\nIt really means ‘make a copy’.\nOnly setters should update these.\nA method can have many of these.\n1 return something by definition.\n1 shouldn’t be used with instance variables.\n1 can have many arguments.\nBy definition, 1 take one argument.\nThese help create encapsulation.\n1 always fly 5010.\nA bunch of Java components, in full costume, are playing a party \ngame, “Who am 1?” They give you a clue, and you try to guess who \nthey are, based on what they say. Assume they always tell the truth \nabout themselves. If they happen to say something that could be true \nfor more than one guy, then write down all for whom that sentence \napplies. Fill in the blanks next to the sentence with the names of one \nor more attendees. \nTonight’5 attendees:\ninstance variable, argument, return, getter, setter, \nencapsulation, public, private, pass by value, method\nExercise",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 123,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 123,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1068 chars",
+      "severity": "info"
+    },
+    {
+      "page": 123,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 123,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

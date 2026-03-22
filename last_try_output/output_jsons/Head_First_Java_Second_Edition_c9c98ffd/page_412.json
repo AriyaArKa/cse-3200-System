@@ -1,0 +1,87 @@
+{
+  "page_number": 412,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "378 \nchapter 12\nclass MyOuter {\n private int x;\n MyInner inner = new MyInner();\n public void doStuff() {\n inner.go();\n }\n \n class MyInner {\n void go() {\n x = 42;\n }\n } // close inner class\n} // close outer class\nThe outer class has a private \ninstance variable ‘x’\nMake an instance of the \ninner class\nThe method in the inner class uses the \nouter class instance variable ‘x’, as if ‘x’ \nbelonged to the inner class.\nIf you instantiate an inner class from code within an outer class, the instance \nof the outer class is the one that the inner object will ‘bond’ with. For \nexample, if code within a method instantiates the inner class, the inner \nobject will bond to the instance whose method is running.\nCode in an outer class can instantiate one of its own inner classes, in exactly \nthe same way it instantiates any other class... new MyInner()\nHow to make an instance of an inner class\nMyOuter\nouter\nMyInner\ninner\nint\nx\nMyOuter\nouter\nint\nx\nspecial \nbond\nYou can instantiate an inner instance from code running outside the outer class, but you \nhave to use a special syntax. Chances are you’11 go through your entire Java life and never \nneed to make an inner class from outside, but just in case you’re interested...\n class Foo {\n public static void main (String[] args) {\n MyOuter outerObj = new MyOuter();\n MyOuter.MyInner innerObj = outerObj.new MyInner();\n }\n }\ninner class instances\n Side bar\ncall a method on the \ninner class",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Side bar"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (49x69)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "378 \nchapter 12\nclass MyOuter {\n private int x;\n MyInner inner = new MyInner();\n public void doStuff() {\n inner.go();\n }\n \n class MyInner {\n void go() {\n x = 42;\n }\n } // close inner class\n} // close outer class\nThe outer class has a private \ninstance variable ‘x’\nMake an instance of the \ninner class\nThe method in the inner class uses the \nouter class instance variable ‘x’, as if ‘x’ \nbelonged to the inner class.\nIf you instantiate an inner class from code within an outer class, the instance \nof the outer class is the one that the inner object will ‘bond’ with. For \nexample, if code within a method instantiates the inner class, the inner \nobject will bond to the instance whose method is running.\nCode in an outer class can instantiate one of its own inner classes, in exactly \nthe same way it instantiates any other class... new MyInner()\nHow to make an instance of an inner class\nMyOuter\nouter\nMyInner\ninner\nint\nx\nMyOuter\nouter\nint\nx\nspecial \nbond\nYou can instantiate an inner instance from code running outside the outer class, but you \nhave to use a special syntax. Chances are you’11 go through your entire Java life and never \nneed to make an inner class from outside, but just in case you’re interested...\n class Foo {\n public static void main (String[] args) {\n MyOuter outerObj = new MyOuter();\n MyOuter.MyInner innerObj = outerObj.new MyInner();\n }\n }\ninner class instances\n Side bar\ncall a method on the \ninner class",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 412,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 412,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1512 chars",
+      "severity": "info"
+    },
+    {
+      "page": 412,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 412,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

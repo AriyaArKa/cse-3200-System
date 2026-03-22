@@ -1,0 +1,165 @@
+{
+  "page_number": 197,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n163\nFile Edit Window Help Dance\n% java ArrayListMagnet\nzero one two three \nzero one three four \nzero one three four 4.2 \nzero one three four 4.2 \nExercise Solutions\nif (a.contains(“three”)) {\n a.add(“four”);\n}\nimport java.util.*;\npublic class ArrayListMagnet {\nArrayList<String> a = new ArrayList<String>();\n public static void main (String[] args) {\na.add(0,”zero”);\na.add(1,”one”);\n a.add(2,”two”);\na.add(3,”three”);\nprintAL(a);\na.remove(2);\nif (a.indexOf(“four”) != 4) {\n a.add(4, “4.2”);\n}\nif (a.contains(“two”)) {\n a.add(“2.2”);\n}\n public static void printAL(ArrayList<String> al) {\nfor (String element : al) {\nSystem.out.print(element + “ “);\n}\nSystem.out.println(“ “);\n}\n}\n}\nprintAL(a);\nprintAL(a);\nprintAL(a);",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "import java.util.*;"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "a.add(0,”zero”);\na.add(1,”one”);"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Dance"
+        ],
+        [
+          "% java ArrayListMagnet\nzero one two three\nzero one three four\nzero one three four 4.2\nzero one three four 4.2"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "a.add(3,”three”);"
+        ],
+        [
+          "printAL(a);"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "if (a.contains(“two”)) {\na.add(“2.2”);\n}\nprintAL(a);",
+          ""
+        ],
+        [
+          "p",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "for (String element : al) {",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "}",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (133x111)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "get to know the Java API \nyou are here\n163\nFile Edit Window Help Dance\n% java ArrayListMagnet\nzero one two three \nzero one three four \nzero one three four 4.2 \nzero one three four 4.2 \nExercise Solutions\nif (a.contains(“three”)) {\n a.add(“four”);\n}\nimport java.util.*;\npublic class ArrayListMagnet {\nArrayList<String> a = new ArrayList<String>();\n public static void main (String[] args) {\na.add(0,”zero”);\na.add(1,”one”);\n a.add(2,”two”);\na.add(3,”three”);\nprintAL(a);\na.remove(2);\nif (a.indexOf(“four”) != 4) {\n a.add(4, “4.2”);\n}\nif (a.contains(“two”)) {\n a.add(“2.2”);\n}\n public static void printAL(ArrayList<String> al) {\nfor (String element : al) {\nSystem.out.print(element + “ “);\n}\nSystem.out.println(“ “);\n}\n}\n}\nprintAL(a);\nprintAL(a);\nprintAL(a);",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 197,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 197,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 794 chars",
+      "severity": "info"
+    },
+    {
+      "page": 197,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 197,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

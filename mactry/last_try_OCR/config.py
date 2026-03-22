@@ -16,6 +16,7 @@ OUTPUT_DIR = PROJECT_ROOT / "last_try_output"
 OUTPUT_IMAGES_DIR = OUTPUT_DIR / "output_images"
 JSON_OUTPUT_DIR = OUTPUT_DIR / "output_jsons"
 MERGED_OUTPUT_DIR = OUTPUT_DIR / "merged_outputs"
+TEXT_OUTPUT_DIR = OUTPUT_DIR / "output_texts"
 LOG_DIR = OUTPUT_DIR / "logs"
 
 # ── Gemini (free tier cloud fallback) ─────────────────────────────────────
@@ -43,6 +44,7 @@ OLLAMA_TIMEOUT = 180
 OLLAMA_MAX_RETRIES = 1
 OLLAMA_MIN_IMAGE_EDGE = 896
 OLLAMA_MAX_IMAGE_EDGE = 1280
+OLLAMA_STATUS_RECHECK_SECONDS = 30
 
 # ── PDF Processing ─────────────────────────────────────────────────────────
 DPI = 180

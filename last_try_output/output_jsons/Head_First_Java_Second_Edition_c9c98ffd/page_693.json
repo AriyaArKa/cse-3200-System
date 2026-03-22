@@ -1,0 +1,60 @@
+{
+  "page_number": 693,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "We covered a lot of ground, and you’re almost finished with this book. We’11 miss you, but before \nwe let you go, we wouldn’t feel right about sending you out into JavaLand without a little more \npreparation. We can’t possibly fit everything you’11 need to know into this relatively small appendix. \nActually, we did originally include everything you need to know about Java (not already covered by \nthe other chapters), by reducing the type point size to .00003. It all fit, but nobody could read it. 50, \nwe threw most of it away, but kept the best bits for this Top Ten appendix. \nThis really is the end of the book. Except for the index (a must-read!).\nAppendix 8\nThe Top Ten Topics that almost made it into the Real Book...\nYou mean, there’5 still \nMORE? Doesn’t this \nbook EVER end?\n659\nthis is a new appendix",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (643x813)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "We covered a lot of ground, and you’re almost finished with this book. We’11 miss you, but before \nwe let you go, we wouldn’t feel right about sending you out into JavaLand without a little more \npreparation. We can’t possibly fit everything you’11 need to know into this relatively small appendix. \nActually, we did originally include everything you need to know about Java (not already covered by \nthe other chapters), by reducing the type point size to .00003. It all fit, but nobody could read it. 50, \nwe threw most of it away, but kept the best bits for this Top Ten appendix. \nThis really is the end of the book. Except for the index (a must-read!).\nAppendix 8\nThe Top Ten Topics that almost made it into the Real Book...\nYou mean, there’5 still \nMORE? Doesn’t this \nbook EVER end?\n659\nthis is a new appendix",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 693,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 693,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 823 chars",
+      "severity": "info"
+    },
+    {
+      "page": 693,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 693,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

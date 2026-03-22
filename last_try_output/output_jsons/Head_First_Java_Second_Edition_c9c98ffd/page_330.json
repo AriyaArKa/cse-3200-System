@@ -1,0 +1,46 @@
+{
+  "page_number": 330,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "296 \nchapter 10\nthe format() method \nThe percent (%) says, “insert argument here” \n(and format it using these instructions)\nThe first argument to a format() method is called the format String, and it \ncan actually include characters that you just want printed as-is, without extra \nformatting. When you see the % sign, though, think of the percent sign as a \nvariable that represents the other argument to the method.\nformat(“1 have %.2f bugs to fix.”, 476578.09876);\nOutput\nArgument to be \nformatted.\nFormat specifiers for the \nsecond argument to the \nmethod (the number). \nCharacters to include in \nthe final String returned \nfrom format().\n1 have 476578.10 bugs to fix.\nMore characters to \ninclude in the String after \nthe second argument is \nformatted and inserted.\nThe “%” sign tells the formatter to insert the other method argument (the \nsecond argument to format(), the number) here, AND format it using the \n“.2f” characters after the percent sign. Then the rest of the format String, \n“bugs to fix”, is added to the final output.\nNotice we lost some of the numbers \nafter the decimal point. Can you guess \nwhat the “.2f” means?\nAdding a comma\nformat(“1 have %,.2f bugs to fix.”, 476578.09876);\n1 have 476,578.10 bugs to fix.\nBy changing the format instructions \nfrom “%.2f” to %,.2f”, we got a \ncomma in the formatted number.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "296 \nchapter 10\nthe format() method \nThe percent (%) says, “insert argument here” \n(and format it using these instructions)\nThe first argument to a format() method is called the format String, and it \ncan actually include characters that you just want printed as-is, without extra \nformatting. When you see the % sign, though, think of the percent sign as a \nvariable that represents the other argument to the method.\nformat(“1 have %.2f bugs to fix.”, 476578.09876);\nOutput\nArgument to be \nformatted.\nFormat specifiers for the \nsecond argument to the \nmethod (the number). \nCharacters to include in \nthe final String returned \nfrom format().\n1 have 476578.10 bugs to fix.\nMore characters to \ninclude in the String after \nthe second argument is \nformatted and inserted.\nThe “%” sign tells the formatter to insert the other method argument (the \nsecond argument to format(), the number) here, AND format it using the \n“.2f” characters after the percent sign. Then the rest of the format String, \n“bugs to fix”, is added to the final output.\nNotice we lost some of the numbers \nafter the decimal point. Can you guess \nwhat the “.2f” means?\nAdding a comma\nformat(“1 have %,.2f bugs to fix.”, 476578.09876);\n1 have 476,578.10 bugs to fix.\nBy changing the format instructions \nfrom “%.2f” to %,.2f”, we got a \ncomma in the formatted number.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 330,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 330,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1336 chars",
+      "severity": "info"
+    },
+    {
+      "page": 330,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

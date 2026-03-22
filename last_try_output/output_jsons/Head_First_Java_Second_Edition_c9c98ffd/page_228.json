@@ -1,0 +1,74 @@
+{
+  "page_number": 228,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "194 \nchapter 7\nRowboat\nSailboat\nBoat\nsubclasses\nint length\nint b1\nextends\nstroke natasha\nTestboats\ndrift\nreturn\nint len\npublic\nint b2\nprivate\nhoist sail\ncontinue\nint b2\nint b3\nbreak\nlength\nb1\nb2\nb3\nlen\nmove\nrowTheBoat\nsetLength\ngetLength\nString\nint\nvoid\nstatic\nPool Puzzle\nYour job is to take code snippets from the pool and place them into \nthe blank lines in the code. You may use the same snippet more \nthan once, and you might not need to use all the snippets. Your \ngoal is to make a set of classes that will compile and run together \nas a program. Don’t be fooled – this one’5 harder than it looks.\npublic class Rowboat ________ ________ {\n public ___________ rowTheBoat() {\n System.out.print(“stroke natasha”);\n }\n}\npublic class ________ {\n private int __________ ;\n _______ void _________ ( ______ ) {\n length = len;\n }\n public int getLength() {\n ________ _________ ;\n }\n public ___________ move() {\n System.out.print(“___________”);\n }\n}\n \npublic class TestBoats {\n ______ ______ _______ main(String[] args){\n _________ b1 = new Boat();\n Sailboat b2 = new __________();\n Rowboat ________ = new Rowboat();\n b2.setLength(32);\n b1.__________();\n b3.__________();\n _______.move();\n }\n}\npublic class __________ ________ Boat {\n public _______ _________() {\n System.out.print(“___________”);\n }\n}\n drift drift hoist sail \nOUTPUT:\npuzzle: Pool Puzzle",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (1278x544)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "194 \nchapter 7\nRowboat\nSailboat\nBoat\nsubclasses\nint length\nint b1\nextends\nstroke natasha\nTestboats\ndrift\nreturn\nint len\npublic\nint b2\nprivate\nhoist sail\ncontinue\nint b2\nint b3\nbreak\nlength\nb1\nb2\nb3\nlen\nmove\nrowTheBoat\nsetLength\ngetLength\nString\nint\nvoid\nstatic\nPool Puzzle\nYour job is to take code snippets from the pool and place them into \nthe blank lines in the code. You may use the same snippet more \nthan once, and you might not need to use all the snippets. Your \ngoal is to make a set of classes that will compile and run together \nas a program. Don’t be fooled – this one’5 harder than it looks.\npublic class Rowboat ________ ________ {\n public ___________ rowTheBoat() {\n System.out.print(“stroke natasha”);\n }\n}\npublic class ________ {\n private int __________ ;\n _______ void _________ ( ______ ) {\n length = len;\n }\n public int getLength() {\n ________ _________ ;\n }\n public ___________ move() {\n System.out.print(“___________”);\n }\n}\n \npublic class TestBoats {\n ______ ______ _______ main(String[] args){\n _________ b1 = new Boat();\n Sailboat b2 = new __________();\n Rowboat ________ = new Rowboat();\n b2.setLength(32);\n b1.__________();\n b3.__________();\n _______.move();\n }\n}\npublic class __________ ________ Boat {\n public _______ _________() {\n System.out.print(“___________”);\n }\n}\n drift drift hoist sail \nOUTPUT:\npuzzle: Pool Puzzle",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 228,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 228,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1444 chars",
+      "severity": "info"
+    },
+    {
+      "page": 228,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 228,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

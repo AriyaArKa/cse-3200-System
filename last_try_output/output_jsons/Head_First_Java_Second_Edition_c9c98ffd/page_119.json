@@ -1,0 +1,59 @@
+{
+  "page_number": 119,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n85\nThe difference between instance \nand local variables\nInstance variables are declared \ninside a class but not within a method.\n1\nclass Horse {\n private double height = 15.2;\n private String breed;\n // more code...\n}\nLocal variables are declared within a method.\n2\nclass AddThing {\n int a;\n int b = 12;\n public int add() {\n int total = a + b;\n return total;\n }\n}\n \nLocal variables do \nNOT get a default \nvalue! The compiler \ncomplains if you \ntry to use a local \nvariable before \nthe variable is \ninitialized.\nLocal variables MUST be initialized before use!\n3\nclass Foo {\n public void go() {\n int x;\n int z = x + 3;\n }\n}\n \nWon’t compile!! You can \ndeclare x without a value, \nbut as soon as you try \nto USE it, the compiler \nfreaks out.\nFile Edit Window Help Yikes\n% javac Foo.java\nFoo.java:4: variable x might \nnot have been initialized\n int z = x + 3;\n1 error ^\nthere are no\nDumb Questions\nQ: What about method parameters? \nHow do the rules about local variables \napply to them?\nA: Method parameters are virtually the \nsame as local variables—they’re declared \ninside the method (well, technically they’re \ndeclared in the argument list of the method \nrather than within the body of the method, \nbut they’re still local variables as opposed to \ninstance variables). But method parameters \nwill never be uninitialized, 50 you’11 never get \na compiler error telling you that a parameter \nvariable might not have been initialized.\nBut that’5 because the compiler will give \nyou an error if you try to invoke a method \nwithout sending arguments that the method \nneeds. 50 parameters are ALWAYS initialized, \nbecause the compiler guarantees that \nmethods are always called with arguments \nthat match the parameters declared for the \nmethod, and the arguments are assigned \n(automatically) to the parameters.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Yikes"
+        ],
+        [
+          "% javac Foo.java\nFoo.java:4: variable x might\nnot have been initialized\nint z = x + 3;\n1 error ^"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "you are here\nmethods use instance variables\n85\nThe difference between instance \nand local variables\nInstance variables are declared \ninside a class but not within a method.\n1\nclass Horse {\n private double height = 15.2;\n private String breed;\n // more code...\n}\nLocal variables are declared within a method.\n2\nclass AddThing {\n int a;\n int b = 12;\n public int add() {\n int total = a + b;\n return total;\n }\n}\n \nLocal variables do \nNOT get a default \nvalue! The compiler \ncomplains if you \ntry to use a local \nvariable before \nthe variable is \ninitialized.\nLocal variables MUST be initialized before use!\n3\nclass Foo {\n public void go() {\n int x;\n int z = x + 3;\n }\n}\n \nWon’t compile!! You can \ndeclare x without a value, \nbut as soon as you try \nto USE it, the compiler \nfreaks out.\nFile Edit Window Help Yikes\n% javac Foo.java\nFoo.java:4: variable x might \nnot have been initialized\n int z = x + 3;\n1 error ^\nthere are no\nDumb Questions\nQ: What about method parameters? \nHow do the rules about local variables \napply to them?\nA: Method parameters are virtually the \nsame as local variables—they’re declared \ninside the method (well, technically they’re \ndeclared in the argument list of the method \nrather than within the body of the method, \nbut they’re still local variables as opposed to \ninstance variables). But method parameters \nwill never be uninitialized, 50 you’11 never get \na compiler error telling you that a parameter \nvariable might not have been initialized.\nBut that’5 because the compiler will give \nyou an error if you try to invoke a method \nwithout sending arguments that the method \nneeds. 50 parameters are ALWAYS initialized, \nbecause the compiler guarantees that \nmethods are always called with arguments \nthat match the parameters declared for the \nmethod, and the arguments are assigned \n(automatically) to the parameters.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 119,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 119,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1916 chars",
+      "severity": "info"
+    },
+    {
+      "page": 119,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

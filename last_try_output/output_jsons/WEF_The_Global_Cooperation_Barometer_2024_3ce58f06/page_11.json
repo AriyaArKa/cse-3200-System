@@ -1,0 +1,131 @@
+{
+  "page_number": 11,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The innovation and technology pillar examines \nhow global cooperation, through exchanges of \nknowledge and people, accelerates innovation and \ncreates beneficial technological progress. \nFrom 2012-2020, innovation and technology \ncooperation maintained strong and significant \ngrowth across most barometer metrics (particularly \nin cross-border data flows and IT services trade). \nSince 2020, cooperation has leveled off, with \ncritical aspects starting to decline (e.g. cross-\nborder patent applications and international student \nflows) (Figure 4). \nInnovation and technology\nPillar 2: Innovation and technology\nF 1 6 U R E 4\n2012-2022: Significant, sustained \nincrease arrested by the pandemic \nGlobal cooperation in innovation and technology \nadvanced significantly from 2012-2020, likely \nbecause these years saw a significant shift toward \ndigital services, including cloud computing and \napplied AI. Rapid growth in technological streams \nsuch as intellectual property and data far outpaced \ngrowth in physical goods exchanges,18 with \nglobal data flows tripling and IT services trade \ndoubling. At the same time, both the numbers \nof international students and cross-border R&D \nactivity grew steadily. \nStill, measuring how cooperation has contributed \nto developments in technology and innovation is \ncomplicated, but some metrics point to signs of \ncooperation. For example, the price of lithium-\nion battery cells, a critical component enabler for \nthe energy transition, fell by 80%. The fall in cost \nreflected cooperation of countries across the global \nsupply chain (e.g. basic research conducted in \nthe US and Japan; mass production capabilities in \nChina, where 70%+ of global supply originates; and \nextraction of raw materials in Australia and Chile, \namong other countries).19 \n*Outcome metrics\nNotes: 1. Metrics were reflected given negative connotation. Note: Due to missing data in \nsome metrics, data from the closest years are used to calculate the trend. These metrics \ninclude labour migration, international students, cross-border IP R&D, trade in IT services, \nterrestrial protected areas, cross-border flows of pharma R&D, development assistance for \nhealth, child mortality, maternal mortality.\nSource: McKinsey & Company\nInnovation and technology index\nIndividuals using the internet*\nIT services trade\nCross-border data ﬂows\nTotal factor productivity growth*\nAverage price of a lithium ion battery*\nCross-border R&D\n,1\nCross-border patent applications\nIT goods/intermediates trade\nInternational students\nCompound annual \ngrowth rate (CAGR) %\nIndex [2020=1]\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\n14\n15\n16\n17\n18\n19\n20\n21 2022\n2012-2020\n2020-2022\n-6 -5\n0\n5\n10\n15\n-5\n0\n5\n10\n15\n2012 13\nPillar 2\nThe Global Cooperation Barometer 2024\n11",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Index [2020=1]\n1.1\n1.0\n0.9\n0.8\n0.7\n0.6\n201213 14 15 16 17 18\n*Outcome metrics\nNotes: 1. Metrics were reflecte\nsome metrics, data from the clo\ninclude labour migration, intern\nterrestrial protected areas, cros\nhealth, child mortality, maternal\nSource: McKinsey & Company",
+          "Compound annual -6 --55 00 55 1100 1155\ngrowth rate (CAGR) %\nInnovation and technology index\nIndividuals using the internet*\nIT services trade\nCross-border data flows\nTotal factor productivity growth*\nAverage price of a lithium ion battery*,1\nCross-border R&D\nCross-border patent applications\nIT goods/intermediates trade\nInternational students\n2012-2020 2020-2022\n19 20 212022\nd given negative connotation. Note: Due to missing data in\nsest years are used to calculate the trend. These metrics\national students, cross-border IP R&D, trade in IT services,\n5-border flows of pharma R&D, development assistance for\nmortality."
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 8,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "The innovation and technology pillar examines \nhow global cooperation, through exchanges of \nknowledge and people, accelerates innovation and \ncreates beneficial technological progress. \nFrom 2012-2020, innovation and technology \ncooperation maintained strong and significant \ngrowth across most barometer metrics (particularly \nin cross-border data flows and IT services trade). \nSince 2020, cooperation has leveled off, with \ncritical aspects starting to decline (e.g. cross-\nborder patent applications and international student \nflows) (Figure 4). \nInnovation and technology\nPillar 2: Innovation and technology\nF 1 6 U R E 4\n2012-2022: Significant, sustained \nincrease arrested by the pandemic \nGlobal cooperation in innovation and technology \nadvanced significantly from 2012-2020, likely \nbecause these years saw a significant shift toward \ndigital services, including cloud computing and \napplied AI. Rapid growth in technological streams \nsuch as intellectual property and data far outpaced \ngrowth in physical goods exchanges,18 with \nglobal data flows tripling and IT services trade \ndoubling. At the same time, both the numbers \nof international students and cross-border R&D \nactivity grew steadily. \nStill, measuring how cooperation has contributed \nto developments in technology and innovation is \ncomplicated, but some metrics point to signs of \ncooperation. For example, the price of lithium-\nion battery cells, a critical component enabler for \nthe energy transition, fell by 80%. The fall in cost \nreflected cooperation of countries across the global \nsupply chain (e.g. basic research conducted in \nthe US and Japan; mass production capabilities in \nChina, where 70%+ of global supply originates; and \nextraction of raw materials in Australia and Chile, \namong other countries).19 \n*Outcome metrics\nNotes: 1. Metrics were reflected given negative connotation. Note: Due to missing data in \nsome metrics, data from the closest years are used to calculate the trend. These metrics \ninclude labour migration, international students, cross-border IP R&D, trade in IT services, \nterrestrial protected areas, cross-border flows of pharma R&D, development assistance for \nhealth, child mortality, maternal mortality.\nSource: McKinsey & Company\nInnovation and technology index\nIndividuals using the internet*\nIT services trade\nCross-border data ﬂows\nTotal factor productivity growth*\nAverage price of a lithium ion battery*\nCross-border R&D\n,1\nCross-border patent applications\nIT goods/intermediates trade\nInternational students\nCompound annual \ngrowth rate (CAGR) %\nIndex [2020=1]\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\n14\n15\n16\n17\n18\n19\n20\n21 2022\n2012-2020\n2020-2022\n-6 -5\n0\n5\n10\n15\n-5\n0\n5\n10\n15\n2012 13\nPillar 2\nThe Global Cooperation Barometer 2024\n11",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 11,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 11,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2753 chars",
+      "severity": "info"
+    },
+    {
+      "page": 11,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

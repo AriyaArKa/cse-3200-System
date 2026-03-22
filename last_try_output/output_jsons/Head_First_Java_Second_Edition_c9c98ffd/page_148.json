@@ -1,0 +1,67 @@
+{
+  "page_number": 148,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "114 \nchapter 5\nfor(int i = 0; i < 100; i++){ }\nrepeat for 100 reps:\nRegular (non-enhanced) for loops\ninitialization\nboolean test\niteration expression\nWhat it means in plain English: “Repeat 100 times.”\nHow the compiler sees it:\n * create a variable i and set it to 0.\n * repeat while i is less than 100.\n * at the end of each loop iteration, add 1 to i\nPart One: initialization\nUse this part to declare and initialize a variable to use within the loop body. \nYou’11 most often use this variable as a counter. You can actually initialize more \nthan one variable here, but we’11 get to that later in the book.\nPart Two: boolean test\nThis is where the conditional test goes. Whatever’5 in there, it must resolve to a \nboolean value (you know, true or false). You can have a test, like (x >= 4), or you \ncan even invoke a method that returns a boolean.\nPart Three: iteration expression\nIn this part, put one or more things you want to happen with each trip through \nthe loop. Keep in mind that this stuff happens at the end of each loop. \npost-increment operator\nfor loops \nMore about for loops\nWe’ve covered all the game code for this chapter (but we’11 pick it up again \nto finish the deluxe version of the game in the next chapter). We didn’t \nwant to interrupt your work with some of the details and background info, \n50 we put it back here. We’11 start with the details of for loops, and if you’re \na C++ programmer, you can just skim these last few pages...\nthe code to \nrepeat goes here \n(the body)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (274x276)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (294x189)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "114 \nchapter 5\nfor(int i = 0; i < 100; i++){ }\nrepeat for 100 reps:\nRegular (non-enhanced) for loops\ninitialization\nboolean test\niteration expression\nWhat it means in plain English: “Repeat 100 times.”\nHow the compiler sees it:\n * create a variable i and set it to 0.\n * repeat while i is less than 100.\n * at the end of each loop iteration, add 1 to i\nPart One: initialization\nUse this part to declare and initialize a variable to use within the loop body. \nYou’11 most often use this variable as a counter. You can actually initialize more \nthan one variable here, but we’11 get to that later in the book.\nPart Two: boolean test\nThis is where the conditional test goes. Whatever’5 in there, it must resolve to a \nboolean value (you know, true or false). You can have a test, like (x >= 4), or you \ncan even invoke a method that returns a boolean.\nPart Three: iteration expression\nIn this part, put one or more things you want to happen with each trip through \nthe loop. Keep in mind that this stuff happens at the end of each loop. \npost-increment operator\nfor loops \nMore about for loops\nWe’ve covered all the game code for this chapter (but we’11 pick it up again \nto finish the deluxe version of the game in the next chapter). We didn’t \nwant to interrupt your work with some of the details and background info, \n50 we put it back here. We’11 start with the details of for loops, and if you’re \na C++ programmer, you can just skim these last few pages...\nthe code to \nrepeat goes here \n(the body)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 148,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 148,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1510 chars",
+      "severity": "info"
+    },
+    {
+      "page": 148,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 148,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

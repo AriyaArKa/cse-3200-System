@@ -1,0 +1,46 @@
+{
+  "page_number": 719,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nthe index\n685\nranges 51\nshort 51\ntype 51\nprimitive casting\nexplicit primitive 117\nprintf() 294\nPrintWriter 479\nprivate\naccess modifier 81\nprotected 668\npublic\naccess modifier 81, 668\npuzzles\nfive minute mystery 92, 527, 674\nJava cross 22, 120, 162, 350, 426, 603\npool puzzle 24, 44, 65, 91, 194, 232, 396\nQ\nquiz card builder 448, 448–451\nR\nrabbit 50\nrandom() 111\nready-bake code 112, 152–153, 520\nreference variables. See object references\ncasting 216\nregistry, RMI 615, 617, 620\nremote control 54, 57\nremote interface. See RMI\nreserved words 53\nreturn types\nabout 75\npolymorphic 187\nvalues 78\nrisky code 319–336\nRMI\nabout 614–622\nclient 620, 622\ncompiler 618\nJini. See also Jini\nNaming.lookup() 620\nNaming.rebind(). See also RMI\nregistry 615, 617, 620\nremote exceptions 616\nremote implementation 615, 617\nremote inteface 615, 616\nrmic 618\nskeleton 618\nstub 618\nUnicastRemoteObject 617\nuniversal service browser 636–648\nrmic. See RMI\nrun()\noverriding in Runnable interface 494\nRunnable interface 492\nabout 493\nrun() 493, 494\nthreads 493\nrunnable thread state 495\nRyan and Monica 505–506\nintroduction 505–506\n5\nscary objects 200\nscheduling threads\nscheduling 496–498\nscope\nvariables 236–238, 258–263\nscrolling (JScrollPane) 414\nserialization 434–439, 446\ndeserialization 460\ninterface 437\nObjectInputStream. See 1/0\nobjectOutputStream 432\nobjects 460\nobject graph 436\nreading. See 1/0\nrestoring 460. See also 1/0",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\nthe index\n685\nranges 51\nshort 51\ntype 51\nprimitive casting\nexplicit primitive 117\nprintf() 294\nPrintWriter 479\nprivate\naccess modifier 81\nprotected 668\npublic\naccess modifier 81, 668\npuzzles\nfive minute mystery 92, 527, 674\nJava cross 22, 120, 162, 350, 426, 603\npool puzzle 24, 44, 65, 91, 194, 232, 396\nQ\nquiz card builder 448, 448–451\nR\nrabbit 50\nrandom() 111\nready-bake code 112, 152–153, 520\nreference variables. See object references\ncasting 216\nregistry, RMI 615, 617, 620\nremote control 54, 57\nremote interface. See RMI\nreserved words 53\nreturn types\nabout 75\npolymorphic 187\nvalues 78\nrisky code 319–336\nRMI\nabout 614–622\nclient 620, 622\ncompiler 618\nJini. See also Jini\nNaming.lookup() 620\nNaming.rebind(). See also RMI\nregistry 615, 617, 620\nremote exceptions 616\nremote implementation 615, 617\nremote inteface 615, 616\nrmic 618\nskeleton 618\nstub 618\nUnicastRemoteObject 617\nuniversal service browser 636–648\nrmic. See RMI\nrun()\noverriding in Runnable interface 494\nRunnable interface 492\nabout 493\nrun() 493, 494\nthreads 493\nrunnable thread state 495\nRyan and Monica 505–506\nintroduction 505–506\n5\nscary objects 200\nscheduling threads\nscheduling 496–498\nscope\nvariables 236–238, 258–263\nscrolling (JScrollPane) 414\nserialization 434–439, 446\ndeserialization 460\ninterface 437\nObjectInputStream. See 1/0\nobjectOutputStream 432\nobjects 460\nobject graph 436\nreading. See 1/0\nrestoring 460. See also 1/0",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 719,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 719,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1482 chars",
+      "severity": "info"
+    },
+    {
+      "page": 719,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

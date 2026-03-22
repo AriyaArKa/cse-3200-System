@@ -1,0 +1,71 @@
+{
+  "page_number": 495,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n461\nEach time an object is serialized, the object (including \nevery object in its graph) is ‘stamped’ with a version \nID number for the object’5 class. The ID is called \nthe serialVersionUID, and it’5 computed based on \ninformation about the class structure. As an object is \nbeing deserialized, if the class has changed since the \nobject was serialized, the class could have a different \nserialVersionUID, and deserialization will fail! But you \ncan control this.\nIf you think there is ANY possibility that \nyour class might evolve, put a serial version \nID in your class.\nWhen Java tries to deserialize an object, it compares \nthe serialized object’5 serialVersionUID with that of the \nclass the JVM is using for deserializing the object. For \nexample, if a Dog instance was serialized with an ID of, \nsay 23 (in reality a serialVersionUID is much longer), \nwhen the JVM deserializes the Dog object it will first \ncompare the Dog object serialVersionUID with the \nDog class serialVersionUID. If the two numbers don’t \nmatch, the JVM assumes the class is not compatible \nwith the previously-serialized object, and you’11 get an \nexception during deserialization.\n50, the solution is to put a serialVersionUID \nin your class, and then as the class evolves, the \nserialVersionUID will remain the same and the JVM \nwill say, “OK, cool, the class is compatible with this \nserialized object.” even though the class has actually \nchanged.\nThis works only if you’re careful with your class \nchanges! In other words, you are taking responsibility \nfor any issues that come up when an older object is \nbrought back to life with a newer class. \nTo get a serialVersionUID for a class, use the serialver \ntool that ships with your Java development kit.\nUsing the serialVersionUID\nFile Edit Window Help serialKiller\n% serialver Dog\nDog: static final long \nserialVersionUID = -\n5849794470654667210L;\npublic class Dog {\n static final long serialVersionUID =\n -6849794470754667710L;\n private String name;\n private int size;\n // method code here\n}\nFile Edit Window Help serialKiller\n% serialver Dog\nDog: static final long \nserialVersionUID = -\n5849794470654667210L;\n1\nUse the serialver command-line tool \nto get the version ID for your class\n2\nPaste the output into your class\n3\nBe sure that when you make changes to \nthe class, you take responsibility in your \ncode for the consequences of the changes \nyou made to the class! For example, be \nsure that your new Dog class can deal with \nan old Dog being deserialized with default \nvalues for instance variables added to the \nclass after the Dog was serialized.\nWhen you think your class \nmight evolve after someone has \nserialized objects from it...\nBased on the version of \nJava you’re using, this value \nmight be different.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help serialKiller"
+        ],
+        [
+          "% serialver Dog\nDog: static final long\nserialVersionUID = -\n5849794470654667210L;"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help serialKiller"
+        ],
+        [
+          "% serialver Dog\nDog: static final long\nserialVersionUID = -\n5849794470654667210L;"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n461\nEach time an object is serialized, the object (including \nevery object in its graph) is ‘stamped’ with a version \nID number for the object’5 class. The ID is called \nthe serialVersionUID, and it’5 computed based on \ninformation about the class structure. As an object is \nbeing deserialized, if the class has changed since the \nobject was serialized, the class could have a different \nserialVersionUID, and deserialization will fail! But you \ncan control this.\nIf you think there is ANY possibility that \nyour class might evolve, put a serial version \nID in your class.\nWhen Java tries to deserialize an object, it compares \nthe serialized object’5 serialVersionUID with that of the \nclass the JVM is using for deserializing the object. For \nexample, if a Dog instance was serialized with an ID of, \nsay 23 (in reality a serialVersionUID is much longer), \nwhen the JVM deserializes the Dog object it will first \ncompare the Dog object serialVersionUID with the \nDog class serialVersionUID. If the two numbers don’t \nmatch, the JVM assumes the class is not compatible \nwith the previously-serialized object, and you’11 get an \nexception during deserialization.\n50, the solution is to put a serialVersionUID \nin your class, and then as the class evolves, the \nserialVersionUID will remain the same and the JVM \nwill say, “OK, cool, the class is compatible with this \nserialized object.” even though the class has actually \nchanged.\nThis works only if you’re careful with your class \nchanges! In other words, you are taking responsibility \nfor any issues that come up when an older object is \nbrought back to life with a newer class. \nTo get a serialVersionUID for a class, use the serialver \ntool that ships with your Java development kit.\nUsing the serialVersionUID\nFile Edit Window Help serialKiller\n% serialver Dog\nDog: static final long \nserialVersionUID = -\n5849794470654667210L;\npublic class Dog {\n static final long serialVersionUID =\n -6849794470754667710L;\n private String name;\n private int size;\n // method code here\n}\nFile Edit Window Help serialKiller\n% serialver Dog\nDog: static final long \nserialVersionUID = -\n5849794470654667210L;\n1\nUse the serialver command-line tool \nto get the version ID for your class\n2\nPaste the output into your class\n3\nBe sure that when you make changes to \nthe class, you take responsibility in your \ncode for the consequences of the changes \nyou made to the class! For example, be \nsure that your new Dog class can deal with \nan old Dog being deserialized with default \nvalues for instance variables added to the \nclass after the Dog was serialized.\nWhen you think your class \nmight evolve after someone has \nserialized objects from it...\nBased on the version of \nJava you’re using, this value \nmight be different.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 495,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 495,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2836 chars",
+      "severity": "info"
+    },
+    {
+      "page": 495,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 294,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "object lifecycle\n260 \nchapter 9\nThe rules are the same for primitives and references. A reference \nvariable can be used only when it’5 in scope, which means you can’t \nuse an object’5 remote control unless you’ve got a reference variable \nthat’5 in scope. The real question is, \n“How does variable life affect object life?”\nAn object is alive as long as there are live references to it. If a \nreference variable goes out of scope but is still alive, the object it \nrefers to is still alive on the Heap. And then you have to ask... “What \nhappens when the Stack frame holding the reference gets popped off \nthe Stack at the end of the method?”\nIf that was the only live reference to the object, the object is now \nabandoned on the Heap. The reference variable disintegrated with \nthe Stack frame, 50 the abandoned object is now, officially, toast. The \ntrick is to know the point at which an object becomes eligible for \ngarbage collection. \nOnce an object is eligible for garbage collection (GC), you don’t \nhave to worry about reclaiming the memory that object was using. \nIf your program gets low on memory, GC will destroy some or all of \nthe eligible objects, to keep you from running out of RAM. You can \nstill run out of memory, but not before all eligible objects have been \nhauled off to the dump. Your job is to make sure that you abandon \nobjects (i.e, make them eligible for GC) when you’re done with them, \n50 that the garbage collector has something to reclaim. If you hang \non to objects, GC can’t help you and you run the risk of your \nprogram dying a painful out-of-memory death.\nWhat about reference variables?\nAn object’5 life has no \nvalue, no meaning, no \npoint, unless somebody \nhas a reference to it.\nIf you can’t get to it, \nyou can’t ask it to do \nanything and it’5 just a \nbig fat waste of bits.\nBut if an object is \nunreachable, the \nGarbage Collector will \nfigure that out. Sooner \nor later, that object’5 \ngoin’ down.\nAn object becomes \neligible for GC when \nits last live reference \ndisappears.\nThree ways to get rid of an object’5 reference:\n1\nThe reference goes out of scope, permanently\n2\nThe reference is assigned another object\n3\nThe reference is explicitly set to null\nvoid go() {\n Life z = new Life();\n}\nLife z = new Life();\nz = new Life();\nLife z = new Life();\nz = null;\nreference ‘z’ dies at \nend of method\nthe first object is abandoned \nwhen z is ‘reprogrammed’ to \na new object.\nthe first object is abandoned \nwhen z is ‘deprogrammed’.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (416x301)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "object lifecycle\n260 \nchapter 9\nThe rules are the same for primitives and references. A reference \nvariable can be used only when it’5 in scope, which means you can’t \nuse an object’5 remote control unless you’ve got a reference variable \nthat’5 in scope. The real question is, \n“How does variable life affect object life?”\nAn object is alive as long as there are live references to it. If a \nreference variable goes out of scope but is still alive, the object it \nrefers to is still alive on the Heap. And then you have to ask... “What \nhappens when the Stack frame holding the reference gets popped off \nthe Stack at the end of the method?”\nIf that was the only live reference to the object, the object is now \nabandoned on the Heap. The reference variable disintegrated with \nthe Stack frame, 50 the abandoned object is now, officially, toast. The \ntrick is to know the point at which an object becomes eligible for \ngarbage collection. \nOnce an object is eligible for garbage collection (GC), you don’t \nhave to worry about reclaiming the memory that object was using. \nIf your program gets low on memory, GC will destroy some or all of \nthe eligible objects, to keep you from running out of RAM. You can \nstill run out of memory, but not before all eligible objects have been \nhauled off to the dump. Your job is to make sure that you abandon \nobjects (i.e, make them eligible for GC) when you’re done with them, \n50 that the garbage collector has something to reclaim. If you hang \non to objects, GC can’t help you and you run the risk of your \nprogram dying a painful out-of-memory death.\nWhat about reference variables?\nAn object’5 life has no \nvalue, no meaning, no \npoint, unless somebody \nhas a reference to it.\nIf you can’t get to it, \nyou can’t ask it to do \nanything and it’5 just a \nbig fat waste of bits.\nBut if an object is \nunreachable, the \nGarbage Collector will \nfigure that out. Sooner \nor later, that object’5 \ngoin’ down.\nAn object becomes \neligible for GC when \nits last live reference \ndisappears.\nThree ways to get rid of an object’5 reference:\n1\nThe reference goes out of scope, permanently\n2\nThe reference is assigned another object\n3\nThe reference is explicitly set to null\nvoid go() {\n Life z = new Life();\n}\nLife z = new Life();\nz = new Life();\nLife z = new Life();\nz = null;\nreference ‘z’ dies at \nend of method\nthe first object is abandoned \nwhen z is ‘reprogrammed’ to \na new object.\nthe first object is abandoned \nwhen z is ‘deprogrammed’.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 294,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 294,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2478 chars",
+      "severity": "info"
+    },
+    {
+      "page": 294,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 294,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

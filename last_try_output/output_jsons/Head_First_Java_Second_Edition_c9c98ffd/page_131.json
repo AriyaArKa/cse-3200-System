@@ -1,0 +1,46 @@
+{
+  "page_number": 131,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n97\nFirst, a high-level design\nWe know we’11 need classes and methods, but what \nshould they be? To answer that, we need more \ninformation about what the game should do.\nFirst, we need to figure out the general flow of the \ngame. Here’5 the basic idea:\n1\nUser starts the game\nGame creates three Dot Coms\n2\nGame play begins\nRepeat the following until there are \nno more Dot Coms:\nA\nA\nGame places the three Dot \nComs onto a virtual grid\n8\nPrompt user for a guess \n(“A2”, “C0”, etc.)\n8\nCheck the user guess against \nall Dot Coms to look for a hit, \nmiss, or kill. Take appropri-\nate action: if a hit, delete cell \n(A2, D4, etc.). If a kill, delete \nDot Com. \n3\nGame finishes\nGive the user a rating based on \nthe number of guesses.\nStart\nGame set-up\nGet user \nguess\nCheck \nguess\nhit\nmiss\nremove loca-\ntion cell\nkill\nremove \nDot Com \nyes\nno\nstill some \nDot Coms \nalive?\ndisplay user \nscore/rating\ngame \nover\nWhoa. A real flow chart.\nNow we have an idea of the kinds of things the \nprogram needs to do. The next step is figuring \nout what kind of objects we’11 need to do the \nwork. Remember, think like Brad rather than \nLarry; focus first on the things in the program \nrather than the procedures. \n1\nA\n8\n2\nA\n8\n3\nA circle means \nstart or finish\nA rectangle is \nused to represent \nan action\nA diamond \nrepresents a \ndecision point.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\nwriting a program\n97\nFirst, a high-level design\nWe know we’11 need classes and methods, but what \nshould they be? To answer that, we need more \ninformation about what the game should do.\nFirst, we need to figure out the general flow of the \ngame. Here’5 the basic idea:\n1\nUser starts the game\nGame creates three Dot Coms\n2\nGame play begins\nRepeat the following until there are \nno more Dot Coms:\nA\nA\nGame places the three Dot \nComs onto a virtual grid\n8\nPrompt user for a guess \n(“A2”, “C0”, etc.)\n8\nCheck the user guess against \nall Dot Coms to look for a hit, \nmiss, or kill. Take appropri-\nate action: if a hit, delete cell \n(A2, D4, etc.). If a kill, delete \nDot Com. \n3\nGame finishes\nGive the user a rating based on \nthe number of guesses.\nStart\nGame set-up\nGet user \nguess\nCheck \nguess\nhit\nmiss\nremove loca-\ntion cell\nkill\nremove \nDot Com \nyes\nno\nstill some \nDot Coms \nalive?\ndisplay user \nscore/rating\ngame \nover\nWhoa. A real flow chart.\nNow we have an idea of the kinds of things the \nprogram needs to do. The next step is figuring \nout what kind of objects we’11 need to do the \nwork. Remember, think like Brad rather than \nLarry; focus first on the things in the program \nrather than the procedures. \n1\nA\n8\n2\nA\n8\n3\nA circle means \nstart or finish\nA rectangle is \nused to represent \nan action\nA diamond \nrepresents a \ndecision point.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 131,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 131,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1365 chars",
+      "severity": "info"
+    },
+    {
+      "page": 131,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

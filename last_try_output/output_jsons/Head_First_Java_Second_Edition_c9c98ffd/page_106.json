@@ -1,0 +1,97 @@
+{
+  "page_number": 106,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9275,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "72 \nchapter 4\nobjects have state and behavior\nA class is the blueprint for an object. When you \nwrite a class, you’re describing how the JVM \nshould make an object of that type. You already \nknow that every object of that type can have \ndifferent instance variable values. But what about \nthe methods? \nCan every object of that type have different \nmethod behavior? \nWell... sort of.*\nEvery instance of a particular class has the same \nmethods, but the methods can behave differently \nbased on the value of the instance variables. \nThe Song class has two instance variables, title \nand artist. The play() method plays a song, but \nthe instance you call play() on will play the song \nrepresented by the value of the title instance \nvariable for that instance. 50, if you call the play() \nmethod on one instance you’11 hear the song \n“Politik”, while another instance plays “Darkstar”. \nThe method code, however, is the same.\nvoid play() {\n soundPlayer.playSound(title);\n}\nSong\n title\n artist\n setTitle()\n setArtist()\n play()\ninstance \nvariables\n(state)\nmethods\n(behavior)\nknows\ndoes\n*Yes, another stunningly clear answer!\nRemember: a class describes what an \nobject knows and what an object does\nPolitik\nColdplay\nSing\nTravis\nDarkstar\nGrateful\nDead\nMy Way\nSinatra\nMy Way\nSex Pistols\nSong\n t2\nt2.play();\nSong\n 53\ns3.play();\nCalling play() on this instance \nwill cause “Sing” to play. \nCalling play() on this instance \nwill cause “My Way” to play. \n(but not the Sinatra one)\nSong t2 = new Song();\nt2.setArtist(“Travis”);\nt2.setTitle(“Sing”);\nSong 53 = new Song();\ns3.setArtist(“Sex Pistols”);\ns3.setTitle(“My Way”);\nfive instances \nof class Song",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Song"
+        ],
+        [
+          "title\nartist"
+        ],
+        [
+          "setTitle()\nsetArtist()\nplay()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (201x272)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "72 \nchapter 4\nobjects have state and behavior\nA class is the blueprint for an object. When you \nwrite a class, you’re describing how the JVM \nshould make an object of that type. You already \nknow that every object of that type can have \ndifferent instance variable values. But what about \nthe methods? \nCan every object of that type have different \nmethod behavior? \nWell... sort of.*\nEvery instance of a particular class has the same \nmethods, but the methods can behave differently \nbased on the value of the instance variables. \nThe Song class has two instance variables, title \nand artist. The play() method plays a song, but \nthe instance you call play() on will play the song \nrepresented by the value of the title instance \nvariable for that instance. 50, if you call the play() \nmethod on one instance you’11 hear the song \n“Politik”, while another instance plays “Darkstar”. \nThe method code, however, is the same.\nvoid play() {\n soundPlayer.playSound(title);\n}\nSong\n title\n artist\n setTitle()\n setArtist()\n play()\ninstance \nvariables\n(state)\nmethods\n(behavior)\nknows\ndoes\n*Yes, another stunningly clear answer!\nRemember: a class describes what an \nobject knows and what an object does\nPolitik\nColdplay\nSing\nTravis\nDarkstar\nGrateful\nDead\nMy Way\nSinatra\nMy Way\nSex Pistols\nSong\n t2\nt2.play();\nSong\n 53\ns3.play();\nCalling play() on this instance \nwill cause “Sing” to play. \nCalling play() on this instance \nwill cause “My Way” to play. \n(but not the Sinatra one)\nSong t2 = new Song();\nt2.setArtist(“Travis”);\nt2.setTitle(“Sing”);\nSong 53 = new Song();\ns3.setArtist(“Sex Pistols”);\ns3.setTitle(“My Way”);\nfive instances \nof class Song",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 106,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 106,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1646 chars",
+      "severity": "info"
+    },
+    {
+      "page": 106,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 106,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "page_number": 341,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "numbers and statics\nyou are here\n307\nEven more Statics!... static imports\nNew to Java 5.0... a real mixed blessing. Some people love \nthis idea, some people hate it. Static imports exist only to save \nyou some typing. If you hate to type, you might just like this \nfeature. The downside to static imports is that - if you’re not \ncareful - using them can make your code a lot harder to read. \nThe basic idea is that whenever you’re using a static class, a \nstatic variable, or an enum (more on those later), you can \nimport them, and save yourself some typing.\nSome old-fashioned code:\nimport java.lang.Math;\nclass NoStatic {\n public static void main(String [] args) {\n System.out.println(“sqrt “ + Math.sqrt(2.0));\n System.out.println(“tan “ + Math.tan(60));\n }\n}\nSame code, with static imports:\nimport static java.lang.System.out;\nimport static java.lang.Math.*;\nclass WithStatic {\n public static void main(String [] args) {\n out.println(“sqrt “ + sqrt(2.0));\n out.println(“tan “ + tan(60));\n }\n}\n \nIf you’re only going to use a static member \na few times, we think you should avoid \nstatic imports, to help keep the code more \nreadable.\n \nIf you’re going to use a static member a lot, \n(like doing lots of Math calculations), then \nit’5 probably OK to use the static import.\n \nNotice that you can use wildcards (.*), in \nyour static import declaration.\n \nA big issue with static imports is that it’5 \nnot too hard to create naming conflicts. For \nexample, if you have two different classes \nwith an “add()” method, how will you and \nthe compiler know which one to use?\n Caveats & Gotchas\nThe syntax to use when \ndeclaring static imports.\nStatic imports in action.\nUse Carefully:\nstatic imports can \nmake your code \nconfusing to read",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Caveats & Gotchas"
+        ],
+        [
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "numbers and statics\nyou are here\n307\nEven more Statics!... static imports\nNew to Java 5.0... a real mixed blessing. Some people love \nthis idea, some people hate it. Static imports exist only to save \nyou some typing. If you hate to type, you might just like this \nfeature. The downside to static imports is that - if you’re not \ncareful - using them can make your code a lot harder to read. \nThe basic idea is that whenever you’re using a static class, a \nstatic variable, or an enum (more on those later), you can \nimport them, and save yourself some typing.\nSome old-fashioned code:\nimport java.lang.Math;\nclass NoStatic {\n public static void main(String [] args) {\n System.out.println(“sqrt “ + Math.sqrt(2.0));\n System.out.println(“tan “ + Math.tan(60));\n }\n}\nSame code, with static imports:\nimport static java.lang.System.out;\nimport static java.lang.Math.*;\nclass WithStatic {\n public static void main(String [] args) {\n out.println(“sqrt “ + sqrt(2.0));\n out.println(“tan “ + tan(60));\n }\n}\n \nIf you’re only going to use a static member \na few times, we think you should avoid \nstatic imports, to help keep the code more \nreadable.\n \nIf you’re going to use a static member a lot, \n(like doing lots of Math calculations), then \nit’5 probably OK to use the static import.\n \nNotice that you can use wildcards (.*), in \nyour static import declaration.\n \nA big issue with static imports is that it’5 \nnot too hard to create naming conflicts. For \nexample, if you have two different classes \nwith an “add()” method, how will you and \nthe compiler know which one to use?\n Caveats & Gotchas\nThe syntax to use when \ndeclaring static imports.\nStatic imports in action.\nUse Carefully:\nstatic imports can \nmake your code \nconfusing to read",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 341,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 341,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1758 chars",
+      "severity": "info"
+    },
+    {
+      "page": 341,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 341,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 401,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9125,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n367\npublic void paintComponent(Graphics g) {\n Graphics2D g2d = (Graphics2D) g;\n GradientPaint gradient = new GradientPaint(70,70,Color.blue, 150,150, Color.orange);\n \n g2d.setPaint(gradient);\n g2d.fillOval(70,70,100,100);\n}\nBecause life’5 too short to paint the \ncircle a solid color when there’5 a \ngradient blend waiting for you.\npublic void paintComponent(Graphics g) {\n Graphics2D g2d = (Graphics2D) g;\n \n int red = (int) (Math.random() * 256);\n int green = (int) (Math.random() * 256);\n int blue = (int) (Math.random() * 256);\n Color startColor = new Color(red, green, blue);\n red = (int) (Math.random() * 256);\n green = (int) (Math.random() * 256);\n blue = (int) (Math.random() * 256);\n Color endColor = new Color(red, green, blue);\n GradientPaint gradient = new GradientPaint(70,70,startColor, 150,150, endColor);\n g2d.setPaint(gradient);\n g2d.fillOval(70,70,100,100);\n}\nit’5 really a Graphics2D object \nmasquerading as a mere Graphics \nobject.\ncast it 50 we can call something that \nGraphics2D has but Graphics doesn’t\nthis sets the virtual paint brush to a \ngradient instead of a solid color\nstarting point\nstarting color\nending point\nending color\nthe fillOval() method really means “fill \nthe oval with whatever is loaded on your \npaintbrush (i.e. the gradient)”\nthis is just like the one above, \nexcept it makes random colors for \nthe start and stop colors of the \ngradient. Try it!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (111x111)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n367\npublic void paintComponent(Graphics g) {\n Graphics2D g2d = (Graphics2D) g;\n GradientPaint gradient = new GradientPaint(70,70,Color.blue, 150,150, Color.orange);\n \n g2d.setPaint(gradient);\n g2d.fillOval(70,70,100,100);\n}\nBecause life’5 too short to paint the \ncircle a solid color when there’5 a \ngradient blend waiting for you.\npublic void paintComponent(Graphics g) {\n Graphics2D g2d = (Graphics2D) g;\n \n int red = (int) (Math.random() * 256);\n int green = (int) (Math.random() * 256);\n int blue = (int) (Math.random() * 256);\n Color startColor = new Color(red, green, blue);\n red = (int) (Math.random() * 256);\n green = (int) (Math.random() * 256);\n blue = (int) (Math.random() * 256);\n Color endColor = new Color(red, green, blue);\n GradientPaint gradient = new GradientPaint(70,70,startColor, 150,150, endColor);\n g2d.setPaint(gradient);\n g2d.fillOval(70,70,100,100);\n}\nit’5 really a Graphics2D object \nmasquerading as a mere Graphics \nobject.\ncast it 50 we can call something that \nGraphics2D has but Graphics doesn’t\nthis sets the virtual paint brush to a \ngradient instead of a solid color\nstarting point\nstarting color\nending point\nending color\nthe fillOval() method really means “fill \nthe oval with whatever is loaded on your \npaintbrush (i.e. the gradient)”\nthis is just like the one above, \nexcept it makes random colors for \nthe start and stop colors of the \ngradient. Try it!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 401,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 401,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1489 chars",
+      "severity": "info"
+    },
+    {
+      "page": 401,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 401,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

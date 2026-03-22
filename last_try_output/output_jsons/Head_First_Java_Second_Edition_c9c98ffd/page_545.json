@@ -1,0 +1,88 @@
+{
+  "page_number": 545,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n511\nUsing an object’5 lock \nEvery object has a lock. Most of the time, the \nlock is unlocked, and you can imagine a virtual \nkey sitting with it. Object locks come into play \nonly when there are synchronized methods. \nWhen an object has one or more synchronized \nmethods, a thread can enter a synchronized \nmethod only if the thread can get the key to the \nobject’5 lock!\nThe locks are not per method, they \nare per object. If an object has two \nsynchronized methods, it does not \nsimply mean that you can’t have two \nthreads entering the same method. It \nmeans you can’t have two threads entering \nany of the synchronized methods.\nThink about it. If you have multiple \nmethods that can potentially act on an \nobject’5 instance variables, all those methods \nneed to be protected with synchronized.\nThe goal of synchronization is to protect \ncritical data. But remember, you don’t lock the \ndata itself, you synchronize the methods that \naccess that data. \n50 what happens when a thread is cranking \nthrough its call stack (starting with the run() \nmethod) and it suddenly hits a synchronized \nmethod? The thread recognizes that it needs \na key for that object before it can enter the \nmethod. It looks for the key (this is all handled \nby the JVM; there’5 no API in Java for accessing \nobject locks), and if the key is available, the \nthread grabs the key and enters the method. \nFrom that point forward, the thread hangs on \nto that key like the thread’5 life depends on \nit. The thread won’t give up the key until it \ncompletes the synchronized method. 50 while \nthat thread is holding the key, no other threads \ncan enter any of that object’5 synchronized \nmethods, because the one key for that object \nwon’t be available.\nEvery Java object has a lock. \nA lock has only one key.\nMost of the time, the lock is \nunlocked and nobody cares.\nBut if an object has \nsynchronized methods, a \nthread can enter one of the \nsynchronized methods ONLY \nif the key for the object’5 lock \nis available. In other words, \nonly if another thread hasn’t \nalready grabbed the one key.\nHey, this object’5 \ntakeMoney() method is \nsynchronized. 1 need to get \nthis object’5 key before 1 \ncan go in...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (161x434)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (131x174)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (130x174)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (110x174)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n511\nUsing an object’5 lock \nEvery object has a lock. Most of the time, the \nlock is unlocked, and you can imagine a virtual \nkey sitting with it. Object locks come into play \nonly when there are synchronized methods. \nWhen an object has one or more synchronized \nmethods, a thread can enter a synchronized \nmethod only if the thread can get the key to the \nobject’5 lock!\nThe locks are not per method, they \nare per object. If an object has two \nsynchronized methods, it does not \nsimply mean that you can’t have two \nthreads entering the same method. It \nmeans you can’t have two threads entering \nany of the synchronized methods.\nThink about it. If you have multiple \nmethods that can potentially act on an \nobject’5 instance variables, all those methods \nneed to be protected with synchronized.\nThe goal of synchronization is to protect \ncritical data. But remember, you don’t lock the \ndata itself, you synchronize the methods that \naccess that data. \n50 what happens when a thread is cranking \nthrough its call stack (starting with the run() \nmethod) and it suddenly hits a synchronized \nmethod? The thread recognizes that it needs \na key for that object before it can enter the \nmethod. It looks for the key (this is all handled \nby the JVM; there’5 no API in Java for accessing \nobject locks), and if the key is available, the \nthread grabs the key and enters the method. \nFrom that point forward, the thread hangs on \nto that key like the thread’5 life depends on \nit. The thread won’t give up the key until it \ncompletes the synchronized method. 50 while \nthat thread is holding the key, no other threads \ncan enter any of that object’5 synchronized \nmethods, because the one key for that object \nwon’t be available.\nEvery Java object has a lock. \nA lock has only one key.\nMost of the time, the lock is \nunlocked and nobody cares.\nBut if an object has \nsynchronized methods, a \nthread can enter one of the \nsynchronized methods ONLY \nif the key for the object’5 lock \nis available. In other words, \nonly if another thread hasn’t \nalready grabbed the one key.\nHey, this object’5 \ntakeMoney() method is \nsynchronized. 1 need to get \nthis object’5 key before 1 \ncan go in...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 545,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 545,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2219 chars",
+      "severity": "info"
+    },
+    {
+      "page": 545,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 545,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

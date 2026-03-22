@@ -1,0 +1,74 @@
+{
+  "page_number": 199,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "this is a new chapter\n165\n7 inheritance and polymorphism \nPlan your programs with the future in mind. If there were a way to write \nJava code such that you could take more vacations, how much would it be worth to you? What \nif you could write code that someone else could extend, easily? And if you could write code \nthat was flexible, for those pesky last-minute spec changes, would that be something you’re \ninterested in? Then this is your lucky day. For just three easy payments of 60 minutes time, you \ncan have all this. When you get on the Polymorphism Plan, you’11 learn the 5 steps to better \nclass design, the 3 tricks to polymorphism, the 8 ways to make flexible code, and if you act \nnow—a bonus lesson on the 4 tips for exploiting inheritance. Don’t delay, an offer this good \nwill give you the design freedom and programming flexibility you deserve. It’5 quick, it’5 easy, \nand it’5 available now. Start today, and we’11 throw in an extra level of abstraction!\nBetter Living in \nObjectville\nWe were underpaid, \noverworked coders ‘till we \ntried the Polymorphism Plan. But \nthanks to the Plan, our future is \nbright. Yours can be too!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (793x626)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "this is a new chapter\n165\n7 inheritance and polymorphism \nPlan your programs with the future in mind. If there were a way to write \nJava code such that you could take more vacations, how much would it be worth to you? What \nif you could write code that someone else could extend, easily? And if you could write code \nthat was flexible, for those pesky last-minute spec changes, would that be something you’re \ninterested in? Then this is your lucky day. For just three easy payments of 60 minutes time, you \ncan have all this. When you get on the Polymorphism Plan, you’11 learn the 5 steps to better \nclass design, the 3 tricks to polymorphism, the 8 ways to make flexible code, and if you act \nnow—a bonus lesson on the 4 tips for exploiting inheritance. Don’t delay, an offer this good \nwill give you the design freedom and programming flexibility you deserve. It’5 quick, it’5 easy, \nand it’5 available now. Start today, and we’11 throw in an extra level of abstraction!\nBetter Living in \nObjectville\nWe were underpaid, \noverworked coders ‘till we \ntried the Polymorphism Plan. But \nthanks to the Plan, our future is \nbright. Yours can be too!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 199,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 199,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1150 chars",
+      "severity": "info"
+    },
+    {
+      "page": 199,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 199,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

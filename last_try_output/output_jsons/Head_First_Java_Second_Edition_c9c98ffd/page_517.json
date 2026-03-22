@@ -1,0 +1,67 @@
+{
+  "page_number": 517,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n483\nWriting a simple server\n50 what’5 it take to write a server application? Just a \ncouple of Sockets. Yes, a couple as in two. A ServerSocket, \nwhich waits for client requests (when a client makes a \nnew Socket()) and a plain old Socket socket to use for \ncommunication with the client.\nServerSocket\n1\nServer application makes a ServerSocket, on a specific port \nHow it Works:\n ServerSocket serverSock = new ServerSocket(4242);\n4242\nServerSocket\n2\nClient makes a Socket connection to the server application\n Socket sock = new Socket(“190.165.1.103”, 4242);\n4242\nSocket\nServerSocket (waiting \nfor the next client)\n3\nServer makes a new Socket to communicate with this client\n Socket sock = serverSock.accept();\n4242\nSocket\nSocket\nThis starts the server application listening \nfor client requests coming in for port 4242.\nClient knows the IP address and port number \n(published or given to him by whomever \nconfigures the server app to be on that port)\nThe accept() method blocks (just sits there) while \nit’5 waiting for a client Socket connection. When a \nclient finally tries to connect, the method returns \na plain old Socket (on a different port) that knows \nhow to communicate with the client (i.e., knows the \nclient’5 IP address and port number). The Socket is on \na different port than the ServerSocket, 50 that the \nServerSocket can go back to waiting for other clients.\n2789",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (175x183)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (230x169)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n483\nWriting a simple server\n50 what’5 it take to write a server application? Just a \ncouple of Sockets. Yes, a couple as in two. A ServerSocket, \nwhich waits for client requests (when a client makes a \nnew Socket()) and a plain old Socket socket to use for \ncommunication with the client.\nServerSocket\n1\nServer application makes a ServerSocket, on a specific port \nHow it Works:\n ServerSocket serverSock = new ServerSocket(4242);\n4242\nServerSocket\n2\nClient makes a Socket connection to the server application\n Socket sock = new Socket(“190.165.1.103”, 4242);\n4242\nSocket\nServerSocket (waiting \nfor the next client)\n3\nServer makes a new Socket to communicate with this client\n Socket sock = serverSock.accept();\n4242\nSocket\nSocket\nThis starts the server application listening \nfor client requests coming in for port 4242.\nClient knows the IP address and port number \n(published or given to him by whomever \nconfigures the server app to be on that port)\nThe accept() method blocks (just sits there) while \nit’5 waiting for a client Socket connection. When a \nclient finally tries to connect, the method returns \na plain old Socket (on a different port) that knows \nhow to communicate with the client (i.e., knows the \nclient’5 IP address and port number). The Socket is on \na different port than the ServerSocket, 50 that the \nServerSocket can go back to waiting for other clients.\n2789",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 517,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 517,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1426 chars",
+      "severity": "info"
+    },
+    {
+      "page": 517,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 517,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

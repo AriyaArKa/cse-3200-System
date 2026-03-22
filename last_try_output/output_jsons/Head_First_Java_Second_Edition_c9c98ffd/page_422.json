@@ -1,0 +1,46 @@
+{
+  "page_number": 422,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "388 \nchapter 12\nShortMessage a = new ShortMessage();\na.setMessage(144, 1, note, 100);\nMidiEvent noteOn = new MidiEvent(a, 1); \ntrack.add(noteOn);\nShortMessage b = new ShortMessage();\nb.setMessage(128, 1, note, 100);\nMidiEvent noteOff = new MidiEvent(b, 16); \ntrack.add(noteOff);\nRight now, making and adding messages and \nevents to a track is tedious. For each message, \nwe have to make the message instance (in this \ncase, ShortMessage), call setMessage(), make a \nMidiEvent for the message, and add the event \nto the track. In last chapter’5 code, we went \nthrough each step for every message. That \nmeans eight lines of code just to make a note \nplay and then stop playing! Four lines to add a \nNOTE ON event, and four lines to add a NOTE \nOFF event. \nAn easier way to make \nmessages / events\n1\nMake a message instance\nShortMessage first = new ShortMessage();\nThings that have to happen for \neach event:\n2\nCall setMessage() with the instructions\nfirst.setMessage(192, 1, instrument, 0)\n3\nMake a MidiEvent instance for the message\nMidiEvent noteOn = new MidiEvent(first, 1);\n4 Add the event to the track\ntrack.add(noteOn);\n public static MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {\n MidiEvent event = null;\n try {\n ShortMessage a = new ShortMessage();\n a.setMessage(comd, chan, one, two);\n event = new MidiEvent(a, tick);\n \n }catch(Exception e) { }\n return event;\n }\nLet’5 build a static utility method that \nmakes a message and returns a MidiEvent\nthe four arguments \nfor the message\nThe event ‘tick’ for \nWHEN this message \nshould happen\nmake the message and the event, using \nthe method parameters\nwhoo! A method with five parameters.\nreturn the event (a MidiEvent all \nloaded up with the message) \nutility method for events",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "388 \nchapter 12\nShortMessage a = new ShortMessage();\na.setMessage(144, 1, note, 100);\nMidiEvent noteOn = new MidiEvent(a, 1); \ntrack.add(noteOn);\nShortMessage b = new ShortMessage();\nb.setMessage(128, 1, note, 100);\nMidiEvent noteOff = new MidiEvent(b, 16); \ntrack.add(noteOff);\nRight now, making and adding messages and \nevents to a track is tedious. For each message, \nwe have to make the message instance (in this \ncase, ShortMessage), call setMessage(), make a \nMidiEvent for the message, and add the event \nto the track. In last chapter’5 code, we went \nthrough each step for every message. That \nmeans eight lines of code just to make a note \nplay and then stop playing! Four lines to add a \nNOTE ON event, and four lines to add a NOTE \nOFF event. \nAn easier way to make \nmessages / events\n1\nMake a message instance\nShortMessage first = new ShortMessage();\nThings that have to happen for \neach event:\n2\nCall setMessage() with the instructions\nfirst.setMessage(192, 1, instrument, 0)\n3\nMake a MidiEvent instance for the message\nMidiEvent noteOn = new MidiEvent(first, 1);\n4 Add the event to the track\ntrack.add(noteOn);\n public static MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {\n MidiEvent event = null;\n try {\n ShortMessage a = new ShortMessage();\n a.setMessage(comd, chan, one, two);\n event = new MidiEvent(a, tick);\n \n }catch(Exception e) { }\n return event;\n }\nLet’5 build a static utility method that \nmakes a message and returns a MidiEvent\nthe four arguments \nfor the message\nThe event ‘tick’ for \nWHEN this message \nshould happen\nmake the message and the event, using \nthe method parameters\nwhoo! A method with five parameters.\nreturn the event (a MidiEvent all \nloaded up with the message) \nutility method for events",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 422,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 422,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1850 chars",
+      "severity": "info"
+    },
+    {
+      "page": 422,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "page_number": 32,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "xxx \nintro\nTechnical Editors\nJess works at Hewlett-Packard on the Self-\nHealing Services Team. She has a Bachelor’5 \nin Computer Engineering from Villanova \nUniversity, has her SCJP 1.4 and SCWCD \ncertifications, and is literally months away \nfrom receiving her Masters in Software \nEngineering at Drexel University (whew!)\nWhen she’5 not working, studying or \nmotoring in her MINI Cooper 5, Jess can \nbe found fighting her cat for yarn as she \ncompletes her latest knitting or crochet \nproject (anybody want a hat?) She is \noriginally from Salt Lake City, Utah (no, \nshe’5 not Mormon... yes, you were too \ngoing to ask) and is currently living near \nPhiladelphia with her husband, Mendra, and \ntwo cats: Chai and Sake. \nYou can catch her moderating technical \nforums at javaranch.com. \nValentin Valentin Crettaz has a Masters degree \nin Information and Computer Science from \nthe Swiss Federal Institute of Technology in \nLausanne (EPFL). He has worked as a software \nengineer with SRI International (Menlo Park, \nCA) and as a principal engineer in the Software \nEngineering Laboratory of EPFL.\nValentin is the co-founder and CTO of Condris \nTechnologies, a company specializing in the \ndevelopment of software architecture solutions.\nHis research and development interests \ninclude aspect-oriented technologies, design \nand architectural patterns, web services, and \nsoftware architecture. Besides taking care of \nhis wife, gardening, reading, and doing some \nsport, Valentin moderates the SCBCD and \nSCDJWS forums at Javaranch.com. He holds \nthe SCJP, SCJD, SCBCD, SCWCD, and SCDJWS \ncertifications. He has also had the opportunity \nto serve as a co-author for Whizlabs SCBCD \nExam Simulator.\n(We’re still in shock from seeing him in a tie.)\nJessica Sant\nJessica’5 MINI\n “Credit goes to all, but mistakes are the sole reponsibility of the \nauthor...”. Does anyone really believe that? See the two people on \nthis page? If you find technical problems, it’5 probably their fault. : )\nValentin Crettaz\nValentin’5 tie\ntech editing: Jessica and Valentin",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (413x312)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (287x380)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "xxx \nintro\nTechnical Editors\nJess works at Hewlett-Packard on the Self-\nHealing Services Team. She has a Bachelor’5 \nin Computer Engineering from Villanova \nUniversity, has her SCJP 1.4 and SCWCD \ncertifications, and is literally months away \nfrom receiving her Masters in Software \nEngineering at Drexel University (whew!)\nWhen she’5 not working, studying or \nmotoring in her MINI Cooper 5, Jess can \nbe found fighting her cat for yarn as she \ncompletes her latest knitting or crochet \nproject (anybody want a hat?) She is \noriginally from Salt Lake City, Utah (no, \nshe’5 not Mormon... yes, you were too \ngoing to ask) and is currently living near \nPhiladelphia with her husband, Mendra, and \ntwo cats: Chai and Sake. \nYou can catch her moderating technical \nforums at javaranch.com. \nValentin Valentin Crettaz has a Masters degree \nin Information and Computer Science from \nthe Swiss Federal Institute of Technology in \nLausanne (EPFL). He has worked as a software \nengineer with SRI International (Menlo Park, \nCA) and as a principal engineer in the Software \nEngineering Laboratory of EPFL.\nValentin is the co-founder and CTO of Condris \nTechnologies, a company specializing in the \ndevelopment of software architecture solutions.\nHis research and development interests \ninclude aspect-oriented technologies, design \nand architectural patterns, web services, and \nsoftware architecture. Besides taking care of \nhis wife, gardening, reading, and doing some \nsport, Valentin moderates the SCBCD and \nSCDJWS forums at Javaranch.com. He holds \nthe SCJP, SCJD, SCBCD, SCWCD, and SCDJWS \ncertifications. He has also had the opportunity \nto serve as a co-author for Whizlabs SCBCD \nExam Simulator.\n(We’re still in shock from seeing him in a tie.)\nJessica Sant\nJessica’5 MINI\n “Credit goes to all, but mistakes are the sole reponsibility of the \nauthor...”. Does anyone really believe that? See the two people on \nthis page? If you find technical problems, it’5 probably their fault. : )\nValentin Crettaz\nValentin’5 tie\ntech editing: Jessica and Valentin",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 32,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 32,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2052 chars",
+      "severity": "info"
+    },
+    {
+      "page": 32,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 32,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

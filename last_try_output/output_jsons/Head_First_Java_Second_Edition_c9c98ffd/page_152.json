@@ -1,0 +1,104 @@
+{
+  "page_number": 152,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "118 \nchapter 5\nThe Java file on this page \nrepresents a complete source \nfile. Your job is to play JVM \nand determine what would be \nthe output when the \nprogram runs?\nExercise\nBE the JVM\nclass Output {\n public static void main(String [] args) {\n Output 0 = new Output();\n o.go();\n }\n void go() {\n int y = 7;\n for(int x = 1; x < 8; x++) {\n y++;\n if (x > 4) {\n System.out.print(++y + “ “);\n }\n if (y > 14) {\n System.out.println(“ x = “ + x);\n break;\n }\n }\n }\n}\nFile Edit Window Help Sleep\n% java TestArrays\nisland = Fiji\nisland = Cozumel\nisland = Bermuda\nisland = Azores\nFile Edit Window Help Believe\n% java Output\n13 15 x = 6\nFile Edit Window Help OM\n% java Output\n12 14\nFile Edit Window Help Incense\n% java Output\n12 14 x = 6\n-or-\n-or-\nexercise: Be the JVM",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help OM"
+        ],
+        [
+          "% java Output\n12 14"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Incense"
+        ],
+        [
+          "% java Output\n12 14 x = 6"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "FFiillee EEddiitt WWiinnddooww HHeellpp SBleeleiepve"
+        ],
+        [
+          "%% jjaavvaa TOeusttpAurtrays\ni1s3l a1n5d x= =F i6ji\nisland = Cozumel\nisland = Bermuda\nisland = Azores"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (300x347)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (153x129)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "118 \nchapter 5\nThe Java file on this page \nrepresents a complete source \nfile. Your job is to play JVM \nand determine what would be \nthe output when the \nprogram runs?\nExercise\nBE the JVM\nclass Output {\n public static void main(String [] args) {\n Output 0 = new Output();\n o.go();\n }\n void go() {\n int y = 7;\n for(int x = 1; x < 8; x++) {\n y++;\n if (x > 4) {\n System.out.print(++y + “ “);\n }\n if (y > 14) {\n System.out.println(“ x = “ + x);\n break;\n }\n }\n }\n}\nFile Edit Window Help Sleep\n% java TestArrays\nisland = Fiji\nisland = Cozumel\nisland = Bermuda\nisland = Azores\nFile Edit Window Help Believe\n% java Output\n13 15 x = 6\nFile Edit Window Help OM\n% java Output\n12 14\nFile Edit Window Help Incense\n% java Output\n12 14 x = 6\n-or-\n-or-\nexercise: Be the JVM",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 152,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 152,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 853 chars",
+      "severity": "info"
+    },
+    {
+      "page": 152,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 152,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

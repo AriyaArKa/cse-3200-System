@@ -1,0 +1,46 @@
+{
+  "page_number": 553,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n519\n private void setUpNetworking() { \n \n try {\n sock = new Socket(“127.0.0.1”, 5000);\n InputStreamReader streamReader = new InputStreamReader(sock.getInputStream());\n reader = new BufferedReader(streamReader);\n writer = new PrintWriter(sock.getOutputStream()); \n System.out.println(“networking established”);\n } catch(IOException ex) {\n ex.printStackTrace();\n }\n } // close setUpNetworking \n public class SendButtonListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n try {\n writer.println(outgoing.getText());\n writer.flush();\n \n } catch(Exception ex) {\n ex.printStackTrace();\n }\n outgoing.setText(“”);\n outgoing.requestFocus();\n }\n } // close inner class \n public class IncomingReader implements Runnable {\n public void run() {\n String message; \n try {\n while ((message = reader.readLine()) != null) { \n System.out.println(“read “ + message);\n incoming.append(message + “\\n”);\n \n } // close while\n } catch(Exception ex) {ex.printStackTrace();}\n } // close run\n } // close inner class \n \n} // close outer class\nWe’re using the socket to get the input \nand output streams. We were already using \nthe output stream to send to the server, \nbut now we’re using the input stream 50 \nthat the new ‘reader’ thread can get \nmessages from the server.\nNothing new here. When the user clicks \nthe send button, this method sends the \ncontents of the text field to the server.\nThis is what the thread does!! \nIn the run() method, it stays in a \nloop (as long as what it gets from \nthe server is not null), reading a \nline at a time and adding each line \nto the scrolling text area (along \nwith a new line character).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "networking and threads\nyou are here\n519\n private void setUpNetworking() { \n \n try {\n sock = new Socket(“127.0.0.1”, 5000);\n InputStreamReader streamReader = new InputStreamReader(sock.getInputStream());\n reader = new BufferedReader(streamReader);\n writer = new PrintWriter(sock.getOutputStream()); \n System.out.println(“networking established”);\n } catch(IOException ex) {\n ex.printStackTrace();\n }\n } // close setUpNetworking \n public class SendButtonListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n try {\n writer.println(outgoing.getText());\n writer.flush();\n \n } catch(Exception ex) {\n ex.printStackTrace();\n }\n outgoing.setText(“”);\n outgoing.requestFocus();\n }\n } // close inner class \n public class IncomingReader implements Runnable {\n public void run() {\n String message; \n try {\n while ((message = reader.readLine()) != null) { \n System.out.println(“read “ + message);\n incoming.append(message + “\\n”);\n \n } // close while\n } catch(Exception ex) {ex.printStackTrace();}\n } // close run\n } // close inner class \n \n} // close outer class\nWe’re using the socket to get the input \nand output streams. We were already using \nthe output stream to send to the server, \nbut now we’re using the input stream 50 \nthat the new ‘reader’ thread can get \nmessages from the server.\nNothing new here. When the user clicks \nthe send button, this method sends the \ncontents of the text field to the server.\nThis is what the thread does!! \nIn the run() method, it stays in a \nloop (as long as what it gets from \nthe server is not null), reading a \nline at a time and adding each line \nto the scrolling text area (along \nwith a new line character).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 553,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 553,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2023 chars",
+      "severity": "info"
+    },
+    {
+      "page": 553,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

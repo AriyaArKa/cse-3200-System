@@ -1,0 +1,46 @@
+{
+  "page_number": 110,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "76 \nchapter 4\nmultiple arguments\nThe arguments you pass land in the same \norder you passed them. First argument lands \nin the first parameter, second argument in \nthe second parameter, and 50 on.\nYou can send more than one thing \nto a method\nMethods can have multiple parameters. Separate them \nwith commas when you declare them, and separate the \narguments with commas when you pass them. Most \nimportantly, if a method has parameters, you must pass \narguments of the right type and order.\nvoid takeTwo(int x, int y) {\n int z = x + y;\n System.out.println(“Total is ” + z);\n}\nvoid go() {\n TestStuff t = new TestStuff();\n t.takeTwo(12, 34); \n}\nCalling a two-parameter method, and sending \nit two arguments.\nvoid takeTwo(int x, int y) {\n int z = x + y;\n System.out.println(“Total is ” + z);\n}\nvoid go() {\n int foo = 7;\n int bar = 3; \n t.takeTwo(foo, bar); \n}\nYou can pass variables into a method, as long as \nthe variable type matches the parameter type.\nThe values of foo and bar land in the \nx and y parameters. 50 now the bits in \nx are identical to the bits in foo (the \nbit pattern for the integer ‘7’) and the \nbits in y are identical to the bits in bar.\nWhat’5 the value of z? It’5 the same \nresult you’d get if you added foo + \nbar at the time you passed them into \nthe takeTwo method",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "76 \nchapter 4\nmultiple arguments\nThe arguments you pass land in the same \norder you passed them. First argument lands \nin the first parameter, second argument in \nthe second parameter, and 50 on.\nYou can send more than one thing \nto a method\nMethods can have multiple parameters. Separate them \nwith commas when you declare them, and separate the \narguments with commas when you pass them. Most \nimportantly, if a method has parameters, you must pass \narguments of the right type and order.\nvoid takeTwo(int x, int y) {\n int z = x + y;\n System.out.println(“Total is ” + z);\n}\nvoid go() {\n TestStuff t = new TestStuff();\n t.takeTwo(12, 34); \n}\nCalling a two-parameter method, and sending \nit two arguments.\nvoid takeTwo(int x, int y) {\n int z = x + y;\n System.out.println(“Total is ” + z);\n}\nvoid go() {\n int foo = 7;\n int bar = 3; \n t.takeTwo(foo, bar); \n}\nYou can pass variables into a method, as long as \nthe variable type matches the parameter type.\nThe values of foo and bar land in the \nx and y parameters. 50 now the bits in \nx are identical to the bits in foo (the \nbit pattern for the integer ‘7’) and the \nbits in y are identical to the bits in bar.\nWhat’5 the value of z? It’5 the same \nresult you’d get if you added foo + \nbar at the time you passed them into \nthe takeTwo method",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 110,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 110,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1311 chars",
+      "severity": "info"
+    },
+    {
+      "page": 110,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

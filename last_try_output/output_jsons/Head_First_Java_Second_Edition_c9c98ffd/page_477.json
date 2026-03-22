@@ -1,0 +1,46 @@
+{
+  "page_number": 477,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n443\n5\nIf the object has a non-serializable class \nsomewhere up its inheritance tree, the \nconstructor for that non-serializable class \nwill run along with any constructors above \nthat (even if they’re serializable). Once the \nconstructor chaining begins, you can’t stop it, \nwhich means all superclasses, beginning with \nthe first non-serializable one, will reinitialize \ntheir state.\n6\nThe object’5 instance variables are given the \nvalues from the serialized state. Transient \nvariables are given a value of null for object \nreferences and defaults (0, false, etc.) for \nprimitives.\nthere are no\nDumb Questions\nQ:Why doesn’t the class get saved as part of the ob-\nject? That way you don’t have the problem with whether \nthe class can be found.\nA:Sure, they could have made serialization work that \nway. But what a tremendous waste and overhead. And \nwhile it might not be such a hardship when you’re using \nserialization to write objects to a file on a local hard drive, \nserialization is also used to send objects over a network \nconnection. If a class was bundled with each serialized \n(shippable) object, bandwidth would become a much larger \nproblem than it already is. \nFor objects serialized to ship over a network, though, there \nactually is a mechanism where the serialized object can be \n‘stamped’ with a URL for where its class can be found. This \nis used in Java’5 Remote Method Invocation (RMI) 50 that \nyou can send a serialized object as part of, say, a method \nargument, and if the JVM receiving the call doesn’t have \nthe class, it can use the URL to fetch the class from the \nnetwork and load it, all automatically. (We’11 talk about RMI \nin chapter 17.)\nQ:What about static variables? Are they serialized?\nA:Nope. Remember, static means “one per class” not “one \nper object”. Static variables are not saved, and when an \nobject is deserialized, it will have whatever static variable \nits class currently has. The moral: don’t make serializable ob-\njects dependent on a dynamically-changing static variable! \nIt might not be the same when the object comes back.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n443\n5\nIf the object has a non-serializable class \nsomewhere up its inheritance tree, the \nconstructor for that non-serializable class \nwill run along with any constructors above \nthat (even if they’re serializable). Once the \nconstructor chaining begins, you can’t stop it, \nwhich means all superclasses, beginning with \nthe first non-serializable one, will reinitialize \ntheir state.\n6\nThe object’5 instance variables are given the \nvalues from the serialized state. Transient \nvariables are given a value of null for object \nreferences and defaults (0, false, etc.) for \nprimitives.\nthere are no\nDumb Questions\nQ:Why doesn’t the class get saved as part of the ob-\nject? That way you don’t have the problem with whether \nthe class can be found.\nA:Sure, they could have made serialization work that \nway. But what a tremendous waste and overhead. And \nwhile it might not be such a hardship when you’re using \nserialization to write objects to a file on a local hard drive, \nserialization is also used to send objects over a network \nconnection. If a class was bundled with each serialized \n(shippable) object, bandwidth would become a much larger \nproblem than it already is. \nFor objects serialized to ship over a network, though, there \nactually is a mechanism where the serialized object can be \n‘stamped’ with a URL for where its class can be found. This \nis used in Java’5 Remote Method Invocation (RMI) 50 that \nyou can send a serialized object as part of, say, a method \nargument, and if the JVM receiving the call doesn’t have \nthe class, it can use the URL to fetch the class from the \nnetwork and load it, all automatically. (We’11 talk about RMI \nin chapter 17.)\nQ:What about static variables? Are they serialized?\nA:Nope. Remember, static means “one per class” not “one \nper object”. Static variables are not saved, and when an \nobject is deserialized, it will have whatever static variable \nits class currently has. The moral: don’t make serializable ob-\njects dependent on a dynamically-changing static variable! \nIt might not be the same when the object comes back.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 477,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 477,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2123 chars",
+      "severity": "info"
+    },
+    {
+      "page": 477,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

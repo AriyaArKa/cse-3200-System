@@ -1,0 +1,83 @@
+{
+  "page_number": 206,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "172 \nchapter 7\nAssume that we all agree on one thing: the instance \nvariables will work for all Animal types. A lion will \nhave his own value for picture, food (we’re thinking \nmeat), hunger, boundaries, and location. A hippo \nwill have different values for his instance variables, \nbut he’11 still have the same variables that the other \nAnimal types have. Same with dog, tiger, and 50 on. \nBut what about behavior?\nWhich methods should we override?\nDoes a lion make the same noise as a dog? Does \na cat eat like a hippo? Maybe in your version, but \nin ours, eating and making noise are Animal-type-\nspecific. We can’t figure out how to code those \nmethods in such a way that they’d work for any \nanimal. OK, that’5 not true. We could write the \nmakeNoise() method, for example, 50 that all it does \nis play a sound file defined in an instance variable \nfor that type, but that’5 not very specialized. Some \nanimals might make different noises \nfor different situations (like one \nfor eating, and another when \nbumping into an enemy, etc.)\n50 just as with the Amoeba \noverriding the Shape class rotate() \nmethod, to get more amoeba-specific (in \nother words, unique) behavior, we’11 have \nto do the same for our Animal subclasses.\nDo all animals eat the same way?\nAnimal\n1’m one bad*55 \nplant-eater.\nIn the dog \ncommunity, barking is an \nimportant part of our cultural \nidentity. We have a unique sound, \nand we want that diversity to \nbe recognized and respected.\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()\nWe better override these two methods, eat() \nand makeNoise(), 50 that each animal type can \ndefine its own specific behavior for eating and \nmaking noise. For now, it looks like sleep() and \nroam() can stay generic.\nLooking at the Animal class, \nwe decide that eat() and \nmakeNoise() should be overridden \nby the individual subclasses.\n3\nDecide if a subclass \nneeds behaviors (method \nimplementations) that are specific \nto that particular subclass type.\ndesigning for inheritance",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "picture\nfood\nhunger\nboundaries\nlocation"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (126x131)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (103x129)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "172 \nchapter 7\nAssume that we all agree on one thing: the instance \nvariables will work for all Animal types. A lion will \nhave his own value for picture, food (we’re thinking \nmeat), hunger, boundaries, and location. A hippo \nwill have different values for his instance variables, \nbut he’11 still have the same variables that the other \nAnimal types have. Same with dog, tiger, and 50 on. \nBut what about behavior?\nWhich methods should we override?\nDoes a lion make the same noise as a dog? Does \na cat eat like a hippo? Maybe in your version, but \nin ours, eating and making noise are Animal-type-\nspecific. We can’t figure out how to code those \nmethods in such a way that they’d work for any \nanimal. OK, that’5 not true. We could write the \nmakeNoise() method, for example, 50 that all it does \nis play a sound file defined in an instance variable \nfor that type, but that’5 not very specialized. Some \nanimals might make different noises \nfor different situations (like one \nfor eating, and another when \nbumping into an enemy, etc.)\n50 just as with the Amoeba \noverriding the Shape class rotate() \nmethod, to get more amoeba-specific (in \nother words, unique) behavior, we’11 have \nto do the same for our Animal subclasses.\nDo all animals eat the same way?\nAnimal\n1’m one bad*55 \nplant-eater.\nIn the dog \ncommunity, barking is an \nimportant part of our cultural \nidentity. We have a unique sound, \nand we want that diversity to \nbe recognized and respected.\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()\nWe better override these two methods, eat() \nand makeNoise(), 50 that each animal type can \ndefine its own specific behavior for eating and \nmaking noise. For now, it looks like sleep() and \nroam() can stay generic.\nLooking at the Animal class, \nwe decide that eat() and \nmakeNoise() should be overridden \nby the individual subclasses.\n3\nDecide if a subclass \nneeds behaviors (method \nimplementations) that are specific \nto that particular subclass type.\ndesigning for inheritance",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 206,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 206,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2028 chars",
+      "severity": "info"
+    },
+    {
+      "page": 206,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 206,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

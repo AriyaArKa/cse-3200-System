@@ -1,0 +1,79 @@
+{
+  "page_number": 113,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n79\nCool things you can do with parameters \nand return types\nNow that we’ve seen how parameters and return types work, it’5 \ntime to put them to good use: Getters and Setters. If you’re into \nbeing all formal about it, you might prefer to call them Accessors \nand Mutators. But that’5 a waste of perfectly good syllables. \nBesides, Getters and Setters fits the Java naming convention, 50 \nthat’5 what we’11 call them.\nGetters and Setters let you, well, get and set things. Instance vari-\nable values, usually. A Getter’5 sole purpose in life is to send back, \nas a return value, the value of whatever it is that particular Getter \nis supposed to be Getting. And by now, it’5 probably no surprise \nthat a Setter lives and breathes for the chance to take an argu-\nment value and use it to set the value of an instance variable.\nElectricGuitar\nbrand\nnumOfPickups\nrockStarUsesIt\ngetBrand()\nsetBrand()\ngetNumOfPickups()\nsetNumOfPickups()\ngetRockStarUsesIt()\nsetRockStarUsesIt()\nclass ElectricGuitar {\n String brand;\n int numOfPickups;\n boolean rockStarUsesIt;\n String getBrand() {\n return brand;\n }\n void setBrand(String aBrand) {\n brand = aBrand;\n }\n int getNumOfPickups() {\n return numOfPickups;\n }\n void setNumOfPickups(int num) {\n numOfPickups = num;\n }\n boolean getRockStarUsesIt() {\n return rockStarUsesIt;\n }\n void setRockStarUsesIt(boolean yesOrNo) {\n rockStarUsesIt = yesOrNo;\n }\n}\nNote: Using these \nnaming conventions \nmeans you’11 be \nfollowing an \nimportant Java \nstandard!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "ElectricGuitar"
+        ],
+        [
+          "",
+          "brand\nnumOfPickups\nrockStarUsesIt"
+        ],
+        [
+          "",
+          "getBrand()\nsetBrand()\ngetNumOfPickups()\nsetNumOfPickups()\ngetRockStarUsesIt()\nsetRockStarUsesIt()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (551x439)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n79\nCool things you can do with parameters \nand return types\nNow that we’ve seen how parameters and return types work, it’5 \ntime to put them to good use: Getters and Setters. If you’re into \nbeing all formal about it, you might prefer to call them Accessors \nand Mutators. But that’5 a waste of perfectly good syllables. \nBesides, Getters and Setters fits the Java naming convention, 50 \nthat’5 what we’11 call them.\nGetters and Setters let you, well, get and set things. Instance vari-\nable values, usually. A Getter’5 sole purpose in life is to send back, \nas a return value, the value of whatever it is that particular Getter \nis supposed to be Getting. And by now, it’5 probably no surprise \nthat a Setter lives and breathes for the chance to take an argu-\nment value and use it to set the value of an instance variable.\nElectricGuitar\nbrand\nnumOfPickups\nrockStarUsesIt\ngetBrand()\nsetBrand()\ngetNumOfPickups()\nsetNumOfPickups()\ngetRockStarUsesIt()\nsetRockStarUsesIt()\nclass ElectricGuitar {\n String brand;\n int numOfPickups;\n boolean rockStarUsesIt;\n String getBrand() {\n return brand;\n }\n void setBrand(String aBrand) {\n brand = aBrand;\n }\n int getNumOfPickups() {\n return numOfPickups;\n }\n void setNumOfPickups(int num) {\n numOfPickups = num;\n }\n boolean getRockStarUsesIt() {\n return rockStarUsesIt;\n }\n void setRockStarUsesIt(boolean yesOrNo) {\n rockStarUsesIt = yesOrNo;\n }\n}\nNote: Using these \nnaming conventions \nmeans you’11 be \nfollowing an \nimportant Java \nstandard!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 113,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 113,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1587 chars",
+      "severity": "info"
+    },
+    {
+      "page": 113,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 113,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

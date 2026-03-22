@@ -1,0 +1,82 @@
+{
+  "page_number": 263,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "interfaces and polymorphism\nyou are here\n229\n BULLET POINTS\n$ When you don’t want a class to be instantiated (in other words, you don’t \nwant anyone to make a new object of that class type) mark the class with the \nabstract keyword.\n$ An abstract class can have both abstract and non-abstract methods.\n$ If a class has even one abstract method, the class must be marked abstract.\n$ An abstract method has no body, and the declaration ends with a semicolon (no \ncurly braces).\n$ All abstract methods must be implemented in the first concrete subclass in the \ninheritance tree.\n$ Every class in Java is either a direct or indirect subclass of class Object (java.lang.\nObject).\n$ Methods can be declared with Object arguments and/or return types. \n$ You can call methods on an object only if the methods are in the class (or interface) \nused as the reference variable type, regardless of the actual object type. 50, a \nreference variable of type Object can be used only to call methods defined in class \nObject, regardless of the type of the object to which the reference refers.\n$ A reference variable of type Object can’t be assigned to any other reference type \nwithout a cast. A cast can be used to assign a reference variable of one type to a \nreference variable of a subtype, but at runtime the cast will fail if the object on the \nheap is NOT of a type compatible with the cast. \nExample: Dog d = (Dog) x.getObject(aDog);\n$ All objects come out of an ArrayList<Object> as type Object (meaning, they can be \nreferenced only by an Object reference variable, unless you use a cast).\n$ Multiple inheritance is not allowed in Java, because of the problems associated with \nthe “Deadly Diamond of Death”. That means you can extend only one class (i.e. you \ncan have only one immediate superclass).\n$ An interface is like a 100% pure abstract class. It defines only abstract methods.\n$ Create an interface using the interface keyword instead of the word class.\n$ Implement an interface using the keyword implements \nExample: Dog implements Pet\n$ Your class can implement multiple interfaces.\n$ A class that implements an interface must implement all the methods of the \ninterface, since all interface methods are implicitly public and abstract.\n$ To invoke the superclass version of a method from a subclass that’5 overridden the \nmethod, use the super keyword. Example: super.runReport();\nQ:There’5 still something \nstrange here... you never \nexplained how it is that \nArrayList<Dog> gives back Dog \nreferences that don’t need to be \ncast, yet the ArrayList class uses \nObject in its methods, not Dog \n(or DotCom or anything else). \nWhat’5 the special trick going on \nwhen you say ArrayList<Dog>?\nA: You’re right for calling it a \nspecial trick. In fact it is a special \ntrick that ArrayList<Dog> gives \nback Dogs without you having \nto do any cast, since it looks like \nArrayList methods don’t know \nanything about Dogs, or any type \nbesides Object.\nThe short answer is that the \ncompiler puts in the cast for you! \nWhen you say ArrayList<Dog>, \nthere is no special class that has \nmethods to take and return Dog \nobjects, but instead the <Dog> \nis a signal to the compiler that \nyou want the compiler to let you \nput ONLY Dog objects in and to \nstop you if you try to add any \nother type to the list. And since \nthe compiler stops you from \nadding anything but Dogs to the \nArrayList, the compiler also knows \nthat it’5 safe to cast anything \nthat comes out of that ArrayList \nto a Dog reference. In other \nwords, using ArrayList<Dog> \nsaves you from having to cast \nthe Dog you get back. But it’5 \nmuch more important than that... \nbecause remember, a cast can \nfail at runtime, and wouldn’t you \nrather have your errors happen \nat compile time rather than, say, \nwhen your customer is using it for \nsomething critical?\nBut there’5 a lot more to this story, \nand we’11 get into all the details in \nthe Collections chapter.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "OINTS",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "interfaces and polymorphism\nyou are here\n229\n BULLET POINTS\n$ When you don’t want a class to be instantiated (in other words, you don’t \nwant anyone to make a new object of that class type) mark the class with the \nabstract keyword.\n$ An abstract class can have both abstract and non-abstract methods.\n$ If a class has even one abstract method, the class must be marked abstract.\n$ An abstract method has no body, and the declaration ends with a semicolon (no \ncurly braces).\n$ All abstract methods must be implemented in the first concrete subclass in the \ninheritance tree.\n$ Every class in Java is either a direct or indirect subclass of class Object (java.lang.\nObject).\n$ Methods can be declared with Object arguments and/or return types. \n$ You can call methods on an object only if the methods are in the class (or interface) \nused as the reference variable type, regardless of the actual object type. 50, a \nreference variable of type Object can be used only to call methods defined in class \nObject, regardless of the type of the object to which the reference refers.\n$ A reference variable of type Object can’t be assigned to any other reference type \nwithout a cast. A cast can be used to assign a reference variable of one type to a \nreference variable of a subtype, but at runtime the cast will fail if the object on the \nheap is NOT of a type compatible with the cast. \nExample: Dog d = (Dog) x.getObject(aDog);\n$ All objects come out of an ArrayList<Object> as type Object (meaning, they can be \nreferenced only by an Object reference variable, unless you use a cast).\n$ Multiple inheritance is not allowed in Java, because of the problems associated with \nthe “Deadly Diamond of Death”. That means you can extend only one class (i.e. you \ncan have only one immediate superclass).\n$ An interface is like a 100% pure abstract class. It defines only abstract methods.\n$ Create an interface using the interface keyword instead of the word class.\n$ Implement an interface using the keyword implements \nExample: Dog implements Pet\n$ Your class can implement multiple interfaces.\n$ A class that implements an interface must implement all the methods of the \ninterface, since all interface methods are implicitly public and abstract.\n$ To invoke the superclass version of a method from a subclass that’5 overridden the \nmethod, use the super keyword. Example: super.runReport();\nQ:There’5 still something \nstrange here... you never \nexplained how it is that \nArrayList<Dog> gives back Dog \nreferences that don’t need to be \ncast, yet the ArrayList class uses \nObject in its methods, not Dog \n(or DotCom or anything else). \nWhat’5 the special trick going on \nwhen you say ArrayList<Dog>?\nA: You’re right for calling it a \nspecial trick. In fact it is a special \ntrick that ArrayList<Dog> gives \nback Dogs without you having \nto do any cast, since it looks like \nArrayList methods don’t know \nanything about Dogs, or any type \nbesides Object.\nThe short answer is that the \ncompiler puts in the cast for you! \nWhen you say ArrayList<Dog>, \nthere is no special class that has \nmethods to take and return Dog \nobjects, but instead the <Dog> \nis a signal to the compiler that \nyou want the compiler to let you \nput ONLY Dog objects in and to \nstop you if you try to add any \nother type to the list. And since \nthe compiler stops you from \nadding anything but Dogs to the \nArrayList, the compiler also knows \nthat it’5 safe to cast anything \nthat comes out of that ArrayList \nto a Dog reference. In other \nwords, using ArrayList<Dog> \nsaves you from having to cast \nthe Dog you get back. But it’5 \nmuch more important than that... \nbecause remember, a cast can \nfail at runtime, and wouldn’t you \nrather have your errors happen \nat compile time rather than, say, \nwhen your customer is using it for \nsomething critical?\nBut there’5 a lot more to this story, \nand we’11 get into all the details in \nthe Collections chapter.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 263,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 263,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3945 chars",
+      "severity": "info"
+    },
+    {
+      "page": 263,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 263,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

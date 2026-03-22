@@ -1,0 +1,46 @@
+{
+  "page_number": 490,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "456 \nchapter 14\nQuiz Card Player code\nimport java.util.*;\nimport java.awt.event.*;\nimport javax.swing.*;\nimport java.awt.*;\nimport java.io.*;\npublic class QuizCardPlayer {\n private JTextArea display;\n private JTextArea answer;\n private ArrayList<QuizCard> cardList;\n private QuizCard currentCard;\n private int currentCardIndex;\n private JFrame frame;\n private JButton nextButton;\n private boolean isShowAnswer;\n public static void main (String[] args) {\n QuizCardPlayer reader = new QuizCardPlayer();\n reader.go();\n }\n \n public void go() {\n \n // build gui\n frame = new JFrame(“Quiz Card Player”);\n JPanel mainPanel = new JPanel();\n Font bigFont = new Font(“sanserif”, Font.BOLD, 24);\n \n display = new JTextArea(10,20);\n display.setFont(bigFont);\n \n display.setLineWrap(true);\n display.setEditable(false);\n \n JScrollPane qScroller = new JScrollPane(display);\n qScroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);\n qScroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER); \n nextButton = new JButton(“Show Question”); \n mainPanel.add(qScroller);\n mainPanel.add(nextButton);\n nextButton.addActionListener(new NextCardListener());\n JMenuBar menuBar = new JMenuBar();\n JMenu fileMenu = new JMenu(“File”); \n JMenuItem loadMenuItem = new JMenuItem(“Load card set”); \n loadMenuItem.addActionListener(new OpenMenuListener()); \n fileMenu.add(loadMenuItem); \n menuBar.add(fileMenu);\n frame.setJMenuBar(menuBar); \n frame.getContentPane().add(BorderLayout.CENTER, mainPanel);\n frame.setSize(640,500);\n frame.setVisible(true); \n \n } // close go\n \nJust GUI code on this page; \nnothing special",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "456 \nchapter 14\nQuiz Card Player code\nimport java.util.*;\nimport java.awt.event.*;\nimport javax.swing.*;\nimport java.awt.*;\nimport java.io.*;\npublic class QuizCardPlayer {\n private JTextArea display;\n private JTextArea answer;\n private ArrayList<QuizCard> cardList;\n private QuizCard currentCard;\n private int currentCardIndex;\n private JFrame frame;\n private JButton nextButton;\n private boolean isShowAnswer;\n public static void main (String[] args) {\n QuizCardPlayer reader = new QuizCardPlayer();\n reader.go();\n }\n \n public void go() {\n \n // build gui\n frame = new JFrame(“Quiz Card Player”);\n JPanel mainPanel = new JPanel();\n Font bigFont = new Font(“sanserif”, Font.BOLD, 24);\n \n display = new JTextArea(10,20);\n display.setFont(bigFont);\n \n display.setLineWrap(true);\n display.setEditable(false);\n \n JScrollPane qScroller = new JScrollPane(display);\n qScroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);\n qScroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER); \n nextButton = new JButton(“Show Question”); \n mainPanel.add(qScroller);\n mainPanel.add(nextButton);\n nextButton.addActionListener(new NextCardListener());\n JMenuBar menuBar = new JMenuBar();\n JMenu fileMenu = new JMenu(“File”); \n JMenuItem loadMenuItem = new JMenuItem(“Load card set”); \n loadMenuItem.addActionListener(new OpenMenuListener()); \n fileMenu.add(loadMenuItem); \n menuBar.add(fileMenu);\n frame.setJMenuBar(menuBar); \n frame.getContentPane().add(BorderLayout.CENTER, mainPanel);\n frame.setSize(640,500);\n frame.setVisible(true); \n \n } // close go\n \nJust GUI code on this page; \nnothing special",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 490,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 490,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1949 chars",
+      "severity": "info"
+    },
+    {
+      "page": 490,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

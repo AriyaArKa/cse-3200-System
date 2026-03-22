@@ -1,0 +1,73 @@
+{
+  "page_number": 404,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "370 \nchapter 12\nbuilding a GUI frame\nWait a minute...how \ndo you put TWO \nthings on a frame? \nWe cover GUI layouts in the next chapter, but we’11 do a \nquickie lesson here to get you going. By default, a frame \nhas five regions you can add to. You can add only one thing \nto each region of a frame, but don’t panic! That one thing \nmight be a panel that holds three other things including a \npanel that holds two more things and... you get the idea. In \nfact, we were ‘cheating’ when we added a button to the frame \nusing:\nGUI layouts: putting more than one \nwidget on a frame\nframe.getContentPane().add(button);\nThis isn’t really the way you’re supposed \nto do it (the one-arg add method).\nframe.getContentPane().add(BorderLayout.CENTER, button);\nThis is the better (and usually \nmandatory) way to add to a frame’5 \ndefault content pane. Always specify \nWHERE (which region) you want the \nwidget to go.\nWhen you call the single-arg add \nmethod (the one we shouldn’t use) \nthe widget will automatically land in \nthe center region. \nwe call the two-argument add method, \nthat takes a region (using a constant) \nand the widget to add to that region.\nSharpen your pencil\nGiven the pictures on page 369, write the \ncode that adds the button and the panel to \nthe frame.\ndefault region\nnorth\nsouth\neast\nwest\ncenter",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Sharpen your pencil\nthe pictures on page 369, write"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (292x434)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "370 \nchapter 12\nbuilding a GUI frame\nWait a minute...how \ndo you put TWO \nthings on a frame? \nWe cover GUI layouts in the next chapter, but we’11 do a \nquickie lesson here to get you going. By default, a frame \nhas five regions you can add to. You can add only one thing \nto each region of a frame, but don’t panic! That one thing \nmight be a panel that holds three other things including a \npanel that holds two more things and... you get the idea. In \nfact, we were ‘cheating’ when we added a button to the frame \nusing:\nGUI layouts: putting more than one \nwidget on a frame\nframe.getContentPane().add(button);\nThis isn’t really the way you’re supposed \nto do it (the one-arg add method).\nframe.getContentPane().add(BorderLayout.CENTER, button);\nThis is the better (and usually \nmandatory) way to add to a frame’5 \ndefault content pane. Always specify \nWHERE (which region) you want the \nwidget to go.\nWhen you call the single-arg add \nmethod (the one we shouldn’t use) \nthe widget will automatically land in \nthe center region. \nwe call the two-argument add method, \nthat takes a region (using a constant) \nand the widget to add to that region.\nSharpen your pencil\nGiven the pictures on page 369, write the \ncode that adds the button and the panel to \nthe frame.\ndefault region\nnorth\nsouth\neast\nwest\ncenter",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 404,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 404,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1310 chars",
+      "severity": "info"
+    },
+    {
+      "page": 404,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 404,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 353,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n319\n1 Let’5 say you want \nto call a method in a \nclass that you didn’t \nwrite.\n2 That method does \nsomething risky, \nsomething that might \nnot work at runtime.\n3 You need to know \nthat the method \nyou’re calling is \nrisky.\nWhat happens when a method you want to call \n(probably in a class you didn’t write) is risky?\n4 You then write code \nthat can handle the \nfailure if it does \nhappen. You need to be \nprepared, just in case.\nyou\nclass you \ndidn’t write\nw\nrit\ne\nt\nh\na\nt\n \nu\n5\ne\n5\n \nme\nt\nh\n0\nd\n5 in\nvoid moo() {\n if (serverDown) {\n explode();\n }\n}\nyou\nyour code\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\nclass you \ndidn’t write\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\nclass you \ndidn’t write\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\n1 wonder if \nthat method \ncould blow up...\nMy moo() \nmethod will \nexplode if the \nserver is down.\nyou\nw\nr\ni\nt\ne \n5\na\nfe\n1\ny\nNow that 1 \nknow, 1 can take \nprecautions.\nyour code\nclass Bar {\n void go() {\n moo();\n } \n int stuff() {\n x.beep();\n }\n}\nclass Bar {\n void go() {\n try{\n moo();\n }catch(MX m){\n cry();\n }\n }\n}",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (88x233)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n319\n1 Let’5 say you want \nto call a method in a \nclass that you didn’t \nwrite.\n2 That method does \nsomething risky, \nsomething that might \nnot work at runtime.\n3 You need to know \nthat the method \nyou’re calling is \nrisky.\nWhat happens when a method you want to call \n(probably in a class you didn’t write) is risky?\n4 You then write code \nthat can handle the \nfailure if it does \nhappen. You need to be \nprepared, just in case.\nyou\nclass you \ndidn’t write\nw\nrit\ne\nt\nh\na\nt\n \nu\n5\ne\n5\n \nme\nt\nh\n0\nd\n5 in\nvoid moo() {\n if (serverDown) {\n explode();\n }\n}\nyou\nyour code\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\nclass you \ndidn’t write\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\nclass you \ndidn’t write\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\n1 wonder if \nthat method \ncould blow up...\nMy moo() \nmethod will \nexplode if the \nserver is down.\nyou\nw\nr\ni\nt\ne \n5\na\nfe\n1\ny\nNow that 1 \nknow, 1 can take \nprecautions.\nyour code\nclass Bar {\n void go() {\n moo();\n } \n int stuff() {\n x.beep();\n }\n}\nclass Bar {\n void go() {\n try{\n moo();\n }catch(MX m){\n cry();\n }\n }\n}",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 353,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 353,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1238 chars",
+      "severity": "info"
+    },
+    {
+      "page": 353,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 353,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

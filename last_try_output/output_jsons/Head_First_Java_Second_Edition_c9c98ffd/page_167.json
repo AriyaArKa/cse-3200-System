@@ -1,0 +1,88 @@
+{
+  "page_number": 167,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n133\nSome things you can do with ArrayList\n1\nMake one\nArrayList<Egg> myList = new ArrayList<Egg>();\n2\nPut something in it\nEgg 5 = new Egg();\nmyList.add(5);\n7\nRemove something from it\nmyList.remove(5);\n4\nFind out how many things are in it\nint theSize = myList.size();\n5\nFind out if it contains something\nboolean isIn = myList.contains(5);\n6\nFind out if it’5 empty\nboolean empty = myList.isEmpty();\nFind out where something is (i.e. its index)\nint idx = myList.indexOf(b);\n8\n3\nPut another thing in it\nEgg b = new Egg();\nmyList.add(b);\nA new ArrayList object is \ncreated on the heap. It’5 little \nbecause it’5 empty. \nNow the ArrayList grows a “box” \nto hold the Egg object.\nThe ArrayList grows again to hold \nthe second Egg object.\nThe ArrayList is holding 2 objects 50 \nthe size() method returns 2\nThe ArrayList DOES contain the Egg object \nreferenced by ‘5’, 50 contains() returns true\nArrayList is zero-based (means first index is 0) \nand since the object referenced by ‘b’ was the \nsecond thing in the list, indexOf() returns 1\nit’5 definitely NOT empty, 50 isEmpty() \nreturns false\nHey look — it shrank!\nDon’t worry about this new <Egg> angle-bracket syntax \nright now; it just means “make this a list of Egg objects”.\n5\n5\nb\nb",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (256x198)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (162x172)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (48x50)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (92x81)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (162x172)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "get to know the Java API \nyou are here\n133\nSome things you can do with ArrayList\n1\nMake one\nArrayList<Egg> myList = new ArrayList<Egg>();\n2\nPut something in it\nEgg 5 = new Egg();\nmyList.add(5);\n7\nRemove something from it\nmyList.remove(5);\n4\nFind out how many things are in it\nint theSize = myList.size();\n5\nFind out if it contains something\nboolean isIn = myList.contains(5);\n6\nFind out if it’5 empty\nboolean empty = myList.isEmpty();\nFind out where something is (i.e. its index)\nint idx = myList.indexOf(b);\n8\n3\nPut another thing in it\nEgg b = new Egg();\nmyList.add(b);\nA new ArrayList object is \ncreated on the heap. It’5 little \nbecause it’5 empty. \nNow the ArrayList grows a “box” \nto hold the Egg object.\nThe ArrayList grows again to hold \nthe second Egg object.\nThe ArrayList is holding 2 objects 50 \nthe size() method returns 2\nThe ArrayList DOES contain the Egg object \nreferenced by ‘5’, 50 contains() returns true\nArrayList is zero-based (means first index is 0) \nand since the object referenced by ‘b’ was the \nsecond thing in the list, indexOf() returns 1\nit’5 definitely NOT empty, 50 isEmpty() \nreturns false\nHey look — it shrank!\nDon’t worry about this new <Egg> angle-bracket syntax \nright now; it just means “make this a list of Egg objects”.\n5\n5\nb\nb",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 167,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 167,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1269 chars",
+      "severity": "info"
+    },
+    {
+      "page": 167,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 167,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

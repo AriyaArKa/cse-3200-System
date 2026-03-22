@@ -1,0 +1,67 @@
+{
+  "page_number": 709,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "appendix 8 Top Ten Reference\nyou are here\n675\nFive-Minute Mystery Solution\nA Long Trip Home\nCaptain Byte knew that in Java, multidimensional arrays are actu-\nally arrays of arrays. The five by five QuadrantKey array ‘q’, would \nactually need a total of 31 reference variables to be able to access \nall of its components:\n1 - reference variable for ‘q’\n5 - reference variables for q[0] - q[4]\n25 - reference variables for q[0][0] - q[4][4]\nThe ensign had forgotten the reference variables for the five one \ndimensional arrays embedded in the ‘q’ array. Any of those five \nreference variables could have been corrupted by the Hackarian \nray, and the ensign’5 test would never reveal the problem.\npuzzle answers",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (304x238)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "appendix 8 Top Ten Reference\nyou are here\n675\nFive-Minute Mystery Solution\nA Long Trip Home\nCaptain Byte knew that in Java, multidimensional arrays are actu-\nally arrays of arrays. The five by five QuadrantKey array ‘q’, would \nactually need a total of 31 reference variables to be able to access \nall of its components:\n1 - reference variable for ‘q’\n5 - reference variables for q[0] - q[4]\n25 - reference variables for q[0][0] - q[4][4]\nThe ensign had forgotten the reference variables for the five one \ndimensional arrays embedded in the ‘q’ array. Any of those five \nreference variables could have been corrupted by the Hackarian \nray, and the ensign’5 test would never reveal the problem.\npuzzle answers",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 709,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 709,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 713 chars",
+      "severity": "info"
+    },
+    {
+      "page": 709,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 709,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

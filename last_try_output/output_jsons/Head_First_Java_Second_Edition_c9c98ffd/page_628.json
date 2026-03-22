@@ -1,0 +1,98 @@
+{
+  "page_number": 628,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "organizing your classes\n594 \nchapter 17\nSharpen your pencil\nFoof.class\nclasses\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nGiven the package/directory structure in this \npicture, figure out what you should type at the \ncommand-line to compile, run, create a JAR, and \nexecute a JAR. Assume we’re using the standard \nwhere the package directory structure starts just \nbelow source and classes. In other words, the source \nand classes directories are not part of the package.\n%cd source\n%javac ________________________________\njavaranch\ncows\nCompile:\n%cd ___________\n%java _________________________________\nRun:\n%cd ___________\n%______________________________________\nCreate a JAR\nmanifest.txt\nMain-Class: MiniApp\nsource\njavaranch\ncows\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nFoof.java\nMyProject\n%cd ___________\n% _____________________________________\nExecute a JAR\nBonus question: What’5 wrong with the package name?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Sharpen your pencil"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "MiniApp"
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "Main-Class: MiniApp",
+          "MiniApp"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (136x108)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (134x106)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "organizing your classes\n594 \nchapter 17\nSharpen your pencil\nFoof.class\nclasses\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nGiven the package/directory structure in this \npicture, figure out what you should type at the \ncommand-line to compile, run, create a JAR, and \nexecute a JAR. Assume we’re using the standard \nwhere the package directory structure starts just \nbelow source and classes. In other words, the source \nand classes directories are not part of the package.\n%cd source\n%javac ________________________________\njavaranch\ncows\nCompile:\n%cd ___________\n%java _________________________________\nRun:\n%cd ___________\n%______________________________________\nCreate a JAR\nmanifest.txt\nMain-Class: MiniApp\nsource\njavaranch\ncows\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nFoof.java\nMyProject\n%cd ___________\n% _____________________________________\nExecute a JAR\nBonus question: What’5 wrong with the package name?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 628,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 628,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 921 chars",
+      "severity": "info"
+    },
+    {
+      "page": 628,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 628,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

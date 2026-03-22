@@ -1,0 +1,103 @@
+{
+  "page_number": 272,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "238 \nchapter 9\nWhat about local variables that are objects?\nRemember, a non-primitive variable holds a reference to an \nobject, not the object itself. You already know where objects \nlive—on the heap. It doesn’t matter where they’re declared or \ncreated. If the local variable is a reference to an object, only \nthe variable (the reference/remote control) goes on the stack. \nThe object itself still goes in the heap.\nD\nu\nc\nk\n \n \n0\nb\nj\ne\nc\nt \nbarf()\nfoof()\npublic class StackRef {\n public void foof() {\n barf();\n }\n public void barf() {\n Duck d = new Duck(24);\n }\n}\nd\nbarf() declares and creates a new \nDuck reference variable ‘d’ (since it’5 \ndeclared inside the method, it’5 a local \nvariable and goes on the stack. \nobject references on the stack\n BULLET POINTS\n$ Java has two areas of memory we care about: \nthe Stack and the Heap.\n$ Instance variables are variables declared \ninside a class but outside any method.\n$ Local variables are variables declared inside a \nmethod or method parameter. \n$ All local variables live on the stack, in the \nframe corresponding to the method where the \nvariables are declared.\n$ Object reference variables work just like primi-\ntive variables—if the reference is declared as a \nlocal variable, it goes on the stack.\n$ All objects live in the heap, regardless of \nwhether the reference is a local or instance \nvariable.\nthere are no\nDumb Questions\nQ: One more time, WHY are we learning the \nwhole stack/heap thing? How does this help me? \nDo 1 really need to learn about it?\nA: Knowing the fundamentals of the Java \nStack and Heap is crucial if you want to understand \nvariable scope, object creation issues, memory \nmanagement, threads, and exception handling. \nWe cover threads and exception handling in later \nchapters but the others you’11 learn in this one. You \ndo not need to know anything about how the Stack \nand Heap are implemented in any particular JVM \nand/or platform. Everything you need to know \nabout the Stack and Heap is on this page and the \nprevious one. If you nail these pages, all the other \ntopics that depend on your knowing this stuff will \ngo much, much, much easier. Once again, some \nday you will 50 thank us for shoving Stacks and \nHeaps down your throat.\nHeap\nNo matter WHERE the object \nreference variable is declared (inside \na method vs. as an instance variable \nof a class) the object always always \nalways goes on the heap.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "OINTS",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (106x107)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (388x193)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (62x114)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "238 \nchapter 9\nWhat about local variables that are objects?\nRemember, a non-primitive variable holds a reference to an \nobject, not the object itself. You already know where objects \nlive—on the heap. It doesn’t matter where they’re declared or \ncreated. If the local variable is a reference to an object, only \nthe variable (the reference/remote control) goes on the stack. \nThe object itself still goes in the heap.\nD\nu\nc\nk\n \n \n0\nb\nj\ne\nc\nt \nbarf()\nfoof()\npublic class StackRef {\n public void foof() {\n barf();\n }\n public void barf() {\n Duck d = new Duck(24);\n }\n}\nd\nbarf() declares and creates a new \nDuck reference variable ‘d’ (since it’5 \ndeclared inside the method, it’5 a local \nvariable and goes on the stack. \nobject references on the stack\n BULLET POINTS\n$ Java has two areas of memory we care about: \nthe Stack and the Heap.\n$ Instance variables are variables declared \ninside a class but outside any method.\n$ Local variables are variables declared inside a \nmethod or method parameter. \n$ All local variables live on the stack, in the \nframe corresponding to the method where the \nvariables are declared.\n$ Object reference variables work just like primi-\ntive variables—if the reference is declared as a \nlocal variable, it goes on the stack.\n$ All objects live in the heap, regardless of \nwhether the reference is a local or instance \nvariable.\nthere are no\nDumb Questions\nQ: One more time, WHY are we learning the \nwhole stack/heap thing? How does this help me? \nDo 1 really need to learn about it?\nA: Knowing the fundamentals of the Java \nStack and Heap is crucial if you want to understand \nvariable scope, object creation issues, memory \nmanagement, threads, and exception handling. \nWe cover threads and exception handling in later \nchapters but the others you’11 learn in this one. You \ndo not need to know anything about how the Stack \nand Heap are implemented in any particular JVM \nand/or platform. Everything you need to know \nabout the Stack and Heap is on this page and the \nprevious one. If you nail these pages, all the other \ntopics that depend on your knowing this stuff will \ngo much, much, much easier. Once again, some \nday you will 50 thank us for shoving Stacks and \nHeaps down your throat.\nHeap\nNo matter WHERE the object \nreference variable is declared (inside \na method vs. as an instance variable \nof a class) the object always always \nalways goes on the heap.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 272,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 272,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2428 chars",
+      "severity": "info"
+    },
+    {
+      "page": 272,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 272,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

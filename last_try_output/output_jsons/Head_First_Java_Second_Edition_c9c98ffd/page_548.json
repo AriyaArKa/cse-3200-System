@@ -1,0 +1,67 @@
+{
+  "page_number": 548,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "514 \nchapter 15\nMake the increment() method atomic.\nSynchronize it!\nSynchronizing the increment() method solves the “Lost \nUpdate” problem, because it keeps the two steps in the method \nas one unbreakable unit.\npublic synchronized void increment() {\n int i = balance;\n balance = i + 1;\n}\nOnce a thread enters \nthe method, we have \nto make sure that all \nthe steps in the method \ncomplete (as one \natomic process) before \nany other thread can \nenter the method.\n8\nthere are no\nDumb Questions\nQ: Sounds like it’5 a good idea to synchronize \neverything, just to be thread-safe.\nA: Nope, it’5 not a good idea. Synchronization doesn’t \ncome for free. First, a synchronized method has a certain \namount of overhead. In other words, when code hits a \nsynchronized method, there’5 going to be a performance hit \n(although typically, you’d never notice it) while the matter of \n“is the key available?” is resolved. \nSecond, a synchronized method can slow your program \ndown because synchronization restricts concurrency. In \nother words, a synchronized method forces other threads to \nget in line and wait their turn. This might not be a problem \nin your code, but you have to consider it.\nThird, and most frightening, synchronized methods can lead \nto deadlock! (See page 516.)\nA good rule of thumb is to synchronize only the bare \nminimum that should be synchronized. And in fact, you \ncan synchronize at a granularity that’5 even smaller than \na method. We don’t use it in the book, but you can use the \nsynchronized keyword to synchronize at the more fine-\ngrained level of one or more statements, rather than at the \nwhole-method level. \n \n \ndoStuff() doesn’t need to \nbe synchronized, 50 we don’t \nsynchronize the whole method.\nNow, only these two method calls are grouped \ninto one atomic unit. When you use the \nsynchronized keyword WITHIN a method, \nrather than in a method declaration, you \nhave to provide an argument that is the \nobject whose key the thread needs to get. \nAlthough there are other ways to do it, you \nwill almost always synchronize on the current \nobject (this). That’5 the same object you’d \nlock if the whole method were synchronized.\npublic void go() {\n doStuff();\n synchronized(this) {\n criticalStuff();\n moreCriticalStuff();\n }\n}\nsynchronizing methods",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (111x111)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (78x79)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "514 \nchapter 15\nMake the increment() method atomic.\nSynchronize it!\nSynchronizing the increment() method solves the “Lost \nUpdate” problem, because it keeps the two steps in the method \nas one unbreakable unit.\npublic synchronized void increment() {\n int i = balance;\n balance = i + 1;\n}\nOnce a thread enters \nthe method, we have \nto make sure that all \nthe steps in the method \ncomplete (as one \natomic process) before \nany other thread can \nenter the method.\n8\nthere are no\nDumb Questions\nQ: Sounds like it’5 a good idea to synchronize \neverything, just to be thread-safe.\nA: Nope, it’5 not a good idea. Synchronization doesn’t \ncome for free. First, a synchronized method has a certain \namount of overhead. In other words, when code hits a \nsynchronized method, there’5 going to be a performance hit \n(although typically, you’d never notice it) while the matter of \n“is the key available?” is resolved. \nSecond, a synchronized method can slow your program \ndown because synchronization restricts concurrency. In \nother words, a synchronized method forces other threads to \nget in line and wait their turn. This might not be a problem \nin your code, but you have to consider it.\nThird, and most frightening, synchronized methods can lead \nto deadlock! (See page 516.)\nA good rule of thumb is to synchronize only the bare \nminimum that should be synchronized. And in fact, you \ncan synchronize at a granularity that’5 even smaller than \na method. We don’t use it in the book, but you can use the \nsynchronized keyword to synchronize at the more fine-\ngrained level of one or more statements, rather than at the \nwhole-method level. \n \n \ndoStuff() doesn’t need to \nbe synchronized, 50 we don’t \nsynchronize the whole method.\nNow, only these two method calls are grouped \ninto one atomic unit. When you use the \nsynchronized keyword WITHIN a method, \nrather than in a method declaration, you \nhave to provide an argument that is the \nobject whose key the thread needs to get. \nAlthough there are other ways to do it, you \nwill almost always synchronize on the current \nobject (this). That’5 the same object you’d \nlock if the whole method were synchronized.\npublic void go() {\n doStuff();\n synchronized(this) {\n criticalStuff();\n moreCriticalStuff();\n }\n}\nsynchronizing methods",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 548,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 548,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2312 chars",
+      "severity": "info"
+    },
+    {
+      "page": 548,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 548,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

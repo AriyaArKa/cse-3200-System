@@ -1,0 +1,74 @@
+{
+  "page_number": 219,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inheritance and polymorphism\nyou are here\n185\nThe important point is that the \nreference type AND the object \ntype are the same. \nIn this example, both are Dog.\nDog\nmyDog\nD\n0\ng\n \n0\nb\nj\ne\nct\n \nThese two are the same type. The reference \nvariable type is declared as Dog, and the object \nis created as new Dog().\nBut with polymorphism, the \nreference and the object can \nbe different.\nAnimal myDog = new Dog();\nAnimal\nmyDog\nD\n0\ng\n \n0\nb\nj\ne\nct\n \nThese two are NOT the same type. The \nreference variable type is declared as Animal, \nbut the object is created as new Dog().",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "inheritance and polymorphism\nyou are here\n185\nThe important point is that the \nreference type AND the object \ntype are the same. \nIn this example, both are Dog.\nDog\nmyDog\nD\n0\ng\n \n0\nb\nj\ne\nct\n \nThese two are the same type. The reference \nvariable type is declared as Dog, and the object \nis created as new Dog().\nBut with polymorphism, the \nreference and the object can \nbe different.\nAnimal myDog = new Dog();\nAnimal\nmyDog\nD\n0\ng\n \n0\nb\nj\ne\nct\n \nThese two are NOT the same type. The \nreference variable type is declared as Animal, \nbut the object is created as new Dog().",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 219,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 219,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 570 chars",
+      "severity": "info"
+    },
+    {
+      "page": 219,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 219,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

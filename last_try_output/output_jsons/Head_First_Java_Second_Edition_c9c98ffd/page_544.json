@@ -1,0 +1,67 @@
+{
+  "page_number": 544,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "510 \nchapter 15\nWe need the makeWithdrawal( ) method \nto run as one atomic thing. \n private synchronized void makeWithdrawal(int amount) {\n if (account.getBalance() >= amount) {\n System.out.println(Thread.currentThread().getName() + “ is about to withdraw”);\n try {\n System.out.println(Thread.currentThread().getName() + “ is going to sleep”);\n Thread.sleep(500);\n } catch(InterruptedException ex) {ex.printStackTrace(); }\n System.out.println(Thread.currentThread().getName() + “ woke up.”);\n account.withdraw(amount);\n System.out.println(Thread.currentThread().getName() + “ completes the withdrawl”);\n } else {\n System.out.println(“Sorry, not enough for “ + Thread.currentThread().getName());\n }\n }\nThe synchronized \nkeyword means that \na thread needs a key \nin order to access the \nsynchronized code.\nTo protect your data \n(like the bank account), \nsynchronize the \nmethods that act on \nthat data.\nWe need to make sure that once a thread enters the \nmakeWithdrawal() method, it must be allowed to finish the method \nbefore any other thread can enter.\nIn other words, we need to make sure that once a thread has \nchecked the account balance, that thread has a guarantee that it can \nwake up and finish the withdrawal before any other thread can check the \naccount balance!\nUse the synchronized keyword to modify a method 50 that only \none thread at a time can access it.\nThat’5 how you protect the bank account! You don’t put a lock on \nthe bank account itself; you lock the method that does the banking \ntransaction. That way, one thread gets to complete the whole \ntransaction, start to finish, even if that thread falls asleep in the \nmiddle of the method!\n50 if you don’t lock the bank account, then what exactly is locked? 15 \nit the method? The Runnable object? The thread itself?\nWe’11 look at that on the next page. In code, though, it’5 quite \nsimple—just add the synchronized modifier to your method \ndeclaration:\n(Note for you physics-savvy readers: yes, the convention of using the word ‘atomic’ here does not reflect \nthe whole subatomic particle thing. Think Newton, not Einstein, when you hear the word ‘atomic’ in the \ncontext of threads or transactions. Hey, it’5 not OUR convention. If WE were in charge, we’d apply \nHeisenberg’5 Uncertainty Principle to pretty much everything related to threads.)\nusing synchronized",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (111x111)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (136x174)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "510 \nchapter 15\nWe need the makeWithdrawal( ) method \nto run as one atomic thing. \n private synchronized void makeWithdrawal(int amount) {\n if (account.getBalance() >= amount) {\n System.out.println(Thread.currentThread().getName() + “ is about to withdraw”);\n try {\n System.out.println(Thread.currentThread().getName() + “ is going to sleep”);\n Thread.sleep(500);\n } catch(InterruptedException ex) {ex.printStackTrace(); }\n System.out.println(Thread.currentThread().getName() + “ woke up.”);\n account.withdraw(amount);\n System.out.println(Thread.currentThread().getName() + “ completes the withdrawl”);\n } else {\n System.out.println(“Sorry, not enough for “ + Thread.currentThread().getName());\n }\n }\nThe synchronized \nkeyword means that \na thread needs a key \nin order to access the \nsynchronized code.\nTo protect your data \n(like the bank account), \nsynchronize the \nmethods that act on \nthat data.\nWe need to make sure that once a thread enters the \nmakeWithdrawal() method, it must be allowed to finish the method \nbefore any other thread can enter.\nIn other words, we need to make sure that once a thread has \nchecked the account balance, that thread has a guarantee that it can \nwake up and finish the withdrawal before any other thread can check the \naccount balance!\nUse the synchronized keyword to modify a method 50 that only \none thread at a time can access it.\nThat’5 how you protect the bank account! You don’t put a lock on \nthe bank account itself; you lock the method that does the banking \ntransaction. That way, one thread gets to complete the whole \ntransaction, start to finish, even if that thread falls asleep in the \nmiddle of the method!\n50 if you don’t lock the bank account, then what exactly is locked? 15 \nit the method? The Runnable object? The thread itself?\nWe’11 look at that on the next page. In code, though, it’5 quite \nsimple—just add the synchronized modifier to your method \ndeclaration:\n(Note for you physics-savvy readers: yes, the convention of using the word ‘atomic’ here does not reflect \nthe whole subatomic particle thing. Think Newton, not Einstein, when you hear the word ‘atomic’ in the \ncontext of threads or transactions. Hey, it’5 not OUR convention. If WE were in charge, we’d apply \nHeisenberg’5 Uncertainty Principle to pretty much everything related to threads.)\nusing synchronized",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 544,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 544,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2415 chars",
+      "severity": "info"
+    },
+    {
+      "page": 544,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 544,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

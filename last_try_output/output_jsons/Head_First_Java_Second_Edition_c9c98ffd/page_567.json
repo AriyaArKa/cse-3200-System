@@ -1,0 +1,60 @@
+{
+  "page_number": 567,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n533\n1 do see a collection class \ncalled TreeSet... and the docs \nsay that it keeps your data \nsorted. 1 wonder if 1 should be \nusing a TreeSet instead of an \nArrayList...\nArrayList is not the only collection\nAlthough ArrayList is the one you’11 use most often, \nthere are others for special occasions. Some of the key \ncollection classes include:\n$ TreeSet\nKeeps the elements sorted and prevents duplicates. \n$ HashMap\nLets you store and access elements as name/value pairs.\n$ LinkedList \nMakes it easy to create structures like stacks or queues.\n$ HashSet\nPrevents duplicates in the collection, and given an element, can \nfind that element in the collection quickly.\n$ LinkedHashMap\nLike a regular HashMap, except it can remember the order in \nwhich elements (name/value pairs) were inserted, or it can be \nconfigured to remember the order in which elements were last \naccessed.\nDon’t worry about trying \nto learn these other ones \nright now. We’11 go into \nmore details a little later.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (320x693)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "collections with generics\nyou are here\n533\n1 do see a collection class \ncalled TreeSet... and the docs \nsay that it keeps your data \nsorted. 1 wonder if 1 should be \nusing a TreeSet instead of an \nArrayList...\nArrayList is not the only collection\nAlthough ArrayList is the one you’11 use most often, \nthere are others for special occasions. Some of the key \ncollection classes include:\n$ TreeSet\nKeeps the elements sorted and prevents duplicates. \n$ HashMap\nLets you store and access elements as name/value pairs.\n$ LinkedList \nMakes it easy to create structures like stacks or queues.\n$ HashSet\nPrevents duplicates in the collection, and given an element, can \nfind that element in the collection quickly.\n$ LinkedHashMap\nLike a regular HashMap, except it can remember the order in \nwhich elements (name/value pairs) were inserted, or it can be \nconfigured to remember the order in which elements were last \naccessed.\nDon’t worry about trying \nto learn these other ones \nright now. We’11 go into \nmore details a little later.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 567,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 567,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1033 chars",
+      "severity": "info"
+    },
+    {
+      "page": 567,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 567,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

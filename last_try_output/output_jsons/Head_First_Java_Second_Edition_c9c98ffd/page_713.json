@@ -1,0 +1,46 @@
+{
+  "page_number": 713,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nthe index\n679\nSet 557\nTreeSet 533\nCollections.sort() 534, 539\nComparator 551\ncompare() 553\nComparable 547, 566\nand TreeSet 566\ncompareTo() method 549\nComparator 551, 566\nand TreeSet 566\ncompare() 553\ncompareTo() 549\ncomparing with == 86\ncompiler 2\nabout 18\njava -d 590\nconcatenate 17\nconcrete classes 200–210\nconditional expressions 10, 11, 13\nconstants 282\nconstructors\nabout 240\nchaining 250–256\noverloaded 256\nsuperclass 250–256\ncontracts 190–191, 218\ncups 51\ncurly braces 10\nD\ndaily advice client 480\ndaily advice server 484\ndancing girl 316\ndates\nCalendar 303\nmethods 305\nformatting 301\nGregorianCalendar 303\njava.util.Date 303\ndeadlock 516\ndeadly diamond of death 223\ndeclarations\nabout 50\nexceptions 335–336\ninstance variables 50\ndefault access 668\ndefault value 84\ndeployment options 582, 608\ndeserialized objects 441. See also serialization\ndirectory structures\npackages 589\nservlets 626\ndoctor 169\ndot operator\nreference 54\ndouble 51\nduck 277\nconstruct 242\ngarbage collect 261\nducking exceptions 335\nE\nEJB 631\nencapsulation\nabout 79–82\nbenefits 80\nend of book 648\nenumerations 671–672\nenums 671–672\nequality 560\nand hashCode() 561\nequals() 561\nequals( )\nabout 209\nObject class 209",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\nthe index\n679\nSet 557\nTreeSet 533\nCollections.sort() 534, 539\nComparator 551\ncompare() 553\nComparable 547, 566\nand TreeSet 566\ncompareTo() method 549\nComparator 551, 566\nand TreeSet 566\ncompare() 553\ncompareTo() 549\ncomparing with == 86\ncompiler 2\nabout 18\njava -d 590\nconcatenate 17\nconcrete classes 200–210\nconditional expressions 10, 11, 13\nconstants 282\nconstructors\nabout 240\nchaining 250–256\noverloaded 256\nsuperclass 250–256\ncontracts 190–191, 218\ncups 51\ncurly braces 10\nD\ndaily advice client 480\ndaily advice server 484\ndancing girl 316\ndates\nCalendar 303\nmethods 305\nformatting 301\nGregorianCalendar 303\njava.util.Date 303\ndeadlock 516\ndeadly diamond of death 223\ndeclarations\nabout 50\nexceptions 335–336\ninstance variables 50\ndefault access 668\ndefault value 84\ndeployment options 582, 608\ndeserialized objects 441. See also serialization\ndirectory structures\npackages 589\nservlets 626\ndoctor 169\ndot operator\nreference 54\ndouble 51\nduck 277\nconstruct 242\ngarbage collect 261\nducking exceptions 335\nE\nEJB 631\nencapsulation\nabout 79–82\nbenefits 80\nend of book 648\nenumerations 671–672\nenums 671–672\nequality 560\nand hashCode() 561\nequals() 561\nequals( )\nabout 209\nObject class 209",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 713,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 713,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1269 chars",
+      "severity": "info"
+    },
+    {
+      "page": 713,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

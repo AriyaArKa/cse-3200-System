@@ -1,0 +1,46 @@
+{
+  "page_number": 664,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "630 \nchapter 18\npublic class PhraseOMatic {\n public static String makePhrase() {\n // make three sets of words to choose from\n String[] wordListOne = {“24/7”,”multi-Tier”,”30,000 foot”,”8-to-8”,”win-win”,”front-\nend”, “web-based”,”pervasive”, “smart”, “six-sigma”,”critical-path”, “dynamic”};\n String[] wordListTwo = {“empowered”, “sticky”, “valued-added”, “oriented”, “centric”, \n“distributed”, “clustered”, “branded”,”outside-the-box”, “positioned”, “networked”, “fo-\ncused”, “leveraged”, “aligned”, “targeted”, “shared”, “cooperative”, “accelerated”};\n String[] wordListThree = {“process”, “tipping point”, “solution”, “architecture”, \n“core competency”, “strategy”, “mindshare”, “portal”, “space”, “vision”, “paradigm”, “mis-\nsion”};\n // find out how many words are in each list\n int oneLength = wordListOne.length;\n int twoLength = wordListTwo.length;\n int threeLength = wordListThree.length;\n // generate three random numbers, to pull random words from each list\n int rand1 = (int) (Math.random() * oneLength);\n int rand2 = (int) (Math.random() * twoLength);\n int rand3 = (int) (Math.random() * threeLength);\n // now build a phrase\n String phrase = wordListOne[rand1] + “ “ + wordListTwo[rand2] + “ “ + \nwordListThree[rand3];\n // now return it\n return (“What we need is a “ + phrase);\n } \n} \nPhrase-0-Matic code, servlet-friendly\nThis is a slightly different version from the code in chapter one. In the \noriginal, we ran the entire thing in a main() method, and we had to rerun \nthe program each time to generate a new phrase at the command-line. In this \nversion, the code simply returns a String (with the phrase) when you invoke \nthe static makePhrase() method. That way, you can call the method from any \nother code and get back a String with the randomly-composed phrase.\nPlease note that these long String[] array assignments are a victim of word-\nprocessing here—don’t type in the hyphens! Just keep on typing and let your \ncode editor do the wrapping. And whatever you do, don’t hit the return key in \nthe middle of a String (i.e. something between double quotes). \nPhrase-0-Matic code",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "630 \nchapter 18\npublic class PhraseOMatic {\n public static String makePhrase() {\n // make three sets of words to choose from\n String[] wordListOne = {“24/7”,”multi-Tier”,”30,000 foot”,”8-to-8”,”win-win”,”front-\nend”, “web-based”,”pervasive”, “smart”, “six-sigma”,”critical-path”, “dynamic”};\n String[] wordListTwo = {“empowered”, “sticky”, “valued-added”, “oriented”, “centric”, \n“distributed”, “clustered”, “branded”,”outside-the-box”, “positioned”, “networked”, “fo-\ncused”, “leveraged”, “aligned”, “targeted”, “shared”, “cooperative”, “accelerated”};\n String[] wordListThree = {“process”, “tipping point”, “solution”, “architecture”, \n“core competency”, “strategy”, “mindshare”, “portal”, “space”, “vision”, “paradigm”, “mis-\nsion”};\n // find out how many words are in each list\n int oneLength = wordListOne.length;\n int twoLength = wordListTwo.length;\n int threeLength = wordListThree.length;\n // generate three random numbers, to pull random words from each list\n int rand1 = (int) (Math.random() * oneLength);\n int rand2 = (int) (Math.random() * twoLength);\n int rand3 = (int) (Math.random() * threeLength);\n // now build a phrase\n String phrase = wordListOne[rand1] + “ “ + wordListTwo[rand2] + “ “ + \nwordListThree[rand3];\n // now return it\n return (“What we need is a “ + phrase);\n } \n} \nPhrase-0-Matic code, servlet-friendly\nThis is a slightly different version from the code in chapter one. In the \noriginal, we ran the entire thing in a main() method, and we had to rerun \nthe program each time to generate a new phrase at the command-line. In this \nversion, the code simply returns a String (with the phrase) when you invoke \nthe static makePhrase() method. That way, you can call the method from any \nother code and get back a String with the randomly-composed phrase.\nPlease note that these long String[] array assignments are a victim of word-\nprocessing here—don’t type in the hyphens! Just keep on typing and let your \ncode editor do the wrapping. And whatever you do, don’t hit the return key in \nthe middle of a String (i.e. something between double quotes). \nPhrase-0-Matic code",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 664,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 664,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2156 chars",
+      "severity": "info"
+    },
+    {
+      "page": 664,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

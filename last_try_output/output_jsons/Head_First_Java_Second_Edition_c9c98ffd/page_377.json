@@ -1,0 +1,46 @@
+{
+  "page_number": 377,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n343\nShortMessage a = new ShortMessage();\nA MidiEvent is an instruction for part of a song. A series of MidiEvents is \nkind of like sheet music, or a player piano roll. Most of the MidiEvents we \ncare about describe a thing to do and the moment in time to do it. The moment \nin time part matters, since timing is everything in music. This note follows \nthis note and 50 on. And because MidiEvents are 50 detailed, you have to say \nat what moment to start playing the note (a NOTE ON event) and at what \nmoment to stop playing the notes (NOTE OFF event). 50 you can imagine \nthat firing the “stop playing note 6” (NOTE OFF message) before the “start \nplaying Note 6” (NOTE ON) message wouldn’t work. \nThe MIDI instruction actually goes into a Message object; the MidiEvent is \na combination of the Message plus the moment in time when that message \nshould ‘fire’. In other words, the Message might say, “Start playing Middle \nC” while the MidiEvent would say, “Trigger this message at beat 4”.\n50 we always need a Message and a MidiEvent. \nThe Message says what to do, and the MidiEvent says when to do it.\nMaking a MidiEvent (song data)\n1\nMake a Message \n2\nPut the Instruction in the Message\na.setMessage(144, 1, 44, 100);\n3\nMake a new MidiEvent using the Message\nMidiEvent noteOn = new MidiEvent(a, 1);\n4\nAdd the MidiEvent to the Track\ntrack.add(noteOn);\nThis message says, “start playing note 44” \n(we’11 look at the other numbers on the \nnext page)\nThe instructions are in the message, but the Midi-\nEvent adds the moment in time when the instruction \nshould be triggered. This MidiEvent says to trigger \nmessage ‘a’ at the first beat (beat 1).\nA MidiEvent says \nwhat to do and \nwhen to do it. \nEvery instruction \nmust include the \ntiming for that \ninstruction. \nIn other words, at \nwhich beat that \nthing should happen. \nA Track holds all the MidiEvent objects. The Sequence organizes \nthem according to when each event is supposed to happen, and then \nthe Sequencer plays them back in that order. You can have lots of \nevents happening at the exact same moment in time. For example, \nyou might want two notes played simultaneously, or even different \ninstruments playing different sounds at the same time.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\nexception handling\n343\nShortMessage a = new ShortMessage();\nA MidiEvent is an instruction for part of a song. A series of MidiEvents is \nkind of like sheet music, or a player piano roll. Most of the MidiEvents we \ncare about describe a thing to do and the moment in time to do it. The moment \nin time part matters, since timing is everything in music. This note follows \nthis note and 50 on. And because MidiEvents are 50 detailed, you have to say \nat what moment to start playing the note (a NOTE ON event) and at what \nmoment to stop playing the notes (NOTE OFF event). 50 you can imagine \nthat firing the “stop playing note 6” (NOTE OFF message) before the “start \nplaying Note 6” (NOTE ON) message wouldn’t work. \nThe MIDI instruction actually goes into a Message object; the MidiEvent is \na combination of the Message plus the moment in time when that message \nshould ‘fire’. In other words, the Message might say, “Start playing Middle \nC” while the MidiEvent would say, “Trigger this message at beat 4”.\n50 we always need a Message and a MidiEvent. \nThe Message says what to do, and the MidiEvent says when to do it.\nMaking a MidiEvent (song data)\n1\nMake a Message \n2\nPut the Instruction in the Message\na.setMessage(144, 1, 44, 100);\n3\nMake a new MidiEvent using the Message\nMidiEvent noteOn = new MidiEvent(a, 1);\n4\nAdd the MidiEvent to the Track\ntrack.add(noteOn);\nThis message says, “start playing note 44” \n(we’11 look at the other numbers on the \nnext page)\nThe instructions are in the message, but the Midi-\nEvent adds the moment in time when the instruction \nshould be triggered. This MidiEvent says to trigger \nmessage ‘a’ at the first beat (beat 1).\nA MidiEvent says \nwhat to do and \nwhen to do it. \nEvery instruction \nmust include the \ntiming for that \ninstruction. \nIn other words, at \nwhich beat that \nthing should happen. \nA Track holds all the MidiEvent objects. The Sequence organizes \nthem according to when each event is supposed to happen, and then \nthe Sequencer plays them back in that order. You can have lots of \nevents happening at the exact same moment in time. For example, \nyou might want two notes played simultaneously, or even different \ninstruments playing different sounds at the same time.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 377,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 377,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2243 chars",
+      "severity": "info"
+    },
+    {
+      "page": 377,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

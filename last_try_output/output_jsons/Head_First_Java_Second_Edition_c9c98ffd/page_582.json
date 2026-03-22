@@ -1,0 +1,46 @@
+{
+  "page_number": 582,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "548 \nchapter 16\nThe Java engineers had to give you a way to put a constraint \non a parameterized type, 50 that you can restrict it to, say, only \nsubclasses of Animal. But you also need to constrain a type to \nallow only classes that implement a particular interface. 50 \nhere’5 a situation where we need one kind of syntax to work \nfor both situations—inheritance and implementation. In other \nwords, that works for both extends and implements.\nAnd the winning word was... extends. But it really means “is-a”, \nand works regardless of whether the type on the right is an \ninterface or a class.\nIn generics, “extends” means \n“extends or implements”\npublic static <T extends Comparable<? super T>> void sort(List<T> list)\nComparable is an interface, 50 this \nREALLY reads, “T must be a type that \nimplements the Comparable interface”.\nIt doesn’t matter whether the thing on the right is \na class or interface... you still say “extends”.\nIn generics, the keyword \n“extends” really means “is-a”, \nand works for BOTH classes \nand interfaces.\nQ: Why didn’t they just make a new keyword,“is”?\nA: Adding a new keyword to the language is a REALLY big deal because \nit risks breaking Java code you wrote in an earlier version. Think about it—\nyou might be using a variable “is” (which we do use in this book to represent \ninput streams). And since you’re not allowed to use keywords as identifiers \nin your code, that means any earlier code that used the keyword before it \nwas a reserved word, would break. 50 whenever there’5 a chance for the \nSun engineers to reuse an existing keyword, as they did here with “extends”, \nthey’11 usually choose that. But sometimes they don’t have a choice...\nA few (very few) new keywords have been added to the language, such \nas assert in Java 1.4 and enum in Java 5.0 (we look at enum in the appen-\ndix). And this does break people’5 code, however you sometimes have the \noption of compiling and running a newer version of Java 50 that it behaves \nas though it were an older one. You do this by passing a special flag to the \ncompiler or JVM at the command-line, that says, “Yeah, yeah, 1 KNOW this is \nJava 1.4, but please pretend it’5 really 1.3, because 1’m using a variable in my \ncode named assert that 1 wrote back when you guys said it would OK!#$%”.\n(To see if you have a flag available, type javac (for the compiler) or java (for \nthe JVM) at the command-line, without anything else after it, and you should \nsee a list of available options. You’11 learn more about these flags in the chap-\nter on deployment.)\nthe sort() method",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "548 \nchapter 16\nThe Java engineers had to give you a way to put a constraint \non a parameterized type, 50 that you can restrict it to, say, only \nsubclasses of Animal. But you also need to constrain a type to \nallow only classes that implement a particular interface. 50 \nhere’5 a situation where we need one kind of syntax to work \nfor both situations—inheritance and implementation. In other \nwords, that works for both extends and implements.\nAnd the winning word was... extends. But it really means “is-a”, \nand works regardless of whether the type on the right is an \ninterface or a class.\nIn generics, “extends” means \n“extends or implements”\npublic static <T extends Comparable<? super T>> void sort(List<T> list)\nComparable is an interface, 50 this \nREALLY reads, “T must be a type that \nimplements the Comparable interface”.\nIt doesn’t matter whether the thing on the right is \na class or interface... you still say “extends”.\nIn generics, the keyword \n“extends” really means “is-a”, \nand works for BOTH classes \nand interfaces.\nQ: Why didn’t they just make a new keyword,“is”?\nA: Adding a new keyword to the language is a REALLY big deal because \nit risks breaking Java code you wrote in an earlier version. Think about it—\nyou might be using a variable “is” (which we do use in this book to represent \ninput streams). And since you’re not allowed to use keywords as identifiers \nin your code, that means any earlier code that used the keyword before it \nwas a reserved word, would break. 50 whenever there’5 a chance for the \nSun engineers to reuse an existing keyword, as they did here with “extends”, \nthey’11 usually choose that. But sometimes they don’t have a choice...\nA few (very few) new keywords have been added to the language, such \nas assert in Java 1.4 and enum in Java 5.0 (we look at enum in the appen-\ndix). And this does break people’5 code, however you sometimes have the \noption of compiling and running a newer version of Java 50 that it behaves \nas though it were an older one. You do this by passing a special flag to the \ncompiler or JVM at the command-line, that says, “Yeah, yeah, 1 KNOW this is \nJava 1.4, but please pretend it’5 really 1.3, because 1’m using a variable in my \ncode named assert that 1 wrote back when you guys said it would OK!#$%”.\n(To see if you have a flag available, type javac (for the compiler) or java (for \nthe JVM) at the command-line, without anything else after it, and you should \nsee a list of available options. You’11 learn more about these flags in the chap-\nter on deployment.)\nthe sort() method",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 582,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 582,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2570 chars",
+      "severity": "info"
+    },
+    {
+      "page": 582,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

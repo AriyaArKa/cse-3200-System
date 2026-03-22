@@ -1,0 +1,894 @@
+{
+  "page_number": 386,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.4542,
+    "correction_applied": true,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "puzzle answers",
+      "confidence": 0.9793,
+      "bbox": [
+        108,
+        62,
+        302,
+        94
+      ]
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Jove[ Foss _nsivers",
+      "confidence": 0.0497,
+      "bbox": [
+        449,
+        311,
+        1003,
+        403
+      ]
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "en",
+      "text": "4 '5 5 _ ৬ N M E N",
+      "confidence": 0.015,
+      "bbox": [
+        370,
+        439,
+        761,
+        481
+      ]
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.3829,
+      "bbox": [
+        776,
+        446,
+        806,
+        478
+      ]
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "en",
+      "text": "p 0P P E `",
+      "confidence": 0.1259,
+      "bbox": [
+        903,
+        441,
+        1149,
+        481
+      ]
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "en",
+      "text": "|/",
+      "confidence": 0.6076,
+      "bbox": [
+        334,
+        490,
+        366,
+        522
+      ]
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "en",
+      "text": "0",
+      "confidence": 0.2004,
+      "bbox": [
+        424,
+        492,
+        450,
+        520
+      ]
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "en",
+      "text": "^]",
+      "confidence": 0.0113,
+      "bbox": [
+        510,
+        492,
+        548,
+        522
+      ]
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "en",
+      "text": "P",
+      "confidence": 0.2466,
+      "bbox": [
+        902,
+        492,
+        932,
+        522
+      ]
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "en",
+      "text": "/",
+      "confidence": 0.7689,
+      "bbox": [
+        334,
+        536,
+        362,
+        562
+      ]
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "en",
+      "text": "0)",
+      "confidence": 0.5602,
+      "bbox": [
+        426,
+        536,
+        470,
+        566
+      ]
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "en",
+      "text": "$ U 8 C L A $ $",
+      "confidence": 0.3721,
+      "bbox": [
+        513,
+        527,
+        843,
+        567
+      ]
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "_ 14 / 0 ( চ",
+      "confidence": 0.0265,
+      "bbox": [
+        907,
+        530,
+        1151,
+        566
+      ]
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1|",
+      "confidence": 0.106,
+      "bbox": [
+        334,
+        574,
+        392,
+        604
+      ]
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "en",
+      "text": "D",
+      "confidence": 0.4465,
+      "bbox": [
+        424,
+        576,
+        474,
+        604
+      ]
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "en",
+      "text": "",
+      "confidence": 0.0,
+      "bbox": [
+        512,
+        576,
+        548,
+        608
+      ]
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.1676,
+      "bbox": [
+        776,
+        576,
+        808,
+        608
+      ]
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "en",
+      "text": "/",
+      "confidence": 0.7202,
+      "bbox": [
+        904,
+        576,
+        936,
+        606
+      ]
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "en",
+      "text": "0 '_ E P A R -",
+      "confidence": 0.1068,
+      "bbox": [
+        333,
+        611,
+        631,
+        653
+      ]
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "en",
+      "text": "|4 /",
+      "confidence": 0.2016,
+      "bbox": [
+        640,
+        620,
+        718,
+        652
+      ]
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "en",
+      "text": "/",
+      "confidence": 0.5188,
+      "bbox": [
+        774,
+        622,
+        802,
+        650
+      ]
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "4 4 11 0 _চ",
+      "confidence": 0.0094,
+      "bbox": [
+        863,
+        615,
+        1107,
+        655
+      ]
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "en",
+      "text": "|",
+      "confidence": 0.6808,
+      "bbox": [
+        1168,
+        622,
+        1194,
+        652
+      ]
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "en",
+      "text": "|4",
+      "confidence": 0.2886,
+      "bbox": [
+        596,
+        664,
+        628,
+        698
+      ]
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.2213,
+      "bbox": [
+        774,
+        664,
+        808,
+        694
+      ]
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.4255,
+      "bbox": [
+        910,
+        664,
+        942,
+        694
+      ]
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "en",
+      "text": "/",
+      "confidence": 0.7043,
+      "bbox": [
+        1168,
+        662,
+        1198,
+        694
+      ]
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "en",
+      "text": "! !",
+      "confidence": 0.2714,
+      "bbox": [
+        489,
+        648,
+        646,
+        796
+      ]
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "en",
+      "text": "E 7 8 E PT '01 5",
+      "confidence": 0.0488,
+      "bbox": [
+        775,
+        696,
+        1202,
+        744
+      ]
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "en",
+      "text": "R",
+      "confidence": 0.896,
+      "bbox": [
+        684,
+        752,
+        718,
+        782
+      ]
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "5",
+      "confidence": 0.3049,
+      "bbox": [
+        1168,
+        752,
+        1196,
+        784
+      ]
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "en",
+      "text": ":",
+      "confidence": 0.7731,
+      "bbox": [
+        366,
+        645,
+        420,
+        1000
+      ]
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চু:দwঢঢ",
+      "confidence": 0.0588,
+      "bbox": [
+        581,
+        777,
+        862,
+        876
+      ]
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "en",
+      "text": "E",
+      "confidence": 0.4944,
+      "bbox": [
+        858,
+        796,
+        890,
+        868
+      ]
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "ফ_TঢE E",
+      "confidence": 0.0508,
+      "bbox": [
+        934,
+        824,
+        1111,
+        877
+      ]
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "en",
+      "text": "H",
+      "confidence": 0.0442,
+      "bbox": [
+        1033,
+        749,
+        1074,
+        828
+      ]
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "en",
+      "text": "?",
+      "confidence": 0.182,
+      "bbox": [
+        452,
+        775,
+        513,
+        1003
+      ]
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তফ[",
+      "confidence": 0.0665,
+      "bbox": [
+        588,
+        868,
+        764,
+        916
+      ]
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "en",
+      "text": "C",
+      "confidence": 0.0905,
+      "bbox": [
+        856,
+        880,
+        892,
+        912
+      ]
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "en",
+      "text": "P",
+      "confidence": 0.1724,
+      "bbox": [
+        1034,
+        880,
+        1068,
+        912
+      ]
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "en",
+      "text": "23_",
+      "confidence": 0.7098,
+      "bbox": [
+        1114,
+        872,
+        1146,
+        912
+      ]
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "en",
+      "text": "^]",
+      "confidence": 0.0586,
+      "bbox": [
+        422,
+        924,
+        468,
+        956
+      ]
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "en",
+      "text": "A",
+      "confidence": 0.1952,
+      "bbox": [
+        690,
+        926,
+        716,
+        952
+      ]
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঢসঢঢ যTদ",
+      "confidence": 0.0145,
+      "bbox": [
+        803,
+        911,
+        1160,
+        965
+      ]
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "en",
+      "text": "M",
+      "confidence": 0.6074,
+      "bbox": [
+        1168,
+        924,
+        1200,
+        956
+      ]
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "en",
+      "text": "26",
+      "confidence": 0.9996,
+      "bbox": [
+        589,
+        959,
+        613,
+        977
+      ]
+    },
+    {
+      "block_id": 47,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[",
+      "confidence": 0.3519,
+      "bbox": [
+        604,
+        962,
+        634,
+        998
+      ]
+    },
+    {
+      "block_id": 48,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.1012,
+      "bbox": [
+        686,
+        966,
+        726,
+        998
+      ]
+    },
+    {
+      "block_id": 49,
+      "type": "paragraph",
+      "language": "en",
+      "text": "A",
+      "confidence": 0.2218,
+      "bbox": [
+        858,
+        968,
+        906,
+        998
+      ]
+    },
+    {
+      "block_id": 50,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.5878,
+      "bbox": [
+        1032,
+        966,
+        1070,
+        996
+      ]
+    },
+    {
+      "block_id": 51,
+      "type": "paragraph",
+      "language": "en",
+      "text": "R",
+      "confidence": 0.8428,
+      "bbox": [
+        1122,
+        968,
+        1154,
+        998
+      ]
+    },
+    {
+      "block_id": 52,
+      "type": "paragraph",
+      "language": "en",
+      "text": "28",
+      "confidence": 0.9997,
+      "bbox": [
+        677,
+        1005,
+        699,
+        1021
+      ]
+    },
+    {
+      "block_id": 53,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "হ_ # R0 w 5",
+      "confidence": 0.0291,
+      "bbox": [
+        367,
+        1001,
+        636,
+        1051
+      ]
+    },
+    {
+      "block_id": 54,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "\"9 1 ^ P চ T চ",
+      "confidence": 0.0286,
+      "bbox": [
+        685,
+        1009,
+        1019,
+        1045
+      ]
+    },
+    {
+      "block_id": 55,
+      "type": "paragraph",
+      "language": "en",
+      "text": "9)",
+      "confidence": 0.5351,
+      "bbox": [
+        1124,
+        1010,
+        1156,
+        1044
+      ]
+    },
+    {
+      "block_id": 56,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"",
+      "confidence": 0.0056,
+      "bbox": [
+        376,
+        1054,
+        404,
+        1086
+      ]
+    },
+    {
+      "block_id": 57,
+      "type": "paragraph",
+      "language": "en",
+      "text": "A |",
+      "confidence": 0.413,
+      "bbox": [
+        600,
+        1054,
+        730,
+        1084
+      ]
+    },
+    {
+      "block_id": 58,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চ",
+      "confidence": 0.116,
+      "bbox": [
+        851,
+        1053,
+        893,
+        1089
+      ]
+    },
+    {
+      "block_id": 59,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "M চ W/",
+      "confidence": 0.0144,
+      "bbox": [
+        1041,
+        1051,
+        1159,
+        1089
+      ]
+    },
+    {
+      "block_id": 60,
+      "type": "paragraph",
+      "language": "en",
+      "text": "352",
+      "confidence": 0.9286,
+      "bbox": [
+        110,
+        1582,
+        162,
+        1612
+      ]
+    },
+    {
+      "block_id": 61,
+      "type": "paragraph",
+      "language": "en",
+      "text": "chapter 11",
+      "confidence": 0.5192,
+      "bbox": [
+        178,
+        1578,
+        298,
+        1606
+      ]
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "puzzle answers\nJove[ Foss _nsivers\n4 '5 5 _ ৬ N M E N\n1\np 0P P E `\n|/\n0\n^]\nP\n/\n0)\n$ U 8 C L A $ $\n_ 14 / 0 ( চ\n1|\nD \n\n1\n/\n0 '_ E P A R -\n|4 /\n/\n4 4 11 0 _চ\n|\n|4\n1\n1\n/\n! !\nE 7 8 E PT '01 5\nR\n5\n:\nচু:দwঢঢ\nE\nফ_TঢE E\nH\n?\nতফ[\nC\nP\n23_\n^] \nA\nঢসঢঢ যTদ\nM\n26\n[\n1\nA \n1\nR\n28\nহ_ # R0 w 5\n\"9 1 ^ P চ T চ\n9)\n\"\nA |\nচ\nM চ W/\n352\nchapter 11",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/Head_First_Java_Second_Edition_c9c98ffd/page_386.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "bronze",
+  "decisions": [
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1361 chars",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_rejected_corrupted_font",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "all_apis_direct_failed_falling_to_ocr",
+      "severity": "warning"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "rendered_to_image (DPI=180)",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "quick_bangla_estimate: 0.00",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "easyocr: 61 detections",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "api_fallback_triggered",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "api_fallback_failed_all_engines",
+      "severity": "warning"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "dpi_escalation_retry",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 386,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=ocr_local, engine=EasyOCR",
+      "severity": "info"
+    }
+  ]
+}

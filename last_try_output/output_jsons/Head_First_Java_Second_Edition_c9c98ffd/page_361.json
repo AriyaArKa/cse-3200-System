@@ -1,0 +1,60 @@
+{
+  "page_number": 361,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n327\nIf you try to cook something, you start by turning on \nthe oven. \nIf the thing you try is a complete failure,\nyou have to turn off the oven.\nIf the thing you try succeeds, \nyou have to turn off the oven.\nYou have to turn off the oven no matter what!\nAre you sure \nyou want to try \nthis?\nNo matter what, do NOT let \nme forget to turn off the \noven! Last time 1 torched half \nthe neighborhood. \nFinally: for the things you want \nto do no matter what.\nA finally block is where you put \ncode that must run regardless \nof an exception.\n try {\n turnOvenOn();\n x.bake();\n turnOvenOff();\n } catch (BakingException ex) { \n ex.printStackTrace();\n turnOvenOff();\n } \nWithout finally, you have to put the \nturnOvenOff() in both the try and the catch \nbecause you have to turn off the oven no matter \nwhat. A finally block lets you put all your \nimportant cleanup code­ in one place instead of \nduplicating it like this:\n try {\n turnOvenOn();\n x.bake(); \n } catch (BakingException ex) { \n ex.printStackTrace();\n } finally {\n turnOvenOff();\n }\nIf the try block fails (an exception), flow \ncontrol immediately moves to the catch block. \nWhen the catch block completes, the finally \nblock runs. When the finally block completes, \nthe rest of the method continues on. \nIf the try block succeeds (no exception), \nflow control skips over the catch block and \nmoves to the finally block. When the finally \nblock completes, the rest of the method \ncontinues on.\nIf the try or catch block has a return \nstatement, finally will still run! Flow \njumps to the finally, then back to the return.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (520x658)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n327\nIf you try to cook something, you start by turning on \nthe oven. \nIf the thing you try is a complete failure,\nyou have to turn off the oven.\nIf the thing you try succeeds, \nyou have to turn off the oven.\nYou have to turn off the oven no matter what!\nAre you sure \nyou want to try \nthis?\nNo matter what, do NOT let \nme forget to turn off the \noven! Last time 1 torched half \nthe neighborhood. \nFinally: for the things you want \nto do no matter what.\nA finally block is where you put \ncode that must run regardless \nof an exception.\n try {\n turnOvenOn();\n x.bake();\n turnOvenOff();\n } catch (BakingException ex) { \n ex.printStackTrace();\n turnOvenOff();\n } \nWithout finally, you have to put the \nturnOvenOff() in both the try and the catch \nbecause you have to turn off the oven no matter \nwhat. A finally block lets you put all your \nimportant cleanup code­ in one place instead of \nduplicating it like this:\n try {\n turnOvenOn();\n x.bake(); \n } catch (BakingException ex) { \n ex.printStackTrace();\n } finally {\n turnOvenOff();\n }\nIf the try block fails (an exception), flow \ncontrol immediately moves to the catch block. \nWhen the catch block completes, the finally \nblock runs. When the finally block completes, \nthe rest of the method continues on. \nIf the try block succeeds (no exception), \nflow control skips over the catch block and \nmoves to the finally block. When the finally \nblock completes, the rest of the method \ncontinues on.\nIf the try or catch block has a return \nstatement, finally will still run! Flow \njumps to the finally, then back to the return.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 361,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 361,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1724 chars",
+      "severity": "info"
+    },
+    {
+      "page": 361,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 361,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

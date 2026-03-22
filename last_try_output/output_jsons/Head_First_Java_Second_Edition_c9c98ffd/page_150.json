@@ -1,0 +1,46 @@
+{
+  "page_number": 150,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "116 \nchapter 5\nfor (String name : nameArray) { }\nThe elements in the \narray MUST be \ncompatible with the \ndeclared variable type.\nWith each iteration, \na different element \nin the array will \nbe assigned to the \nvariable “name”.\nWhat it means in plain English: “For each element in nameArray, assign the \nelement to the ‘name’ variable, and run the body of the loop.”\nHow the compiler sees it:\n * Create a String variable called name and set it to null.\n * Assign the first value in nameArray to name.\n * Run the body of the loop (the code block bounded by curly braces).\n * Assign the next value in nameArray to name.\n * Repeat while there are still elements in the array.\nPart One: iteration variable declaration\nUse this part to declare and initialize a variable to use within the loop body. With each \niteration of the loop, this variable will hold a different element from the collection. The \ntype of this variable must be compatible with the elements in the array! For example, \nyou can’t declare an int iteration variable to use with a String[] array.\nPart Two: the actual collection\nThis must be a reference to an array or other collection. Again, don’t worry about the \nother non-array kinds of collections yet—you’11 see them in the next chapter.\nDeclare an iteration variable \nthat will hold a single element \nin the array. \nThe enhanced for loop\nBeginning with Java 5.0 (Tiger), the Java language has a second kind of for loop \ncalled the enhanced for, that makes it easier to iterate over all the elements in an \narray or other kinds of collections (you’11 learn about other collections in the next \nchapter). That’5 really all that the enhanced for gives you—a simpler way to walk \nthrough all the elements in the collection, but since it’5 the most common use of a \nfor loop, it was worth adding it to the language. We’11 revisit the enhanced for loop in \nthe next chapter, when we talk about collections that aren’t arrays.\nThe code to \nrepeat goes here \n(the body).\n enhanced for\nThe collection of elements that you want to iterate over. \nImagine that somewhere earlier, the code said:\nString[] nameArray = {“Fred”, “Mary”, “Bob”};\nWith the first iteration, the name variable has the value of \n“Fred”, and with the second iteration, a value of “Mary”, etc.\nNote: depending on the \nprogramming language they’ve \nused in the past, some people \nrefer to the enhanced for as \nthe “for each” or the “for \nin” loop, because that’5 how it \nreads: “for EACH thing IN the \ncollection...”\nThe colon (:) \nmeans “IN”.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "116 \nchapter 5\nfor (String name : nameArray) { }\nThe elements in the \narray MUST be \ncompatible with the \ndeclared variable type.\nWith each iteration, \na different element \nin the array will \nbe assigned to the \nvariable “name”.\nWhat it means in plain English: “For each element in nameArray, assign the \nelement to the ‘name’ variable, and run the body of the loop.”\nHow the compiler sees it:\n * Create a String variable called name and set it to null.\n * Assign the first value in nameArray to name.\n * Run the body of the loop (the code block bounded by curly braces).\n * Assign the next value in nameArray to name.\n * Repeat while there are still elements in the array.\nPart One: iteration variable declaration\nUse this part to declare and initialize a variable to use within the loop body. With each \niteration of the loop, this variable will hold a different element from the collection. The \ntype of this variable must be compatible with the elements in the array! For example, \nyou can’t declare an int iteration variable to use with a String[] array.\nPart Two: the actual collection\nThis must be a reference to an array or other collection. Again, don’t worry about the \nother non-array kinds of collections yet—you’11 see them in the next chapter.\nDeclare an iteration variable \nthat will hold a single element \nin the array. \nThe enhanced for loop\nBeginning with Java 5.0 (Tiger), the Java language has a second kind of for loop \ncalled the enhanced for, that makes it easier to iterate over all the elements in an \narray or other kinds of collections (you’11 learn about other collections in the next \nchapter). That’5 really all that the enhanced for gives you—a simpler way to walk \nthrough all the elements in the collection, but since it’5 the most common use of a \nfor loop, it was worth adding it to the language. We’11 revisit the enhanced for loop in \nthe next chapter, when we talk about collections that aren’t arrays.\nThe code to \nrepeat goes here \n(the body).\n enhanced for\nThe collection of elements that you want to iterate over. \nImagine that somewhere earlier, the code said:\nString[] nameArray = {“Fred”, “Mary”, “Bob”};\nWith the first iteration, the name variable has the value of \n“Fred”, and with the second iteration, a value of “Mary”, etc.\nNote: depending on the \nprogramming language they’ve \nused in the past, some people \nrefer to the enhanced for as \nthe “for each” or the “for \nin” loop, because that’5 how it \nreads: “for EACH thing IN the \ncollection...”\nThe colon (:) \nmeans “IN”.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 150,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 150,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2539 chars",
+      "severity": "info"
+    },
+    {
+      "page": 150,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

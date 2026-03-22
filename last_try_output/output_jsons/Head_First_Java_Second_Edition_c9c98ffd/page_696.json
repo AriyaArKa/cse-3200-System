@@ -1,0 +1,46 @@
+{
+  "page_number": 696,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "662\nappendix 8\n#8 Assertions\nWe haven’t talked much about how to debug your Java \nprogram while you’re developing it. We believe that \nyou should learn Java at the command line, as we’ve \nbeen doing throughout the book. Once you’re a Java \npro, if you decide to use an IDE*, you might have \nother debugging tools to use. In the old days, when \na Java programmer wanted to debug her code, she’d \nstick a bunch of System.out.println( ) statements \nthroughout the program, printing current variable \nvalues, and “1 got here” messages, to see if the flow \ncontrol was working properly. (The ready-bake code \nin chapter 6 left some debugging ‘print’ statements \nin the code.) Then, once the program was working \ncorrectly, she’d go through and take all those System.\nout.println( ) statements back out again. It was \ntedious and error prone. But as of Java 1.4 (and 5.0), \ndebugging got a whole lot easier. The answer? \nAssertions\nAssertions are like System.out.println( ) statements \non steroids. Add them to your code as you would \nadd println statements. The Java 5.0 compiler \nassumes you’11 be compiling source files that are 5.0 \ncompatible, 50 as of Java 5.0, compiling with assertions \nis enabled by default.\nAt runtime, if you do nothing, the assert statements \nyou added to your code will be ignored by the JVM, \nand won’t slow down your program. But if you tell the \nJVM to enable your assertions, they will help you do \nyour debugging, without changing a line of code! \nSome folks have complained about having to leave \nassert statements in their production code, but \nleaving them in can be really valuable when your \ncode is already deployed in the field. If your client \nis having trouble, you can instruct the client to run \nthe program with assertions enabled, and have the \nclient send you the output. If the assertions were \nstripped out of your deployed code, you’d never \nhave that option. And there is almost no downside; \nwhen assertions are not enabled, they are completely \nignored by the JVM, 50 there’5 no performance hit to \nworry about.\nHow to make Assertions work \nAdd assertion statements to your code wherever you \nbelieve that something must be true. For instance:\nassert (height > 0); \n// if true, program continues normally\n// if false, throw an AssertionError \n \nYou can add a little more information to the stack \ntrace by saying:\nassert (height > 0) : “height = “ + \nheight + “ weight = “ + weight;\nThe expression after the colon can be any legal \nJava expression that resolves to a non-null value. But \nwhatever you do, don’t create assertions that change an \nobject’5 state! If you do, enabling assertions at runtime \nmight change how your program performs.\n \nCompiling and running with \nAssertions\nTo compile with assertions: \njavac TestDriveGame.java\n(Notice that no command line options were \nnecessary.)\nTo run with assertions: \njava -ea TestDriveGame\nassertions\n* IDE stands for Integrated Development Environment \nand includes tools such as Eclipse, Borland’5 JBuilder, or \nthe open source NetBeans (netbeans.org).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "662\nappendix 8\n#8 Assertions\nWe haven’t talked much about how to debug your Java \nprogram while you’re developing it. We believe that \nyou should learn Java at the command line, as we’ve \nbeen doing throughout the book. Once you’re a Java \npro, if you decide to use an IDE*, you might have \nother debugging tools to use. In the old days, when \na Java programmer wanted to debug her code, she’d \nstick a bunch of System.out.println( ) statements \nthroughout the program, printing current variable \nvalues, and “1 got here” messages, to see if the flow \ncontrol was working properly. (The ready-bake code \nin chapter 6 left some debugging ‘print’ statements \nin the code.) Then, once the program was working \ncorrectly, she’d go through and take all those System.\nout.println( ) statements back out again. It was \ntedious and error prone. But as of Java 1.4 (and 5.0), \ndebugging got a whole lot easier. The answer? \nAssertions\nAssertions are like System.out.println( ) statements \non steroids. Add them to your code as you would \nadd println statements. The Java 5.0 compiler \nassumes you’11 be compiling source files that are 5.0 \ncompatible, 50 as of Java 5.0, compiling with assertions \nis enabled by default.\nAt runtime, if you do nothing, the assert statements \nyou added to your code will be ignored by the JVM, \nand won’t slow down your program. But if you tell the \nJVM to enable your assertions, they will help you do \nyour debugging, without changing a line of code! \nSome folks have complained about having to leave \nassert statements in their production code, but \nleaving them in can be really valuable when your \ncode is already deployed in the field. If your client \nis having trouble, you can instruct the client to run \nthe program with assertions enabled, and have the \nclient send you the output. If the assertions were \nstripped out of your deployed code, you’d never \nhave that option. And there is almost no downside; \nwhen assertions are not enabled, they are completely \nignored by the JVM, 50 there’5 no performance hit to \nworry about.\nHow to make Assertions work \nAdd assertion statements to your code wherever you \nbelieve that something must be true. For instance:\nassert (height > 0); \n// if true, program continues normally\n// if false, throw an AssertionError \n \nYou can add a little more information to the stack \ntrace by saying:\nassert (height > 0) : “height = “ + \nheight + “ weight = “ + weight;\nThe expression after the colon can be any legal \nJava expression that resolves to a non-null value. But \nwhatever you do, don’t create assertions that change an \nobject’5 state! If you do, enabling assertions at runtime \nmight change how your program performs.\n \nCompiling and running with \nAssertions\nTo compile with assertions: \njavac TestDriveGame.java\n(Notice that no command line options were \nnecessary.)\nTo run with assertions: \njava -ea TestDriveGame\nassertions\n* IDE stands for Integrated Development Environment \nand includes tools such as Eclipse, Borland’5 JBuilder, or \nthe open source NetBeans (netbeans.org).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 696,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 696,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3107 chars",
+      "severity": "info"
+    },
+    {
+      "page": 696,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

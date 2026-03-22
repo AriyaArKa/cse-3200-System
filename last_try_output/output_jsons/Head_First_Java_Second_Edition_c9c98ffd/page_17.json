@@ -1,0 +1,60 @@
+{
+  "page_number": 17,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9375,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "xv\n11\nRisky Behavior\nStuff happens. The file isn’t there. The server is down. No matter how good a \nprogrammer you are, you can’t control everything. When you write a risky method, you need \ncode to handle the bad things that might happen. But how do you know when a method is \nrisky? Where do you put the code to handle the exceptional situation? In this chapter, we’re \ngoing to build a MIDI Music Player, that uses the risky JavaSound API, 50 we better find out.\n12\nA Very Graphic Story\nFace it, you need to make GUIs. Even if you believe that for the rest of your \nlife you’11 write only server-side code, sooner or later you’11 need to write tools, and you’11 \nwant a graphical interface. We’11 spend two chapters on GUIs, and learn more language \nfeatures including Event Handling and Inner Classes. We’11 put a button on the screen, \nwe’11 paint on the screen, we’11 display a jpeg image, and we’11 even do some animation. \nclass with a \nrisky method\nt\nh\nr\n0\nw\n5\n \na\nn\n \ne\nxce\npti\n0\nn\n bac\nk\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\nyour code\nclass Bar {\n void go() {\n moo();\n } \n int stuff() {\n x.beep();\n }\n}\ncalls risky method\n1\n2\nclass MyOuter {\n \n class MyInner {\n void go() {\n }\n } \n} \nThe outer and inner objects \nare now intimately linked.\nThese two objects on the \nheap have a special bond. The \ninner can use the outer’5 \nvariables (and vice-versa). \ni\nn\nn\ne\nr\n0\nu\nt\ne\nr\nYour first GUI \n355\nGetting a user event \n357\nImplement a listener interface \n358\nGetting a button’5 ActionEvent \n360\nPutting graphics on a GUI \n363\nFun with paintComponent() \n365\nThe Graphics2D object \n366\nPutting more than one button on a screen \n370\nInner classes to the rescue (make your listener an inner class) \n376\nAnimation (move it, paint it, move it, paint it, move it, paint it...) \n382\nCode Kitchen (painting graphics with the beat of the music) \n386\nExercises and puzzles \n394\nMaking a music machine (the BeatBox) \n316\nWhat if you need to call risky code? \n319\nExceptions say “something bad may have happened...” \n320\nThe compiler guarantees (it checks) that you’re aware of the risks \n321\nCatching exceptions using a try/catch (skateboarder) \n322\nFlow control in try/catch blocks \n326\nThe finally block (no matter what happens, turn off the oven!) \n327\nCatching multiple exceptions (the order matters) \n329\nDeclaring an exception (just duck it) \n335\nHandle or declare law \n337\nCode Kitchen (making sounds) \n339\nExercises and puzzles \n348",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (117x118)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "xv\n11\nRisky Behavior\nStuff happens. The file isn’t there. The server is down. No matter how good a \nprogrammer you are, you can’t control everything. When you write a risky method, you need \ncode to handle the bad things that might happen. But how do you know when a method is \nrisky? Where do you put the code to handle the exceptional situation? In this chapter, we’re \ngoing to build a MIDI Music Player, that uses the risky JavaSound API, 50 we better find out.\n12\nA Very Graphic Story\nFace it, you need to make GUIs. Even if you believe that for the rest of your \nlife you’11 write only server-side code, sooner or later you’11 need to write tools, and you’11 \nwant a graphical interface. We’11 spend two chapters on GUIs, and learn more language \nfeatures including Event Handling and Inner Classes. We’11 put a button on the screen, \nwe’11 paint on the screen, we’11 display a jpeg image, and we’11 even do some animation. \nclass with a \nrisky method\nt\nh\nr\n0\nw\n5\n \na\nn\n \ne\nxce\npti\n0\nn\n bac\nk\nclass Cow {\n void moo() {\n if (serverDown){\n explode();\n }\n }\n}\nyour code\nclass Bar {\n void go() {\n moo();\n } \n int stuff() {\n x.beep();\n }\n}\ncalls risky method\n1\n2\nclass MyOuter {\n \n class MyInner {\n void go() {\n }\n } \n} \nThe outer and inner objects \nare now intimately linked.\nThese two objects on the \nheap have a special bond. The \ninner can use the outer’5 \nvariables (and vice-versa). \ni\nn\nn\ne\nr\n0\nu\nt\ne\nr\nYour first GUI \n355\nGetting a user event \n357\nImplement a listener interface \n358\nGetting a button’5 ActionEvent \n360\nPutting graphics on a GUI \n363\nFun with paintComponent() \n365\nThe Graphics2D object \n366\nPutting more than one button on a screen \n370\nInner classes to the rescue (make your listener an inner class) \n376\nAnimation (move it, paint it, move it, paint it, move it, paint it...) \n382\nCode Kitchen (painting graphics with the beat of the music) \n386\nExercises and puzzles \n394\nMaking a music machine (the BeatBox) \n316\nWhat if you need to call risky code? \n319\nExceptions say “something bad may have happened...” \n320\nThe compiler guarantees (it checks) that you’re aware of the risks \n321\nCatching exceptions using a try/catch (skateboarder) \n322\nFlow control in try/catch blocks \n326\nThe finally block (no matter what happens, turn off the oven!) \n327\nCatching multiple exceptions (the order matters) \n329\nDeclaring an exception (just duck it) \n335\nHandle or declare law \n337\nCode Kitchen (making sounds) \n339\nExercises and puzzles \n348",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 17,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 17,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2514 chars",
+      "severity": "info"
+    },
+    {
+      "page": 17,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 17,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

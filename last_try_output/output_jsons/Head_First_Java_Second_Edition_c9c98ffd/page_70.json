@@ -1,0 +1,76 @@
+{
+  "page_number": 70,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "36 \nchapter 2\nclass DogTestDrive {\n public static void main (String[] args) {\n Dog d = new Dog();\n d.size = 40;\n d.bark();\n }\n}\n DOG\n size\n breed\n name\n bark()\n \nmaking objects\nclass Dog {\n int size;\n String breed;\n String name;\n void bark() {\n System.out.println(“Ruff! Ruff!”);\n }\n}\nMaking your first object\n50 what does it take to create and use an object? You need two classes. One \nclass for the type of object you want to use (Dog, AlarmClock, Television, \netc.) and another class to test your new class. The tester class is where you put \nthe main method, and in that main() method you create and access objects \nof your new class type. The tester class has only one job: to try out the meth-\nods and variables of your new object class type.\nFrom this point forward in the book, you’11 see two classes in many of \nour examples. One will be the real class – the class whose objects we \nreally want to use, and the other class will be the tester class, which we \ncall <whateverYourClassNameIs> TestDrive. For example, if we make a \nBungee class, we’11 need a BungeeTestDrive class as well. Only the \n<someClassName>TestDrive class will have a main() method, and its sole \npurpose is to create objects of your new type (the not-the-tester class), and \nthen use the dot operator (.) to access the methods and variables of the new \nobjects. This will all be made stunningly clear by the following examples. \nNo, really.\n1\nWrite your class\nclass DogTestDrive {\n public static void main (String[] args) {\n // Dog test code goes here\n }\n}\n2\nWrite a tester (TestDrive) class\n3\nIn your tester, make an object and access \nthe object’5 variables and methods\ninstance variables\na method\njust a main method\n(we’re gonna put code \nin it in the next step)\nmake a Dog object\nuse the dot operator (.) \nto set the size of the Dog\nand to call its bark() method\n dot\noperator\nThe dot operator (.) gives \nyou access to an object’5 \nstate and behavior (instance \nvariables and methods).\n// make a new object\nDog d = new Dog();\n// tell it to bark by using the\n// dot operator on the \n// variable d to call bark()\nd.bark();\n// set its size using the\n// dot operator\nd.size = 40;\nThe Dot Operator (.)\nIf you already have some 00 savvy, \nyou’11 know we’re not using encapsulation. \nWe’11 get there in chapter 4.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "DOG"
+        ],
+        [
+          "size\nbreed\nname"
+        ],
+        [
+          "bark()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x182)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "36 \nchapter 2\nclass DogTestDrive {\n public static void main (String[] args) {\n Dog d = new Dog();\n d.size = 40;\n d.bark();\n }\n}\n DOG\n size\n breed\n name\n bark()\n \nmaking objects\nclass Dog {\n int size;\n String breed;\n String name;\n void bark() {\n System.out.println(“Ruff! Ruff!”);\n }\n}\nMaking your first object\n50 what does it take to create and use an object? You need two classes. One \nclass for the type of object you want to use (Dog, AlarmClock, Television, \netc.) and another class to test your new class. The tester class is where you put \nthe main method, and in that main() method you create and access objects \nof your new class type. The tester class has only one job: to try out the meth-\nods and variables of your new object class type.\nFrom this point forward in the book, you’11 see two classes in many of \nour examples. One will be the real class – the class whose objects we \nreally want to use, and the other class will be the tester class, which we \ncall <whateverYourClassNameIs> TestDrive. For example, if we make a \nBungee class, we’11 need a BungeeTestDrive class as well. Only the \n<someClassName>TestDrive class will have a main() method, and its sole \npurpose is to create objects of your new type (the not-the-tester class), and \nthen use the dot operator (.) to access the methods and variables of the new \nobjects. This will all be made stunningly clear by the following examples. \nNo, really.\n1\nWrite your class\nclass DogTestDrive {\n public static void main (String[] args) {\n // Dog test code goes here\n }\n}\n2\nWrite a tester (TestDrive) class\n3\nIn your tester, make an object and access \nthe object’5 variables and methods\ninstance variables\na method\njust a main method\n(we’re gonna put code \nin it in the next step)\nmake a Dog object\nuse the dot operator (.) \nto set the size of the Dog\nand to call its bark() method\n dot\noperator\nThe dot operator (.) gives \nyou access to an object’5 \nstate and behavior (instance \nvariables and methods).\n// make a new object\nDog d = new Dog();\n// tell it to bark by using the\n// dot operator on the \n// variable d to call bark()\nd.bark();\n// set its size using the\n// dot operator\nd.size = 40;\nThe Dot Operator (.)\nIf you already have some 00 savvy, \nyou’11 know we’re not using encapsulation. \nWe’11 get there in chapter 4.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 70,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 70,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2341 chars",
+      "severity": "info"
+    },
+    {
+      "page": 70,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 70,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

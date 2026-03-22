@@ -1,0 +1,95 @@
+{
+  "page_number": 632,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "598 \nchapter 17\nHow Java Web Start works\n1\nThe client clicks on a Web page link \nto your JWS application (a .jnlp file).\nThe Web page link\n<a href=”MyApp.jnlp”>Click</a> \n \n2\nThe Web server (HTTP) gets the \nrequest and sends back a .jnlp file \n(this is NOT the JAR).\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\nMyApp.jar\nclick\n3\nJava Web Start (a small ‘helper app’ \non the client) is started up by the \nbrowser. The JWS helper app reads \nthe .jnlp file, and asks the server for \nthe MyApp.jar file.\nThe .jnlp file is an XML document that \nstates the name of the application’5 \nexecutable JAR file.\nclick\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\nMyApp.jar\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\nWeb Server\nJWS\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\n“give me MyApp.jar”\nMyApp.jar\n4\nThe Web server ‘serves’ up the \nrequested .jar file.\nJWS\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp MyApp.jar\n5\nJava Web Start gets the JAR and \nstarts the application by calling the \nspecified main( ) method (just like an \nexecutable JAR).\nHello\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp MyApp.jar\nMyApp.jar\n“give me MyApp.jnlp”\nWeb browser\nJava Web Start\nHelloWebStart (the app in the JAR)\nNext time the user wants to run this app, he can \nopen the Java Web Start application and from \nthere launch your app, without even being online.\nJava Web Start",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x229)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (330x242)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (65x101)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x229)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (330x242)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (65x101)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "598 \nchapter 17\nHow Java Web Start works\n1\nThe client clicks on a Web page link \nto your JWS application (a .jnlp file).\nThe Web page link\n<a href=”MyApp.jnlp”>Click</a> \n \n2\nThe Web server (HTTP) gets the \nrequest and sends back a .jnlp file \n(this is NOT the JAR).\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\nMyApp.jar\nclick\n3\nJava Web Start (a small ‘helper app’ \non the client) is started up by the \nbrowser. The JWS helper app reads \nthe .jnlp file, and asks the server for \nthe MyApp.jar file.\nThe .jnlp file is an XML document that \nstates the name of the application’5 \nexecutable JAR file.\nclick\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\nMyApp.jar\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\nWeb Server\nJWS\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\n“give me MyApp.jar”\nMyApp.jar\n4\nThe Web server ‘serves’ up the \nrequested .jar file.\nJWS\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp MyApp.jar\n5\nJava Web Start gets the JAR and \nstarts the application by calling the \nspecified main( ) method (just like an \nexecutable JAR).\nHello\nWeb Server\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp MyApp.jar\nMyApp.jar\n“give me MyApp.jnlp”\nWeb browser\nJava Web Start\nHelloWebStart (the app in the JAR)\nNext time the user wants to run this app, he can \nopen the Java Web Start application and from \nthere launch your app, without even being online.\nJava Web Start",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 632,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 632,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1479 chars",
+      "severity": "info"
+    },
+    {
+      "page": 632,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 632,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

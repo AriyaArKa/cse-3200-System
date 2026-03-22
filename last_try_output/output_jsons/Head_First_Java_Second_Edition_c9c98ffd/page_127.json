@@ -1,0 +1,60 @@
+{
+  "page_number": 127,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n93\nA class can have any number of these.\nA method can have only one of these.\nThis can be implicitly promoted.\n1 prefer my instance variables private.\nIt really means ‘make a copy’.\nOnly setters should update these.\nA method can have many of these.\n1 return something by definition.\n1 shouldn’t be used with instance variables\n1 can have many arguments.\nBy definition, 1 take one argument.\nThese help create encapsulation.\n1 always fly 5010.\ninstance variables, getter, setter,method\nreturn\nreturn, argument\nencapsulation\npass by value\ninstance variables\nargument\ngetter\npublic\nmethod\nsetter\ngetter, setter, public, private\nreturn\n A Class ‘XCopy’ compiles and runs as it stands ! The \noutput is: ‘42 84’. Remember Java is pass by value, (which \nmeans pass by copy), the variable ‘orig’ is not changed by the \ngo( ) method.\n8\nclass Clock {\n String time;\n void setTime(String t) {\n time = t;\n }\n String getTime() { \n return time;\n }\n}\nclass ClockTestDrive {\n public static void main(String [] args) {\n Clock c = new Clock();\n c.setTime(“1245”);\n String tod = c.getTime();\n System.out.println(“time: “ + tod);\n }\n} Note: ‘Getter’ methods have a return\n type by definition. \nExercise Solutions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (122x102)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n93\nA class can have any number of these.\nA method can have only one of these.\nThis can be implicitly promoted.\n1 prefer my instance variables private.\nIt really means ‘make a copy’.\nOnly setters should update these.\nA method can have many of these.\n1 return something by definition.\n1 shouldn’t be used with instance variables\n1 can have many arguments.\nBy definition, 1 take one argument.\nThese help create encapsulation.\n1 always fly 5010.\ninstance variables, getter, setter,method\nreturn\nreturn, argument\nencapsulation\npass by value\ninstance variables\nargument\ngetter\npublic\nmethod\nsetter\ngetter, setter, public, private\nreturn\n A Class ‘XCopy’ compiles and runs as it stands ! The \noutput is: ‘42 84’. Remember Java is pass by value, (which \nmeans pass by copy), the variable ‘orig’ is not changed by the \ngo( ) method.\n8\nclass Clock {\n String time;\n void setTime(String t) {\n time = t;\n }\n String getTime() { \n return time;\n }\n}\nclass ClockTestDrive {\n public static void main(String [] args) {\n Clock c = new Clock();\n c.setTime(“1245”);\n String tod = c.getTime();\n System.out.println(“time: “ + tod);\n }\n} Note: ‘Getter’ methods have a return\n type by definition. \nExercise Solutions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 127,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 127,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1284 chars",
+      "severity": "info"
+    },
+    {
+      "page": 127,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 127,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

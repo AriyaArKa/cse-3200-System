@@ -1,0 +1,46 @@
+{
+  "page_number": 466,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "saving objects\n432 \nchapter 14\nHere are the steps for serializing (saving) an object. Don’t bother \nmemorizing all this; we’11 go into more detail later in this chapter.\nWriting a serialized object to a file\nFileOutputStream fileStream = new FileOutputStream(“MyGame.ser”);\nMake a FileOutputStream object. FileOutputStream \nknows how to connect to (and create) a file.\n1\nMake a FileOutputStream\nos.writeObject(characterOne);\nos.writeObject(characterTwo);\nos.writeObject(characterThree);\n3\nWrite the object\nos.close();\n4\nClose the ObjectOutputStream\nserializes the objects referenced by character-\nOne, characterTwo, and characterThree, and \nwrites them to the file “MyGame.ser”.\nClosing the stream at the top closes the ones \nunderneath, 50 the FileOutputStream (and the \nfile) will close automatically.\nIf the file “MyGame.ser” doesn’t \nexist, it will be created automatically.\nObjectOutputStream 05 = new ObjectOutputStream(fileStream);\n2\nMake an ObjectOutputStream\nObjectOutputStream lets you write objects, \nbut it can’t directly connect to a file. It \nneeds to be fed a ‘helper’. This is actually \ncalled ‘chaining’ one stream to another.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "saving objects\n432 \nchapter 14\nHere are the steps for serializing (saving) an object. Don’t bother \nmemorizing all this; we’11 go into more detail later in this chapter.\nWriting a serialized object to a file\nFileOutputStream fileStream = new FileOutputStream(“MyGame.ser”);\nMake a FileOutputStream object. FileOutputStream \nknows how to connect to (and create) a file.\n1\nMake a FileOutputStream\nos.writeObject(characterOne);\nos.writeObject(characterTwo);\nos.writeObject(characterThree);\n3\nWrite the object\nos.close();\n4\nClose the ObjectOutputStream\nserializes the objects referenced by character-\nOne, characterTwo, and characterThree, and \nwrites them to the file “MyGame.ser”.\nClosing the stream at the top closes the ones \nunderneath, 50 the FileOutputStream (and the \nfile) will close automatically.\nIf the file “MyGame.ser” doesn’t \nexist, it will be created automatically.\nObjectOutputStream 05 = new ObjectOutputStream(fileStream);\n2\nMake an ObjectOutputStream\nObjectOutputStream lets you write objects, \nbut it can’t directly connect to a file. It \nneeds to be fed a ‘helper’. This is actually \ncalled ‘chaining’ one stream to another.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 466,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 466,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1145 chars",
+      "severity": "info"
+    },
+    {
+      "page": 466,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

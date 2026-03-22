@@ -1,0 +1,67 @@
+{
+  "page_number": 475,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n441\nDeserialization: restoring an object\nThe whole point of serializing an object is 50 that you can \nrestore it back to its original state at some later date, in a \ndifferent ‘run’ of the JVM (which might not even be the same \nJVM that was running at the time the object was serialized). \nDeserialization is a lot like serialization in reverse.\nFileInputStream fileStream = new FileInputStream(“MyGame.ser”);\nMake a FileInputStream object. The FileInputStream \nknows how to connect to an existing file.\n1\nMake a FileInputStream\nObject one = os.readObject();\nObject two = os.readObject();\nObject three = os.readObject();\n3\nread the objects\nos.close();\n5\nClose the ObjectInputStream\nClosing the stream at the top closes the ones \nunderneath, 50 the FileInputStream (and the \nfile) will close automatically.\nIf the file “MyGame.ser” doesn’t \nexist, you’11 get an exception.\nObjectInputStream 05 = new ObjectInputStream(fileStream);\n2\nMake an ObjectInputStream\nObjectInputStream lets you read objects, \nbut it can’t directly connect to a file. \nIt needs to be chained to a connection \nstream, in this case a FileInputStream.\nGameCharacter elf = (GameCharacter) one;\nGameCharacter troll = (GameCharacter) two;\nGameCharacter magician = (GameCharacter) three;\n4\nCast the objects \nEach time you say readObject(), you get the next \nobject in the stream. 50 you’11 read them back in \nthe same order in which they were written. You’11 \nget a big fat exception if you try to read more \nobjects than you wrote.\nThe return value of \nreadObject() is type Object \n(just like with ArrayList), 50 \nyou have to cast it back to \nthe type you know it really is.\nserialized\ndeserialized",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x159)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (136x95)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "serialization and file 1/0\nyou are here\n441\nDeserialization: restoring an object\nThe whole point of serializing an object is 50 that you can \nrestore it back to its original state at some later date, in a \ndifferent ‘run’ of the JVM (which might not even be the same \nJVM that was running at the time the object was serialized). \nDeserialization is a lot like serialization in reverse.\nFileInputStream fileStream = new FileInputStream(“MyGame.ser”);\nMake a FileInputStream object. The FileInputStream \nknows how to connect to an existing file.\n1\nMake a FileInputStream\nObject one = os.readObject();\nObject two = os.readObject();\nObject three = os.readObject();\n3\nread the objects\nos.close();\n5\nClose the ObjectInputStream\nClosing the stream at the top closes the ones \nunderneath, 50 the FileInputStream (and the \nfile) will close automatically.\nIf the file “MyGame.ser” doesn’t \nexist, you’11 get an exception.\nObjectInputStream 05 = new ObjectInputStream(fileStream);\n2\nMake an ObjectInputStream\nObjectInputStream lets you read objects, \nbut it can’t directly connect to a file. \nIt needs to be chained to a connection \nstream, in this case a FileInputStream.\nGameCharacter elf = (GameCharacter) one;\nGameCharacter troll = (GameCharacter) two;\nGameCharacter magician = (GameCharacter) three;\n4\nCast the objects \nEach time you say readObject(), you get the next \nobject in the stream. 50 you’11 read them back in \nthe same order in which they were written. You’11 \nget a big fat exception if you try to read more \nobjects than you wrote.\nThe return value of \nreadObject() is type Object \n(just like with ArrayList), 50 \nyou have to cast it back to \nthe type you know it really is.\nserialized\ndeserialized",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 475,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 475,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1708 chars",
+      "severity": "info"
+    },
+    {
+      "page": 475,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 475,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

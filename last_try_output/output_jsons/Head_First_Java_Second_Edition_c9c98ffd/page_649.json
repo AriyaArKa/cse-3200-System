@@ -1,0 +1,104 @@
+{
+  "page_number": 649,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n615\nServer \nMaking the Remote Service\nMake a Remote Interface\nMake a Remote Implementation\nGenerate the stubs and skeletons using rmic\nStart the RMI registry (rmiregistry)\nStart the remote service \nMyRemote.java\npublic interface \nMyRemote extends \nRemote { }\nMyRemoteImpl.java\npublic interface \nMyRemote extends \nRemote { }\nThis is an overview of the five steps for making the remote \nservice (that runs on the server). Don’t worry, each step is \nexplained in detail over the next few pages.\nThe remote interface defines the methods \nthat a client can call remotely. It’5 what \nthe client will use as the polymorphic class \ntype for your service. Both the Stub and \nactual service will implement this!\nThis interface defines the \nremote methods that you \nwant clients to call\nThis is the class that does the Real Work. \nIt has the real implementation of the \nremote methods defined in the remote \ninterface. It’5 the object that the client \nwants to call methods on.\nThe Real Service. The class \nwith the methods that do \nthe real work. It implements \nthe remote interface.\nThese are the client and server ‘helpers’. \nYou don’t have to create these classes or ever \nlook at the source code that generates them. \nIt’5 all handled automatically when you \nrun the rmic tool that ships with your Java \ndevelopment kit.\nFile Edit Window Help Eat\n%rmic MyRemoteImpl\nMyRemoteImpl_Stub.class\nMyRemoteImpl_Skel.class\nRunning rmic against the actual \nservice implementation class...\nspits out two new \nclasses for the \nhelper objects\nFile Edit Window Help Drink\n%rmiregistry\nFile Edit Window Help BeMerry\n%java MyRemoteImpl\nThe rmiregistry is like the white pages of a \nphone book. It’5 where the user goes to get \nthe proxy (the client stub/helper object).\nYou have to get the service object up and running. \nYour service implementation class instantiates an \ninstance of the service and registers it with the RMI \nregistry. Registering it makes the service available for \nclients.\nrun this in a \nseparate terminal\nStep one:\nStep two:\nStep three:\nStep four:\nStep five:\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Eat"
+        ],
+        [
+          "%rmic MyRemoteImpl"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Drink"
+        ],
+        [
+          "%rmiregistry"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help BeMerry"
+        ],
+        [
+          "%java MyRemoteImpl"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (50x105)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n615\nServer \nMaking the Remote Service\nMake a Remote Interface\nMake a Remote Implementation\nGenerate the stubs and skeletons using rmic\nStart the RMI registry (rmiregistry)\nStart the remote service \nMyRemote.java\npublic interface \nMyRemote extends \nRemote { }\nMyRemoteImpl.java\npublic interface \nMyRemote extends \nRemote { }\nThis is an overview of the five steps for making the remote \nservice (that runs on the server). Don’t worry, each step is \nexplained in detail over the next few pages.\nThe remote interface defines the methods \nthat a client can call remotely. It’5 what \nthe client will use as the polymorphic class \ntype for your service. Both the Stub and \nactual service will implement this!\nThis interface defines the \nremote methods that you \nwant clients to call\nThis is the class that does the Real Work. \nIt has the real implementation of the \nremote methods defined in the remote \ninterface. It’5 the object that the client \nwants to call methods on.\nThe Real Service. The class \nwith the methods that do \nthe real work. It implements \nthe remote interface.\nThese are the client and server ‘helpers’. \nYou don’t have to create these classes or ever \nlook at the source code that generates them. \nIt’5 all handled automatically when you \nrun the rmic tool that ships with your Java \ndevelopment kit.\nFile Edit Window Help Eat\n%rmic MyRemoteImpl\nMyRemoteImpl_Stub.class\nMyRemoteImpl_Skel.class\nRunning rmic against the actual \nservice implementation class...\nspits out two new \nclasses for the \nhelper objects\nFile Edit Window Help Drink\n%rmiregistry\nFile Edit Window Help BeMerry\n%java MyRemoteImpl\nThe rmiregistry is like the white pages of a \nphone book. It’5 where the user goes to get \nthe proxy (the client stub/helper object).\nYou have to get the service object up and running. \nYour service implementation class instantiates an \ninstance of the service and registers it with the RMI \nregistry. Registering it makes the service available for \nclients.\nrun this in a \nseparate terminal\nStep one:\nStep two:\nStep three:\nStep four:\nStep five:\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 649,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 649,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2200 chars",
+      "severity": "info"
+    },
+    {
+      "page": 649,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 649,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

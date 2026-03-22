@@ -1,0 +1,82 @@
+{
+  "page_number": 46,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "12 \nchapter 1\npublic class Loopy {\n public static void main (String[] args) {\n int x = 1;\n System.out.println(“Before the Loop”);\n while (x < 4) {\n System.out.println(“In the loop”);\n System.out.println(“Value of x is ” + x);\n x = x + 1;\n }\n System.out.println(“This is after the loop”);\n }\n}\n% java Loopy\nBefore the Loop\nIn the loop\nValue of x is 1\nIn the loop\nValue of x is 2\nIn the loop\nValue of x is 3\nThis is after the loop\n BULLET POINTS\n \nStatements end in a semicolon ;\n \nCode blocks are defined by a pair of curly braces { }\n \nDeclare an int variable with a name and a type: int x;\n \nThe assignment operator is one equals sign =\n \nThe equals operator uses two equals signs ==\n \nA while loop runs everything within its block (defined by curly \nbraces) as long as the conditional test is true.\n \nIf the conditional test is false, the while loop code block won’t \nrun, and execution will move down to the code immediately \nafter the loop block.\n \nPut a boolean test inside parentheses: \nwhile (x == 4) { }\nExample of a while loop\nthere are no\nDumb Questions\nQ: Why does everything have \nto be in a class?\nA: Java is an object-oriented \n(00) language. It’5 not like the \nold days when you had steam-\ndriven compilers and wrote one \nmonolithic source file with a pile \nof procedures. In chapter 2 you’11 \nlearn that a class is a blueprint for \nan object, and that nearly every-\nthing in Java is an object.\nQ: Do 1 have to put a main in \nevery class 1 write?\nA: Nope. A Java program \nmight use dozens of classes (even \nhundreds), but you might only \nhave one with a main method­—\nthe one that starts the program \nrunning. You might write test \nclasses, though, that have main \nmethods for testing your other \nclasses.\nQ: In my other language 1 can \ndo a boolean test on an integer. \nIn Java, can 1 say something like:\nint x = 1;\nwhile (x){ } \nA: No. A boolean and an \ninteger are not compatible types in \nJava. Since the result of a condi-\ntional test must be a boolean, the \nonly variable you can directly test \n(without using a comparison op-\nerator) is a boolean. For example, \nyou can say:\nboolean isHot = true;\nwhile(isHot) { }\nthis is the output\nJava basics",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "12 \nchapter 1\npublic class Loopy {\n public static void main (String[] args) {\n int x = 1;\n System.out.println(“Before the Loop”);\n while (x < 4) {\n System.out.println(“In the loop”);\n System.out.println(“Value of x is ” + x);\n x = x + 1;\n }\n System.out.println(“This is after the loop”);\n }\n}\n% java Loopy\nBefore the Loop\nIn the loop\nValue of x is 1\nIn the loop\nValue of x is 2\nIn the loop\nValue of x is 3\nThis is after the loop\n BULLET POINTS\n \nStatements end in a semicolon ;\n \nCode blocks are defined by a pair of curly braces { }\n \nDeclare an int variable with a name and a type: int x;\n \nThe assignment operator is one equals sign =\n \nThe equals operator uses two equals signs ==\n \nA while loop runs everything within its block (defined by curly \nbraces) as long as the conditional test is true.\n \nIf the conditional test is false, the while loop code block won’t \nrun, and execution will move down to the code immediately \nafter the loop block.\n \nPut a boolean test inside parentheses: \nwhile (x == 4) { }\nExample of a while loop\nthere are no\nDumb Questions\nQ: Why does everything have \nto be in a class?\nA: Java is an object-oriented \n(00) language. It’5 not like the \nold days when you had steam-\ndriven compilers and wrote one \nmonolithic source file with a pile \nof procedures. In chapter 2 you’11 \nlearn that a class is a blueprint for \nan object, and that nearly every-\nthing in Java is an object.\nQ: Do 1 have to put a main in \nevery class 1 write?\nA: Nope. A Java program \nmight use dozens of classes (even \nhundreds), but you might only \nhave one with a main method­—\nthe one that starts the program \nrunning. You might write test \nclasses, though, that have main \nmethods for testing your other \nclasses.\nQ: In my other language 1 can \ndo a boolean test on an integer. \nIn Java, can 1 say something like:\nint x = 1;\nwhile (x){ } \nA: No. A boolean and an \ninteger are not compatible types in \nJava. Since the result of a condi-\ntional test must be a boolean, the \nonly variable you can directly test \n(without using a comparison op-\nerator) is a boolean. For example, \nyou can say:\nboolean isHot = true;\nwhile(isHot) { }\nthis is the output\nJava basics",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 46,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 46,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2263 chars",
+      "severity": "info"
+    },
+    {
+      "page": 46,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 46,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

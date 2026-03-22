@@ -1,0 +1,60 @@
+{
+  "page_number": 345,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "numbers and statics\nyou are here\n311\nThis chapter explored the wonderful, static, world \nof Java. Your job is to decide whether each of the \nfollowing statements is true or false.\n1. To use the Math class, the first step is to make an instance of it.\n2. You can mark a constructor with the static keyword.\n3. Static methods don’t have access to instance variable state of the ‘this’ object.\n4. It is good practice to call a static method using a reference variable.\n5. Static variables could be used to count the instances of a class.\n6. Constructors are called before static variables are initialized.\n7. MAX_SIZE would be a good name for a static final variable.\n8. A static initializer block runs before a class’5 constructor runs.\n9. If a class is marked final, all of its methods must be marked final.\n10. A final method can only be overridden if its class is extended.\n11. There is no wrapper class for boolean primitives.\n12. A wrapper is used when you want to treat a primitive like an object.\n13. The parseXxx methods always return a String.\n14. Formatting classes (which are decoupled from 1/0), are in the java.format\n package.\nCTrue or FalseD\nExercise",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (157x132)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "numbers and statics\nyou are here\n311\nThis chapter explored the wonderful, static, world \nof Java. Your job is to decide whether each of the \nfollowing statements is true or false.\n1. To use the Math class, the first step is to make an instance of it.\n2. You can mark a constructor with the static keyword.\n3. Static methods don’t have access to instance variable state of the ‘this’ object.\n4. It is good practice to call a static method using a reference variable.\n5. Static variables could be used to count the instances of a class.\n6. Constructors are called before static variables are initialized.\n7. MAX_SIZE would be a good name for a static final variable.\n8. A static initializer block runs before a class’5 constructor runs.\n9. If a class is marked final, all of its methods must be marked final.\n10. A final method can only be overridden if its class is extended.\n11. There is no wrapper class for boolean primitives.\n12. A wrapper is used when you want to treat a primitive like an object.\n13. The parseXxx methods always return a String.\n14. Formatting classes (which are decoupled from 1/0), are in the java.format\n package.\nCTrue or FalseD\nExercise",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 345,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 345,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1186 chars",
+      "severity": "info"
+    },
+    {
+      "page": 345,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 345,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

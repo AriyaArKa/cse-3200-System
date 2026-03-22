@@ -1,0 +1,67 @@
+{
+  "page_number": 393,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n359\n“Button, please add me to \nyour list of listeners and call \nmy actionPerformed() method \nwhen the user clicks you.”\nHow the listener and source \ncommunicate:\nThe Listener\nThe Event Source\nIf your class wants to know \nabout a button’5 ActionEvents, you \nimplement the ActionListener \ninterface. The button needs to \nknow you’re interested, 50 you \nregister with the button by calling its \naddActionListener(this) and passing \nan ActionListener reference to it (in \nthis case, you are the ActionListener \n50 you pass this).The button needs a \nway to call you back when the event \nhappens, 50 it calls the method in the \nlistener interface. As an ActionListener, \nyou must implement the interface’5 sole \nmethod, actionPerformed(). The compiler \nguarantees it.\nA button is a source of ActionEvents, \n50 it has to know which objects are \ninterested listeners. The button has an \naddActionListener() method to give \ninterested objects (listeners) a way to \ntell the button they’re interested. \nWhen the button’5 \naddActionListener() runs (because \na potential listener invoked it), the \nbutton takes the parameter (a \nreference to the listener object) and \nstores it in a list. When the user clicks \nthe button, the button ‘fires’ the event \nby calling the actionPerformed() \nmethod on each listener in the list.\n“OK, you’re an ActionListener, \n50 1 know how to call you back \nwhen there’5 an event -- 1’11 call \nthe actionPerformed() method \nthat 1 know you have.”\na\nc\ntionP\ne\nrfo\nrm\ne\nd\n(\nthe\nE\nv\ne\nn\nt)\nb\nu\nt\nt\non\n.\na\nd\ndA\nc\nt\nionLis\nt\nen\ne\nr\n(\nt\nhis)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (304x780)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (254x268)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n359\n“Button, please add me to \nyour list of listeners and call \nmy actionPerformed() method \nwhen the user clicks you.”\nHow the listener and source \ncommunicate:\nThe Listener\nThe Event Source\nIf your class wants to know \nabout a button’5 ActionEvents, you \nimplement the ActionListener \ninterface. The button needs to \nknow you’re interested, 50 you \nregister with the button by calling its \naddActionListener(this) and passing \nan ActionListener reference to it (in \nthis case, you are the ActionListener \n50 you pass this).The button needs a \nway to call you back when the event \nhappens, 50 it calls the method in the \nlistener interface. As an ActionListener, \nyou must implement the interface’5 sole \nmethod, actionPerformed(). The compiler \nguarantees it.\nA button is a source of ActionEvents, \n50 it has to know which objects are \ninterested listeners. The button has an \naddActionListener() method to give \ninterested objects (listeners) a way to \ntell the button they’re interested. \nWhen the button’5 \naddActionListener() runs (because \na potential listener invoked it), the \nbutton takes the parameter (a \nreference to the listener object) and \nstores it in a list. When the user clicks \nthe button, the button ‘fires’ the event \nby calling the actionPerformed() \nmethod on each listener in the list.\n“OK, you’re an ActionListener, \n50 1 know how to call you back \nwhen there’5 an event -- 1’11 call \nthe actionPerformed() method \nthat 1 know you have.”\na\nc\ntionP\ne\nrfo\nrm\ne\nd\n(\nthe\nE\nv\ne\nn\nt)\nb\nu\nt\nt\non\n.\na\nd\ndA\nc\nt\nionLis\nt\nen\ne\nr\n(\nt\nhis)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 393,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 393,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1584 chars",
+      "severity": "info"
+    },
+    {
+      "page": 393,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 393,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

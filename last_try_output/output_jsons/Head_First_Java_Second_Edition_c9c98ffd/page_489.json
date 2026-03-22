@@ -1,0 +1,46 @@
+{
+  "page_number": 489,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n455\nQuiz Card Player (code outline)\npublic class QuizCardPlayer {\n \n public void go() {\n // build and display gui\n }\n class NextCardListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n // if this is a question, show the answer, otherwise show next question\n // set a flag for whether we’re viewing a question or answer\n }\n }\n class OpenMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n // bring up a file dialog box\n // let the user navigate to and choose a card set to open\n }\n }\n \n private void loadFile(File file) {\n // must build an ArrayList of cards, by reading them from a text file\n // called from the OpenMenuListener event handler, reads the file one line at a time\n // and tells the makeCard() method to make a new card out of the line\n // (one line in the file holds both the question and answer, separated by a “/”)\n } \n private void makeCard(String lineToParse) {\n // called by the loadFile method, takes a line from the text file\n // and parses into two pieces—question and answer—and creates a new QuizCard\n // and adds it to the ArrayList called CardList\n } \n}",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n455\nQuiz Card Player (code outline)\npublic class QuizCardPlayer {\n \n public void go() {\n // build and display gui\n }\n class NextCardListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n // if this is a question, show the answer, otherwise show next question\n // set a flag for whether we’re viewing a question or answer\n }\n }\n class OpenMenuListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n // bring up a file dialog box\n // let the user navigate to and choose a card set to open\n }\n }\n \n private void loadFile(File file) {\n // must build an ArrayList of cards, by reading them from a text file\n // called from the OpenMenuListener event handler, reads the file one line at a time\n // and tells the makeCard() method to make a new card out of the line\n // (one line in the file holds both the question and answer, separated by a “/”)\n } \n private void makeCard(String lineToParse) {\n // called by the loadFile method, takes a line from the text file\n // and parses into two pieces—question and answer—and creates a new QuizCard\n // and adds it to the ArrayList called CardList\n } \n}",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 489,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 489,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1360 chars",
+      "severity": "info"
+    },
+    {
+      "page": 489,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

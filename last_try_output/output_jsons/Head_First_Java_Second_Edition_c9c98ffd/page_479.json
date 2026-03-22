@@ -1,0 +1,46 @@
+{
+  "page_number": 479,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n445\nimport java.io.*;\npublic class GameCharacter implements Serializable {\n int power;\n String type;\n String[] weapons;\n public GameCharacter(int p, String t, String[] w) {\n power = p;\n type = t;\n weapons = w;\n }\n public int getPower() {\n return power;\n }\n public String getType() {\n return type;\n }\n public String getWeapons() {\n String weaponList = “”;\n for (int i = 0; i < weapons.length; i++) {\n weaponList += weapons[i] + “ “;\n }\n return weaponList; \n }\n}\nThe GameCharacter class\nThis is a basic class just for testing \nSerialization, and we don’t have an \nactual game, but we’11 leave that to \nyou to experiment.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "serialization and file 1/0\nyou are here\n445\nimport java.io.*;\npublic class GameCharacter implements Serializable {\n int power;\n String type;\n String[] weapons;\n public GameCharacter(int p, String t, String[] w) {\n power = p;\n type = t;\n weapons = w;\n }\n public int getPower() {\n return power;\n }\n public String getType() {\n return type;\n }\n public String getWeapons() {\n String weaponList = “”;\n for (int i = 0; i < weapons.length; i++) {\n weaponList += weapons[i] + “ “;\n }\n return weaponList; \n }\n}\nThe GameCharacter class\nThis is a basic class just for testing \nSerialization, and we don’t have an \nactual game, but we’11 leave that to \nyou to experiment.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 479,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 479,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 750 chars",
+      "severity": "info"
+    },
+    {
+      "page": 479,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

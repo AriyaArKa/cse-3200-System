@@ -1,0 +1,67 @@
+{
+  "page_number": 610,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9325,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "576 \nchapter 16\nExercise\nYour job is to play compiler and determine which of \nthese statements would compile. But some of this \ncode wasn’t covered in the chapter, 50 you need to \nwork out the answers based on what you DID learn, \napplying the “rules” to these new situations. In \nsome cases, you might have to guess, but the \npoint is to come up with a reasonable answer \nbased on what you know 50 far.\n(Note: assume that this code is within a legal class \nand method.)\nBE the compiler, advanced\n❑ArrayList<Dog> dogs1 = new ArrayList<Animal>();\n \n❑ArrayList<Animal> animals1 = new ArrayList<Dog>();\n \n❑List<Animal> list = new ArrayList<Animal>();\n❑ArrayList<Dog> dogs = new ArrayList<Dog>();\n❑ArrayList<Animal> animals = dogs;\n❑List<Dog> dogList = dogs;\n❑ArrayList<Object> objects = new ArrayList<Object>();\n❑List<Object> objList = objects;\n❑ArrayList<Object> objs = new ArrayList<Dog>();\n \nCompiles?\nbe the compiler exercise",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (121x101)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (195x226)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "576 \nchapter 16\nExercise\nYour job is to play compiler and determine which of \nthese statements would compile. But some of this \ncode wasn’t covered in the chapter, 50 you need to \nwork out the answers based on what you DID learn, \napplying the “rules” to these new situations. In \nsome cases, you might have to guess, but the \npoint is to come up with a reasonable answer \nbased on what you know 50 far.\n(Note: assume that this code is within a legal class \nand method.)\nBE the compiler, advanced\n❑ArrayList<Dog> dogs1 = new ArrayList<Animal>();\n \n❑ArrayList<Animal> animals1 = new ArrayList<Dog>();\n \n❑List<Animal> list = new ArrayList<Animal>();\n❑ArrayList<Dog> dogs = new ArrayList<Dog>();\n❑ArrayList<Animal> animals = dogs;\n❑List<Dog> dogList = dogs;\n❑ArrayList<Object> objects = new ArrayList<Object>();\n❑List<Object> objList = objects;\n❑ArrayList<Object> objs = new ArrayList<Dog>();\n \nCompiles?\nbe the compiler exercise",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 610,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 610,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 933 chars",
+      "severity": "info"
+    },
+    {
+      "page": 610,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 610,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

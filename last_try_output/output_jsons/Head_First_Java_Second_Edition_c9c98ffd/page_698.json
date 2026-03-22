@@ -1,0 +1,46 @@
+{
+  "page_number": 698,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "664\nappendix 8\n#6 Linked Invocations\nWhile you did see a little of this in this book, we tried to keep our syntax as clean and \nreadable as possible. There are, however, many legal shortcuts in Java, that you’11 no doubt \nbe exposed to, especially if you have to read a lot code you didn’t write. One of the more \ncommon constructs you will encounter is known as linked invocations. For example:\n StringBuffer sb = new StringBuffer(“spring”);\n sb = sb.delete(3,6).insert(2,”umme”).deleteCharAt(1); \n System.out.println(“sb = “ + sb); \n // result is sb = summer\nWhat in the world is happening in the second line of code? Admittedly, this is a contrived \nexample, but you need to learn how to decipher these.\n1 - Work from left to right.\n2 - Find the result of the leftmost method call, in this case sb.delete(3,6). If you \nlook up StringBuffer in the API docs, you’11 see that the delete() method returns a \nStringBuffer object. The result of running the delete() method is a StringBuffer object \nwith the value “spr”. \n3 - The next leftmost method (insert())is called on the newly created StringBuffer \nobject “spr”. The result of that method call (the insert() method), is also a StringBuffer \nobject (although it doesn’t have to be the same type as the previous method return), and 50 \nit goes, the returned object is used to call the next method to the right. In theory, you can \nlink as many methods as you want in a single statement (although it’5 rare to see more than \nthree linked methods in a single statement). Without linking, the second line of code from \nabove would be more readable, and look something like this:\n sb = sb.delete(3,6);\n sb = sb.insert(2,”umme”);\n sb = sb.deleteCharAt(1);\nBut here’5 a more common, and useful example, that you saw us using, but we thought \nwe’d point it out again here. This is for when your main() method needs to invoke an \ninstance method of the main class, but you don’t need to keep a reference to the instance of \nthe class. In other words, the main() needs to create the instance only 50 that main() can \ninvoke one of the instance’5 methods.\n class Foo {\n public static void main(String [] args) [\n new Foo().go(); \n }\n void go() {\n // here’5 what we REALLY want...\n }\n }\nwe want to call go(), but we don’t care about \nthe Foo instance, 50 we don’t bother assigning \nthe new Foo object to a reference.\nlinked invocations",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "664\nappendix 8\n#6 Linked Invocations\nWhile you did see a little of this in this book, we tried to keep our syntax as clean and \nreadable as possible. There are, however, many legal shortcuts in Java, that you’11 no doubt \nbe exposed to, especially if you have to read a lot code you didn’t write. One of the more \ncommon constructs you will encounter is known as linked invocations. For example:\n StringBuffer sb = new StringBuffer(“spring”);\n sb = sb.delete(3,6).insert(2,”umme”).deleteCharAt(1); \n System.out.println(“sb = “ + sb); \n // result is sb = summer\nWhat in the world is happening in the second line of code? Admittedly, this is a contrived \nexample, but you need to learn how to decipher these.\n1 - Work from left to right.\n2 - Find the result of the leftmost method call, in this case sb.delete(3,6). If you \nlook up StringBuffer in the API docs, you’11 see that the delete() method returns a \nStringBuffer object. The result of running the delete() method is a StringBuffer object \nwith the value “spr”. \n3 - The next leftmost method (insert())is called on the newly created StringBuffer \nobject “spr”. The result of that method call (the insert() method), is also a StringBuffer \nobject (although it doesn’t have to be the same type as the previous method return), and 50 \nit goes, the returned object is used to call the next method to the right. In theory, you can \nlink as many methods as you want in a single statement (although it’5 rare to see more than \nthree linked methods in a single statement). Without linking, the second line of code from \nabove would be more readable, and look something like this:\n sb = sb.delete(3,6);\n sb = sb.insert(2,”umme”);\n sb = sb.deleteCharAt(1);\nBut here’5 a more common, and useful example, that you saw us using, but we thought \nwe’d point it out again here. This is for when your main() method needs to invoke an \ninstance method of the main class, but you don’t need to keep a reference to the instance of \nthe class. In other words, the main() needs to create the instance only 50 that main() can \ninvoke one of the instance’5 methods.\n class Foo {\n public static void main(String [] args) [\n new Foo().go(); \n }\n void go() {\n // here’5 what we REALLY want...\n }\n }\nwe want to call go(), but we don’t care about \nthe Foo instance, 50 we don’t bother assigning \nthe new Foo object to a reference.\nlinked invocations",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 698,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 698,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2479 chars",
+      "severity": "info"
+    },
+    {
+      "page": 698,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

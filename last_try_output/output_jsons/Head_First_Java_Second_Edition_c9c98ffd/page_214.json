@@ -1,0 +1,71 @@
+{
+  "page_number": 214,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "180 \nchapter 7\nAccess levels control who sees what, and are crucial \nto having well-designed, robust Java code. For now we’11 \nfocus just on public and private. The rules are simple for \nthose two:\nWhen a subclass inherits a member, it is as if the \nsubclass defined the member itself. In the Shape \nexample, Square inherited the rotate() and \nplaySound() methods and to the outside world (other \ncode) the Square class simply has a rotate() and \nplaySound() method. \nThe members of a class include the variables and \nmethods defined in the class plus anything inherited \nfrom a superclass.\npublic members are inherited\nprivate members are not inherited\nWho gets the Porsche, who gets the porcelain? \n(how to know what a subclass can\ninherit from it’5 superclass)\n \n A subclass inherits members of the\n superclass. Members include instance \n variables and methods, although later in\n this book we’11 look at other inherited members. A \nsuperclass can choose whether or not it wants a \nsubclass to inherit a particular member by the level of \naccess the particular member is given. \nThere are four access levels that we’11 cover in this book. \nMoving from most restrictive to least, the four access \nlevels are:\n private default protected public\n \nwho inherits what\nthere are no\nDumb Questions\nQ: 50 we see how a subclass gets \nto inherit a superclass method, but \nwhat if the superclass wants to use \nthe subclass version of the method?\nA:A superclass won’t necessarily \nknow about any of its subclasses. \nYou might write a class and much \nlater someone else comes along and \nextends it. But even if the superclass \ncreator does know about (and wants \nto use) a subclass version of a method, \nthere’5 no sort of reverse or backwards \ninheritance. Think about it, children \ninherit from parents, not the other way \naround.\nQ: In a subclass, what if 1 want to \nuse BOTH the superclass version and \nmy overriding subclass version of a \nmethod? In other words, 1 don’t want \nto completely replace the superclass \nversion, 1 just want to add more stuff \nto it.\nA:You can do this! And it’5 an \nimportant design feature. Think of the \nword “extends” as meaning, “1 want \nto extend the functionality of the \nsuperclass”. \nYou can design your superclass \nmethods in such a way that they \ncontain method implementations \nthat will work for any subclass, even \nthough the subclasses may still need \nto ‘append’ more code. In your subclass \noverriding method, you can call the \nsuperclass version using the keyword \nsuper. It’5 like saying, “first go run the \nsuperclass version, then come back \nand finish with my own code...”\npublic void roam() {\n super.roam();\n // my own roam stuff\n}\nthis calls the inherited version of \nroam(), then comes back to do \nyour own subclass-specific code\nNote: get more details about default and protected in chapter \n17 (deployment) and appendix 8.\n(how to know what a subclass can \ninherit from its superclass)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "((hhooww ttoo kknnooww wwhhaatt aa ssuubbcclalassss c caa\niinnhheerriitt ffrroomm iitts’5 ssuuppeerrcclalassss))",
+          "nn"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (171x185)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "180 \nchapter 7\nAccess levels control who sees what, and are crucial \nto having well-designed, robust Java code. For now we’11 \nfocus just on public and private. The rules are simple for \nthose two:\nWhen a subclass inherits a member, it is as if the \nsubclass defined the member itself. In the Shape \nexample, Square inherited the rotate() and \nplaySound() methods and to the outside world (other \ncode) the Square class simply has a rotate() and \nplaySound() method. \nThe members of a class include the variables and \nmethods defined in the class plus anything inherited \nfrom a superclass.\npublic members are inherited\nprivate members are not inherited\nWho gets the Porsche, who gets the porcelain? \n(how to know what a subclass can\ninherit from it’5 superclass)\n \n A subclass inherits members of the\n superclass. Members include instance \n variables and methods, although later in\n this book we’11 look at other inherited members. A \nsuperclass can choose whether or not it wants a \nsubclass to inherit a particular member by the level of \naccess the particular member is given. \nThere are four access levels that we’11 cover in this book. \nMoving from most restrictive to least, the four access \nlevels are:\n private default protected public\n \nwho inherits what\nthere are no\nDumb Questions\nQ: 50 we see how a subclass gets \nto inherit a superclass method, but \nwhat if the superclass wants to use \nthe subclass version of the method?\nA:A superclass won’t necessarily \nknow about any of its subclasses. \nYou might write a class and much \nlater someone else comes along and \nextends it. But even if the superclass \ncreator does know about (and wants \nto use) a subclass version of a method, \nthere’5 no sort of reverse or backwards \ninheritance. Think about it, children \ninherit from parents, not the other way \naround.\nQ: In a subclass, what if 1 want to \nuse BOTH the superclass version and \nmy overriding subclass version of a \nmethod? In other words, 1 don’t want \nto completely replace the superclass \nversion, 1 just want to add more stuff \nto it.\nA:You can do this! And it’5 an \nimportant design feature. Think of the \nword “extends” as meaning, “1 want \nto extend the functionality of the \nsuperclass”. \nYou can design your superclass \nmethods in such a way that they \ncontain method implementations \nthat will work for any subclass, even \nthough the subclasses may still need \nto ‘append’ more code. In your subclass \noverriding method, you can call the \nsuperclass version using the keyword \nsuper. It’5 like saying, “first go run the \nsuperclass version, then come back \nand finish with my own code...”\npublic void roam() {\n super.roam();\n // my own roam stuff\n}\nthis calls the inherited version of \nroam(), then comes back to do \nyour own subclass-specific code\nNote: get more details about default and protected in chapter \n17 (deployment) and appendix 8.\n(how to know what a subclass can \ninherit from its superclass)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 214,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 214,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2972 chars",
+      "severity": "info"
+    },
+    {
+      "page": 214,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 214,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

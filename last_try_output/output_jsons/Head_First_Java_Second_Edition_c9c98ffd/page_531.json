@@ -1,0 +1,60 @@
+{
+  "page_number": 531,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n497\nThe Thread Scheduler\nNumber four, you’ve had \nenough time. Back to runnable. \nNumber two, looks like you’re up! \nOh, now it looks like you’re gonna have \nto sleep. Number five, come take his \nplace. Number two, you’re still \nsleeping...\nThe thread scheduler \nmakes all the \ndecisions about who \nruns and who doesn’t. \nHe usually makes the \nthreads take turns, \nnicely. But there’5 \nno guarantee about \nthat. He might let \none thread run to its \nheart’5 content while \nthe other threads \n‘starve’.\nThe thread scheduler makes all the decisions about \nwho moves from runnable to running, and about when \n(and under what circumstances) a thread leaves the \nrunning state. The scheduler decides who runs, and for \nhow long, and where the threads go when the scheduler \ndecides to kick them out of the currently-running state.\nYou can’t control the scheduler. There is no API for \ncalling methods on the scheduler. Most importantly, \nthere are no guarantees about scheduling! (There are a \nfew almost-guarantees, but even those are a little fuzzy.)\nThe bottom line is this: do not base your program’5 \ncorrectness on the scheduler working in a particular way! \nThe scheduler implementations are different for \ndifferent JVM’5, and even running the same program \non the same machine can give you different results. \nOne of the worst mistakes new Java programmers \nmake is to test their multi-threaded program on a \nsingle machine, and assume the thread scheduler will \nalways work that way, regardless of where the program \nruns. \n50 what does this mean for write-once-run-anywhere? \nIt means that to write platform-independent Java code, \nyour multi-threaded program must work no matter how \nthe thread scheduler behaves. That means that you can’t \nbe dependent on, for example, the scheduler making \nsure all the threads take nice, perfectly fair and equal \nturns at the running state. Although highly unlikely \ntoday, your program might end up running on a JVM \nwith a scheduler that says, “OK thread five, you’re up, \nand as far as 1’m concerned, you can stay here until \nyou’re done, when your run() method completes.”\nThe secret to almost everything is sleep. That’5 \nright, sleep. Putting a thread to sleep, even for a few \nmilliseconds, forces the currently-running thread to \nleave the running state, thus giving another thread a \nchance to run. The thread’5 sleep() method does come \nwith one guarantee: a sleeping thread will not become \nthe currently-running thread before the the length of \nits sleep time has expired. For example, if you tell your \nthread to sleep for two seconds (2,000 milliseconds), \nthat thread can never become the running thread again \nuntil sometime after the two seconds have passed.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (314x866)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n497\nThe Thread Scheduler\nNumber four, you’ve had \nenough time. Back to runnable. \nNumber two, looks like you’re up! \nOh, now it looks like you’re gonna have \nto sleep. Number five, come take his \nplace. Number two, you’re still \nsleeping...\nThe thread scheduler \nmakes all the \ndecisions about who \nruns and who doesn’t. \nHe usually makes the \nthreads take turns, \nnicely. But there’5 \nno guarantee about \nthat. He might let \none thread run to its \nheart’5 content while \nthe other threads \n‘starve’.\nThe thread scheduler makes all the decisions about \nwho moves from runnable to running, and about when \n(and under what circumstances) a thread leaves the \nrunning state. The scheduler decides who runs, and for \nhow long, and where the threads go when the scheduler \ndecides to kick them out of the currently-running state.\nYou can’t control the scheduler. There is no API for \ncalling methods on the scheduler. Most importantly, \nthere are no guarantees about scheduling! (There are a \nfew almost-guarantees, but even those are a little fuzzy.)\nThe bottom line is this: do not base your program’5 \ncorrectness on the scheduler working in a particular way! \nThe scheduler implementations are different for \ndifferent JVM’5, and even running the same program \non the same machine can give you different results. \nOne of the worst mistakes new Java programmers \nmake is to test their multi-threaded program on a \nsingle machine, and assume the thread scheduler will \nalways work that way, regardless of where the program \nruns. \n50 what does this mean for write-once-run-anywhere? \nIt means that to write platform-independent Java code, \nyour multi-threaded program must work no matter how \nthe thread scheduler behaves. That means that you can’t \nbe dependent on, for example, the scheduler making \nsure all the threads take nice, perfectly fair and equal \nturns at the running state. Although highly unlikely \ntoday, your program might end up running on a JVM \nwith a scheduler that says, “OK thread five, you’re up, \nand as far as 1’m concerned, you can stay here until \nyou’re done, when your run() method completes.”\nThe secret to almost everything is sleep. That’5 \nright, sleep. Putting a thread to sleep, even for a few \nmilliseconds, forces the currently-running thread to \nleave the running state, thus giving another thread a \nchance to run. The thread’5 sleep() method does come \nwith one guarantee: a sleeping thread will not become \nthe currently-running thread before the the length of \nits sleep time has expired. For example, if you tell your \nthread to sleep for two seconds (2,000 milliseconds), \nthat thread can never become the running thread again \nuntil sometime after the two seconds have passed.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 531,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 531,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2758 chars",
+      "severity": "info"
+    },
+    {
+      "page": 531,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 531,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

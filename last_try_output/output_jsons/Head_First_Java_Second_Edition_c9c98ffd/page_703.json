@@ -1,0 +1,46 @@
+{
+  "page_number": 703,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "appendix 8 Top Ten Reference\nyou are here\n669\n#3 String and StringBuffer/StringBuilder Methods\nTwo of the most commonly used classes in the Java API are String and StringBuffer (remember from \n#9 a few pages back, Strings are immutable, 50 a StringBuffer/StringBuilder can be a lot more efficient \nif you’re manipulating a String). As of Java 5.0 you should use the StringBuilder class instead of \nStringBuffer, unless your String manipulations need to be thread-safe, which is not common. Here’5 a \nbrief overview of the key methods in these classes:\nBoth String and StringBuffer/StringBuilder classes have:\n char charAt(int index); // what char is at a certain position\n int length(); // how long is this\n String substring(int start, int end); // get a part of this \n String toString(); // what’5 the String value of this\nTo concatenate Strings:\n String concat(string); // for the String class\n String append(String); // for StringBuffer & StringBuilder\nThe String class has:\n String replace(char old, char new); // replace all occurences of a char \n String substring(int begin, int end); // get a portion of a String\n char [] toCharArray(); // convert to an array of chars\n String toLowerCase(); // convert all characters to lower case\n String toUpperCase(); // convert all characters to upper case\n String trim(); // remove whitespace from the ends\n String valueOf(char []) // make a String out of a char array\n String valueOf(int i) // make a String out of a primitive \n \n \n \n // other primitives are supported as well\nThe StringBuffer & StringBuilder classes have:\n StringBxxxx delete(int start, int end); // delete a portion\n StringBxxxx insert(int offset, any primitive or a char []); // insert something\n StringBxxxx replace(int start, int end, String 5); // replace this part with this String\n StringBxxxx reverse(); \n // reverse the 58 from front to back\n void setCharAt(int index, char ch); // replace a given character\nNote: StringBxxxx refers to either StringBuffer or StringBuilder, as appropriate.\nString and StringBuffer",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "appendix 8 Top Ten Reference\nyou are here\n669\n#3 String and StringBuffer/StringBuilder Methods\nTwo of the most commonly used classes in the Java API are String and StringBuffer (remember from \n#9 a few pages back, Strings are immutable, 50 a StringBuffer/StringBuilder can be a lot more efficient \nif you’re manipulating a String). As of Java 5.0 you should use the StringBuilder class instead of \nStringBuffer, unless your String manipulations need to be thread-safe, which is not common. Here’5 a \nbrief overview of the key methods in these classes:\nBoth String and StringBuffer/StringBuilder classes have:\n char charAt(int index); // what char is at a certain position\n int length(); // how long is this\n String substring(int start, int end); // get a part of this \n String toString(); // what’5 the String value of this\nTo concatenate Strings:\n String concat(string); // for the String class\n String append(String); // for StringBuffer & StringBuilder\nThe String class has:\n String replace(char old, char new); // replace all occurences of a char \n String substring(int begin, int end); // get a portion of a String\n char [] toCharArray(); // convert to an array of chars\n String toLowerCase(); // convert all characters to lower case\n String toUpperCase(); // convert all characters to upper case\n String trim(); // remove whitespace from the ends\n String valueOf(char []) // make a String out of a char array\n String valueOf(int i) // make a String out of a primitive \n \n \n \n // other primitives are supported as well\nThe StringBuffer & StringBuilder classes have:\n StringBxxxx delete(int start, int end); // delete a portion\n StringBxxxx insert(int offset, any primitive or a char []); // insert something\n StringBxxxx replace(int start, int end, String 5); // replace this part with this String\n StringBxxxx reverse(); \n // reverse the 58 from front to back\n void setCharAt(int index, char ch); // replace a given character\nNote: StringBxxxx refers to either StringBuffer or StringBuilder, as appropriate.\nString and StringBuffer",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 703,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 703,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2601 chars",
+      "severity": "info"
+    },
+    {
+      "page": 703,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 589,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n555\nFor each of the questions below, fill in the blank \nwith one of the words from the “possible answers” \nlist, to correctly answer the question. Answers are \nat the end of the chapter.\nGiven the following compilable statement: \n \nCollections.sort(myArrayList);\n1. What must the class of the objects stored in myArrayList implement? ________________\n2. What method must the class of the objects stored in myArrayList implement? ________________\n3. Can the class of the objects stored in myArrayList implement both \n Comparator AND Comparable? ________________\nGiven the following compilable statement: \n \nCollections.sort(myArrayList, myCompare);\n4. Can the class of the objects stored in myArrayList implement Comparable? ________________\n5. Can the class of the objects stored in myArrayList implement Comparator? ________________\n6. Must the class of the objects stored in myArrayList implement Comparable? ________________\n7. Must the class of the objects stored in myArrayList implement Comparator? ________________\n8. What must the class of the myCompare object implement? ________________ \n9. What method must the class of the myCompare object implement? __________________\nPossible Answers:\nComparator,\nComparable,\ncompareTo( ),\ncompare( ),\nyes,\nno\nFill-in-the-blanks\nSharpen your pencil",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n555\nFor each of the questions below, fill in the blank \nwith one of the words from the “possible answers” \nlist, to correctly answer the question. Answers are \nat the end of the chapter.\nGiven the following compilable statement: \n \nCollections.sort(myArrayList);\n1. What must the class of the objects stored in myArrayList implement? ________________\n2. What method must the class of the objects stored in myArrayList implement? ________________\n3. Can the class of the objects stored in myArrayList implement both \n Comparator AND Comparable? ________________\nGiven the following compilable statement: \n \nCollections.sort(myArrayList, myCompare);\n4. Can the class of the objects stored in myArrayList implement Comparable? ________________\n5. Can the class of the objects stored in myArrayList implement Comparator? ________________\n6. Must the class of the objects stored in myArrayList implement Comparable? ________________\n7. Must the class of the objects stored in myArrayList implement Comparator? ________________\n8. What must the class of the myCompare object implement? ________________ \n9. What method must the class of the myCompare object implement? __________________\nPossible Answers:\nComparator,\nComparable,\ncompareTo( ),\ncompare( ),\nyes,\nno\nFill-in-the-blanks\nSharpen your pencil",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 589,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 589,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1503 chars",
+      "severity": "info"
+    },
+    {
+      "page": 589,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

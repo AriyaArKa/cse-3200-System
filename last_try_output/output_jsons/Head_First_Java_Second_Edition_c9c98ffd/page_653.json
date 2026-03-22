@@ -1,0 +1,67 @@
+{
+  "page_number": 653,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n619\nComplete code for the server side\nServer \nimport java.rmi.*;\nimport java.rmi.server.*;\npublic class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {\n \n public String sayHello() {\n return “Server says, ‘Hey’”;\n }\n public MyRemoteImpl() throws RemoteException { }\n public static void main (String[] args) {\n try {\n MyRemote service = new MyRemoteImpl();\n Naming.rebind(“Remote Hello”, service);\n } catch(Exception ex) {\n ex.printStackTrace();\n }\n }\n}\nimport java.rmi.*;\npublic interface MyRemote extends Remote {\n public String sayHello() throws RemoteException;\n}\nRemoteException and Remote \ninterface are in java.rmi package\nYour interface MUST extend \njava.rmi.Remote\nAll of your remote methods must \ndeclare a RemoteException\nUnicastRemoteObject is in the \njava.rmi.server package\nThe Remote interface:\nThe Remote service (the implementation):\nextending UnicastRemoteObject is the \neasiest way to make a remote object\nyou MUST implement your \nremote interface!! \nYou have to implement all the \ninterface methods, of course. But \nnotice that you do NOT have to \ndeclare the RemoteException.\nyour superclass constructor (for \nUnicastRemoteObject) declares an exception, 50 \nYOU must write a constructor, because it means \nthat your constructor is calling risky code (its \nsuper constructor)\nMake the remote object, then ‘bind’ it to the \nrmiregistry using the static Naming,rebind(). The \nname you register it under is the name clients will \nneed to look it up in the rmi registry.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (50x105)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n619\nComplete code for the server side\nServer \nimport java.rmi.*;\nimport java.rmi.server.*;\npublic class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {\n \n public String sayHello() {\n return “Server says, ‘Hey’”;\n }\n public MyRemoteImpl() throws RemoteException { }\n public static void main (String[] args) {\n try {\n MyRemote service = new MyRemoteImpl();\n Naming.rebind(“Remote Hello”, service);\n } catch(Exception ex) {\n ex.printStackTrace();\n }\n }\n}\nimport java.rmi.*;\npublic interface MyRemote extends Remote {\n public String sayHello() throws RemoteException;\n}\nRemoteException and Remote \ninterface are in java.rmi package\nYour interface MUST extend \njava.rmi.Remote\nAll of your remote methods must \ndeclare a RemoteException\nUnicastRemoteObject is in the \njava.rmi.server package\nThe Remote interface:\nThe Remote service (the implementation):\nextending UnicastRemoteObject is the \neasiest way to make a remote object\nyou MUST implement your \nremote interface!! \nYou have to implement all the \ninterface methods, of course. But \nnotice that you do NOT have to \ndeclare the RemoteException.\nyour superclass constructor (for \nUnicastRemoteObject) declares an exception, 50 \nYOU must write a constructor, because it means \nthat your constructor is calling risky code (its \nsuper constructor)\nMake the remote object, then ‘bind’ it to the \nrmiregistry using the static Naming,rebind(). The \nname you register it under is the name clients will \nneed to look it up in the rmi registry.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 653,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 653,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1611 chars",
+      "severity": "info"
+    },
+    {
+      "page": 653,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 653,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

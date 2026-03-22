@@ -1,0 +1,81 @@
+{
+  "page_number": 245,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "interfaces and polymorphism\nyou are here\n211\nBefore you run off and start using type Object for all your ultra-flexible argument and return \ntypes, you need to consider a little issue of using type Object as a reference. And keep in mind \nthat we’re not talking about making instances of type Object; we’re talking about making \ninstances of some other type, but using a reference of type Object.\nWhen you put an object into an ArrayList<Dog>, it goes in as a Dog, and comes out as a Dog:\nArrayList<Dog> myDogArrayList = new ArrayList<Dog>();\nDog aDog = new Dog();\nmyDogArrayList.add(aDog);\nDog d = myDogArrayList.get(0);\nBut what happens when you declare it as ArrayList<Object>? If you want to make an ArrayList \nthat will literally take any kind of Object, you declare it like this:\nArrayList<Object> myDogArrayList = new ArrayList<Object>();\nDog aDog = new Dog();\nmyDogArrayList.add(aDog);\nBut what happens when you try to get the Dog object and assign it to a Dog reference?\nDog d = myDogArrayList.get(0);\nEverything comes out of an ArrayList<Object> as a reference of type Object, regardless of what the \nactual object is, or what the reference type was when you added the object to the list.\nUsing polymorphic references of type Object has a price...\nObjects come out of \nan ArrayList<Object> \nacting like they’re \ngeneric instances \nof class Object. The \nCompiler cannot \nassume the object \nthat comes out is of \nany type other than \nObject.\nArrayList<Object>\nThe objects go IN \nas SoccerBall, \nFish, Guitar, and \nCar.\nObject\nObject\nObject\nObject\nMake an ArrayList declared \nto hold Dog objects.\nMake a Dog.\nAdd the Dog to the list.\nAssign the Dog from the list to a new Dog reference variable. \n(Think of it as though the get() method declares a Dog return \ntype because you used ArrayList<Dog>.)\nMake an ArrayList declared \nto hold any type of Object.\nMake a Dog.\nAdd the Dog to the list.\n(These two steps are the same.)\nNO!! Won’t compile!! When you use ArrayList<Object>, the get() method \nreturns type Object. The Compiler knows only that the object inherits from \nObject (somewhere in its inheritance tree) but it doesn’t know it’5 a Dog!!\nBut they come \nOUT as though \nthey were of type \nObject.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (162x112)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (155x97)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (134x194)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (155x123)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "interfaces and polymorphism\nyou are here\n211\nBefore you run off and start using type Object for all your ultra-flexible argument and return \ntypes, you need to consider a little issue of using type Object as a reference. And keep in mind \nthat we’re not talking about making instances of type Object; we’re talking about making \ninstances of some other type, but using a reference of type Object.\nWhen you put an object into an ArrayList<Dog>, it goes in as a Dog, and comes out as a Dog:\nArrayList<Dog> myDogArrayList = new ArrayList<Dog>();\nDog aDog = new Dog();\nmyDogArrayList.add(aDog);\nDog d = myDogArrayList.get(0);\nBut what happens when you declare it as ArrayList<Object>? If you want to make an ArrayList \nthat will literally take any kind of Object, you declare it like this:\nArrayList<Object> myDogArrayList = new ArrayList<Object>();\nDog aDog = new Dog();\nmyDogArrayList.add(aDog);\nBut what happens when you try to get the Dog object and assign it to a Dog reference?\nDog d = myDogArrayList.get(0);\nEverything comes out of an ArrayList<Object> as a reference of type Object, regardless of what the \nactual object is, or what the reference type was when you added the object to the list.\nUsing polymorphic references of type Object has a price...\nObjects come out of \nan ArrayList<Object> \nacting like they’re \ngeneric instances \nof class Object. The \nCompiler cannot \nassume the object \nthat comes out is of \nany type other than \nObject.\nArrayList<Object>\nThe objects go IN \nas SoccerBall, \nFish, Guitar, and \nCar.\nObject\nObject\nObject\nObject\nMake an ArrayList declared \nto hold Dog objects.\nMake a Dog.\nAdd the Dog to the list.\nAssign the Dog from the list to a new Dog reference variable. \n(Think of it as though the get() method declares a Dog return \ntype because you used ArrayList<Dog>.)\nMake an ArrayList declared \nto hold any type of Object.\nMake a Dog.\nAdd the Dog to the list.\n(These two steps are the same.)\nNO!! Won’t compile!! When you use ArrayList<Object>, the get() method \nreturns type Object. The Compiler knows only that the object inherits from \nObject (somewhere in its inheritance tree) but it doesn’t know it’5 a Dog!!\nBut they come \nOUT as though \nthey were of type \nObject.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 245,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 245,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2213 chars",
+      "severity": "info"
+    },
+    {
+      "page": 245,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 245,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

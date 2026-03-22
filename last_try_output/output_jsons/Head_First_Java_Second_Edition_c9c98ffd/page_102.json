@@ -1,0 +1,2098 @@
+{
+  "page_number": 102,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.7976,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "exercise solutions",
+      "confidence": 0.8505,
+      "bbox": [
+        110,
+        64,
+        334,
+        90
+      ]
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "en",
+      "text": "class",
+      "confidence": 0.6868,
+      "bbox": [
+        767,
+        137,
+        825,
+        157
+      ]
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Books",
+      "confidence": 0.9811,
+      "bbox": [
+        833,
+        137,
+        893,
+        157
+      ]
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Exercise Solutions",
+      "confidence": 0.4504,
+      "bbox": [
+        213,
+        137,
+        479,
+        181
+      ]
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String title;",
+      "confidence": 0.4718,
+      "bbox": [
+        787,
+        164,
+        934,
+        192
+      ]
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String author ;",
+      "confidence": 0.4895,
+      "bbox": [
+        787,
+        194,
+        946,
+        224
+      ]
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "en",
+      "text": "class Books-estDrive",
+      "confidence": 0.7095,
+      "bbox": [
+        765,
+        258,
+        992,
+        285
+      ]
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "en",
+      "text": "public static void main String",
+      "confidence": 0.5702,
+      "bbox": [
+        785,
+        287,
+        1126,
+        316
+      ]
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[]",
+      "confidence": 1.0,
+      "bbox": [
+        1132,
+        290,
+        1156,
+        314
+      ]
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "en",
+      "text": "args",
+      "confidence": 0.9749,
+      "bbox": [
+        1164,
+        292,
+        1222,
+        316
+      ]
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Books",
+      "confidence": 0.956,
+      "bbox": [
+        810,
+        320,
+        870,
+        344
+      ]
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[]",
+      "confidence": 0.9992,
+      "bbox": [
+        879,
+        323,
+        899,
+        345
+      ]
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "en",
+      "text": "rriFBooks",
+      "confidence": 0.2704,
+      "bbox": [
+        908,
+        322,
+        992,
+        346
+      ]
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "en",
+      "text": "new Books [3]",
+      "confidence": 0.5953,
+      "bbox": [
+        1018,
+        320,
+        1158,
+        346
+      ]
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "en",
+      "text": "int",
+      "confidence": 0.9327,
+      "bbox": [
+        811,
+        353,
+        847,
+        373
+      ]
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "en",
+      "text": "0;",
+      "confidence": 0.1636,
+      "bbox": [
+        901,
+        355,
+        923,
+        375
+      ]
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"yBooks[0]",
+      "confidence": 0.4271,
+      "bbox": [
+        814,
+        380,
+        922,
+        412
+      ]
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "en",
+      "text": "new Books );",
+      "confidence": 0.731,
+      "bbox": [
+        940,
+        380,
+        1060,
+        410
+      ]
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Remember:",
+      "confidence": 0.873,
+      "bbox": [
+        1084,
+        380,
+        1188,
+        406
+      ]
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Ale hqve 10",
+      "confidence": 0.2386,
+      "bbox": [
+        1200,
+        380,
+        1310,
+        406
+      ]
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "en",
+      "text": "code Magnets:",
+      "confidence": 0.7193,
+      "bbox": [
+        115,
+        412,
+        327,
+        457
+      ]
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"/Books[1]",
+      "confidence": 0.23,
+      "bbox": [
+        814,
+        410,
+        922,
+        442
+      ]
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "en",
+      "text": "new Books )",
+      "confidence": 0.7947,
+      "bbox": [
+        940,
+        410,
+        1060,
+        442
+      ]
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ochualy mzke The Books",
+      "confidence": 0.186,
+      "bbox": [
+        1084,
+        412,
+        1308,
+        440
+      ]
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"yBooks[2]",
+      "confidence": 0.5234,
+      "bbox": [
+        814,
+        442,
+        922,
+        474
+      ]
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "en",
+      "text": "new Books );",
+      "confidence": 0.731,
+      "bbox": [
+        940,
+        442,
+        1060,
+        472
+      ]
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "en",
+      "text": "biects",
+      "confidence": 0.6812,
+      "bbox": [
+        1084,
+        442,
+        1158,
+        474
+      ]
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "en",
+      "text": "cLass TestArrays",
+      "confidence": 0.453,
+      "bbox": [
+        113,
+        480,
+        334,
+        508
+      ]
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ni_yBooks [0] . title",
+      "confidence": 0.2561,
+      "bbox": [
+        807,
+        472,
+        994,
+        500
+      ]
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The Grapes of",
+      "confidence": 0.7634,
+      "bbox": [
+        1030,
+        474,
+        1180,
+        501
+      ]
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "JTa'a",
+      "confidence": 0.164,
+      "bbox": [
+        1187,
+        477,
+        1235,
+        497
+      ]
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "en",
+      "text": "n Books [1] . title",
+      "confidence": 0.6504,
+      "bbox": [
+        808,
+        503,
+        994,
+        530
+      ]
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"The Tava Catsbij\"",
+      "confidence": 0.3215,
+      "bbox": [
+        1022,
+        505,
+        1212,
+        532
+      ]
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "en",
+      "text": "public",
+      "confidence": 0.8738,
+      "bbox": [
+        138,
+        513,
+        228,
+        544
+      ]
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "en",
+      "text": "sazic",
+      "confidence": 0.3244,
+      "bbox": [
+        236,
+        518,
+        322,
+        542
+      ]
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "en",
+      "text": "vo1d",
+      "confidence": 0.6126,
+      "bbox": [
+        330,
+        516,
+        390,
+        542
+      ]
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "en",
+      "text": "rain | String",
+      "confidence": 0.3638,
+      "bbox": [
+        396,
+        516,
+        552,
+        544
+      ]
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[]",
+      "confidence": 0.9991,
+      "bbox": [
+        562,
+        518,
+        588,
+        542
+      ]
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "en",
+      "text": "args)",
+      "confidence": 0.9238,
+      "bbox": [
+        600,
+        520,
+        668,
+        544
+      ]
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ni_Books [2] . citle",
+      "confidence": 0.3787,
+      "bbox": [
+        808,
+        536,
+        994,
+        562
+      ]
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The Java Cookbook\"",
+      "confidence": 0.5695,
+      "bbox": [
+        1030,
+        536,
+        1234,
+        560
+      ]
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "en",
+      "text": "in",
+      "confidence": 0.9951,
+      "bbox": [
+        168,
+        552,
+        212,
+        576
+      ]
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[ ]",
+      "confidence": 0.6279,
+      "bbox": [
+        224,
+        554,
+        250,
+        578
+      ]
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "en",
+      "text": "_ndex",
+      "confidence": 0.6609,
+      "bbox": [
+        262,
+        552,
+        336,
+        576
+      ]
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1e'",
+      "confidence": 0.3064,
+      "bbox": [
+        371,
+        559,
+        415,
+        575
+      ]
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "en",
+      "text": "_nt [ 4 ] ;",
+      "confidence": 0.425,
+      "bbox": [
+        424,
+        552,
+        520,
+        578
+      ]
+    },
+    {
+      "block_id": 47,
+      "type": "paragraph",
+      "language": "en",
+      "text": "mi_Books [0]",
+      "confidence": 0.1702,
+      "bbox": [
+        807,
+        566,
+        924,
+        592
+      ]
+    },
+    {
+      "block_id": 48,
+      "type": "paragraph",
+      "language": "en",
+      "text": "auichor",
+      "confidence": 0.1744,
+      "bbox": [
+        933,
+        569,
+        1003,
+        589
+      ]
+    },
+    {
+      "block_id": 49,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\")0b\"",
+      "confidence": 0.1549,
+      "bbox": [
+        1033,
+        569,
+        1089,
+        589
+      ]
+    },
+    {
+      "block_id": 50,
+      "type": "paragraph",
+      "language": "en",
+      "text": "index [ 0]",
+      "confidence": 0.8962,
+      "bbox": [
+        168,
+        588,
+        278,
+        614
+      ]
+    },
+    {
+      "block_id": 51,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1;",
+      "confidence": 0.9923,
+      "bbox": [
+        317,
+        591,
+        345,
+        611
+      ]
+    },
+    {
+      "block_id": 52,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ni_yBooks [1] .auchor",
+      "confidence": 0.2353,
+      "bbox": [
+        807,
+        596,
+        1004,
+        624
+      ]
+    },
+    {
+      "block_id": 53,
+      "type": "paragraph",
+      "language": "en",
+      "text": "siuie \"",
+      "confidence": 0.4038,
+      "bbox": [
+        1043,
+        601,
+        1089,
+        621
+      ]
+    },
+    {
+      "block_id": 54,
+      "type": "paragraph",
+      "language": "en",
+      "text": "index [1]",
+      "confidence": 0.7421,
+      "bbox": [
+        168,
+        624,
+        278,
+        650
+      ]
+    },
+    {
+      "block_id": 55,
+      "type": "paragraph",
+      "language": "en",
+      "text": "3",
+      "confidence": 1.0,
+      "bbox": [
+        317,
+        625,
+        335,
+        647
+      ]
+    },
+    {
+      "block_id": 56,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ny_ Books [2]",
+      "confidence": 0.1875,
+      "bbox": [
+        808,
+        630,
+        924,
+        654
+      ]
+    },
+    {
+      "block_id": 57,
+      "type": "paragraph",
+      "language": "en",
+      "text": "auizhoi",
+      "confidence": 0.3424,
+      "bbox": [
+        931,
+        631,
+        1003,
+        651
+      ]
+    },
+    {
+      "block_id": 58,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"1a1\"",
+      "confidence": 0.4229,
+      "bbox": [
+        1035,
+        633,
+        1091,
+        651
+      ]
+    },
+    {
+      "block_id": 59,
+      "type": "paragraph",
+      "language": "en",
+      "text": "index [2 ]",
+      "confidence": 0.5308,
+      "bbox": [
+        168,
+        660,
+        276,
+        686
+      ]
+    },
+    {
+      "block_id": 60,
+      "type": "paragraph",
+      "language": "en",
+      "text": "0",
+      "confidence": 0.5096,
+      "bbox": [
+        317,
+        661,
+        335,
+        683
+      ]
+    },
+    {
+      "block_id": 61,
+      "type": "paragraph",
+      "language": "en",
+      "text": "hile",
+      "confidence": 0.8973,
+      "bbox": [
+        808,
+        660,
+        872,
+        684
+      ]
+    },
+    {
+      "block_id": 62,
+      "type": "paragraph",
+      "language": "en",
+      "text": "'Y",
+      "confidence": 0.4003,
+      "bbox": [
+        879,
+        663,
+        905,
+        683
+      ]
+    },
+    {
+      "block_id": 63,
+      "type": "paragraph",
+      "language": "en",
+      "text": "3 '",
+      "confidence": 0.3525,
+      "bbox": [
+        932,
+        660,
+        956,
+        684
+      ]
+    },
+    {
+      "block_id": 64,
+      "type": "paragraph",
+      "language": "en",
+      "text": "index [ 3 ]",
+      "confidence": 0.6466,
+      "bbox": [
+        168,
+        696,
+        278,
+        722
+      ]
+    },
+    {
+      "block_id": 65,
+      "type": "paragraph",
+      "language": "en",
+      "text": "S_sten . out . print |ni_Books [x]",
+      "confidence": 0.1199,
+      "bbox": [
+        832,
+        690,
+        1134,
+        716
+      ]
+    },
+    {
+      "block_id": 66,
+      "type": "paragraph",
+      "language": "en",
+      "text": "titlel",
+      "confidence": 0.9469,
+      "bbox": [
+        1140,
+        690,
+        1212,
+        714
+      ]
+    },
+    {
+      "block_id": 67,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String",
+      "confidence": 0.7283,
+      "bbox": [
+        168,
+        731,
+        255,
+        758
+      ]
+    },
+    {
+      "block_id": 68,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[ ]",
+      "confidence": 0.9045,
+      "bbox": [
+        266,
+        732,
+        290,
+        758
+      ]
+    },
+    {
+      "block_id": 69,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Ls1ands",
+      "confidence": 0.7361,
+      "bbox": [
+        302,
+        732,
+        402,
+        756
+      ]
+    },
+    {
+      "block_id": 70,
+      "type": "paragraph",
+      "language": "en",
+      "text": "11e'1",
+      "confidence": 0.3967,
+      "bbox": [
+        437,
+        737,
+        483,
+        755
+      ]
+    },
+    {
+      "block_id": 71,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Stri_ng [ 4 ] ;",
+      "confidence": 0.6388,
+      "bbox": [
+        491,
+        730,
+        628,
+        758
+      ]
+    },
+    {
+      "block_id": 72,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Srster . out print",
+      "confidence": 0.1032,
+      "bbox": [
+        832,
+        722,
+        1014,
+        748
+      ]
+    },
+    {
+      "block_id": 73,
+      "type": "paragraph",
+      "language": "en",
+      "text": "b]",
+      "confidence": 0.3229,
+      "bbox": [
+        1040,
+        724,
+        1070,
+        748
+      ]
+    },
+    {
+      "block_id": 74,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\" /",
+      "confidence": 0.0806,
+      "bbox": [
+        1079,
+        725,
+        1103,
+        745
+      ]
+    },
+    {
+      "block_id": 75,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Sisten . out . printIn myBooks [x] . author )",
+      "confidence": 0.2751,
+      "bbox": [
+        832,
+        750,
+        1246,
+        778
+      ]
+    },
+    {
+      "block_id": 76,
+      "type": "paragraph",
+      "language": "en",
+      "text": "islands [ 0]",
+      "confidence": 0.5034,
+      "bbox": [
+        167,
+        765,
+        304,
+        793
+      ]
+    },
+    {
+      "block_id": 77,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Berriida \"",
+      "confidence": 0.4522,
+      "bbox": [
+        356,
+        768,
+        468,
+        792
+      ]
+    },
+    {
+      "block_id": 78,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1;",
+      "confidence": 0.9534,
+      "bbox": [
+        920,
+        784,
+        946,
+        808
+      ]
+    },
+    {
+      "block_id": 79,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Lslands [1]",
+      "confidence": 0.3766,
+      "bbox": [
+        168,
+        802,
+        304,
+        828
+      ]
+    },
+    {
+      "block_id": 80,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"F'_]1\"",
+      "confidence": 0.5319,
+      "bbox": [
+        344,
+        802,
+        432,
+        830
+      ]
+    },
+    {
+      "block_id": 81,
+      "type": "paragraph",
+      "language": "en",
+      "text": "islands [ 2]",
+      "confidence": 0.5348,
+      "bbox": [
+        167,
+        837,
+        304,
+        865
+      ]
+    },
+    {
+      "block_id": 82,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Azores",
+      "confidence": 0.9601,
+      "bbox": [
+        355,
+        839,
+        444,
+        865
+      ]
+    },
+    {
+      "block_id": 83,
+      "type": "paragraph",
+      "language": "en",
+      "text": "islands [ 3]",
+      "confidence": 0.5342,
+      "bbox": [
+        167,
+        873,
+        304,
+        901
+      ]
+    },
+    {
+      "block_id": 84,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"Cozurel -",
+      "confidence": 0.6567,
+      "bbox": [
+        344,
+        876,
+        458,
+        900
+      ]
+    },
+    {
+      "block_id": 85,
+      "type": "paragraph",
+      "language": "en",
+      "text": "in",
+      "confidence": 0.9968,
+      "bbox": [
+        168,
+        910,
+        212,
+        934
+      ]
+    },
+    {
+      "block_id": 86,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1]",
+      "confidence": 0.3679,
+      "bbox": [
+        221,
+        917,
+        243,
+        937
+      ]
+    },
+    {
+      "block_id": 87,
+      "type": "paragraph",
+      "language": "en",
+      "text": "0 ;",
+      "confidence": 0.5365,
+      "bbox": [
+        276,
+        912,
+        304,
+        936
+      ]
+    },
+    {
+      "block_id": 88,
+      "type": "paragraph",
+      "language": "en",
+      "text": "class",
+      "confidence": 0.6191,
+      "bbox": [
+        761,
+        937,
+        819,
+        957
+      ]
+    },
+    {
+      "block_id": 89,
+      "type": "paragraph",
+      "language": "en",
+      "text": "HobbiLs",
+      "confidence": 0.6226,
+      "bbox": [
+        827,
+        937,
+        909,
+        957
+      ]
+    },
+    {
+      "block_id": 90,
+      "type": "paragraph",
+      "language": "en",
+      "text": "i11",
+      "confidence": 0.8854,
+      "bbox": [
+        169,
+        949,
+        211,
+        969
+      ]
+    },
+    {
+      "block_id": 91,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ref;",
+      "confidence": 0.9856,
+      "bbox": [
+        222,
+        948,
+        278,
+        972
+      ]
+    },
+    {
+      "block_id": 92,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String",
+      "confidence": 0.9615,
+      "bbox": [
+        781,
+        964,
+        854,
+        992
+      ]
+    },
+    {
+      "block_id": 93,
+      "type": "paragraph",
+      "language": "en",
+      "text": "naire ;",
+      "confidence": 0.4402,
+      "bbox": [
+        861,
+        973,
+        917,
+        989
+      ]
+    },
+    {
+      "block_id": 94,
+      "type": "paragraph",
+      "language": "en",
+      "text": "'111_e",
+      "confidence": 0.5928,
+      "bbox": [
+        167,
+        985,
+        239,
+        1005
+      ]
+    },
+    {
+      "block_id": 95,
+      "type": "paragraph",
+      "language": "en",
+      "text": "(1",
+      "confidence": 0.5506,
+      "bbox": [
+        252,
+        984,
+        282,
+        1010
+      ]
+    },
+    {
+      "block_id": 96,
+      "type": "paragraph",
+      "language": "en",
+      "text": "4 '!",
+      "confidence": 0.189,
+      "bbox": [
+        317,
+        985,
+        345,
+        1005
+      ]
+    },
+    {
+      "block_id": 97,
+      "type": "paragraph",
+      "language": "en",
+      "text": "public scatic void main ( String",
+      "confidence": 0.5294,
+      "bbox": [
+        778,
+        993,
+        1120,
+        1024
+      ]
+    },
+    {
+      "block_id": 98,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[] args'",
+      "confidence": 0.4802,
+      "bbox": [
+        1126,
+        997,
+        1216,
+        1025
+      ]
+    },
+    {
+      "block_id": 99,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ref",
+      "confidence": 0.9863,
+      "bbox": [
+        194,
+        1018,
+        240,
+        1042
+      ]
+    },
+    {
+      "block_id": 100,
+      "type": "paragraph",
+      "language": "en",
+      "text": "index [1]",
+      "confidence": 0.3119,
+      "bbox": [
+        276,
+        1018,
+        388,
+        1044
+      ]
+    },
+    {
+      "block_id": 101,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Hobbits",
+      "confidence": 0.9382,
+      "bbox": [
+        804,
+        1028,
+        888,
+        1052
+      ]
+    },
+    {
+      "block_id": 102,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[]",
+      "confidence": 0.9661,
+      "bbox": [
+        895,
+        1031,
+        915,
+        1053
+      ]
+    },
+    {
+      "block_id": 103,
+      "type": "paragraph",
+      "language": "en",
+      "text": "new Hobbizs [3]",
+      "confidence": 0.6731,
+      "bbox": [
+        970,
+        1028,
+        1130,
+        1052
+      ]
+    },
+    {
+      "block_id": 104,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Srsten out . print ( \"island",
+      "confidence": 0.3495,
+      "bbox": [
+        196,
+        1052,
+        524,
+        1080
+      ]
+    },
+    {
+      "block_id": 105,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inf z = -1;",
+      "confidence": 0.472,
+      "bbox": [
+        806,
+        1057,
+        912,
+        1084
+      ]
+    },
+    {
+      "block_id": 106,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Remenber:",
+      "confidence": 0.5058,
+      "bbox": [
+        978,
+        1058,
+        1084,
+        1084
+      ]
+    },
+    {
+      "block_id": 107,
+      "type": "paragraph",
+      "language": "en",
+      "text": "arrays start with",
+      "confidence": 0.407,
+      "bbox": [
+        1094,
+        1058,
+        1256,
+        1086
+      ]
+    },
+    {
+      "block_id": 108,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Srster _",
+      "confidence": 0.4645,
+      "bbox": [
+        196,
+        1092,
+        284,
+        1116
+      ]
+    },
+    {
+      "block_id": 109,
+      "type": "paragraph",
+      "language": "en",
+      "text": "out . printIn ( Ls_ands [ref] ) ;",
+      "confidence": 0.3756,
+      "bbox": [
+        290,
+        1088,
+        642,
+        1116
+      ]
+    },
+    {
+      "block_id": 110,
+      "type": "paragraph",
+      "language": "en",
+      "text": "While {",
+      "confidence": 0.4525,
+      "bbox": [
+        808,
+        1088,
+        884,
+        1116
+      ]
+    },
+    {
+      "block_id": 111,
+      "type": "paragraph",
+      "language": "en",
+      "text": "2) {",
+      "confidence": 0.6927,
+      "bbox": [
+        902,
+        1088,
+        944,
+        1118
+      ]
+    },
+    {
+      "block_id": 112,
+      "type": "paragraph",
+      "language": "en",
+      "text": "elemenT 0 !",
+      "confidence": 0.498,
+      "bbox": [
+        976,
+        1088,
+        1082,
+        1114
+      ]
+    },
+    {
+      "block_id": 113,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1",
+      "confidence": 0.9357,
+      "bbox": [
+        246,
+        1130,
+        272,
+        1154
+      ]
+    },
+    {
+      "block_id": 114,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1 ;",
+      "confidence": 0.7727,
+      "bbox": [
+        302,
+        1126,
+        332,
+        1150
+      ]
+    },
+    {
+      "block_id": 115,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1;",
+      "confidence": 0.9516,
+      "bbox": [
+        915,
+        1123,
+        939,
+        1143
+      ]
+    },
+    {
+      "block_id": 116,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1 [7]",
+      "confidence": 0.3261,
+      "bbox": [
+        824,
+        1152,
+        874,
+        1176
+      ]
+    },
+    {
+      "block_id": 117,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ne\"i",
+      "confidence": 0.7808,
+      "bbox": [
+        905,
+        1157,
+        943,
+        1173
+      ]
+    },
+    {
+      "block_id": 118,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Hobbits ( |",
+      "confidence": 0.4358,
+      "bbox": [
+        947,
+        1148,
+        1052,
+        1176
+      ]
+    },
+    {
+      "block_id": 119,
+      "type": "paragraph",
+      "language": "en",
+      "text": "8",
+      "confidence": 0.6791,
+      "bbox": [
+        751,
+        1191,
+        771,
+        1215
+      ]
+    },
+    {
+      "block_id": 120,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1 [ z]",
+      "confidence": 0.1963,
+      "bbox": [
+        824,
+        1182,
+        874,
+        1208
+      ]
+    },
+    {
+      "block_id": 121,
+      "type": "paragraph",
+      "language": "en",
+      "text": "naie",
+      "confidence": 0.7306,
+      "bbox": [
+        881,
+        1187,
+        931,
+        1205
+      ]
+    },
+    {
+      "block_id": 122,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\"bilbo\"",
+      "confidence": 0.847,
+      "bbox": [
+        960,
+        1182,
+        1042,
+        1206
+      ]
+    },
+    {
+      "block_id": 123,
+      "type": "paragraph",
+      "language": "en",
+      "text": "L5",
+      "confidence": 0.3127,
+      "bbox": [
+        827,
+        1215,
+        853,
+        1235
+      ]
+    },
+    {
+      "block_id": 124,
+      "type": "paragraph",
+      "language": "en",
+      "text": "' 2",
+      "confidence": 0.2176,
+      "bbox": [
+        860,
+        1214,
+        888,
+        1238
+      ]
+    },
+    {
+      "block_id": 125,
+      "type": "paragraph",
+      "language": "en",
+      "text": "",
+      "confidence": 0.0,
+      "bbox": [
+        895,
+        1221,
+        919,
+        1233
+      ]
+    },
+    {
+      "block_id": 126,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1'",
+      "confidence": 0.3666,
+      "bbox": [
+        926,
+        1214,
+        950,
+        1238
+      ]
+    },
+    {
+      "block_id": 127,
+      "type": "paragraph",
+      "language": "en",
+      "text": "File Edit windun Help Bikini",
+      "confidence": 0.2406,
+      "bbox": [
+        205,
+        1243,
+        357,
+        1263
+      ]
+    },
+    {
+      "block_id": 128,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1 [ z]",
+      "confidence": 0.3565,
+      "bbox": [
+        848,
+        1244,
+        896,
+        1270
+      ]
+    },
+    {
+      "block_id": 129,
+      "type": "paragraph",
+      "language": "en",
+      "text": "naine",
+      "confidence": 0.6901,
+      "bbox": [
+        903,
+        1247,
+        953,
+        1267
+      ]
+    },
+    {
+      "block_id": 130,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Erodo\"",
+      "confidence": 0.4721,
+      "bbox": [
+        992,
+        1244,
+        1064,
+        1268
+      ]
+    },
+    {
+      "block_id": 131,
+      "type": "paragraph",
+      "language": "en",
+      "text": "; java TestArrays",
+      "confidence": 0.5719,
+      "bbox": [
+        204,
+        1281,
+        394,
+        1314
+      ]
+    },
+    {
+      "block_id": 132,
+      "type": "paragraph",
+      "language": "en",
+      "text": "island",
+      "confidence": 0.9982,
+      "bbox": [
+        202,
+        1312,
+        274,
+        1338
+      ]
+    },
+    {
+      "block_id": 133,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[1]1",
+      "confidence": 0.1126,
+      "bbox": [
+        300,
+        1312,
+        352,
+        1344
+      ]
+    },
+    {
+      "block_id": 134,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1{",
+      "confidence": 0.1969,
+      "bbox": [
+        826,
+        1306,
+        854,
+        1330
+      ]
+    },
+    {
+      "block_id": 135,
+      "type": "paragraph",
+      "language": "en",
+      "text": "'2",
+      "confidence": 0.1025,
+      "bbox": [
+        863,
+        1309,
+        887,
+        1329
+      ]
+    },
+    {
+      "block_id": 136,
+      "type": "paragraph",
+      "language": "en",
+      "text": "",
+      "confidence": 0.0,
+      "bbox": [
+        895,
+        1313,
+        919,
+        1327
+      ]
+    },
+    {
+      "block_id": 137,
+      "type": "paragraph",
+      "language": "en",
+      "text": "2 '",
+      "confidence": 0.6334,
+      "bbox": [
+        926,
+        1306,
+        950,
+        1330
+      ]
+    },
+    {
+      "block_id": 138,
+      "type": "paragraph",
+      "language": "en",
+      "text": "island",
+      "confidence": 0.9992,
+      "bbox": [
+        202,
+        1342,
+        274,
+        1368
+      ]
+    },
+    {
+      "block_id": 139,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Cozuiel",
+      "confidence": 0.803,
+      "bbox": [
+        300,
+        1342,
+        382,
+        1368
+      ]
+    },
+    {
+      "block_id": 140,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1 [ z]",
+      "confidence": 0.2697,
+      "bbox": [
+        846,
+        1336,
+        896,
+        1362
+      ]
+    },
+    {
+      "block_id": 141,
+      "type": "paragraph",
+      "language": "en",
+      "text": "naine",
+      "confidence": 0.6901,
+      "bbox": [
+        903,
+        1339,
+        953,
+        1359
+      ]
+    },
+    {
+      "block_id": 142,
+      "type": "paragraph",
+      "language": "en",
+      "text": "sarl",
+      "confidence": 0.3326,
+      "bbox": [
+        995,
+        1343,
+        1031,
+        1359
+      ]
+    },
+    {
+      "block_id": 143,
+      "type": "paragraph",
+      "language": "en",
+      "text": "island",
+      "confidence": 0.9992,
+      "bbox": [
+        202,
+        1372,
+        274,
+        1398
+      ]
+    },
+    {
+      "block_id": 144,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Beriluda",
+      "confidence": 0.9506,
+      "bbox": [
+        300,
+        1372,
+        384,
+        1398
+      ]
+    },
+    {
+      "block_id": 145,
+      "type": "paragraph",
+      "language": "en",
+      "text": "island",
+      "confidence": 0.9986,
+      "bbox": [
+        202,
+        1402,
+        274,
+        1426
+      ]
+    },
+    {
+      "block_id": 146,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Azores",
+      "confidence": 0.9952,
+      "bbox": [
+        300,
+        1402,
+        372,
+        1426
+      ]
+    },
+    {
+      "block_id": 147,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Systen . out . print (h[z]",
+      "confidence": 0.2949,
+      "bbox": [
+        826,
+        1396,
+        1062,
+        1424
+      ]
+    },
+    {
+      "block_id": 148,
+      "type": "paragraph",
+      "language": "en",
+      "text": "naire",
+      "confidence": 0.8964,
+      "bbox": [
+        1069,
+        1403,
+        1119,
+        1421
+      ]
+    },
+    {
+      "block_id": 149,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Ls",
+      "confidence": 0.724,
+      "bbox": [
+        1168,
+        1398,
+        1198,
+        1422
+      ]
+    },
+    {
+      "block_id": 150,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\" |",
+      "confidence": 0.3469,
+      "bbox": [
+        1226,
+        1400,
+        1252,
+        1424
+      ]
+    },
+    {
+      "block_id": 151,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Systen . out printIn ( \"good Hobbit",
+      "confidence": 0.5155,
+      "bbox": [
+        826,
+        1427,
+        1174,
+        1457
+      ]
+    },
+    {
+      "block_id": 152,
+      "type": "paragraph",
+      "language": "en",
+      "text": "narne\" '",
+      "confidence": 0.4078,
+      "bbox": [
+        1180,
+        1430,
+        1250,
+        1454
+      ]
+    },
+    {
+      "block_id": 153,
+      "type": "paragraph",
+      "language": "en",
+      "text": "68",
+      "confidence": 0.9988,
+      "bbox": [
+        110,
+        1576,
+        146,
+        1604
+      ]
+    },
+    {
+      "block_id": 154,
+      "type": "paragraph",
+      "language": "en",
+      "text": "chapter 3",
+      "confidence": 0.9996,
+      "bbox": [
+        182,
+        1578,
+        292,
+        1606
+      ]
+    },
+    {
+      "block_id": 155,
+      "type": "paragraph",
+      "language": "en",
+      "text": "\" ) ;",
+      "confidence": 0.4833,
+      "bbox": [
+        561.09,
+        1056.18,
+        602.91,
+        1081.82
+      ]
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (122x102)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "exercise solutions\nclass\nBooks\nExercise Solutions\nString title;\nString author ;\nclass Books-estDrive\npublic static void main String\n[]\nargs\nBooks\n[]\nrriFBooks\nnew Books [3]\nint\n0;\n\"yBooks[0]\nnew Books );\nRemember:\nAle hqve 10\ncode Magnets:\n\"/Books[1]\nnew Books )\nochualy mzke The Books\n\"yBooks[2]\nnew Books );\nbiects\ncLass TestArrays\nni_yBooks [0] . title\nThe Grapes of\nJTa'a\nn Books [1] . title\n\"The Tava Catsbij\"\npublic\nsazic\nvo1d\nrain | String\n[]\nargs)\nni_Books [2] . citle\nThe Java Cookbook\"\nin\n[ ]\n_ndex\n1e'\n_nt [ 4 ] ;\nmi_Books [0]\nauichor\n\")0b\"\nindex [ 0]\n1;\nni_yBooks [1] .auchor\nsiuie \"\nindex [1]\n3\nny_ Books [2]\nauizhoi\n\"1a1\"\nindex [2 ]\n0\nhile\n'Y\n3 '\nindex [ 3 ]\nS_sten . out . print |ni_Books [x]\ntitlel\nString\n[ ]\nLs1ands\n11e'1\nStri_ng [ 4 ] ;\nSrster . out print\nb]\n\" /\nSisten . out . printIn myBooks [x] . author )\nislands [ 0]\nBerriida \"\n1;\nLslands [1]\n\"F'_]1\"\nislands [ 2]\nAzores\nislands [ 3]\n\"Cozurel -\nin\n1]\n0 ;\nclass\nHobbiLs\ni11\nref;\nString\nnaire ;\n'111_e\n(1\n4 '!\npublic scatic void main ( String\n[] args'\nref\nindex [1]\nHobbits\n[]\nnew Hobbizs [3]\nSrsten out . print ( \"island\ninf z = -1;\nRemenber:\narrays start with\nSrster _\nout . printIn ( Ls_ands [ref] ) ;\nWhile {\n2) {\nelemenT 0 !\n1\n1 ;\n1;\n1 [7]\nne\"i\nHobbits ( |\n8\n1 [ z]\nnaie\n\"bilbo\"\nL5\n' 2\n\n1'\nFile Edit windun Help Bikini\n1 [ z]\nnaine\nErodo\"\n; java TestArrays\nisland\n[1]1\n1{\n'2\n\n2 '\nisland\nCozuiel\n1 [ z]\nnaine\nsarl\nisland\nBeriluda\nisland\nAzores\nSysten . out . print (h[z]\nnaire\nLs\n\" |\nSysten . out printIn ( \"good Hobbit\nnarne\" '\n68\nchapter 3\n\" ) ;",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/Head_First_Java_Second_Edition_c9c98ffd/page_102.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1890 chars",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_rejected_corrupted_font",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "all_apis_direct_failed_falling_to_ocr",
+      "severity": "warning"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "rendered_to_image (DPI=180)",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "quick_bangla_estimate: 0.00",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "easyocr: 155 detections",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 102,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=ocr_local, engine=EasyOCR",
+      "severity": "info"
+    }
+  ]
+}

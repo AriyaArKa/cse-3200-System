@@ -1,0 +1,134 @@
+{
+  "page_number": 54,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "20 \nchapter 1\n if (x == 1) {\n System.out.print(“d”);\n x = x - 1;\n }\n if (x == 2) {\n System.out.print(“b c”);\n }\n if (x > 2) {\n System.out.print(“a”);\n }\n int x = 3;\n x = x - 1;\n System.out.print(“-”);\n while (x > 0) {\nclass Shuffle1 {\n public static void main(String [] args) {\nFile Edit Window Help Sleep\n% java Shuffle1\na-b c-d\nExercise\nCode Magnets\nA working Java program is all scrambled up \non the fridge. Can you rearrange the code \nsnippets to make a working Java program \nthat produces the output listed below? \nSome of the curly braces fell on the floor \nand they were too small to pick up, 50 feel \nfree to add as many of those as you need!\nOutput:\nexercise: Code Magnets",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "i f ( x = = 1 ) {\n5 y 5 t e m . 0 u t .print(“d”);\nx = x - 1 ;\n}",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "class Shuffle1 {\npublic static void main(String\n[] args) {"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          "int x = 3;"
+        ],
+        [
+          "x = x - 1;\nSystem.out.print(“-”);",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "while (x > 0) {"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Sleep"
+        ],
+        [
+          "% java Shuffle1\na-b c-d"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x121)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x200)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "20 \nchapter 1\n if (x == 1) {\n System.out.print(“d”);\n x = x - 1;\n }\n if (x == 2) {\n System.out.print(“b c”);\n }\n if (x > 2) {\n System.out.print(“a”);\n }\n int x = 3;\n x = x - 1;\n System.out.print(“-”);\n while (x > 0) {\nclass Shuffle1 {\n public static void main(String [] args) {\nFile Edit Window Help Sleep\n% java Shuffle1\na-b c-d\nExercise\nCode Magnets\nA working Java program is all scrambled up \non the fridge. Can you rearrange the code \nsnippets to make a working Java program \nthat produces the output listed below? \nSome of the curly braces fell on the floor \nand they were too small to pick up, 50 feel \nfree to add as many of those as you need!\nOutput:\nexercise: Code Magnets",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 54,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 54,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 764 chars",
+      "severity": "info"
+    },
+    {
+      "page": 54,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 54,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

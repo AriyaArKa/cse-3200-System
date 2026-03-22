@@ -1,0 +1,74 @@
+{
+  "page_number": 188,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "154 \nchapter 6\nAPI packages \nUsing the Library (the Java API)\nIn the Java API, classes \nare grouped into packages.\nTo use a class in the API, you \nhave to know which package \nthe class is in.\nEvery class in the Java library belongs to a package. \nThe package has a name, like javax.swing (a \npackage that holds some of the Swing GUI classes \nyou’11 learn about soon). ArrayList is in the package \ncalled java.util, which surprise surprise, holds a \npile of utility classes. You’11 learn a lot more about \npackages in chapter 17, including how to put your \nown classes into your own packages. For now though, \nwe’re just looking to use some of the classes that come \nwith Java.\nUsing a class from the API, in your own code, is \nsimple. You just treat the class as though you wrote \nit yourself... as though you compiled it, and there it \nsits, waiting for you to use it. With one big difference: \nsomewhere in your code you have to indicate the full \nname of the library class you want to use, and that \nmeans package name + class name. \nEven if you didn’t know it, you’ve already been using \nclasses from a package. System (System.out.println), \nString, and Math (Math.random()), all belong to the \njava.lang package.\nYou made it all the way through the DotComBust game, \nthanks to the help of ArrayList. And now, as promised, \nit’5 time to learn how to fool around in the Java library.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (302x254)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (352x297)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (302x254)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "154 \nchapter 6\nAPI packages \nUsing the Library (the Java API)\nIn the Java API, classes \nare grouped into packages.\nTo use a class in the API, you \nhave to know which package \nthe class is in.\nEvery class in the Java library belongs to a package. \nThe package has a name, like javax.swing (a \npackage that holds some of the Swing GUI classes \nyou’11 learn about soon). ArrayList is in the package \ncalled java.util, which surprise surprise, holds a \npile of utility classes. You’11 learn a lot more about \npackages in chapter 17, including how to put your \nown classes into your own packages. For now though, \nwe’re just looking to use some of the classes that come \nwith Java.\nUsing a class from the API, in your own code, is \nsimple. You just treat the class as though you wrote \nit yourself... as though you compiled it, and there it \nsits, waiting for you to use it. With one big difference: \nsomewhere in your code you have to indicate the full \nname of the library class you want to use, and that \nmeans package name + class name. \nEven if you didn’t know it, you’ve already been using \nclasses from a package. System (System.out.println), \nString, and Math (Math.random()), all belong to the \njava.lang package.\nYou made it all the way through the DotComBust game, \nthanks to the help of ArrayList. And now, as promised, \nit’5 time to learn how to fool around in the Java library.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 188,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 188,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1392 chars",
+      "severity": "info"
+    },
+    {
+      "page": 188,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 188,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

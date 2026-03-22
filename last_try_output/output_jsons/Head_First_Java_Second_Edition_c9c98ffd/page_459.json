@@ -1,0 +1,46 @@
+{
+  "page_number": 459,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n425\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”); \nframe.getContentPane().add(BorderLayout.NORTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nD\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n JButton button = new JButton(“tesuji”);\n JButton buttonTwo = new JButton(“watari”); \n panel.add(buttonTwo);\n frame.getContentPane().add(BorderLayout.CENTER,button);\n frame.getContentPane().add(BorderLayout.EAST, panel);\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(button);\nframe.getContentPane().add(BorderLayout.NORTH,buttonTwo);\nframe.getContentPane().add(BorderLayout.EAST, panel);\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\nframe.getContentPane().add(BorderLayout.SOUTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.NORTH,button);\nE\nA\nC\n8\nCode Fragments",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "using swing\nyou are here\n425\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”); \nframe.getContentPane().add(BorderLayout.NORTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nD\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n JButton button = new JButton(“tesuji”);\n JButton buttonTwo = new JButton(“watari”); \n panel.add(buttonTwo);\n frame.getContentPane().add(BorderLayout.CENTER,button);\n frame.getContentPane().add(BorderLayout.EAST, panel);\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(button);\nframe.getContentPane().add(BorderLayout.NORTH,buttonTwo);\nframe.getContentPane().add(BorderLayout.EAST, panel);\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\nframe.getContentPane().add(BorderLayout.SOUTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.NORTH,button);\nE\nA\nC\n8\nCode Fragments",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 459,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 459,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1603 chars",
+      "severity": "info"
+    },
+    {
+      "page": 459,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

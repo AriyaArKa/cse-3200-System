@@ -1,0 +1,79 @@
+{
+  "page_number": 135,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n101\nWriting the method \nimplementations\nlet’5 write the real \nmethod code now, and get \nthis puppy working.\nBefore we start coding the \nmethods, though, let’5 back \nup and write some code to \ntest the methods. That’5 right, \nwe’re writing the test code \nbefore there’5 anything to test! \nThe concept of writing \nthe test code first is one of \nthe practices of Extreme \nProgramming (XP), and \nit can make it easier (and \nfaster) for you to write your \ncode. We’re not necessarily \nsaying you should use XP, \nbut we do like the part about \nwriting tests first. And XP just \nsounds cool.\nOh my! For a minute \nthere 1 thought you \nweren’t gonna write your \ntest code first. Whoo! \nDon’t scare me like that.\nExtreme Programming(XP) is a newcomer to the software \ndevelopment methodology world. Considered by many \nto be “the way programmers really want to work”, XP \nemerged in the late 90’5 and has been adopted by \ncompanies ranging from the two-person garage shop \nto the Ford Motor Company. The thrust of XP is that the \ncustomer gets what he wants, when he wants it, even \nwhen the spec changes late in the game. \nXP is based on a set of proven practices that are all \ndesigned to work together, although many folks do pick \nand choose, and adopt only a portion of XP’5 rules. These \npractices include things like:\nMake small, but frequent, releases.\nDevelop in iteration cycles.\nDon’t put in anything that’5 not in the spec (no matter \nhow tempted you are to put in functionality “for the \nfuture”).\nWrite the test code first.\nNo killer schedules; work regular hours.\nRefactor (improve the code) whenever and wherever you \nnotice the opportunity.\nDon’t release anything until it passes all the tests.\nSet realistic schedules, based around small releases.\nKeep it simple.\nProgram in pairs, and move people around 50 that \neverybody knows pretty much everything about the code.\nExtreme Programming (XP) \n prep code \ntest code\nreal code\ntest code",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "prep code",
+          "tteesstt c cooddee",
+          "re",
+          "al code"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (710x606)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nwriting a program\n101\nWriting the method \nimplementations\nlet’5 write the real \nmethod code now, and get \nthis puppy working.\nBefore we start coding the \nmethods, though, let’5 back \nup and write some code to \ntest the methods. That’5 right, \nwe’re writing the test code \nbefore there’5 anything to test! \nThe concept of writing \nthe test code first is one of \nthe practices of Extreme \nProgramming (XP), and \nit can make it easier (and \nfaster) for you to write your \ncode. We’re not necessarily \nsaying you should use XP, \nbut we do like the part about \nwriting tests first. And XP just \nsounds cool.\nOh my! For a minute \nthere 1 thought you \nweren’t gonna write your \ntest code first. Whoo! \nDon’t scare me like that.\nExtreme Programming(XP) is a newcomer to the software \ndevelopment methodology world. Considered by many \nto be “the way programmers really want to work”, XP \nemerged in the late 90’5 and has been adopted by \ncompanies ranging from the two-person garage shop \nto the Ford Motor Company. The thrust of XP is that the \ncustomer gets what he wants, when he wants it, even \nwhen the spec changes late in the game. \nXP is based on a set of proven practices that are all \ndesigned to work together, although many folks do pick \nand choose, and adopt only a portion of XP’5 rules. These \npractices include things like:\nMake small, but frequent, releases.\nDevelop in iteration cycles.\nDon’t put in anything that’5 not in the spec (no matter \nhow tempted you are to put in functionality “for the \nfuture”).\nWrite the test code first.\nNo killer schedules; work regular hours.\nRefactor (improve the code) whenever and wherever you \nnotice the opportunity.\nDon’t release anything until it passes all the tests.\nSet realistic schedules, based around small releases.\nKeep it simple.\nProgram in pairs, and move people around 50 that \neverybody knows pretty much everything about the code.\nExtreme Programming (XP) \n prep code \ntest code\nreal code\ntest code",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 135,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 135,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1982 chars",
+      "severity": "info"
+    },
+    {
+      "page": 135,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 135,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

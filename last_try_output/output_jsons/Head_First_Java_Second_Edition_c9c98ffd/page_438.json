@@ -1,0 +1,90 @@
+{
+  "page_number": 438,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "404 \nchapter 13\nBorderLayout cares \nabout five regions: \neast, west, north, \nsouth, and center\nimport javax.swing.*;\nimport java.awt.*;\npublic class Button1 {\n public static void main (String[] args) {\n Button1 gui = new Button1();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame();\n JButton button = new JButton(“click me”); \n frame.getContentPane().add(BorderLayout.EAST, button);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\n}\nBorderLayout is in java.awt package\nspecify the region\nLet’5 add a button to the east region:\nborder layout\nbrain barbell\nBrain Barbell\nHow did the BorderLayout manager come up with \nthis size for the button?\nWhat are the factors the layout manager has to \nconsider?\nWhy isn’t it wider or taller?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "11",
+          "",
+          ""
+        ],
+        [
+          "b r a ni b a r b e Brain 8",
+          "8\nr a",
+          "ni b a r ra",
+          "b e in",
+          "",
+          "arbell"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (208x209)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x139)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "404 \nchapter 13\nBorderLayout cares \nabout five regions: \neast, west, north, \nsouth, and center\nimport javax.swing.*;\nimport java.awt.*;\npublic class Button1 {\n public static void main (String[] args) {\n Button1 gui = new Button1();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame();\n JButton button = new JButton(“click me”); \n frame.getContentPane().add(BorderLayout.EAST, button);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\n}\nBorderLayout is in java.awt package\nspecify the region\nLet’5 add a button to the east region:\nborder layout\nbrain barbell\nBrain Barbell\nHow did the BorderLayout manager come up with \nthis size for the button?\nWhat are the factors the layout manager has to \nconsider?\nWhy isn’t it wider or taller?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 438,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 438,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 807 chars",
+      "severity": "info"
+    },
+    {
+      "page": 438,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 438,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

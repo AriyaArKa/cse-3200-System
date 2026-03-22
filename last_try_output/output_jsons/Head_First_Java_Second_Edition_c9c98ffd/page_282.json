@@ -1,0 +1,59 @@
+{
+  "page_number": 282,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "248 \nchapter 9\nQ: Earlier you said that it’5 good to have a no-argu-\nment constructor 50 that if people call the no-arg con-\nstructor, we can supply default values for the “missing” \narguments. But aren’t there times when it’5 impossible to \ncome up with defaults? Are there times when you should \nnot have a no-arg constructor in your class?\nA: You’re right. There are times when a no-arg construc-\ntor doesn’t make sense. You’11 see this in the Java API—some \nclasses don’t have a no-arg constructor. The Color class, for \nexample, represents a... color. Color objects are used to, for \nexample, set or change the color of a screen font or GUI \nbutton. When you make a Color instance, that instance is \nof a particular color (you know, Death-by-Chocolate Brown, \nBlue-Screen-of-Death Blue, Scandalous Red, etc.). If you \nmake a Color object, you must specify the color in some way.\nColor c = new Color(3,45,200);\n(We’re using three ints for RGB values here. We’11 get into \nusing Color later, in the Swing chapters.) Otherwise, what \nwould you get? The Java API programmers could have de-\ncided that if you call a no-arg Color constructor you’11 get a \nlovely shade of mauve. But good taste prevailed.\nIf you try to make a Color without supplying an argument:\nColor c = new Color();\nThe compiler freaks out because it can’t find a matching no-\narg constructor in the Color class. \nFile Edit Window Help StopBeingStupid\ncannot resolve symbol\n:constructor Color()\nlocation: class \njava.awt.Color\nColor c = new Color();\n ^\n1 error\npublic class TestDuck {\n public static void main(String[] args){\n int weight = 8;\n float density = 2.3F;\n String name = “Donald”;\n long[] feathers = {1,2,3,4,5,6};\n boolean canFly = true;\n int airspeed = 22;\n Duck[] d = new Duck[7];\n d[0] = new Duck(); \n \n \n d[1] = new Duck(density, weight);\n \n \n \n d[2] = new Duck(name, feathers); \n \n d[3] = new Duck(canFly);\n d[4] = new Duck(3.3F, airspeed);\n \n \n \n \n \n d[5] = new Duck(false);\n d[6] = new Duck(airspeed, density);\n }\n}\n \n \n \n \n \n \n \n \n \n \nclass Duck {\n int pounds = 6;\n float floatability = 2.1F;\n String name = “Generic”;\n long[] feathers = {1,2,3,4,5,6,7}; \n \n boolean canFly = true;\n int maxSpeed = 25;\n \n public Duck() {\n System.out.println(“type 1 duck”);\n }\n public Duck(boolean fly) {\n canFly = fly;\n System.out.println(“type 2 duck”);\n }\n public Duck(String n, long[] f) {\n name = n;\n feathers = f;\n System.out.println(“type 3 duck”);\n }\n public Duck(int w, float f) {\n pounds = w;\n floatability = f;\n System.out.println(“type 4 duck”);\n }\n public Duck(float density, int max) {\n floatability = density;\n maxSpeed = max;\n System.out.println(“type 5 duck”);\n }\n} \n \nSharpen your pencil\nMatch the new Duck() call with the constructor \nthat runs when that Duck is instantiated. We did \nthe easy one to get you started.\noverloaded constructors",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help StopBeingStupid"
+        ],
+        [
+          "cannot resolve symbol\n:constructor Color()\nlocation: class\njava.awt.Color\nColor c = new Color();\n^\n1 error"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "248 \nchapter 9\nQ: Earlier you said that it’5 good to have a no-argu-\nment constructor 50 that if people call the no-arg con-\nstructor, we can supply default values for the “missing” \narguments. But aren’t there times when it’5 impossible to \ncome up with defaults? Are there times when you should \nnot have a no-arg constructor in your class?\nA: You’re right. There are times when a no-arg construc-\ntor doesn’t make sense. You’11 see this in the Java API—some \nclasses don’t have a no-arg constructor. The Color class, for \nexample, represents a... color. Color objects are used to, for \nexample, set or change the color of a screen font or GUI \nbutton. When you make a Color instance, that instance is \nof a particular color (you know, Death-by-Chocolate Brown, \nBlue-Screen-of-Death Blue, Scandalous Red, etc.). If you \nmake a Color object, you must specify the color in some way.\nColor c = new Color(3,45,200);\n(We’re using three ints for RGB values here. We’11 get into \nusing Color later, in the Swing chapters.) Otherwise, what \nwould you get? The Java API programmers could have de-\ncided that if you call a no-arg Color constructor you’11 get a \nlovely shade of mauve. But good taste prevailed.\nIf you try to make a Color without supplying an argument:\nColor c = new Color();\nThe compiler freaks out because it can’t find a matching no-\narg constructor in the Color class. \nFile Edit Window Help StopBeingStupid\ncannot resolve symbol\n:constructor Color()\nlocation: class \njava.awt.Color\nColor c = new Color();\n ^\n1 error\npublic class TestDuck {\n public static void main(String[] args){\n int weight = 8;\n float density = 2.3F;\n String name = “Donald”;\n long[] feathers = {1,2,3,4,5,6};\n boolean canFly = true;\n int airspeed = 22;\n Duck[] d = new Duck[7];\n d[0] = new Duck(); \n \n \n d[1] = new Duck(density, weight);\n \n \n \n d[2] = new Duck(name, feathers); \n \n d[3] = new Duck(canFly);\n d[4] = new Duck(3.3F, airspeed);\n \n \n \n \n \n d[5] = new Duck(false);\n d[6] = new Duck(airspeed, density);\n }\n}\n \n \n \n \n \n \n \n \n \n \nclass Duck {\n int pounds = 6;\n float floatability = 2.1F;\n String name = “Generic”;\n long[] feathers = {1,2,3,4,5,6,7}; \n \n boolean canFly = true;\n int maxSpeed = 25;\n \n public Duck() {\n System.out.println(“type 1 duck”);\n }\n public Duck(boolean fly) {\n canFly = fly;\n System.out.println(“type 2 duck”);\n }\n public Duck(String n, long[] f) {\n name = n;\n feathers = f;\n System.out.println(“type 3 duck”);\n }\n public Duck(int w, float f) {\n pounds = w;\n floatability = f;\n System.out.println(“type 4 duck”);\n }\n public Duck(float density, int max) {\n floatability = density;\n maxSpeed = max;\n System.out.println(“type 5 duck”);\n }\n} \n \nSharpen your pencil\nMatch the new Duck() call with the constructor \nthat runs when that Duck is instantiated. We did \nthe easy one to get you started.\noverloaded constructors",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 282,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 282,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2946 chars",
+      "severity": "info"
+    },
+    {
+      "page": 282,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "page_number": 433,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "this is a new chapter\n399\n13 using swing\nSwing is easy. Unless you actually care where things end up on the screen. Swing code \nlooks easy, but then you compile it, run it, look at it and think, “hey, that’5 not supposed to \ngo there.” The thing that makes it easy to code is the thing that makes it hard to control—the \nLayout Manager. Layout Manager objects control the size and location of the widgets in a \nJava GUI. They do a ton of work on your behalf, but you won’t always like the results. You want \ntwo buttons to be the same size, but they aren’t. You want the text field to be three inches \nlong, but it’5 nine. Or one. And under the label instead of next to it. But with a little work, you \ncan get layout managers to submit to your will. In this chapter, we’11 work on our Swing and in \naddition to layout managers, we’11 learn more about widgets. We’11 make them, display them \n(where we choose), and use them in a program. It’5 not looking too good for Suzy.\nWhy won’t \nthe ball go where 1 want \nit to go? (like, smack in Suzy \nSmith’5 face) 1’ve gotta learn \nto control it.\nWork on Your \nSwing",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (595x771)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "this is a new chapter\n399\n13 using swing\nSwing is easy. Unless you actually care where things end up on the screen. Swing code \nlooks easy, but then you compile it, run it, look at it and think, “hey, that’5 not supposed to \ngo there.” The thing that makes it easy to code is the thing that makes it hard to control—the \nLayout Manager. Layout Manager objects control the size and location of the widgets in a \nJava GUI. They do a ton of work on your behalf, but you won’t always like the results. You want \ntwo buttons to be the same size, but they aren’t. You want the text field to be three inches \nlong, but it’5 nine. Or one. And under the label instead of next to it. But with a little work, you \ncan get layout managers to submit to your will. In this chapter, we’11 work on our Swing and in \naddition to layout managers, we’11 learn more about widgets. We’11 make them, display them \n(where we choose), and use them in a program. It’5 not looking too good for Suzy.\nWhy won’t \nthe ball go where 1 want \nit to go? (like, smack in Suzy \nSmith’5 face) 1’ve gotta learn \nto control it.\nWork on Your \nSwing",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 433,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 433,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1115 chars",
+      "severity": "info"
+    },
+    {
+      "page": 433,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 433,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

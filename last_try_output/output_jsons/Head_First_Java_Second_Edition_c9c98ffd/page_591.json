@@ -1,0 +1,110 @@
+{
+  "page_number": 591,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9325,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n557\n$ LIST - when sequence matters\nCollections that know about index position.\nLists know where something is in the list. You \ncan have more than one element referencing \nthe same object.\nSET - when uniqueness matters\nCollections that do not allow duplicates.\nSets know whether something is already in the collection. \nYou can never have more than one element referencing \nthe same object (or more than one element referencing \ntwo objects that are considered equal—we’11 look at what \nobject equality means in a moment).\nMAP - when finding something by key matters\nCollections that use key-value pairs.\nMaps know the value associated with a given key. You \ncan have two keys that reference the same value, but you \ncannot have duplicate keys. Although keys are typically \nString names (50 that you can make name/value property \nlists, for example), a key can be any object.\nDuplicates OK.\n0 1 2 3\nList\nNO duplicates.\nSet\nMap\n“Ball” “Fish” “Car”\nDuplicate values OK, but NO duplicate keys.\n“Ball1” “Ball2” “Fish” “Car”\n$\n$\nFrom the Collection API, we find three main interfaces, List, Set, and \nMap. ArrayList is a List, but it looks like Set is exactly what we need.\nWe need a Set instead of a List",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "““BBaalll1l””",
+          "“ 8 a“lFl2i”5",
+          "h “”F i 5 h ”“",
+          "C “aCar”r”"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (113x79)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (109x68)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (109x86)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "collections with generics\nyou are here\n557\n$ LIST - when sequence matters\nCollections that know about index position.\nLists know where something is in the list. You \ncan have more than one element referencing \nthe same object.\nSET - when uniqueness matters\nCollections that do not allow duplicates.\nSets know whether something is already in the collection. \nYou can never have more than one element referencing \nthe same object (or more than one element referencing \ntwo objects that are considered equal—we’11 look at what \nobject equality means in a moment).\nMAP - when finding something by key matters\nCollections that use key-value pairs.\nMaps know the value associated with a given key. You \ncan have two keys that reference the same value, but you \ncannot have duplicate keys. Although keys are typically \nString names (50 that you can make name/value property \nlists, for example), a key can be any object.\nDuplicates OK.\n0 1 2 3\nList\nNO duplicates.\nSet\nMap\n“Ball” “Fish” “Car”\nDuplicate values OK, but NO duplicate keys.\n“Ball1” “Ball2” “Fish” “Car”\n$\n$\nFrom the Collection API, we find three main interfaces, List, Set, and \nMap. ArrayList is a List, but it looks like Set is exactly what we need.\nWe need a Set instead of a List",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 591,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 591,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1273 chars",
+      "severity": "info"
+    },
+    {
+      "page": 591,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 591,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

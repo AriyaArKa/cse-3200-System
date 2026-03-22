@@ -1,0 +1,46 @@
+{
+  "page_number": 686,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "final BeatBox code\n652 \nappendix A\n buttonBox.add(userMessage);\n incomingList = new JList();\n incomingList.addListSelectionListener(new MyListSelectionListener());\n incomingList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);\n JScrollPane theList = new JScrollPane(incomingList);\n buttonBox.add(theList); \n incomingList.setListData(listVector); // no data to start with\n Box nameBox = new Box(BoxLayout.Y_AXIS);\n for (int i = 0; i < 16; i++) {\n nameBox.add(new Label(instrumentNames[i]));\n } \n background.add(BorderLayout.EAST, buttonBox);\n background.add(BorderLayout.WEST, nameBox);\n theFrame.getContentPane().add(background); \n GridLayout grid = new GridLayout(16,16);\n grid.setVgap(1);\n grid.setHgap(2);\n mainPanel = new JPanel(grid);\n background.add(BorderLayout.CENTER, mainPanel);\n for (int i = 0; i < 256; i++) { \n JCheckBox c = new JCheckBox();\n c.setSelected(false);\n checkboxList.add(c);\n mainPanel.add(c); \n } // end loop\n theFrame.setBounds(50,50,300,300);\n theFrame.pack();\n theFrame.setVisible(true);\n } // close buildGUI\n public void setUpMidi() {\n try {\n sequencer = MidiSystem.getSequencer();\n sequencer.open();\n sequence = new Sequence(Sequence.PPQ,4);\n track = sequence.createTrack();\n sequencer.setTempoInBPM(120);\n } catch(Exception e) {e.printStackTrace();}\n } // close setUpMidi\nJList is a component we haven’t \nused before. This is where the \nincoming messages are displayed. \nOnly instead of a normal chat \nwhere you just LOOK at the \nmessages, in this app you can \nSELECT a message from the list \nto load and play the attached \nbeat pattern.\nNothing else on this page is new\nGet the Sequencer, make a \nSequence, and make a Track",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "final BeatBox code\n652 \nappendix A\n buttonBox.add(userMessage);\n incomingList = new JList();\n incomingList.addListSelectionListener(new MyListSelectionListener());\n incomingList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);\n JScrollPane theList = new JScrollPane(incomingList);\n buttonBox.add(theList); \n incomingList.setListData(listVector); // no data to start with\n Box nameBox = new Box(BoxLayout.Y_AXIS);\n for (int i = 0; i < 16; i++) {\n nameBox.add(new Label(instrumentNames[i]));\n } \n background.add(BorderLayout.EAST, buttonBox);\n background.add(BorderLayout.WEST, nameBox);\n theFrame.getContentPane().add(background); \n GridLayout grid = new GridLayout(16,16);\n grid.setVgap(1);\n grid.setHgap(2);\n mainPanel = new JPanel(grid);\n background.add(BorderLayout.CENTER, mainPanel);\n for (int i = 0; i < 256; i++) { \n JCheckBox c = new JCheckBox();\n c.setSelected(false);\n checkboxList.add(c);\n mainPanel.add(c); \n } // end loop\n theFrame.setBounds(50,50,300,300);\n theFrame.pack();\n theFrame.setVisible(true);\n } // close buildGUI\n public void setUpMidi() {\n try {\n sequencer = MidiSystem.getSequencer();\n sequencer.open();\n sequence = new Sequence(Sequence.PPQ,4);\n track = sequence.createTrack();\n sequencer.setTempoInBPM(120);\n } catch(Exception e) {e.printStackTrace();}\n } // close setUpMidi\nJList is a component we haven’t \nused before. This is where the \nincoming messages are displayed. \nOnly instead of a normal chat \nwhere you just LOOK at the \nmessages, in this app you can \nSELECT a message from the list \nto load and play the attached \nbeat pattern.\nNothing else on this page is new\nGet the Sequencer, make a \nSequence, and make a Track",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 686,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 686,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2071 chars",
+      "severity": "info"
+    },
+    {
+      "page": 686,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

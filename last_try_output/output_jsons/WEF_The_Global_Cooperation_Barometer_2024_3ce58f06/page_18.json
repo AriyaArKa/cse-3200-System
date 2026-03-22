@@ -1,0 +1,46 @@
+{
+  "page_number": 18,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The devastating human costs of conflicts have \ngrown immensely over the last two years. Though \nthe level of conflict is similar to 2014, today’5 battles \nare proving more deadly and destructive. In recent \nyears, fatalities from conflict have risen dramatically \nto roughly 240,000 in 2022 – a nearly three-fold \nincrease since 2020 and well above the previous \npeak of 150,000 in 2014. On average, deaths per \nconflict remained steady between 2012 and 2020 \nbut have more than doubled since then. \nIn addition, global attempts at conflict resolution \nhave not kept pace. The ratio of United Nations \nSecurity Council resolutions to the number of \nconflicts was 0.43:1 in 2020; that fell to 0.31:1 \nin 2022. Similarly, the ratio of peacekeeping \noperations to conflicts was 0.47:1 in 2020 and \n0.36:1 in 2022. \nForcible displacement also rose sharply in 2022, \nreaching a record for the period (of 2012-2022) at \n108.4 million people,51 up from 89.3 million in 2021 \n(an increase of ~18%). More than 13 million people \nfrom Syria were displaced, as were 11.6 million \nfrom Ukraine and 10.2 million from Afghanistan. \nIn terms of cyberattacks, the number of significant \ncyberattacks remained stable from 2020 to 2022, \nat around 11.3 per month. However, in the context \nof the conflict in Ukraine, Russian attacks on \nUkraine internet users rose by 250% and attacks \non NATO countries by more than 300% in the same \nperiod, and these cyberattacks were coordinated \nwith kinetic attacks to support ground efforts, \nrepresenting a new twist in cyberwarfare.52\nSupport for vulnerable populations \nand cyber collaboration \nGiven challenging trends in peace and security in \nthe past decade, the public and private sectors \nshould focus energies on supporting vulnerable \npopulations and finding new mechanisms of \ncollaboration to respond to the evolving challenge \nof cyberattacks.\nSupporting vulnerable populations could start by \naddressing two critical needs. The first is managing \nthe integration of refugee populations from conflict \nzones. For example, 58% of Ukraine’5 6.4 million \nrefugees have now moved beyond Ukraine’5 \nimmediately neighbouring countries and may place \nstrains on the social net or cohesion of Europe’5 \npoorer countries if not integrated.53 The UN’5 \nRegional Refugee Response Plan, a well-organized \nand rapidly scaled international humanitarian \naid programme, provides an example of how to \naddress critical immediate needs.54 Supporting \nleading practices in improving the integration of \nrefugees in the medium term will be essential for \nallowing both refugees and host communities to \nbenefit from these shifts,55 especially given tight \nlabour market conditions in developed countries.\nThe second is identifying mechanisms and \napproaches that will support impacted individuals \nin conflict zones, particularly inflows of funds \nto support the provision of basic needs and \nreduce friction in aid flows without compromising \ncompliance, security, and risk standards. This \nwill require close collaboration between public \nsector approaches to financial crime regulation, \nprivate sector organizations with expertise in \nmoney transmission and the 10 million non-profit \norganizations who serve across a variety of needs. \nFinally, given the evolving nature of cyberattacks \nand potential linkages to kinetic efforts, there is a \nneed for redoubling cooperative efforts in the cyber \ndomain, integrating public and private sector actors \nto boost sharing of data flows on cybersecurity \nthreats, and identifying patterns of anomalous \nactivity and new threat vectors.\nThe Global Cooperation Barometer 2024\n18",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "The devastating human costs of conflicts have \ngrown immensely over the last two years. Though \nthe level of conflict is similar to 2014, today’5 battles \nare proving more deadly and destructive. In recent \nyears, fatalities from conflict have risen dramatically \nto roughly 240,000 in 2022 – a nearly three-fold \nincrease since 2020 and well above the previous \npeak of 150,000 in 2014. On average, deaths per \nconflict remained steady between 2012 and 2020 \nbut have more than doubled since then. \nIn addition, global attempts at conflict resolution \nhave not kept pace. The ratio of United Nations \nSecurity Council resolutions to the number of \nconflicts was 0.43:1 in 2020; that fell to 0.31:1 \nin 2022. Similarly, the ratio of peacekeeping \noperations to conflicts was 0.47:1 in 2020 and \n0.36:1 in 2022. \nForcible displacement also rose sharply in 2022, \nreaching a record for the period (of 2012-2022) at \n108.4 million people,51 up from 89.3 million in 2021 \n(an increase of ~18%). More than 13 million people \nfrom Syria were displaced, as were 11.6 million \nfrom Ukraine and 10.2 million from Afghanistan. \nIn terms of cyberattacks, the number of significant \ncyberattacks remained stable from 2020 to 2022, \nat around 11.3 per month. However, in the context \nof the conflict in Ukraine, Russian attacks on \nUkraine internet users rose by 250% and attacks \non NATO countries by more than 300% in the same \nperiod, and these cyberattacks were coordinated \nwith kinetic attacks to support ground efforts, \nrepresenting a new twist in cyberwarfare.52\nSupport for vulnerable populations \nand cyber collaboration \nGiven challenging trends in peace and security in \nthe past decade, the public and private sectors \nshould focus energies on supporting vulnerable \npopulations and finding new mechanisms of \ncollaboration to respond to the evolving challenge \nof cyberattacks.\nSupporting vulnerable populations could start by \naddressing two critical needs. The first is managing \nthe integration of refugee populations from conflict \nzones. For example, 58% of Ukraine’5 6.4 million \nrefugees have now moved beyond Ukraine’5 \nimmediately neighbouring countries and may place \nstrains on the social net or cohesion of Europe’5 \npoorer countries if not integrated.53 The UN’5 \nRegional Refugee Response Plan, a well-organized \nand rapidly scaled international humanitarian \naid programme, provides an example of how to \naddress critical immediate needs.54 Supporting \nleading practices in improving the integration of \nrefugees in the medium term will be essential for \nallowing both refugees and host communities to \nbenefit from these shifts,55 especially given tight \nlabour market conditions in developed countries.\nThe second is identifying mechanisms and \napproaches that will support impacted individuals \nin conflict zones, particularly inflows of funds \nto support the provision of basic needs and \nreduce friction in aid flows without compromising \ncompliance, security, and risk standards. This \nwill require close collaboration between public \nsector approaches to financial crime regulation, \nprivate sector organizations with expertise in \nmoney transmission and the 10 million non-profit \norganizations who serve across a variety of needs. \nFinally, given the evolving nature of cyberattacks \nand potential linkages to kinetic efforts, there is a \nneed for redoubling cooperative efforts in the cyber \ndomain, integrating public and private sector actors \nto boost sharing of data flows on cybersecurity \nthreats, and identifying patterns of anomalous \nactivity and new threat vectors.\nThe Global Cooperation Barometer 2024\n18",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 18,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 18,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3644 chars",
+      "severity": "info"
+    },
+    {
+      "page": 18,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

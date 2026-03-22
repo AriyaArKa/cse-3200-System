@@ -1,0 +1,60 @@
+{
+  "page_number": 90,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "56 \nchapter 3\nthere are no\nDumb Questions\nQ:How big is a reference \nvariable?\nA:You don’t know. Unless \nyou’re cozy with someone on the \nJVM’5 development team, you \ndon’t know how a reference is \nrepresented. There are pointers \nin there somewhere, but you \ncan’t access them. You won’t \nneed to. (OK, if you insist, you \nmight as well just imagine it \nto be a 64-bit value.) But when \nyou’re talking about memory \nallocation issues, your Big \nConcern should be about how \nmany objects (as opposed to \nobject references) you’re creating, \nand how big they (the objects) \nreally are.\nQ:50, does that mean that \nall object references are the \nsame size, regardless of the size \nof the actual objects to which \nthey refer?\nA:Yep. All references for a \ngiven JVM will be the same \nsize regardless of the objects \nthey reference, but each JVM \nmight have a different way of \nrepresenting references, 50 \nreferences on one JVM may be \nsmaller or larger than references \non another JVM.\nQ:Can 1 do arithmetic on a \nreference variable, increment \nit, you know – C stuff?\nA:Nope. Say it with me again, \n“Java is not C.” \nobject references \nHeadFirst: 50, tell us, what’5 life like for an object reference? \nReference: Pretty simple, really. 1’m a remote control and 1 can be programmed to \ncontrol different objects.\nHeadFirst: Do you mean different objects even while you’re running? Like, can you \nrefer to a Dog and then five minutes later refer to a Car?\nReference: Of course not. Once 1’m declared, that’5 it. If 1’m a Dog remote control \nthen 1’11 never be able to point (oops – my bad, we’re not supposed to say point) 1 mean \nrefer to anything but a Dog.\nHeadFirst: Does that mean you can refer to only one Dog?\nReference: No. 1 can be referring to one Dog, and then five minutes later 1 can refer to \nsome other Dog. As long as it’5 a Dog, 1 can be redirected (like reprogramming your remote \nto a different TV) to it. Unless... no never mind. \nHeadFirst: No, tell me. What were you gonna say?\nReference: 1 don’t think you want to get into this now, but 1’11 just give you the short \nversion – if 1’m marked as final, then once 1 am assigned a Dog, 1 can never be repro-\ngrammed to anything else but that one and only Dog. In other words, no other object can \nbe assigned to me. \nHeadFirst: You’re right, we don’t want to talk about that now. OK, 50 unless you’re \nfinal, then you can refer to one Dog and then refer to a different Dog later. Can you ever \nrefer to nothing at all? 15 it possible to not be programmed to anything?\nReference: Yes, but it disturbs me to talk about it.\nHeadFirst: Why is that? \nReference: Because it means 1’m null, and that’5 upsetting to me. \nHeadFirst: You mean, because then you have no value?\nReference: Oh, null is a value. 1’m still a remote control, but it’5 like you brought \nhome a new universal remote control and you don’t have a TV. 1’m not programmed to \ncontrol anything. They can press my buttons all day long, but nothing good happens. 1 \njust feel 50... useless. A waste of bits. Granted, not that many bits, but still. And that’5 not \nthe worst part. If 1 am the only reference to a particular object, and then 1’m set to null \n(deprogrammed), it means that now nobody can get to that object 1 had been referring to.\nHeadFirst: And that’5 bad because...\nReference: You have to ask? Here 1’ve developed a relationship with this object, an \nintimate connection, and then the tie is suddenly, cruelly, severed. And 1 will never see \nthat object again, because now it’5 eligible for [producer, cue tragic music] garbage collection. \nSniff. But do you think programmers ever consider that? Snif. Why, why can’t 1 be a primi-\ntive? 1 hate being a reference. The responsibility, all the broken attachments...\nThis week’5 interview:\nObject Reference\nJava Exposed",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (199x185)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "56 \nchapter 3\nthere are no\nDumb Questions\nQ:How big is a reference \nvariable?\nA:You don’t know. Unless \nyou’re cozy with someone on the \nJVM’5 development team, you \ndon’t know how a reference is \nrepresented. There are pointers \nin there somewhere, but you \ncan’t access them. You won’t \nneed to. (OK, if you insist, you \nmight as well just imagine it \nto be a 64-bit value.) But when \nyou’re talking about memory \nallocation issues, your Big \nConcern should be about how \nmany objects (as opposed to \nobject references) you’re creating, \nand how big they (the objects) \nreally are.\nQ:50, does that mean that \nall object references are the \nsame size, regardless of the size \nof the actual objects to which \nthey refer?\nA:Yep. All references for a \ngiven JVM will be the same \nsize regardless of the objects \nthey reference, but each JVM \nmight have a different way of \nrepresenting references, 50 \nreferences on one JVM may be \nsmaller or larger than references \non another JVM.\nQ:Can 1 do arithmetic on a \nreference variable, increment \nit, you know – C stuff?\nA:Nope. Say it with me again, \n“Java is not C.” \nobject references \nHeadFirst: 50, tell us, what’5 life like for an object reference? \nReference: Pretty simple, really. 1’m a remote control and 1 can be programmed to \ncontrol different objects.\nHeadFirst: Do you mean different objects even while you’re running? Like, can you \nrefer to a Dog and then five minutes later refer to a Car?\nReference: Of course not. Once 1’m declared, that’5 it. If 1’m a Dog remote control \nthen 1’11 never be able to point (oops – my bad, we’re not supposed to say point) 1 mean \nrefer to anything but a Dog.\nHeadFirst: Does that mean you can refer to only one Dog?\nReference: No. 1 can be referring to one Dog, and then five minutes later 1 can refer to \nsome other Dog. As long as it’5 a Dog, 1 can be redirected (like reprogramming your remote \nto a different TV) to it. Unless... no never mind. \nHeadFirst: No, tell me. What were you gonna say?\nReference: 1 don’t think you want to get into this now, but 1’11 just give you the short \nversion – if 1’m marked as final, then once 1 am assigned a Dog, 1 can never be repro-\ngrammed to anything else but that one and only Dog. In other words, no other object can \nbe assigned to me. \nHeadFirst: You’re right, we don’t want to talk about that now. OK, 50 unless you’re \nfinal, then you can refer to one Dog and then refer to a different Dog later. Can you ever \nrefer to nothing at all? 15 it possible to not be programmed to anything?\nReference: Yes, but it disturbs me to talk about it.\nHeadFirst: Why is that? \nReference: Because it means 1’m null, and that’5 upsetting to me. \nHeadFirst: You mean, because then you have no value?\nReference: Oh, null is a value. 1’m still a remote control, but it’5 like you brought \nhome a new universal remote control and you don’t have a TV. 1’m not programmed to \ncontrol anything. They can press my buttons all day long, but nothing good happens. 1 \njust feel 50... useless. A waste of bits. Granted, not that many bits, but still. And that’5 not \nthe worst part. If 1 am the only reference to a particular object, and then 1’m set to null \n(deprogrammed), it means that now nobody can get to that object 1 had been referring to.\nHeadFirst: And that’5 bad because...\nReference: You have to ask? Here 1’ve developed a relationship with this object, an \nintimate connection, and then the tie is suddenly, cruelly, severed. And 1 will never see \nthat object again, because now it’5 eligible for [producer, cue tragic music] garbage collection. \nSniff. But do you think programmers ever consider that? Snif. Why, why can’t 1 be a primi-\ntive? 1 hate being a reference. The responsibility, all the broken attachments...\nThis week’5 interview:\nObject Reference\nJava Exposed",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 90,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 90,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3807 chars",
+      "severity": "info"
+    },
+    {
+      "page": 90,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 90,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

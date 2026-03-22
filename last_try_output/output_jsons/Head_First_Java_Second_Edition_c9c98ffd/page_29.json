@@ -1,0 +1,73 @@
+{
+  "page_number": 29,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the intro\nyou are here xxvii\n50, we did our part. The rest is up to you. These tips are a \nstarting point; Listen to your brain and figure out what works \nfor you and what doesn’t. Try new things.\nHere’5 what YOU can do to bend your \nbrain into submission.\n1\nSlow down. The more you understand, \nthe less you have to memorize.\nDon’t just read. Stop and think. When the \nbook asks you a question, don’t just skip to \nthe answer. Imagine that someone really is \nasking the question. The more deeply you \nforce your brain to think, the better chance \nyou have of learning and remembering.\n2\nDo the exercises. Write your own notes.\nWe put them in, but if we did them for you, \nthat would be like having someone else \ndo your workouts for you. And don’t just \nlook at the exercises. Use a pencil. There’5 \nplenty of evidence that physical activity \nwhile learning can increase the learning. \n3\nRead the “There are No Dumb Questions”\nThat means all of them. They’re not \noptional side-bars—they’re part of the core \ncontent! Sometimes the questions are more \nuseful than the answers. \n4\nDon’t do all your reading in one place.\nStand-up, stretch, move around, change \nchairs, change rooms. It’11 help your brain \nfeel something, and keeps your learning from \nbeing too connected to a particular place. \n5\nMake this the last thing you read before \nbed. Or at least the last challenging thing.\nPart of the learning (especially the transfer \nto long-term memory) happens after you put \nthe book down. Your brain needs time on \nits own, to do more processing. If you put in \nsomething new during that processing-time, \nsome of what you just learned will be lost. \n6\nDrink water. Lots of it.\nYour brain works best in a nice bath of fluid. \nDehydration (which can happen before you \never feel thirsty) decreases cognitive function.\n7\nTalk about it. Out loud.\nSpeaking activates a different part of \nthe brain. If you’re trying to understand \nsomething, or increase your chance of \nremembering it later, say it out loud. Better \nstill, try to explain it out loud to someone \nelse. You’11 learn more quickly, and you might \nuncover ideas you hadn’t known were there \nwhen you were reading about it.\n8\nListen to your brain.\nPay attention to whether your brain is getting \noverloaded. If you find yourself starting to skim \nthe surface or forget what you just read, it’5 \ntime for a break. Once you go past a certain \npoint, you won’t learn faster by trying to shove \nmore in, and you might even hurt the process.\n10\nType and run the code.\nType and run the code examples. Then you \ncan experiment with changing and improving \nthe code (or breaking it, which is sometimes \nthe best way to figure out what’5 really \nhappening). For long examples or Ready-bake \ncode, you can download the source files from \nwickedlysmart.com\ncut this out and stick it \non your refridgerator.\n\n9\nFeel something!\nYour brain needs to know that this matters. Get \ninvolved with the stories. Make up your own \ncaptions for the photos. Groaning over a bad \njoke is still better than feeling nothing at all.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (229x341)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "the intro\nyou are here xxvii\n50, we did our part. The rest is up to you. These tips are a \nstarting point; Listen to your brain and figure out what works \nfor you and what doesn’t. Try new things.\nHere’5 what YOU can do to bend your \nbrain into submission.\n1\nSlow down. The more you understand, \nthe less you have to memorize.\nDon’t just read. Stop and think. When the \nbook asks you a question, don’t just skip to \nthe answer. Imagine that someone really is \nasking the question. The more deeply you \nforce your brain to think, the better chance \nyou have of learning and remembering.\n2\nDo the exercises. Write your own notes.\nWe put them in, but if we did them for you, \nthat would be like having someone else \ndo your workouts for you. And don’t just \nlook at the exercises. Use a pencil. There’5 \nplenty of evidence that physical activity \nwhile learning can increase the learning. \n3\nRead the “There are No Dumb Questions”\nThat means all of them. They’re not \noptional side-bars—they’re part of the core \ncontent! Sometimes the questions are more \nuseful than the answers. \n4\nDon’t do all your reading in one place.\nStand-up, stretch, move around, change \nchairs, change rooms. It’11 help your brain \nfeel something, and keeps your learning from \nbeing too connected to a particular place. \n5\nMake this the last thing you read before \nbed. Or at least the last challenging thing.\nPart of the learning (especially the transfer \nto long-term memory) happens after you put \nthe book down. Your brain needs time on \nits own, to do more processing. If you put in \nsomething new during that processing-time, \nsome of what you just learned will be lost. \n6\nDrink water. Lots of it.\nYour brain works best in a nice bath of fluid. \nDehydration (which can happen before you \never feel thirsty) decreases cognitive function.\n7\nTalk about it. Out loud.\nSpeaking activates a different part of \nthe brain. If you’re trying to understand \nsomething, or increase your chance of \nremembering it later, say it out loud. Better \nstill, try to explain it out loud to someone \nelse. You’11 learn more quickly, and you might \nuncover ideas you hadn’t known were there \nwhen you were reading about it.\n8\nListen to your brain.\nPay attention to whether your brain is getting \noverloaded. If you find yourself starting to skim \nthe surface or forget what you just read, it’5 \ntime for a break. Once you go past a certain \npoint, you won’t learn faster by trying to shove \nmore in, and you might even hurt the process.\n10\nType and run the code.\nType and run the code examples. Then you \ncan experiment with changing and improving \nthe code (or breaking it, which is sometimes \nthe best way to figure out what’5 really \nhappening). For long examples or Ready-bake \ncode, you can download the source files from \nwickedlysmart.com\ncut this out and stick it \non your refridgerator.\n\n9\nFeel something!\nYour brain needs to know that this matters. Get \ninvolved with the stories. Make up your own \ncaptions for the photos. Groaning over a bad \njoke is still better than feeling nothing at all.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 29,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 29,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3067 chars",
+      "severity": "info"
+    },
+    {
+      "page": 29,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 29,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

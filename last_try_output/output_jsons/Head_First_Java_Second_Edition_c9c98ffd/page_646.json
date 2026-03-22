@@ -1,0 +1,88 @@
+{
+  "page_number": 646,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "612 \nchapter 18\nThe ‘helpers’ are the objects that actually do the communicating. \nThey make it possible for the client to act as though it’5 calling a \nmethod on a local object. In fact, it is. The client calls a method on \nthe client helper, as if the client helper were the actual service. The client \nhelper is a proxy for the Real Thing.\nIn other words, the client object thinks it’5 calling a method on \nthe remote service, because the client helper is pretending to be \nthe service object. Pretending to be the thing with the method the client \nwants to call!\nBut the client helper isn’t really the remote service. Although the \nclient helper acts like it (because it has the same method that the \nservice is advertising), the client helper doesn’t have any of the \nactual method logic the client is expecting. Instead, the client \nhelper contacts the server, transfers information about the method \ncall (e.g., name of the method, arguments, etc.), and waits for a \nreturn from the server.\nOn the server side, the service helper receives the request from \nthe client helper (through a Socket connection), unpacks the \ninformation about the call, and then invokes the real method on \nthe real service object. 50 to the service object, the call is local. It’5 \ncoming from the service helper, not a remote client.\nThe service helper gets the return value from the service, packs it \nup, and ships it back (over a Socket’5 output stream) to the client \nhelper. The client helper unpacks the information and returns the \nvalue to the client object.\nThe role of the ‘helpers’\nYour client object gets to \nact like it’5 making remote \nmethod calls. But what \nit’5 really doing is calling \nmethods on a heap-local \n‘proxy’ object that handles \nall the low-level details of \nSockets and streams.\n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nServer heap\nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nClient heap\nC\nli\ne\nn\nt\n \nh\ne\n1\np\ner\n5\ne\nr\nv\ni\nc\ne\n \nh\ne\n1\np\ne\nr\nClient object thinks \nit’5 talking to the \nReal Service. It \nthinks the client \nhelper is the thing \nthat can actually \ndo the real work.\nClient helper pretends \nto be the service, but \nit’5 just a proxy for the \nReal Thing.\nService helper gets the \nrequest from the client \nhelper, unpacks it, and \ncalls the method on the \nReal Service.\nThe Service object 15 \nthe Real Service. It’5 the \nobject with the method \nthat actually does the \nreal method work.\nclient and server helpers",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x136)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (53x75)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (50x105)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x97)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "612 \nchapter 18\nThe ‘helpers’ are the objects that actually do the communicating. \nThey make it possible for the client to act as though it’5 calling a \nmethod on a local object. In fact, it is. The client calls a method on \nthe client helper, as if the client helper were the actual service. The client \nhelper is a proxy for the Real Thing.\nIn other words, the client object thinks it’5 calling a method on \nthe remote service, because the client helper is pretending to be \nthe service object. Pretending to be the thing with the method the client \nwants to call!\nBut the client helper isn’t really the remote service. Although the \nclient helper acts like it (because it has the same method that the \nservice is advertising), the client helper doesn’t have any of the \nactual method logic the client is expecting. Instead, the client \nhelper contacts the server, transfers information about the method \ncall (e.g., name of the method, arguments, etc.), and waits for a \nreturn from the server.\nOn the server side, the service helper receives the request from \nthe client helper (through a Socket connection), unpacks the \ninformation about the call, and then invokes the real method on \nthe real service object. 50 to the service object, the call is local. It’5 \ncoming from the service helper, not a remote client.\nThe service helper gets the return value from the service, packs it \nup, and ships it back (over a Socket’5 output stream) to the client \nhelper. The client helper unpacks the information and returns the \nvalue to the client object.\nThe role of the ‘helpers’\nYour client object gets to \nact like it’5 making remote \nmethod calls. But what \nit’5 really doing is calling \nmethods on a heap-local \n‘proxy’ object that handles \nall the low-level details of \nSockets and streams.\n5\ne\nr\nv\ni\nc\ne\n \n0\nb\nj\ne\nc\nt\n \nServer heap\nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nClient heap\nC\nli\ne\nn\nt\n \nh\ne\n1\np\ner\n5\ne\nr\nv\ni\nc\ne\n \nh\ne\n1\np\ne\nr\nClient object thinks \nit’5 talking to the \nReal Service. It \nthinks the client \nhelper is the thing \nthat can actually \ndo the real work.\nClient helper pretends \nto be the service, but \nit’5 just a proxy for the \nReal Thing.\nService helper gets the \nrequest from the client \nhelper, unpacks it, and \ncalls the method on the \nReal Service.\nThe Service object 15 \nthe Real Service. It’5 the \nobject with the method \nthat actually does the \nreal method work.\nclient and server helpers",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 646,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 646,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2408 chars",
+      "severity": "info"
+    },
+    {
+      "page": 646,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 646,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "page_number": 592,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the collections API\n558 \nchapter 16\nHashSet\nSet\nextends\nimplements\nimplementation class\ninterface\n KEY \nCollection\n(interface)\nSet\n(interface)\nList\n(interface)\nSortedSet\n(interface)\nMap\n(interface)\nSortedMap\n(interface)\nLinkedList\nVector\nTreeSet\nLinkedHashSet\nHashSet\nArrayList\nTreeMap\nHashtable\nLinkedHashMap\nHashMap\nThe Collection API (part of it)\nNotice that the Map interface doesn’t \nactually extend the Collection interface, \nbut Map is still considered part of the \n“Collection Framework” (also known \nas the “Collection API”). 50 Maps are \nstill collections, even though they don’t \ninclude java.util.Collection in their \ninheritance tree.\n(Note: this is not the complete \ncollection API; there are other \nclasses and interfaces, but \nthese are the ones we care \nmost about.)\nMaps don’t extend from \njava.util.Collection, but \nthey’re still considered \nto be part of the \n“collections framework” \nin Java. 50 a Map is \nstill referred to as a \ncollection.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "TreeSet",
+          "LinkedHashSet"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "HashSet"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "ArrayList",
+          "LinkedList",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "KEY"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "HashSet"
+        ],
+        [
+          "Set"
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "SortedMap\n(interface)"
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "TreeMap",
+          "HashMap",
+          "LinkedHashMap"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "the collections API\n558 \nchapter 16\nHashSet\nSet\nextends\nimplements\nimplementation class\ninterface\n KEY \nCollection\n(interface)\nSet\n(interface)\nList\n(interface)\nSortedSet\n(interface)\nMap\n(interface)\nSortedMap\n(interface)\nLinkedList\nVector\nTreeSet\nLinkedHashSet\nHashSet\nArrayList\nTreeMap\nHashtable\nLinkedHashMap\nHashMap\nThe Collection API (part of it)\nNotice that the Map interface doesn’t \nactually extend the Collection interface, \nbut Map is still considered part of the \n“Collection Framework” (also known \nas the “Collection API”). 50 Maps are \nstill collections, even though they don’t \ninclude java.util.Collection in their \ninheritance tree.\n(Note: this is not the complete \ncollection API; there are other \nclasses and interfaces, but \nthese are the ones we care \nmost about.)\nMaps don’t extend from \njava.util.Collection, but \nthey’re still considered \nto be part of the \n“collections framework” \nin Java. 50 a Map is \nstill referred to as a \ncollection.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 592,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 592,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 964 chars",
+      "severity": "info"
+    },
+    {
+      "page": 592,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

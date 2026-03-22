@@ -1,0 +1,46 @@
+{
+  "page_number": 454,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "420 \nchapter 13\nimport java.awt.*;\nimport javax.swing.*;\nimport javax.sound.midi.*;\nimport java.util.*;\nimport java.awt.event.*;\npublic class BeatBox {\n JPanel mainPanel;\n ArrayList<JCheckBox> checkboxList;\n Sequencer sequencer;\n Sequence sequence;\n Track track;\n JFrame theFrame;\n String[] instrumentNames = {“Bass Drum”, “Closed Hi-Hat”, \n “Open Hi-Hat”,”Acoustic Snare”, “Crash Cymbal”, “Hand Clap”, \n “High Tom”, “Hi Bongo”, “Maracas”, “Whistle”, “Low Conga”, \n “Cowbell”, “Vibraslap”, “Low-mid Tom”, “High Agogo”, \n “Open Hi Conga”};\n int[] instruments = {35,42,46,38,49,39,50,60,70,72,64,56,58,47,67,63};\n \n public static void main (String[] args) {\n new BeatBox().buildGUI();\n }\n \n public void buildGUI() {\n theFrame = new JFrame(“Cyber BeatBox”);\n theFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n BorderLayout layout = new BorderLayout();\n JPanel background = new JPanel(layout);\n background.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));\n checkboxList = new ArrayList<JCheckBox>();\n Box buttonBox = new Box(BoxLayout.Y_AXIS);\n JButton start = new JButton(“Start”);\n start.addActionListener(new MyStartListener());\n buttonBox.add(start); \n \n JButton stop = new JButton(“Stop”);\n stop.addActionListener(new MyStopListener());\n buttonBox.add(stop);\n JButton upTempo = new JButton(“Tempo Up”);\n upTempo.addActionListener(new MyUpTempoListener());\n buttonBox.add(upTempo);\n JButton downTempo = new JButton(“Tempo Down”);\nBeatBox code\nWe store the checkboxes in an ArrayList\nThese are the names of the instruments, as a String \narray, for building the GUI labels (on each row)\nThese represent the actual drum ‘keys’. \nThe drum channel is like a piano, except \neach ‘key’ on the piano is a different drum. \n50 the number ‘35’ is the key for the Bass \ndrum, 42 is Closed Hi-Hat, etc.\nNothing special here, just lots of GUI \ncode. You’ve seen most of it before.\nAn ‘empty border’ gives us a margin \nbetween the edges of the panel and \nwhere the components are placed. \nPurely aesthetic.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "420 \nchapter 13\nimport java.awt.*;\nimport javax.swing.*;\nimport javax.sound.midi.*;\nimport java.util.*;\nimport java.awt.event.*;\npublic class BeatBox {\n JPanel mainPanel;\n ArrayList<JCheckBox> checkboxList;\n Sequencer sequencer;\n Sequence sequence;\n Track track;\n JFrame theFrame;\n String[] instrumentNames = {“Bass Drum”, “Closed Hi-Hat”, \n “Open Hi-Hat”,”Acoustic Snare”, “Crash Cymbal”, “Hand Clap”, \n “High Tom”, “Hi Bongo”, “Maracas”, “Whistle”, “Low Conga”, \n “Cowbell”, “Vibraslap”, “Low-mid Tom”, “High Agogo”, \n “Open Hi Conga”};\n int[] instruments = {35,42,46,38,49,39,50,60,70,72,64,56,58,47,67,63};\n \n public static void main (String[] args) {\n new BeatBox().buildGUI();\n }\n \n public void buildGUI() {\n theFrame = new JFrame(“Cyber BeatBox”);\n theFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n BorderLayout layout = new BorderLayout();\n JPanel background = new JPanel(layout);\n background.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));\n checkboxList = new ArrayList<JCheckBox>();\n Box buttonBox = new Box(BoxLayout.Y_AXIS);\n JButton start = new JButton(“Start”);\n start.addActionListener(new MyStartListener());\n buttonBox.add(start); \n \n JButton stop = new JButton(“Stop”);\n stop.addActionListener(new MyStopListener());\n buttonBox.add(stop);\n JButton upTempo = new JButton(“Tempo Up”);\n upTempo.addActionListener(new MyUpTempoListener());\n buttonBox.add(upTempo);\n JButton downTempo = new JButton(“Tempo Down”);\nBeatBox code\nWe store the checkboxes in an ArrayList\nThese are the names of the instruments, as a String \narray, for building the GUI labels (on each row)\nThese represent the actual drum ‘keys’. \nThe drum channel is like a piano, except \neach ‘key’ on the piano is a different drum. \n50 the number ‘35’ is the key for the Bass \ndrum, 42 is Closed Hi-Hat, etc.\nNothing special here, just lots of GUI \ncode. You’ve seen most of it before.\nAn ‘empty border’ gives us a margin \nbetween the edges of the panel and \nwhere the components are placed. \nPurely aesthetic.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 454,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 454,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2211 chars",
+      "severity": "info"
+    },
+    {
+      "page": 454,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

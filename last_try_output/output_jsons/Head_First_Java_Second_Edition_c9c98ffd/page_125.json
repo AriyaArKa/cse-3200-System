@@ -1,0 +1,87 @@
+{
+  "page_number": 125,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nmethods use instance variables\n91\nivar\nfactor\npublic\nprivate\nPool Puzzle\nYour job is to take code snippets from the \npool and place them into the blank lines \nin the code. You may not use the same \nsnippet more than once, and you won’t \nneed to use all the snippets. Your goal \nis to make a class that will compile and \nrun and produce the output listed. \npublic class Puzzle4 {\n public static void main(String [] args) {\n ___________________________________\n int y = 1;\n int x = 0;\n int result = 0;\n while (x < 6) {\n ___________________________\n ___________________________\n y = y * 10;\n _________________\n }\n x = 6;\n while (x > 0) {\n _________________\n result = result + ___________________\n }\n System.out.println(“result “ + result);\n }\n}\nclass ___________ {\n int ivar;\n ________ ______ doStuff(int _________) {\n if (ivar > 100) {\n return _________________________\n } else {\n return _________________________\n }\n }\n}\nNote: Each snippet \nfrom the pool can be \nused only once!\nFile Edit Window Help BellyFlop\n%java Puzzle4\nresult 543345\nOutput\nPuzzle4 [ ] obs = new Puzzle4[6];\nPuzzle4b [ ] obs = new Puzzle4b[6];\nPuzzle4b [ ] obs = new Puzzle4[6];\nobs [x] = new Puzzle4b(x);\nobs [ ] = new Puzzle4b( );\nobs [x] = new Puzzle4b( );\nobs = new Puzzle4b( );\ndoStuff(x);\nobs.doStuff(x);\nobs[x].doStuff(factor);\nobs[x].doStuff(x);\n ivar = x;\nobs.ivar = x;\nobs[x].ivar = x;\nobs[x].ivar = y;\nivar + factor;\nivar * (2 + factor);\nivar * (5 - factor);\nivar * factor;\nx = x + 1;\nx = x - 1;\nPuzzle4\nPuzzle4b\nPuzzle4b( )\nint\nshort",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help BellyFlop"
+        ],
+        [
+          "%java Puzzle4\nresult 543345"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (1278x549)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nmethods use instance variables\n91\nivar\nfactor\npublic\nprivate\nPool Puzzle\nYour job is to take code snippets from the \npool and place them into the blank lines \nin the code. You may not use the same \nsnippet more than once, and you won’t \nneed to use all the snippets. Your goal \nis to make a class that will compile and \nrun and produce the output listed. \npublic class Puzzle4 {\n public static void main(String [] args) {\n ___________________________________\n int y = 1;\n int x = 0;\n int result = 0;\n while (x < 6) {\n ___________________________\n ___________________________\n y = y * 10;\n _________________\n }\n x = 6;\n while (x > 0) {\n _________________\n result = result + ___________________\n }\n System.out.println(“result “ + result);\n }\n}\nclass ___________ {\n int ivar;\n ________ ______ doStuff(int _________) {\n if (ivar > 100) {\n return _________________________\n } else {\n return _________________________\n }\n }\n}\nNote: Each snippet \nfrom the pool can be \nused only once!\nFile Edit Window Help BellyFlop\n%java Puzzle4\nresult 543345\nOutput\nPuzzle4 [ ] obs = new Puzzle4[6];\nPuzzle4b [ ] obs = new Puzzle4b[6];\nPuzzle4b [ ] obs = new Puzzle4[6];\nobs [x] = new Puzzle4b(x);\nobs [ ] = new Puzzle4b( );\nobs [x] = new Puzzle4b( );\nobs = new Puzzle4b( );\ndoStuff(x);\nobs.doStuff(x);\nobs[x].doStuff(factor);\nobs[x].doStuff(x);\n ivar = x;\nobs.ivar = x;\nobs[x].ivar = x;\nobs[x].ivar = y;\nivar + factor;\nivar * (2 + factor);\nivar * (5 - factor);\nivar * factor;\nx = x + 1;\nx = x - 1;\nPuzzle4\nPuzzle4b\nPuzzle4b( )\nint\nshort",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 125,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 125,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1628 chars",
+      "severity": "info"
+    },
+    {
+      "page": 125,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 125,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

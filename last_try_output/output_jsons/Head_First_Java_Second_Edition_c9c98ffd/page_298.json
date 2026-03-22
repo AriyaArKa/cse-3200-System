@@ -1,0 +1,60 @@
+{
+  "page_number": 298,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "object lifecycle\n264 \nchapter 9\nInstance Variable\n1’d like to go first, because 1 tend to be more \nimportant to a program than a local variable. \n1’m there to support an object, usually \nthroughout the object’5 entire life. After all, \nwhat’5 an object without state? And what is \nstate? Values kept in instance variables.\nNo, don’t get me wrong, 1 do understand your \nrole in a method, it’5 just that your life is 50 \nshort. 50 temporary. That’5 why they call you \nguys “temporary variables”.\nMy apologies. 1 understand completely. \n1 never really thought about it like that. What \nare you doing while the other methods are \nrunning and you’re waiting for your frame to \nbe the top of the Stack again?\nLocal Variable\n1 appreciate your point of view, and 1 certainly \nappreciate the value of object state and all, \nbut 1 don’t want folks to be misled. Local \nvariables are really important. To use your \nphrase, “After all, what’5 an object without \nbehavior?” And what is behavior? Algorithms \nin methods. And you can bet your bits there’11 \nbe some local variables in there to make those \nalgorithms work.\nWithin the local-variable community, the \nphrase “temporary variable” is considered \nderogatory. We prefer “local”, “stack”, “auto-\nmatic”, or ”Scope-challenged”.\nAnyway, it’5 true that we don’t have a long \nlife, and it’5 not a particularly good life either. \nFirst, we’re shoved into a Stack frame with \nall the other local variables. And then, if the \nmethod we’re part of calls another method, \nanother frame is pushed on top of us. And if \nthat method calls another method... and 50 on. \nSometimes we have to wait forever for all the \nother methods on top of the Stack to com-\nplete 50 that our method can run again.\nNothing. Nothing at all. It’5 like being in \nstasis—that thing they do to people in science \nfiction movies when they have to travel long \ndistances. Suspended animation, really. We \njust sit there on hold. As long as our frame is \nstill there, we’re safe and the value we hold \nis secure, but it’5 a mixed blessing when our \nTonight’5 Talk: An instance variable and \na local variable discuss life and death \n(with remarkable civility)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (362x192)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "object lifecycle\n264 \nchapter 9\nInstance Variable\n1’d like to go first, because 1 tend to be more \nimportant to a program than a local variable. \n1’m there to support an object, usually \nthroughout the object’5 entire life. After all, \nwhat’5 an object without state? And what is \nstate? Values kept in instance variables.\nNo, don’t get me wrong, 1 do understand your \nrole in a method, it’5 just that your life is 50 \nshort. 50 temporary. That’5 why they call you \nguys “temporary variables”.\nMy apologies. 1 understand completely. \n1 never really thought about it like that. What \nare you doing while the other methods are \nrunning and you’re waiting for your frame to \nbe the top of the Stack again?\nLocal Variable\n1 appreciate your point of view, and 1 certainly \nappreciate the value of object state and all, \nbut 1 don’t want folks to be misled. Local \nvariables are really important. To use your \nphrase, “After all, what’5 an object without \nbehavior?” And what is behavior? Algorithms \nin methods. And you can bet your bits there’11 \nbe some local variables in there to make those \nalgorithms work.\nWithin the local-variable community, the \nphrase “temporary variable” is considered \nderogatory. We prefer “local”, “stack”, “auto-\nmatic”, or ”Scope-challenged”.\nAnyway, it’5 true that we don’t have a long \nlife, and it’5 not a particularly good life either. \nFirst, we’re shoved into a Stack frame with \nall the other local variables. And then, if the \nmethod we’re part of calls another method, \nanother frame is pushed on top of us. And if \nthat method calls another method... and 50 on. \nSometimes we have to wait forever for all the \nother methods on top of the Stack to com-\nplete 50 that our method can run again.\nNothing. Nothing at all. It’5 like being in \nstasis—that thing they do to people in science \nfiction movies when they have to travel long \ndistances. Suspended animation, really. We \njust sit there on hold. As long as our frame is \nstill there, we’re safe and the value we hold \nis secure, but it’5 a mixed blessing when our \nTonight’5 Talk: An instance variable and \na local variable discuss life and death \n(with remarkable civility)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 298,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 298,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2166 chars",
+      "severity": "info"
+    },
+    {
+      "page": 298,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 298,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 394,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9225,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "360 \nchapter 12\nimport javax.swing.*;\nimport java.awt.event.*;\npublic class SimpleGui1B implements ActionListener {\n JButton button;\n public static void main (String[] args) {\n SimpleGui1B gui = new SimpleGui1B();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame();\n button = new JButton(“click me”);\n button.addActionListener(this);\n frame.getContentPane().add(button);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.setSize(300,300);\n frame.setVisible(true);\n }\n public void actionPerformed(ActionEvent event) {\n button.setText(“1’ve been clicked!”);\n }\n}\nImplement the interface. This says, \n“an instance of SimpleGui1B 15-A \nActionListener”.\n(The button will give events only to \nActionListener implementers)\nregister your interest with the button. This says \nto the button, “Add me to your list of listeners”. \nThe argument you pass MUST be an object from a \nclass that implements ActionListener!!\na new import statement for the package that \nActionListener and ActionEvent are in.\nImplement the ActionListener interface’5 \nactionPerformed() method.. This is the \nactual event-handling method!\nThe button calls this method to let you know an event \nhappened. It sends you an ActionEvent object as the \nargument, but we don’t need it. Knowing the event \nhappened is enough info for us.\n2\n3\n1\nImplement the ActionListener interface\n1\nRegister with the button (tell it you \nwant to listen for events)\n2\nDefine the event-handling method (implement \nthe actionPerformed() method from the \nActionListener interface)\n3\ngetting events\nGetting a button’5 ActionEvent",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "360 \nchapter 12\nimport javax.swing.*;\nimport java.awt.event.*;\npublic class SimpleGui1B implements ActionListener {\n JButton button;\n public static void main (String[] args) {\n SimpleGui1B gui = new SimpleGui1B();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame();\n button = new JButton(“click me”);\n button.addActionListener(this);\n frame.getContentPane().add(button);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.setSize(300,300);\n frame.setVisible(true);\n }\n public void actionPerformed(ActionEvent event) {\n button.setText(“1’ve been clicked!”);\n }\n}\nImplement the interface. This says, \n“an instance of SimpleGui1B 15-A \nActionListener”.\n(The button will give events only to \nActionListener implementers)\nregister your interest with the button. This says \nto the button, “Add me to your list of listeners”. \nThe argument you pass MUST be an object from a \nclass that implements ActionListener!!\na new import statement for the package that \nActionListener and ActionEvent are in.\nImplement the ActionListener interface’5 \nactionPerformed() method.. This is the \nactual event-handling method!\nThe button calls this method to let you know an event \nhappened. It sends you an ActionEvent object as the \nargument, but we don’t need it. Knowing the event \nhappened is enough info for us.\n2\n3\n1\nImplement the ActionListener interface\n1\nRegister with the button (tell it you \nwant to listen for events)\n2\nDefine the event-handling method (implement \nthe actionPerformed() method from the \nActionListener interface)\n3\ngetting events\nGetting a button’5 ActionEvent",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 394,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 394,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1673 chars",
+      "severity": "info"
+    },
+    {
+      "page": 394,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

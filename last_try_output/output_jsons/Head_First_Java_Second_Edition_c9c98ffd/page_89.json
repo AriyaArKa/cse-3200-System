@@ -1,0 +1,102 @@
+{
+  "page_number": 89,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nprimitives and references\n55\nreference\nbyte short int long \n \n \n 8 16 32 64 (bit depth not relevant) \nAn object reference is just \nanother variable value. \nSomething that goes in a cup.\nOnly this time, the value is a remote control.\nWith primitive variables, the value of the vari-\nable is... the value (5, -26.7, ‘a’).\nWith reference variables, the value of the \nvariable is... bits representing a way to get to \na specific object. \nYou don’t know (or care) how any particular \nJVM implements object references. Sure, they \nmight be a pointer to a pointer to... but even \nif you know, you still can’t use the bits for \nanything other than accessing an object.\nDog myDog = new Dog();\nTells the JVM to allocate space for a \nreference variable, and names that \nvariable myDog. The reference variable \nis, forever, of type Dog. In other words, \na remote control that has buttons to \ncontrol a Dog, but not a Cat or a Button \nor a Socket. \n1\nDeclare a reference \nvariable\nDog\nmyDog\nDog myDog = new Dog();\nTells the JVM to allocate space for a \nnew Dog object on the heap (we’11 \nlearn a lot more about that process, \nespecially in chapter 9.)\n2\nCreate an object\nDog myDog = new Dog();\nThe 3 steps of object \ndeclaration, creation and \nassignment\n1\n2\n3\nDog object\nDog myDog = new Dog();\nAssigns the new Dog to the reference \nvariable myDog. In other words, \nprograms the remote control.\n3\nLink the object \nand the reference\nDog object\nDog\nmyDog\nWe don’t care how many 1’5 and 0’5 there are in a reference variable.It’5 up to each \nJVM and the phase of the moon. \nbyte x = 7;\nThe bits representing 7 go \ninto the variable. (00000111).\n00000111\nDog myDog = new Dog();\nThe bits representing a way to get to \nthe Dog object go into the variable. \nThe Dog object itself does not go into \nthe variable!\nprimitive\nvalue\nreference\nvalue\nReference Variable\nPrimitive Variable\nD\n0\ng\n \n0\nb\nj\ne\nct\nDog\nbyte",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (222x215)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (192x314)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (99x140)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (344x188)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (76x77)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nprimitives and references\n55\nreference\nbyte short int long \n \n \n 8 16 32 64 (bit depth not relevant) \nAn object reference is just \nanother variable value. \nSomething that goes in a cup.\nOnly this time, the value is a remote control.\nWith primitive variables, the value of the vari-\nable is... the value (5, -26.7, ‘a’).\nWith reference variables, the value of the \nvariable is... bits representing a way to get to \na specific object. \nYou don’t know (or care) how any particular \nJVM implements object references. Sure, they \nmight be a pointer to a pointer to... but even \nif you know, you still can’t use the bits for \nanything other than accessing an object.\nDog myDog = new Dog();\nTells the JVM to allocate space for a \nreference variable, and names that \nvariable myDog. The reference variable \nis, forever, of type Dog. In other words, \na remote control that has buttons to \ncontrol a Dog, but not a Cat or a Button \nor a Socket. \n1\nDeclare a reference \nvariable\nDog\nmyDog\nDog myDog = new Dog();\nTells the JVM to allocate space for a \nnew Dog object on the heap (we’11 \nlearn a lot more about that process, \nespecially in chapter 9.)\n2\nCreate an object\nDog myDog = new Dog();\nThe 3 steps of object \ndeclaration, creation and \nassignment\n1\n2\n3\nDog object\nDog myDog = new Dog();\nAssigns the new Dog to the reference \nvariable myDog. In other words, \nprograms the remote control.\n3\nLink the object \nand the reference\nDog object\nDog\nmyDog\nWe don’t care how many 1’5 and 0’5 there are in a reference variable.It’5 up to each \nJVM and the phase of the moon. \nbyte x = 7;\nThe bits representing 7 go \ninto the variable. (00000111).\n00000111\nDog myDog = new Dog();\nThe bits representing a way to get to \nthe Dog object go into the variable. \nThe Dog object itself does not go into \nthe variable!\nprimitive\nvalue\nreference\nvalue\nReference Variable\nPrimitive Variable\nD\n0\ng\n \n0\nb\nj\ne\nct\nDog\nbyte",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 89,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 89,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2048 chars",
+      "severity": "info"
+    },
+    {
+      "page": 89,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 7",
+      "severity": "info"
+    },
+    {
+      "page": 89,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

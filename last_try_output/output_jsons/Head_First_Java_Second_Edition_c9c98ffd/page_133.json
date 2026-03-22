@@ -1,0 +1,76 @@
+{
+  "page_number": 133,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n99\nDeveloping a Class\nAs a programmer, you probably have a methodology/\nprocess/approach to writing code. Well, 50 do we. Our \nsequence is designed to help you see (and learn) what \nwe’re thinking as we work through coding a class. It \nisn’t necessarily the way we (or you) write code in the \nReal World. In the Real World, of course, you’11 follow \nthe approach your personal preferences, project, or \nemployer dictate. We, however, can do pretty much \nwhatever we want. And when we create a Java class as a \n“learning experience”, we usually do it like this:\n0 Figure out what the class is supposed to do.\n0 List the instance variables and methods.\n0 Write prepcode for the methods. (You’11 see \nthis in just a moment.)\n0 Write test code for the methods.\n0 Implement the class.\n0 Test the methods.\n0 Debug and reimplement as needed.\n0 Express gratitude that we don’t have to test \nour 50-called learning experience app on \nactual live users.\nThe three things we’11 write for \neach class:\nprep code\nA form of pseudocode, to help you focus on \nthe logic without stressing about syntax.\ntest code\nA class or methods that will test the real code \nand validate that it’5 doing the right thing.\nreal code\nThe actual implementation of the class. This is \nwhere we write real Java code.\n \nTo Do:\nSimpleDotCom class\n 0 write prep code\n 0 write test code\n 0 write final Java code\nSimpleDotComGame \nclass\n 0 write prep code\n write test code [no]\n 0 write final Java code\nprep code test code\nreal code\nThis bar is displayed on the next set of pages to tell \nyou which part you’re working on. For example, if \nyou see this picture at the top of a page, it means \nyou’re working on prepcode for the SimpleDotCom \nclass.\n prep code \ntest code\nreal code\nSimpleDotCom class\n prep code \nFlex those dendrites.\nHow would you decide which class or classes \nto build first, when you’re writing a program? \nAssuming that all but the tiniest programs \nneed more than one class (if you’re following \ngood 00 principles and not having one class \ndo many different jobs), where do you start?\nbrain\npower\nA",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "real code"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "pprreepp ccooddee",
+          "te",
+          "st code",
+          "real code"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "you are here\nwriting a program\n99\nDeveloping a Class\nAs a programmer, you probably have a methodology/\nprocess/approach to writing code. Well, 50 do we. Our \nsequence is designed to help you see (and learn) what \nwe’re thinking as we work through coding a class. It \nisn’t necessarily the way we (or you) write code in the \nReal World. In the Real World, of course, you’11 follow \nthe approach your personal preferences, project, or \nemployer dictate. We, however, can do pretty much \nwhatever we want. And when we create a Java class as a \n“learning experience”, we usually do it like this:\n0 Figure out what the class is supposed to do.\n0 List the instance variables and methods.\n0 Write prepcode for the methods. (You’11 see \nthis in just a moment.)\n0 Write test code for the methods.\n0 Implement the class.\n0 Test the methods.\n0 Debug and reimplement as needed.\n0 Express gratitude that we don’t have to test \nour 50-called learning experience app on \nactual live users.\nThe three things we’11 write for \neach class:\nprep code\nA form of pseudocode, to help you focus on \nthe logic without stressing about syntax.\ntest code\nA class or methods that will test the real code \nand validate that it’5 doing the right thing.\nreal code\nThe actual implementation of the class. This is \nwhere we write real Java code.\n \nTo Do:\nSimpleDotCom class\n 0 write prep code\n 0 write test code\n 0 write final Java code\nSimpleDotComGame \nclass\n 0 write prep code\n write test code [no]\n 0 write final Java code\nprep code test code\nreal code\nThis bar is displayed on the next set of pages to tell \nyou which part you’re working on. For example, if \nyou see this picture at the top of a page, it means \nyou’re working on prepcode for the SimpleDotCom \nclass.\n prep code \ntest code\nreal code\nSimpleDotCom class\n prep code \nFlex those dendrites.\nHow would you decide which class or classes \nto build first, when you’re writing a program? \nAssuming that all but the tiniest programs \nneed more than one class (if you’re following \ngood 00 principles and not having one class \ndo many different jobs), where do you start?\nbrain\npower\nA",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 133,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 133,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2149 chars",
+      "severity": "info"
+    },
+    {
+      "page": 133,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

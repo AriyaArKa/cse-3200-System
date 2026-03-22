@@ -1,0 +1,92 @@
+{
+  "page_number": 344,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "310 \nchapter 10\nExercise\nBE the compiler\nThe Java file on this page represents a \ncomplete program. Your job is to play \ncompiler and determine whether this \nfile will compile. If it won’t compile, \nhow would you fix it, and if \nit does compile, what would \nbe its output?\nclass StaticSuper{\n static {\n System.out.println(“super static block”);\n }\n \n StaticSuper{\n System.out.println(\n “super constructor”);\n }\n}\npublic class StaticTests extends StaticSuper {\n static int rand;\n static {\n rand = (int) (Math.random() * 6);\n System.out.println(“static block “ + rand);\n }\n StaticTests() {\n System.out.println(“constructor”);\n }\n public static void main(String [] args) {\n System.out.println(“in main”);\n StaticTests st = new StaticTests();\n }\n}\nFile Edit Window Help Cling\n%java StaticTests\nstatic block 4\nin main\nsuper static block\nsuper constructor\nconstructor\nPossible Output\nFile Edit Window Help Electricity\n%java StaticTests\nsuper static block\nstatic block 3\nin main\nsuper constructor\nconstructor\nPossible Output\nIf it compiles, which of these is \nthe output?\nbe the compiler",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Cling"
+        ],
+        [
+          "%java StaticTests\nstatic block 4\nin main\nsuper static block\nsuper constructor\nconstructor"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Electricity"
+        ],
+        [
+          "%java StaticTests\nsuper static block\nstatic block 3\nin main\nsuper constructor\nconstructor"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (157x132)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (300x347)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "310 \nchapter 10\nExercise\nBE the compiler\nThe Java file on this page represents a \ncomplete program. Your job is to play \ncompiler and determine whether this \nfile will compile. If it won’t compile, \nhow would you fix it, and if \nit does compile, what would \nbe its output?\nclass StaticSuper{\n static {\n System.out.println(“super static block”);\n }\n \n StaticSuper{\n System.out.println(\n “super constructor”);\n }\n}\npublic class StaticTests extends StaticSuper {\n static int rand;\n static {\n rand = (int) (Math.random() * 6);\n System.out.println(“static block “ + rand);\n }\n StaticTests() {\n System.out.println(“constructor”);\n }\n public static void main(String [] args) {\n System.out.println(“in main”);\n StaticTests st = new StaticTests();\n }\n}\nFile Edit Window Help Cling\n%java StaticTests\nstatic block 4\nin main\nsuper static block\nsuper constructor\nconstructor\nPossible Output\nFile Edit Window Help Electricity\n%java StaticTests\nsuper static block\nstatic block 3\nin main\nsuper constructor\nconstructor\nPossible Output\nIf it compiles, which of these is \nthe output?\nbe the compiler",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 344,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 344,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1137 chars",
+      "severity": "info"
+    },
+    {
+      "page": 344,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 344,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

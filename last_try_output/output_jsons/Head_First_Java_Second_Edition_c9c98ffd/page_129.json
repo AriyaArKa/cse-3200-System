@@ -1,0 +1,74 @@
+{
+  "page_number": 129,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "5 writing a program\nthis is a new chapter\n95\nLet’5 put some muscle in our methods. We dabbled with variables, played \nwith a few objects, and wrote a little code. But we were weak. We need more tools. Like \noperators. We need more operators 50 we can do something a little more interesting than, \nsay, bark. And loops. We need loops, but what’5 with the wimpy while loops? We need for \nloops if we’re really serious. Might be useful to generate random numbers. And turn a \nString into an int, yeah, that would be cool. Better learn that too. And why don’t we learn \nit all by building something real, to see what it’5 like to write (and test) a program from scratch. \nMaybe a game, like Battleships. That’5 a heavy-lifting task, 50 it’11 take two chapters to finish. \nWe’11 build a simple version in this chapter, and then build a more powerful deluxe version in \nchapter 6.\nExtra-Strength Methods\n1 can lift \nheavy objects.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (630x778)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "5 writing a program\nthis is a new chapter\n95\nLet’5 put some muscle in our methods. We dabbled with variables, played \nwith a few objects, and wrote a little code. But we were weak. We need more tools. Like \noperators. We need more operators 50 we can do something a little more interesting than, \nsay, bark. And loops. We need loops, but what’5 with the wimpy while loops? We need for \nloops if we’re really serious. Might be useful to generate random numbers. And turn a \nString into an int, yeah, that would be cool. Better learn that too. And why don’t we learn \nit all by building something real, to see what it’5 like to write (and test) a program from scratch. \nMaybe a game, like Battleships. That’5 a heavy-lifting task, 50 it’11 take two chapters to finish. \nWe’11 build a simple version in this chapter, and then build a more powerful deluxe version in \nchapter 6.\nExtra-Strength Methods\n1 can lift \nheavy objects.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 129,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 129,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 935 chars",
+      "severity": "info"
+    },
+    {
+      "page": 129,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 129,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

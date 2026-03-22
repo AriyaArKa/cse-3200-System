@@ -1,0 +1,46 @@
+{
+  "page_number": 716,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the index \n682 \nindex\nstreams 433, 437\nwith sockets 478\nif -else 13\nif statement 13\nimmutability, Strings\nimmutability 661\nimplements 224\nimports\nstatic imports 307\nimport statement 155, 157\nincrement 105\ninheritance\nabout 31, 166–192\nand abstract classes 201\nanimals 170–175\n15-A 214, 251\nsuper 228\ninitializing\ninstance variables 84\nprimitives 84\nstatic variables 281\ninner classes\nabout 376–386\nevents 379\ninner class threesome 381\nInputStreamReader 478\ninstance variables\nabout 34, 73\ndeclaring 84\ndefault values 84\ninitializing 84\nlife and scope 258–263\nlocal variables vs. 236–238, 239\nstatic vs. 277\ninstantiation. See objects\nint 50\nprimitive 51\nInteger. See wrapper\ninterfaces\nabout 219–227\nfor serialization 437\nimplementing 224, 437\nimplementing multiple 226\njava.io.Serializable 437\nIP address. See networking\n15-A 177–181, 251\nJ\nJ2EE 631\nJAR files\nbasic commands 593\nexecutable 585–586, 592\nmanifest 585\nrunning executable 586, 592\ntool 593\nwith Java Web Start 598\nJava, about 5, 6\njavac. See compiler\nJava in a Nutshell 158–159\njava sound 317, 340\nJava Web Start 597–601\njnlp file 598, 599\nJini 632–635\nJNLP 598\njnlp file 599\nJPEG 365\nJVM\nabout 2, 18\nJWS. See Java Web Start\nK\nkeywords 53\nL\n1 264\nlayout managers 401–412\nBorderLayout 370–371, 403, 407",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "the index \n682 \nindex\nstreams 433, 437\nwith sockets 478\nif -else 13\nif statement 13\nimmutability, Strings\nimmutability 661\nimplements 224\nimports\nstatic imports 307\nimport statement 155, 157\nincrement 105\ninheritance\nabout 31, 166–192\nand abstract classes 201\nanimals 170–175\n15-A 214, 251\nsuper 228\ninitializing\ninstance variables 84\nprimitives 84\nstatic variables 281\ninner classes\nabout 376–386\nevents 379\ninner class threesome 381\nInputStreamReader 478\ninstance variables\nabout 34, 73\ndeclaring 84\ndefault values 84\ninitializing 84\nlife and scope 258–263\nlocal variables vs. 236–238, 239\nstatic vs. 277\ninstantiation. See objects\nint 50\nprimitive 51\nInteger. See wrapper\ninterfaces\nabout 219–227\nfor serialization 437\nimplementing 224, 437\nimplementing multiple 226\njava.io.Serializable 437\nIP address. See networking\n15-A 177–181, 251\nJ\nJ2EE 631\nJAR files\nbasic commands 593\nexecutable 585–586, 592\nmanifest 585\nrunning executable 586, 592\ntool 593\nwith Java Web Start 598\nJava, about 5, 6\njavac. See compiler\nJava in a Nutshell 158–159\njava sound 317, 340\nJava Web Start 597–601\njnlp file 598, 599\nJini 632–635\nJNLP 598\njnlp file 599\nJPEG 365\nJVM\nabout 2, 18\nJWS. See Java Web Start\nK\nkeywords 53\nL\n1 264\nlayout managers 401–412\nBorderLayout 370–371, 403, 407",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 716,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 716,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1323 chars",
+      "severity": "info"
+    },
+    {
+      "page": 716,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

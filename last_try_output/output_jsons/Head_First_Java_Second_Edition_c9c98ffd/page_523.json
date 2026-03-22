@@ -1,0 +1,60 @@
+{
+  "page_number": 523,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n489\nYou know by now that we’re \ngoing with option three.\nIn Java you really CAN \nwalk and chew gum at \nthe same time.\nWe want something to run continuously, \nchecking for messages from the server, but \nwithout interrupting the user’5 ability to interact \nwith the GUI! 50 while the user is happily \ntyping new messages or scrolling through \nthe incoming messages, we want something \nbehind the scenes to keep reading in new input \nfrom the server.\nThat means we finally need a new thread. A \nnew, separate stack.\nWe want everything we did in the Send-Only \nversion (version one) to work the same way, \nwhile a new process runs along side that reads \ninformation from the server and displays it in \nthe incoming text area.\nWell, not quite. Unless you have multiple \nprocessors on your computer, each new Java \nthread is not actually a separate process \nrunning on the 05. But it almost feels as \nthough it is.\nMultithreading in Java\nJava has multiple threading built right into \nthe fabric of the language. And it’5 a snap to \nmake a new thread of execution:\nThread t = new Thread();\nt.start();\nThat’5 it. By creating a new Thread object, \nyou’ve launched a separate thread of execution, \nwith its very own call stack.\nExcept for one problem.\nThat thread doesn’t actually do anything, \n50 the thread “dies” virtually the instant \nit’5 born. When a thread dies, its new stack \ndisappears again. End of story.\n50 we’re missing one key component—the \nthread’5 job. In other words, we need the \ncode that you want to have run by a separate \nthread.\nMultiple threading in Java means we have to \nlook at both the thread and the job that’5 run \nby the thread. And we’11 also have to look \nat the Thread class in the java.lang package. \n(Remember, java.lang is the package you get \nimported for free, implicitly, and it’5 where \nthe classes most fundamental to the language \nlive, including String and System.)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (496x646)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n489\nYou know by now that we’re \ngoing with option three.\nIn Java you really CAN \nwalk and chew gum at \nthe same time.\nWe want something to run continuously, \nchecking for messages from the server, but \nwithout interrupting the user’5 ability to interact \nwith the GUI! 50 while the user is happily \ntyping new messages or scrolling through \nthe incoming messages, we want something \nbehind the scenes to keep reading in new input \nfrom the server.\nThat means we finally need a new thread. A \nnew, separate stack.\nWe want everything we did in the Send-Only \nversion (version one) to work the same way, \nwhile a new process runs along side that reads \ninformation from the server and displays it in \nthe incoming text area.\nWell, not quite. Unless you have multiple \nprocessors on your computer, each new Java \nthread is not actually a separate process \nrunning on the 05. But it almost feels as \nthough it is.\nMultithreading in Java\nJava has multiple threading built right into \nthe fabric of the language. And it’5 a snap to \nmake a new thread of execution:\nThread t = new Thread();\nt.start();\nThat’5 it. By creating a new Thread object, \nyou’ve launched a separate thread of execution, \nwith its very own call stack.\nExcept for one problem.\nThat thread doesn’t actually do anything, \n50 the thread “dies” virtually the instant \nit’5 born. When a thread dies, its new stack \ndisappears again. End of story.\n50 we’re missing one key component—the \nthread’5 job. In other words, we need the \ncode that you want to have run by a separate \nthread.\nMultiple threading in Java means we have to \nlook at both the thread and the job that’5 run \nby the thread. And we’11 also have to look \nat the Thread class in the java.lang package. \n(Remember, java.lang is the package you get \nimported for free, implicitly, and it’5 where \nthe classes most fundamental to the language \nlive, including String and System.)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 523,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 523,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1941 chars",
+      "severity": "info"
+    },
+    {
+      "page": 523,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 523,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

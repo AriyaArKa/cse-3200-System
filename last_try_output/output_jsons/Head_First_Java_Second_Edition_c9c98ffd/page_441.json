@@ -1,0 +1,67 @@
+{
+  "page_number": 441,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n407\n public void go() {\n JFrame frame = new JFrame();\n \n JButton east = new JButton(“East”);\n JButton west = new JButton(“West”);\n JButton north = new JButton(“North”);\n JButton south = new JButton(“South”);\n JButton center = new JButton(“Center”);\n \n frame.getContentPane().add(BorderLayout.EAST, east);\n frame.getContentPane().add(BorderLayout.WEST, west);\n frame.getContentPane().add(BorderLayout.NORTH, north);\n frame.getContentPane().add(BorderLayout.SOUTH, south);\n frame.getContentPane().add(BorderLayout.CENTER, center);\n frame.setSize(300,300);\n frame.setVisible(true);\n }\nThe center region gets whatever’5 left! \n(except in one special case we’11 look at later)\n8\nu\nt\nt\n0\nn\n \n0\nb\nj\ne\nc\nt\n \n1 think 1’m getting it... if 1’m in east or \nwest, 1 get my preferred width but the \nheight is up to the layout manager. And \nif 1’m in north or south, it’5 just the \nopposite—1 get my preferred height, but \nnot width.\nBut what happens \nin the center region?\nComponents in the east and \nwest get their preferred width.\nComponents in the north and \nsouth get their preferred \nheight.\nComponents in the center get \nwhatever space is left over, \nbased on the frame dimensions \n(300 x 300 in this code).\n300 pixels\n300 pixels\nWhen you put something \nin the north or south, it \ngoes all the way across \nthe frame, 50 the things \nin the east and west \nwon’t be as tall as they \nwould be if the north and \nsouth regions were empty.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (309x308)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (106x107)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "using swing\nyou are here\n407\n public void go() {\n JFrame frame = new JFrame();\n \n JButton east = new JButton(“East”);\n JButton west = new JButton(“West”);\n JButton north = new JButton(“North”);\n JButton south = new JButton(“South”);\n JButton center = new JButton(“Center”);\n \n frame.getContentPane().add(BorderLayout.EAST, east);\n frame.getContentPane().add(BorderLayout.WEST, west);\n frame.getContentPane().add(BorderLayout.NORTH, north);\n frame.getContentPane().add(BorderLayout.SOUTH, south);\n frame.getContentPane().add(BorderLayout.CENTER, center);\n frame.setSize(300,300);\n frame.setVisible(true);\n }\nThe center region gets whatever’5 left! \n(except in one special case we’11 look at later)\n8\nu\nt\nt\n0\nn\n \n0\nb\nj\ne\nc\nt\n \n1 think 1’m getting it... if 1’m in east or \nwest, 1 get my preferred width but the \nheight is up to the layout manager. And \nif 1’m in north or south, it’5 just the \nopposite—1 get my preferred height, but \nnot width.\nBut what happens \nin the center region?\nComponents in the east and \nwest get their preferred width.\nComponents in the north and \nsouth get their preferred \nheight.\nComponents in the center get \nwhatever space is left over, \nbased on the frame dimensions \n(300 x 300 in this code).\n300 pixels\n300 pixels\nWhen you put something \nin the north or south, it \ngoes all the way across \nthe frame, 50 the things \nin the east and west \nwon’t be as tall as they \nwould be if the north and \nsouth regions were empty.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 441,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 441,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1539 chars",
+      "severity": "info"
+    },
+    {
+      "page": 441,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 441,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

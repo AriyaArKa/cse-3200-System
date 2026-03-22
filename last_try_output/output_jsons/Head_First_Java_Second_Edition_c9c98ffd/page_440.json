@@ -1,0 +1,67 @@
+{
+  "page_number": 440,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "406 \nchapter 13\nborder layout\n public void go() {\n JFrame frame = new JFrame();\n JButton button = new JButton(“There is no spoon...”);\n frame.getContentPane().add(BorderLayout.NORTH, button);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\nLet’5 try a button in the NORTH region\n public void go() {\n JFrame frame = new JFrame();\n JButton button = new JButton(“Click This!”);\n Font bigFont = new Font(“serif”, Font.BOLD, 28);\n button.setFont(bigFont);\n frame.getContentPane().add(BorderLayout.NORTH, button);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\n \nNow let’5 make the button ask to be taller\nHow do we do that? The button is already as wide \nas it can ever be—as wide as the frame. But we \ncan try to make it taller by giving it a bigger font.\nThe button is as tall as it \nwants to be, but as wide as \nthe frame.\nThe width stays the same, but now \nthe button is taller. The north \nregion stretched to accomodate \nthe button’5 new preferred height.\nA bigger font will force the \nframe to allocate more space \nfor the button’5 height.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (210x209)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (209x210)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "406 \nchapter 13\nborder layout\n public void go() {\n JFrame frame = new JFrame();\n JButton button = new JButton(“There is no spoon...”);\n frame.getContentPane().add(BorderLayout.NORTH, button);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\nLet’5 try a button in the NORTH region\n public void go() {\n JFrame frame = new JFrame();\n JButton button = new JButton(“Click This!”);\n Font bigFont = new Font(“serif”, Font.BOLD, 28);\n button.setFont(bigFont);\n frame.getContentPane().add(BorderLayout.NORTH, button);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\n \nNow let’5 make the button ask to be taller\nHow do we do that? The button is already as wide \nas it can ever be—as wide as the frame. But we \ncan try to make it taller by giving it a bigger font.\nThe button is as tall as it \nwants to be, but as wide as \nthe frame.\nThe width stays the same, but now \nthe button is taller. The north \nregion stretched to accomodate \nthe button’5 new preferred height.\nA bigger font will force the \nframe to allocate more space \nfor the button’5 height.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 440,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 440,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1131 chars",
+      "severity": "info"
+    },
+    {
+      "page": 440,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 440,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

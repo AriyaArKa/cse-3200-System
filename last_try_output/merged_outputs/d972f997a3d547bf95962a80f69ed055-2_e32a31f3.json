@@ -1,0 +1,1277 @@
+{
+  "document": {
+    "source": "d972f997a3d547bf95962a80f69ed055-2.pdf",
+    "total_pages": 1,
+    "language_detected": [
+      "bn",
+      "en"
+    ],
+    "has_handwriting": false,
+    "has_tables": false,
+    "has_images": true,
+    "processing_summary": {
+      "pages_processed_locally": 1,
+      "pages_sent_to_api": 0,
+      "overall_confidence": 0.7611,
+      "processing_time_ms": 212036.17
+    },
+    "decision_summary": {
+      "total": 0,
+      "by_severity": {
+        "info": 0,
+        "warning": 0,
+        "error": 0
+      },
+      "unique_keywords": []
+    },
+    "all_decisions": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "extraction": {
+        "method": "ocr_local",
+        "engine": "EasyOCR",
+        "confidence_score": 0.7611,
+        "correction_applied": true,
+        "numeric_validation_passed": false
+      },
+      "content_blocks": [
+        {
+          "block_id": 1,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "জনসংযোগ উপবিভগ",
+          "confidence": 0.9306,
+          "bbox": [
+            379,
+            247,
+            679,
+            303
+          ]
+        },
+        {
+          "block_id": 2,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বংল একডেমি",
+          "confidence": 0.4646,
+          "bbox": [
+            377,
+            295,
+            641,
+            348
+          ]
+        },
+        {
+          "block_id": 3,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ঢক ১০০০ ফোন",
+          "confidence": 0.4905,
+          "bbox": [
+            381,
+            349,
+            591,
+            381
+          ]
+        },
+        {
+          "block_id": 4,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "৫৮৬১১২৪৮ ফযকস",
+          "confidence": 0.4755,
+          "bbox": [
+            609,
+            346,
+            851,
+            384
+          ]
+        },
+        {
+          "block_id": 5,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৯৬৬১0৮0",
+          "confidence": 0.6052,
+          "bbox": [
+            870,
+            349,
+            1009,
+            378
+          ]
+        },
+        {
+          "block_id": 6,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বংন",
+          "confidence": 0.4304,
+          "bbox": [
+            282,
+            389,
+            327,
+            405
+          ]
+        },
+        {
+          "block_id": 7,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ই-মেইল",
+          "confidence": 1.0,
+          "bbox": [
+            377,
+            369,
+            487,
+            418
+          ]
+        },
+        {
+          "block_id": 8,
+          "type": "paragraph",
+          "language": "en",
+          "text": "ganglaacatemirggmaiicom_Dacademi 955Qyahoocon",
+          "confidence": 0.0884,
+          "bbox": [
+            502,
+            374,
+            1294,
+            423
+          ]
+        },
+        {
+          "block_id": 9,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ওযব সহঢ",
+          "confidence": 0.4801,
+          "bbox": [
+            381,
+            413,
+            524,
+            440
+          ]
+        },
+        {
+          "block_id": 10,
+          "type": "paragraph",
+          "language": "en",
+          "text": "'1/HIH.",
+          "confidence": 0.1985,
+          "bbox": [
+            546,
+            413,
+            623,
+            442
+          ]
+        },
+        {
+          "block_id": 11,
+          "type": "paragraph",
+          "language": "en",
+          "text": "banglaacademy govচd",
+          "confidence": 0.8123,
+          "bbox": [
+            609,
+            392,
+            923,
+            467
+          ]
+        },
+        {
+          "block_id": 12,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পতর সংখয",
+          "confidence": 0.4043,
+          "bbox": [
+            246,
+            450,
+            374,
+            483
+          ]
+        },
+        {
+          "block_id": 13,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তরিখ",
+          "confidence": 0.4085,
+          "bbox": [
+            1538,
+            446,
+            1622,
+            482
+          ]
+        },
+        {
+          "block_id": 14,
+          "type": "paragraph",
+          "language": "en",
+          "text": "২৩০৬.২০২৫",
+          "confidence": 0.2626,
+          "bbox": [
+            1637,
+            450,
+            1817,
+            483
+          ]
+        },
+        {
+          "block_id": 15,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সংবদ বিজঞপতি",
+          "confidence": 0.4592,
+          "bbox": [
+            929,
+            532,
+            1134,
+            581
+          ]
+        },
+        {
+          "block_id": 16,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "কব আলওল সমরণে সেমিনর",
+          "confidence": 0.3859,
+          "bbox": [
+            813,
+            608,
+            1248,
+            659
+          ]
+        },
+        {
+          "block_id": 17,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "৩৪ মোলএল",
+          "confidence": 0.0464,
+          "bbox": [
+            1099,
+            779,
+            1174,
+            797
+          ]
+        },
+        {
+          "block_id": 18,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সেমিনর:",
+          "confidence": 0.7202,
+          "bbox": [
+            1111,
+            809,
+            1161,
+            827
+          ]
+        },
+        {
+          "block_id": 19,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বংল একডেমি ৯ই আষঢ ১৪৩২ ২৩শশে জুন ২০২৫ সোমবর বিকেল ৪০০টয একডেমির কবি শমসুর রহমন",
+          "confidence": 0.5774,
+          "bbox": [
+            242,
+            1206,
+            1821,
+            1259
+          ]
+        },
+        {
+          "block_id": 20,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সমিনর",
+          "confidence": 0.4737,
+          "bbox": [
+            243,
+            1264,
+            366,
+            1304
+          ]
+        },
+        {
+          "block_id": 21,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ককষে কবি আলওল সমরণে সেমিনরের আযোজন",
+          "confidence": 0.3605,
+          "bbox": [
+            375,
+            1258,
+            1070,
+            1308
+          ]
+        },
+        {
+          "block_id": 22,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "করে",
+          "confidence": 0.7617,
+          "bbox": [
+            1079,
+            1268,
+            1149,
+            1304
+          ]
+        },
+        {
+          "block_id": 23,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সবগত বকতৃত পরদন করেন বংল একডেমির",
+          "confidence": 0.4764,
+          "bbox": [
+            1176,
+            1260,
+            1820,
+            1316
+          ]
+        },
+        {
+          "block_id": 24,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সংসকৃতি, পতরিক",
+          "confidence": 0.5264,
+          "bbox": [
+            239,
+            1309,
+            475,
+            1372
+          ]
+        },
+        {
+          "block_id": 25,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৩",
+          "confidence": 0.5747,
+          "bbox": [
+            484,
+            1324,
+            508,
+            1351
+          ]
+        },
+        {
+          "block_id": 26,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মিলনযতন বিভগের পরিচলক",
+          "confidence": 0.5701,
+          "bbox": [
+            517,
+            1311,
+            953,
+            1366
+          ]
+        },
+        {
+          "block_id": 27,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "দযিতব) ড",
+          "confidence": 0.462,
+          "bbox": [
+            1043,
+            1316,
+            1184,
+            1367
+          ]
+        },
+        {
+          "block_id": 28,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সরকর আমিন",
+          "confidence": 0.8673,
+          "bbox": [
+            1193,
+            1314,
+            1402,
+            1359
+          ]
+        },
+        {
+          "block_id": 29,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওল পঠের পরমপর",
+          "confidence": 0.2553,
+          "bbox": [
+            1431,
+            1314,
+            1781,
+            1359
+          ]
+        },
+        {
+          "block_id": 30,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৩",
+          "confidence": 0.7828,
+          "bbox": [
+            1788,
+            1324,
+            1815,
+            1351
+          ]
+        },
+        {
+          "block_id": 31,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সমপরতিক পরবণত শীরষক পরবনধ উপসথপন করেন ঢক বিশববিদযলযের বংল বিভগের পরভষক মো: নজমুল হোসেন",
+          "confidence": 0.4019,
+          "bbox": [
+            241,
+            1358,
+            1804,
+            1422
+          ]
+        },
+        {
+          "block_id": 32,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলোচনয",
+          "confidence": 0.6278,
+          "bbox": [
+            245,
+            1423,
+            405,
+            1466
+          ]
+        },
+        {
+          "block_id": 33,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অংশগহণ",
+          "confidence": 0.7535,
+          "bbox": [
+            424,
+            1424,
+            560,
+            1464
+          ]
+        },
+        {
+          "block_id": 34,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "করেন",
+          "confidence": 0.8889,
+          "bbox": [
+            578,
+            1425,
+            670,
+            1465
+          ]
+        },
+        {
+          "block_id": 35,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বেঙগল হিসটরি",
+          "confidence": 0.71,
+          "bbox": [
+            687,
+            1414,
+            901,
+            1467
+          ]
+        },
+        {
+          "block_id": 36,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "কলেককিভ-এর",
+          "confidence": 0.582,
+          "bbox": [
+            919,
+            1419,
+            1121,
+            1464
+          ]
+        },
+        {
+          "block_id": 37,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সমহযক",
+          "confidence": 0.4841,
+          "bbox": [
+            1141,
+            1426,
+            1261,
+            1464
+          ]
+        },
+        {
+          "block_id": 38,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তহমিদল",
+          "confidence": 0.8984,
+          "bbox": [
+            1277,
+            1416,
+            1431,
+            1465
+          ]
+        },
+        {
+          "block_id": 39,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "জমি",
+          "confidence": 0.8816,
+          "bbox": [
+            1444,
+            1417,
+            1523,
+            1462
+          ]
+        },
+        {
+          "block_id": 40,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "এব",
+          "confidence": 0.9335,
+          "bbox": [
+            1545,
+            1424,
+            1612,
+            1464
+          ]
+        },
+        {
+          "block_id": 41,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "জহঙগীরনগর",
+          "confidence": 0.7087,
+          "bbox": [
+            1631,
+            1416,
+            1819,
+            1465
+          ]
+        },
+        {
+          "block_id": 42,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বিশববিদযলযের বংল বিভগের সহযোগী অধযপক মোহমমদ মমুন",
+          "confidence": 0.2907,
+          "bbox": [
+            241,
+            1468,
+            1169,
+            1525
+          ]
+        },
+        {
+          "block_id": 43,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অর রশীদ",
+          "confidence": 0.6864,
+          "bbox": [
+            1176,
+            1468,
+            1326,
+            1518
+          ]
+        },
+        {
+          "block_id": 44,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সভপরধনের দযিতব পলন করেন",
+          "confidence": 0.5577,
+          "bbox": [
+            1351,
+            1467,
+            1820,
+            1527
+          ]
+        },
+        {
+          "block_id": 45,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বংল একডেমির মহপরিচলক অধযপক মোহমমদ আজম",
+          "confidence": 0.5203,
+          "bbox": [
+            245,
+            1527,
+            1026,
+            1572
+          ]
+        },
+        {
+          "block_id": 46,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ড",
+          "confidence": 0.3229,
+          "bbox": [
+            245,
+            1606,
+            283,
+            1642
+          ]
+        },
+        {
+          "block_id": 47,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সরকর আমিন বলেন,",
+          "confidence": 0.3856,
+          "bbox": [
+            292,
+            1596,
+            602,
+            1645
+          ]
+        },
+        {
+          "block_id": 48,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওল এক মহন মনবতবদী সহিতযিক",
+          "confidence": 0.3768,
+          "bbox": [
+            610,
+            1594,
+            1209,
+            1647
+          ]
+        },
+        {
+          "block_id": 49,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মধযযুগের বহুপরজ কবি কিনতু তঁর সহিতযের",
+          "confidence": 0.4205,
+          "bbox": [
+            1229,
+            1593,
+            1821,
+            1650
+          ]
+        },
+        {
+          "block_id": 50,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অসধরণ বণীতে তিনি হযে ওঠেন সমকলীন এক পরবল পরসঙগিক লেখক",
+          "confidence": 0.5382,
+          "bbox": [
+            244,
+            1647,
+            1214,
+            1698
+          ]
+        },
+        {
+          "block_id": 51,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মো নজমুল হোসেন বলেন, আলওল পঠে দেশ-কল-সমজের রজনৈতিক পরভব পরবলভবে সকরিয, মহং পরতিভকে",
+          "confidence": 0.3859,
+          "bbox": [
+            244,
+            1720,
+            1826,
+            1776
+          ]
+        },
+        {
+          "block_id": 52,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আপন করে অবলোকন করতে চেযেছেন সকলেই",
+          "confidence": 0.571,
+          "bbox": [
+            244,
+            1777,
+            915,
+            1826
+          ]
+        },
+        {
+          "block_id": 53,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "এই দৃষটিকোণ থেকেই আরকনে আলওলের উপসথিতির করযকরণ",
+          "confidence": 0.4876,
+          "bbox": [
+            934,
+            1774,
+            1826,
+            1830
+          ]
+        },
+        {
+          "block_id": 54,
+          "type": "paragraph",
+          "language": "en",
+          "text": "9",
+          "confidence": 0.4413,
+          "bbox": [
+            251,
+            1838,
+            276,
+            1867
+          ]
+        },
+        {
+          "block_id": 55,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পরবরতী জীবনপরবহ, তঁর রচিত গরনথপরিচয, তঁর ভষ-বৈচিতরযের পরিচয, ধরম ও মনবিকতবোধের পরিচয সনধন",
+          "confidence": 0.317,
+          "bbox": [
+            280,
+            1822,
+            1827,
+            1885
+          ]
+        },
+        {
+          "block_id": 56,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলোচনয গুরুতব পেযেছে",
+          "confidence": 0.4134,
+          "bbox": [
+            243,
+            1890,
+            621,
+            1934
+          ]
+        },
+        {
+          "block_id": 57,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তিনি বলেন,",
+          "confidence": 0.7228,
+          "bbox": [
+            642,
+            1879,
+            824,
+            1932
+          ]
+        },
+        {
+          "block_id": 58,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওল সংকরনত কোনো পঠকেই খরিজ ন করে পঠগুলো সমজিক,",
+          "confidence": 0.6407,
+          "bbox": [
+            834,
+            1877,
+            1817,
+            1931
+          ]
+        },
+        {
+          "block_id": 59,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "রজনৈতিক",
+          "confidence": 0.4705,
+          "bbox": [
+            243,
+            1938,
+            404,
+            1980
+          ]
+        },
+        {
+          "block_id": 60,
+          "type": "paragraph",
+          "language": "en",
+          "text": "9",
+          "confidence": 0.1625,
+          "bbox": [
+            416,
+            1949,
+            437,
+            1974
+          ]
+        },
+        {
+          "block_id": 61,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অরথনৈতিক বসতবতয গরহণ কর উচিং",
+          "confidence": 0.4194,
+          "bbox": [
+            441,
+            1929,
+            960,
+            1983
+          ]
+        },
+        {
+          "block_id": 62,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সেট হেক উপনিবেশিত বংলর পরেকষপটে, পকিসতনি-মুসলিম",
+          "confidence": 0.5255,
+          "bbox": [
+            974,
+            1925,
+            1828,
+            1991
+          ]
+        },
+        {
+          "block_id": 63,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "জতীযতবদী পরেকষপট ব বঙলি জতীযতবদী পরেকষপট ব বরতমন কলের পরেকষপটে",
+          "confidence": 0.4249,
+          "bbox": [
+            242,
+            1984,
+            1432,
+            2039
+          ]
+        },
+        {
+          "block_id": 64,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলোচকদয বলেন",
+          "confidence": 0.4587,
+          "bbox": [
+            243,
+            2067,
+            519,
+            2108
+          ]
+        },
+        {
+          "block_id": 65,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওল পঠের সনতনি ধরন পরিবরতন করতে হবে",
+          "confidence": 0.6975,
+          "bbox": [
+            532,
+            2058,
+            1259,
+            2109
+          ]
+        },
+        {
+          "block_id": 66,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওলের রচনয যে বৈচিতরয ত তঁর",
+          "confidence": 0.3749,
+          "bbox": [
+            1281,
+            2058,
+            1821,
+            2108
+          ]
+        },
+        {
+          "block_id": 67,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সময",
+          "confidence": 0.8355,
+          "bbox": [
+            245,
+            2123,
+            322,
+            2160
+          ]
+        },
+        {
+          "block_id": 68,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সমজ এবং",
+          "confidence": 0.8099,
+          "bbox": [
+            334,
+            2120,
+            491,
+            2160
+          ]
+        },
+        {
+          "block_id": 69,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "পটভূমির আলোকে সমপরতিক গবেষকর ননভবে উদঘটন এবং বযখযর পরযস চলিযেছেন",
+          "confidence": 0.5595,
+          "bbox": [
+            490,
+            2107,
+            1725,
+            2169
+          ]
+        },
+        {
+          "block_id": 70,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "এসব",
+          "confidence": 0.6268,
+          "bbox": [
+            1743,
+            2123,
+            1818,
+            2160
+          ]
+        },
+        {
+          "block_id": 71,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নতুনতর গবেষণয",
+          "confidence": 0.7575,
+          "bbox": [
+            247,
+            2172,
+            508,
+            2221
+          ]
+        },
+        {
+          "block_id": 72,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওলকে নতুনভবে আবিষকর",
+          "confidence": 0.8018,
+          "bbox": [
+            516,
+            2169,
+            963,
+            2221
+          ]
+        },
+        {
+          "block_id": 73,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "কর যচছে",
+          "confidence": 0.6194,
+          "bbox": [
+            972,
+            2172,
+            1134,
+            2216
+          ]
+        },
+        {
+          "block_id": 74,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ভবিষযতে বিশদ গবেষণ",
+          "confidence": 0.5702,
+          "bbox": [
+            1160,
+            2165,
+            1513,
+            2214
+          ]
+        },
+        {
+          "block_id": 75,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৩",
+          "confidence": 0.3196,
+          "bbox": [
+            1521,
+            2176,
+            1547,
+            2205
+          ]
+        },
+        {
+          "block_id": 76,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "চরচয তিনি",
+          "confidence": 0.6639,
+          "bbox": [
+            1560,
+            2163,
+            1723,
+            2212
+          ]
+        },
+        {
+          "block_id": 77,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আরও",
+          "confidence": 0.9999,
+          "bbox": [
+            1732,
+            2175,
+            1818,
+            2213
+          ]
+        },
+        {
+          "block_id": 78,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ননকৌণিকভবে আবিষকৃত হবেন বলে আশ কর যয",
+          "confidence": 0.5957,
+          "bbox": [
+            241,
+            2213,
+            968,
+            2281
+          ]
+        },
+        {
+          "block_id": 79,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অধযপক মোহমমদ আজম বলেন, আলওল-পঠের নতুন পরিসর শুরু হযেছে",
+          "confidence": 0.8622,
+          "bbox": [
+            244,
+            2291,
+            1281,
+            2348
+          ]
+        },
+        {
+          "block_id": 80,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বংল একডেমির আজকের আলোচন",
+          "confidence": 0.7702,
+          "bbox": [
+            1300,
+            2294,
+            1818,
+            2339
+          ]
+        },
+        {
+          "block_id": 81,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নিঃসনদেহে এক নতুন সংযোজন",
+          "confidence": 0.4576,
+          "bbox": [
+            240,
+            2347,
+            686,
+            2399
+          ]
+        },
+        {
+          "block_id": 82,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলওলকে সনতনি বৃতত ভেঙে আজকের বসতবতয উপসথপনের কষেতরে এ ধরনের",
+          "confidence": 0.4384,
+          "bbox": [
+            707,
+            2341,
+            1818,
+            2402
+          ]
+        },
+        {
+          "block_id": 83,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলোচন বিশেষ ভূমিক পলন করতে পরে",
+          "confidence": 0.5183,
+          "bbox": [
+            244,
+            2395,
+            847,
+            2452
+          ]
+        },
+        {
+          "block_id": 84,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অনুষঠন সঞচলন করেন বংল একডেমির সহপরিচলক (চলতি দযিতব) ড মহবুব রহমন",
+          "confidence": 0.4611,
+          "bbox": [
+            241,
+            2468,
+            1436,
+            2528
+          ]
+        },
+        {
+          "block_id": 85,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নগিস সনজিদ সুলতন",
+          "confidence": 0.5359,
+          "bbox": [
+            240,
+            2608,
+            588,
+            2659
+          ]
+        },
+        {
+          "block_id": 86,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উপপরিচলক",
+          "confidence": 0.7436,
+          "bbox": [
+            241,
+            2662,
+            431,
+            2714
+          ]
+        },
+        {
+          "block_id": 87,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "জনসংযোগ উপবিভগ",
+          "confidence": 0.9586,
+          "bbox": [
+            244,
+            2712,
+            543,
+            2768
+          ]
+        },
+        {
+          "block_id": 88,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "একডে",
+          "confidence": 0.3549,
+          "bbox": [
+            266.04,
+            398.12,
+            335.96,
+            438.88
+          ]
+        },
+        {
+          "block_id": 89,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "(চলতি",
+          "confidence": 0.816,
+          "bbox": [
+            959.51,
+            1319.06,
+            1042.49,
+            1363.94
+          ]
+        }
+      ],
+      "tables": [],
+      "images": [
+        {
+          "image_id": 1,
+          "type": "photo",
+          "detected_text": "",
+          "description": "A photograph or image (633x409)",
+          "confidence": 0.6
+        }
+      ],
+      "full_text": "জনসংযোগ উপবিভগ\nবংল একডেমি\nঢক ১০০০ ফোন\n৫৮৬১১২৪৮ ফযকস\n৯৬৬১0৮0\nবংন\nই-মেইল\nganglaacatemirggmaiicom_Dacademi 955Qyahoocon\nওযব সহঢ\n'1/HIH.\nbanglaacademy govচd\nপতর সংখয\nতরিখ\n২৩০৬.২০২৫\nসংবদ বিজঞপতি\nকব আলওল সমরণে সেমিনর\n৩৪ মোলএল\nসেমিনর:\nবংল একডেমি ৯ই আষঢ ১৪৩২ ২৩শশে জুন ২০২৫ সোমবর বিকেল ৪০০টয একডেমির কবি শমসুর রহমন\nসমিনর\nককষে কবি আলওল সমরণে সেমিনরের আযোজন\nকরে\nসবগত বকতৃত পরদন করেন বংল একডেমির\nসংসকৃতি, পতরিক\n৩\nমিলনযতন বিভগের পরিচলক\nদযিতব) ড\nসরকর আমিন\nআলওল পঠের পরমপর\n৩\nসমপরতিক পরবণত শীরষক পরবনধ উপসথপন করেন ঢক বিশববিদযলযের বংল বিভগের পরভষক মো: নজমুল হোসেন\nআলোচনয\nঅংশগহণ\nকরেন\nবেঙগল হিসটরি\nকলেককিভ-এর\nসমহযক\nতহমিদল\nজমি\nএব\nজহঙগীরনগর\nবিশববিদযলযের বংল বিভগের সহযোগী অধযপক মোহমমদ মমুন\nঅর রশীদ\nসভপরধনের দযিতব পলন করেন\nবংল একডেমির মহপরিচলক অধযপক মোহমমদ আজম\nড\nসরকর আমিন বলেন,\nআলওল এক মহন মনবতবদী সহিতযিক\nমধযযুগের বহুপরজ কবি কিনতু তঁর সহিতযের\nঅসধরণ বণীতে তিনি হযে ওঠেন সমকলীন এক পরবল পরসঙগিক লেখক\nমো নজমুল হোসেন বলেন, আলওল পঠে দেশ-কল-সমজের রজনৈতিক পরভব পরবলভবে সকরিয, মহং পরতিভকে\nআপন করে অবলোকন করতে চেযেছেন সকলেই\nএই দৃষটিকোণ থেকেই আরকনে আলওলের উপসথিতির করযকরণ\n9\nপরবরতী জীবনপরবহ, তঁর রচিত গরনথপরিচয, তঁর ভষ-বৈচিতরযের পরিচয, ধরম ও মনবিকতবোধের পরিচয সনধন\nআলোচনয গুরুতব পেযেছে\nতিনি বলেন,\nআলওল সংকরনত কোনো পঠকেই খরিজ ন করে পঠগুলো সমজিক,\nরজনৈতিক\n9\nঅরথনৈতিক বসতবতয গরহণ কর উচিং\nসেট হেক উপনিবেশিত বংলর পরেকষপটে, পকিসতনি-মুসলিম\nজতীযতবদী পরেকষপট ব বঙলি জতীযতবদী পরেকষপট ব বরতমন কলের পরেকষপটে\nআলোচকদয বলেন\nআলওল পঠের সনতনি ধরন পরিবরতন করতে হবে\nআলওলের রচনয যে বৈচিতরয ত তঁর\nসময\nসমজ এবং\nপটভূমির আলোকে সমপরতিক গবেষকর ননভবে উদঘটন এবং বযখযর পরযস চলিযেছেন\nএসব\nনতুনতর গবেষণয\nআলওলকে নতুনভবে আবিষকর\nকর যচছে\nভবিষযতে বিশদ গবেষণ\n৩\nচরচয তিনি\nআরও\nননকৌণিকভবে আবিষকৃত হবেন বলে আশ কর যয\nঅধযপক মোহমমদ আজম বলেন, আলওল-পঠের নতুন পরিসর শুরু হযেছে\nবংল একডেমির আজকের আলোচন\nনিঃসনদেহে এক নতুন সংযোজন\nআলওলকে সনতনি বৃতত ভেঙে আজকের বসতবতয উপসথপনের কষেতরে এ ধরনের\nআলোচন বিশেষ ভূমিক পলন করতে পরে\nঅনুষঠন সঞচলন করেন বংল একডেমির সহপরিচলক (চলতি দযিতব) ড মহবুব রহমন\nনগিস সনজিদ সুলতন\nউপপরিচলক\nজনসংযোগ উপবিভগ\nএকডে\n(চলতি",
+      "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/d972f997a3d547bf95962a80f69ed055-2_e32a31f3/page_1.png",
+      "verified": false,
+      "domain": "unknown",
+      "confidence_tier": "silver",
+      "decisions": [
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "type_detection: digital",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "digital_extraction: 2288 chars",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "digital_rejected_corrupted_font",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "all_apis_direct_failed_falling_to_ocr",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "rendered_to_image (DPI=250)",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "page_type_estimate: form",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "easyocr_form_direct",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "easyocr: 89 detections",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "images_extracted: 1",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "FINAL_ENGINE",
+          "detail": "method=ocr_local, engine=EasyOCR",
+          "severity": "info"
+        }
+      ]
+    }
+  ]
+}

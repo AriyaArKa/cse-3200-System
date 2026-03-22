@@ -1,0 +1,60 @@
+{
+  "page_number": 238,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "204 \nchapter 8\nyou must implement abstract methods\nYou MUST implement all abstract methods \nAbstract methods don’t have a body; they exist solely for polymorphism. That \nmeans the first concrete class in the inheritance tree must implement all abstract \nmethods.\nYou can, however, pass the buck by being abstract yourself. If both Animal and \nCanine are abstract, for example, and both have abstract methods, class Canine \ndoes not have to implement the abstract methods from Animal. But as soon as we \nget to the first concrete subclass, like Dog, that subclass must implement all of the \nabstract methods from both Animal and Canine. \nBut remember that an abstract class can have both abstract and non-abstract \nmethods, 50 Canine, for example, could implement an abstract method from \nAnimal, 50 that Dog didn’t have to. But if Canine says nothing about the abstract \nmethods from Animal, Dog has to implement all of Animal’5 abstract methods.\nImplementing an abstract \nmethod is just like \noverriding a method.\nWhen we say “you must implement the abstract method”, that means you must \nprovide a body. That means you must create a non-abstract method in your class \nwith the same method signature (name and arguments) and a return type that is \ncompatible with the declared return type of the abstract method. What you put in \nthat method is up to you. All Java cares about is that the method is there, in your \nconcrete subclass.\n 1 have wonderful news, \nmother. Joe finally implemented \nall his abstract methods! Now \neverything is working just the \nway we planned...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (592x742)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "204 \nchapter 8\nyou must implement abstract methods\nYou MUST implement all abstract methods \nAbstract methods don’t have a body; they exist solely for polymorphism. That \nmeans the first concrete class in the inheritance tree must implement all abstract \nmethods.\nYou can, however, pass the buck by being abstract yourself. If both Animal and \nCanine are abstract, for example, and both have abstract methods, class Canine \ndoes not have to implement the abstract methods from Animal. But as soon as we \nget to the first concrete subclass, like Dog, that subclass must implement all of the \nabstract methods from both Animal and Canine. \nBut remember that an abstract class can have both abstract and non-abstract \nmethods, 50 Canine, for example, could implement an abstract method from \nAnimal, 50 that Dog didn’t have to. But if Canine says nothing about the abstract \nmethods from Animal, Dog has to implement all of Animal’5 abstract methods.\nImplementing an abstract \nmethod is just like \noverriding a method.\nWhen we say “you must implement the abstract method”, that means you must \nprovide a body. That means you must create a non-abstract method in your class \nwith the same method signature (name and arguments) and a return type that is \ncompatible with the declared return type of the abstract method. What you put in \nthat method is up to you. All Java cares about is that the method is there, in your \nconcrete subclass.\n 1 have wonderful news, \nmother. Joe finally implemented \nall his abstract methods! Now \neverything is working just the \nway we planned...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 238,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 238,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1584 chars",
+      "severity": "info"
+    },
+    {
+      "page": 238,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 238,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

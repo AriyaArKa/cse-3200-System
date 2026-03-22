@@ -1,0 +1,60 @@
+{
+  "page_number": 41,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\ndive In A Quick Dip\n7\nWhat goes in a \nsource file?\npublic class Dog {\n}\nWhat goes in a \nclass?\npublic class Dog {\n void bark() { \n }\n }\nWhat goes in a \nmethod?\npublic class Dog {\n void bark() { \n statement1;\n statement2;\n }\n }\nA source code file (with the .java \nextension) holds one class defini-\ntion. The class represents a piece \nof your program, although a very \ntiny application might need just \na single class. The class must go \nwithin a pair of curly braces.\nA class has one or more methods. \nIn the Dog class, the bark method \nwill hold instructions for how the \nDog should bark. Your methods \nmust be declared inside a class \n(in other words, within the curly \nbraces of the class).\nclass\nmethod\nWithin the curly braces of a \nmethod, write your instructions \nfor how that method should be \nperformed. Method code is basi-\ncally a set of statements, and for \nnow you can think of a method \nkind of like a function or proce-\ndure.\nCode structure in Java\nstatements\nPut a class in a source file.\nPut methods in a class.\nPut statements in a method.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (425x454)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\ndive In A Quick Dip\n7\nWhat goes in a \nsource file?\npublic class Dog {\n}\nWhat goes in a \nclass?\npublic class Dog {\n void bark() { \n }\n }\nWhat goes in a \nmethod?\npublic class Dog {\n void bark() { \n statement1;\n statement2;\n }\n }\nA source code file (with the .java \nextension) holds one class defini-\ntion. The class represents a piece \nof your program, although a very \ntiny application might need just \na single class. The class must go \nwithin a pair of curly braces.\nA class has one or more methods. \nIn the Dog class, the bark method \nwill hold instructions for how the \nDog should bark. Your methods \nmust be declared inside a class \n(in other words, within the curly \nbraces of the class).\nclass\nmethod\nWithin the curly braces of a \nmethod, write your instructions \nfor how that method should be \nperformed. Method code is basi-\ncally a set of statements, and for \nnow you can think of a method \nkind of like a function or proce-\ndure.\nCode structure in Java\nstatements\nPut a class in a source file.\nPut methods in a class.\nPut statements in a method.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 41,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 41,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1084 chars",
+      "severity": "info"
+    },
+    {
+      "page": 41,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 41,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

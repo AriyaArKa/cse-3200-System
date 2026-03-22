@@ -1,0 +1,46 @@
+{
+  "page_number": 2,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Contents\nImages: Getty Images\n© 2024 World Economic Forum. All rights \nreserved. No part of this publication may \nbe reproduced or transmitted in any form \nor by any means, including photocopying \nand recording, or by any information \nstorage and retrieval system.\nDisclaimer \nThis document is published by the \nWorld Economic Forum as a contribution \nto a project, insight area or interaction. \nThe findings, interpretations and \nconclusions expressed herein are a result \nof a collaborative process facilitated and \nendorsed by the World Economic Forum \nbut whose results do not necessarily \nrepresent the views of the World Economic \nForum, nor the entirety of its Members, \nPartners or other stakeholders.\nForeword \nAbout the Global Cooperation Barometer\nExecutive summary \nIntroduction: The state of global cooperation\nFive pillars of global cooperation\nPillar 1 Trade and capital \nPillar 2 Innovation and technology\nPillar 3 Climate and natural capital\nPillar 4 Health and wellness\nPillar 5 Peace and security\nConclusion: Towards a more cooperative future \nAppendix: Sources and methodology\nContributors\nEndnotes\n3\n4\n6\n7\n9\n9\n11\n13\n15\n17\n19\n20\n22\n23\nThe Global Cooperation Barometer 2024\n2",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "Contents\nImages: Getty Images\n© 2024 World Economic Forum. All rights \nreserved. No part of this publication may \nbe reproduced or transmitted in any form \nor by any means, including photocopying \nand recording, or by any information \nstorage and retrieval system.\nDisclaimer \nThis document is published by the \nWorld Economic Forum as a contribution \nto a project, insight area or interaction. \nThe findings, interpretations and \nconclusions expressed herein are a result \nof a collaborative process facilitated and \nendorsed by the World Economic Forum \nbut whose results do not necessarily \nrepresent the views of the World Economic \nForum, nor the entirety of its Members, \nPartners or other stakeholders.\nForeword \nAbout the Global Cooperation Barometer\nExecutive summary \nIntroduction: The state of global cooperation\nFive pillars of global cooperation\nPillar 1 Trade and capital \nPillar 2 Innovation and technology\nPillar 3 Climate and natural capital\nPillar 4 Health and wellness\nPillar 5 Peace and security\nConclusion: Towards a more cooperative future \nAppendix: Sources and methodology\nContributors\nEndnotes\n3\n4\n6\n7\n9\n9\n11\n13\n15\n17\n19\n20\n22\n23\nThe Global Cooperation Barometer 2024\n2",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1196 chars",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

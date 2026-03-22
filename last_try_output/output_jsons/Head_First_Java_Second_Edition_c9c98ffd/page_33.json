@@ -1,0 +1,182 @@
+{
+  "page_number": 33,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the intro\nyou are here\nxxxi\nOther people to blame:\nAt 0’Reilly:\nOur biggest thanks to Mike Loukides at 0’Reilly, for taking a \nchance on this, and helping to shape the Head First concept into \na book (and series). As this second edition goes to print there \nare now five Head First books, and he’5 been with us all the way. \nTo Tim 0’Reilly, for his willingness to launch into something \ncompletely new and different. Thanks to the clever Kyle Hart for \nfiguring out how Head First fits into the world, and for launching \nthe series. Finally, to Edie Freedman for designing the Head First \n“emphasize the head” cover.\nOur intrepid beta testers and reviewer team:\nOur top honors and thanks go to the director of our javaranch \ntech review team, Johannes de Jong. This is your fifth time around \nwith us on a Head First book, and we’re thrilled you’re still speaking \nto us. Jeff Cumps is on his third book with us now and relentless \nabout finding areas where we needed to be more clear or correct.\nCorey McGlone, you rock. And we think you give the clearest \nexplanations on javaranch. You’11 probably notice we stole one or \ntwo of them. Jason Menard saved our technical butts on more \nthan a few details, and Thomas Paul, as always, gave us expert \nfeedback and found the subtle Java issues the rest of us missed. \nJane Griscti has her Java chops (and knows a thing or two about \nwriting) and it was great to have her helping on the new edition \nalong with long-time javarancher Barry Gaunt.\nMarilyn de Queiroz gave us excellent help on both editions of the \nbook. Chris Jones, John Nyquist, James Cubeta, Terri Cubeta, \nand Ira Becker gave us a ton of help on the first edition. \nSpecial thanks to a few of the Head Firsters who’ve been helping \nus from the beginning: Angelo Celeste, Mikalai Zaikin, and \nThomas Duff (twduff.com). And thanks to our terrific agent, David \nRogelberg of StudioB (but seriously, what about the movie rights?)\ncredit\nSome of our Java \nexpert reviewers...\nMarilym de \nQueiroz\nJohn Nyquist\nIra Becker\nRodney J. \nWoodruff\nTerri Cubeta\nJames Cubeta\nJohannes de Jong\nJef Cumps\nCorey McGlone\nChris Jones\nThomas Paul\nJason Menard",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "Corey",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "Jason Me",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "Rodney J.",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (144x162)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (136x173)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (92x117)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (121x180)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (244x191)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (221x249)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (202x233)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (99x123)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 9,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (160x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 10,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (178x249)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 11,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (193x226)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "the intro\nyou are here\nxxxi\nOther people to blame:\nAt 0’Reilly:\nOur biggest thanks to Mike Loukides at 0’Reilly, for taking a \nchance on this, and helping to shape the Head First concept into \na book (and series). As this second edition goes to print there \nare now five Head First books, and he’5 been with us all the way. \nTo Tim 0’Reilly, for his willingness to launch into something \ncompletely new and different. Thanks to the clever Kyle Hart for \nfiguring out how Head First fits into the world, and for launching \nthe series. Finally, to Edie Freedman for designing the Head First \n“emphasize the head” cover.\nOur intrepid beta testers and reviewer team:\nOur top honors and thanks go to the director of our javaranch \ntech review team, Johannes de Jong. This is your fifth time around \nwith us on a Head First book, and we’re thrilled you’re still speaking \nto us. Jeff Cumps is on his third book with us now and relentless \nabout finding areas where we needed to be more clear or correct.\nCorey McGlone, you rock. And we think you give the clearest \nexplanations on javaranch. You’11 probably notice we stole one or \ntwo of them. Jason Menard saved our technical butts on more \nthan a few details, and Thomas Paul, as always, gave us expert \nfeedback and found the subtle Java issues the rest of us missed. \nJane Griscti has her Java chops (and knows a thing or two about \nwriting) and it was great to have her helping on the new edition \nalong with long-time javarancher Barry Gaunt.\nMarilyn de Queiroz gave us excellent help on both editions of the \nbook. Chris Jones, John Nyquist, James Cubeta, Terri Cubeta, \nand Ira Becker gave us a ton of help on the first edition. \nSpecial thanks to a few of the Head Firsters who’ve been helping \nus from the beginning: Angelo Celeste, Mikalai Zaikin, and \nThomas Duff (twduff.com). And thanks to our terrific agent, David \nRogelberg of StudioB (but seriously, what about the movie rights?)\ncredit\nSome of our Java \nexpert reviewers...\nMarilym de \nQueiroz\nJohn Nyquist\nIra Becker\nRodney J. \nWoodruff\nTerri Cubeta\nJames Cubeta\nJohannes de Jong\nJef Cumps\nCorey McGlone\nChris Jones\nThomas Paul\nJason Menard",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 33,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 33,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2161 chars",
+      "severity": "info"
+    },
+    {
+      "page": 33,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 11",
+      "severity": "info"
+    },
+    {
+      "page": 33,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

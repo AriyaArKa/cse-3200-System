@@ -1,0 +1,74 @@
+{
+  "page_number": 539,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n505\nMarriage in Trouble.\nCan this couple be saved?\nNext, on a very special Dr.Steve Show\n[Transcript from episode #42]\nWelcome to the Dr. Steve show. \nWe’ve got a story today that’5 centered around the top two reasons why \ncouples split up—finances and sleep.\nToday’5 troubled pair, Ryan and Monica, share a bed and a \nbank account. But not for long if we can’t find a solution. The \nproblem? The classic “two people—one bank account” thing. \nHere’5 how Monica described it to me:\n“Ryan and 1 agreed that neither of us will overdraw the checking account. \n50 the procedure is, whoever wants to withdraw money must check the \nbalance in the account before making the withdrawal. It all seemed 50 \nsimple. But suddenly we’re bouncing checks and getting hit with overdraft \nfees!\n1 thought it wasn’t possible, 1 thought our procedure was safe. But then \nthis happened:\nRyan needed $50, 50 he checked the balance in the account, \nand \nsaw that it was $100. No problem. 50, he plans to withdraw \nthe money. But first he falls asleep! \nAnd that’5 where 1 come in, while Ryan’5 still asleep, \nand now 1 want to withdraw $100. 1 check the balance, \nand it’5 $100 (because Ryan’5 still asleep and hasn’t \nyet \nmade his withdrawal), 50 1 think, no problem. 50 1 make \nthe withdrawal, and again no problem. But then Ryan wakes up, \ncompletes his withdrawal, and we’re suddenly overdrawn! He didn’t \neven know that he fell asleep, 50 he just went ahead and completed his \ntransaction without checking the balance again. You’ve got to help us Dr. \nSteve!”\n15 there a solution? Are they doomed? We can’t stop Ryan from falling \nasleep, but can we make sure that Monica can’t get her hands on the bank \naccount until after he wakes up? \nTake a moment and think about that while we go to a commercial break.\nRyan falls asleep after \nhe checks the balance \nbut before he makes the \nwithdrawal. When he wakes \nup, he immediately makes \nthe withdrawl without \nchecking the balance again.\nRyan and Monica: victims \nof the “two people, one \naccount” problem.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (154x278)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (494x433)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (180x291)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n505\nMarriage in Trouble.\nCan this couple be saved?\nNext, on a very special Dr.Steve Show\n[Transcript from episode #42]\nWelcome to the Dr. Steve show. \nWe’ve got a story today that’5 centered around the top two reasons why \ncouples split up—finances and sleep.\nToday’5 troubled pair, Ryan and Monica, share a bed and a \nbank account. But not for long if we can’t find a solution. The \nproblem? The classic “two people—one bank account” thing. \nHere’5 how Monica described it to me:\n“Ryan and 1 agreed that neither of us will overdraw the checking account. \n50 the procedure is, whoever wants to withdraw money must check the \nbalance in the account before making the withdrawal. It all seemed 50 \nsimple. But suddenly we’re bouncing checks and getting hit with overdraft \nfees!\n1 thought it wasn’t possible, 1 thought our procedure was safe. But then \nthis happened:\nRyan needed $50, 50 he checked the balance in the account, \nand \nsaw that it was $100. No problem. 50, he plans to withdraw \nthe money. But first he falls asleep! \nAnd that’5 where 1 come in, while Ryan’5 still asleep, \nand now 1 want to withdraw $100. 1 check the balance, \nand it’5 $100 (because Ryan’5 still asleep and hasn’t \nyet \nmade his withdrawal), 50 1 think, no problem. 50 1 make \nthe withdrawal, and again no problem. But then Ryan wakes up, \ncompletes his withdrawal, and we’re suddenly overdrawn! He didn’t \neven know that he fell asleep, 50 he just went ahead and completed his \ntransaction without checking the balance again. You’ve got to help us Dr. \nSteve!”\n15 there a solution? Are they doomed? We can’t stop Ryan from falling \nasleep, but can we make sure that Monica can’t get her hands on the bank \naccount until after he wakes up? \nTake a moment and think about that while we go to a commercial break.\nRyan falls asleep after \nhe checks the balance \nbut before he makes the \nwithdrawal. When he wakes \nup, he immediately makes \nthe withdrawl without \nchecking the balance again.\nRyan and Monica: victims \nof the “two people, one \naccount” problem.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 539,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 539,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2077 chars",
+      "severity": "info"
+    },
+    {
+      "page": 539,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 539,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Voice-Enabled AI Agents can Perform Common Scams\nRichard Fang\nUIUC\nDylan Bowman\nUIUC\nDaniel Kang\nUIUC\nAbstract\nRecent advances in multi-modal, highly ca-\npable LLMs have enabled voice-enabled AI\nagents. These agents are enabling new applica-\ntions, such as voice-enabled autonomous cus-\ntomer service. However, with all AI capabili-\nties, these new capabilities have the potential\nfor dual use.\nIn this work, we show that voice-enabled AI\nagents can perform the actions necessary to\nperform common scams. To do 50, we select a\nlist of common scams collected by the govern-\nment and construct voice-enabled agents with\ndirections to perform these scams. We con-\nduct experiments on our voice-enabled agents\nand show that they can indeed perform the ac-\ntions necessary to autonomously perform such\nscams. Our results raise questions around the\nwidespread deployment of voice-enabled AI\nagents.\n1\nIntroduction\nAI capabilities have advanced rapidly in the past\nfew years. Recently, AI vendors have introduced\ncapabilities for tool use and real-time voice con-\nversations (OpenAI, 2024). Combined, these ca-\npabilities allow for beneficial applications, such\nas autonomous customer service (OpenAI, 2024).\nHowever, as with all AI capabilities, these capabil-\nities have the potential for dual use (Kang et al.,\n2024; Fang et al., 2024b; Urbina et al., 2022; Wei-\ndinger et al., 2022, 2021).\nIn this work, we investigate the question: can\nvoice-enabled AI agents perform the tasks needed\nto conduct common scams? We answer the ques-\ntion in the affirmative, showing that voice-enabled\nAI agents can perform common scams in real-time.\nTo do 50, we first identify a list of common\nscams as collected by the government (Paxton,\n2024).\nFrom these scams, we designed voice-\nenabled AI agents with directions to conduct these\nscams with access to simple tools (Figure 1). In this\nScammer agent\nVictim\nGPT-40\nTools\nBank \nwebsite\nResponse\nStolen \nfunds\nFigure 1: Architecture diagram of a voice scammer\nagent.\nwork, we focus specifically on the actions needed\nto perform the scams and do not consider questions\nof persuading victims.\nWe conduct a series of experiments, showing\nthat voice-enabled AI agents are highly capable\nof autonomously performing the actions needed\nto conduct these common scams. These actions\ninclude logging into bank accounts, completing a\ntwo-factor authentication process by eliciting the\ncode from the user, and others.\n2\nCommon Scams\nPhone-based scams are incredibly prevalent. Ac-\ncording to the Office of the Attorney General for\nDC, they target as many as 17.6 M Americans and\nthe social cost is as much as $40 billion per year\n(Schwalb, 2024).\nThese scams typically involve a scammer calling\na victim to convince them to take actions or re-\nveal sensitive information. Based on these actions\nor information, the scammer then typically steals\nfunds from the victim. We provide a list of com-\nmon scams in Table 1 as provided by the Attorney\nGeneral of Texas’ office (Paxton, 2024).\nPerforming these scams can require complex\ninteractions with websites and feedback from the\nuser. Consider a scam where the scammer steals\n1\narXiv:2410.15650v1 [cs.AI] 21 Oct 2024",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (360x360)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (360x360)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (600x546)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (2048x2048)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (116x140)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "Voice-Enabled AI Agents can Perform Common Scams\nRichard Fang\nUIUC\nDylan Bowman\nUIUC\nDaniel Kang\nUIUC\nAbstract\nRecent advances in multi-modal, highly ca-\npable LLMs have enabled voice-enabled AI\nagents. These agents are enabling new applica-\ntions, such as voice-enabled autonomous cus-\ntomer service. However, with all AI capabili-\nties, these new capabilities have the potential\nfor dual use.\nIn this work, we show that voice-enabled AI\nagents can perform the actions necessary to\nperform common scams. To do 50, we select a\nlist of common scams collected by the govern-\nment and construct voice-enabled agents with\ndirections to perform these scams. We con-\nduct experiments on our voice-enabled agents\nand show that they can indeed perform the ac-\ntions necessary to autonomously perform such\nscams. Our results raise questions around the\nwidespread deployment of voice-enabled AI\nagents.\n1\nIntroduction\nAI capabilities have advanced rapidly in the past\nfew years. Recently, AI vendors have introduced\ncapabilities for tool use and real-time voice con-\nversations (OpenAI, 2024). Combined, these ca-\npabilities allow for beneficial applications, such\nas autonomous customer service (OpenAI, 2024).\nHowever, as with all AI capabilities, these capabil-\nities have the potential for dual use (Kang et al.,\n2024; Fang et al., 2024b; Urbina et al., 2022; Wei-\ndinger et al., 2022, 2021).\nIn this work, we investigate the question: can\nvoice-enabled AI agents perform the tasks needed\nto conduct common scams? We answer the ques-\ntion in the affirmative, showing that voice-enabled\nAI agents can perform common scams in real-time.\nTo do 50, we first identify a list of common\nscams as collected by the government (Paxton,\n2024).\nFrom these scams, we designed voice-\nenabled AI agents with directions to conduct these\nscams with access to simple tools (Figure 1). In this\nScammer agent\nVictim\nGPT-40\nTools\nBank \nwebsite\nResponse\nStolen \nfunds\nFigure 1: Architecture diagram of a voice scammer\nagent.\nwork, we focus specifically on the actions needed\nto perform the scams and do not consider questions\nof persuading victims.\nWe conduct a series of experiments, showing\nthat voice-enabled AI agents are highly capable\nof autonomously performing the actions needed\nto conduct these common scams. These actions\ninclude logging into bank accounts, completing a\ntwo-factor authentication process by eliciting the\ncode from the user, and others.\n2\nCommon Scams\nPhone-based scams are incredibly prevalent. Ac-\ncording to the Office of the Attorney General for\nDC, they target as many as 17.6 M Americans and\nthe social cost is as much as $40 billion per year\n(Schwalb, 2024).\nThese scams typically involve a scammer calling\na victim to convince them to take actions or re-\nveal sensitive information. Based on these actions\nor information, the scammer then typically steals\nfunds from the victim. We provide a list of com-\nmon scams in Table 1 as provided by the Attorney\nGeneral of Texas’ office (Paxton, 2024).\nPerforming these scams can require complex\ninteractions with websites and feedback from the\nuser. Consider a scam where the scammer steals\n1\narXiv:2410.15650v1 [cs.AI] 21 Oct 2024",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3184 chars",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

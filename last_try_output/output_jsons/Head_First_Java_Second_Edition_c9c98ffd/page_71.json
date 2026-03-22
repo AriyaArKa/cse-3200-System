@@ -1,0 +1,104 @@
+{
+  "page_number": 71,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nclasses and objects\n37\nSharpen your pencil\nobject 1\nobject 2\nobject 3\ntitle\ngenre\nrating\n \ntitle\ngenre\nrating\n \ntitle\ngenre\nrating\n \nMOVIE\n title\n genre\n rating\n playIt()\nclass Movie {\n String title;\n String genre;\n int rating;\n void playIt() {\n System.out.println(“Playing the movie”);\n }\n}\npublic class MovieTestDrive {\n public static void main(String[] args) {\n Movie one = new Movie();\n one.title = “Gone with the Stock”;\n one.genre = “Tragic”;\n one.rating = -2;\n Movie two = new Movie();\n two.title = “Lost in Cubicle Space”;\n two.genre = “Comedy”;\n two.rating = 5;\n two.playIt();\n Movie three = new Movie();\n three.title = “Byte Club”;\n three.genre = “Tragic but ultimately uplifting”;\n three.rating = 127;\n }\n}\nMaking and testing Movie objects\nThe MovieTestDrive class creates objects (instances) of \nthe Movie class and uses the dot operator (.) to set the \ninstance variables to a specific value. The MovieTestDrive \nclass also invokes (calls) a method on one of the objects. \nFill in the chart to the right with the values the three \nobjects have at the end of main().",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "Sharpen your pencil",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "MOVIE"
+        ],
+        [
+          "title\ngenre\nrating"
+        ],
+        [
+          "playIt()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (132x146)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (519x690)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nclasses and objects\n37\nSharpen your pencil\nobject 1\nobject 2\nobject 3\ntitle\ngenre\nrating\n \ntitle\ngenre\nrating\n \ntitle\ngenre\nrating\n \nMOVIE\n title\n genre\n rating\n playIt()\nclass Movie {\n String title;\n String genre;\n int rating;\n void playIt() {\n System.out.println(“Playing the movie”);\n }\n}\npublic class MovieTestDrive {\n public static void main(String[] args) {\n Movie one = new Movie();\n one.title = “Gone with the Stock”;\n one.genre = “Tragic”;\n one.rating = -2;\n Movie two = new Movie();\n two.title = “Lost in Cubicle Space”;\n two.genre = “Comedy”;\n two.rating = 5;\n two.playIt();\n Movie three = new Movie();\n three.title = “Byte Club”;\n three.genre = “Tragic but ultimately uplifting”;\n three.rating = 127;\n }\n}\nMaking and testing Movie objects\nThe MovieTestDrive class creates objects (instances) of \nthe Movie class and uses the dot operator (.) to set the \ninstance variables to a specific value. The MovieTestDrive \nclass also invokes (calls) a method on one of the objects. \nFill in the chart to the right with the values the three \nobjects have at the end of main().",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 71,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 71,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1151 chars",
+      "severity": "info"
+    },
+    {
+      "page": 71,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 71,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "page_number": 356,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "322 chapter 11\n1’m gonna \nTRY this risky thing \nand 1’m gonna \nCATCH myself if 1 fall.\nDon’t try this at home. \ntry {\n // do risky thing\n} catch(Exception ex) {\n // try to recover\n}\nAn exception is an object...\nof type Exception.\nWhich is fortunate, because it would be much harder \nto remember if exceptions were of type Broccoli. \nRemember from your polymorphism chapters that \nan object of type Exception can be an instance of any \nsubclass of Exception.\nBecause an Exception is an object, what you catch is an \nobject. In the following code, the catch argument \nis declared as type Exception, and the parameter \nreference variable is ex. \nit’5 just like declaring \na method argument.\nThis code only runs if an \nException is thrown.\nInterruptedException\nThrowable\nException\nIOException\ngetMessage()\nprintStackTrace()\nPart of the Exception \nclass hierarchy. They all \nextend class Throwable \nand inherit two key \nmethods.\nexceptions are objects\nWhat you write in a catch block depends on the \nexception that was thrown. For example, if a server \nis down you might use the catch block to try another \nserver. If the file isn’t there, you might ask the user \nfor help finding it.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7067,
+      "rows": [
+        [
+          "Throwable",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Throwable",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "getMessage()\nprintStackTrace()",
+          "getMessage()\nprintStackTrace()",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6533,
+      "rows": [
+        [
+          "Exception",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Exception",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6444,
+      "rows": [
+        [
+          "",
+          "IOException",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "InterruptedException",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (506x607)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "322 chapter 11\n1’m gonna \nTRY this risky thing \nand 1’m gonna \nCATCH myself if 1 fall.\nDon’t try this at home. \ntry {\n // do risky thing\n} catch(Exception ex) {\n // try to recover\n}\nAn exception is an object...\nof type Exception.\nWhich is fortunate, because it would be much harder \nto remember if exceptions were of type Broccoli. \nRemember from your polymorphism chapters that \nan object of type Exception can be an instance of any \nsubclass of Exception.\nBecause an Exception is an object, what you catch is an \nobject. In the following code, the catch argument \nis declared as type Exception, and the parameter \nreference variable is ex. \nit’5 just like declaring \na method argument.\nThis code only runs if an \nException is thrown.\nInterruptedException\nThrowable\nException\nIOException\ngetMessage()\nprintStackTrace()\nPart of the Exception \nclass hierarchy. They all \nextend class Throwable \nand inherit two key \nmethods.\nexceptions are objects\nWhat you write in a catch block depends on the \nexception that was thrown. For example, if a server \nis down you might use the catch block to try another \nserver. If the file isn’t there, you might ask the user \nfor help finding it.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 356,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 356,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1184 chars",
+      "severity": "info"
+    },
+    {
+      "page": 356,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 356,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

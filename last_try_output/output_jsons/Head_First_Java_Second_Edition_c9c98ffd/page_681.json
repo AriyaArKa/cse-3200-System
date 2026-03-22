@@ -1,0 +1,60 @@
+{
+  "page_number": 681,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n647\nimport javax.swing.*;\nimport java.awt.event.*;\nimport java.awt.*;\nimport java.io.*;\nimport java.util.*;\nimport java.text.*;\npublic class DayOfTheWeekService implements Service {\n JLabel outputLabel;\n JComboBox month;\n JTextField day;\n JTextField year;\n public JPanel getGuiPanel() {\n JPanel panel = new JPanel();\n JButton button = new JButton(“Do it!”);\n button.addActionListener(new DoItListener());\n outputLabel = new JLabel(“date appears here”); \n DateFormatSymbols dateStuff = new DateFormatSymbols(); \n month = new JComboBox(dateStuff.getMonths());\n day = new JTextField(8);\n year = new JTextField(8);\n JPanel inputPanel = new JPanel(new GridLayout(3,2));\n inputPanel.add(new JLabel(“Month”));\n inputPanel.add(month);\n inputPanel.add(new JLabel(“Day”));\n inputPanel.add(day);\n inputPanel.add(new JLabel(“Year”)); \n inputPanel.add(year);\n panel.add(inputPanel);\n panel.add(button);\n panel.add(outputLabel);\n return panel;\n }\n public class DoItListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n int monthNum = month.getSelectedIndex(); \n int dayNum = Integer.parseInt(day.getText());\n int yearNum = Integer.parseInt(year.getText());\n Calendar c = Calendar.getInstance();\n c.set(Calendar.MONTH, monthNum);\n c.set(Calendar.DAY_OF_MONTH, dayNum);\n c.set(Calendar.YEAR, yearNum);\n Date date = c.getTime();\n String dayOfWeek = (new SimpleDateFormat(“EEEE”)).format(date);\n outputLabel.setText(dayOfWeek); \n }\n } \n}\n \n \nclass DayOfTheWeekService (a universal service, implements Service)\nThe Service interface method \nthat builds the GUI\nRefer to chapter 10 if you need a reminder \nof how number and date formatting works. \nThis code is slightly different, however, \nbecause it uses the Calendar class. Also, the \nSimpleDateFormat lets us specify a pattern \nfor how the date should print out.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (446x446)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n647\nimport javax.swing.*;\nimport java.awt.event.*;\nimport java.awt.*;\nimport java.io.*;\nimport java.util.*;\nimport java.text.*;\npublic class DayOfTheWeekService implements Service {\n JLabel outputLabel;\n JComboBox month;\n JTextField day;\n JTextField year;\n public JPanel getGuiPanel() {\n JPanel panel = new JPanel();\n JButton button = new JButton(“Do it!”);\n button.addActionListener(new DoItListener());\n outputLabel = new JLabel(“date appears here”); \n DateFormatSymbols dateStuff = new DateFormatSymbols(); \n month = new JComboBox(dateStuff.getMonths());\n day = new JTextField(8);\n year = new JTextField(8);\n JPanel inputPanel = new JPanel(new GridLayout(3,2));\n inputPanel.add(new JLabel(“Month”));\n inputPanel.add(month);\n inputPanel.add(new JLabel(“Day”));\n inputPanel.add(day);\n inputPanel.add(new JLabel(“Year”)); \n inputPanel.add(year);\n panel.add(inputPanel);\n panel.add(button);\n panel.add(outputLabel);\n return panel;\n }\n public class DoItListener implements ActionListener {\n public void actionPerformed(ActionEvent ev) {\n int monthNum = month.getSelectedIndex(); \n int dayNum = Integer.parseInt(day.getText());\n int yearNum = Integer.parseInt(year.getText());\n Calendar c = Calendar.getInstance();\n c.set(Calendar.MONTH, monthNum);\n c.set(Calendar.DAY_OF_MONTH, dayNum);\n c.set(Calendar.YEAR, yearNum);\n Date date = c.getTime();\n String dayOfWeek = (new SimpleDateFormat(“EEEE”)).format(date);\n outputLabel.setText(dayOfWeek); \n }\n } \n}\n \n \nclass DayOfTheWeekService (a universal service, implements Service)\nThe Service interface method \nthat builds the GUI\nRefer to chapter 10 if you need a reminder \nof how number and date formatting works. \nThis code is slightly different, however, \nbecause it uses the Calendar class. Also, the \nSimpleDateFormat lets us specify a pattern \nfor how the date should print out.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 681,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 681,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2176 chars",
+      "severity": "info"
+    },
+    {
+      "page": 681,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 681,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

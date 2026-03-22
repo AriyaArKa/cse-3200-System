@@ -1,0 +1,46 @@
+{
+  "page_number": 53,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\ndive In A Quick Dip\n19\nBut some still get through! 1 can throw Class-\nCastExceptions and sometimes 1 get people \ntrying to put the wrong type of thing in an \narray that was declared to hold something \nelse, and—\nOK. Sure. But what about security? Look at all \nthe security stuff 1 do, and you’re like, what, \nchecking for semicolons? Oooohhh big security \nrisk! Thank goodness for you!\nWhatever. 1 have to do that same stuff too, \nthough, just to make sure nobody snuck in \nafter you and changed the bytecode before \nrunning it.\nOh, you can count on it. Buddy. \nRemember that Java is a strongly-typed lan-\nguage, and that means 1 can’t allow variables \nto hold data of the wrong type. This is a \ncrucial safety feature, and 1’m able to stop the \nvast majority of violations before they ever get \nto you. And 1 also—\nExcuse me, but 1 wasn’t done. And yes, there \nare some datatype exceptions that can emerge \nat runtime, but some of those have to be \nallowed to support one of Java’5 other impor-\ntant features—dynamic binding. At runtime, \na Java program can include new objects that \nweren’t even known to the original program-\nmer, 50 1 have to allow a certain amount of \nflexibility. But my job is to stop anything that \nwould never—could never—succeed at run-\ntime. Usually 1 can tell when something won’t \nwork, for example, if a programmer acciden-\ntally tried to use a Button object as a Socket \nconnection, 1 would detect that and thus \nprotect him from causing harm at runtime. \nExcuse me, but 1 am the first line of defense, \nas they say. The datatype violations 1 previous-\nly described could wreak havoc in a program \nif they were allowed to manifest. 1 am also \nthe one who prevents access violations, such \nas code trying to invoke a private method, or \nchange a method that – for security reasons \n– must never be changed. 1 stop people from \ntouching code they’re not meant to see, \nincluding code trying to access another class’ \ncritical data. It would take hours, perhaps days \neven, to describe the significance of my work.\nOf course, but as 1 indicated previously, if 1 \ndidn’t prevent what amounts to perhaps 99% \nof the potential problems, you would grind to \na halt. And it looks like we’re out of time, 50 \nwe’11 have to revisit this in a later chat.\nThe Java Virtual Machine\nThe Compiler",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\ndive In A Quick Dip\n19\nBut some still get through! 1 can throw Class-\nCastExceptions and sometimes 1 get people \ntrying to put the wrong type of thing in an \narray that was declared to hold something \nelse, and—\nOK. Sure. But what about security? Look at all \nthe security stuff 1 do, and you’re like, what, \nchecking for semicolons? Oooohhh big security \nrisk! Thank goodness for you!\nWhatever. 1 have to do that same stuff too, \nthough, just to make sure nobody snuck in \nafter you and changed the bytecode before \nrunning it.\nOh, you can count on it. Buddy. \nRemember that Java is a strongly-typed lan-\nguage, and that means 1 can’t allow variables \nto hold data of the wrong type. This is a \ncrucial safety feature, and 1’m able to stop the \nvast majority of violations before they ever get \nto you. And 1 also—\nExcuse me, but 1 wasn’t done. And yes, there \nare some datatype exceptions that can emerge \nat runtime, but some of those have to be \nallowed to support one of Java’5 other impor-\ntant features—dynamic binding. At runtime, \na Java program can include new objects that \nweren’t even known to the original program-\nmer, 50 1 have to allow a certain amount of \nflexibility. But my job is to stop anything that \nwould never—could never—succeed at run-\ntime. Usually 1 can tell when something won’t \nwork, for example, if a programmer acciden-\ntally tried to use a Button object as a Socket \nconnection, 1 would detect that and thus \nprotect him from causing harm at runtime. \nExcuse me, but 1 am the first line of defense, \nas they say. The datatype violations 1 previous-\nly described could wreak havoc in a program \nif they were allowed to manifest. 1 am also \nthe one who prevents access violations, such \nas code trying to invoke a private method, or \nchange a method that – for security reasons \n– must never be changed. 1 stop people from \ntouching code they’re not meant to see, \nincluding code trying to access another class’ \ncritical data. It would take hours, perhaps days \neven, to describe the significance of my work.\nOf course, but as 1 indicated previously, if 1 \ndidn’t prevent what amounts to perhaps 99% \nof the potential problems, you would grind to \na halt. And it looks like we’re out of time, 50 \nwe’11 have to revisit this in a later chat.\nThe Java Virtual Machine\nThe Compiler",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 53,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 53,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2330 chars",
+      "severity": "info"
+    },
+    {
+      "page": 53,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

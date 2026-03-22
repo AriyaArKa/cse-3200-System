@@ -1,0 +1,123 @@
+{
+  "page_number": 177,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n143\n4\nArrayList object to \nhold DotCom objects\nThe DotComBust object \ncreates three DotCom \nobjects (and puts them in \nthe ArrayList)\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject\ndotCom\n0dotCom\n1\ndotCom\n2\ncells\ncells\ncells\nDotCom \nobjects\n5\nArrayList object to \nhold DotCom objects\nThe DotComBust object asks the \nhelper object for a location for a \nDotCom (does this 3 times, one for \neach DotCom)\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject\nma\nk\ne 1\noc\nati\non\ndotCom\n0dotCom\n1\ndotCom\n2\ncells\ncells\ncells\nDotCom \nobjects\nhere it is\nThe DotComBust object gives each of the Dot-\nCom objects a location (which the DotComBust \ngot from the helper object) like “A2”, “82”, \netc. Each DotCom object puts his own three \nlocation cells in an ArrayList\nArrayList object \n(to hold DotCom \ncell locations)\ncell\n0\ncell\n1\ncell\n2\nArrayList \nobject \nArrayList \nobject \ncell\n0\ncell\n1\ncell\n2\ncell\n0\ncell\n1\ncell\n2\n6\nArrayList object to \nhold DotCom objects\nThe DotComBust object asks the helper \nobject for a user guess (the helper \nprompts the user and gets input from \nthe command-line)\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject\ng\ne\nt \nus\ne\nr guess\ndotCom\n0dotCom\n1\ndotCom\n2\ncells\ncells\ncells\nDotCom \nobjects\nc\nhe\nck\n t\nh\ni\n5 g\nu\ne\n5\n5\nhere it is\nArrayList object \n(to hold DotCom \ncell locations)\ncell\n0\ncell\n1\ncell\n2\nArrayList \nobject \nArrayList \nobject \ncell\n0\ncell\n1\ncell\n2\ncell\n0\ncell\n1\ncell\n2\n“hit”\nThe DotComBust object loops through the list \nof DotComs, and asks each one to check the user \nguess for a match. The DotCom checks its locations \nArrayList and returns a result (“hit”, “miss”, etc.)\nAnd 50 the game continues... get-\nting user input, asking each DotCom \nto check for a match, and continuing \nuntil all DotComs are dead",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (182x184)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (85x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (85x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (182x184)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (85x160)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (109x110)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 9,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (54x99)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 10,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (54x99)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "get to know the Java API \nyou are here\n143\n4\nArrayList object to \nhold DotCom objects\nThe DotComBust object \ncreates three DotCom \nobjects (and puts them in \nthe ArrayList)\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject\ndotCom\n0dotCom\n1\ndotCom\n2\ncells\ncells\ncells\nDotCom \nobjects\n5\nArrayList object to \nhold DotCom objects\nThe DotComBust object asks the \nhelper object for a location for a \nDotCom (does this 3 times, one for \neach DotCom)\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject\nma\nk\ne 1\noc\nati\non\ndotCom\n0dotCom\n1\ndotCom\n2\ncells\ncells\ncells\nDotCom \nobjects\nhere it is\nThe DotComBust object gives each of the Dot-\nCom objects a location (which the DotComBust \ngot from the helper object) like “A2”, “82”, \netc. Each DotCom object puts his own three \nlocation cells in an ArrayList\nArrayList object \n(to hold DotCom \ncell locations)\ncell\n0\ncell\n1\ncell\n2\nArrayList \nobject \nArrayList \nobject \ncell\n0\ncell\n1\ncell\n2\ncell\n0\ncell\n1\ncell\n2\n6\nArrayList object to \nhold DotCom objects\nThe DotComBust object asks the helper \nobject for a user guess (the helper \nprompts the user and gets input from \nthe command-line)\nhelper dotComsList\nDotComBust \nobject\nGameHelper \nobject\ng\ne\nt \nus\ne\nr guess\ndotCom\n0dotCom\n1\ndotCom\n2\ncells\ncells\ncells\nDotCom \nobjects\nc\nhe\nck\n t\nh\ni\n5 g\nu\ne\n5\n5\nhere it is\nArrayList object \n(to hold DotCom \ncell locations)\ncell\n0\ncell\n1\ncell\n2\nArrayList \nobject \nArrayList \nobject \ncell\n0\ncell\n1\ncell\n2\ncell\n0\ncell\n1\ncell\n2\n“hit”\nThe DotComBust object loops through the list \nof DotComs, and asks each one to check the user \nguess for a match. The DotCom checks its locations \nArrayList and returns a result (“hit”, “miss”, etc.)\nAnd 50 the game continues... get-\nting user input, asking each DotCom \nto check for a match, and continuing \nuntil all DotComs are dead",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 177,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 177,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1808 chars",
+      "severity": "info"
+    },
+    {
+      "page": 177,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 10",
+      "severity": "info"
+    },
+    {
+      "page": 177,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

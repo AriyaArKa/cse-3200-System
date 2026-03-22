@@ -1,0 +1,46 @@
+{
+  "page_number": 600,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "566 \nchapter 16\nTreeSet elements MUST be comparable\nTreeSet can’t read the programmer’5 mind to figure out how the \nobjects should be sorted. You have to tell the TreeSet how.\nclass Book implements Comparable {\n String title;\n public Book(String t) {\n title = t;\n }\n public int compareTo(Object b) {\n Book book = (Book) b;\n return (title.compareTo(book.title));\n }\n}\n$ The elements in \nthe list must be of a type that \nimplements Comparable\nThe Book class on the previous \npage didn’t implement Comparable, 50 it \nwouldn’t work at runtime. Think about it, the \npoor TreeSet’5 sole purpose in life is to keep \nyour elements sorted, and once again—it had \nno idea how to sort Book objects! It doesn’t fail \nat compile-time, because the TreeSet add() \nmethod doesn’t take a Comparable type,The \nTreeSet add() method takes whatever type \nyou used when you created the TreeSet. In \nother words, if you say new TreeSet<Book>() \nthe add() method is essentially add(Book). And \nthere’5 no requirement that the Book class \nimplement Comparable! But it fails at runtime \nwhen you add the second element to the set. \nThat’5 the first time the set tries to call one of \nthe object’5 compareTo() methods and... can’t.\n$ You use the TreeSet’5 \noverloaded constructor \nthat takes a Comparator\nTreeSet works a lot like the sort() \nmethod—you have a choice of using the \nelement’5 compareTo() method, assuming \nthe element type implemented the \nComparable interface, OR you can use \na custom Comparator that knows how \nto sort the elements in the set. To use a \ncustom Comparator, you call the TreeSet \nconstructor that takes a Comparator.\nTo use a TreeSet, one of these \nthings must be true:\nOR\npublic class BookCompare implements Comparator<Book> {\n public int compare(Book one, Book two) {\n return (one.title.compareTo(two.title));\n }\n}\nclass Test {\n public void go() {\n Book b1 = new Book(“How Cats Work”);\n Book b2 = new Book(“Remix your Body”);\n Book b3 = new Book(“Finding Emo”);\n BookCompare bCompare = new BookCompare();\n TreeSet<Book> tree = new TreeSet<Book>(bCompare);\n tree.add(new Book(“How Cats Work”);\n tree.add(new Book(“Finding Emo”);\n tree.add(new Book(“Remix your Body”); \n System.out.println(tree);\n }\n}\nhow TreeSets sort",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "566 \nchapter 16\nTreeSet elements MUST be comparable\nTreeSet can’t read the programmer’5 mind to figure out how the \nobjects should be sorted. You have to tell the TreeSet how.\nclass Book implements Comparable {\n String title;\n public Book(String t) {\n title = t;\n }\n public int compareTo(Object b) {\n Book book = (Book) b;\n return (title.compareTo(book.title));\n }\n}\n$ The elements in \nthe list must be of a type that \nimplements Comparable\nThe Book class on the previous \npage didn’t implement Comparable, 50 it \nwouldn’t work at runtime. Think about it, the \npoor TreeSet’5 sole purpose in life is to keep \nyour elements sorted, and once again—it had \nno idea how to sort Book objects! It doesn’t fail \nat compile-time, because the TreeSet add() \nmethod doesn’t take a Comparable type,The \nTreeSet add() method takes whatever type \nyou used when you created the TreeSet. In \nother words, if you say new TreeSet<Book>() \nthe add() method is essentially add(Book). And \nthere’5 no requirement that the Book class \nimplement Comparable! But it fails at runtime \nwhen you add the second element to the set. \nThat’5 the first time the set tries to call one of \nthe object’5 compareTo() methods and... can’t.\n$ You use the TreeSet’5 \noverloaded constructor \nthat takes a Comparator\nTreeSet works a lot like the sort() \nmethod—you have a choice of using the \nelement’5 compareTo() method, assuming \nthe element type implemented the \nComparable interface, OR you can use \na custom Comparator that knows how \nto sort the elements in the set. To use a \ncustom Comparator, you call the TreeSet \nconstructor that takes a Comparator.\nTo use a TreeSet, one of these \nthings must be true:\nOR\npublic class BookCompare implements Comparator<Book> {\n public int compare(Book one, Book two) {\n return (one.title.compareTo(two.title));\n }\n}\nclass Test {\n public void go() {\n Book b1 = new Book(“How Cats Work”);\n Book b2 = new Book(“Remix your Body”);\n Book b3 = new Book(“Finding Emo”);\n BookCompare bCompare = new BookCompare();\n TreeSet<Book> tree = new TreeSet<Book>(bCompare);\n tree.add(new Book(“How Cats Work”);\n tree.add(new Book(“Finding Emo”);\n tree.add(new Book(“Remix your Body”); \n System.out.println(tree);\n }\n}\nhow TreeSets sort",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 600,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 600,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2311 chars",
+      "severity": "info"
+    },
+    {
+      "page": 600,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

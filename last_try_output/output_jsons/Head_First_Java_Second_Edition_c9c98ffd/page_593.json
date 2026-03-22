@@ -1,0 +1,59 @@
+{
+  "page_number": 593,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n559\nWe added on to the Jukebox to put the songs in a HashSet. (Note: we left out some \nof the Jukebox code, but you can copy it from earlier versions. And to make it easier \nto read the output, we went back to the earlier version of the Song’5 toString() \nmethod, 50 that it prints only the title instead of title and artist.)\nUsing a HashSet instead of ArrayList\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox6 { \n ArrayList<Song> songList = new ArrayList<Song>(); \n // main method etc.\n \n public void go() { \n \n getSongs(); \n System.out.println(songList);\n Collections.sort(songList);\n System.out.println(songList);\n HashSet<Song> songSet = new HashSet<Song>();\n songSet.addAll(songList); \n System.out.println(songSet); \n \n }\n // getSongs() and addSong() methods\n}\nFile Edit Window Help GetBetterMusic\n%java Jukebox6\n[Pink Moon, Somersault, Shiva Moon, Circles, Deep Channel, \nPassenger, Listen, Listen, Listen, Circles]\n[Circles, Circles, Deep Channel, Listen, Listen, Listen, \nPassenger, Pink Moon, Shiva Moon, Somersault]\n[Pink Moon, Listen, Shiva Moon, Circles, Listen, Deep Channel, \nPassenger, Circles, Listen, Somersault]\nHere we create a new HashSet \nparameterized to hold Songs.\nWe didn’t change getSongs(), 50 it still puts the songs in an ArrayList\nHashSet has a simple addAll() method that can \ntake another collection and use it to populate \nthe HashSet. It’5 the same as if we added each \nsong one at a time (except much simpler).\nThe Set didn’t help!!\nWe still have all the duplicates!\nBefore sorting \nthe ArrayList.\nAfter sorting \nthe ArrayList \n(by title).\nAfter putting it \ninto a HashSet, \nand printing the \nHashSet (we didn’t \ncall sort() again).\n(And it lost its sort order \nwhen we put the list into a \nHashSet, but we’11 worry about \nthat one later...)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help GetBetterMusic"
+        ],
+        [
+          "%java Jukebox6\n[Pink Moon, Somersault, Shiva Moon, Circles, Deep Channel,\nPassenger, Listen, Listen, Listen, Circles]\n[Circles, Circles, Deep Channel, Listen, Listen, Listen,\nPassenger, Pink Moon, Shiva Moon, Somersault]\n[Pink Moon, Listen, Shiva Moon, Circles, Listen, Deep Channel,\nPassenger, Circles, Listen, Somersault]"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n559\nWe added on to the Jukebox to put the songs in a HashSet. (Note: we left out some \nof the Jukebox code, but you can copy it from earlier versions. And to make it easier \nto read the output, we went back to the earlier version of the Song’5 toString() \nmethod, 50 that it prints only the title instead of title and artist.)\nUsing a HashSet instead of ArrayList\nimport java.util.*;\nimport java.io.*;\npublic class Jukebox6 { \n ArrayList<Song> songList = new ArrayList<Song>(); \n // main method etc.\n \n public void go() { \n \n getSongs(); \n System.out.println(songList);\n Collections.sort(songList);\n System.out.println(songList);\n HashSet<Song> songSet = new HashSet<Song>();\n songSet.addAll(songList); \n System.out.println(songSet); \n \n }\n // getSongs() and addSong() methods\n}\nFile Edit Window Help GetBetterMusic\n%java Jukebox6\n[Pink Moon, Somersault, Shiva Moon, Circles, Deep Channel, \nPassenger, Listen, Listen, Listen, Circles]\n[Circles, Circles, Deep Channel, Listen, Listen, Listen, \nPassenger, Pink Moon, Shiva Moon, Somersault]\n[Pink Moon, Listen, Shiva Moon, Circles, Listen, Deep Channel, \nPassenger, Circles, Listen, Somersault]\nHere we create a new HashSet \nparameterized to hold Songs.\nWe didn’t change getSongs(), 50 it still puts the songs in an ArrayList\nHashSet has a simple addAll() method that can \ntake another collection and use it to populate \nthe HashSet. It’5 the same as if we added each \nsong one at a time (except much simpler).\nThe Set didn’t help!!\nWe still have all the duplicates!\nBefore sorting \nthe ArrayList.\nAfter sorting \nthe ArrayList \n(by title).\nAfter putting it \ninto a HashSet, \nand printing the \nHashSet (we didn’t \ncall sort() again).\n(And it lost its sort order \nwhen we put the list into a \nHashSet, but we’11 worry about \nthat one later...)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 593,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 593,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1879 chars",
+      "severity": "info"
+    },
+    {
+      "page": 593,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

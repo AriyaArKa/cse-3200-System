@@ -1,0 +1,107 @@
+{
+  "page_number": 146,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "112 \nchapter 5\nOne last class: GameHelper\n prep code \ntest code\nreal code\nreal code \nWe made the dot com class.\nWe made the game class.\nAll that’5 left is the helper class— the one with the \ngetUserInput() method. The code to get command-\nline input is more than we want to explain right now. \nIt opens up way too many topics best left for later. \n(Later, as in chapter 14.)\nimport java.io.*;\npublic class GameHelper {\n public String getUserInput(String prompt) {\n String inputLine = null;\n System.out.print(prompt + “ “);\n try {\n BufferedReader is = new BufferedReader(\n \n new InputStreamReader(System.in));\n inputLine = is.readLine();\n if (inputLine.length() == 0 ) return null; \n } catch (IOException e) {\n System.out.println(“IOException: “ + e);\n }\n return inputLine;\n }\n}\n1 pre-cooked \nsome code 50 you \ndon’t have to make \nit yourself. \nReady-bake \nCode\nJust copy* the code below and compile it into a \nclass named GameHelper. Drop all three classes \n(SimpleDotCom, SimpleDotComGame, GameHelper) \ninto the same directory, and make it your working \ndirectory.\nWhenever you see the \nlogo, you’re see-\ning code that you have to type as-is and take on faith. \nTrust it. You’11 learn how that code works later.\nReady-bake \nCode\n*We know how much you enjoy typing, but for those rare \nmoments when you’d rather do something else, we’ve made \nthe Ready-bake Code available on wickedlysmart.com.\nGameHelper class (Ready-bake)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "Ready-bake\nCode"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "R\nC",
+          "R\nC",
+          "eady-bake\node"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (386x547)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (137x137)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (62x62)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "112 \nchapter 5\nOne last class: GameHelper\n prep code \ntest code\nreal code\nreal code \nWe made the dot com class.\nWe made the game class.\nAll that’5 left is the helper class— the one with the \ngetUserInput() method. The code to get command-\nline input is more than we want to explain right now. \nIt opens up way too many topics best left for later. \n(Later, as in chapter 14.)\nimport java.io.*;\npublic class GameHelper {\n public String getUserInput(String prompt) {\n String inputLine = null;\n System.out.print(prompt + “ “);\n try {\n BufferedReader is = new BufferedReader(\n \n new InputStreamReader(System.in));\n inputLine = is.readLine();\n if (inputLine.length() == 0 ) return null; \n } catch (IOException e) {\n System.out.println(“IOException: “ + e);\n }\n return inputLine;\n }\n}\n1 pre-cooked \nsome code 50 you \ndon’t have to make \nit yourself. \nReady-bake \nCode\nJust copy* the code below and compile it into a \nclass named GameHelper. Drop all three classes \n(SimpleDotCom, SimpleDotComGame, GameHelper) \ninto the same directory, and make it your working \ndirectory.\nWhenever you see the \nlogo, you’re see-\ning code that you have to type as-is and take on faith. \nTrust it. You’11 learn how that code works later.\nReady-bake \nCode\n*We know how much you enjoy typing, but for those rare \nmoments when you’d rather do something else, we’ve made \nthe Ready-bake Code available on wickedlysmart.com.\nGameHelper class (Ready-bake)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 146,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 146,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1486 chars",
+      "severity": "info"
+    },
+    {
+      "page": 146,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 146,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

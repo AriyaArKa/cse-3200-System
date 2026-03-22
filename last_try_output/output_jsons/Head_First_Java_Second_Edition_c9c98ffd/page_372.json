@@ -1,0 +1,46 @@
+{
+  "page_number": 372,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "338 chapter 11\nfixing the Sequencer code \npublic void play() {\n try {\n Sequencer sequencer = MidiSystem.getSequencer(); \n System.out.println(“Successfully got a sequencer”);\n } catch(MidiUnavailableException ex) {\n System.out.println(“Bummer”); \n } \n } // close play\n \nNow that you’ve completely forgotten, we started this chapter \nwith a first look at some JavaSound code. We created a Sequencer \nobject but it wouldn’t compile because the method Midi.getSe-\nquencer() declares a checked exception (MidiUnavailableExcep-\ntion). But we can fix that now by wrapping the call in a try/catch.\nGetting back to our music code...\nNo problem calling getSequencer(), \nnow that we’ve wrapped it in a try/\ncatch block.\nThe catch parameter has to be \nthe ‘right’ exception. If we said \n‘catch(FileNot FoundException f), the \ncode would not compile, because poly-\nmorphically a MidiUnavilableException \nwon’t fit into a FileNotFoundException. \nRemember it’5 not enough to have a \ncatch block... you have to catch the \nthing being thrown!\nYou cannot have a catch or finally \nwithout a try\nException Rules\nvoid go() {\n Foo f = new Foo();\n f.foof();\n catch(FooException ex) { }\n }\nNOT LEGAL!\nWhere’5 the try?\nYou cannot put code between the \ntry and the catch\ntry {\n x.doStuff();\n}\nint y = 43;\n} catch(Exception ex) { }\nNOT LEGAL! You can’t put \ncode between the try and \nthe catch.\nA try MUST be followed by either a \ncatch or a finally\ntry {\n x.doStuff();\n} finally {\n // cleanup\n}\nLEGAL because you \nhave a finally, even \nthough there’5 no catch. \nBut you cannot have a \ntry by itself.\n1\n2\n3\nA try with only a finally (no catch) \nmust still declare the exception.\nvoid go() throws FooException {\n try {\n x.doStuff();\n } finally { }\n}\n4\nA try without a catch \ndoesn’t satisfy the \nhandle or declare law",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "338 chapter 11\nfixing the Sequencer code \npublic void play() {\n try {\n Sequencer sequencer = MidiSystem.getSequencer(); \n System.out.println(“Successfully got a sequencer”);\n } catch(MidiUnavailableException ex) {\n System.out.println(“Bummer”); \n } \n } // close play\n \nNow that you’ve completely forgotten, we started this chapter \nwith a first look at some JavaSound code. We created a Sequencer \nobject but it wouldn’t compile because the method Midi.getSe-\nquencer() declares a checked exception (MidiUnavailableExcep-\ntion). But we can fix that now by wrapping the call in a try/catch.\nGetting back to our music code...\nNo problem calling getSequencer(), \nnow that we’ve wrapped it in a try/\ncatch block.\nThe catch parameter has to be \nthe ‘right’ exception. If we said \n‘catch(FileNot FoundException f), the \ncode would not compile, because poly-\nmorphically a MidiUnavilableException \nwon’t fit into a FileNotFoundException. \nRemember it’5 not enough to have a \ncatch block... you have to catch the \nthing being thrown!\nYou cannot have a catch or finally \nwithout a try\nException Rules\nvoid go() {\n Foo f = new Foo();\n f.foof();\n catch(FooException ex) { }\n }\nNOT LEGAL!\nWhere’5 the try?\nYou cannot put code between the \ntry and the catch\ntry {\n x.doStuff();\n}\nint y = 43;\n} catch(Exception ex) { }\nNOT LEGAL! You can’t put \ncode between the try and \nthe catch.\nA try MUST be followed by either a \ncatch or a finally\ntry {\n x.doStuff();\n} finally {\n // cleanup\n}\nLEGAL because you \nhave a finally, even \nthough there’5 no catch. \nBut you cannot have a \ntry by itself.\n1\n2\n3\nA try with only a finally (no catch) \nmust still declare the exception.\nvoid go() throws FooException {\n try {\n x.doStuff();\n } finally { }\n}\n4\nA try without a catch \ndoesn’t satisfy the \nhandle or declare law",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 372,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 372,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1887 chars",
+      "severity": "info"
+    },
+    {
+      "page": 372,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

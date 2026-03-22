@@ -1,0 +1,46 @@
+{
+  "page_number": 699,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "appendix 8 Top Ten Reference\nyou are here\n665\n#5 Anonymous and Static Nested Classes\nA static nested class is just that—a \nclass enclosed within another, and \nmarked with the static modifier.\nNested classes come in many flavors\nIn the GUI event-handling section of the book, we started using inner (nested) classes as a \nsolution for implementing listener interfaces. That’5 the most common, practical, and read-\nable form of an inner class—where the class is simply nested within the curly braces of another \nenclosing class. And remember, it means you need an instance of the outer class in order to get \nan instance of the inner class, because the inner class is a member of the outer/enclosing class.\nBut there are other kinds of inner classes including static and anonymous. We’re not going \ninto the details here, but we don’t want you to be thrown by strange syntax when you see it in \nsomeone’5 code. Because out of virtually anything you can do with the Java language, perhaps \nnothing produces more bizarre-looking code than anonymous inner classes. But we’11 start with \nsomething simpler—static nested classes.\nStatic nested classes\nYou already know what static means—something tied to the class, not a particular instance. A \nstatic nested class looks just like the non-static classes we used for event listeners, except they’re \nmarked with the keyword static.\npublic class FooOuter {\n static class BarInner {\n void sayIt() {\n System.out.println(“method of a static inner class”);\n }\n }\n}\nclass Test {\n public static void main (String[] args) {\n FooOuter.BarInner foo = new FooOuter.BarInner();\n foo.sayIt();\n }\n}\n \nBecause a static nested class is...static, you don’t \nuse an instance of the outer class. You just use the \nname of the class, the same way you invoke static \nmethods or access static variables. \nStatic nested classes are more like regular non-nested classes in that they don’t enjoy a special relation-\nship with an enclosing outer object. But because static nested classes are still considered a member of \nthe enclosing/outer class, they still get access to any private members of the outer class... but only the \nones that are also static. Since the static nested class isn’t connected to an instance of the outer class, it \ndoesn’t have any special way to access the non-static (instance) variables and methods.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "appendix 8 Top Ten Reference\nyou are here\n665\n#5 Anonymous and Static Nested Classes\nA static nested class is just that—a \nclass enclosed within another, and \nmarked with the static modifier.\nNested classes come in many flavors\nIn the GUI event-handling section of the book, we started using inner (nested) classes as a \nsolution for implementing listener interfaces. That’5 the most common, practical, and read-\nable form of an inner class—where the class is simply nested within the curly braces of another \nenclosing class. And remember, it means you need an instance of the outer class in order to get \nan instance of the inner class, because the inner class is a member of the outer/enclosing class.\nBut there are other kinds of inner classes including static and anonymous. We’re not going \ninto the details here, but we don’t want you to be thrown by strange syntax when you see it in \nsomeone’5 code. Because out of virtually anything you can do with the Java language, perhaps \nnothing produces more bizarre-looking code than anonymous inner classes. But we’11 start with \nsomething simpler—static nested classes.\nStatic nested classes\nYou already know what static means—something tied to the class, not a particular instance. A \nstatic nested class looks just like the non-static classes we used for event listeners, except they’re \nmarked with the keyword static.\npublic class FooOuter {\n static class BarInner {\n void sayIt() {\n System.out.println(“method of a static inner class”);\n }\n }\n}\nclass Test {\n public static void main (String[] args) {\n FooOuter.BarInner foo = new FooOuter.BarInner();\n foo.sayIt();\n }\n}\n \nBecause a static nested class is...static, you don’t \nuse an instance of the outer class. You just use the \nname of the class, the same way you invoke static \nmethods or access static variables. \nStatic nested classes are more like regular non-nested classes in that they don’t enjoy a special relation-\nship with an enclosing outer object. But because static nested classes are still considered a member of \nthe enclosing/outer class, they still get access to any private members of the outer class... but only the \nones that are also static. Since the static nested class isn’t connected to an instance of the outer class, it \ndoesn’t have any special way to access the non-static (instance) variables and methods.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 699,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 699,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2389 chars",
+      "severity": "info"
+    },
+    {
+      "page": 699,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

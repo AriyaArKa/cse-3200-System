@@ -1,0 +1,46 @@
+{
+  "page_number": 242,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "208 \nchapter 8\nYou know where this is heading. We want to change the \ntype of the array, along with the add() method argument, to \nsomething above Animal. Something even more generic, more \nabstract than Animal. But how can we do it? We don’t have a \nsuperclass for Animal.\nThen again, maybe we do...\nRemember those methods of ArrayList? \nLook how the remove, contains, and \nindexOf method all use an object of type... \nObject!\nEvery class in Java extends \nclass Object. \nClass Object is the mother of all classes; it’5 \nthe superclass of everything.\nv\ne\nr\n5\ni\n0\nn\n3\nWhat about non-Animals? Why not make \na class generic enough to take anything?\nMany of the ArrayList methods use the \nultimate polymorphic type, Object. Since \nevery class in Java is a subclass of Object, \nthese ArrayList methods can take anything!\n(Note: as of Java 5.0, the get() and add() \nmethods actually look a little different \nthan the ones shown here, but for now this \nis the way to think about it. We’11 get into \nthe full story a little later.)\nthe ultimate superclass: Object\nArrayList\n(These are just a few of the \nmethods in ArrayList...there \nare many more.) \nEven if you take advantage of polymorphism, \nyou still have to create a class with methods \nthat take and return your polymorphic type. \nWithout a common superclass for everything \nin Java, there’d be no way for the developers \nof Java to create classes with methods that \ncould take your custom types... types they never \nknew about when they wrote the ArrayList class.\n50 you were making subclasses of class Object \nfrom the very beginning and you didn’t even \nknow it. Every class you write extends Object, \nwithout your ever having to say it. But you can \nthink of it as though a class you write looks like \nthis:\npublic class Dog extends Object { }\nBut wait a minute, Dog already extends something, Canine. \nThat’5 OK. The compiler will make Canine extend Object \ninstead. Except Canine extends Animal. No problem, then the \ncompiler will just make Animal extend Object. \nAny class that doesn’t explicitly extend another \nclass, implicitly extends Object.\n50, since Dog extends Canine, it doesn’t directly extend Object \n(although it does extend it indirectly), and the same is true \nfor Canine, but Animal does directly extend Object.\nRemoves one instance of the object specified in the \nparameter. Returns ‘true’ if the element was in the list.\nReturns ‘true’ if there’5 a match for the object parameter.\nReturns ‘true’ if the list has no elements.\nReturns either the index of the object parameter, or -1.\nReturns the element at this position in the list.\nAdds the element to the list (returns ‘true’).\nboolean remove(Object elem)\nboolean contains(Object elem)\nboolean isEmpty()\nint indexOf(Object elem)\nObject get(int index)\nboolean add(Object elem)\n// more",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "208 \nchapter 8\nYou know where this is heading. We want to change the \ntype of the array, along with the add() method argument, to \nsomething above Animal. Something even more generic, more \nabstract than Animal. But how can we do it? We don’t have a \nsuperclass for Animal.\nThen again, maybe we do...\nRemember those methods of ArrayList? \nLook how the remove, contains, and \nindexOf method all use an object of type... \nObject!\nEvery class in Java extends \nclass Object. \nClass Object is the mother of all classes; it’5 \nthe superclass of everything.\nv\ne\nr\n5\ni\n0\nn\n3\nWhat about non-Animals? Why not make \na class generic enough to take anything?\nMany of the ArrayList methods use the \nultimate polymorphic type, Object. Since \nevery class in Java is a subclass of Object, \nthese ArrayList methods can take anything!\n(Note: as of Java 5.0, the get() and add() \nmethods actually look a little different \nthan the ones shown here, but for now this \nis the way to think about it. We’11 get into \nthe full story a little later.)\nthe ultimate superclass: Object\nArrayList\n(These are just a few of the \nmethods in ArrayList...there \nare many more.) \nEven if you take advantage of polymorphism, \nyou still have to create a class with methods \nthat take and return your polymorphic type. \nWithout a common superclass for everything \nin Java, there’d be no way for the developers \nof Java to create classes with methods that \ncould take your custom types... types they never \nknew about when they wrote the ArrayList class.\n50 you were making subclasses of class Object \nfrom the very beginning and you didn’t even \nknow it. Every class you write extends Object, \nwithout your ever having to say it. But you can \nthink of it as though a class you write looks like \nthis:\npublic class Dog extends Object { }\nBut wait a minute, Dog already extends something, Canine. \nThat’5 OK. The compiler will make Canine extend Object \ninstead. Except Canine extends Animal. No problem, then the \ncompiler will just make Animal extend Object. \nAny class that doesn’t explicitly extend another \nclass, implicitly extends Object.\n50, since Dog extends Canine, it doesn’t directly extend Object \n(although it does extend it indirectly), and the same is true \nfor Canine, but Animal does directly extend Object.\nRemoves one instance of the object specified in the \nparameter. Returns ‘true’ if the element was in the list.\nReturns ‘true’ if there’5 a match for the object parameter.\nReturns ‘true’ if the list has no elements.\nReturns either the index of the object parameter, or -1.\nReturns the element at this position in the list.\nAdds the element to the list (returns ‘true’).\nboolean remove(Object elem)\nboolean contains(Object elem)\nboolean isEmpty()\nint indexOf(Object elem)\nObject get(int index)\nboolean add(Object elem)\n// more",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 242,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 242,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2811 chars",
+      "severity": "info"
+    },
+    {
+      "page": 242,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

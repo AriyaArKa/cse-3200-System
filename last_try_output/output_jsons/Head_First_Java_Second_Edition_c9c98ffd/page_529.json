@@ -1,0 +1,74 @@
+{
+  "page_number": 529,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n495\nThe three states of a new thread\nA Thread instance has been \ncreated but not started. \nIn other words, there is a \nThread object, but no thread \nof execution.\nNEW\nRUNNABLE\nThread t = new Thread(r);\nWhen you start the thread, it \nmoves into the runnable state. \nThis means the thread is ready \nto run and just waiting for its \nBig Chance to be selected for \nexecution. At this point, there is \na new call stack for this thread.\nt.start();\nRUNNING\nt.start();\nSelected to run\nThis is the state all threads lust \nafter! To be The Chosen One. \nThe Currently Running Thread. \nOnly the JVM thread scheduler \ncan make that decision. You \ncan sometimes influence that \ndecision, but you cannot force a \nthread to move from runnable \nto running. In the running \nstate, a thread (and ONLY this \nthread) has an active call stack, \nand the method on the top of \nthe stack is executing.\nThread t = new Thread(r);\nthis is where a thread \nwants to be! \nBut there’5 more. Once the thread becomes \nrunnable, it can move back and forth between \nrunnable, running, and an additional state: \ntemporarily not runnable (also known as ‘blocked’).\n“1’m good to go!”\n“Can 1 \nsupersize \nthat for \nyou?”\n“1’m waiting to \nget started.”",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (183x433)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (268x433)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (161x434)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n495\nThe three states of a new thread\nA Thread instance has been \ncreated but not started. \nIn other words, there is a \nThread object, but no thread \nof execution.\nNEW\nRUNNABLE\nThread t = new Thread(r);\nWhen you start the thread, it \nmoves into the runnable state. \nThis means the thread is ready \nto run and just waiting for its \nBig Chance to be selected for \nexecution. At this point, there is \na new call stack for this thread.\nt.start();\nRUNNING\nt.start();\nSelected to run\nThis is the state all threads lust \nafter! To be The Chosen One. \nThe Currently Running Thread. \nOnly the JVM thread scheduler \ncan make that decision. You \ncan sometimes influence that \ndecision, but you cannot force a \nthread to move from runnable \nto running. In the running \nstate, a thread (and ONLY this \nthread) has an active call stack, \nand the method on the top of \nthe stack is executing.\nThread t = new Thread(r);\nthis is where a thread \nwants to be! \nBut there’5 more. Once the thread becomes \nrunnable, it can move back and forth between \nrunnable, running, and an additional state: \ntemporarily not runnable (also known as ‘blocked’).\n“1’m good to go!”\n“Can 1 \nsupersize \nthat for \nyou?”\n“1’m waiting to \nget started.”",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 529,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 529,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1249 chars",
+      "severity": "info"
+    },
+    {
+      "page": 529,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 529,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

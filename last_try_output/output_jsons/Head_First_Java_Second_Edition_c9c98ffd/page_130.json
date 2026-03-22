@@ -1,0 +1,128 @@
+{
+  "page_number": 130,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9375,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "96 \nchapter 5\nLet’5 build a Battleship-style \ngame: “Sink a Dot Com”\nIt’5 you against the computer, but unlike the real \nBattleship game, in this one you don’t place any ships \nof your own. Instead, your job is to sink the computer’5 \nships in the fewest number of guesses. \nOh, and we aren’t sinking ships. We’re killing Dot \nComs. (Thus establishing business relevancy 50 you can \nexpense the cost of this book).\nGoal: Sink all of the computer’5 Dot Coms in the fewest \nnumber of guesses. You’re given a rating or level, based \non how well you perform.\nSetup: When the game program is launched, the \ncomputer places three Dot Coms on a virtual 7 x 7 \ngrid. When that’5 complete, the game asks for your first \nguess.\nHow you play: We haven’t learned to build a GUI \nyet, 50 this version works at the command-line. The \ncomputer will prompt you to enter a guess (a cell), that \nyou’11 type at the command-line as “A3”, “C5”, etc.). \nIn response to your guess, you’11 see a result at the \ncommand-line, either “Hit”, “Miss”, or “You sunk Pets.\ncom” (or whatever the lucky Dot Com of the day is). \nWhen you’ve sent all three Dot Coms to that big 404 in \nthe sky, the game ends by printing out your rating.\n7 X 7 grid \nFile Edit Window Help Sell\n%java DotComBust\nEnter a guess A3\nmiss\nEnter a guess 82\nmiss\nEnter a guess C4\nmiss\nEnter a guess D2\nhit\nEnter a guess D3\nhit\nEnter a guess D4\nOuch! You sunk Pets.com : ( \nkill\nEnter a guess 84\nmiss\nEnter a guess 63\nhit\nEnter a guess 64\nhit\nEnter a guess 65\nOuch! You sunk AskMe.com : ( \nkill\nEnter a guess A7\nmiss\nA\n8\nC\nD\nE\nF\n6\n0\n \n1\n \n2\n \n3\n \n4\n \n5\n \n6 \nAskMe.com\nPets.com\nGo2.com\nstarts at zero, like Java arrays\npart of a game interaction\nYou’re going to build the \nSink a Dot Com game, with \na 7 x 7 grid and three \nDot Coms. Each Dot Com \ntakes up three cells.\neach box \nis a “cell”\nbuilding a real game",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "ile Edit Window Help Sell"
+        ],
+        [
+          "%java DotComBust\nEnter a guess A3\nmiss\nEnter a guess 82\nmiss\nEnter a guess C4\nmiss\nEnter a guess D2\nhit\nEnter a guess D3\nhit\nEnter a guess D4\nOuch! You sunk Pets.com : (\nkill\nEnter a guess 84\nmiss\nEnter a guess 63\nhit\nEnter a guess 64\nhit\nEnter a guess 65\nOuch! You sunk AskMe.com : ("
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6735,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "m",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0\nc\n.2",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "0\n6",
+          "",
+          "P",
+          "ets.co",
+          "m",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "Ask",
+          "Me.c",
+          "om",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "96 \nchapter 5\nLet’5 build a Battleship-style \ngame: “Sink a Dot Com”\nIt’5 you against the computer, but unlike the real \nBattleship game, in this one you don’t place any ships \nof your own. Instead, your job is to sink the computer’5 \nships in the fewest number of guesses. \nOh, and we aren’t sinking ships. We’re killing Dot \nComs. (Thus establishing business relevancy 50 you can \nexpense the cost of this book).\nGoal: Sink all of the computer’5 Dot Coms in the fewest \nnumber of guesses. You’re given a rating or level, based \non how well you perform.\nSetup: When the game program is launched, the \ncomputer places three Dot Coms on a virtual 7 x 7 \ngrid. When that’5 complete, the game asks for your first \nguess.\nHow you play: We haven’t learned to build a GUI \nyet, 50 this version works at the command-line. The \ncomputer will prompt you to enter a guess (a cell), that \nyou’11 type at the command-line as “A3”, “C5”, etc.). \nIn response to your guess, you’11 see a result at the \ncommand-line, either “Hit”, “Miss”, or “You sunk Pets.\ncom” (or whatever the lucky Dot Com of the day is). \nWhen you’ve sent all three Dot Coms to that big 404 in \nthe sky, the game ends by printing out your rating.\n7 X 7 grid \nFile Edit Window Help Sell\n%java DotComBust\nEnter a guess A3\nmiss\nEnter a guess 82\nmiss\nEnter a guess C4\nmiss\nEnter a guess D2\nhit\nEnter a guess D3\nhit\nEnter a guess D4\nOuch! You sunk Pets.com : ( \nkill\nEnter a guess 84\nmiss\nEnter a guess 63\nhit\nEnter a guess 64\nhit\nEnter a guess 65\nOuch! You sunk AskMe.com : ( \nkill\nEnter a guess A7\nmiss\nA\n8\nC\nD\nE\nF\n6\n0\n \n1\n \n2\n \n3\n \n4\n \n5\n \n6 \nAskMe.com\nPets.com\nGo2.com\nstarts at zero, like Java arrays\npart of a game interaction\nYou’re going to build the \nSink a Dot Com game, with \na 7 x 7 grid and three \nDot Coms. Each Dot Com \ntakes up three cells.\neach box \nis a “cell”\nbuilding a real game",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 130,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 130,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1875 chars",
+      "severity": "info"
+    },
+    {
+      "page": 130,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

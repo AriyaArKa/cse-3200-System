@@ -1,0 +1,46 @@
+{
+  "page_number": 675,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n641\nimport java.rmi.*;\nimport java.util.*;\nimport java.rmi.server.*;\npublic class ServiceServerImpl extends UnicastRemoteObject implements ServiceServer {\n HashMap serviceList;\n \n \n public ServiceServerImpl() throws RemoteException {\n setUpServices();\n }\n private void setUpServices() {\n serviceList = new HashMap();\n serviceList.put(“Dice Rolling Service”, new DiceService()); \n serviceList.put(“Day of the Week Service”, new DayOfTheWeekService()); \n serviceList.put(“Visual Music Service”, new MiniMusicService()); \n }\n \n public Object[] getServiceList() {\n System.out.println(“in remote”);\n return serviceList.keySet().toArray();\n \n }\n \n public Service getService(Object serviceKey) throws RemoteException { \n Service theService = (Service) serviceList.get(serviceKey); \n return theService;\n }\n \n public static void main (String[] args) {\n try {\n Naming.rebind(“ServiceServer”, new ServiceServerImpl());\n } catch(Exception ex) { \n ex.printStackTrace();\n }\n System.out.println(“Remote service is running”);\n }\n}\nclass ServiceServerImpl (the remote implementation)\nA normal RMI implementation\nThe services will be stored in a HashMap collection. Instead of putting ONE \nobject in the collection, you put TWO -- a key object (like a String) and a \nvalue object (whatever you want). (see appendix 8 for more on HashMap)\nWhen the constructor is called, initialize the actual \nuniversal services (DiceService, MiniMusicService, etc.)\nClient calls this in order to get a list of services to \ndisplay in the browser (50 the user can select one). We \nsend an array of type Object (even though it has Strings \ninside) by making an array of just the KEYS that are \nin the HashMap. We won’t send an actual Service object \nunless the client asks for it by calling getService().\nMake the services (the actual service \nobjects) and put them into the \nHashMap, with a String name (for \nthe ‘key’). \nClient calls this method after the user selects a service \nfrom the displayed list of services (that it got from the \nmethod above). This code uses the key (the same key \noriginally sent to the client) to get the corresponding \nservice out of the HashMap.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "remote deployment with RMI\nyou are here\n641\nimport java.rmi.*;\nimport java.util.*;\nimport java.rmi.server.*;\npublic class ServiceServerImpl extends UnicastRemoteObject implements ServiceServer {\n HashMap serviceList;\n \n \n public ServiceServerImpl() throws RemoteException {\n setUpServices();\n }\n private void setUpServices() {\n serviceList = new HashMap();\n serviceList.put(“Dice Rolling Service”, new DiceService()); \n serviceList.put(“Day of the Week Service”, new DayOfTheWeekService()); \n serviceList.put(“Visual Music Service”, new MiniMusicService()); \n }\n \n public Object[] getServiceList() {\n System.out.println(“in remote”);\n return serviceList.keySet().toArray();\n \n }\n \n public Service getService(Object serviceKey) throws RemoteException { \n Service theService = (Service) serviceList.get(serviceKey); \n return theService;\n }\n \n public static void main (String[] args) {\n try {\n Naming.rebind(“ServiceServer”, new ServiceServerImpl());\n } catch(Exception ex) { \n ex.printStackTrace();\n }\n System.out.println(“Remote service is running”);\n }\n}\nclass ServiceServerImpl (the remote implementation)\nA normal RMI implementation\nThe services will be stored in a HashMap collection. Instead of putting ONE \nobject in the collection, you put TWO -- a key object (like a String) and a \nvalue object (whatever you want). (see appendix 8 for more on HashMap)\nWhen the constructor is called, initialize the actual \nuniversal services (DiceService, MiniMusicService, etc.)\nClient calls this in order to get a list of services to \ndisplay in the browser (50 the user can select one). We \nsend an array of type Object (even though it has Strings \ninside) by making an array of just the KEYS that are \nin the HashMap. We won’t send an actual Service object \nunless the client asks for it by calling getService().\nMake the services (the actual service \nobjects) and put them into the \nHashMap, with a String name (for \nthe ‘key’). \nClient calls this method after the user selects a service \nfrom the displayed list of services (that it got from the \nmethod above). This code uses the key (the same key \noriginally sent to the client) to get the corresponding \nservice out of the HashMap.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 675,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 675,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2346 chars",
+      "severity": "info"
+    },
+    {
+      "page": 675,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

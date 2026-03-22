@@ -1,0 +1,46 @@
+{
+  "page_number": 608,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "574 \nchapter 16\nWildcards to the rescue\nIt looks unusual, but there is a way to create a method argument that \ncan accept an ArrayList of any Animal subtype. The simplest way is to \nuse a wildcard—added to the Java language explicitly for this reason.\npublic void takeAnimals(ArrayList<? extends Animal> animals) {\n for(Animal a: animals) {\n a.eat();\n }\n}\n50 now you’re wondering, “What’5 the difference? Don’t you have \nthe same problem as before? The method above isn’t doing \nanything dangerous—calling a method any Animal subtype is \nguaranteed to have—but can’t someone still change this to add a \nCat to the animals list, even though it’5 really an ArrayList<Dog>? \nAnd since it’5 not checked again at runtime, how is this any \ndifferent from declaring it without the wildcard?”\nAnd you’d be right for wondering. The answer is NO. When you \nuse the wildcard <?> in your declaration, the compiler won’t let \nyou do anything that adds to the list!\nWhen you use a wildcard in your method \nargument, the compiler will STOP you from doing \nanything that could hurt the list referenced by the \nmethod parameter.\nYou can still invoke methods on the elements in \nthe list, but you cannot add elements to the list.\nIn other words, you can do things with the list \nelements, but you can’t put new things in the list. \n50 you’re safe at runtime, because the compiler \nwon’t let you do anything that might be horrible at \nruntime.\n50, this is OK inside takeAnimals():\nfor(Animal a: animals) {\n a.eat();\n}\nBut THIS would not compile:\nanimals.add(new Cat());\nRemember, the keyword “extends” \nhere means either extends OR \nimplements depending on the \ntype. 50 if you want to take \nan ArrayList of types that \nimplement the Pet interface, \nyou’d declare it as:\nArrayList<? extends Pet>\ngeneric wildcards",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "574 \nchapter 16\nWildcards to the rescue\nIt looks unusual, but there is a way to create a method argument that \ncan accept an ArrayList of any Animal subtype. The simplest way is to \nuse a wildcard—added to the Java language explicitly for this reason.\npublic void takeAnimals(ArrayList<? extends Animal> animals) {\n for(Animal a: animals) {\n a.eat();\n }\n}\n50 now you’re wondering, “What’5 the difference? Don’t you have \nthe same problem as before? The method above isn’t doing \nanything dangerous—calling a method any Animal subtype is \nguaranteed to have—but can’t someone still change this to add a \nCat to the animals list, even though it’5 really an ArrayList<Dog>? \nAnd since it’5 not checked again at runtime, how is this any \ndifferent from declaring it without the wildcard?”\nAnd you’d be right for wondering. The answer is NO. When you \nuse the wildcard <?> in your declaration, the compiler won’t let \nyou do anything that adds to the list!\nWhen you use a wildcard in your method \nargument, the compiler will STOP you from doing \nanything that could hurt the list referenced by the \nmethod parameter.\nYou can still invoke methods on the elements in \nthe list, but you cannot add elements to the list.\nIn other words, you can do things with the list \nelements, but you can’t put new things in the list. \n50 you’re safe at runtime, because the compiler \nwon’t let you do anything that might be horrible at \nruntime.\n50, this is OK inside takeAnimals():\nfor(Animal a: animals) {\n a.eat();\n}\nBut THIS would not compile:\nanimals.add(new Cat());\nRemember, the keyword “extends” \nhere means either extends OR \nimplements depending on the \ntype. 50 if you want to take \nan ArrayList of types that \nimplement the Pet interface, \nyou’d declare it as:\nArrayList<? extends Pet>\ngeneric wildcards",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 608,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 608,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1806 chars",
+      "severity": "info"
+    },
+    {
+      "page": 608,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

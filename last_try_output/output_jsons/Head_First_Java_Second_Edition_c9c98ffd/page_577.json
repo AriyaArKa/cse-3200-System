@@ -1,0 +1,46 @@
+{
+  "page_number": 577,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n543\npublic boolean add(E 0)\n// more code\npublic class ArrayList<E> extends AbstractList<E> ... { \n \n} \n \nUsing type parameters with ArrayList\nTHIS code:\nMeans ArrayList:\nArrayList<String> thisList = new ArrayList<String>\npublic boolean add(String 0)\n// more code\n} \n \n15 treated by the compiler as:\npublic class ArrayList<String> extends AbstractList<String>... { \n \nIn other words, the “E” is replaced by the real type (also called the type parameter) \nthat you use when you create the ArrayList. And that’5 why the add() method \nfor ArrayList won’t let you add anything except objects of a reference type that’5 \ncompatible with the type of “E”. 50 if you make an ArrayList<String>, the add() \nmethod suddenly becomes add(String 0). If you make the ArrayList of type Dog, \nsuddenly the add() method becomes add(Dog 0).\nQ: 15 “E” the only thing you can put there? Because the docs for sort used “T”....\nA: You can use anything that’5 a legal Java identifier. That means anything that you \ncould use for a method or variable name will work as a type parameter. But the conven-\ntion is to use a single letter (50 that’5 what you should use), and a further convention is to \nuse “T” unless you’re specifically writing a collection class, where you’d use “E” to repre-\nsent the “type of the Element the collection will hold”.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n543\npublic boolean add(E 0)\n// more code\npublic class ArrayList<E> extends AbstractList<E> ... { \n \n} \n \nUsing type parameters with ArrayList\nTHIS code:\nMeans ArrayList:\nArrayList<String> thisList = new ArrayList<String>\npublic boolean add(String 0)\n// more code\n} \n \n15 treated by the compiler as:\npublic class ArrayList<String> extends AbstractList<String>... { \n \nIn other words, the “E” is replaced by the real type (also called the type parameter) \nthat you use when you create the ArrayList. And that’5 why the add() method \nfor ArrayList won’t let you add anything except objects of a reference type that’5 \ncompatible with the type of “E”. 50 if you make an ArrayList<String>, the add() \nmethod suddenly becomes add(String 0). If you make the ArrayList of type Dog, \nsuddenly the add() method becomes add(Dog 0).\nQ: 15 “E” the only thing you can put there? Because the docs for sort used “T”....\nA: You can use anything that’5 a legal Java identifier. That means anything that you \ncould use for a method or variable name will work as a type parameter. But the conven-\ntion is to use a single letter (50 that’5 what you should use), and a further convention is to \nuse “T” unless you’re specifically writing a collection class, where you’d use “E” to repre-\nsent the “type of the Element the collection will hold”.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 577,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 577,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1384 chars",
+      "severity": "info"
+    },
+    {
+      "page": 577,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 442,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9275,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "408 \nchapter 13\nflow layout\nFlowLayout cares \nabout the flow of the \ncomponents:\nleft to right, top to bottom, in \nthe order they were added.\nimport javax.swing.*;\nimport java.awt.*;\npublic class Panel1 {\n public static void main (String[] args) {\n Panel1 gui = new Panel1();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n frame.getContentPane().add(BorderLayout.EAST, panel);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\n}\n \nLet’5 add a panel to the east region:\nThe panel doesn’t have anything \nin it, 50 it doesn’t ask for much \nwidth in the east region.\nA JPanel’5 layout manager is FlowLayout, by default. When we add \na panel to a frame, the size and placement of the panel is still \nunder the BorderLayout manager’5 control. But anything inside the \npanel (in other words, components added to the panel by calling \npanel.add(aComponent)) are under the panel’5 FlowLayout \nmanager’5 control. We’11 start by putting an empty panel in the frame’5 \neast region, and on the next pages we’11 add things to the panel.\nMake the panel gray 50 we can see \nwhere it is on the frame.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (206x206)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "408 \nchapter 13\nflow layout\nFlowLayout cares \nabout the flow of the \ncomponents:\nleft to right, top to bottom, in \nthe order they were added.\nimport javax.swing.*;\nimport java.awt.*;\npublic class Panel1 {\n public static void main (String[] args) {\n Panel1 gui = new Panel1();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n frame.getContentPane().add(BorderLayout.EAST, panel);\n frame.setSize(200,200);\n frame.setVisible(true);\n }\n}\n \nLet’5 add a panel to the east region:\nThe panel doesn’t have anything \nin it, 50 it doesn’t ask for much \nwidth in the east region.\nA JPanel’5 layout manager is FlowLayout, by default. When we add \na panel to a frame, the size and placement of the panel is still \nunder the BorderLayout manager’5 control. But anything inside the \npanel (in other words, components added to the panel by calling \npanel.add(aComponent)) are under the panel’5 FlowLayout \nmanager’5 control. We’11 start by putting an empty panel in the frame’5 \neast region, and on the next pages we’11 add things to the panel.\nMake the panel gray 50 we can see \nwhere it is on the frame.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 442,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 442,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1238 chars",
+      "severity": "info"
+    },
+    {
+      "page": 442,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 442,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

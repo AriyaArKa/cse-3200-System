@@ -1,0 +1,167 @@
+{
+  "page_number": 657,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n623\nWhat’5\nFirst?\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nLook at the sequence of events below, and \nplace them in the order in which they \noccur in a Java RMI application.\nThe RMI registry is started \nThe remote service (remote \nimplementation) is instantiated\nThe client does a lookup on \nthe RMI Registry\nThe stub sends the method \ncall to the server\nThe client invokes a method \non the stub\nThe client gets the stub from \nthe RMI registry\nThe remote service is regis-\ntered with the RMI registry\nSharpen your pencil\n BULLET POINTS\n \nAn object on one heap cannot get a normal Java \nreference to an object on a different heap (which means \nrunning on a different JVM)\n \nJava Remote Method Invocation (RMI) makes it seem like \nyou’re calling a method on a remote object (i.e. an object \nin a different JVM), but you aren’t. \n \nWhen a client calls a method on a remote object, the \nclient is really calling a method on a proxy of the remote \nobject. The proxy is called a ‘stub’. \n \nA stub is a client helper object that takes care of the low-\nlevel networking details (sockets, streams, serialization, \netc.) by packaging and sending method calls to the \nserver.\n \nTo build a remote service (in other words, an object that \na remote client can ultimately call methods on), you must \nstart with a remote interface.\n \nA remote interface must extend the java.rmi.Remote \ninterface, and all methods must declare \nRemoteException.\n \nYour remote service implements your remote interface.\n \nYour remote service should extend UnicastRemoteObject. \n(Technically there are other ways to create a remote ob-\nject, but extending UnicastRemoteObject is the simplest).\n \nYour remote service class must have a constructor, \nand the constructor must declare a RemoteException \n(because the superclass constructor declares one).\n \nYour remote service must be instantiated, and the object \nregistered with the RMI registry.\n \nTo register a remote service, use the static \nNaming.rebind(“Service Name”, serviceInstance);\n \nThe RMI registry must be running on the same machine \nas the remote service, before you try to register a remote \nobject with the RMI registry.\n \nThe client looks up your remote service using the static \nNaming.lookup(“rmi://MyHostName/ServiceName”);\n \nAlmost everything related to RMI can throw a \nRemoteException (checked by the compiler). This \nincludes registering or looking up a service in the registry, \nand all remote method calls from the client to the stub.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6733,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "The client gets the stub from\nthe RMI registry\nnvokes a method",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "The stub sends the method t\ncall to the server\nThe cl",
+          "",
+          "",
+          "",
+          "",
+          "t",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "The cl",
+          "",
+          "",
+          "nvokes a method",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "on the 5\nThe client does a lookup on\nthe RMI Registry",
+          "",
+          "on the 5\nup on",
+          "",
+          "",
+          "",
+          "",
+          "The remote ser"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "The RMI registry is started",
+          "",
+          "1 registry is started",
+          "",
+          "",
+          "The rem",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n623\nWhat’5\nFirst?\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nLook at the sequence of events below, and \nplace them in the order in which they \noccur in a Java RMI application.\nThe RMI registry is started \nThe remote service (remote \nimplementation) is instantiated\nThe client does a lookup on \nthe RMI Registry\nThe stub sends the method \ncall to the server\nThe client invokes a method \non the stub\nThe client gets the stub from \nthe RMI registry\nThe remote service is regis-\ntered with the RMI registry\nSharpen your pencil\n BULLET POINTS\n \nAn object on one heap cannot get a normal Java \nreference to an object on a different heap (which means \nrunning on a different JVM)\n \nJava Remote Method Invocation (RMI) makes it seem like \nyou’re calling a method on a remote object (i.e. an object \nin a different JVM), but you aren’t. \n \nWhen a client calls a method on a remote object, the \nclient is really calling a method on a proxy of the remote \nobject. The proxy is called a ‘stub’. \n \nA stub is a client helper object that takes care of the low-\nlevel networking details (sockets, streams, serialization, \netc.) by packaging and sending method calls to the \nserver.\n \nTo build a remote service (in other words, an object that \na remote client can ultimately call methods on), you must \nstart with a remote interface.\n \nA remote interface must extend the java.rmi.Remote \ninterface, and all methods must declare \nRemoteException.\n \nYour remote service implements your remote interface.\n \nYour remote service should extend UnicastRemoteObject. \n(Technically there are other ways to create a remote ob-\nject, but extending UnicastRemoteObject is the simplest).\n \nYour remote service class must have a constructor, \nand the constructor must declare a RemoteException \n(because the superclass constructor declares one).\n \nYour remote service must be instantiated, and the object \nregistered with the RMI registry.\n \nTo register a remote service, use the static \nNaming.rebind(“Service Name”, serviceInstance);\n \nThe RMI registry must be running on the same machine \nas the remote service, before you try to register a remote \nobject with the RMI registry.\n \nThe client looks up your remote service using the static \nNaming.lookup(“rmi://MyHostName/ServiceName”);\n \nAlmost everything related to RMI can throw a \nRemoteException (checked by the compiler). This \nincludes registering or looking up a service in the registry, \nand all remote method calls from the client to the stub.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 657,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 657,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2509 chars",
+      "severity": "info"
+    },
+    {
+      "page": 657,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 657,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

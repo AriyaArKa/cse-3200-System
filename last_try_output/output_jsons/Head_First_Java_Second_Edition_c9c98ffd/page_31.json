@@ -1,0 +1,83 @@
+{
+  "page_number": 31,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the intro\nyou are here\nxxix\nThis is a learning experience, not a reference book. We deliberately \nstripped out everything that might get in the way of learning whatever it \nis we’re working on at that point in the book. And the first time through, \nyou need to begin at the beginning, because the book makes assumptions \nabout what you’ve already seen and learned.\nWe use simple UML-like diagrams. \nIf we’d used pure UML, you’d be seeing something that looks like Java, but \nwith syntax that’5 just plain wrong. 50 we use a simplified version of UML \nthat doesn’t conflict with Java syntax. If you don’t already know UML, you \nwon’t have to worry about learning Java and UML at the same time.\nWe don’t worry about organizing and packaging your own \ncode until the end of the book.\nIn this book, you can get on with the business of learning Java, without \nstressing over some of the organizational or administrative details of \ndeveloping Java programs. You will, in the real world, need to know—and \nuse—these details, 50 we cover them in depth. But we save them for the end \nof the book (chapter 17). Relax while you ease into Java, gently.\nThe end-of-chapter exercises are mandatory; puzzles are \noptional. Answers for both are at the end of each chapter.\nOne thing you need to know about the puzzles—they’re puzzles. As in logic \npuzzles, brain teasers, crossword puzzles, etc. The exercises are here to help \nyou practice what you’ve learned, and you should do them all. The puzzles \nare a different story, and some of them are quite challenging in a puzzle \nway. These puzzles are meant for puzzlers, and you probably already know if \nyou are one. If you’re not sure, we suggest you give some of them a try, but \nwhatever happens, don’t be discouraged if you can’t solve a puzzle or if you \nsimply can’t be bothered to take the time to work them out. \nThe ‘Sharpen Your Pencil’ exercises don’t have answers.\nNot printed in the book, anyway. For some of them, there is no right \nanswer, and for the others, part of the learning experience for the Sharpen \nactivities is for you to decide if and when your answers are right. (Some of \nour suggested answers are available on wickedlysmart.com)\nThe code examples are as lean as possible\nIt’5 frustrating to wade through 200 lines of code looking for the two lines \nyou need to understand. Most examples in this book are shown within the \nsmallest possible context, 50 that the part you’re trying to learn is clear and \nsimple. 50 don’t expect the code to be robust, or even complete. That’5 \nyour assignment for after you finish the book. The book examples are \nwritten specifically for learning, and aren’t always fully-functional.\nLast-minute things you need to know:\nExercise\nDog\nsize\nbark()\neat()\nchaseCat()\nWe use a simpler, \nmodified faux-UML\nYou should do ALL \nof the “Sharpen your \npencil” activities\nSharpen your pencil\nActivities marked with the \nExercise (running shoe) logo \nare mandatory! Don’t skip \nthem if you’re serious about \nlearning Java.\nIf you see the Puzzle logo, the \nactivity is optional, and if you \ndon’t like twisty logic or cross-\nword puzzles, you won’t like these \neither.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Dog"
+        ],
+        [
+          "size"
+        ],
+        [
+          "bark()\neat()\nchaseCat()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (207x174)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "the intro\nyou are here\nxxix\nThis is a learning experience, not a reference book. We deliberately \nstripped out everything that might get in the way of learning whatever it \nis we’re working on at that point in the book. And the first time through, \nyou need to begin at the beginning, because the book makes assumptions \nabout what you’ve already seen and learned.\nWe use simple UML-like diagrams. \nIf we’d used pure UML, you’d be seeing something that looks like Java, but \nwith syntax that’5 just plain wrong. 50 we use a simplified version of UML \nthat doesn’t conflict with Java syntax. If you don’t already know UML, you \nwon’t have to worry about learning Java and UML at the same time.\nWe don’t worry about organizing and packaging your own \ncode until the end of the book.\nIn this book, you can get on with the business of learning Java, without \nstressing over some of the organizational or administrative details of \ndeveloping Java programs. You will, in the real world, need to know—and \nuse—these details, 50 we cover them in depth. But we save them for the end \nof the book (chapter 17). Relax while you ease into Java, gently.\nThe end-of-chapter exercises are mandatory; puzzles are \noptional. Answers for both are at the end of each chapter.\nOne thing you need to know about the puzzles—they’re puzzles. As in logic \npuzzles, brain teasers, crossword puzzles, etc. The exercises are here to help \nyou practice what you’ve learned, and you should do them all. The puzzles \nare a different story, and some of them are quite challenging in a puzzle \nway. These puzzles are meant for puzzlers, and you probably already know if \nyou are one. If you’re not sure, we suggest you give some of them a try, but \nwhatever happens, don’t be discouraged if you can’t solve a puzzle or if you \nsimply can’t be bothered to take the time to work them out. \nThe ‘Sharpen Your Pencil’ exercises don’t have answers.\nNot printed in the book, anyway. For some of them, there is no right \nanswer, and for the others, part of the learning experience for the Sharpen \nactivities is for you to decide if and when your answers are right. (Some of \nour suggested answers are available on wickedlysmart.com)\nThe code examples are as lean as possible\nIt’5 frustrating to wade through 200 lines of code looking for the two lines \nyou need to understand. Most examples in this book are shown within the \nsmallest possible context, 50 that the part you’re trying to learn is clear and \nsimple. 50 don’t expect the code to be robust, or even complete. That’5 \nyour assignment for after you finish the book. The book examples are \nwritten specifically for learning, and aren’t always fully-functional.\nLast-minute things you need to know:\nExercise\nDog\nsize\nbark()\neat()\nchaseCat()\nWe use a simpler, \nmodified faux-UML\nYou should do ALL \nof the “Sharpen your \npencil” activities\nSharpen your pencil\nActivities marked with the \nExercise (running shoe) logo \nare mandatory! Don’t skip \nthem if you’re serious about \nlearning Java.\nIf you see the Puzzle logo, the \nactivity is optional, and if you \ndon’t like twisty logic or cross-\nword puzzles, you won’t like these \neither.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 31,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 31,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3156 chars",
+      "severity": "info"
+    },
+    {
+      "page": 31,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 31,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

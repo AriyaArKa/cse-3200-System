@@ -1,0 +1,46 @@
+{
+  "page_number": 633,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9375,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "package, jars and deployment\nyou are here\n599\nTo make a Java Web Start app, you need to create a .jnlp (Java \nNetwork Launch Protocol) file that describes your application. \nThis is the file the JWS app reads and uses to find your JAR and \nlaunch the app (by calling the JAR’5 main() method). A .jnlp \nfile is a simple XML document that has several different things \nyou can put in, but as a minimum, it should look like this:\nThe .jnlp file\n<?xml version=”1.0” encoding=”utf-8”?> \n<jnlp spec=”0.2 1.0”\n codebase=”http://127.0.0.1/~kathy”\n href=”MyApp.jnlp”>\n <information> \n <title>kathy App</title> \n <vendor>Wickedly Smart</vendor>\n <homepage href=”index.html”/>\n <description>Head First WebStart demo</description> \n <icon href=”kathys.gif”/> \n <offline-allowed/> \n </information> \n <resources> \n <j2se version=”1.3+”/>\n <jar href=”MyApp.jar”/>\n </resources>\n <application-desc main-class=”HelloWebStart”/>\n</jnlp> \nThe ‘codebase’ tag is where you specify the ‘root’ \nof where your web start stuff is on the server. \nWe’re testing this on our localhost, 50 we’re using \nthe local loopback address “127.0.0.1”. For web \nstart apps on our internet web server, this would \nsay, “http://www.wickedlysmart.com”\nThis is the location of the .jnlp file relative to the \ncodebase. This example shows that MyApp.jnlp is \navailable in the root directory of the web server, not \nnested in some other directory.\nBe sure to include all of these tags, or your app might \nnot work correctly! The ‘information’ tags are used by \nthe JWS helper app, mostly for displaying when the user \nwants to relaunch a previously-downloaded application.\nThis means the user can run your program without \nbeing connected to the internet. If the user is offline, \nit means the automatic-updating feature won’t work.\nThis says that your app needs version 1.3 \nof Java, or greater.\nThe name of your executable JAR! You might have \nother JAR files as well, that hold other classes or \neven sounds and images used by your app.\nThis is like the mainfest Main-Class entry... it says \nwhich class in the JAR has the main() method.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "package, jars and deployment\nyou are here\n599\nTo make a Java Web Start app, you need to create a .jnlp (Java \nNetwork Launch Protocol) file that describes your application. \nThis is the file the JWS app reads and uses to find your JAR and \nlaunch the app (by calling the JAR’5 main() method). A .jnlp \nfile is a simple XML document that has several different things \nyou can put in, but as a minimum, it should look like this:\nThe .jnlp file\n<?xml version=”1.0” encoding=”utf-8”?> \n<jnlp spec=”0.2 1.0”\n codebase=”http://127.0.0.1/~kathy”\n href=”MyApp.jnlp”>\n <information> \n <title>kathy App</title> \n <vendor>Wickedly Smart</vendor>\n <homepage href=”index.html”/>\n <description>Head First WebStart demo</description> \n <icon href=”kathys.gif”/> \n <offline-allowed/> \n </information> \n <resources> \n <j2se version=”1.3+”/>\n <jar href=”MyApp.jar”/>\n </resources>\n <application-desc main-class=”HelloWebStart”/>\n</jnlp> \nThe ‘codebase’ tag is where you specify the ‘root’ \nof where your web start stuff is on the server. \nWe’re testing this on our localhost, 50 we’re using \nthe local loopback address “127.0.0.1”. For web \nstart apps on our internet web server, this would \nsay, “http://www.wickedlysmart.com”\nThis is the location of the .jnlp file relative to the \ncodebase. This example shows that MyApp.jnlp is \navailable in the root directory of the web server, not \nnested in some other directory.\nBe sure to include all of these tags, or your app might \nnot work correctly! The ‘information’ tags are used by \nthe JWS helper app, mostly for displaying when the user \nwants to relaunch a previously-downloaded application.\nThis means the user can run your program without \nbeing connected to the internet. If the user is offline, \nit means the automatic-updating feature won’t work.\nThis says that your app needs version 1.3 \nof Java, or greater.\nThe name of your executable JAR! You might have \nother JAR files as well, that hold other classes or \neven sounds and images used by your app.\nThis is like the mainfest Main-Class entry... it says \nwhich class in the JAR has the main() method.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 633,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 633,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2177 chars",
+      "severity": "info"
+    },
+    {
+      "page": 633,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

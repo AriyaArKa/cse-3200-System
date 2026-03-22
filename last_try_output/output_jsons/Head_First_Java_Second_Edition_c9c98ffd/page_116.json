@@ -1,0 +1,85 @@
+{
+  "page_number": 116,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "how objects behave\n82 \nchapter 4\nclass GoodDog {\n \n private int size; \n public int getSize() {\n return size;\n } \n \n public void setSize(int 5) {\n size = 5;\n }\n void bark() {\n if (size > 60) {\n System.out.println(“Wooof! Wooof!”);\n } else if (size > 14) {\n System.out.println(“Ruff! Ruff!”);\n } else {\n System.out.println(“Yip! Yip!”);\n }\n }\n}\nclass GoodDogTestDrive {\n public static void main (String[] args) {\n GoodDog one = new GoodDog();\n one.setSize(70); \n GoodDog two = new GoodDog();\n two.setSize(8);\n System.out.println(“Dog one: “ + one.getSize());\n System.out.println(“Dog two: “ + two.getSize());\n one.bark();\n two.bark();\n }\n}\nEncapsulating the \nGoodDog class\nMake the instance \nvariable private. \nMake the getter and \nsetter methods public.\nEven though the methods don’t really \nadd new functionality, the cool thing \nis that you can change your mind \nlater. you can come back and make a \nmethod safer, faster, better.\nGoodDog\nsize\ngetSize( )\nsetSize( )\nbark( )\nAny place where a \nparticular value can \nbe used, a method \ncall that returns that \ntype can be used.\ninstead of:\nint x = 3 + 24;\nyou can say:\nint x = 3 + one.getSize();",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "GoodDog",
+          ""
+        ],
+        [
+          "GoodDog",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "size",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "getSize( )\nsetSize( )\nbark( )",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "how objects behave\n82 \nchapter 4\nclass GoodDog {\n \n private int size; \n public int getSize() {\n return size;\n } \n \n public void setSize(int 5) {\n size = 5;\n }\n void bark() {\n if (size > 60) {\n System.out.println(“Wooof! Wooof!”);\n } else if (size > 14) {\n System.out.println(“Ruff! Ruff!”);\n } else {\n System.out.println(“Yip! Yip!”);\n }\n }\n}\nclass GoodDogTestDrive {\n public static void main (String[] args) {\n GoodDog one = new GoodDog();\n one.setSize(70); \n GoodDog two = new GoodDog();\n two.setSize(8);\n System.out.println(“Dog one: “ + one.getSize());\n System.out.println(“Dog two: “ + two.getSize());\n one.bark();\n two.bark();\n }\n}\nEncapsulating the \nGoodDog class\nMake the instance \nvariable private. \nMake the getter and \nsetter methods public.\nEven though the methods don’t really \nadd new functionality, the cool thing \nis that you can change your mind \nlater. you can come back and make a \nmethod safer, faster, better.\nGoodDog\nsize\ngetSize( )\nsetSize( )\nbark( )\nAny place where a \nparticular value can \nbe used, a method \ncall that returns that \ntype can be used.\ninstead of:\nint x = 3 + 24;\nyou can say:\nint x = 3 + one.getSize();",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 116,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 116,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1242 chars",
+      "severity": "info"
+    },
+    {
+      "page": 116,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

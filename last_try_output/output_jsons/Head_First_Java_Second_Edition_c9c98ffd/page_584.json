@@ -1,0 +1,59 @@
+{
+  "page_number": 584,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "550 \nchapter 16\nThe new, improved, comparable Song class\nWe decided we want to sort by title, 50 we implement the compareTo() \nmethod to compare the title of the Song passed to the method against \nthe title of the song on which the compareTo() method was invoked. \nIn other words, the song running the method has to decide how its \ntitle compares to the title of the method parameter.\nHmmm... we know that the String class must know about alphabetical \norder, because the sort() method worked on a list of Strings. We know \nString has a compareTo() method, 50 why not just call it? That way, we \ncan simply let one title String compare itself to another, and we don’t \nhave to write the comparing/alphabetizing algorithm!\nclass Song implements Comparable<Song> {\n String title;\n String artist;\n String rating;\n String bpm;\n \n public int compareTo(Song 5) {\n return title.compareTo(s.getTitle());\n }\n Song(String t, String a, String r, String b) {\n title = t;\n artist = a;\n rating = r;\n bpm = b;\n }\n public String getTitle() {\n return title;\n }\n public String getArtist() { \n return artist;\n }\n public String getRating() {\n return rating;\n }\n public String getBpm() {\n return bpm;\n }\n \n public String toString() {\n return title; \n } \n}\nUsually these match...we’re specifying the type that \nthe implementing class can be compared against. \nThis means that Song objects can be compared to \nother Song objects, for the purpose of sorting.\nSimple! We just pass the work \non to the title String objects, \nsince we know Strings have a \ncompareTo() method.\nThe sort() method sends a Song to compareTo() \nto see how that Song compares to the Song on \nwhich the method was invoked.\nFile Edit Window Help Ambient\n%java Jukebox3\n[Pink Moon, Somersault, Shiva Moon, Circles, Deep \nChannel, Passenger, Listen]\n[Circles, Deep Channel, Listen, Passenger, Pink \nMoon, Shiva Moon, Somersault]\nThis time it worked. It prints the list, then calls sort \nwhich puts the Songs in alphabetical order by title.\nthe Comparable interface",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Ambient"
+        ],
+        [
+          "%java Jukebox3\n[Pink Moon, Somersault, Shiva Moon, Circles, Deep\nChannel, Passenger, Listen]\n[Circles, Deep Channel, Listen, Passenger, Pink\nMoon, Shiva Moon, Somersault]"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "550 \nchapter 16\nThe new, improved, comparable Song class\nWe decided we want to sort by title, 50 we implement the compareTo() \nmethod to compare the title of the Song passed to the method against \nthe title of the song on which the compareTo() method was invoked. \nIn other words, the song running the method has to decide how its \ntitle compares to the title of the method parameter.\nHmmm... we know that the String class must know about alphabetical \norder, because the sort() method worked on a list of Strings. We know \nString has a compareTo() method, 50 why not just call it? That way, we \ncan simply let one title String compare itself to another, and we don’t \nhave to write the comparing/alphabetizing algorithm!\nclass Song implements Comparable<Song> {\n String title;\n String artist;\n String rating;\n String bpm;\n \n public int compareTo(Song 5) {\n return title.compareTo(s.getTitle());\n }\n Song(String t, String a, String r, String b) {\n title = t;\n artist = a;\n rating = r;\n bpm = b;\n }\n public String getTitle() {\n return title;\n }\n public String getArtist() { \n return artist;\n }\n public String getRating() {\n return rating;\n }\n public String getBpm() {\n return bpm;\n }\n \n public String toString() {\n return title; \n } \n}\nUsually these match...we’re specifying the type that \nthe implementing class can be compared against. \nThis means that Song objects can be compared to \nother Song objects, for the purpose of sorting.\nSimple! We just pass the work \non to the title String objects, \nsince we know Strings have a \ncompareTo() method.\nThe sort() method sends a Song to compareTo() \nto see how that Song compares to the Song on \nwhich the method was invoked.\nFile Edit Window Help Ambient\n%java Jukebox3\n[Pink Moon, Somersault, Shiva Moon, Circles, Deep \nChannel, Passenger, Listen]\n[Circles, Deep Channel, Listen, Passenger, Pink \nMoon, Shiva Moon, Somersault]\nThis time it worked. It prints the list, then calls sort \nwhich puts the Songs in alphabetical order by title.\nthe Comparable interface",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 584,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 584,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2099 chars",
+      "severity": "info"
+    },
+    {
+      "page": 584,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

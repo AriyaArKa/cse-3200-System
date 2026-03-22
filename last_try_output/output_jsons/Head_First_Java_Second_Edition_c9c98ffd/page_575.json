@@ -1,0 +1,46 @@
+{
+  "page_number": 575,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n541\n1\nCreating instances of generified classes (like ArrayList)\nWhen you make an ArrayList, you have to tell it the type \nof objects you’11 allow in the list, just as you do with plain \nold arrays.\n3\nDeclaring (and invoking) methods that take generic types\nIf you have a method that takes as a parameter, say, an \nArrayList of Animal objects, what does that really mean? \nCan you also pass it an ArrayList of Dog objects? We’11 \nlook at some subtle and tricky polymorphism issues that \nare very different from the way you write methods that \ntake plain old arrays.\n(This is actually the same point as #2, but that shows you \nhow important we think it is.)\n2\nDeclaring and assigning variables of generic types\nHow does polymorphism really work with generic \ntypes? If you have an ArrayList<Animal> reference \nvariable, can you assign an ArrayList<Dog> to it? What \nabout a List<Animal> reference? Can you assign an \nArrayList<Animal> to it? You’11 see...\nLearning generics\nOf the dozens of things you could learn about generics, there are \nreally only three that matter to most programmers:\nnew ArrayList<Song>()\nList<Song> songList =\n new ArrayList<Song>()\nvoid foo(List<Song> list)\nx.foo(songList)\nQ: But don’t 1 also need to learn how to create my OWN generic \nclasses? What if 1 want to make a class type that lets people \ninstantiating the class decide the type of things that class will use?\nA: You probably won’t do much of that. Think about it—the API \ndesigners made an entire library of collections classes covering most of \nthe data structures you’d need, and virtually the only type of classes that \nreally need to be generic are collection classes. In other words, classes \ndesigned to hold other elements, and you want programmers using it to \nspecify what type those elements are when they declare and instantiate \nthe collection class. \nYes, it is possible that you might want to create generic classes, but that’5 \nthe exception, 50 we won’t cover it here. (But you’11 figure it out from the \nthings we do cover, anyway.)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n541\n1\nCreating instances of generified classes (like ArrayList)\nWhen you make an ArrayList, you have to tell it the type \nof objects you’11 allow in the list, just as you do with plain \nold arrays.\n3\nDeclaring (and invoking) methods that take generic types\nIf you have a method that takes as a parameter, say, an \nArrayList of Animal objects, what does that really mean? \nCan you also pass it an ArrayList of Dog objects? We’11 \nlook at some subtle and tricky polymorphism issues that \nare very different from the way you write methods that \ntake plain old arrays.\n(This is actually the same point as #2, but that shows you \nhow important we think it is.)\n2\nDeclaring and assigning variables of generic types\nHow does polymorphism really work with generic \ntypes? If you have an ArrayList<Animal> reference \nvariable, can you assign an ArrayList<Dog> to it? What \nabout a List<Animal> reference? Can you assign an \nArrayList<Animal> to it? You’11 see...\nLearning generics\nOf the dozens of things you could learn about generics, there are \nreally only three that matter to most programmers:\nnew ArrayList<Song>()\nList<Song> songList =\n new ArrayList<Song>()\nvoid foo(List<Song> list)\nx.foo(songList)\nQ: But don’t 1 also need to learn how to create my OWN generic \nclasses? What if 1 want to make a class type that lets people \ninstantiating the class decide the type of things that class will use?\nA: You probably won’t do much of that. Think about it—the API \ndesigners made an entire library of collections classes covering most of \nthe data structures you’d need, and virtually the only type of classes that \nreally need to be generic are collection classes. In other words, classes \ndesigned to hold other elements, and you want programmers using it to \nspecify what type those elements are when they declare and instantiate \nthe collection class. \nYes, it is possible that you might want to create generic classes, but that’5 \nthe exception, 50 we won’t cover it here. (But you’11 figure it out from the \nthings we do cover, anyway.)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 575,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 575,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2083 chars",
+      "severity": "info"
+    },
+    {
+      "page": 575,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

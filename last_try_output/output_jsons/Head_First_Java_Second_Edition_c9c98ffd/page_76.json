@@ -1,0 +1,67 @@
+{
+  "page_number": 76,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "42 \nchapter 2\n \n \nA\nclass TapeDeck {\n boolean canRecord = false;\n void playTape() {\n System.out.println(“tape playing”);\n }\n void recordTape() {\n System.out.println(“tape recording”);\n }\n}\nclass TapeDeckTestDrive {\n public static void main(String [] args) {\n t.canRecord = true;\n t.playTape();\n if (t.canRecord == true) {\n t.recordTape();\n }\n }\n}\n \n \n8\nclass DVDPlayer {\n boolean canRecord = false;\n void recordDVD() {\n System.out.println(“DVD recording”);\n }\n}\nclass DVDPlayerTestDrive {\n public static void main(String [] args) {\n DVDPlayer d = new DVDPlayer();\n d.canRecord = true;\n d.playDVD();\n if (d.canRecord == true) {\n d.recordDVD();\n }\n }\n}\nEach of the Java files on this page \nrepresents a complete source file. \nYour job is to play compiler and \ndetermine whether each of \nthese files will compile. \nIf they won’t compile, \nhow would you fix them, \nand if they do compile, \nwhat would be their output?\nBE the compiler\nExercise\nexercise: Be the Compiler",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (300x347)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (142x119)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "42 \nchapter 2\n \n \nA\nclass TapeDeck {\n boolean canRecord = false;\n void playTape() {\n System.out.println(“tape playing”);\n }\n void recordTape() {\n System.out.println(“tape recording”);\n }\n}\nclass TapeDeckTestDrive {\n public static void main(String [] args) {\n t.canRecord = true;\n t.playTape();\n if (t.canRecord == true) {\n t.recordTape();\n }\n }\n}\n \n \n8\nclass DVDPlayer {\n boolean canRecord = false;\n void recordDVD() {\n System.out.println(“DVD recording”);\n }\n}\nclass DVDPlayerTestDrive {\n public static void main(String [] args) {\n DVDPlayer d = new DVDPlayer();\n d.canRecord = true;\n d.playDVD();\n if (d.canRecord == true) {\n d.recordDVD();\n }\n }\n}\nEach of the Java files on this page \nrepresents a complete source file. \nYour job is to play compiler and \ndetermine whether each of \nthese files will compile. \nIf they won’t compile, \nhow would you fix them, \nand if they do compile, \nwhat would be their output?\nBE the compiler\nExercise\nexercise: Be the Compiler",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 76,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 76,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1025 chars",
+      "severity": "info"
+    },
+    {
+      "page": 76,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 76,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

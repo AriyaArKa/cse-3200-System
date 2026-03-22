@@ -1,0 +1,73 @@
+{
+  "page_number": 81,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nclasses and objects\n47\npublic class EchoTestDrive {\n public static void main(String [] args) {\n Echo e1 = new Echo();\n Echo e2 = new Echo( ); // the correct answer\n - or -\n Echo e2 = e1; // is the bonus answer!\n int x = 0;\n while ( x < 4 ) {\n e1.hello();\n e1.count = e1.count + 1;\n if ( x == 3 ) {\n e2.count = e2.count + 1;\n }\n if ( x > 0 ) {\n e2.count = e2.count + e1.count;\n }\n x = x + 1;\n }\n System.out.println(e2.count);\n }\n}\n class Echo {\n int count = 0;\n void hello( ) {\n System.out.println(“helloooo... “);\n }\n }\nFile Edit Window Help Assimilate\n%java EchoTestDrive\nhelloooo...\nhelloooo...\nhelloooo...\nhelloooo...\n10\n1 am compiled from a .java file.\nMy instance variable values can be \ndifferent from my buddy’5 values.\n1 behave like a template.\n1 like to do stuff.\n1 can have many methods.\n1 represent ‘state’.\n1 have behaviors.\n1 am located in objects.\n1 live on the heap.\n1 am used to create object \ninstances.\nMy state can change.\n1 declare methods.\n1 can change at runtime.\nclass\n \nobject\nclass\nobject, method\nclass, object\ninstance variable\nobject, class\nmethod, instance variable\nobject\nclass\nobject, instance variable\nclass\nobject, instance variable\nPool Puzzle\nWho am 1?\nNote: both classes and objects are said to have state and behavior. \nThey’re defined in the class, but the object is also said to ‘have’ \nthem. Right now, we don’t care where they technically live.\nPuzzle Solutions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Assimilate"
+        ],
+        [
+          "%java EchoTestDrive\nhelloooo...\nhelloooo...\nhelloooo...\nhelloooo...\n10"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (195x195)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nclasses and objects\n47\npublic class EchoTestDrive {\n public static void main(String [] args) {\n Echo e1 = new Echo();\n Echo e2 = new Echo( ); // the correct answer\n - or -\n Echo e2 = e1; // is the bonus answer!\n int x = 0;\n while ( x < 4 ) {\n e1.hello();\n e1.count = e1.count + 1;\n if ( x == 3 ) {\n e2.count = e2.count + 1;\n }\n if ( x > 0 ) {\n e2.count = e2.count + e1.count;\n }\n x = x + 1;\n }\n System.out.println(e2.count);\n }\n}\n class Echo {\n int count = 0;\n void hello( ) {\n System.out.println(“helloooo... “);\n }\n }\nFile Edit Window Help Assimilate\n%java EchoTestDrive\nhelloooo...\nhelloooo...\nhelloooo...\nhelloooo...\n10\n1 am compiled from a .java file.\nMy instance variable values can be \ndifferent from my buddy’5 values.\n1 behave like a template.\n1 like to do stuff.\n1 can have many methods.\n1 represent ‘state’.\n1 have behaviors.\n1 am located in objects.\n1 live on the heap.\n1 am used to create object \ninstances.\nMy state can change.\n1 declare methods.\n1 can change at runtime.\nclass\n \nobject\nclass\nobject, method\nclass, object\ninstance variable\nobject, class\nmethod, instance variable\nobject\nclass\nobject, instance variable\nclass\nobject, instance variable\nPool Puzzle\nWho am 1?\nNote: both classes and objects are said to have state and behavior. \nThey’re defined in the class, but the object is also said to ‘have’ \nthem. Right now, we don’t care where they technically live.\nPuzzle Solutions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 81,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 81,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1536 chars",
+      "severity": "info"
+    },
+    {
+      "page": 81,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 81,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

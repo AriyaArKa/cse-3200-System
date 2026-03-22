@@ -1,0 +1,60 @@
+{
+  "page_number": 317,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "numbers and statics\nyou are here\n283\nA f inal variable means you \ncan’t change its value.\nA f inal method means you \ncan’t override the method.\nA f inal class means you \ncan’t extend the class (i.e. \nyou can’t make a subclass).\nnon-static final variables\nfinal isn’t just for static \nvariables...\nYou can use the keyword final to modify non-\nstatic variables too, including instance variables, \nlocal variables, and even method parameters. In \neach case, it means the same thing: the value can’t \nbe changed. But you can also use final to stop \nsomeone from overriding a method or making a \nsubclass.\nclass Foof {\n final int size = 3;\n final int whuffie;\n Foof() {\n whuffie = 42;\n }\n \n void doStuff(final int x) {\n // you can’t change x\n }\n \n void doMore() {\n final int z = 7;\n // you can’t change z\n }\n}\n \nfinal method\nclass Poof {\n final void calcWhuffie() {\n // important things\n // that must never be overridden\n }\n}\nfinal class\nfinal class MyMostPerfectClass {\n // cannot be extended\n}\nIt’5 all 50... 50 final. \n1 mean, if 1’d known \n1 wouldn’t be able to \nchange things...\nnow you can’t change size\nnow you can’t change whuffie",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (423x434)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "numbers and statics\nyou are here\n283\nA f inal variable means you \ncan’t change its value.\nA f inal method means you \ncan’t override the method.\nA f inal class means you \ncan’t extend the class (i.e. \nyou can’t make a subclass).\nnon-static final variables\nfinal isn’t just for static \nvariables...\nYou can use the keyword final to modify non-\nstatic variables too, including instance variables, \nlocal variables, and even method parameters. In \neach case, it means the same thing: the value can’t \nbe changed. But you can also use final to stop \nsomeone from overriding a method or making a \nsubclass.\nclass Foof {\n final int size = 3;\n final int whuffie;\n Foof() {\n whuffie = 42;\n }\n \n void doStuff(final int x) {\n // you can’t change x\n }\n \n void doMore() {\n final int z = 7;\n // you can’t change z\n }\n}\n \nfinal method\nclass Poof {\n final void calcWhuffie() {\n // important things\n // that must never be overridden\n }\n}\nfinal class\nfinal class MyMostPerfectClass {\n // cannot be extended\n}\nIt’5 all 50... 50 final. \n1 mean, if 1’d known \n1 wouldn’t be able to \nchange things...\nnow you can’t change size\nnow you can’t change whuffie",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 317,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 317,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1212 chars",
+      "severity": "info"
+    },
+    {
+      "page": 317,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 317,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

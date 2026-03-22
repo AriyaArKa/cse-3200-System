@@ -1,0 +1,46 @@
+{
+  "page_number": 701,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "appendix 8 Top Ten Reference\nyou are here\n667\nJava has four access levels and three access modifiers. There are only three modifiers because \nthe default (what you get when you don’t use any access modifier) is one of the four \naccess levels.\nAccess Levels (in order of how restrictive they are, from least to most restrictive)\n public\n protected\n default\n private\nAccess modifiers\n public\n protected\n private\nMost of the time you’11 use only public and private access levels. \npublic\nUse public for classes, constants (static final variables), and methods that you’re \nexposing to other code (for example getters and setters) and most constructors. \nprivate\nUse private for virtually all instance variables, and for methods that you don’t want \noutside code to call (in other words, methods used by the public methods of your class). \nBut although you might not use the other two (protected and default), you still need to \nknow what they do because you’11 see them in other code.\n#4 Access Levels and Access Modifiers (Who Sees What)\npublic means any code anywhere can access the public thing (by \n‘thing’ we mean class, variable, method, constructor, etc.).\nprotected works just like default (code in the same package has access), EXCEPT it \nalso allows subclasses outside the package to inherit the protected thing.\ndefault access means that only code within the same package as \nthe class with the default thing can access the default thing.\nprivate means that only code within the same class can access the private thing. \nKeep in mind it means private to the class, not private to the object. One Dog \ncan see another Dog object’5 private stuff, but a Cat can’t see a Dog’5 privates.\naccess levels",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "appendix 8 Top Ten Reference\nyou are here\n667\nJava has four access levels and three access modifiers. There are only three modifiers because \nthe default (what you get when you don’t use any access modifier) is one of the four \naccess levels.\nAccess Levels (in order of how restrictive they are, from least to most restrictive)\n public\n protected\n default\n private\nAccess modifiers\n public\n protected\n private\nMost of the time you’11 use only public and private access levels. \npublic\nUse public for classes, constants (static final variables), and methods that you’re \nexposing to other code (for example getters and setters) and most constructors. \nprivate\nUse private for virtually all instance variables, and for methods that you don’t want \noutside code to call (in other words, methods used by the public methods of your class). \nBut although you might not use the other two (protected and default), you still need to \nknow what they do because you’11 see them in other code.\n#4 Access Levels and Access Modifiers (Who Sees What)\npublic means any code anywhere can access the public thing (by \n‘thing’ we mean class, variable, method, constructor, etc.).\nprotected works just like default (code in the same package has access), EXCEPT it \nalso allows subclasses outside the package to inherit the protected thing.\ndefault access means that only code within the same package as \nthe class with the default thing can access the default thing.\nprivate means that only code within the same class can access the private thing. \nKeep in mind it means private to the class, not private to the object. One Dog \ncan see another Dog object’5 private stuff, but a Cat can’t see a Dog’5 privates.\naccess levels",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 701,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 701,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1713 chars",
+      "severity": "info"
+    },
+    {
+      "page": 701,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

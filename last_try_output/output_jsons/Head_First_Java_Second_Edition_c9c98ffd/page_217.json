@@ -1,0 +1,73 @@
+{
+  "page_number": 217,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inheritance and polymorphism\nyou are here\n183\nInheritance lets you guarantee that \nall classes grouped under a certain \nsupertype have all the methods that \nthe supertype has.* \nIn other words, you define a common protocol for a \nset of classes related through inheritance.\nWhen you define methods in a superclass, that can be \ninherited by subclasses, you’re announcing a kind of \nprotocol to other code that says, “All my subtypes (i.e. \nsubclasses) can do these things, with these methods \nthat look like this...”\nIn other words, you establish a contract. \nClass Animal establishes a common protocol for all \nAnimal subtypes:\nAnimal\nmakeNoise()\neat()\nsleep()\nroam()\nYou’re telling the world that \nany Animal can do these four \nthings. That includes the method \narguments and return types. \n*When we say “all the methods” we mean “all the inheritable methods”, which \nfor now actually means, “all the public methods”, although later we’11 refine that \ndefinition a bit more.\nAnd remember, when we say any Animal, we mean \nAnimal and any class that extends from Animal. Which \nagain means, any class that has Animal somewhere above it \nin the inheritance hierarchy.\nBut we’re not even at the really cool part yet, because \nwe saved the best—polymorphism—for last.\nWhen you define a supertype for a group of classes, \nany subclass of that supertype can be substituted where the \nsupertype is expected. \nSay, what?\nDon’t worry, we’re nowhere near done explaining it. \nTwo pages from now, you’11 be an expert.\nAnd 1 care because...\nBecause you get to take advantage of \npolymorphism.\nWhich matters to me \nbecause...\nBecause you get to refer to a subclass \nobject using a reference declared as the \nsupertype.\nAnd that means to me...\nYou get to write really flexible code. \nCode that’5 cleaner (more efficient, \nsimpler). Code that’5 not just easier to \ndevelop, but also much, much easier to \nextend, in ways you never imagined at \nthe time you originally wrote your code.\nThat means you can take that tropical \nvacation while your co-workers update \nthe program, and your co-workers might \nnot even need your source code.\nYou’11 see how it works on the next page. \nWe don’t know about you, but \npersonally, we find the whole \ntropical vacation thing \nparticularly motivating.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (150x202)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "inheritance and polymorphism\nyou are here\n183\nInheritance lets you guarantee that \nall classes grouped under a certain \nsupertype have all the methods that \nthe supertype has.* \nIn other words, you define a common protocol for a \nset of classes related through inheritance.\nWhen you define methods in a superclass, that can be \ninherited by subclasses, you’re announcing a kind of \nprotocol to other code that says, “All my subtypes (i.e. \nsubclasses) can do these things, with these methods \nthat look like this...”\nIn other words, you establish a contract. \nClass Animal establishes a common protocol for all \nAnimal subtypes:\nAnimal\nmakeNoise()\neat()\nsleep()\nroam()\nYou’re telling the world that \nany Animal can do these four \nthings. That includes the method \narguments and return types. \n*When we say “all the methods” we mean “all the inheritable methods”, which \nfor now actually means, “all the public methods”, although later we’11 refine that \ndefinition a bit more.\nAnd remember, when we say any Animal, we mean \nAnimal and any class that extends from Animal. Which \nagain means, any class that has Animal somewhere above it \nin the inheritance hierarchy.\nBut we’re not even at the really cool part yet, because \nwe saved the best—polymorphism—for last.\nWhen you define a supertype for a group of classes, \nany subclass of that supertype can be substituted where the \nsupertype is expected. \nSay, what?\nDon’t worry, we’re nowhere near done explaining it. \nTwo pages from now, you’11 be an expert.\nAnd 1 care because...\nBecause you get to take advantage of \npolymorphism.\nWhich matters to me \nbecause...\nBecause you get to refer to a subclass \nobject using a reference declared as the \nsupertype.\nAnd that means to me...\nYou get to write really flexible code. \nCode that’5 cleaner (more efficient, \nsimpler). Code that’5 not just easier to \ndevelop, but also much, much easier to \nextend, in ways you never imagined at \nthe time you originally wrote your code.\nThat means you can take that tropical \nvacation while your co-workers update \nthe program, and your co-workers might \nnot even need your source code.\nYou’11 see how it works on the next page. \nWe don’t know about you, but \npersonally, we find the whole \ntropical vacation thing \nparticularly motivating.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 217,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 217,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2277 chars",
+      "severity": "info"
+    },
+    {
+      "page": 217,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 217,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

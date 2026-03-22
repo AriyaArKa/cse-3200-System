@@ -1,0 +1,59 @@
+{
+  "page_number": 583,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n549\nFinally we know what’5 wrong... \nThe Song class needs to implement Comparable\nWe can pass the ArrayList<Song> to the sort() method only if the \nSong class implements Comparable, since that’5 the way the sort() \nmethod was declared. A quick check of the API docs shows the \nComparable interface is really simple, with only one method to \nimplement:\npublic interface Comparable<T> {\n int compareTo(T 0);\n}\njava.lang.Comparable\nAnd the method documentation for compareTo() says\nThe big question is: what \nmakes one song less than, \nequal to, or greater than \nanother song?\nYou can’t implement the \nComparable interface until you \nmake that decision.\nReturns:\na negative integer, zero, or a \npositive integer as this object \nis less than, equal to, or greater \nthan the specified object.\nIt looks like the compareTo() method will be called on one \nSong object, passing that Song a reference to a different \nSong. The Song running the compareTo() method has to \nfigure out if the Song it was passed should be sorted higher, \nlower, or the same in the list.\nYour big job now is to decide what makes one song greater \nthan another, and then implement the compareTo() method \nto reflect that. A negative number (any negative number) \nmeans the Song you were passed is greater than the Song \nrunning the method. Returning a positive number says \nthat the Song running the method is greater than the Song \npassed to the compareTo() method. Returning zero means \nthe Songs are equal (at least for the purpose of sorting... it \ndoesn’t necessarily mean they’re the same object). You might, \nfor example, have two Songs with the same title. \n(Which brings up a whole different can of worms we’11 look \nat later...)\nSharpen your pencil\nWrite in your idea and pseudo code (or \nbetter, REAL code) for implementing the \ncompareTo() method in a way that will \nsort() the Song objects by title.\nHint: if you’re on the right track, it should \ntake less than 3 lines of code!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Sharpen your pencil"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n549\nFinally we know what’5 wrong... \nThe Song class needs to implement Comparable\nWe can pass the ArrayList<Song> to the sort() method only if the \nSong class implements Comparable, since that’5 the way the sort() \nmethod was declared. A quick check of the API docs shows the \nComparable interface is really simple, with only one method to \nimplement:\npublic interface Comparable<T> {\n int compareTo(T 0);\n}\njava.lang.Comparable\nAnd the method documentation for compareTo() says\nThe big question is: what \nmakes one song less than, \nequal to, or greater than \nanother song?\nYou can’t implement the \nComparable interface until you \nmake that decision.\nReturns:\na negative integer, zero, or a \npositive integer as this object \nis less than, equal to, or greater \nthan the specified object.\nIt looks like the compareTo() method will be called on one \nSong object, passing that Song a reference to a different \nSong. The Song running the compareTo() method has to \nfigure out if the Song it was passed should be sorted higher, \nlower, or the same in the list.\nYour big job now is to decide what makes one song greater \nthan another, and then implement the compareTo() method \nto reflect that. A negative number (any negative number) \nmeans the Song you were passed is greater than the Song \nrunning the method. Returning a positive number says \nthat the Song running the method is greater than the Song \npassed to the compareTo() method. Returning zero means \nthe Songs are equal (at least for the purpose of sorting... it \ndoesn’t necessarily mean they’re the same object). You might, \nfor example, have two Songs with the same title. \n(Which brings up a whole different can of worms we’11 look \nat later...)\nSharpen your pencil\nWrite in your idea and pseudo code (or \nbetter, REAL code) for implementing the \ncompareTo() method in a way that will \nsort() the Song objects by title.\nHint: if you’re on the right track, it should \ntake less than 3 lines of code!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 583,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 583,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2003 chars",
+      "severity": "info"
+    },
+    {
+      "page": 583,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

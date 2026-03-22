@@ -1,0 +1,1018 @@
+{
+  "document": {
+    "source": "7f8e2687-8b04-4caa-badc-105641d1978d.pdf",
+    "total_pages": 1,
+    "language_detected": [
+      "bn",
+      "en"
+    ],
+    "has_handwriting": false,
+    "has_tables": false,
+    "has_images": true,
+    "processing_summary": {
+      "pages_processed_locally": 1,
+      "pages_sent_to_api": 0,
+      "overall_confidence": 0.7805,
+      "processing_time_ms": 65286.73
+    },
+    "decision_summary": {
+      "total": 0,
+      "by_severity": {
+        "info": 0,
+        "warning": 0,
+        "error": 0
+      },
+      "unique_keywords": []
+    },
+    "all_decisions": []
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "extraction": {
+        "method": "ocr_local",
+        "engine": "EasyOCR",
+        "confidence_score": 0.7805,
+        "correction_applied": true,
+        "numeric_validation_passed": true
+      },
+      "content_blocks": [
+        {
+          "block_id": 1,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার",
+          "confidence": 0.487,
+          "bbox": [
+            630,
+            76,
+            906,
+            108
+          ]
+        },
+        {
+          "block_id": 2,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "শিক্ষা মন্ত্রণালয়",
+          "confidence": 0.743,
+          "bbox": [
+            698,
+            112,
+            838,
+            142
+          ]
+        },
+        {
+          "block_id": 3,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মাধ্যমিক",
+          "confidence": 0.5254,
+          "bbox": [
+            634,
+            146,
+            724,
+            176
+          ]
+        },
+        {
+          "block_id": 4,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উচ্চ শিক্ষা বিভাগ",
+          "confidence": 0.9255,
+          "bbox": [
+            744,
+            144,
+            904,
+            176
+          ]
+        },
+        {
+          "block_id": 5,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বেসরকারি বিশ্ববিদ্যালয় ১ শাখা",
+          "confidence": 0.377,
+          "bbox": [
+            626,
+            176,
+            913,
+            215
+          ]
+        },
+        {
+          "block_id": 6,
+          "type": "paragraph",
+          "language": "en",
+          "text": "wwwshedovbud",
+          "confidence": 0.133,
+          "bbox": [
+            655,
+            215,
+            885,
+            251
+          ]
+        },
+        {
+          "block_id": 7,
+          "type": "paragraph",
+          "language": "en",
+          "text": "0>",
+          "confidence": 0.4647,
+          "bbox": [
+            1171,
+            255,
+            1201,
+            275
+          ]
+        },
+        {
+          "block_id": 8,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১৪৩>",
+          "confidence": 0.8708,
+          "bbox": [
+            1242,
+            252,
+            1300,
+            276
+          ]
+        },
+        {
+          "block_id": 9,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নমর:",
+          "confidence": 0.5848,
+          "bbox": [
+            223,
+            271,
+            273,
+            291
+          ]
+        },
+        {
+          "block_id": 10,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "শিমশাঃ১৭/৮বিমক-১/২০১১-১১৭",
+          "confidence": 0.7291,
+          "bbox": [
+            270,
+            262,
+            561,
+            298
+          ]
+        },
+        {
+          "block_id": 11,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তারিখ:",
+          "confidence": 0.9897,
+          "bbox": [
+            1068,
+            266,
+            1138,
+            294
+          ]
+        },
+        {
+          "block_id": 12,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "১৬ মাচ ২০২৬",
+          "confidence": 0.9773,
+          "bbox": [
+            1170,
+            286,
+            1302,
+            312
+          ]
+        },
+        {
+          "block_id": 13,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রদগাপন",
+          "confidence": 0.4542,
+          "bbox": [
+            732,
+            320,
+            810,
+            350
+          ]
+        },
+        {
+          "block_id": 14,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন আইন; ১৯৭৩ রোষ্ট্রপতির আদেশ নং ১০/৭৩)-এর ৪ (১) (এ) ধারা অনুযায়ী",
+          "confidence": 0.4038,
+          "bbox": [
+            293,
+            368,
+            1334,
+            411
+          ]
+        },
+        {
+          "block_id": 15,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রফেসর ড মামুন আহমেদ; প্রো-ভাইস চ্যান্সেলর (একাডেমিক) , ঢাকা বিশ্ববিদ্যালয়-কে নিম্নোক্ত শ্তে বাংলাদেশ বিশ্ববিদ্যালয়",
+          "confidence": 0.2766,
+          "bbox": [
+            209,
+            403,
+            1333,
+            443
+          ]
+        },
+        {
+          "block_id": 16,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মঞ্জুরী কমিশনের চেয়ারম্যান হিসেবে নিয়়োগ প্রদান করা হলো:",
+          "confidence": 0.4607,
+          "bbox": [
+            209,
+            437,
+            763,
+            475
+          ]
+        },
+        {
+          "block_id": 17,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "চেয়ারম্যান হিসেবে তাঁর",
+          "confidence": 0.5411,
+          "bbox": [
+            328,
+            490,
+            544,
+            520
+          ]
+        },
+        {
+          "block_id": 18,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নিয়োগের মেয়াদ হবে ৪ (চার) বছর;",
+          "confidence": 0.9454,
+          "bbox": [
+            539,
+            485,
+            870,
+            526
+          ]
+        },
+        {
+          "block_id": 19,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "খ) তিনি প্রচলিত বিধি অনুযায়ী বেতন-ভাতা ও আনুষঙ্গিক সুবিধাদি পাবেন;",
+          "confidence": 0.5597,
+          "bbox": [
+            295,
+            523,
+            972,
+            565
+          ]
+        },
+        {
+          "block_id": 20,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "গ)",
+          "confidence": 0.4889,
+          "bbox": [
+            296,
+            566,
+            324,
+            594
+          ]
+        },
+        {
+          "block_id": 21,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নিয়োগাদেশ তাঁর যোগদানের তারিখ হতে কার্যকর হবে",
+          "confidence": 0.3081,
+          "bbox": [
+            345,
+            563,
+            840,
+            596
+          ]
+        },
+        {
+          "block_id": 22,
+          "type": "paragraph",
+          "language": "en",
+          "text": "২.০",
+          "confidence": 0.4889,
+          "bbox": [
+            212,
+            640,
+            250,
+            664
+          ]
+        },
+        {
+          "block_id": 23,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "যথাযথ",
+          "confidence": 0.7201,
+          "bbox": [
+            302,
+            638,
+            372,
+            662
+          ]
+        },
+        {
+          "block_id": 24,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "কর্তৃপক্ষের অনুমোদনক্রমে এ আদেশ জারি করা হলো/",
+          "confidence": 0.4579,
+          "bbox": [
+            369,
+            633,
+            851,
+            671
+          ]
+        },
+        {
+          "block_id": 25,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১৬",
+          "confidence": 0.5832,
+          "bbox": [
+            1104,
+            814,
+            1156,
+            846
+          ]
+        },
+        {
+          "block_id": 26,
+          "type": "paragraph",
+          "language": "en",
+          "text": "(0|{%24",
+          "confidence": 0.0996,
+          "bbox": [
+            1150,
+            798,
+            1312,
+            864
+          ]
+        },
+        {
+          "block_id": 27,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আেলিফ",
+          "confidence": 0.4369,
+          "bbox": [
+            1030,
+            852,
+            1106,
+            878
+          ]
+        },
+        {
+          "block_id": 28,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "রুদাবা)",
+          "confidence": 0.943,
+          "bbox": [
+            1105,
+            849,
+            1178,
+            888
+          ]
+        },
+        {
+          "block_id": 29,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অতিরিক্ত সচিব (বিশ্ববিদ্যালয়)",
+          "confidence": 0.4672,
+          "bbox": [
+            963,
+            881,
+            1241,
+            919
+          ]
+        },
+        {
+          "block_id": 30,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ফোন",
+          "confidence": 0.9611,
+          "bbox": [
+            998,
+            922,
+            1052,
+            948
+          ]
+        },
+        {
+          "block_id": 31,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১২৫৫১০০৬১৪",
+          "confidence": 0.5707,
+          "bbox": [
+            1066,
+            922,
+            1204,
+            948
+          ]
+        },
+        {
+          "block_id": 32,
+          "type": "paragraph",
+          "language": "mixed",
+          "text": "ই-মেইল: ds_univl@moedu govbd",
+          "confidence": 0.6801,
+          "bbox": [
+            919,
+            951,
+            1282,
+            989
+          ]
+        },
+        {
+          "block_id": 33,
+          "type": "paragraph",
+          "language": "en",
+          "text": "0>",
+          "confidence": 0.9493,
+          "bbox": [
+            1175,
+            1011,
+            1205,
+            1031
+          ]
+        },
+        {
+          "block_id": 34,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১৪৩২",
+          "confidence": 0.9993,
+          "bbox": [
+            1246,
+            1010,
+            1302,
+            1034
+          ]
+        },
+        {
+          "block_id": 35,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "নম্বর:",
+          "confidence": 0.5183,
+          "bbox": [
+            224,
+            1026,
+            276,
+            1050
+          ]
+        },
+        {
+          "block_id": 36,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "শিম শাঃ১৭/৪বিমক-১[২০১১-১১৭ ১(১১)",
+          "confidence": 0.313,
+          "bbox": [
+            274,
+            1018,
+            623,
+            1057
+          ]
+        },
+        {
+          "block_id": 37,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "তারিখ:",
+          "confidence": 0.6806,
+          "bbox": [
+            1072,
+            1022,
+            1140,
+            1050
+          ]
+        },
+        {
+          "block_id": 38,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "১৬ মাচ ২০২৬",
+          "confidence": 0.8601,
+          "bbox": [
+            1174,
+            1042,
+            1304,
+            1070
+          ]
+        },
+        {
+          "block_id": 39,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অবগতি ও প্রয়োজ্নীয় ব্যবস্বা গ্রহপের জন্য",
+          "confidence": 0.3462,
+          "bbox": [
+            213,
+            1073,
+            591,
+            1109
+          ]
+        },
+        {
+          "block_id": 40,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অনুশিপি প্রেরণ করা হণো (দ্যেষ্ঠতার ক্রমানুসারে নয়):",
+          "confidence": 0.3563,
+          "bbox": [
+            587,
+            1071,
+            1077,
+            1113
+          ]
+        },
+        {
+          "block_id": 41,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১",
+          "confidence": 0.7068,
+          "bbox": [
+            233,
+            1123,
+            251,
+            1145
+          ]
+        },
+        {
+          "block_id": 42,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মন্ত্রিপরিষদ সচিব, মন্ত্রিপরিষদ বিভাগ; বাংলাদেশ সচিবালয়; ঢাকা",
+          "confidence": 0.2466,
+          "bbox": [
+            285,
+            1114,
+            871,
+            1151
+          ]
+        },
+        {
+          "block_id": 43,
+          "type": "paragraph",
+          "language": "en",
+          "text": "২.",
+          "confidence": 0.5123,
+          "bbox": [
+            235,
+            1157,
+            255,
+            1179
+          ]
+        },
+        {
+          "block_id": 44,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সিনিয়়র সচিব; জননিরাপত্তা বিভাগ; স্বরাষ্ট্র মন্ত্রণালয়; বাংলাদেশ সচিবালয়, ঢাকা",
+          "confidence": 0.2187,
+          "bbox": [
+            283,
+            1147,
+            997,
+            1187
+          ]
+        },
+        {
+          "block_id": 45,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সিনিয়র সচিব; জন বিভাগ; রাষ্ট্রপতির কার্যালয়; বঙ্গভবন; ঢাকা",
+          "confidence": 0.3243,
+          "bbox": [
+            285,
+            1181,
+            849,
+            1219
+          ]
+        },
+        {
+          "block_id": 46,
+          "type": "paragraph",
+          "language": "en",
+          "text": "8",
+          "confidence": 0.8256,
+          "bbox": [
+            233,
+            1225,
+            251,
+            1247
+          ]
+        },
+        {
+          "block_id": 47,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "চেয়ারম্যান, বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, আগারগাঁও, শেরেবাংলা নগর, ঢাকা",
+          "confidence": 0.4337,
+          "bbox": [
+            285,
+            1216,
+            1061,
+            1255
+          ]
+        },
+        {
+          "block_id": 48,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৫",
+          "confidence": 0.9974,
+          "bbox": [
+            235,
+            1259,
+            255,
+            1281
+          ]
+        },
+        {
+          "block_id": 49,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ভাইস-চ্যান্সেলর, ঢাকা বিশ্ববিদ্যালয়, ঢাকা",
+          "confidence": 0.5088,
+          "bbox": [
+            284,
+            1249,
+            663,
+            1287
+          ]
+        },
+        {
+          "block_id": 50,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্রফেসর ড",
+          "confidence": 0.5612,
+          "bbox": [
+            286,
+            1290,
+            388,
+            1314
+          ]
+        },
+        {
+          "block_id": 51,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মামুন আহমেদ; প্রো-ভাইস চ্যান্সেলর (এেকাডেমিক) , ঢাকা বিশ্ববিদ্যালয়, ঢাকা",
+          "confidence": 0.4316,
+          "bbox": [
+            389,
+            1283,
+            1073,
+            1324
+          ]
+        },
+        {
+          "block_id": 52,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৭,",
+          "confidence": 0.6777,
+          "bbox": [
+            234,
+            1324,
+            258,
+            1350
+          ]
+        },
+        {
+          "block_id": 53,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "মন্ত্রীর একান্ত সচিব; শিক্ষা মন্ত্রণালয়; বাংলাদেশ সচিবালয়, ঢাকা",
+          "confidence": 0.4799,
+          "bbox": [
+            287,
+            1317,
+            855,
+            1355
+          ]
+        },
+        {
+          "block_id": 54,
+          "type": "paragraph",
+          "language": "en",
+          "text": "৮",
+          "confidence": 1.0,
+          "bbox": [
+            235,
+            1361,
+            255,
+            1383
+          ]
+        },
+        {
+          "block_id": 55,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সচিবের একান্ত সচিব; মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ, ঢাকা",
+          "confidence": 0.4891,
+          "bbox": [
+            287,
+            1354,
+            810,
+            1386
+          ]
+        },
+        {
+          "block_id": 56,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "ঐ.",
+          "confidence": 0.2224,
+          "bbox": [
+            234,
+            1394,
+            260,
+            1418
+          ]
+        },
+        {
+          "block_id": 57,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উপপরিচালক; বাংলাদেশ সরকারি মুদ্রণালয়, ঢাকা পপ্রেজ্ঞাপনটি গেজেটের পরবর্তী সংখ্যায় প্রকাশ করার অনুরোধসহ)",
+          "confidence": 0.286,
+          "bbox": [
+            284,
+            1385,
+            1259,
+            1425
+          ]
+        },
+        {
+          "block_id": 58,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১০",
+          "confidence": 0.7744,
+          "bbox": [
+            227,
+            1429,
+            259,
+            1449
+          ]
+        },
+        {
+          "block_id": 59,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "সিস্টেম এনালিস্ট, মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ; শিক্ষা মন্ত্রণালয়; ঢাকা",
+          "confidence": 0.3696,
+          "bbox": [
+            287,
+            1420,
+            923,
+            1457
+          ]
+        },
+        {
+          "block_id": 60,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "প্প্রোজ্ঞাপনটি মাধ্যমিক ও",
+          "confidence": 0.5065,
+          "bbox": [
+            284,
+            1454,
+            501,
+            1491
+          ]
+        },
+        {
+          "block_id": 61,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "শিক্ষা বিভাগের ওয়েবসাইটে আপলোড করার অনুরোধসহ)",
+          "confidence": 0.4681,
+          "bbox": [
+            539,
+            1454,
+            1059,
+            1494
+          ]
+        },
+        {
+          "block_id": 62,
+          "type": "paragraph",
+          "language": "en",
+          "text": "১১",
+          "confidence": 0.9542,
+          "bbox": [
+            226,
+            1494,
+            258,
+            1518
+          ]
+        },
+        {
+          "block_id": 63,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অফিস কপি|",
+          "confidence": 0.4312,
+          "bbox": [
+            288,
+            1490,
+            408,
+            1520
+          ]
+        },
+        {
+          "block_id": 64,
+          "type": "paragraph",
+          "language": "en",
+          "text": ">",
+          "confidence": 0.3286,
+          "bbox": [
+            1087,
+            1605,
+            1157,
+            1643
+          ]
+        },
+        {
+          "block_id": 65,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "আলিফ রুদাবা)",
+          "confidence": 0.6151,
+          "bbox": [
+            1002,
+            1646,
+            1156,
+            1686
+          ]
+        },
+        {
+          "block_id": 66,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "অতিরিক্ত সচিব (বিশববিদ্যালয়)",
+          "confidence": 0.3379,
+          "bbox": [
+            933,
+            1679,
+            1227,
+            1715
+          ]
+        },
+        {
+          "block_id": 67,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "চৈত্র",
+          "confidence": 0.9601,
+          "bbox": [
+            1199.28,
+            247.2,
+            1245.72,
+            278.8
+          ]
+        },
+        {
+          "block_id": 68,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "চৈত্র",
+          "confidence": 0.672,
+          "bbox": [
+            1203.28,
+            1003.19,
+            1249.72,
+            1035.81
+          ]
+        },
+        {
+          "block_id": 69,
+          "type": "paragraph",
+          "language": "bn",
+          "text": "উচ্চ",
+          "confidence": 0.8868,
+          "bbox": [
+            497.3,
+            1453.19,
+            541.7,
+            1485.81
+          ]
+        },
+        {
+          "block_id": 70,
+          "type": "paragraph",
+          "language": "en",
+          "text": "/751 2_",
+          "confidence": 0.0586,
+          "bbox": [
+            1145.08,
+            1589.32,
+            1319.92,
+            1650.68
+          ]
+        }
+      ],
+      "tables": [],
+      "images": [
+        {
+          "image_id": 1,
+          "type": "photo",
+          "detected_text": "",
+          "description": "A photograph or image (2448x3463)",
+          "confidence": 0.6
+        }
+      ],
+      "full_text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\nশিক্ষা মন্ত্রণালয়\nমাধ্যমিক\nউচ্চ শিক্ষা বিভাগ\nবেসরকারি বিশ্ববিদ্যালয় ১ শাখা\nwwwshedovbud\n0>\n১৪৩>\nনমর:\nশিমশাঃ১৭/৮বিমক-১/২০১১-১১৭\nতারিখ:\n১৬ মাচ ২০২৬\nপ্রদগাপন\nবাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন আইন; ১৯৭৩ রোষ্ট্রপতির আদেশ নং ১০/৭৩)-এর ৪ (১) (এ) ধারা অনুযায়ী\nপ্রফেসর ড মামুন আহমেদ; প্রো-ভাইস চ্যান্সেলর (একাডেমিক) , ঢাকা বিশ্ববিদ্যালয়-কে নিম্নোক্ত শ্তে বাংলাদেশ বিশ্ববিদ্যালয়\nমঞ্জুরী কমিশনের চেয়ারম্যান হিসেবে নিয়়োগ প্রদান করা হলো:\nচেয়ারম্যান হিসেবে তাঁর\nনিয়োগের মেয়াদ হবে ৪ (চার) বছর;\nখ) তিনি প্রচলিত বিধি অনুযায়ী বেতন-ভাতা ও আনুষঙ্গিক সুবিধাদি পাবেন;\nগ)\nনিয়োগাদেশ তাঁর যোগদানের তারিখ হতে কার্যকর হবে\n২.০\nযথাযথ\nকর্তৃপক্ষের অনুমোদনক্রমে এ আদেশ জারি করা হলো/\n১৬\n(0|{%24\nআেলিফ\nরুদাবা)\nঅতিরিক্ত সচিব (বিশ্ববিদ্যালয়)\nফোন\n১২৫৫১০০৬১৪\nই-মেইল: ds_univl@moedu govbd\n0>\n১৪৩২\nনম্বর:\nশিম শাঃ১৭/৪বিমক-১[২০১১-১১৭ ১(১১)\nতারিখ:\n১৬ মাচ ২০২৬\nঅবগতি ও প্রয়োজ্নীয় ব্যবস্বা গ্রহপের জন্য\nঅনুশিপি প্রেরণ করা হণো (দ্যেষ্ঠতার ক্রমানুসারে নয়):\n১\nমন্ত্রিপরিষদ সচিব, মন্ত্রিপরিষদ বিভাগ; বাংলাদেশ সচিবালয়; ঢাকা\n২.\nসিনিয়়র সচিব; জননিরাপত্তা বিভাগ; স্বরাষ্ট্র মন্ত্রণালয়; বাংলাদেশ সচিবালয়, ঢাকা\nসিনিয়র সচিব; জন বিভাগ; রাষ্ট্রপতির কার্যালয়; বঙ্গভবন; ঢাকা\n8\nচেয়ারম্যান, বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, আগারগাঁও, শেরেবাংলা নগর, ঢাকা\n৫\nভাইস-চ্যান্সেলর, ঢাকা বিশ্ববিদ্যালয়, ঢাকা\nপ্রফেসর ড\nমামুন আহমেদ; প্রো-ভাইস চ্যান্সেলর (এেকাডেমিক) , ঢাকা বিশ্ববিদ্যালয়, ঢাকা\n৭,\nমন্ত্রীর একান্ত সচিব; শিক্ষা মন্ত্রণালয়; বাংলাদেশ সচিবালয়, ঢাকা\n৮\nসচিবের একান্ত সচিব; মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ, ঢাকা\nঐ.\nউপপরিচালক; বাংলাদেশ সরকারি মুদ্রণালয়, ঢাকা পপ্রেজ্ঞাপনটি গেজেটের পরবর্তী সংখ্যায় প্রকাশ করার অনুরোধসহ)\n১০\nসিস্টেম এনালিস্ট, মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ; শিক্ষা মন্ত্রণালয়; ঢাকা\nপ্প্রোজ্ঞাপনটি মাধ্যমিক ও\nশিক্ষা বিভাগের ওয়েবসাইটে আপলোড করার অনুরোধসহ)\n১১\nঅফিস কপি|\n> \nআলিফ রুদাবা)\nঅতিরিক্ত সচিব (বিশববিদ্যালয়)\nচৈত্র\nচৈত্র\nউচ্চ\n/751 2_",
+      "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/7f8e2687-8b04-4caa-badc-105641d1978d_7dd70595/page_1.png",
+      "verified": false,
+      "domain": "unknown",
+      "confidence_tier": "silver",
+      "decisions": [
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "type_detection: scanned",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "rendered_to_image (DPI=180)",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "quick_bangla_estimate: 1.00",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "bangla_direct_to_ollama",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "bangla_direct_failed_falling_to_easyocr",
+          "severity": "warning"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "easyocr: 70 detections",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "PIPELINE_STEP",
+          "detail": "images_extracted: 1",
+          "severity": "info"
+        },
+        {
+          "page": 1,
+          "keyword": "FINAL_ENGINE",
+          "detail": "method=ocr_local, engine=EasyOCR",
+          "severity": "info"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 194,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "160 \nchapter 6\nusing the Java API documentation\n2\nUse the HTML API docs\nScroll through the packages \nand select one (click it) \nto restrict the list in the \nlower frame to only classes \nfrom that package.\nJava comes with a fabulous set of online docs \ncalled, strangely, the Java API. They’re part of \na larger set called the Java 5 Standard Edition \nDocumentation (which, depending on what \nday of the week you look, Sun may be refer-\nring to as “Java 2 Standard Edition 5.0”), and \nyou have to download the docs separately; \nthey don’t come shrink-wrapped with the Java \n5 download. If you have a high-speed internet \nconnection, or tons of patience, you can also \nbrowse them at java.sun.com. Trust us, you \nprobably want these on your hard drive. \nThe API docs are the best reference for get-\nting more details about a class and its methods. \nLet’5 say you were browsing through the refer-\nence book and found a class called Calendar, \nin java.util. The book tells you a little about it, \nenough to know that this is indeed what you \nwant to use, but you still need to know more \nabout the methods. \nThe reference book, for example, tells you \nwhat the methods take, as arguments, and what \nthey return. Look at ArrayList, for example. \nIn the reference book, you’11 find the method \nindexOf(), that we used in the DotCom class. \nBut if all you knew is that there is a method \ncalled indexOf() that takes an object and re-\nturns the index (an int) of that object, you still \nneed to know one crucial thing: what happens \nif the object is not in the ArrayList? Looking \nat the method signature alone won’t tell you \nhow that works. But the API docs will (most of \nthe time, anyway). The API docs tell you that \nthe indexOf() method returns a -1 if the object \nparameter is not in the ArrayList. That’5 how \nwe knew we could use it both as a way to check \nif an object is even in the ArrayList, and to get \nits index at the same time, if the object was \nthere. But without the API docs, we might have \nthought that the indexOf() method would \nblow up if the object wasn’t in the ArrayList.\nScroll through the classes \nand select one (click it) to \nchoose the class that will fill \nthe main browser frame.\n1\n2\nThis is where all the \ngood stuff is. You can \nscroll through the \nmethods for a brief \nsummary, or click on \na method to get full \ndetails.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (952x665)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "160 \nchapter 6\nusing the Java API documentation\n2\nUse the HTML API docs\nScroll through the packages \nand select one (click it) \nto restrict the list in the \nlower frame to only classes \nfrom that package.\nJava comes with a fabulous set of online docs \ncalled, strangely, the Java API. They’re part of \na larger set called the Java 5 Standard Edition \nDocumentation (which, depending on what \nday of the week you look, Sun may be refer-\nring to as “Java 2 Standard Edition 5.0”), and \nyou have to download the docs separately; \nthey don’t come shrink-wrapped with the Java \n5 download. If you have a high-speed internet \nconnection, or tons of patience, you can also \nbrowse them at java.sun.com. Trust us, you \nprobably want these on your hard drive. \nThe API docs are the best reference for get-\nting more details about a class and its methods. \nLet’5 say you were browsing through the refer-\nence book and found a class called Calendar, \nin java.util. The book tells you a little about it, \nenough to know that this is indeed what you \nwant to use, but you still need to know more \nabout the methods. \nThe reference book, for example, tells you \nwhat the methods take, as arguments, and what \nthey return. Look at ArrayList, for example. \nIn the reference book, you’11 find the method \nindexOf(), that we used in the DotCom class. \nBut if all you knew is that there is a method \ncalled indexOf() that takes an object and re-\nturns the index (an int) of that object, you still \nneed to know one crucial thing: what happens \nif the object is not in the ArrayList? Looking \nat the method signature alone won’t tell you \nhow that works. But the API docs will (most of \nthe time, anyway). The API docs tell you that \nthe indexOf() method returns a -1 if the object \nparameter is not in the ArrayList. That’5 how \nwe knew we could use it both as a way to check \nif an object is even in the ArrayList, and to get \nits index at the same time, if the object was \nthere. But without the API docs, we might have \nthought that the indexOf() method would \nblow up if the object wasn’t in the ArrayList.\nScroll through the classes \nand select one (click it) to \nchoose the class that will fill \nthe main browser frame.\n1\n2\nThis is where all the \ngood stuff is. You can \nscroll through the \nmethods for a brief \nsummary, or click on \na method to get full \ndetails.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 194,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 194,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2353 chars",
+      "severity": "info"
+    },
+    {
+      "page": 194,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 194,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "page_number": 316,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "282 \nchapter 10\nstatic final variables are constants\nA variable marked finalmeans that—once initialized—it can \nnever change. In other words, the value of the static final variable \nwill stay the same as long as the class is loaded. Look up Math.PI \nin the API, and you’11 find:\npublic static final double PI = 3.141592653589793;\nThe variable is marked public 50 that any code can access it. \nThe variable is marked static 50 that you don’t need an \ninstance of class Math (which, remember, you’re not allowed to \ncreate). \nThe variable is marked final because PI doesn’t change (as far as \nJava is concerned). \nThere is no other way to designate a variable as a constant, but \nthere is a naming convention that helps you to recognize one. \nConstant variable names should be in all caps!\nInitialize a final static variable:\nAt the time you declare it:\n1\npublic class Foo {\n public static final int FOO_X = 25;\n}\nIn a static initializer:\n2\npublic class Bar {\n public static final double BAR_SIGN;\n static {\n BAR_SIGN = (double) Math.random();\n }\n}\nOR\nA static initializer is a block \nof code that runs when a \nclass is loaded, before any \nother code can use the \nclass, 50 it’5 a great place \nto initialize a static final \nvariable.\nclass Foo {\n final static int X;\n static {\n X = 42;\n }\n}\nthis code runs as soon as the class \nis loaded, before any static method \nis called and even before any static \nvariable can be used.\nnotice the naming convention -- static \nfinal variables are constants, 50 the \nname should be all uppercase, with an \nunderscore separating the words\nFile Edit Window Help Jack-in\n% javac Bar.java\nBar.java:1: variable BAR_SIGN \nmight not have been initialized\n1 error\npublic class Bar {\n public static final double BAR_SIGN;\n}\nIf you don’t give a value to a final variable \nin one of those two places:\nThe compiler will catch it:\nstatic final constants\nno initialization!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Jack-in"
+        ],
+        [
+          "% javac Bar.java\nBar.java:1: variable BAR_SIGN\nmight not have been initialized\n1 error"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "282 \nchapter 10\nstatic final variables are constants\nA variable marked finalmeans that—once initialized—it can \nnever change. In other words, the value of the static final variable \nwill stay the same as long as the class is loaded. Look up Math.PI \nin the API, and you’11 find:\npublic static final double PI = 3.141592653589793;\nThe variable is marked public 50 that any code can access it. \nThe variable is marked static 50 that you don’t need an \ninstance of class Math (which, remember, you’re not allowed to \ncreate). \nThe variable is marked final because PI doesn’t change (as far as \nJava is concerned). \nThere is no other way to designate a variable as a constant, but \nthere is a naming convention that helps you to recognize one. \nConstant variable names should be in all caps!\nInitialize a final static variable:\nAt the time you declare it:\n1\npublic class Foo {\n public static final int FOO_X = 25;\n}\nIn a static initializer:\n2\npublic class Bar {\n public static final double BAR_SIGN;\n static {\n BAR_SIGN = (double) Math.random();\n }\n}\nOR\nA static initializer is a block \nof code that runs when a \nclass is loaded, before any \nother code can use the \nclass, 50 it’5 a great place \nto initialize a static final \nvariable.\nclass Foo {\n final static int X;\n static {\n X = 42;\n }\n}\nthis code runs as soon as the class \nis loaded, before any static method \nis called and even before any static \nvariable can be used.\nnotice the naming convention -- static \nfinal variables are constants, 50 the \nname should be all uppercase, with an \nunderscore separating the words\nFile Edit Window Help Jack-in\n% javac Bar.java\nBar.java:1: variable BAR_SIGN \nmight not have been initialized\n1 error\npublic class Bar {\n public static final double BAR_SIGN;\n}\nIf you don’t give a value to a final variable \nin one of those two places:\nThe compiler will catch it:\nstatic final constants\nno initialization!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 316,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 316,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1930 chars",
+      "severity": "info"
+    },
+    {
+      "page": 316,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

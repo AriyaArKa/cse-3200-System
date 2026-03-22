@@ -1,0 +1,58 @@
+{
+  "page_number": 172,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "138 \nchapter 6\nLet’5 fix the DotCom code.\n prep code \ntest code\nreal code\nreal code \npublic class DotCom {\n int[] locationCells;\n int numOfHits = 0;\n \n public void setLocationCells(int[] locs) {\n locationCells = locs;\n }\n public String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++;\n \n break;\n }\n } // out of the loop\n if (numOfHits == locationCells.length) {\n result = “kill”;\n }\n System.out.println(result);\n return result;\n } // close method \n} // close class\nRemember, this is how the buggy version looks:\nWhere it all went wrong. We \ncounted each guess as a hit, \nwithout checking whether that cell \nhad already been hit.\nthe buggy DotCom code\nWe’ve renamed the class DotCom now (instead of \nSimpleDotCom), for the new advanced version, but this \nis the same code you saw in the last chapter.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "138 \nchapter 6\nLet’5 fix the DotCom code.\n prep code \ntest code\nreal code\nreal code \npublic class DotCom {\n int[] locationCells;\n int numOfHits = 0;\n \n public void setLocationCells(int[] locs) {\n locationCells = locs;\n }\n public String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++;\n \n break;\n }\n } // out of the loop\n if (numOfHits == locationCells.length) {\n result = “kill”;\n }\n System.out.println(result);\n return result;\n } // close method \n} // close class\nRemember, this is how the buggy version looks:\nWhere it all went wrong. We \ncounted each guess as a hit, \nwithout checking whether that cell \nhad already been hit.\nthe buggy DotCom code\nWe’ve renamed the class DotCom now (instead of \nSimpleDotCom), for the new advanced version, but this \nis the same code you saw in the last chapter.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 172,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 172,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1081 chars",
+      "severity": "info"
+    },
+    {
+      "page": 172,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

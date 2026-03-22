@@ -56,6 +56,7 @@ def ensure_output_dirs(doc_id: str) -> dict:
         "images": config.OUTPUT_IMAGES_DIR / doc_id,
         "jsons": config.JSON_OUTPUT_DIR / doc_id,
         "merged": config.MERGED_OUTPUT_DIR,
+        "texts": config.TEXT_OUTPUT_DIR,
         "logs": config.LOG_DIR,
     }
     for d in dirs.values():
@@ -71,6 +72,28 @@ def save_page_json(page_result: PageResult, output_dir: Path):
     logger.info("Saved page JSON: %s", path)
 
 
+def save_document_text(doc_result: DocumentResult, output_dir: Path, doc_id: str) -> Path:
+    """Save extracted text as a page-grouped plain text file."""
+    txt_path = output_dir / f"{doc_id}.txt"
+    lines: list[str] = []
+    for page in sorted(doc_result.pages, key=lambda p: p.page_number):
+        lines.append(f"Page {page.page_number}")
+        lines.append("=" * len(lines[-1]))
+
+        page_text = (page.full_text or "").strip()
+        if not page_text:
+            page_text = "\n".join(
+                (b.text or "").strip() for b in page.content_blocks if (b.text or "").strip()
+            ).strip()
+
+        lines.append(clean_text(page_text) if page_text else "[NO_TEXT_EXTRACTED]")
+        lines.append("")
+
+    txt_path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+    logger.info("Saved extracted TXT: %s", txt_path)
+    return txt_path
+
+
 def save_document_json(doc_result: DocumentResult, doc_id: str):
     """Save per-page + merged JSON, then best-effort corpus output."""
     dirs = ensure_output_dirs(doc_id)
@@ -84,6 +107,8 @@ def save_document_json(doc_result: DocumentResult, doc_id: str):
     with open(merged_path, "w", encoding="utf-8") as f:
         json.dump(to_json_compatible(doc_result.to_dict()), f, ensure_ascii=False, indent=2)
     logger.info("Saved merged JSON: %s", merged_path)
+
+    save_document_text(doc_result, dirs["texts"], doc_id)
 
     try:
         domain = doc_result.pages[0].domain if doc_result.pages else "unknown"

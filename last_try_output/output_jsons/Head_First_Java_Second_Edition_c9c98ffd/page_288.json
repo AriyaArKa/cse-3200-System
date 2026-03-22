@@ -1,0 +1,73 @@
+{
+  "page_number": 288,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "object lifecycle\n254 \nchapter 9\nCan the child exist before \nthe parents?\nIf you think of a superclass as the parent to the subclass child, \nyou can figure out which has to exist first. The superclass parts \nof an object have to be fully-formed (completely built) before the \nsubclass parts can be constructed. Remember, \nthe subclass object might depend on things it \ninherits from the superclass, 50 it’5 important \nthat those inherited things be finished. No \nway around it. The superclass constructor \nmust finish before its subclass constructor.\nLook at the Stack series on page 252 again, \nand you can see that while the Hippo \nconstructor is the first to be invoked (it’5 \nthe first thing on the Stack), it’5 the last one \nto complete! Each subclass constructor \nimmediately invokes its own superclass \nconstructor, until the Object constructor \nis on the top of the Stack. Then Object’5 \nconstructor completes and we bounce \nback down the Stack to Animal’5 \nconstructor. Only after Animal’5 constructor completes \ndo we finally come back down to finish the rest of the Hippo \nconstructor. For that reason:\nThe call to super() must be the first statement \nin each constructor!*\nEewwww... that \nis 50 creepy. There’5 \nno way 1 could have been \nborn before my parents. \nThat’5 just wrong.\n*There’5 an exception to this rule; you’11 learn it on page 256.\nPossible constructors for class Boop\npublic Boop() {\n super();\n}\npublic Boop(int i) {\n super();\n size = i;\n}\nThese are OK because \nthe programmer ex-\nplicitly coded the call \nto super(), as the first \nstatement.\npublic Boop() {\n}\npublic Boop(int i) {\n size = i;\n}\npublic Boop(int i) {\n size = i;\n super();\n}\nThese are OK because \nthe compiler will put a \ncall to super() in as the \nfirst statement.\nBAD!! This won’t compile! \nYou can’t explicitly put \nthe call to super() below \nanything else.\n;\n;\n;\n;",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Possible constructors for class Boop"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (639x507)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "object lifecycle\n254 \nchapter 9\nCan the child exist before \nthe parents?\nIf you think of a superclass as the parent to the subclass child, \nyou can figure out which has to exist first. The superclass parts \nof an object have to be fully-formed (completely built) before the \nsubclass parts can be constructed. Remember, \nthe subclass object might depend on things it \ninherits from the superclass, 50 it’5 important \nthat those inherited things be finished. No \nway around it. The superclass constructor \nmust finish before its subclass constructor.\nLook at the Stack series on page 252 again, \nand you can see that while the Hippo \nconstructor is the first to be invoked (it’5 \nthe first thing on the Stack), it’5 the last one \nto complete! Each subclass constructor \nimmediately invokes its own superclass \nconstructor, until the Object constructor \nis on the top of the Stack. Then Object’5 \nconstructor completes and we bounce \nback down the Stack to Animal’5 \nconstructor. Only after Animal’5 constructor completes \ndo we finally come back down to finish the rest of the Hippo \nconstructor. For that reason:\nThe call to super() must be the first statement \nin each constructor!*\nEewwww... that \nis 50 creepy. There’5 \nno way 1 could have been \nborn before my parents. \nThat’5 just wrong.\n*There’5 an exception to this rule; you’11 learn it on page 256.\nPossible constructors for class Boop\npublic Boop() {\n super();\n}\npublic Boop(int i) {\n super();\n size = i;\n}\nThese are OK because \nthe programmer ex-\nplicitly coded the call \nto super(), as the first \nstatement.\npublic Boop() {\n}\npublic Boop(int i) {\n size = i;\n}\npublic Boop(int i) {\n size = i;\n super();\n}\nThese are OK because \nthe compiler will put a \ncall to super() in as the \nfirst statement.\nBAD!! This won’t compile! \nYou can’t explicitly put \nthe call to super() below \nanything else.\n;\n;\n;\n;",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 288,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 288,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1878 chars",
+      "severity": "info"
+    },
+    {
+      "page": 288,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 288,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

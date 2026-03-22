@@ -1,0 +1,74 @@
+{
+  "page_number": 100,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "66 \nchapter 3\nA short Java program is listed to the \nright. When ‘// do stuff’ is reached, \nsome objects and some reference vari-\nables will have been created. Your task \nis to determine which of the reference \nvariables refer to which objects. Not all \nthe reference variables will be used, and \nsome objects might be referred to more \nthan once. Draw lines connecting the \nreference variables with their matching \nobjects.\nTip: Unless you’re way smarter than we \nare, you probably need to draw dia-\ngrams like the ones on page 57–60 of \nthis chapter. Use a pencil 50 you can \ndraw and then erase reference links (the \narrows going from a reference remote \ncontrol to an object).\nA Heap 0’ Trouble\nmatch each reference \nvariable with matching \nobject(5)\nYou might not have to \nuse every reference.\n Reference Variables: \n \nHeapQuiz Objects:\nid = 0\nid = 1\nid = 2\nclass HeapQuiz {\n int id = 0;\n public static void main(String [] args) {\n int x = 0;\n HeapQuiz [ ] hq = new HeapQuiz[5]; \n while ( x < 3 ) {\n hq[x] = new HeapQuiz();\n hq[x].id = x;\n x = x + 1;\n \n } \n hq[3] = hq[1];\n hq[4] = hq[1];\n hq[3] = null;\n hq[4] = hq[0];\n hq[0] = hq[3];\n hq[3] = hq[2];\n hq[2] = hq[0];\n // do stuff\n }\n} \nhq[0]\nhq[1]\nhq[2]\nhq[3]\nhq[4]\npuzzle: Heap 0’ Trouble",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (93x158)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (93x158)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "66 \nchapter 3\nA short Java program is listed to the \nright. When ‘// do stuff’ is reached, \nsome objects and some reference vari-\nables will have been created. Your task \nis to determine which of the reference \nvariables refer to which objects. Not all \nthe reference variables will be used, and \nsome objects might be referred to more \nthan once. Draw lines connecting the \nreference variables with their matching \nobjects.\nTip: Unless you’re way smarter than we \nare, you probably need to draw dia-\ngrams like the ones on page 57–60 of \nthis chapter. Use a pencil 50 you can \ndraw and then erase reference links (the \narrows going from a reference remote \ncontrol to an object).\nA Heap 0’ Trouble\nmatch each reference \nvariable with matching \nobject(5)\nYou might not have to \nuse every reference.\n Reference Variables: \n \nHeapQuiz Objects:\nid = 0\nid = 1\nid = 2\nclass HeapQuiz {\n int id = 0;\n public static void main(String [] args) {\n int x = 0;\n HeapQuiz [ ] hq = new HeapQuiz[5]; \n while ( x < 3 ) {\n hq[x] = new HeapQuiz();\n hq[x].id = x;\n x = x + 1;\n \n } \n hq[3] = hq[1];\n hq[4] = hq[1];\n hq[3] = null;\n hq[4] = hq[0];\n hq[0] = hq[3];\n hq[3] = hq[2];\n hq[2] = hq[0];\n // do stuff\n }\n} \nhq[0]\nhq[1]\nhq[2]\nhq[3]\nhq[4]\npuzzle: Heap 0’ Trouble",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 100,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 100,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1319 chars",
+      "severity": "info"
+    },
+    {
+      "page": 100,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 100,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

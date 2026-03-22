@@ -1,0 +1,95 @@
+{
+  "page_number": 293,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n259\n public void doStuff() {\n boolean b = true;\n go(4);\n }\n public void go(int x) {\n int z = x + 24;\n crazy();\n // imagine more code here\n }\n public void crazy() {\n char c = ‘a’;\n }\ndoStuff() b\ngo()\ndoStuff() b\nx\nz\ncrazy() c\ndoStuff() b\ngo()\nx\nz\ngo()\ndoStuff() b\nx\nz\n1\ndoStuff() goes on the \nStack. Variable ‘b’ is \nalive and in scope.\ngo() plops on top of \nthe Stack. ‘x’ and ‘z’ \nare alive and in scope, \nand ‘b’ is alive but not \nin scope. \ncrazy() is pushed onto \nthe Stack, with ‘c’ now \nalive and in scope. The \nother three variables \nare alive but out of \nscope.\ncrazy() completes and \nis popped off the Stack, \n50 ‘c’ is out of scope \nand dead. When go() \nresumes where it left \noff, ‘x’ and ‘z’ are both \nalive and back in scope. \nVariable ‘b’ is still alive \nbut out of scope (until \ngo() completes).\nLife\nScope\nA local variable is alive as long as its Stack \nframe is on the Stack. In other words, \nuntil the method completes.\nA local variable is in scope only within the \nmethod in which the variable was declared. \nWhen its own method calls another, the \nvariable is alive, but not in scope until its \nmethod resumes. You can use a variable only \nwhen it is in scope.\nThe difference between life and \nscope for local variables:\n2\n3\n4\nWhile a local variable is alive, its state persists. \nAs long as method doStuff() is on the Stack, for \nexample, the ‘b’ variable keeps its value. But the \n‘b’ variable can be used only while doStuff()’5 \nStack frame is at the top. In other words, you can \nuse a local variable only while that local variable’5 \nmethod is actually running (as opposed to \nwaiting for higher Stack frames to complete).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (240x108)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (35x49)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x174)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (35x49)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x239)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x174)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n259\n public void doStuff() {\n boolean b = true;\n go(4);\n }\n public void go(int x) {\n int z = x + 24;\n crazy();\n // imagine more code here\n }\n public void crazy() {\n char c = ‘a’;\n }\ndoStuff() b\ngo()\ndoStuff() b\nx\nz\ncrazy() c\ndoStuff() b\ngo()\nx\nz\ngo()\ndoStuff() b\nx\nz\n1\ndoStuff() goes on the \nStack. Variable ‘b’ is \nalive and in scope.\ngo() plops on top of \nthe Stack. ‘x’ and ‘z’ \nare alive and in scope, \nand ‘b’ is alive but not \nin scope. \ncrazy() is pushed onto \nthe Stack, with ‘c’ now \nalive and in scope. The \nother three variables \nare alive but out of \nscope.\ncrazy() completes and \nis popped off the Stack, \n50 ‘c’ is out of scope \nand dead. When go() \nresumes where it left \noff, ‘x’ and ‘z’ are both \nalive and back in scope. \nVariable ‘b’ is still alive \nbut out of scope (until \ngo() completes).\nLife\nScope\nA local variable is alive as long as its Stack \nframe is on the Stack. In other words, \nuntil the method completes.\nA local variable is in scope only within the \nmethod in which the variable was declared. \nWhen its own method calls another, the \nvariable is alive, but not in scope until its \nmethod resumes. You can use a variable only \nwhen it is in scope.\nThe difference between life and \nscope for local variables:\n2\n3\n4\nWhile a local variable is alive, its state persists. \nAs long as method doStuff() is on the Stack, for \nexample, the ‘b’ variable keeps its value. But the \n‘b’ variable can be used only while doStuff()’5 \nStack frame is at the top. In other words, you can \nuse a local variable only while that local variable’5 \nmethod is actually running (as opposed to \nwaiting for higher Stack frames to complete).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 293,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 293,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1713 chars",
+      "severity": "info"
+    },
+    {
+      "page": 293,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 293,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

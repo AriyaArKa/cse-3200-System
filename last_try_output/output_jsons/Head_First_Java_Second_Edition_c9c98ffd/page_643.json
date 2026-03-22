@@ -1,0 +1,74 @@
+{
+  "page_number": 643,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n609\nWe know how to get information from one machine to another—\nwith Sockets and 1/0. We open a Socket connection to another \nmachine, and get an OutputStream and write some data to it. \nBut what if we actually want to call a method on something running \nin another machine... another JVM? Of course we could always build \nour own protocol, and when you send data to a ServerSocket the \nserver could parse it, figure out what you meant, do the work, and \nsend back the result on another stream. What a pain, though. Think \nhow much nicer it would be to just get a reference to the object on \nthe other machine, and call a method.\nWhat if you want to invoke a method on \nan object running on another machine?\nImagine two computers...\nBig has something Little wants.\nCompute power.\nLittle wants to send some data to Big, 50 that Big can do the \nheavy computing.\nLittle wants simply to call a method... \n double doCalcUsingDatabase(CalcNumbers numbers)\nand get back the result.\nBut how can Little get a reference to an object on Big?\nLittle\nBig\npowerful, fast, loves \nto crunch through big \ncalculations\ntiny, wimpy, painfully \nslow at calculations\nJVM\nJVM",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (149x312)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (381x364)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (120x175)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n609\nWe know how to get information from one machine to another—\nwith Sockets and 1/0. We open a Socket connection to another \nmachine, and get an OutputStream and write some data to it. \nBut what if we actually want to call a method on something running \nin another machine... another JVM? Of course we could always build \nour own protocol, and when you send data to a ServerSocket the \nserver could parse it, figure out what you meant, do the work, and \nsend back the result on another stream. What a pain, though. Think \nhow much nicer it would be to just get a reference to the object on \nthe other machine, and call a method.\nWhat if you want to invoke a method on \nan object running on another machine?\nImagine two computers...\nBig has something Little wants.\nCompute power.\nLittle wants to send some data to Big, 50 that Big can do the \nheavy computing.\nLittle wants simply to call a method... \n double doCalcUsingDatabase(CalcNumbers numbers)\nand get back the result.\nBut how can Little get a reference to an object on Big?\nLittle\nBig\npowerful, fast, loves \nto crunch through big \ncalculations\ntiny, wimpy, painfully \nslow at calculations\nJVM\nJVM",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 643,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 643,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1198 chars",
+      "severity": "info"
+    },
+    {
+      "page": 643,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 643,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

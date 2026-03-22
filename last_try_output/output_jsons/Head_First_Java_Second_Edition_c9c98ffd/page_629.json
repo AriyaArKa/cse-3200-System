@@ -1,0 +1,82 @@
+{
+  "page_number": 629,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "package, jars and deployment\nyou are here\n595\n BULLET POINTS\n \nOrganize your project 50 that your source code and class files are not in \nthe same directory.\n \nA standard organization structure is to create a project directory, and then \nput a source directory and a classes directory inside the project directory.\n \nOrganizing your classes into packages prevents naming collisions with \nother classes, if you prepend your reverse domain name on to the front of \na class name.\n \nTo put a class in a package, put a package statement at the top of the \nsource code file, before any import statements: \npackage com.wickedlysmart;\n \nTo be in a package, a class must be in a directory structure that exactly \nmatches the package structure. For a class, com.wickedlysmart.Foo, \nthe Foo class must be in a directory named wickedlysmart, which is in a \ndirectory named com.\n \nTo make your compiled class land in the correct package directory \nstructure under the classes directory, use the -d compiler flag:\n% cd source\n% javac -d ../classes com/wickedlysmart/Foo.java\n \nTo run your code, cd to the classes directory, and give the fully-qualified \nname of your class: \n% cd classes\n% java com.wickedlysmart.Foo\n \nYou can bundle your classes into JAR (Java ARchive) files. JAR is based \non the pkzip format.\n \nYou can make an executable JAR file by putting a manifest into the JAR \nthat states which class has the main() method. To create a manifest file, \nmake a text file with an entry like the following (for example): \nMain-Class: com.wickedlysmart.Foo \n \nBe sure you hit the return key after typing the Main-Class line, or your \nmanifest file may not work.\n \nTo create a JAR file, type:\njar -cvfm manifest.txt MyJar.jar com\n \nThe entire package directory structure (and only the directories matching \nthe package) must be immediately inside the JAR file. \n \nTo run an executable JAR file, type:\njava -jar MyJar.jar \nthere are no\nDumb Questions\nQ: What happens if you try \nto run an executable JAR, and \nthe end-user doesn’t have java \ninstalled?\nA: Nothing will run, since \nwithout a JVM, Java code can’t \nrun. The end-user must have \nJava installed.\nQ: How can 1 get Java \ninstalled on the end-user’5 \nmachine?\nIdeally, you can create a custom \ninstaller and distribute it along \nwith your application. Several \ncompanies offer installer pro-\ngrams ranging from simple to \nextremely powerful. An installer \nprogram could, for example, de-\ntect whether or not the end-user \nhas an appropropriate version \nof Java installed, and if not, \ninstall and configure Java before \ninstalling your application. \nInstallshield, InstallAnywhere, \nand DeployDirector all offer Java \ninstaller solutions.\nAnother cool thing about some \nof the installer programs is that \nyou can even make a deploy-\nment CD-ROM that includes \ninstallers for all major Java \nplatforms, 50... one CD to rule \nthem all. If the user’5 running on \nSolaris, for example, the Solaris \nversion of Java is installed. On \nWindows, the Windows, ver-\nsion, etc. If you have the budget, \nthis is by far the easiest way for \nyour end-users to get the right \nversion of Java installed and \nconfigured.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "OINTS",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "package, jars and deployment\nyou are here\n595\n BULLET POINTS\n \nOrganize your project 50 that your source code and class files are not in \nthe same directory.\n \nA standard organization structure is to create a project directory, and then \nput a source directory and a classes directory inside the project directory.\n \nOrganizing your classes into packages prevents naming collisions with \nother classes, if you prepend your reverse domain name on to the front of \na class name.\n \nTo put a class in a package, put a package statement at the top of the \nsource code file, before any import statements: \npackage com.wickedlysmart;\n \nTo be in a package, a class must be in a directory structure that exactly \nmatches the package structure. For a class, com.wickedlysmart.Foo, \nthe Foo class must be in a directory named wickedlysmart, which is in a \ndirectory named com.\n \nTo make your compiled class land in the correct package directory \nstructure under the classes directory, use the -d compiler flag:\n% cd source\n% javac -d ../classes com/wickedlysmart/Foo.java\n \nTo run your code, cd to the classes directory, and give the fully-qualified \nname of your class: \n% cd classes\n% java com.wickedlysmart.Foo\n \nYou can bundle your classes into JAR (Java ARchive) files. JAR is based \non the pkzip format.\n \nYou can make an executable JAR file by putting a manifest into the JAR \nthat states which class has the main() method. To create a manifest file, \nmake a text file with an entry like the following (for example): \nMain-Class: com.wickedlysmart.Foo \n \nBe sure you hit the return key after typing the Main-Class line, or your \nmanifest file may not work.\n \nTo create a JAR file, type:\njar -cvfm manifest.txt MyJar.jar com\n \nThe entire package directory structure (and only the directories matching \nthe package) must be immediately inside the JAR file. \n \nTo run an executable JAR file, type:\njava -jar MyJar.jar \nthere are no\nDumb Questions\nQ: What happens if you try \nto run an executable JAR, and \nthe end-user doesn’t have java \ninstalled?\nA: Nothing will run, since \nwithout a JVM, Java code can’t \nrun. The end-user must have \nJava installed.\nQ: How can 1 get Java \ninstalled on the end-user’5 \nmachine?\nIdeally, you can create a custom \ninstaller and distribute it along \nwith your application. Several \ncompanies offer installer pro-\ngrams ranging from simple to \nextremely powerful. An installer \nprogram could, for example, de-\ntect whether or not the end-user \nhas an appropropriate version \nof Java installed, and if not, \ninstall and configure Java before \ninstalling your application. \nInstallshield, InstallAnywhere, \nand DeployDirector all offer Java \ninstaller solutions.\nAnother cool thing about some \nof the installer programs is that \nyou can even make a deploy-\nment CD-ROM that includes \ninstallers for all major Java \nplatforms, 50... one CD to rule \nthem all. If the user’5 running on \nSolaris, for example, the Solaris \nversion of Java is installed. On \nWindows, the Windows, ver-\nsion, etc. If you have the budget, \nthis is by far the easiest way for \nyour end-users to get the right \nversion of Java installed and \nconfigured.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 629,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 629,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3167 chars",
+      "severity": "info"
+    },
+    {
+      "page": 629,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 629,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

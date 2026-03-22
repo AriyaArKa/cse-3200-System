@@ -1,0 +1,81 @@
+{
+  "page_number": 12,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "x \nYou Bet\nShoot Me\n2\nA Trip to Objectville\n1 was told there would be objects. In Chapter 1, we put all of our code \nin the main() method. That’5 not exactly object-oriented. 50 now we’ve got to leave that \nprocedural world behind and start making some objects of our own. We’11 look at what \nmakes object-oriented (00) development in Java 50 much fun. We’11 look at the difference \nbetween a class and an object. We’11 look at how objects can improve your life.\n1\nBreaking the Surface\nJava takes you to new places. From its humble release to the public as the \n(wimpy) version 1.02, Java seduced programmers with its friendly syntax, object-oriented \nfeatures, memory management, and best of all—the promise of portability. We’11 take a quick \ndip and write some code, compile it, and run it. We’re talking syntax, loops, branching, and what \nmakes Java 50 cool. Dive in.\nThe way Java works \n2\nCode structure in Java \n7\nAnatomy of a class \n8\nThe main() method \n9\nLooping \n11\nConditional branching (if tests) \n13\nCoding the “99 bottles of beer” app \n14\nPhrase-0-matic \n16\nFireside chat: compiler vs. JVM \n18\nExercises and puzzles \n20\nMethod Party()\n 0 aload_0\n 1 invokespe-\ncial #1 <Method \njava.lang.Object()>\n 4 return\nCompiled \nbytecode\n Virtual\nMachines\nChair Wars (Brad the 00 guy vs. Larry the procedural guy) \n28\nInheritance (an introduction) \n31\nOverriding methods (an introduction) \n32\nWhat’5 in a class? (methods, instance variables) \n34\nMaking your first object \n36\nUsing main() \n38\nGuessing Game code \n39\nExercises and puzzles \n42",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (118x131)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (168x184)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (173x173)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (517x364)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "x \nYou Bet\nShoot Me\n2\nA Trip to Objectville\n1 was told there would be objects. In Chapter 1, we put all of our code \nin the main() method. That’5 not exactly object-oriented. 50 now we’ve got to leave that \nprocedural world behind and start making some objects of our own. We’11 look at what \nmakes object-oriented (00) development in Java 50 much fun. We’11 look at the difference \nbetween a class and an object. We’11 look at how objects can improve your life.\n1\nBreaking the Surface\nJava takes you to new places. From its humble release to the public as the \n(wimpy) version 1.02, Java seduced programmers with its friendly syntax, object-oriented \nfeatures, memory management, and best of all—the promise of portability. We’11 take a quick \ndip and write some code, compile it, and run it. We’re talking syntax, loops, branching, and what \nmakes Java 50 cool. Dive in.\nThe way Java works \n2\nCode structure in Java \n7\nAnatomy of a class \n8\nThe main() method \n9\nLooping \n11\nConditional branching (if tests) \n13\nCoding the “99 bottles of beer” app \n14\nPhrase-0-matic \n16\nFireside chat: compiler vs. JVM \n18\nExercises and puzzles \n20\nMethod Party()\n 0 aload_0\n 1 invokespe-\ncial #1 <Method \njava.lang.Object()>\n 4 return\nCompiled \nbytecode\n Virtual\nMachines\nChair Wars (Brad the 00 guy vs. Larry the procedural guy) \n28\nInheritance (an introduction) \n31\nOverriding methods (an introduction) \n32\nWhat’5 in a class? (methods, instance variables) \n34\nMaking your first object \n36\nUsing main() \n38\nGuessing Game code \n39\nExercises and puzzles \n42",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 12,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 12,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1573 chars",
+      "severity": "info"
+    },
+    {
+      "page": 12,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 12,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

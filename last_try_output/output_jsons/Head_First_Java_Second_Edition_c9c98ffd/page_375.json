@@ -1,0 +1,67 @@
+{
+  "page_number": 375,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n341\nAnd you need FIVE steps:\n2\nMake a new Sequence\n3\nGet a new Track from the Sequence\n4\nFill the Track with MidiEvents and \ngive the Sequence to the Sequencer\n1\nGet a Sequencer and open it\nSequencer player = MidiSystem.getSequencer();\nplayer.open();\nSequence seq = new Sequence(timing,4);\nTrack t = seq.createTrack();\nt.add(myMidiEvent1);\nplayer.setSequence(seq);\nUh, hate to break it \nto you, but that’5 only \nFOUR steps.\nAhhhh. We \nforgot to push the \nPLAY button. You have to \nstart() the Sequencer!\nplayer.start();",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (268x485)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (441x485)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n341\nAnd you need FIVE steps:\n2\nMake a new Sequence\n3\nGet a new Track from the Sequence\n4\nFill the Track with MidiEvents and \ngive the Sequence to the Sequencer\n1\nGet a Sequencer and open it\nSequencer player = MidiSystem.getSequencer();\nplayer.open();\nSequence seq = new Sequence(timing,4);\nTrack t = seq.createTrack();\nt.add(myMidiEvent1);\nplayer.setSequence(seq);\nUh, hate to break it \nto you, but that’5 only \nFOUR steps.\nAhhhh. We \nforgot to push the \nPLAY button. You have to \nstart() the Sequencer!\nplayer.start();",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 375,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 375,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 553 chars",
+      "severity": "info"
+    },
+    {
+      "page": 375,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 375,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

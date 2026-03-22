@@ -1,0 +1,107 @@
+{
+  "page_number": 519,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n485\n BULLET POINTS\n \nClient and server applications communicate over a Socket \nconnection.\n \nA Socket represents a connection between two applications \nwhich may (or may not) be running on two different physical \nmachines.\n \nA client must know the IP address (or domain name) and \nTCP port number of the server application.\n \nA TCP port is a 16-bit unsigned number assigned to a \nspecific server application. TCP port numbers allow different \nclients to connect to the same machine but communicate \nwith different applications running on that machine.\n \nThe port numbers from 0 through 1023 are reserved for \n‘well-known services’ including HTTP, FTP, SMTP, etc.\n \nA client connects to a server by making a Server socket\nSocket 5 = new Socket(“127.0.0.1”, 4200);\n  Once connected, a client can get input and output streams \nfrom the socket. These are low-level ‘connection’ streams. \nsock.getInputStream(); \nsock.getOutputStream();\n \nTo read text data from the server, create a BufferedReader, \nchained to an InputStreamReader, which is chained to the \ninput stream from the Socket.\n \nInputStreamReader is a ‘bridge’ stream that takes in \nbytes and converts them to text (character) data. It’5 used \nprimarily to act as the middle chain between the high-level \nBufferedReader and the low-level Socket input stream.\n \nTo write text data to the server, create a PrintWriter chained \ndirectly to the Socket’5 output stream. Call the print() or \nprintln() methods to send Strings to the server.\n \nServers use a ServerSocket that waits for client requests on \na particular port number.\n \nWhen a ServerSocket gets a request, it ‘accepts’ the request \nby making a Socket connection with the client.\nbrain barbell\nBrain Barbell\nHow does the server know how to \ncommunicate with the client? \nThe client knows the IP address and port \nnumber of the server, but how is the server \nable to make a Socket connection with the \nclient (and make input and output streams)?\nThink about how / when / where the server \ngets knowledge about the client.\nthere are no\nDumb Questions\nQ: The advice server code on the opposite \npage has a VERY serious limitation—it looks \nlike it can handle only one client at a time!\nA:Yes, that’5 right. It can’t accept a request \nfrom a client until it has finished with the \ncurrent client and started the next iteration of \nthe infinite loop (where it sits at the accept() \ncall until a request comes in, at which time it \nmakes a Socket with the new client and starts \nthe process over again).\nQ: Let me rephrase the problem: how can \nyou make a server that can handle multiple \nclients concurrently??? This would never \nwork for a chat server, for instance.\nA:Ah, that’5 simple, really. Use separate \nthreads, and give each new client Socket to a \nnew thread. We’re just about to learn how to \ndo that!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "OINTS",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "1"
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "ni b a r ra",
+          "b e 1 in"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x139)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n485\n BULLET POINTS\n \nClient and server applications communicate over a Socket \nconnection.\n \nA Socket represents a connection between two applications \nwhich may (or may not) be running on two different physical \nmachines.\n \nA client must know the IP address (or domain name) and \nTCP port number of the server application.\n \nA TCP port is a 16-bit unsigned number assigned to a \nspecific server application. TCP port numbers allow different \nclients to connect to the same machine but communicate \nwith different applications running on that machine.\n \nThe port numbers from 0 through 1023 are reserved for \n‘well-known services’ including HTTP, FTP, SMTP, etc.\n \nA client connects to a server by making a Server socket\nSocket 5 = new Socket(“127.0.0.1”, 4200);\n  Once connected, a client can get input and output streams \nfrom the socket. These are low-level ‘connection’ streams. \nsock.getInputStream(); \nsock.getOutputStream();\n \nTo read text data from the server, create a BufferedReader, \nchained to an InputStreamReader, which is chained to the \ninput stream from the Socket.\n \nInputStreamReader is a ‘bridge’ stream that takes in \nbytes and converts them to text (character) data. It’5 used \nprimarily to act as the middle chain between the high-level \nBufferedReader and the low-level Socket input stream.\n \nTo write text data to the server, create a PrintWriter chained \ndirectly to the Socket’5 output stream. Call the print() or \nprintln() methods to send Strings to the server.\n \nServers use a ServerSocket that waits for client requests on \na particular port number.\n \nWhen a ServerSocket gets a request, it ‘accepts’ the request \nby making a Socket connection with the client.\nbrain barbell\nBrain Barbell\nHow does the server know how to \ncommunicate with the client? \nThe client knows the IP address and port \nnumber of the server, but how is the server \nable to make a Socket connection with the \nclient (and make input and output streams)?\nThink about how / when / where the server \ngets knowledge about the client.\nthere are no\nDumb Questions\nQ: The advice server code on the opposite \npage has a VERY serious limitation—it looks \nlike it can handle only one client at a time!\nA:Yes, that’5 right. It can’t accept a request \nfrom a client until it has finished with the \ncurrent client and started the next iteration of \nthe infinite loop (where it sits at the accept() \ncall until a request comes in, at which time it \nmakes a Socket with the new client and starts \nthe process over again).\nQ: Let me rephrase the problem: how can \nyou make a server that can handle multiple \nclients concurrently??? This would never \nwork for a chat server, for instance.\nA:Ah, that’5 simple, really. Use separate \nthreads, and give each new client Socket to a \nnew thread. We’re just about to learn how to \ndo that!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 519,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 519,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2873 chars",
+      "severity": "info"
+    },
+    {
+      "page": 519,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 519,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

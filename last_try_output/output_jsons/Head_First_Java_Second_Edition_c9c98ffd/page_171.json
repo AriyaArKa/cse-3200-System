@@ -1,0 +1,46 @@
+{
+  "page_number": 171,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n137\n1\nA plain old array has to know its \nsize at the time it’5 created. \nBut for ArrayList, you just make an object of \ntype ArrayList. Every time. It never needs to \nknow how big it should be, because it grows \nand shrinks as objects are added or removed.\n2\nTo put an object in a regular array, \nyou must assign it to a specific \nlocation.\n(An index from 0 to one less than the length of \nthe array.) \nmyList[1] = b;\nIf that index is outside the boundaries of the \narray (like, the array was declared with a size of \n2, and now you’re trying to assign something \nto index 3), it blows up at runtime.\nWith ArrayList, you can specify an index us-\ning the add(anInt, anObject) method, or you \ncan just keep saying add(anObject) and the \nArrayList will keep growing to make room for \nthe new thing.\nmyList.add(b);\n3\nArrays use array syntax that’5 not \nused anywhere else in Java.\nBut ArrayLists are plain old Java objects, 50 \nthey have no special syntax. \nmyList[1]\n4\nnew String[2]\nnew ArrayList<String>()\nNeeds a size.\nNo size required (although you can \ngive it a size if you want to).\nComparing ArrayList to a regular array\nNeeds an index.\nNo index.\nArrayLists in Java 5.0 are \nparameterized.\nWe just said that unlike arrays, ArrayLists \nhave no special syntax. But they do use \nsomething special that was added to Java 5.0 \nTiger—parameterized types. \nArrayList<String>\nPrior to Java 5.0, there was no way to declare \nthe type of things that would go in the \nArrayList, 50 to the compiler, all ArrayLists \nwere simply heterogenous collections of \nobjects. But now, using the <typeGoesHere> \nsyntax, we can declare and create an \nArrayList that knows (and restricts) the \ntypes of objects it can hold. We’11 look at the \ndetails of parameterized types in ArrayLists \nin the Collections chapter, 50 for now, don’t \nthink too much about the angle bracket <> \nsyntax you see when we use ArrayLists. Just \nknow that it’5 a way to force the compiler to \nallow only a specific type of object (the type in \nangle brackets) in the ArrayList. \nThe array brackets [ ] are special \nsyntax used only for arrays.\nThe <String> in angle brackets is a “type \nparameter”. ArrayList<String> means simply “a \nlist of Strings”, as opposed to ArrayList<Dog> \nwhich means, “a list of Dogs”.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "get to know the Java API \nyou are here\n137\n1\nA plain old array has to know its \nsize at the time it’5 created. \nBut for ArrayList, you just make an object of \ntype ArrayList. Every time. It never needs to \nknow how big it should be, because it grows \nand shrinks as objects are added or removed.\n2\nTo put an object in a regular array, \nyou must assign it to a specific \nlocation.\n(An index from 0 to one less than the length of \nthe array.) \nmyList[1] = b;\nIf that index is outside the boundaries of the \narray (like, the array was declared with a size of \n2, and now you’re trying to assign something \nto index 3), it blows up at runtime.\nWith ArrayList, you can specify an index us-\ning the add(anInt, anObject) method, or you \ncan just keep saying add(anObject) and the \nArrayList will keep growing to make room for \nthe new thing.\nmyList.add(b);\n3\nArrays use array syntax that’5 not \nused anywhere else in Java.\nBut ArrayLists are plain old Java objects, 50 \nthey have no special syntax. \nmyList[1]\n4\nnew String[2]\nnew ArrayList<String>()\nNeeds a size.\nNo size required (although you can \ngive it a size if you want to).\nComparing ArrayList to a regular array\nNeeds an index.\nNo index.\nArrayLists in Java 5.0 are \nparameterized.\nWe just said that unlike arrays, ArrayLists \nhave no special syntax. But they do use \nsomething special that was added to Java 5.0 \nTiger—parameterized types. \nArrayList<String>\nPrior to Java 5.0, there was no way to declare \nthe type of things that would go in the \nArrayList, 50 to the compiler, all ArrayLists \nwere simply heterogenous collections of \nobjects. But now, using the <typeGoesHere> \nsyntax, we can declare and create an \nArrayList that knows (and restricts) the \ntypes of objects it can hold. We’11 look at the \ndetails of parameterized types in ArrayLists \nin the Collections chapter, 50 for now, don’t \nthink too much about the angle bracket <> \nsyntax you see when we use ArrayLists. Just \nknow that it’5 a way to force the compiler to \nallow only a specific type of object (the type in \nangle brackets) in the ArrayList. \nThe array brackets [ ] are special \nsyntax used only for arrays.\nThe <String> in angle brackets is a “type \nparameter”. ArrayList<String> means simply “a \nlist of Strings”, as opposed to ArrayList<Dog> \nwhich means, “a list of Dogs”.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 171,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 171,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2312 chars",
+      "severity": "info"
+    },
+    {
+      "page": 171,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

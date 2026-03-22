@@ -1,0 +1,116 @@
+{
+  "page_number": 26,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "how to use this book\nxxiv \nintro\n50 what does it take to learn something? First, you have to get it, then make sure \nyou don’t forget it. It’5 not about pushing facts into your head. Based on the \nlatest research in cognitive science, neurobiology, and educational psychology, \nlearning takes a lot more than text on a page. We know what turns your brain on.\nSome of the Head First learning principles:\nMake it visual. Images are far more memorable than words \nalone, and make learning much more effective (Up to 89% \nimprovement in recall and transfer studies). It also makes \nthings more understandable. Put the words within \nor near the graphics they relate to, rather than on the \nbottom or on another page, and learners will be up to twice \nas likely to solve problems related to the content. \nUse a conversational and personalized style. In recent studies, \nstudents performed up to 40% better on post-learning tests if the content spoke \ndirectly to the reader, using a first-person, conversational style rather than taking \na formal tone. Tell stories instead of lecturing. Use casual language. Don’t take \nyourself too seriously. Which would you pay more attention to: a stimulating \ndinner party companion, or a lecture?\nGet the learner to think more deeply. In other words, unless \nyou actively flex your neurons, nothing much happens in your head. \nA reader has to be motivated, engaged, curious, and inspired to \nsolve problems, draw conclusions, and generate new knowledge. \nAnd for that, you need challenges, exercises, and thought-\nprovoking questions, and activities that involve both sides \nof the brain, and multiple senses.\nGet—and keep—the reader’5 attention. We’ve all \nhad the “1 really want to learn this but 1 can’t stay awake past \npage one” experience. Your brain pays attention to things that are out \nof the ordinary, interesting, strange, eye-catching, unexpected. Learning a new, \ntough, technical topic doesn’t have to be boring. Your brain will learn much more quickly if it’5 not.\nTouch their emotions. We now know that your ability to remember something is largely \ndependent on its emotional content. You remember what you care about. You remember when \nyou feel something. No we’re not talking heart-wrenching stories about a boy and his dog. \nWe’re talking emotions like surprise, curiosity, fun, “what the...?” , and the feeling of “1 Rule!” \nthat comes when you solve a puzzle, learn something everybody else thinks is hard, or realize \nyou know something that “1’m more technical than thou” Bob from engineering doesn’t. \nWe think of a “Head First Java” reader as a learner.\ndoCalc()\nreturn value\nneeds to call a \nmethod on the \nserver\nRMI remote \nservice\nIt really sucks to be an \nabstract method. You \ndon’t have a body.\n abstract void roam();\nNo method body! \nEnd it with a semicolon.\nDoes it make sense to \nsay Tub 15-A Bathroom? \nBathroom 15-A Tub? Or is \nit a HAS-A relationship?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x141)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (192x195)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x80)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (26x27)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (68x142)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (174x166)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (51x51)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (147x241)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 9,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (189x232)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "how to use this book\nxxiv \nintro\n50 what does it take to learn something? First, you have to get it, then make sure \nyou don’t forget it. It’5 not about pushing facts into your head. Based on the \nlatest research in cognitive science, neurobiology, and educational psychology, \nlearning takes a lot more than text on a page. We know what turns your brain on.\nSome of the Head First learning principles:\nMake it visual. Images are far more memorable than words \nalone, and make learning much more effective (Up to 89% \nimprovement in recall and transfer studies). It also makes \nthings more understandable. Put the words within \nor near the graphics they relate to, rather than on the \nbottom or on another page, and learners will be up to twice \nas likely to solve problems related to the content. \nUse a conversational and personalized style. In recent studies, \nstudents performed up to 40% better on post-learning tests if the content spoke \ndirectly to the reader, using a first-person, conversational style rather than taking \na formal tone. Tell stories instead of lecturing. Use casual language. Don’t take \nyourself too seriously. Which would you pay more attention to: a stimulating \ndinner party companion, or a lecture?\nGet the learner to think more deeply. In other words, unless \nyou actively flex your neurons, nothing much happens in your head. \nA reader has to be motivated, engaged, curious, and inspired to \nsolve problems, draw conclusions, and generate new knowledge. \nAnd for that, you need challenges, exercises, and thought-\nprovoking questions, and activities that involve both sides \nof the brain, and multiple senses.\nGet—and keep—the reader’5 attention. We’ve all \nhad the “1 really want to learn this but 1 can’t stay awake past \npage one” experience. Your brain pays attention to things that are out \nof the ordinary, interesting, strange, eye-catching, unexpected. Learning a new, \ntough, technical topic doesn’t have to be boring. Your brain will learn much more quickly if it’5 not.\nTouch their emotions. We now know that your ability to remember something is largely \ndependent on its emotional content. You remember what you care about. You remember when \nyou feel something. No we’re not talking heart-wrenching stories about a boy and his dog. \nWe’re talking emotions like surprise, curiosity, fun, “what the...?” , and the feeling of “1 Rule!” \nthat comes when you solve a puzzle, learn something everybody else thinks is hard, or realize \nyou know something that “1’m more technical than thou” Bob from engineering doesn’t. \nWe think of a “Head First Java” reader as a learner.\ndoCalc()\nreturn value\nneeds to call a \nmethod on the \nserver\nRMI remote \nservice\nIt really sucks to be an \nabstract method. You \ndon’t have a body.\n abstract void roam();\nNo method body! \nEnd it with a semicolon.\nDoes it make sense to \nsay Tub 15-A Bathroom? \nBathroom 15-A Tub? Or is \nit a HAS-A relationship?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 26,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 26,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2946 chars",
+      "severity": "info"
+    },
+    {
+      "page": 26,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 9",
+      "severity": "info"
+    },
+    {
+      "page": 26,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

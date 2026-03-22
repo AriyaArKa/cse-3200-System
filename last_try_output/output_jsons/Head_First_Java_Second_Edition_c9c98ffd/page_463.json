@@ -1,0 +1,74 @@
+{
+  "page_number": 463,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "this is a new chapter\n429\n14 serialization and file 1/0\nObjects can be flattened and inflated. Objects have state and behavior. \nBehavior lives in the class, but state lives within each individual object. 50 what happens when \nit’5 time to save the state of an object? If you’re writing a game, you’re gonna need a Save/\nRestore Game feature. If you’re writing an app that creates charts, you’re gonna need a Save/\nOpen File feature. If your program needs to save state, you can do it the hard way, interrogating \neach object, then painstakingly writing the value of each instance variable to a file, in a \nformat you create. Or, you can do it the easy 00 way—you simply freeze-dry/flatten/persist/\ndehydrate the object itself, and reconstitute/inflate/restore/rehydrate it to get it back. But you’11 \nstill have to do it the hard way sometimes, especially when the file your app saves has to be read \nby some other non-Java application, 50 we’11 look at both in this chapter.\nIf 1 have to read \none more file full of \ndata, 1 think 1’11 have to kill him. He \nknows 1 can save whole objects, but \ndoes he let me? NO, that would be \ntoo easy. Well, we’11 just see how \nhe feels after 1...\nSaving Objects",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (887x704)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "this is a new chapter\n429\n14 serialization and file 1/0\nObjects can be flattened and inflated. Objects have state and behavior. \nBehavior lives in the class, but state lives within each individual object. 50 what happens when \nit’5 time to save the state of an object? If you’re writing a game, you’re gonna need a Save/\nRestore Game feature. If you’re writing an app that creates charts, you’re gonna need a Save/\nOpen File feature. If your program needs to save state, you can do it the hard way, interrogating \neach object, then painstakingly writing the value of each instance variable to a file, in a \nformat you create. Or, you can do it the easy 00 way—you simply freeze-dry/flatten/persist/\ndehydrate the object itself, and reconstitute/inflate/restore/rehydrate it to get it back. But you’11 \nstill have to do it the hard way sometimes, especially when the file your app saves has to be read \nby some other non-Java application, 50 we’11 look at both in this chapter.\nIf 1 have to read \none more file full of \ndata, 1 think 1’11 have to kill him. He \nknows 1 can save whole objects, but \ndoes he let me? NO, that would be \ntoo easy. Well, we’11 just see how \nhe feels after 1...\nSaving Objects",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 463,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 463,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1205 chars",
+      "severity": "info"
+    },
+    {
+      "page": 463,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 463,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

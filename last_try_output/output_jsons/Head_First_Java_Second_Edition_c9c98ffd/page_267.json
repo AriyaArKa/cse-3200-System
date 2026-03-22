@@ -1,0 +1,60 @@
+{
+  "page_number": 267,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "interfaces and polymorphism\nyou are here\n233\n(interface)\nVinn\npublic abstract class Top { }\npublic class Tip extends Top { }\nWhat’5 the Declaration ?\nWhat’5 the Picture ?\n2)\n3)\n4)\n5)\nFluffie\n(interface)\nEpsilon\n(interface)\nBeta\n(interface)\nWhuffie\nVout\nMuffie\nBoop\nGoop\nAlpha\nZoop\nDelta\nGamma\npublic abstract class Fee { }\npublic abstract class Fi extends Fee { }\npublic interface Foo { }\npublic class Bar implements Foo { }\npublic class Baz extends Bar { }\npublic interface Zeta { }\npublic class Alpha implements Zeta { }\npublic interface Beta { }\npublic class Delta extends Alpha implements Beta { }\n2)\n3)\n4)\n5)\n Exercise Solutions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (145x122)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "interfaces and polymorphism\nyou are here\n233\n(interface)\nVinn\npublic abstract class Top { }\npublic class Tip extends Top { }\nWhat’5 the Declaration ?\nWhat’5 the Picture ?\n2)\n3)\n4)\n5)\nFluffie\n(interface)\nEpsilon\n(interface)\nBeta\n(interface)\nWhuffie\nVout\nMuffie\nBoop\nGoop\nAlpha\nZoop\nDelta\nGamma\npublic abstract class Fee { }\npublic abstract class Fi extends Fee { }\npublic interface Foo { }\npublic class Bar implements Foo { }\npublic class Baz extends Bar { }\npublic interface Zeta { }\npublic class Alpha implements Zeta { }\npublic interface Beta { }\npublic class Delta extends Alpha implements Beta { }\n2)\n3)\n4)\n5)\n Exercise Solutions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 267,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 267,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 636 chars",
+      "severity": "info"
+    },
+    {
+      "page": 267,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 267,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

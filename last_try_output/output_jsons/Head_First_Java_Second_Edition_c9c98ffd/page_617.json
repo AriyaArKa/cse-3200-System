@@ -1,0 +1,67 @@
+{
+  "page_number": 617,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "package, jars and deployment\nyou are here\n583\nImagine this scenario...\nBob’5 happily at work on the final pieces of his cool new \nJava program. After weeks of being in the “1’m-just-one-\ncompile-away” mode, this time he’5 really done. \nThe program is a fairly sophisticated GUI app, \nbut since the bulk of it is Swing code, he’5 \nmade only nine classes of his own.\nAt last, it’5 time to deliver the program to the \nclient. He figures all he has to do is copy the \nnine class files, since the client already has the \nJava API installed. He starts by doing an 15 \non the directory where all his files are...\nWhoa! Something strange has happened. Instead of 18 \nfiles (nine source code files and nine compiled class \nfiles), he sees 31 files, many of which have very strange \nnames like:\nAccount$FileListener.class\nChart$SaveListener.class\nand on it goes. He had completely forgotten \nthat the compiler has to generate class files \nfor all those inner class GUI event listeners \nhe made, and that’5 what all the strangely-\nnamed classes are.\n Now he has to carefully extract all the class \nfiles he needs. If he leaves even one of them out, \nhis program won’t work. But it’5 tricky since he \ndoesn’t want to accidentally send the client \none of his source code files, yet everything is \nin the same directory in one big mess.\nWhat the... ?\nIt’5 \nfinally done!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (430x445)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (410x503)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "package, jars and deployment\nyou are here\n583\nImagine this scenario...\nBob’5 happily at work on the final pieces of his cool new \nJava program. After weeks of being in the “1’m-just-one-\ncompile-away” mode, this time he’5 really done. \nThe program is a fairly sophisticated GUI app, \nbut since the bulk of it is Swing code, he’5 \nmade only nine classes of his own.\nAt last, it’5 time to deliver the program to the \nclient. He figures all he has to do is copy the \nnine class files, since the client already has the \nJava API installed. He starts by doing an 15 \non the directory where all his files are...\nWhoa! Something strange has happened. Instead of 18 \nfiles (nine source code files and nine compiled class \nfiles), he sees 31 files, many of which have very strange \nnames like:\nAccount$FileListener.class\nChart$SaveListener.class\nand on it goes. He had completely forgotten \nthat the compiler has to generate class files \nfor all those inner class GUI event listeners \nhe made, and that’5 what all the strangely-\nnamed classes are.\n Now he has to carefully extract all the class \nfiles he needs. If he leaves even one of them out, \nhis program won’t work. But it’5 tricky since he \ndoesn’t want to accidentally send the client \none of his source code files, yet everything is \nin the same directory in one big mess.\nWhat the... ?\nIt’5 \nfinally done!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 617,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 617,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1359 chars",
+      "severity": "info"
+    },
+    {
+      "page": 617,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 617,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

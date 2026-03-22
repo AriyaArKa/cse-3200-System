@@ -1,0 +1,46 @@
+{
+  "page_number": 599,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n565\nWhat you MUST know about TreeSet...\nimport java.util.*;\npublic class TestTree {\n public static void main (String[] args) {\n new TestTree().go();\n }\n public void go() {\n Book b1 = new Book(“How Cats Work”);\n Book b2 = new Book(“Remix your Body”);\n Book b3 = new Book(“Finding Emo”);\n \n TreeSet<Book> tree = new TreeSet<Book>();\n tree.add(b1);\n tree.add(b2);\n tree.add(b3);\n System.out.println(tree);\n }\n}\nclass Book {\n String title;\n public Book(String t) {\n title = t;\n }\n}\nSharpen your pencil\nLook at this code. \nRead it carefully, then \nanswer the questions \nbelow. (Note: there \nare no syntax errors in \nthis code.)\n1). What is the result when you compile this code?\n2). If it compiles, what is the result when you run the TestTree class?\n3). If there is a problem (either compile-time or runtime) with this code, how would you fix it?\nTreeSet looks easy, but make sure you really understand what you need to \ndo to use it. We thought it was 50 important that we made it an exercise 50 \nyou’d have to think about it. Do NOT turn the page until you’ve done this. \nWe mean it.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n565\nWhat you MUST know about TreeSet...\nimport java.util.*;\npublic class TestTree {\n public static void main (String[] args) {\n new TestTree().go();\n }\n public void go() {\n Book b1 = new Book(“How Cats Work”);\n Book b2 = new Book(“Remix your Body”);\n Book b3 = new Book(“Finding Emo”);\n \n TreeSet<Book> tree = new TreeSet<Book>();\n tree.add(b1);\n tree.add(b2);\n tree.add(b3);\n System.out.println(tree);\n }\n}\nclass Book {\n String title;\n public Book(String t) {\n title = t;\n }\n}\nSharpen your pencil\nLook at this code. \nRead it carefully, then \nanswer the questions \nbelow. (Note: there \nare no syntax errors in \nthis code.)\n1). What is the result when you compile this code?\n2). If it compiles, what is the result when you run the TestTree class?\n3). If there is a problem (either compile-time or runtime) with this code, how would you fix it?\nTreeSet looks easy, but make sure you really understand what you need to \ndo to use it. We thought it was 50 important that we made it an exercise 50 \nyou’d have to think about it. Do NOT turn the page until you’ve done this. \nWe mean it.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 599,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 599,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1182 chars",
+      "severity": "info"
+    },
+    {
+      "page": 599,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

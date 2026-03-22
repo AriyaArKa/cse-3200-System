@@ -1,0 +1,74 @@
+{
+  "page_number": 3,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Foreword\nThe launch of the Global Cooperation Barometer \ncomes at the start of a crucial year, amid a period \nof immense geopolitical, geo-economic and market \nuncertainty, when the bedrock of what was once a \nstable global system is shifting underfoot. Leaders \nin the public and private sectors will need to gain \nfluency in the dynamics driving the changes to not \njust stabilize their position, but to be equipped to \nshape a beneficial future. \nIt is no secret that the current global context is \nconcerning, as heightened competition and conflict \nappear to be replacing cooperation. The result is \nthat new power dynamics, changing demographic \nrealities and breakthrough frontier technologies are \nraising the temperature on long-simmering distrust \nrather than fueling opportunities for benefit. Many \nbusinesses are responding to these complicated – \nand often fraught – geopolitical developments by \nshifting operations and facilities closer to home. \nYet, although the world is heading towards a \ndangerous divide by some measures, elsewhere \nthere are prospects for and progress on cooperative \narrangements. For instance, for the first time since \ncountries began meeting to address global warming, \nan agreement was reached at the COP28 climate \nchange conference on transitioning away from \nfossil fuels.\nThat cooperation and confrontation can coexist \nshould not come as a surprise. History is replete \nwith parties at odds with one another, but still \nseeking opportunities for collaboration. Notably, \nat the height of the Cold War, the United States \nand the Soviet Union coordinated on eradicating \nsmallpox and addressing the ozone layer in the \natmosphere. And many companies that compete \nwith one another also find ways to cooperate in \nareas of mutual benefit. \nIt is within today’5 complex geopolitical context that \ngaining an understanding of the shape of global \ncooperation – and competition – is vital. Leaders \nin business and government will need to recognize \nwhere the contours of opposition end and those \nof alignment begin to navigate through the \ngeopolitical turbulence and also to shape a more \ncooperative future. \nIt is for this reason that the World Economic \nForum and McKinsey & Company developed the \nGlobal Cooperation Barometer. The purpose of \nthis analysis, which uses 42 indicators to measure \nthe state of global cooperation broadly and along \nfive areas, is to help stakeholders in business and \ngovernment gain a better understanding of the \nnature of cooperation that is, or is not, taking place.\nOur hope is that the Global Cooperation Barometer \nwill offer stakeholders a tool to use in shaping a \nhealthier, more prosperous and more sustainable \nworld in the year ahead and beyond. \nBørge Brende \nPresident, \n \nWorld Economic Forum\nBob Sternfels \nGlobal Managing Partner, \nMcKinsey & Company\nThe Global Cooperation \nBarometer 2024\nJanuary 2024\n Leaders in \nbusiness and \ngovernment will \nneed to recognize \nwhere the contours \nof opposition \nend and those of \nalignment begin to \nnavigate through \nthe geopolitical \nturbulence and \nalso to shape a \nmore cooperative \nfuture.\nThe Global Cooperation Barometer 2024\n3",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (188x190)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x188)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (189x188)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "Foreword\nThe launch of the Global Cooperation Barometer \ncomes at the start of a crucial year, amid a period \nof immense geopolitical, geo-economic and market \nuncertainty, when the bedrock of what was once a \nstable global system is shifting underfoot. Leaders \nin the public and private sectors will need to gain \nfluency in the dynamics driving the changes to not \njust stabilize their position, but to be equipped to \nshape a beneficial future. \nIt is no secret that the current global context is \nconcerning, as heightened competition and conflict \nappear to be replacing cooperation. The result is \nthat new power dynamics, changing demographic \nrealities and breakthrough frontier technologies are \nraising the temperature on long-simmering distrust \nrather than fueling opportunities for benefit. Many \nbusinesses are responding to these complicated – \nand often fraught – geopolitical developments by \nshifting operations and facilities closer to home. \nYet, although the world is heading towards a \ndangerous divide by some measures, elsewhere \nthere are prospects for and progress on cooperative \narrangements. For instance, for the first time since \ncountries began meeting to address global warming, \nan agreement was reached at the COP28 climate \nchange conference on transitioning away from \nfossil fuels.\nThat cooperation and confrontation can coexist \nshould not come as a surprise. History is replete \nwith parties at odds with one another, but still \nseeking opportunities for collaboration. Notably, \nat the height of the Cold War, the United States \nand the Soviet Union coordinated on eradicating \nsmallpox and addressing the ozone layer in the \natmosphere. And many companies that compete \nwith one another also find ways to cooperate in \nareas of mutual benefit. \nIt is within today’5 complex geopolitical context that \ngaining an understanding of the shape of global \ncooperation – and competition – is vital. Leaders \nin business and government will need to recognize \nwhere the contours of opposition end and those \nof alignment begin to navigate through the \ngeopolitical turbulence and also to shape a more \ncooperative future. \nIt is for this reason that the World Economic \nForum and McKinsey & Company developed the \nGlobal Cooperation Barometer. The purpose of \nthis analysis, which uses 42 indicators to measure \nthe state of global cooperation broadly and along \nfive areas, is to help stakeholders in business and \ngovernment gain a better understanding of the \nnature of cooperation that is, or is not, taking place.\nOur hope is that the Global Cooperation Barometer \nwill offer stakeholders a tool to use in shaping a \nhealthier, more prosperous and more sustainable \nworld in the year ahead and beyond. \nBørge Brende \nPresident, \n \nWorld Economic Forum\nBob Sternfels \nGlobal Managing Partner, \nMcKinsey & Company\nThe Global Cooperation \nBarometer 2024\nJanuary 2024\n Leaders in \nbusiness and \ngovernment will \nneed to recognize \nwhere the contours \nof opposition \nend and those of \nalignment begin to \nnavigate through \nthe geopolitical \nturbulence and \nalso to shape a \nmore cooperative \nfuture.\nThe Global Cooperation Barometer 2024\n3",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 3,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 3,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3183 chars",
+      "severity": "info"
+    },
+    {
+      "page": 3,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 3,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

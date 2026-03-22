@@ -1,0 +1,259 @@
+{
+  "page_number": 208,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "174 \nchapter 7\nFinish the class hierarchy\nAnimal\nFeline\nroam()\nCanine\nsize\npicture\nfood\nprey\nLion\nsize\npicture\nfood\nprey\nTiger\nsize\npicture\nfood\nprey\nCat\nsize\npicture\nfood\nprey\nWolf\nsize\npicture\nfood\nprey\nDog\nSince animals already have an organizational \nhierarchy (the whole kingdom, genus, phylum \nthing), we can use the level that makes the most \nsense for class design. We’11 use the biological \n“families” to organize the animals by making a \nFeline class and a Canine class.\nWe decide that Canines could use a common \nroam() method, because they tend to move in \npacks. We also see that Felines could use a \ncommon roam() method, because they tend to \navoid others of their own kind. We’11 let Hippo \ncontinue to use its inherited roam() method—\nthe generic one it gets from Animal. \n50 we’re done with the design for now; we’11 \ncome back to it later in the chapter.\n5\nsize\npicture\nfood\nprey\nHippo\nmakeNoise()\neat()\nroam()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()\ndesigning for inheritance",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "picture\nfood\nhunger\nboundaries\nlocation"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          "Feline"
+        ],
+        [
+          ""
+        ],
+        [
+          "roam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          "Canine"
+        ],
+        [
+          ""
+        ],
+        [
+          "roam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Hippo"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "Lion",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Lion",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "size",
+          ""
+        ],
+        [
+          "picture\nfood\nmakeNoise()\nprey\neat()",
+          "picture",
+          ""
+        ],
+        [
+          "",
+          "food\nmakeNoise()\nprey\neat()",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Dog"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          "Cat"
+        ],
+        [
+          "Tiger\nsize\npicture\nfmooakdeNoise()\nperaet(y)",
+          "size\npicture"
+        ],
+        [
+          "",
+          "mfoaokdeNoise()\neparet(y)"
+        ]
+      ]
+    },
+    {
+      "table_id": 8,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Tiger"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "fmooakdeNoise()\nperaet(y)"
+        ]
+      ]
+    },
+    {
+      "table_id": 9,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Wolf"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x93)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x109)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (193x91)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x110)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "174 \nchapter 7\nFinish the class hierarchy\nAnimal\nFeline\nroam()\nCanine\nsize\npicture\nfood\nprey\nLion\nsize\npicture\nfood\nprey\nTiger\nsize\npicture\nfood\nprey\nCat\nsize\npicture\nfood\nprey\nWolf\nsize\npicture\nfood\nprey\nDog\nSince animals already have an organizational \nhierarchy (the whole kingdom, genus, phylum \nthing), we can use the level that makes the most \nsense for class design. We’11 use the biological \n“families” to organize the animals by making a \nFeline class and a Canine class.\nWe decide that Canines could use a common \nroam() method, because they tend to move in \npacks. We also see that Felines could use a \ncommon roam() method, because they tend to \navoid others of their own kind. We’11 let Hippo \ncontinue to use its inherited roam() method—\nthe generic one it gets from Animal. \n50 we’re done with the design for now; we’11 \ncome back to it later in the chapter.\n5\nsize\npicture\nfood\nprey\nHippo\nmakeNoise()\neat()\nroam()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()\ndesigning for inheritance",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 208,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 208,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1120 chars",
+      "severity": "info"
+    },
+    {
+      "page": 208,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 208,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

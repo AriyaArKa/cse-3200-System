@@ -1,0 +1,60 @@
+{
+  "page_number": 24,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "how to use this book\nxxii \nintro\nWho is this book for?\n1\nHave you done some programming?\n2\nDo you want to learn Java?\nthis book is for you.\nWho should probably back away from this book?\n1\n15 your programming background limited \nto HTML only, with no scripting language \nexperience?\n(If you’ve done anything with looping, or if/then logic, \nyou’11 do fine with this book, but HTML tagging \nalone might not be enough.)\n3\nthis book is not for you.\nAre you afraid to try something different? \nWould you rather have a root canal than \nmix stripes with plaid? Do you believe \nthat a technical book can’t be serious if \nthere’5 a picture of a duck in the memory \nmanagement section?\nIf you can answer “yes” to all of these:\nIf you can answer “yes” to any one of these:\n2\nAre you a kick-butt C++ programmer \nlooking for a reference book?\n[note from marketing: who took out the part about how \nthis book is for anyone with a valid credit card? And what \nabout that “Give the Gift of Java” holiday promotion we \ndiscussed... -Fred]\n3\nDo you prefer stimulating dinner party \nconversation to dry, dull, technical \nlectures?\nThis is NOT a reference \nbook. Head First Java is a \nbook designed for learning, \nnot an encyclopedia of \nJava facts.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (469x325)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "how to use this book\nxxii \nintro\nWho is this book for?\n1\nHave you done some programming?\n2\nDo you want to learn Java?\nthis book is for you.\nWho should probably back away from this book?\n1\n15 your programming background limited \nto HTML only, with no scripting language \nexperience?\n(If you’ve done anything with looping, or if/then logic, \nyou’11 do fine with this book, but HTML tagging \nalone might not be enough.)\n3\nthis book is not for you.\nAre you afraid to try something different? \nWould you rather have a root canal than \nmix stripes with plaid? Do you believe \nthat a technical book can’t be serious if \nthere’5 a picture of a duck in the memory \nmanagement section?\nIf you can answer “yes” to all of these:\nIf you can answer “yes” to any one of these:\n2\nAre you a kick-butt C++ programmer \nlooking for a reference book?\n[note from marketing: who took out the part about how \nthis book is for anyone with a valid credit card? And what \nabout that “Give the Gift of Java” holiday promotion we \ndiscussed... -Fred]\n3\nDo you prefer stimulating dinner party \nconversation to dry, dull, technical \nlectures?\nThis is NOT a reference \nbook. Head First Java is a \nbook designed for learning, \nnot an encyclopedia of \nJava facts.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 24,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 24,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1232 chars",
+      "severity": "info"
+    },
+    {
+      "page": 24,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 24,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

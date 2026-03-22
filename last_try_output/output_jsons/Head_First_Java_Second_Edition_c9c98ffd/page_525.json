@@ -1,0 +1,74 @@
+{
+  "page_number": 525,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n491\nWhat does it mean to have more than \none call stack?\nWith more than one call stack, you get the appearance of having \nmultiple things happen at the same time. In reality, only a true \nmultiprocessor system can actually do more than one thing at a \ntime, but with Java threads, it can appear that you’re doing several \nthings simultaneously. In other words, execution can move back \nand forth between stacks 50 rapidly that you feel as though all stacks \nare executing at the same time. Remember, Java is just a process \nrunning on your underlying 05. 50 first, Java itself has to be ‘the \ncurrently executing process’ on the 05. But once Java gets its \nturn to execute, exactly what does the JVM run? Which bytecodes \nexecute? Whatever is on the top of the currently-running stack! \nAnd in 100 milliseconds, the currently executing code might switch \nto a different method on a different stack. \nOne of the things a thread must do is keep track of which statement \n(of which method) is currently executing on the thread’5 stack. \nIt might look something like this:\npublic static void main(String[] args) {\n... \n} \n1\nThe JVM calls the main() method.\nmain()\nRunnable r = new MyThreadJob();\nThread t = new Thread(r);\nt.start();\nDog d = new Dog();\n \n2\nmain() starts a new thread. The main \nthread is temporarily frozen while the new \nthread starts running.\n3\nThe JVM switches between the new \nthread (user thread A) and the original \nmain thread, until both threads complete.\nmain thread\nmain thread\nrun()\nuser thread A\nmain()\nt.start()\nthe active thread\na new thread starts \nand becomes the active \nthread\nmain thread\nmain()\nDog()\nuser thread A\nrun()\nx.go()\nyou’11 learn what \nthis means in just \na moment...\nthe active thread again",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (285x85)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (277x138)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (277x138)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n491\nWhat does it mean to have more than \none call stack?\nWith more than one call stack, you get the appearance of having \nmultiple things happen at the same time. In reality, only a true \nmultiprocessor system can actually do more than one thing at a \ntime, but with Java threads, it can appear that you’re doing several \nthings simultaneously. In other words, execution can move back \nand forth between stacks 50 rapidly that you feel as though all stacks \nare executing at the same time. Remember, Java is just a process \nrunning on your underlying 05. 50 first, Java itself has to be ‘the \ncurrently executing process’ on the 05. But once Java gets its \nturn to execute, exactly what does the JVM run? Which bytecodes \nexecute? Whatever is on the top of the currently-running stack! \nAnd in 100 milliseconds, the currently executing code might switch \nto a different method on a different stack. \nOne of the things a thread must do is keep track of which statement \n(of which method) is currently executing on the thread’5 stack. \nIt might look something like this:\npublic static void main(String[] args) {\n... \n} \n1\nThe JVM calls the main() method.\nmain()\nRunnable r = new MyThreadJob();\nThread t = new Thread(r);\nt.start();\nDog d = new Dog();\n \n2\nmain() starts a new thread. The main \nthread is temporarily frozen while the new \nthread starts running.\n3\nThe JVM switches between the new \nthread (user thread A) and the original \nmain thread, until both threads complete.\nmain thread\nmain thread\nrun()\nuser thread A\nmain()\nt.start()\nthe active thread\na new thread starts \nand becomes the active \nthread\nmain thread\nmain()\nDog()\nuser thread A\nrun()\nx.go()\nyou’11 learn what \nthis means in just \na moment...\nthe active thread again",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 525,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 525,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1773 chars",
+      "severity": "info"
+    },
+    {
+      "page": 525,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 525,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

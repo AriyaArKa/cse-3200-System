@@ -1,0 +1,59 @@
+{
+  "page_number": 536,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "502 \nchapter 15\nUsing sleep to make our program \nmore predictable.\nRemember our earlier example that kept giving us different \nresults each time we ran it? Look back and study the code \nand the sample output. Sometimes main had to wait until the \nnew thread finished (and printed “top 0’ the stack”), while \nother times the new thread would be sent back to runnable \nbefore it was finished, allowing the main thread to come back \nin and print out “back in main”. How can we fix that? Stop \nfor a moment and answer this question: “Where can you put \na sleep() call, to make sure that “back in main” always prints \nbefore “top 0’ the stack”?\nWe’11 wait while you work out an answer (there’5 more than \none answer that would work).\nFigure it out? \npublic class MyRunnable implements Runnable {\n public void run() {\n go();\n }\n public void go() {\n try {\n Thread.sleep(2000);\n } catch(InterruptedException ex) {\n ex.printStackTrace();\n }\n \n doMore(); \n }\n public void doMore() {\n System.out.println(“top 0’ the stack”);\n }\n}\nclass ThreadTestDrive {\n public static void main (String[] args) {\n Runnable theJob = new MyRunnable();\n Thread t = new Thread(theJob);\n t.start();\n System.out.println(“back in main”);\n }\n}\nCalling sleep here will force the new \nthread to leave the currently-running \nstate!\nThe main thread will become the \ncurrently-running thread again, and print \nout “back in main”. Then there will be a \npause (for about two seconds) before we \nget to this line, which calls doMore() and \nprints out “top 0’ the stack”\nFile Edit Window Help SnoozeButton \n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\nThis is what we want—a consistent order \nof print statements:\nusing Thread.sleep()",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help SnoozeButton"
+        ],
+        [
+          "% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "502 \nchapter 15\nUsing sleep to make our program \nmore predictable.\nRemember our earlier example that kept giving us different \nresults each time we ran it? Look back and study the code \nand the sample output. Sometimes main had to wait until the \nnew thread finished (and printed “top 0’ the stack”), while \nother times the new thread would be sent back to runnable \nbefore it was finished, allowing the main thread to come back \nin and print out “back in main”. How can we fix that? Stop \nfor a moment and answer this question: “Where can you put \na sleep() call, to make sure that “back in main” always prints \nbefore “top 0’ the stack”?\nWe’11 wait while you work out an answer (there’5 more than \none answer that would work).\nFigure it out? \npublic class MyRunnable implements Runnable {\n public void run() {\n go();\n }\n public void go() {\n try {\n Thread.sleep(2000);\n } catch(InterruptedException ex) {\n ex.printStackTrace();\n }\n \n doMore(); \n }\n public void doMore() {\n System.out.println(“top 0’ the stack”);\n }\n}\nclass ThreadTestDrive {\n public static void main (String[] args) {\n Runnable theJob = new MyRunnable();\n Thread t = new Thread(theJob);\n t.start();\n System.out.println(“back in main”);\n }\n}\nCalling sleep here will force the new \nthread to leave the currently-running \nstate!\nThe main thread will become the \ncurrently-running thread again, and print \nout “back in main”. Then there will be a \npause (for about two seconds) before we \nget to this line, which calls doMore() and \nprints out “top 0’ the stack”\nFile Edit Window Help SnoozeButton \n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\n% java ThreadTestDrive\nback in main\ntop 0’ the stack\nThis is what we want—a consistent order \nof print statements:\nusing Thread.sleep()",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 536,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 536,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2006 chars",
+      "severity": "info"
+    },
+    {
+      "page": 536,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

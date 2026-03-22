@@ -1,0 +1,60 @@
+{
+  "page_number": 264,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "230 \nchapter 8\n1) \n \n2) \n3)\n4)\n5)\nGiven:\npublic interface Foo { }\npublic class Bar implements Foo { }\npublic interface Vinn { }\npublic abstract class Vout implements Vinn { }\npublic abstract class Muffie implements Whuffie { }\npublic class Fluffie extends Muffie { }\npublic interface Whuffie { }\npublic class Zoop { }\npublic class Boop extends Zoop { }\npublic class Goop extends Boop { }\npublic class Gamma extends Delta implements Epsilon { }\npublic interface Epsilon { }\npublic interface Beta { }\npublic class Alpha extends Gamma implements Beta { }\npublic class Delta { }\nWhat’5 the Picture ?\n(interface)\nFoo\nBar\n1)\n2)\n3)\n4)\n5)\nHere’5 your chance to demonstrate your artistic abilities. On the left you’11 \nfind sets of class and interface declarations. Your job is to draw the associated \nclass diagrams on the right. We did the first one for you. Use a dashed line for \n“implements” and a solid line for “extends”.\nExercise\nexercise: What’5 the Picture?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (129x109)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "230 \nchapter 8\n1) \n \n2) \n3)\n4)\n5)\nGiven:\npublic interface Foo { }\npublic class Bar implements Foo { }\npublic interface Vinn { }\npublic abstract class Vout implements Vinn { }\npublic abstract class Muffie implements Whuffie { }\npublic class Fluffie extends Muffie { }\npublic interface Whuffie { }\npublic class Zoop { }\npublic class Boop extends Zoop { }\npublic class Goop extends Boop { }\npublic class Gamma extends Delta implements Epsilon { }\npublic interface Epsilon { }\npublic interface Beta { }\npublic class Alpha extends Gamma implements Beta { }\npublic class Delta { }\nWhat’5 the Picture ?\n(interface)\nFoo\nBar\n1)\n2)\n3)\n4)\n5)\nHere’5 your chance to demonstrate your artistic abilities. On the left you’11 \nfind sets of class and interface declarations. Your job is to draw the associated \nclass diagrams on the right. We did the first one for you. Use a dashed line for \n“implements” and a solid line for “extends”.\nExercise\nexercise: What’5 the Picture?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 264,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 264,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 967 chars",
+      "severity": "info"
+    },
+    {
+      "page": 264,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 264,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

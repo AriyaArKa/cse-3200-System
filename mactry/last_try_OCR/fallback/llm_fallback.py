@@ -53,6 +53,7 @@ _api_stats = {
 _service_status = {
     "gemini_available": None, "gemini_error": None,
     "ollama_available": None, "ollama_model": None, "ollama_error": None,
+    "ollama_last_checked": 0.0,
 }
 
 
@@ -103,33 +104,53 @@ def _check_ollama_available() -> Tuple[bool, Optional[str], Optional[str]]:
         return False, None, str(exc)
 
 
+def ensure_ollama_status(force: bool = False) -> Tuple[bool, Optional[str], Optional[str]]:
+    """Refresh cached Ollama status when unknown or stale-unavailable."""
+    now = time.time()
+    last_checked = float(_service_status.get("ollama_last_checked") or 0.0)
+    cached_available = _service_status.get("ollama_available")
+    should_refresh = (
+        force
+        or cached_available is None
+        or (
+            cached_available is False
+            and (now - last_checked) >= config.OLLAMA_STATUS_RECHECK_SECONDS
+        )
+    )
+
+    if should_refresh:
+        avail, model, err = _check_ollama_available()
+        _service_status["ollama_available"] = avail
+        _service_status["ollama_model"] = model
+        _service_status["ollama_error"] = err
+        _service_status["ollama_last_checked"] = now
+        config.set_status("ollama_available", avail)
+        config.set_status("ollama_model", model)
+
+    return (
+        bool(_service_status.get("ollama_available")),
+        _service_status.get("ollama_model"),
+        _service_status.get("ollama_error"),
+    )
+
+
 def _ocr_with_ollama(img_bytes: bytes, page_number: int, model: str) -> Optional[str]:
     try:
         from PIL import Image as PILImage
 
         base_img = PILImage.open(io.BytesIO(img_bytes)).convert("RGB")
-
-        # qwen2.5vl on CPU can fail with large contexts/images. Use progressive
-        # profiles from quality-first to stability-first and stop on first success.
-        profiles = [
-            (config.OLLAMA_MAX_IMAGE_EDGE, 1200, 3072, min(config.OLLAMA_TIMEOUT, 90)),
-            (1024, 900, 2048, min(config.OLLAMA_TIMEOUT, 75)),
-            (config.OLLAMA_MIN_IMAGE_EDGE, 700, 1536, min(config.OLLAMA_TIMEOUT, 75)),
-        ]
-
+        img_pixels = base_img.width * base_img.height
         is_qwen = "qwen" in model.lower()
-        for long_edge, num_predict, num_ctx, timeout_s in profiles:
-            pil_img = base_img.copy()
-            current_long = max(pil_img.width, pil_img.height)
-            if current_long > long_edge:
-                pil_img.thumbnail((long_edge, long_edge), PILImage.LANCZOS)
-            elif current_long < config.OLLAMA_MIN_IMAGE_EDGE:
-                scale = config.OLLAMA_MIN_IMAGE_EDGE / max(current_long, 1)
-                pil_img = pil_img.resize(
-                    (int(pil_img.width * scale), int(pil_img.height * scale)),
-                    PILImage.LANCZOS,
-                )
+        min_chars = 50 if img_pixels > 600_000 else 20
 
+        def _call_ollama(
+            pil_img: "PILImage.Image",
+            *,
+            num_predict: int,
+            num_ctx: int,
+            timeout_s: int,
+            prompt: str,
+        ) -> Optional[str]:
             buf = io.BytesIO()
             pil_img.save(buf, format="PNG")
             img_b64 = base64.b64encode(buf.getvalue()).decode("utf-8")
@@ -145,7 +166,7 @@ def _ocr_with_ollama(img_bytes: bytes, page_number: int, model: str) -> Optional
             if is_qwen:
                 payload = {
                     "model": model,
-                    "messages": [{"role": "user", "content": _OLLAMA_PROMPT, "images": [img_b64]}],
+                    "messages": [{"role": "user", "content": prompt, "images": [img_b64]}],
                     "stream": False,
                     "options": options,
                 }
@@ -153,15 +174,54 @@ def _ocr_with_ollama(img_bytes: bytes, page_number: int, model: str) -> Optional
             else:
                 payload = {
                     "model": model,
-                    "prompt": _OLLAMA_PROMPT,
+                    "prompt": prompt,
                     "images": [img_b64],
                     "stream": False,
                     "options": options,
                 }
                 endpoint = f"{config.OLLAMA_BASE_URL}/api/generate"
 
+            resp = requests.post(endpoint, json=payload, timeout=timeout_s)
+            if resp.status_code != 200:
+                return None
+
+            result = resp.json()
+            text = (
+                (result.get("message", {}).get("content") or "").strip()
+                if is_qwen
+                else (result.get("response") or "").strip()
+            )
+            return text or None
+
+        # qwen2.5vl on CPU can fail with large contexts/images. Use progressive
+        # profiles from stability-first to quality and stop on first valid success.
+        profiles = [
+            (config.OLLAMA_MAX_IMAGE_EDGE, 1200, 3072, min(config.OLLAMA_TIMEOUT, 80)),
+            (1024, 900, 2048, min(config.OLLAMA_TIMEOUT, 75)),
+            (config.OLLAMA_MIN_IMAGE_EDGE, 700, 1536, min(config.OLLAMA_TIMEOUT, 75)),
+            (1536, 1500, 4096, min(config.OLLAMA_TIMEOUT, 110)),
+        ]
+
+        for long_edge, num_predict, num_ctx, timeout_s in profiles:
+            pil_img = base_img.copy()
+            current_long = max(pil_img.width, pil_img.height)
+            if current_long > long_edge:
+                pil_img.thumbnail((long_edge, long_edge), PILImage.LANCZOS)
+            elif current_long < config.OLLAMA_MIN_IMAGE_EDGE:
+                scale = config.OLLAMA_MIN_IMAGE_EDGE / max(current_long, 1)
+                pil_img = pil_img.resize(
+                    (int(pil_img.width * scale), int(pil_img.height * scale)),
+                    PILImage.LANCZOS,
+                )
+
             try:
-                resp = requests.post(endpoint, json=payload, timeout=timeout_s)
+                text = _call_ollama(
+                    pil_img,
+                    num_predict=num_predict,
+                    num_ctx=num_ctx,
+                    timeout_s=timeout_s,
+                    prompt=_OLLAMA_PROMPT,
+                )
             except requests.exceptions.Timeout:
                 logger.warning(
                     "Ollama timeout page %s (edge=%s, ctx=%s)",
@@ -179,23 +239,7 @@ def _ocr_with_ollama(img_bytes: bytes, page_number: int, model: str) -> Optional
                 )
                 continue
 
-            if resp.status_code != 200:
-                logger.warning(
-                    "Ollama status %s page %s (edge=%s, ctx=%s)",
-                    resp.status_code,
-                    page_number,
-                    long_edge,
-                    num_ctx,
-                )
-                continue
-
-            result = resp.json()
-            text = (
-                (result.get("message", {}).get("content") or "").strip()
-                if is_qwen
-                else (result.get("response") or "").strip()
-            )
-            if len(text) >= 60:
+            if text and len(text) >= min_chars:
                 _api_stats["ollama_calls"] += 1
                 _api_stats["total_calls"] += 1
                 logger.info(
@@ -215,6 +259,64 @@ def _ocr_with_ollama(img_bytes: bytes, page_number: int, model: str) -> Optional
                     long_edge,
                 )
 
+        # Rescue pass: OCR three overlapping vertical tiles when full-page calls
+        # return only short outputs on dense Bangla pages.
+        if img_pixels > 500_000:
+            w, h = base_img.size
+            stride = h // 3
+            overlap = max(40, int(h * 0.08))
+            tile_prompt = (
+                "OCR this document region exactly. Output only visible text in reading order. "
+                "No explanation, no markdown, no guesses."
+            )
+            parts: list[str] = []
+            for idx in range(3):
+                top = max(0, idx * stride - overlap)
+                bottom = min(h, (idx + 1) * stride + overlap)
+                tile = base_img.crop((0, top, w, bottom))
+                long_edge = max(tile.size)
+                if long_edge > 1200:
+                    tile.thumbnail((1200, 1200), PILImage.LANCZOS)
+                try:
+                    text = _call_ollama(
+                        tile,
+                        num_predict=800,
+                        num_ctx=2048,
+                        timeout_s=min(config.OLLAMA_TIMEOUT, 60),
+                        prompt=tile_prompt,
+                    )
+                except Exception as exc:
+                    logger.warning("Ollama tile %s failed page %s: %s", idx + 1, page_number, exc)
+                    continue
+
+                if text and len(text) >= 25:
+                    parts.append(text)
+
+            if parts:
+                merged_lines: list[str] = []
+                seen: set[str] = set()
+                for part in parts:
+                    for raw in part.splitlines():
+                        line = raw.strip()
+                        if not line:
+                            continue
+                        key = line.lower()
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        merged_lines.append(line)
+
+                merged_text = "\n".join(merged_lines).strip()
+                if len(merged_text) >= min_chars * 2:
+                    _api_stats["ollama_calls"] += 1
+                    _api_stats["total_calls"] += 1
+                    logger.info(
+                        "Ollama page %s rescued via tiled OCR: %d chars",
+                        page_number,
+                        len(merged_text),
+                    )
+                    return merged_text
+
         _api_stats["ollama_errors"] += 1
         return None
 
@@ -222,6 +324,70 @@ def _ocr_with_ollama(img_bytes: bytes, page_number: int, model: str) -> Optional
         logger.warning("Ollama OCR failed (page %s): %s", page_number, exc)
         _api_stats["ollama_errors"] += 1
         return None
+
+
+def refine_ollama_ocr_text(text: str, model: str) -> str:
+    """Run a lightweight text-only cleanup pass on Ollama OCR output."""
+    src = (text or "").strip()
+    if not src or len(src) < 120 or bangla_char_ratio(src) < 0.2:
+        return src
+
+    instruction = (
+        "Fix only obvious OCR mistakes in this Bangla text. "
+        "Preserve all numbers, dates, emails, URLs, and English words exactly as-is. "
+        "Do not add new facts. Return corrected plain text only."
+    )
+
+    try:
+        is_qwen = "qwen" in model.lower()
+        options = {
+            "num_predict": 1100,
+            "num_ctx": 3072,
+            "temperature": 0.0,
+            "top_p": 0.9,
+            "repeat_penalty": 1.1,
+        }
+
+        if is_qwen:
+            payload = {
+                "model": model,
+                "messages": [{
+                    "role": "user",
+                    "content": f"{instruction}\n\n--- OCR TEXT START ---\n{src}\n--- OCR TEXT END ---",
+                }],
+                "stream": False,
+                "options": options,
+            }
+            endpoint = f"{config.OLLAMA_BASE_URL}/api/chat"
+        else:
+            payload = {
+                "model": model,
+                "prompt": f"{instruction}\n\n--- OCR TEXT START ---\n{src}\n--- OCR TEXT END ---",
+                "stream": False,
+                "options": options,
+            }
+            endpoint = f"{config.OLLAMA_BASE_URL}/api/generate"
+
+        resp = requests.post(endpoint, json=payload, timeout=min(config.OLLAMA_TIMEOUT, 45))
+        if resp.status_code != 200:
+            return src
+
+        data = resp.json()
+        refined = (
+            (data.get("message", {}).get("content") or "").strip()
+            if is_qwen
+            else (data.get("response") or "").strip()
+        )
+
+        if not refined:
+            return src
+
+        if len(refined) < int(len(src) * 0.6) or len(refined) > int(len(src) * 1.7):
+            return src
+
+        return refined
+    except Exception:
+        return src
 
 
 # ── Gemini ─────────────────────────────────────────────────────────────────
@@ -272,16 +438,9 @@ def _ocr_with_gemini(img_bytes: bytes, page_number: int) -> Optional[str]:
 
 def ocr_with_llm_chain(img_bytes: bytes, page_number: int) -> str:
     """Try Ollama first (local, no rate limit), then Gemini if enabled."""
-    if _service_status.get("ollama_available") is None:
-        avail, model, err = _check_ollama_available()
-        _service_status["ollama_available"] = avail
-        _service_status["ollama_model"]     = model
-        _service_status["ollama_error"]     = err
-        config.set_status("ollama_available", avail)
-        config.set_status("ollama_model", model)
+    avail, model, _ = ensure_ollama_status(force=False)
 
-    model = _service_status.get("ollama_model")
-    if _service_status.get("ollama_available") and model:
+    if avail and model:
         text = _ocr_with_ollama(img_bytes, page_number, model)
         if text:
             _api_stats["last_engine_used"] = "ollama"
@@ -398,10 +557,7 @@ def _try_parse_json(text: str, offset: int) -> Optional[List[ContentBlock]]:
 # ── Startup check ──────────────────────────────────────────────────────────
 
 def _warn_if_ollama_unavailable() -> None:
-    avail, model, err = _check_ollama_available()
-    _service_status["ollama_available"] = avail
-    _service_status["ollama_model"]     = model
-    _service_status["ollama_error"]     = err
+    avail, model, err = ensure_ollama_status(force=True)
     if avail:
         logger.info("✓ Ollama ready: %s", model)
     else:

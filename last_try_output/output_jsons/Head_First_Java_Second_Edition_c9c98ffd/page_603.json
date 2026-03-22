@@ -1,0 +1,59 @@
+{
+  "page_number": 603,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9375,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n569\nUsing polymorphic arguments and generics\n50 we saw how the whole thing worked with arrays, but will it work \nthe same way when we switch from an array to an ArrayList? Sounds \nreasonable, doesn’t it?\nFirst, let’5 try it with only the Animal ArrayList. We made just a few \nchanges to the go() method:\npublic void go() {\n ArrayList<Animal> animals = new ArrayList<Animal>();\n animals.add(new Dog());\n animals.add(new Cat());\n animals.add(new Dog());\n takeAnimals(animals);\n }\n public void takeAnimals(ArrayList<Animal> animals) {\n for(Animal a: animals) {\n a.eat();\n }\n }\nA simple change from Animal[] to \nArrayList<Animal>. \nWe have to add one at a time since there’5 no \nshortcut syntax like there is for array creation.\nThis is the same code, except now the “animals” \nvariable refers to an ArrayList instead of array.\nThe method now takes an ArrayList \ninstead of an array, but everything else is \nthe same. Remember, that for loop syntax \nworks for both arrays and collections.\nPassing in just ArrayList<Animal>\n%java TestGenerics2\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nFile Edit Window Help CatFoodIsBetter\nCompiles and runs just fine",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help CatFoodIsBetter"
+        ],
+        [
+          "%java TestGenerics2\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nanimal eating"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "collections with generics\nyou are here\n569\nUsing polymorphic arguments and generics\n50 we saw how the whole thing worked with arrays, but will it work \nthe same way when we switch from an array to an ArrayList? Sounds \nreasonable, doesn’t it?\nFirst, let’5 try it with only the Animal ArrayList. We made just a few \nchanges to the go() method:\npublic void go() {\n ArrayList<Animal> animals = new ArrayList<Animal>();\n animals.add(new Dog());\n animals.add(new Cat());\n animals.add(new Dog());\n takeAnimals(animals);\n }\n public void takeAnimals(ArrayList<Animal> animals) {\n for(Animal a: animals) {\n a.eat();\n }\n }\nA simple change from Animal[] to \nArrayList<Animal>. \nWe have to add one at a time since there’5 no \nshortcut syntax like there is for array creation.\nThis is the same code, except now the “animals” \nvariable refers to an ArrayList instead of array.\nThe method now takes an ArrayList \ninstead of an array, but everything else is \nthe same. Remember, that for loop syntax \nworks for both arrays and collections.\nPassing in just ArrayList<Animal>\n%java TestGenerics2\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nanimal eating\nFile Edit Window Help CatFoodIsBetter\nCompiles and runs just fine",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 603,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 603,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1277 chars",
+      "severity": "info"
+    },
+    {
+      "page": 603,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

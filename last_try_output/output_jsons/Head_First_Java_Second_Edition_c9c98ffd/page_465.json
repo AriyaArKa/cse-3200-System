@@ -1,0 +1,1850 @@
+{
+  "page_number": 465,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.5939,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 110",
+      "confidence": 0.5997,
+      "bbox": [
+        1034,
+        64,
+        1332,
+        92
+      ]
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Saving State",
+      "confidence": 0.9755,
+      "bbox": [
+        103,
+        125,
+        351,
+        189
+      ]
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Imagine you have a program, say, a fantasy",
+      "confidence": 0.9526,
+      "bbox": [
+        108,
+        195,
+        578,
+        232
+      ]
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "en",
+      "text": "adventure game, that takes more than one",
+      "confidence": 0.4769,
+      "bbox": [
+        110,
+        228,
+        576,
+        260
+      ]
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "en",
+      "text": "session to",
+      "confidence": 0.5322,
+      "bbox": [
+        108,
+        260,
+        218,
+        284
+      ]
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "en",
+      "text": "complete. As the game progresses",
+      "confidence": 0.9543,
+      "bbox": [
+        217,
+        253,
+        595,
+        292
+      ]
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "en",
+      "text": "characters in the game become stronger; weaker;",
+      "confidence": 0.5127,
+      "bbox": [
+        110,
+        287,
+        644,
+        320
+      ]
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "en",
+      "text": "smarter, etc, and",
+      "confidence": 0.8763,
+      "bbox": [
+        107,
+        318,
+        302,
+        346
+      ]
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "en",
+      "text": "and use (and lose)",
+      "confidence": 0.8556,
+      "bbox": [
+        380,
+        317,
+        586,
+        346
+      ]
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "en",
+      "text": "weapons Iou don't want to start from scratch",
+      "confidence": 0.5991,
+      "bbox": [
+        110,
+        346,
+        608,
+        378
+      ]
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you",
+      "confidence": 0.999,
+      "bbox": [
+        1109,
+        325,
+        1177,
+        365
+      ]
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "en",
+      "text": "each time you launch the game it took you",
+      "confidence": 0.6085,
+      "bbox": [
+        109,
+        375,
+        599,
+        411
+      ]
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "en",
+      "text": "game",
+      "confidence": 0.9933,
+      "bbox": [
+        1149,
+        377,
+        1239,
+        419
+      ]
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "en",
+      "text": "forever to get your characters in top",
+      "confidence": 0.6267,
+      "bbox": [
+        106,
+        407,
+        506,
+        440
+      ]
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "en",
+      "text": "for",
+      "confidence": 0.9934,
+      "bbox": [
+        576,
+        408,
+        616,
+        434
+      ]
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "en",
+      "text": "spectacular battle. 50, you need a way to save",
+      "confidence": 0.592,
+      "bbox": [
+        124,
+        435,
+        621,
+        472
+      ]
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "en",
+      "text": "to",
+      "confidence": 0.8037,
+      "bbox": [
+        1142,
+        422,
+        1180,
+        454
+      ]
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Gamecharacter",
+      "confidence": 0.3839,
+      "bbox": [
+        738,
+        450,
+        896,
+        476
+      ]
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the state of the characters, and a way to restore",
+      "confidence": 0.4654,
+      "bbox": [
+        110,
+        467,
+        624,
+        498
+      ]
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the state when you1 resume the",
+      "confidence": 0.7446,
+      "bbox": [
+        110,
+        498,
+        446,
+        528
+      ]
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "en",
+      "text": "And since",
+      "confidence": 0.98,
+      "bbox": [
+        520,
+        498,
+        632,
+        524
+      ]
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "en",
+      "text": "int power",
+      "confidence": 0.9602,
+      "bbox": [
+        732,
+        496,
+        816,
+        522
+      ]
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you1're also the game programmer, you want the",
+      "confidence": 0.5067,
+      "bbox": [
+        108,
+        528,
+        636,
+        560
+      ]
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String type",
+      "confidence": 0.9996,
+      "bbox": [
+        734,
+        522,
+        828,
+        550
+      ]
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "en",
+      "text": "whole save and restore",
+      "confidence": 0.6418,
+      "bbox": [
+        110,
+        558,
+        360,
+        584
+      ]
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "en",
+      "text": "to be as easy (and",
+      "confidence": 0.6441,
+      "bbox": [
+        426,
+        558,
+        624,
+        588
+      ]
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Ileapon[] weapons",
+      "confidence": 0.5734,
+      "bbox": [
+        734,
+        550,
+        904,
+        578
+      ]
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "en",
+      "text": "foolproof) as",
+      "confidence": 0.7001,
+      "bbox": [
+        108,
+        587,
+        258,
+        617
+      ]
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "en",
+      "text": "possible.",
+      "confidence": 0.988,
+      "bbox": [
+        255,
+        583,
+        354,
+        622
+      ]
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getlleapon )",
+      "confidence": 0.5801,
+      "bbox": [
+        731,
+        603,
+        845,
+        631
+      ]
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "useleapon )",
+      "confidence": 0.8479,
+      "bbox": [
+        733,
+        628,
+        850,
+        659
+      ]
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Power: 50",
+      "confidence": 0.9981,
+      "bbox": [
+        1031,
+        637,
+        1145,
+        673
+      ]
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "en",
+      "text": "increasePower )",
+      "confidence": 0.6453,
+      "bbox": [
+        732,
+        658,
+        874,
+        686
+      ]
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Oprion one",
+      "confidence": 0.8842,
+      "bbox": [
+        167,
+        667,
+        311,
+        705
+      ]
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "en",
+      "text": "more",
+      "confidence": 0.9356,
+      "bbox": [
+        751,
+        689,
+        797,
+        709
+      ]
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "en",
+      "text": "TyPe: EIL",
+      "confidence": 0.0523,
+      "bbox": [
+        1029,
+        669,
+        1135,
+        711
+      ]
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Write The Three serialized",
+      "confidence": 0.6888,
+      "bbox": [
+        170,
+        718,
+        530,
+        750
+      ]
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "en",
+      "text": "wcapons: bow;",
+      "confidence": 0.5166,
+      "bbox": [
+        1031,
+        706,
+        1178,
+        743
+      ]
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "en",
+      "text": "character objects 10",
+      "confidence": 0.5922,
+      "bbox": [
+        165,
+        753,
+        451,
+        791
+      ]
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "এ file",
+      "confidence": 0.2504,
+      "bbox": [
+        456,
+        754,
+        532,
+        784
+      ]
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "en",
+      "text": "sword, dust",
+      "confidence": 0.5268,
+      "bbox": [
+        1032,
+        744,
+        1160,
+        774
+      ]
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "en",
+      "text": "create",
+      "confidence": 0.4671,
+      "bbox": [
+        166,
+        808,
+        242,
+        834
+      ]
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "en",
+      "text": "file and wrire Thrree serialized",
+      "confidence": 0.6311,
+      "bbox": [
+        262,
+        808,
+        580,
+        836
+      ]
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "en",
+      "text": "objec",
+      "confidence": 0.9053,
+      "bbox": [
+        1062,
+        800,
+        1162,
+        853
+      ]
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "en",
+      "text": "cnaracrer objects The Tile won'- make",
+      "confidence": 0.3873,
+      "bbox": [
+        166,
+        842,
+        576,
+        872
+      ]
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Power: 200",
+      "confidence": 0.9692,
+      "bbox": [
+        833,
+        829,
+        969,
+        865
+      ]
+    },
+    {
+      "block_id": 47,
+      "type": "paragraph",
+      "language": "en",
+      "text": "sense iT /04 Try To reqd i+ 05 TexT:",
+      "confidence": 0.103,
+      "bbox": [
+        166,
+        878,
+        532,
+        908
+      ]
+    },
+    {
+      "block_id": 48,
+      "type": "paragraph",
+      "language": "en",
+      "text": "LyPe: Trolll",
+      "confidence": 0.6977,
+      "bbox": [
+        831,
+        865,
+        953,
+        903
+      ]
+    },
+    {
+      "block_id": 49,
+      "type": "paragraph",
+      "language": "en",
+      "text": "weapons: bare",
+      "confidence": 0.9616,
+      "bbox": [
+        834,
+        902,
+        978,
+        934
+      ]
+    },
+    {
+      "block_id": 50,
+      "type": "paragraph",
+      "language": "en",
+      "text": "IsrGameGharacter",
+      "confidence": 0.8788,
+      "bbox": [
+        170,
+        924,
+        384,
+        952
+      ]
+    },
+    {
+      "block_id": 51,
+      "type": "paragraph",
+      "language": "en",
+      "text": "hands) big ax",
+      "confidence": 0.8859,
+      "bbox": [
+        833,
+        935,
+        977,
+        975
+      ]
+    },
+    {
+      "block_id": 52,
+      "type": "paragraph",
+      "language": "en",
+      "text": "%ge8MUIpowerLjava /lang/",
+      "confidence": 0.5786,
+      "bbox": [
+        164,
+        956,
+        484,
+        989
+      ]
+    },
+    {
+      "block_id": 53,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String; [weaponst [Ljava /lang/",
+      "confidence": 0.6942,
+      "bbox": [
+        166,
+        992,
+        515,
+        1020
+      ]
+    },
+    {
+      "block_id": 54,
+      "type": "paragraph",
+      "language": "en",
+      "text": "String;xpatlfur [Ljava lang String;# A",
+      "confidence": 0.7162,
+      "bbox": [
+        164,
+        1018,
+        615,
+        1057
+      ]
+    },
+    {
+      "block_id": 55,
+      "type": "paragraph",
+      "language": "en",
+      "text": "object",
+      "confidence": 0.7418,
+      "bbox": [
+        864,
+        1000,
+        964,
+        1054
+      ]
+    },
+    {
+      "block_id": 56,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Power: |20",
+      "confidence": 0.7945,
+      "bbox": [
+        1067,
+        1023,
+        1193,
+        1061
+      ]
+    },
+    {
+      "block_id": 57,
+      "type": "paragraph",
+      "language": "en",
+      "text": "E{Gxptbowtswordtdustsg",
+      "confidence": 0.7601,
+      "bbox": [
+        164,
+        1052,
+        461,
+        1088
+      ]
+    },
+    {
+      "block_id": 58,
+      "type": "paragraph",
+      "language": "en",
+      "text": ">tTrolluq",
+      "confidence": 0.5786,
+      "bbox": [
+        468,
+        1058,
+        580,
+        1084
+      ]
+    },
+    {
+      "block_id": 59,
+      "type": "paragraph",
+      "language": "en",
+      "text": "tb",
+      "confidence": 0.9288,
+      "bbox": [
+        586,
+        1058,
+        616,
+        1082
+      ]
+    },
+    {
+      "block_id": 60,
+      "type": "paragraph",
+      "language": "en",
+      "text": "LyIPe: Magician",
+      "confidence": 0.2148,
+      "bbox": [
+        1065,
+        1059,
+        1227,
+        1099
+      ]
+    },
+    {
+      "block_id": 61,
+      "type": "paragraph",
+      "language": "en",
+      "text": "are handstbig axsg",
+      "confidence": 0.6459,
+      "bbox": [
+        166,
+        1090,
+        382,
+        1118
+      ]
+    },
+    {
+      "block_id": 62,
+      "type": "paragraph",
+      "language": "en",
+      "text": "xtMagicianug tspe",
+      "confidence": 0.4529,
+      "bbox": [
+        390,
+        1089,
+        614,
+        1118
+      ]
+    },
+    {
+      "block_id": 63,
+      "type": "paragraph",
+      "language": "en",
+      "text": "weaPons:",
+      "confidence": 0.845,
+      "bbox": [
+        1068,
+        1102,
+        1158,
+        1130
+      ]
+    },
+    {
+      "block_id": 64,
+      "type": "paragraph",
+      "language": "en",
+      "text": "llstinvisibility",
+      "confidence": 0.886,
+      "bbox": [
+        164,
+        1122,
+        334,
+        1150
+      ]
+    },
+    {
+      "block_id": 65,
+      "type": "paragraph",
+      "language": "en",
+      "text": "invisibilicy",
+      "confidence": 0.5724,
+      "bbox": [
+        1065,
+        1131,
+        1179,
+        1171
+      ]
+    },
+    {
+      "block_id": 66,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Option Two",
+      "confidence": 0.574,
+      "bbox": [
+        171,
+        1199,
+        319,
+        1237
+      ]
+    },
+    {
+      "block_id": 67,
+      "type": "paragraph",
+      "language": "en",
+      "text": "object",
+      "confidence": 0.6983,
+      "bbox": [
+        1100,
+        1196,
+        1200,
+        1250
+      ]
+    },
+    {
+      "block_id": 68,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Write",
+      "confidence": 0.987,
+      "bbox": [
+        174,
+        1250,
+        258,
+        1282
+      ]
+    },
+    {
+      "block_id": 69,
+      "type": "paragraph",
+      "language": "en",
+      "text": "plain Text file",
+      "confidence": 0.9012,
+      "bbox": [
+        287,
+        1249,
+        479,
+        1287
+      ]
+    },
+    {
+      "block_id": 70,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The",
+      "confidence": 0.958,
+      "bbox": [
+        716,
+        1240,
+        760,
+        1272
+      ]
+    },
+    {
+      "block_id": 71,
+      "type": "paragraph",
+      "language": "en",
+      "text": "file is much",
+      "confidence": 0.5013,
+      "bbox": [
+        859,
+        1251,
+        977,
+        1293
+      ]
+    },
+    {
+      "block_id": 72,
+      "type": "paragraph",
+      "language": "en",
+      "text": "but it'5 much",
+      "confidence": 0.78,
+      "bbox": [
+        707,
+        1270,
+        843,
+        1311
+      ]
+    },
+    {
+      "block_id": 73,
+      "type": "paragraph",
+      "language": "en",
+      "text": "for",
+      "confidence": 0.9999,
+      "bbox": [
+        1052,
+        1272,
+        1090,
+        1304
+      ]
+    },
+    {
+      "block_id": 74,
+      "type": "paragraph",
+      "language": "en",
+      "text": "to",
+      "confidence": 0.7877,
+      "bbox": [
+        1166,
+        1288,
+        1194,
+        1314
+      ]
+    },
+    {
+      "block_id": 75,
+      "type": "paragraph",
+      "language": "en",
+      "text": "creare",
+      "confidence": 0.8407,
+      "bbox": [
+        171,
+        1303,
+        248,
+        1333
+      ]
+    },
+    {
+      "block_id": 76,
+      "type": "paragraph",
+      "language": "en",
+      "text": "file and write Three lines oT Text",
+      "confidence": 0.4592,
+      "bbox": [
+        268,
+        1304,
+        618,
+        1333
+      ]
+    },
+    {
+      "block_id": 77,
+      "type": "paragraph",
+      "language": "en",
+      "text": "safer) for Jour",
+      "confidence": 0.4904,
+      "bbox": [
+        956,
+        1296,
+        1116,
+        1344
+      ]
+    },
+    {
+      "block_id": 78,
+      "type": "paragraph",
+      "language": "en",
+      "text": "read,",
+      "confidence": 0.8084,
+      "bbox": [
+        1194,
+        1296,
+        1250,
+        1322
+      ]
+    },
+    {
+      "block_id": 79,
+      "type": "paragraph",
+      "language": "en",
+      "text": "one per character separaring Tne pieces",
+      "confidence": 0.5884,
+      "bbox": [
+        172,
+        1340,
+        604,
+        1370
+      ]
+    },
+    {
+      "block_id": 80,
+      "type": "paragraph",
+      "language": "en",
+      "text": "in Che",
+      "confidence": 0.2562,
+      "bbox": [
+        780,
+        1346,
+        848,
+        1378
+      ]
+    },
+    {
+      "block_id": 81,
+      "type": "paragraph",
+      "language": "en",
+      "text": "objects",
+      "confidence": 0.9714,
+      "bbox": [
+        885,
+        1323,
+        965,
+        1361
+      ]
+    },
+    {
+      "block_id": 82,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serializatipr ograr _to",
+      "confidence": 0.4831,
+      "bbox": [
+        1013,
+        1316,
+        1235,
+        1379
+      ]
+    },
+    {
+      "block_id": 83,
+      "type": "paragraph",
+      "language": "en",
+      "text": "of stare wiTh commas:",
+      "confidence": 0.5223,
+      "bbox": [
+        172,
+        1374,
+        410,
+        1402
+      ]
+    },
+    {
+      "block_id": 84,
+      "type": "paragraph",
+      "language": "en",
+      "text": "to",
+      "confidence": 0.9884,
+      "bbox": [
+        700,
+        1368,
+        728,
+        1396
+      ]
+    },
+    {
+      "block_id": 85,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Text file objects",
+      "confidence": 0.3365,
+      "bbox": [
+        744,
+        1349,
+        933,
+        1413
+      ]
+    },
+    {
+      "block_id": 86,
+      "type": "paragraph",
+      "language": "en",
+      "text": "values Chat",
+      "confidence": 0.5903,
+      "bbox": [
+        1007,
+        1368,
+        1127,
+        1409
+      ]
+    },
+    {
+      "block_id": 87,
+      "type": "paragraph",
+      "language": "en",
+      "text": "than from",
+      "confidence": 0.4828,
+      "bbox": [
+        1143,
+        1349,
+        1253,
+        1388
+      ]
+    },
+    {
+      "block_id": 88,
+      "type": "paragraph",
+      "language": "en",
+      "text": "For examPle)",
+      "confidence": 0.5934,
+      "bbox": [
+        848,
+        1380,
+        980,
+        1428
+      ]
+    },
+    {
+      "block_id": 89,
+      "type": "paragraph",
+      "language": "en",
+      "text": "saved",
+      "confidence": 0.9999,
+      "bbox": [
+        1176,
+        1392,
+        1234,
+        1418
+      ]
+    },
+    {
+      "block_id": 90,
+      "type": "paragraph",
+      "language": "en",
+      "text": "You Could",
+      "confidence": 0.9379,
+      "bbox": [
+        696,
+        1406,
+        792,
+        1436
+      ]
+    },
+    {
+      "block_id": 91,
+      "type": "paragraph",
+      "language": "en",
+      "text": "all Ehe",
+      "confidence": 0.4916,
+      "bbox": [
+        1055,
+        1407,
+        1129,
+        1443
+      ]
+    },
+    {
+      "block_id": 92,
+      "type": "paragraph",
+      "language": "en",
+      "text": "50,দ1f,bo\", sword,dust",
+      "confidence": 0.5264,
+      "bbox": [
+        172,
+        1423,
+        438,
+        1452
+      ]
+    },
+    {
+      "block_id": 93,
+      "type": "paragraph",
+      "language": "en",
+      "text": "read",
+      "confidence": 0.999,
+      "bbox": [
+        916,
+        1428,
+        964,
+        1454
+      ]
+    },
+    {
+      "block_id": 94,
+      "type": "paragraph",
+      "language": "en",
+      "text": "ways in",
+      "confidence": 0.9791,
+      "bbox": [
+        1128,
+        1420,
+        1202,
+        1450
+      ]
+    },
+    {
+      "block_id": 95,
+      "type": "paragraph",
+      "language": "en",
+      "text": "200,Trol1,bare hands,big ax",
+      "confidence": 0.7069,
+      "bbox": [
+        172,
+        1454,
+        488,
+        1486
+      ]
+    },
+    {
+      "block_id": 96,
+      "type": "paragraph",
+      "language": "en",
+      "text": "order",
+      "confidence": 0.9948,
+      "bbox": [
+        694,
+        1436,
+        756,
+        1464
+      ]
+    },
+    {
+      "block_id": 97,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The tyPe might",
+      "confidence": 0.5631,
+      "bbox": [
+        768,
+        1440,
+        930,
+        1490
+      ]
+    },
+    {
+      "block_id": 98,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the values in Che",
+      "confidence": 0.7074,
+      "bbox": [
+        1018,
+        1432,
+        1190,
+        1482
+      ]
+    },
+    {
+      "block_id": 99,
+      "type": "paragraph",
+      "language": "en",
+      "text": "while the Elf",
+      "confidence": 0.7327,
+      "bbox": [
+        689,
+        1467,
+        829,
+        1507
+      ]
+    },
+    {
+      "block_id": 100,
+      "type": "paragraph",
+      "language": "en",
+      "text": "'dust\"",
+      "confidence": 0.9119,
+      "bbox": [
+        1012,
+        1468,
+        1070,
+        1498
+      ]
+    },
+    {
+      "block_id": 101,
+      "type": "paragraph",
+      "language": "en",
+      "text": "of \"Elf\",",
+      "confidence": 0.4825,
+      "bbox": [
+        1147,
+        1479,
+        1243,
+        1517
+      ]
+    },
+    {
+      "block_id": 102,
+      "type": "paragraph",
+      "language": "en",
+      "text": "120,Magician,spells,invisibility",
+      "confidence": 0.8573,
+      "bbox": [
+        172,
+        1488,
+        536,
+        1518
+      ]
+    },
+    {
+      "block_id": 103,
+      "type": "paragraph",
+      "language": "en",
+      "text": "weaPon .",
+      "confidence": 0.804,
+      "bbox": [
+        930,
+        1498,
+        1014,
+        1526
+      ]
+    },
+    {
+      "block_id": 104,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here",
+      "confidence": 0.9751,
+      "bbox": [
+        1090,
+        1572,
+        1232,
+        1600
+      ]
+    },
+    {
+      "block_id": 105,
+      "type": "paragraph",
+      "language": "en",
+      "text": "431",
+      "confidence": 1.0,
+      "bbox": [
+        1280,
+        1570,
+        1328,
+        1598
+      ]
+    },
+    {
+      "block_id": 106,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Imagine",
+      "confidence": 0.9995,
+      "bbox": [
+        963.06,
+        286.05,
+        1118.94,
+        371.95
+      ]
+    },
+    {
+      "block_id": 107,
+      "type": "paragraph",
+      "language": "en",
+      "text": "gather",
+      "confidence": 0.973,
+      "bbox": [
+        300.48,
+        314.75,
+        380.52,
+        350.25
+      ]
+    },
+    {
+      "block_id": 108,
+      "type": "paragraph",
+      "language": "en",
+      "text": "have",
+      "confidence": 0.9941,
+      "bbox": [
+        962.26,
+        334.09,
+        1060.74,
+        396.91
+      ]
+    },
+    {
+      "block_id": 109,
+      "type": "paragraph",
+      "language": "en",
+      "text": "three",
+      "confidence": 0.9999,
+      "bbox": [
+        1049.17,
+        345.08,
+        1155.83,
+        408.92
+      ]
+    },
+    {
+      "block_id": 110,
+      "type": "paragraph",
+      "language": "en",
+      "text": "characters",
+      "confidence": 0.9999,
+      "bbox": [
+        955.03,
+        380.07,
+        1145.97,
+        457.93
+      ]
+    },
+    {
+      "block_id": 111,
+      "type": "paragraph",
+      "language": "en",
+      "text": "shape",
+      "confidence": 1.0,
+      "bbox": [
+        503.09,
+        404.14,
+        577.91,
+        440.86
+      ]
+    },
+    {
+      "block_id": 112,
+      "type": "paragraph",
+      "language": "en",
+      "text": "save.",
+      "confidence": 0.5541,
+      "bbox": [
+        1177.06,
+        425.13,
+        1283.94,
+        470.87
+      ]
+    },
+    {
+      "block_id": 113,
+      "type": "paragraph",
+      "language": "en",
+      "text": "game.",
+      "confidence": 0.5786,
+      "bbox": [
+        444.34,
+        496.72,
+        518.66,
+        530.28
+      ]
+    },
+    {
+      "block_id": 114,
+      "type": "paragraph",
+      "language": "en",
+      "text": "thing",
+      "confidence": 0.9998,
+      "bbox": [
+        358.1,
+        552.12,
+        428.9,
+        591.88
+      ]
+    },
+    {
+      "block_id": 115,
+      "type": "paragraph",
+      "language": "en",
+      "text": "sPells)",
+      "confidence": 0.7195,
+      "bbox": [
+        1157.34,
+        1093.89,
+        1224.66,
+        1134.11
+      ]
+    },
+    {
+      "block_id": 116,
+      "type": "paragraph",
+      "language": "en",
+      "text": "scrialized",
+      "confidence": 0.9389,
+      "bbox": [
+        755.03,
+        1241.12,
+        858.97,
+        1281.88
+      ]
+    },
+    {
+      "block_id": 117,
+      "type": "paragraph",
+      "language": "en",
+      "text": "harder",
+      "confidence": 0.9207,
+      "bbox": [
+        974.07,
+        1265.14,
+        1051.93,
+        1302.86
+      ]
+    },
+    {
+      "block_id": 118,
+      "type": "paragraph",
+      "language": "en",
+      "text": "humans",
+      "confidence": 0.9973,
+      "bbox": [
+        1088.05,
+        1277.14,
+        1166.95,
+        1314.86
+      ]
+    },
+    {
+      "block_id": 119,
+      "type": "paragraph",
+      "language": "en",
+      "text": "casicr",
+      "confidence": 0.5462,
+      "bbox": [
+        843.09,
+        1286.16,
+        907.91,
+        1320.84
+      ]
+    },
+    {
+      "block_id": 120,
+      "type": "paragraph",
+      "language": "en",
+      "text": "(and",
+      "confidence": 0.9995,
+      "bbox": [
+        904.18,
+        1289.15,
+        958.82,
+        1324.85
+      ]
+    },
+    {
+      "block_id": 121,
+      "type": "paragraph",
+      "language": "en",
+      "text": "restore",
+      "confidence": 0.9637,
+      "bbox": [
+        703.08,
+        1300.12,
+        784.92,
+        1339.88
+      ]
+    },
+    {
+      "block_id": 122,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Lhe",
+      "confidence": 0.9375,
+      "bbox": [
+        781.36,
+        1309.16,
+        825.64,
+        1343.84
+      ]
+    },
+    {
+      "block_id": 123,
+      "type": "paragraph",
+      "language": "en",
+      "text": "three",
+      "confidence": 0.5475,
+      "bbox": [
+        822.13,
+        1313.14,
+        886.87,
+        1350.86
+      ]
+    },
+    {
+      "block_id": 124,
+      "type": "paragraph",
+      "language": "en",
+      "text": "from",
+      "confidence": 0.6289,
+      "bbox": [
+        961.24,
+        1325.14,
+        1018.76,
+        1362.86
+      ]
+    },
+    {
+      "block_id": 125,
+      "type": "paragraph",
+      "language": "en",
+      "text": "reading",
+      "confidence": 0.7474,
+      "bbox": [
+        699.03,
+        1330.08,
+        784.97,
+        1378.92
+      ]
+    },
+    {
+      "block_id": 126,
+      "type": "paragraph",
+      "language": "en",
+      "text": "variable",
+      "confidence": 0.9996,
+      "bbox": [
+        927.07,
+        1357.13,
+        1011.93,
+        1395.87
+      ]
+    },
+    {
+      "block_id": 127,
+      "type": "paragraph",
+      "language": "en",
+      "text": "werre",
+      "confidence": 0.7419,
+      "bbox": [
+        1124.08,
+        1385.15,
+        1176.92,
+        1412.85
+      ]
+    },
+    {
+      "block_id": 128,
+      "type": "paragraph",
+      "language": "en",
+      "text": "imagine",
+      "confidence": 0.8563,
+      "bbox": [
+        974.1,
+        1396.13,
+        1057.9,
+        1442.87
+      ]
+    },
+    {
+      "block_id": 129,
+      "type": "paragraph",
+      "language": "en",
+      "text": "accidentally",
+      "confidence": 0.9605,
+      "bbox": [
+        788.02,
+        1402.08,
+        920.98,
+        1459.92
+      ]
+    },
+    {
+      "block_id": 130,
+      "type": "paragraph",
+      "language": "en",
+      "text": "which",
+      "confidence": 0.9996,
+      "bbox": [
+        1201.12,
+        1420.16,
+        1264.88,
+        1454.84
+      ]
+    },
+    {
+      "block_id": 131,
+      "type": "paragraph",
+      "language": "en",
+      "text": "back",
+      "confidence": 0.9998,
+      "bbox": [
+        964.2,
+        1427.16,
+        1019.8,
+        1461.84
+      ]
+    },
+    {
+      "block_id": 132,
+      "type": "paragraph",
+      "language": "en",
+      "text": "become",
+      "confidence": 0.5519,
+      "bbox": [
+        924.06,
+        1455.13,
+        1002.94,
+        1493.87
+      ]
+    },
+    {
+      "block_id": 133,
+      "type": "paragraph",
+      "language": "en",
+      "text": "wrong",
+      "confidence": 0.9025,
+      "bbox": [
+        1184.1,
+        1455.13,
+        1251.9,
+        1493.87
+      ]
+    },
+    {
+      "block_id": 134,
+      "type": "paragraph",
+      "language": "en",
+      "text": "instead",
+      "confidence": 0.8916,
+      "bbox": [
+        1065.13,
+        1468.15,
+        1151.87,
+        1511.85
+      ]
+    },
+    {
+      "block_id": 135,
+      "type": "paragraph",
+      "language": "en",
+      "text": "becomes",
+      "confidence": 0.8518,
+      "bbox": [
+        823.02,
+        1477.11,
+        912.98,
+        1518.89
+      ]
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (269x268)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "serialization and file 110\nSaving State\nImagine you have a program, say, a fantasy\nadventure game, that takes more than one\nsession to\ncomplete. As the game progresses\ncharacters in the game become stronger; weaker;\nsmarter, etc, and\nand use (and lose)\nweapons Iou don't want to start from scratch\nyou\neach time you launch the game it took you\ngame\nforever to get your characters in top\nfor\nspectacular battle. 50, you need a way to save\nto\nGamecharacter\nthe state of the characters, and a way to restore\nthe state when you1 resume the\nAnd since\nint power\nyou1're also the game programmer, you want the\nString type\nwhole save and restore\nto be as easy (and\nIleapon[] weapons\nfoolproof) as\npossible.\ngetlleapon )\nuseleapon )\nPower: 50\nincreasePower )\nOprion one\nmore\nTyPe: EIL\nWrite The Three serialized\nwcapons: bow;\ncharacter objects 10\nএ file\nsword, dust\ncreate\nfile and wrire Thrree serialized\nobjec\ncnaracrer objects The Tile won'- make\nPower: 200\nsense iT /04 Try To reqd i+ 05 TexT:\nLyPe: Trolll\nweapons: bare\nIsrGameGharacter\nhands) big ax\n%ge8MUIpowerLjava /lang/\nString; [weaponst [Ljava /lang/\nString;xpatlfur [Ljava lang String;# A\nobject\nPower: |20\nE{Gxptbowtswordtdustsg\n>tTrolluq\ntb\nLyIPe: Magician\nare handstbig axsg\nxtMagicianug tspe\nweaPons:\nllstinvisibility\ninvisibilicy\nOption Two\nobject\nWrite\nplain Text file\nThe\nfile is much\nbut it'5 much\nfor\nto\ncreare\nfile and write Three lines oT Text\nsafer) for Jour\nread,\none per character separaring Tne pieces\nin Che\nobjects\nserializatipr ograr _to\nof stare wiTh commas:\nto\nText file objects\nvalues Chat\nthan from\nFor examPle)\nsaved\nYou Could\nall Ehe\n50,দ1f,bo\", sword,dust\nread\nways in\n200,Trol1,bare hands,big ax\norder\nThe tyPe might\nthe values in Che\nwhile the Elf\n'dust\"\nof \"Elf\",\n120,Magician,spells,invisibility\nweaPon .\nyou are here\n431\nImagine\ngather\nhave\nthree\ncharacters\nshape\nsave.\ngame.\nthing\nsPells)\nscrialized\nharder\nhumans\ncasicr\n(and\nrestore\nLhe\nthree\nfrom\nreading\nvariable\nwerre\nimagine\naccidentally\nwhich\nback\nbecome\nwrong\ninstead\nbecomes",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/Head_First_Java_Second_Edition_c9c98ffd/page_465.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "bronze",
+  "decisions": [
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2106 chars",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_rejected_corrupted_font",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "all_apis_direct_failed_falling_to_ocr",
+      "severity": "warning"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "rendered_to_image (DPI=180)",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "quick_bangla_estimate: 0.00",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "easyocr: 135 detections",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "api_fallback_triggered",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "api_fallback_failed_all_engines",
+      "severity": "warning"
+    },
+    {
+      "page": 465,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 465,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=ocr_local, engine=EasyOCR",
+      "severity": "info"
+    }
+  ]
+}

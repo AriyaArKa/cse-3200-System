@@ -1,0 +1,82 @@
+{
+  "page_number": 662,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "628 \nchapter 18\nthere are no\nDumb Questions\nQ: What’5 a JSP, and how does it relate to servlets?\nA: JSP stands for Java Server Pages. In the end, the web server \nturns a JSP into a servlet, but the difference between a servlet and \na JSP is what YOU (the developer) actually create. With a servlet, \nyou write a Java class that contains HTML in the output statements \n(if you’re sending back an HTML page to the client). But with a \nJSP, it’5 the opposite—you write an HTML page that contains Java \ncode! \nThis gives you the ability to have dynamic web pages where you \nwrite the page as a normal HTML page, except you embed Java \ncode (and other tags that “trigger” Java code at runtime) that \ngets processed at runtime. In other words, part of the page is \ncustomized at runtime when the Java code runs.\nThe main benefit of JSP over regular servlets is that it’5 just a lot \neasier to write the HTML part of a servlet as a JSP page than to \nwrite HTML in the torturous print out statements in the servlet’5 \nresponse. Imagine a reasonably complex HTML page, and now \nimagine formatting it within println statements. Yikes!\nBut for many applications, it isn’t necessary to use JSPs because \nthe servlet doesn’t need to send a dynamic response, or the \nHTML is simple enough not to be such a big pain. And, there are \nstill many web servers out there that support servlets but do not \nsupport JSPs, 50 you’re stuck.\nAnother benefit of JSPs is that you can separate the work by \nhaving the Java developers write the servlets and the web page \ndevelopers write the JSPs. That’5 the promised benefit, anyway. \nIn reality, there’5 still a Java learning curve (and a tag learning \ncurve) for anyone writing a JSP, 50 to think that an HTML web page \ndesigner can bang out JSPs is not realistic. Well, not without tools. \nBut that’5 the good news—authoring tools are starting to appear, \nthat help web page designers create JSPs without writing the \ncode from scratch.\nQ: 15 this all you’re gonna say about servlets? After such a \nhuge thing on RMI?\nA: Yes. RMI is part of the Java language, and all the classes for \nRMI are in the standard libraries. Servlets and JSPs are not part of \nthe Java language; they’re considered standard extensions. You \ncan run RMI on any modern JVM, but Servlets and JSPs require a \nproperly configured web server with a servlet “container”. This is \nour way of saying, “it’5 beyond the scope of this book.” But you can \nread much more in the lovely Head First Servlets & JSP.\n BULLET POINTS\n \nServlets are Java classes that run entirely on \n(and/or within) an HTTP (web) server.\n \nServlets are useful for running code on the \nserver as a result of client interaction with a \nweb page. For example, if a client submits \ninformation in a web page form, the servlet can \nprocess the information, add it to a database, \nand send back a customized, confirmation \nresponse page.\n \nTo compile a servlet, you need the servlet \npackages which are in the servlets.jar file. The \nservlet classes are not part of the Java standard \nlibraries, 50 you need to download the servlets.\njar from java.sun.com or get them from a servlet-\ncapable web server. (Note: the Servlet library \nis included with the Java 2 Enterprise Edition \n(J2EE))\n \nTo run a servlet, you must have a web server \ncapable of running servlets, such as the Tomcat \nserver from apache.org.\n \nYour servlet must be placed in a location that’5 \nspecific to your particular web server, 50 you’11 \nneed to find that out before you try to run your \nservlets. If you have a web site hosted by an ISP \nthat supports servlets, the ISP will tell you which \ndirectory to place your servlets in.\n \nA typical servlet extends HttpServlet and \noverrides one or more servlet methods, such as \ndoGet() or doPost().\n \nThe web server starts the servlet and calls the \nappropriate method (doGet(), etc.) based on the \nclient’5 request.\n \nThe servlet can send back a response by getting \na PrintWriter output stream from the response \nparameter of the doGet() method.\n \nThe servlet ‘writes’ out an HTML page, complete \nwith tags).\nservlets and JSP",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "628 \nchapter 18\nthere are no\nDumb Questions\nQ: What’5 a JSP, and how does it relate to servlets?\nA: JSP stands for Java Server Pages. In the end, the web server \nturns a JSP into a servlet, but the difference between a servlet and \na JSP is what YOU (the developer) actually create. With a servlet, \nyou write a Java class that contains HTML in the output statements \n(if you’re sending back an HTML page to the client). But with a \nJSP, it’5 the opposite—you write an HTML page that contains Java \ncode! \nThis gives you the ability to have dynamic web pages where you \nwrite the page as a normal HTML page, except you embed Java \ncode (and other tags that “trigger” Java code at runtime) that \ngets processed at runtime. In other words, part of the page is \ncustomized at runtime when the Java code runs.\nThe main benefit of JSP over regular servlets is that it’5 just a lot \neasier to write the HTML part of a servlet as a JSP page than to \nwrite HTML in the torturous print out statements in the servlet’5 \nresponse. Imagine a reasonably complex HTML page, and now \nimagine formatting it within println statements. Yikes!\nBut for many applications, it isn’t necessary to use JSPs because \nthe servlet doesn’t need to send a dynamic response, or the \nHTML is simple enough not to be such a big pain. And, there are \nstill many web servers out there that support servlets but do not \nsupport JSPs, 50 you’re stuck.\nAnother benefit of JSPs is that you can separate the work by \nhaving the Java developers write the servlets and the web page \ndevelopers write the JSPs. That’5 the promised benefit, anyway. \nIn reality, there’5 still a Java learning curve (and a tag learning \ncurve) for anyone writing a JSP, 50 to think that an HTML web page \ndesigner can bang out JSPs is not realistic. Well, not without tools. \nBut that’5 the good news—authoring tools are starting to appear, \nthat help web page designers create JSPs without writing the \ncode from scratch.\nQ: 15 this all you’re gonna say about servlets? After such a \nhuge thing on RMI?\nA: Yes. RMI is part of the Java language, and all the classes for \nRMI are in the standard libraries. Servlets and JSPs are not part of \nthe Java language; they’re considered standard extensions. You \ncan run RMI on any modern JVM, but Servlets and JSPs require a \nproperly configured web server with a servlet “container”. This is \nour way of saying, “it’5 beyond the scope of this book.” But you can \nread much more in the lovely Head First Servlets & JSP.\n BULLET POINTS\n \nServlets are Java classes that run entirely on \n(and/or within) an HTTP (web) server.\n \nServlets are useful for running code on the \nserver as a result of client interaction with a \nweb page. For example, if a client submits \ninformation in a web page form, the servlet can \nprocess the information, add it to a database, \nand send back a customized, confirmation \nresponse page.\n \nTo compile a servlet, you need the servlet \npackages which are in the servlets.jar file. The \nservlet classes are not part of the Java standard \nlibraries, 50 you need to download the servlets.\njar from java.sun.com or get them from a servlet-\ncapable web server. (Note: the Servlet library \nis included with the Java 2 Enterprise Edition \n(J2EE))\n \nTo run a servlet, you must have a web server \ncapable of running servlets, such as the Tomcat \nserver from apache.org.\n \nYour servlet must be placed in a location that’5 \nspecific to your particular web server, 50 you’11 \nneed to find that out before you try to run your \nservlets. If you have a web site hosted by an ISP \nthat supports servlets, the ISP will tell you which \ndirectory to place your servlets in.\n \nA typical servlet extends HttpServlet and \noverrides one or more servlet methods, such as \ndoGet() or doPost().\n \nThe web server starts the servlet and calls the \nappropriate method (doGet(), etc.) based on the \nclient’5 request.\n \nThe servlet can send back a response by getting \na PrintWriter output stream from the response \nparameter of the doGet() method.\n \nThe servlet ‘writes’ out an HTML page, complete \nwith tags).\nservlets and JSP",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 662,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 662,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 4120 chars",
+      "severity": "info"
+    },
+    {
+      "page": 662,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 662,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

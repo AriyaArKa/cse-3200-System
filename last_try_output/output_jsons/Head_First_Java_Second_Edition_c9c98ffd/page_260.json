@@ -1,0 +1,199 @@
+{
+  "page_number": 260,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "226 \nchapter 8\nClasses from different inheritance trees \ncan implement the same interface.\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline\nPet\nRoboDog\nRobot\nAgent\nClass RoboDog doesn’t \ncome from the Animal \ninheritance tree, but it still \ngets to be a Pet! \nWhen you use a class as a polymorphic type (like an \narray of type Animal or a method that takes a Canine \nargument), the objects you can stick in that type \nmust be from the same inheritance tree. But not just \nanywhere in the inheritance tree; the objects must be \nfrom a class that is a subclass of the polymorphic type. \nAn argument of type Canine can accept a Wolf and a \nDog, but not a Cat or a Hippo. \nBut when you use an interface as a polymorphic \ntype (like an array of Pets), the objects can be \nfrom anywhere in the inheritance tree. The only \nrequirement is that the objects are from a class that \nimplements the interface. Allowing classes in different \ninheritance trees to implement a common interface \nis crucial in the Java API. Do you want an object \nto be able to save its state to a file? Implement the \nSerializable interface. Do you need objects to run \ntheir methods in a separate thread of execution? \nImplement Runnable. You get the idea. You’11 \nlearn more about Serializable and Runnable in later \nchapters, but for now, remember that classes from \nany place in the inheritance tree might need to \nimplement those interfaces. Nearly any class might \nwant to be saveable or runnable.\nBetter still, a class can implement \nmultiple interfaces!\nA Dog object 15-A Canine, and 15-A Animal, and \n15-A Object, all through inheritance. But a Dog 15-A \nPet through interface implementation, and the Dog \nmight implement other interfaces as well. You could \nsay:\npublic class Dog extends Animal implements \nPet, Saveable, Paintable { ... }\ninterface polymorphism",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.63,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Feline",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cat",
+          "",
+          "Lion",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.66,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "Canine"
+        ],
+        [
+          "Hippo",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Hippo",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x109)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (193x91)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x110)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x93)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (190x190)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "226 \nchapter 8\nClasses from different inheritance trees \ncan implement the same interface.\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline\nPet\nRoboDog\nRobot\nAgent\nClass RoboDog doesn’t \ncome from the Animal \ninheritance tree, but it still \ngets to be a Pet! \nWhen you use a class as a polymorphic type (like an \narray of type Animal or a method that takes a Canine \nargument), the objects you can stick in that type \nmust be from the same inheritance tree. But not just \nanywhere in the inheritance tree; the objects must be \nfrom a class that is a subclass of the polymorphic type. \nAn argument of type Canine can accept a Wolf and a \nDog, but not a Cat or a Hippo. \nBut when you use an interface as a polymorphic \ntype (like an array of Pets), the objects can be \nfrom anywhere in the inheritance tree. The only \nrequirement is that the objects are from a class that \nimplements the interface. Allowing classes in different \ninheritance trees to implement a common interface \nis crucial in the Java API. Do you want an object \nto be able to save its state to a file? Implement the \nSerializable interface. Do you need objects to run \ntheir methods in a separate thread of execution? \nImplement Runnable. You get the idea. You’11 \nlearn more about Serializable and Runnable in later \nchapters, but for now, remember that classes from \nany place in the inheritance tree might need to \nimplement those interfaces. Nearly any class might \nwant to be saveable or runnable.\nBetter still, a class can implement \nmultiple interfaces!\nA Dog object 15-A Canine, and 15-A Animal, and \n15-A Object, all through inheritance. But a Dog 15-A \nPet through interface implementation, and the Dog \nmight implement other interfaces as well. You could \nsay:\npublic class Dog extends Animal implements \nPet, Saveable, Paintable { ... }\ninterface polymorphism",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 260,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 260,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1844 chars",
+      "severity": "info"
+    },
+    {
+      "page": 260,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 7",
+      "severity": "info"
+    },
+    {
+      "page": 260,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

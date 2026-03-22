@@ -1,0 +1,81 @@
+{
+  "page_number": 38,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9375,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "4 \nchapter 1\nhistory of Java \nA very brief history of Java\nJava 1.02\n250 classes \nSlow.\nCute name and \nlogo. Fun to use. \nLots of bugs. Ap-\nplets are the Big \nThing.\nJava 1.1\n500 classes\nA little faster.\nMore capable, friendlier. \nBecoming very popular. \nBetter GUI code. \nJava 2 \n(versions 1.2 – 1.4) \n2300 classes \nMuch faster.\nCan (sometimes) run at \nnative speeds. Serious, \npowerful. Comes in three \nflavors: Micro Edition (J2ME), \nStandard Edition (J2SE) and \nEnterprise Edition (J2EE). \nBecomes the language of \nchoice for new enterprise \n(especially web-based) and \nmobile applications.\nClasses in the Java standard library\n3500\n3000\n2500\n2000\n1500\n1000\n500\n0\nJava 5.0 \n(versions 1.5 and up) \n3500 classes \nMore power, easier to \ndevelop with. \nBesides adding more than a \nthousand additional classes, \nJava 5.0 (known as “Tiger”) \nadded major changes to \nthe language itself, making \nit easier (at least in theory) \nfor programmers and giving \nit new features that were \npopular in other languages.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (110x74)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (239x200)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (484x383)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (293x570)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "4 \nchapter 1\nhistory of Java \nA very brief history of Java\nJava 1.02\n250 classes \nSlow.\nCute name and \nlogo. Fun to use. \nLots of bugs. Ap-\nplets are the Big \nThing.\nJava 1.1\n500 classes\nA little faster.\nMore capable, friendlier. \nBecoming very popular. \nBetter GUI code. \nJava 2 \n(versions 1.2 – 1.4) \n2300 classes \nMuch faster.\nCan (sometimes) run at \nnative speeds. Serious, \npowerful. Comes in three \nflavors: Micro Edition (J2ME), \nStandard Edition (J2SE) and \nEnterprise Edition (J2EE). \nBecomes the language of \nchoice for new enterprise \n(especially web-based) and \nmobile applications.\nClasses in the Java standard library\n3500\n3000\n2500\n2000\n1500\n1000\n500\n0\nJava 5.0 \n(versions 1.5 and up) \n3500 classes \nMore power, easier to \ndevelop with. \nBesides adding more than a \nthousand additional classes, \nJava 5.0 (known as “Tiger”) \nadded major changes to \nthe language itself, making \nit easier (at least in theory) \nfor programmers and giving \nit new features that were \npopular in other languages.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 38,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 38,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1010 chars",
+      "severity": "info"
+    },
+    {
+      "page": 38,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 38,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

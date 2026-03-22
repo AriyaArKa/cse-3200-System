@@ -1,0 +1,46 @@
+{
+  "page_number": 26,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "World Economic Forum\n91–93 route de la Capite\nCH-1223 Cologny/Geneva\nSwitzerland \nTel.: +41 (0) 22 869 1212\nFax: +41 (0) 22 786 2744\ncontact@weforum.org\nwww.weforum.org\nThe World Economic Forum, \ncommitted to improving \nthe state of the world, is the \nInternational Organization for \nPublic-Private Cooperation.\n \nThe Forum engages the \nforemost political, business \nand other leaders of society \nto shape global, regional \nand industry agendas.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "World Economic Forum\n91–93 route de la Capite\nCH-1223 Cologny/Geneva\nSwitzerland \nTel.: +41 (0) 22 869 1212\nFax: +41 (0) 22 786 2744\ncontact@weforum.org\nwww.weforum.org\nThe World Economic Forum, \ncommitted to improving \nthe state of the world, is the \nInternational Organization for \nPublic-Private Cooperation.\n \nThe Forum engages the \nforemost political, business \nand other leaders of society \nto shape global, regional \nand industry agendas.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 26,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 26,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 450 chars",
+      "severity": "info"
+    },
+    {
+      "page": 26,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

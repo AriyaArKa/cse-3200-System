@@ -1,0 +1,74 @@
+{
+  "page_number": 349,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "11 exception handling \nthis is a new chapter\n315\nStuff happens. The file isn’t there. The server is down. No matter how \ngood a programmer you are, you can’t control everything. Things can go wrong. Very wrong. \nWhen you write a risky method, you need code to handle the bad things that might happen. \nBut how do you know when a method is risky? And where do you put the code to handle the \nexceptional situation? 50 far in this book, we haven’t really taken any risks. We’ve certainly had \nthings go wrong at runtime, but the problems were mostly flaws in our own code. Bugs. And \nthose we should fix at development time. No, the problem-handling code we’re talking about \nhere is for code that you can’t guaranatee will work at runtime. Code that expects the file to be \nin the right directory, the server to be running, or the Thread to stay asleep. And we have to do \nthis now. Because in this chapter, we’re going to build something that uses the risky JavaSound \nAPI. We’re going to build a MIDI Music Player.\n Risky Behavior\nSure it’5 risky, \nbut 1 can handle it if \nsomething goes wrong.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (830x677)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "11 exception handling \nthis is a new chapter\n315\nStuff happens. The file isn’t there. The server is down. No matter how \ngood a programmer you are, you can’t control everything. Things can go wrong. Very wrong. \nWhen you write a risky method, you need code to handle the bad things that might happen. \nBut how do you know when a method is risky? And where do you put the code to handle the \nexceptional situation? 50 far in this book, we haven’t really taken any risks. We’ve certainly had \nthings go wrong at runtime, but the problems were mostly flaws in our own code. Bugs. And \nthose we should fix at development time. No, the problem-handling code we’re talking about \nhere is for code that you can’t guaranatee will work at runtime. Code that expects the file to be \nin the right directory, the server to be running, or the Thread to stay asleep. And we have to do \nthis now. Because in this chapter, we’re going to build something that uses the risky JavaSound \nAPI. We’re going to build a MIDI Music Player.\n Risky Behavior\nSure it’5 risky, \nbut 1 can handle it if \nsomething goes wrong.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 349,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 349,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1100 chars",
+      "severity": "info"
+    },
+    {
+      "page": 349,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 349,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

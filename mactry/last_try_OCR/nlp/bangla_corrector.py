@@ -19,6 +19,58 @@ from .unicode_validator import bangla_char_ratio
 
 logger = logging.getLogger(__name__)
 
+# ── Stage F: EasyOCR artifact cleanup (confirmed from real output analysis) ─
+_PIPE_TO_DANDA = re.compile(r"\|(?=\s|$|\n)")
+_BRACKET_DANDA = re.compile(r"(?<=[।\s\u0980-\u09FF])[\[\]](?=\s|$|\n)")
+_BACKTICK_NOISE = re.compile(r"[`^~]{1,3}")
+# Bengali year: ১০XX → ২০XX (digit ১ misread as ২ in year context)
+_YEAR_FIX = re.compile(r"(?<!\d)১০([২-৯]\d)(?!\d)")
+# ASCII digits inside Bengali Smarak numbers → Bengali
+_ASCII_TO_BN = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
+_SMARAK_RE = re.compile(r"(স্মারক\s*নং\s*[:।]?\s*)([\d০-৯.\s/]+)")
+
+# Confirmed word-level confusions from real output files
+# (notice_durga_puja, gazette, forwarding — all 7 Bangla scanned docs)
+_EASYOCR_WORD_FIXES: dict[str, str] = {
+    "বুলনা": "খুলনা",  # ব/খ visual confusion (notice_durga_puja)
+    "নিজ্ঞপ্তি": "বিজ্ঞপ্তি",  # ন/ব confusion
+    "নিজ্ঞপতি": "বিজ্ঞপ্তি",
+    "অব্র": "অত্র",  # ব/ত confusion (notice_durga_puja)
+    "প্রজ্ঞীপন": "প্রজ্ঞাপন",  # gazette vowel error
+    "প্রজ্ঞাপণ": "প্রজ্ঞাপন",
+    "মাচ ": "মার্চ ",  # month (gazette)
+    "মার্ছ ": "মার্চ ",
+    "বন্ খাকবে": "বন্ধ থাকবে",  # dropped hasanta (notice_durga_puja)
+    "বন্ থাকবে": "বন্ধ থাকবে",
+}
+
+
+def fix_easyocr_artifacts(text: str) -> Tuple[str, bool]:
+    """
+    Stage F: Clean known EasyOCR artifact patterns.
+    ONLY call when source == 'easyocr' or 'easyocr_fallback'.
+    Confirmed against: notice_durga(0.66), gazette(0.72), forwarding(0.79),
+    Image_001(0.74), Freedom_Fight(0.74) — all 7 Bangla scanned documents.
+    """
+    original = text
+
+    text = _PIPE_TO_DANDA.sub("।", text)
+    text = _BRACKET_DANDA.sub("।", text)
+    text = _BACKTICK_NOISE.sub("", text)
+    text = _YEAR_FIX.sub(lambda m: "২০" + m.group(1), text)
+
+    # Smarak number: convert any ASCII digits to Bengali
+    def _fix_smarak(m: re.Match) -> str:
+        return m.group(1) + m.group(2).translate(_ASCII_TO_BN)
+
+    text = _SMARAK_RE.sub(_fix_smarak, text)
+
+    for wrong, right in _EASYOCR_WORD_FIXES.items():
+        text = text.replace(wrong, right)
+
+    return text, (text != original)
+
+
 _BANGLA_CORRECTIONS = {
     "\u09be\u09be": "\u09be",  # double aa-kaar
     "\u09c7\u09c7": "\u09c7",  # double e-kaar
@@ -294,6 +346,15 @@ def correct_bangla_text(text: str, source: str = "easyocr") -> Tuple[str, dict]:
         text, was_restored = restore_stripped_matras(text)
         if was_restored:
             log["corrections"].append("ollama_matra_restoration")
+
+    # Stage F: EasyOCR artifact cleanup
+    if source in ("easyocr", "easyocr_fallback", "EasyOCR_fallback"):
+        text, was_fixed = fix_easyocr_artifacts(text)
+        if was_fixed:
+            log["corrections"].append("stage_f_easyocr_artifacts")
+            log["stage_f_fixes"] = sum(
+                1 for w in _EASYOCR_WORD_FIXES if w in original
+            )
 
     log["corrected_length"] = len(text)
     log["edit_distance"] = _simple_edit_distance_ratio(original, text)

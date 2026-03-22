@@ -1,0 +1,87 @@
+{
+  "page_number": 58,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "24 \nchapter 1\nSystem.out.print(“ ”);\nSystem.out.print(“a“);\nSystem.out.print(“n“);\nSystem.out.print(“an“);\nx = x + 1;\nx = x + 2;\nx = x - 2;\nx = x - 1;\nx > 0\nx < 1\nx > 1\nx > 3\nx < 4\nSystem.out.print(“noys “);\nSystem.out.print(“oise “);\nSystem.out.print(“ oyster “);\nSystem.out.print(“annoys”);\nSystem.out.print(“noise”);\nPool Puzzle\nYour job is to take code snippets from the \npool and place them into the blank \nlines in the code. You may not use the \nsame snippet more than once, and \nyou won’t need to use all the snip-\npets. Your goal is to make a class that \nwill compile and run and produce the \noutput listed. Don’t be fooled—this one’5 \nharder than it looks.\nclass PoolPuzzleOne {\n public static void main(String [] args) {\n int x = 0;\n while ( __________ ) {\n _____________________________\n if ( x < 1 ) {\n ___________________________\n }\n _____________________________\n if ( __________ ) {\n \n ____________________________\n \n ___________\n }\n if ( x == 1 ) {\n ____________________________\n }\n if ( ___________ ) {\n ____________________________\n }\n System.out.println(““);\n ____________\n }\n }\n}\nNote: Each snippet \nfrom the pool can be \nused only once!\nFile Edit Window Help Cheat\n%java PoolPuzzleOne\na noise\nannoys\nan oyster\nOutput\npuzzle: Pool Puzzle",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Cheat"
+        ],
+        [
+          "%java PoolPuzzleOne\na noise\nannoys\nan oyster"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (1278x549)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "24 \nchapter 1\nSystem.out.print(“ ”);\nSystem.out.print(“a“);\nSystem.out.print(“n“);\nSystem.out.print(“an“);\nx = x + 1;\nx = x + 2;\nx = x - 2;\nx = x - 1;\nx > 0\nx < 1\nx > 1\nx > 3\nx < 4\nSystem.out.print(“noys “);\nSystem.out.print(“oise “);\nSystem.out.print(“ oyster “);\nSystem.out.print(“annoys”);\nSystem.out.print(“noise”);\nPool Puzzle\nYour job is to take code snippets from the \npool and place them into the blank \nlines in the code. You may not use the \nsame snippet more than once, and \nyou won’t need to use all the snip-\npets. Your goal is to make a class that \nwill compile and run and produce the \noutput listed. Don’t be fooled—this one’5 \nharder than it looks.\nclass PoolPuzzleOne {\n public static void main(String [] args) {\n int x = 0;\n while ( __________ ) {\n _____________________________\n if ( x < 1 ) {\n ___________________________\n }\n _____________________________\n if ( __________ ) {\n \n ____________________________\n \n ___________\n }\n if ( x == 1 ) {\n ____________________________\n }\n if ( ___________ ) {\n ____________________________\n }\n System.out.println(““);\n ____________\n }\n }\n}\nNote: Each snippet \nfrom the pool can be \nused only once!\nFile Edit Window Help Cheat\n%java PoolPuzzleOne\na noise\nannoys\nan oyster\nOutput\npuzzle: Pool Puzzle",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 58,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 58,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1388 chars",
+      "severity": "info"
+    },
+    {
+      "page": 58,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 58,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

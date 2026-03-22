@@ -1,0 +1,46 @@
+{
+  "page_number": 73,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nclasses and objects\n39\npublic class GuessGame {\n Player p1;\n Player p2;\n Player p3;\n public void startGame() {\n p1 = new Player();\n p2 = new Player();\n p3 = new Player();\n \n int guessp1 = 0;\n int guessp2 = 0;\n int guessp3 = 0;\n boolean p1isRight = false;\n boolean p2isRight = false;\n boolean p3isRight = false;\n int targetNumber = (int) (Math.random() * 10);\n System.out.println(“1’m thinking of a number between 0 and 9...”);\n while(true) {\n System.out.println(“Number to guess is “ + targetNumber);\n p1.guess();\n p2.guess();\n p3.guess();\n guessp1 = p1.number;\n System.out.println(“Player one guessed “ + guessp1);\n guessp2 = p2.number;\n System.out.println(“Player two guessed “ + guessp2);\n guessp3 = p3.number;\n System.out.println(“Player three guessed “ + guessp3);\n \n if (guessp1 == targetNumber) {\n p1isRight = true;\n }\n if (guessp2 == targetNumber) {\n p2isRight = true;\n }\n if (guessp3 == targetNumber) {\n p3isRight = true;\n }\n if (p1isRight || p2isRight || p3isRight) {\n \n System.out.println(“We have a winner!”);\n System.out.println(“Player one got it right? “ + p1isRight);\n System.out.println(“Player two got it right? “ + p2isRight);\n System.out.println(“Player three got it right? “ + p3isRight);\n System.out.println(“Game is over.”);\n break; // game over, 50 break out of the loop\n } else {\n // we must keep going because nobody got it right!\n System.out.println(“Players will have to try again.”);\n } // end if/else\n } // end loop\n } // end method\n} // end class\nGuessGame has three instance \nvariables for the three Player \nobjects\ncreate three Player objects and \nassign them to the three Player \ninstance variables\ndeclare three variables to hold the \nthree guesses the Players make\ndeclare three variables to hold a true or \nfalse based on the player’5 answer\nmake a ‘target’ number that the \nplayers have to guess\ncall each player’5 guess() method\nget each player’5 guess (the result of their \nguess() method running) by accessing the \nnumber variable of each player\ncheck each player’5 guess to see if it matches \nthe target number. If a player is right, \nthen set that player’5 variable to be true \n(remember, we set it false by default)\nif player one OR player two OR player three is right... \n(the || operator means OR)\notherwise, stay in the loop and ask the \nplayers for another guess.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\nclasses and objects\n39\npublic class GuessGame {\n Player p1;\n Player p2;\n Player p3;\n public void startGame() {\n p1 = new Player();\n p2 = new Player();\n p3 = new Player();\n \n int guessp1 = 0;\n int guessp2 = 0;\n int guessp3 = 0;\n boolean p1isRight = false;\n boolean p2isRight = false;\n boolean p3isRight = false;\n int targetNumber = (int) (Math.random() * 10);\n System.out.println(“1’m thinking of a number between 0 and 9...”);\n while(true) {\n System.out.println(“Number to guess is “ + targetNumber);\n p1.guess();\n p2.guess();\n p3.guess();\n guessp1 = p1.number;\n System.out.println(“Player one guessed “ + guessp1);\n guessp2 = p2.number;\n System.out.println(“Player two guessed “ + guessp2);\n guessp3 = p3.number;\n System.out.println(“Player three guessed “ + guessp3);\n \n if (guessp1 == targetNumber) {\n p1isRight = true;\n }\n if (guessp2 == targetNumber) {\n p2isRight = true;\n }\n if (guessp3 == targetNumber) {\n p3isRight = true;\n }\n if (p1isRight || p2isRight || p3isRight) {\n \n System.out.println(“We have a winner!”);\n System.out.println(“Player one got it right? “ + p1isRight);\n System.out.println(“Player two got it right? “ + p2isRight);\n System.out.println(“Player three got it right? “ + p3isRight);\n System.out.println(“Game is over.”);\n break; // game over, 50 break out of the loop\n } else {\n // we must keep going because nobody got it right!\n System.out.println(“Players will have to try again.”);\n } // end if/else\n } // end loop\n } // end method\n} // end class\nGuessGame has three instance \nvariables for the three Player \nobjects\ncreate three Player objects and \nassign them to the three Player \ninstance variables\ndeclare three variables to hold the \nthree guesses the Players make\ndeclare three variables to hold a true or \nfalse based on the player’5 answer\nmake a ‘target’ number that the \nplayers have to guess\ncall each player’5 guess() method\nget each player’5 guess (the result of their \nguess() method running) by accessing the \nnumber variable of each player\ncheck each player’5 guess to see if it matches \nthe target number. If a player is right, \nthen set that player’5 variable to be true \n(remember, we set it false by default)\nif player one OR player two OR player three is right... \n(the || operator means OR)\notherwise, stay in the loop and ask the \nplayers for another guess.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 73,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 73,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2603 chars",
+      "severity": "info"
+    },
+    {
+      "page": 73,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

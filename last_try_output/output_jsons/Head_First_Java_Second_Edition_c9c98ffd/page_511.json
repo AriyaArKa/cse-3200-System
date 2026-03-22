@@ -1,0 +1,110 @@
+{
+  "page_number": 511,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n477\nIP address is like specifying a \nparticular shopping mall, say, \n“Flatirons Marketplace”\nPort number is like naming \na specific store, say, \n“Bob’5 CD Shop”\nIP address is the mall\nPort number is the specific \nstore in the mall\nServer\nClient\nChat server \nprogram\nbrain barbell\nBrain Barbell\nOK, you got a Socket connection. The client and the \nserver know the IP address and TCP port number for \neach other. Now what? How do you communicate \nover that connection? In other words, how do you \nmove bits from one to the other? Imagine the kinds of \nmessages your chat client needs to send and receive. \nHow do these two \nactually talk to \neach other?\nthere are no\nDumb Questions\nQ: How do you know the port \nnumber of the server program you \nwant to talk to? \nA: That depends on whether the \nprogram is one of the well-known \nservices. If you’re trying to connect \nto a well-known service, like the ones \non the opposite page (HTTP, SMTP, \nFTP, etc.) you can look these up on \nthe internet (Google “Well-Known \nTCP Port”). Or ask your friendly \nneighborhood sys-admin.\nBut if the program isn’t one of the \nwell-known services, you need to find \nout from whoever is deploying the \nservice. Ask him. Or her. Typically, if \nsomeone writes a network service \nand wants others to write clients for \nit, they’11 publish the IP address, port \nnumber, and protocol for the service. \nFor example, if you want to write a \nclient for a 60 game server, you can \nvisit one of the 60 server sites and \nfind information about how to write a \nclient for that particular server.\nQ: Can there ever be more than \none program running on a single \nport? In other words, can two \napplications on the same server have \nthe same port number?\nA: No! If you try to bind a program \nto a port that is already in use, \nyou’11 get a BindException. To bind a \nprogram to a port just means starting \nup a server application and telling it to \nrun on a particular port. Again, you’11 \nlearn more about this when we get to \nthe server part of this chapter.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          "1"
+        ],
+        [
+          "",
+          ""
+        ],
+        [
+          "ni b a r ra",
+          "b e 1 in"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (412x279)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (312x460)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (482x221)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x139)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n477\nIP address is like specifying a \nparticular shopping mall, say, \n“Flatirons Marketplace”\nPort number is like naming \na specific store, say, \n“Bob’5 CD Shop”\nIP address is the mall\nPort number is the specific \nstore in the mall\nServer\nClient\nChat server \nprogram\nbrain barbell\nBrain Barbell\nOK, you got a Socket connection. The client and the \nserver know the IP address and TCP port number for \neach other. Now what? How do you communicate \nover that connection? In other words, how do you \nmove bits from one to the other? Imagine the kinds of \nmessages your chat client needs to send and receive. \nHow do these two \nactually talk to \neach other?\nthere are no\nDumb Questions\nQ: How do you know the port \nnumber of the server program you \nwant to talk to? \nA: That depends on whether the \nprogram is one of the well-known \nservices. If you’re trying to connect \nto a well-known service, like the ones \non the opposite page (HTTP, SMTP, \nFTP, etc.) you can look these up on \nthe internet (Google “Well-Known \nTCP Port”). Or ask your friendly \nneighborhood sys-admin.\nBut if the program isn’t one of the \nwell-known services, you need to find \nout from whoever is deploying the \nservice. Ask him. Or her. Typically, if \nsomeone writes a network service \nand wants others to write clients for \nit, they’11 publish the IP address, port \nnumber, and protocol for the service. \nFor example, if you want to write a \nclient for a 60 game server, you can \nvisit one of the 60 server sites and \nfind information about how to write a \nclient for that particular server.\nQ: Can there ever be more than \none program running on a single \nport? In other words, can two \napplications on the same server have \nthe same port number?\nA: No! If you try to bind a program \nto a port that is already in use, \nyou’11 get a BindException. To bind a \nprogram to a port just means starting \nup a server application and telling it to \nrun on a particular port. Again, you’11 \nlearn more about this when we get to \nthe server part of this chapter.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 511,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 511,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2062 chars",
+      "severity": "info"
+    },
+    {
+      "page": 511,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 511,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

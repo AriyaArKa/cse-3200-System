@@ -1,0 +1,60 @@
+{
+  "page_number": 114,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "80 \nchapter 4\nJen says you’re \nwell-encapsulated...\nEncapsulation\nDo it or risk humiliation and \nridicule.\nUntil this most important moment, we’ve \nbeen committing one of the worst 00 \nfaux pas (and we’re not talking minor \nviolation like showing up without the ‘8’ \nin BYOB). No, we’re talking Faux Pas \nwith a capital ‘F’. And ‘P’.\nOur shameful transgression?\nExposing our data!\nHere we are, just humming along without \na care in the world leaving our data out \nthere for anyone to see and even touch.\nYou may have already experienced that \nvaguely unsettling feeling that comes with \nleaving your instance variables exposed.\nExposed means reachable with the dot \noperator, as in:\ntheCat.height = 27;\nThink about this idea of using our remote \ncontrol to make a direct change to the Cat \nobject’5 size instance variable. In the hands \nof the wrong person, a reference variable \n(remote control) is quite a dangerous \nweapon. Because what’5 to prevent:\ntheCat.height = 0; \nThis would be a Bad Thing. We need to \nbuild setter methods for all the instance \nvariables, and find a way to force other \ncode to call the setters rather than access \nthe data directly.\nyikes! We can’t \nlet this happen!\nreal developers encapsulate\npublic void setHeight(int ht) {\n if (ht > 9) {\n height = ht;\n }\n}\nBy forcing everybody to call a setter \nmethod, we can protect the cat from \nunacceptable size changes.\nWe put in checks \nto guarantee a \nminimum cat height.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (522x656)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "80 \nchapter 4\nJen says you’re \nwell-encapsulated...\nEncapsulation\nDo it or risk humiliation and \nridicule.\nUntil this most important moment, we’ve \nbeen committing one of the worst 00 \nfaux pas (and we’re not talking minor \nviolation like showing up without the ‘8’ \nin BYOB). No, we’re talking Faux Pas \nwith a capital ‘F’. And ‘P’.\nOur shameful transgression?\nExposing our data!\nHere we are, just humming along without \na care in the world leaving our data out \nthere for anyone to see and even touch.\nYou may have already experienced that \nvaguely unsettling feeling that comes with \nleaving your instance variables exposed.\nExposed means reachable with the dot \noperator, as in:\ntheCat.height = 27;\nThink about this idea of using our remote \ncontrol to make a direct change to the Cat \nobject’5 size instance variable. In the hands \nof the wrong person, a reference variable \n(remote control) is quite a dangerous \nweapon. Because what’5 to prevent:\ntheCat.height = 0; \nThis would be a Bad Thing. We need to \nbuild setter methods for all the instance \nvariables, and find a way to force other \ncode to call the setters rather than access \nthe data directly.\nyikes! We can’t \nlet this happen!\nreal developers encapsulate\npublic void setHeight(int ht) {\n if (ht > 9) {\n height = ht;\n }\n}\nBy forcing everybody to call a setter \nmethod, we can protect the cat from \nunacceptable size changes.\nWe put in checks \nto guarantee a \nminimum cat height.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 114,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 114,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1458 chars",
+      "severity": "info"
+    },
+    {
+      "page": 114,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 114,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

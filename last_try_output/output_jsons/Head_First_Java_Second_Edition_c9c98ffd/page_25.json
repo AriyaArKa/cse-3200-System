@@ -1,0 +1,74 @@
+{
+  "page_number": 25,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "the intro\nyou are here\nxxiii\n“How can this be a serious Java programming book?”\n“What’5 with all the graphics?”\n“Can 1 actually learn it this way?”\n“Do 1 smell pizza?”\nWe know what you’re thinking.\nYour brain craves novelty. It’5 always searching, scanning, waiting for \nsomething unusual. It was built that way, and it helps you stay alive. \nToday, you’re less likely to be a tiger snack. But your brain’5 still \nlooking. You just never know.\n50 what does your brain do with all the routine, ordinary, normal \nthings you encounter? Everything it can to stop them from \ninterfering with the brain’5 real job—recording things that matter. It \ndoesn’t bother saving the boring things; they never make it past the \n“this is obviously not important” filter.\nHow does your brain know what’5 important? Suppose you’re out for \na day hike and a tiger jumps in front of you, what happens inside your \nhead? \nNeurons fire. Emotions crank up. Chemicals surge. \nAnd that’5 how your brain knows...\nThis must be important! Don’t forget it!\nBut imagine you’re at home, or in a library. It’5 a safe, warm, tiger-free \nzone. You’re studying. Getting ready for an exam. Or trying to learn \nsome tough technical topic your boss thinks will take a week, ten days \nat the most.\nJust one problem. Your brain’5 trying to do you a big favor. It’5 \ntrying to make sure that this obviously non-important content \ndoesn’t clutter up scarce resources. Resources that are better \nspent storing the really big things. Like tigers. Like the danger of \nfire. Like how you should never again snowboard in shorts.\nAnd there’5 no simple way to tell your brain, “Hey brain, thank \nyou very much, but no matter how dull this book is, and how \nlittle 1’m registering on the emotional richter scale right now, 1 \nreally do want you to keep this stuff around.”\nAnd we know what your brain is thinking.\nyour brain thinks \nTHIS is important.\nGreat. Only \n637 more dull, dry, \nboring pages.\nyour brain thinks \nTHIS isn’t worth \nsaving.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (245x180)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (552x520)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (272x379)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "the intro\nyou are here\nxxiii\n“How can this be a serious Java programming book?”\n“What’5 with all the graphics?”\n“Can 1 actually learn it this way?”\n“Do 1 smell pizza?”\nWe know what you’re thinking.\nYour brain craves novelty. It’5 always searching, scanning, waiting for \nsomething unusual. It was built that way, and it helps you stay alive. \nToday, you’re less likely to be a tiger snack. But your brain’5 still \nlooking. You just never know.\n50 what does your brain do with all the routine, ordinary, normal \nthings you encounter? Everything it can to stop them from \ninterfering with the brain’5 real job—recording things that matter. It \ndoesn’t bother saving the boring things; they never make it past the \n“this is obviously not important” filter.\nHow does your brain know what’5 important? Suppose you’re out for \na day hike and a tiger jumps in front of you, what happens inside your \nhead? \nNeurons fire. Emotions crank up. Chemicals surge. \nAnd that’5 how your brain knows...\nThis must be important! Don’t forget it!\nBut imagine you’re at home, or in a library. It’5 a safe, warm, tiger-free \nzone. You’re studying. Getting ready for an exam. Or trying to learn \nsome tough technical topic your boss thinks will take a week, ten days \nat the most.\nJust one problem. Your brain’5 trying to do you a big favor. It’5 \ntrying to make sure that this obviously non-important content \ndoesn’t clutter up scarce resources. Resources that are better \nspent storing the really big things. Like tigers. Like the danger of \nfire. Like how you should never again snowboard in shorts.\nAnd there’5 no simple way to tell your brain, “Hey brain, thank \nyou very much, but no matter how dull this book is, and how \nlittle 1’m registering on the emotional richter scale right now, 1 \nreally do want you to keep this stuff around.”\nAnd we know what your brain is thinking.\nyour brain thinks \nTHIS is important.\nGreat. Only \n637 more dull, dry, \nboring pages.\nyour brain thinks \nTHIS isn’t worth \nsaving.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 25,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 25,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1996 chars",
+      "severity": "info"
+    },
+    {
+      "page": 25,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 25,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

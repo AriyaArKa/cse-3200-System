@@ -1,0 +1,59 @@
+{
+  "page_number": 542,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "508 \nchapter 15\nFile Edit Window Help Visa \nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nMonica is about to withdraw\nMonica is going to sleep\nRyan woke up.\nRyan completes the withdrawl\nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nMonica is about to withdraw\nMonica is going to sleep\nRyan woke up.\nRyan completes the withdrawl\nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nRyan woke up.\nRyan completes the withdrawl\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nThe makeWithdrawal() method \nalways checks the balance \nbefore making a withdrawal, \nbut still we overdraw the \naccount.\nHere’5 one scenario:\nRyan checks the balance, sees that \nthere’5 enough money, and then falls \nasleep.\n Meanwhile, Monica comes in and checks \nthe balance. She, too, sees that there’5 \nenough money. She has no idea that \nRyan is going to wake up and complete a \nwithdrawal. \nMonica falls asleep.\nRyan wakes up and completes his \nwithdrawal. \nMonica wakes up and completes her \nwithdrawal. Big Problem! In between the \ntime when she checked the balance and \nmade the withdrawal, Ryan woke up and \npulled money from the account. \nMonica’5 check of the account was \nnot valid, because Ryan had already \nchecked and was still in the middle of \nmaking a withdrawal.\nMonica must be stopped from getting \ninto the account until Ryan wakes up and \nfinishes his transaction. And vice-versa.\nHow did this \nhappen?\nRyan and Monica output",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Visa"
+        ],
+        [
+          "Ryan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nMonica is about to withdraw\nMonica is going to sleep\nRyan woke up.\nRyan completes the withdrawl\nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nMonica is about to withdraw\nMonica is going to sleep\nRyan woke up.\nRyan completes the withdrawl\nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nRyan woke up.\nRyan completes the withdrawl\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "508 \nchapter 15\nFile Edit Window Help Visa \nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nMonica is about to withdraw\nMonica is going to sleep\nRyan woke up.\nRyan completes the withdrawl\nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nMonica is about to withdraw\nMonica is going to sleep\nRyan woke up.\nRyan completes the withdrawl\nRyan is about to withdraw\nRyan is going to sleep\nMonica woke up.\nMonica completes the withdrawl\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nSorry, not enough for Monica\nRyan woke up.\nRyan completes the withdrawl\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nSorry, not enough for Ryan\nOverdrawn!\nThe makeWithdrawal() method \nalways checks the balance \nbefore making a withdrawal, \nbut still we overdraw the \naccount.\nHere’5 one scenario:\nRyan checks the balance, sees that \nthere’5 enough money, and then falls \nasleep.\n Meanwhile, Monica comes in and checks \nthe balance. She, too, sees that there’5 \nenough money. She has no idea that \nRyan is going to wake up and complete a \nwithdrawal. \nMonica falls asleep.\nRyan wakes up and completes his \nwithdrawal. \nMonica wakes up and completes her \nwithdrawal. Big Problem! In between the \ntime when she checked the balance and \nmade the withdrawal, Ryan woke up and \npulled money from the account. \nMonica’5 check of the account was \nnot valid, because Ryan had already \nchecked and was still in the middle of \nmaking a withdrawal.\nMonica must be stopped from getting \ninto the account until Ryan wakes up and \nfinishes his transaction. And vice-versa.\nHow did this \nhappen?\nRyan and Monica output",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 542,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 542,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1790 chars",
+      "severity": "info"
+    },
+    {
+      "page": 542,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

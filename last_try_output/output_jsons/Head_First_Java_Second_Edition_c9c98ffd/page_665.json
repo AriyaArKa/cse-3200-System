@@ -1,0 +1,95 @@
+{
+  "page_number": 665,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n631\nEnterprise JavaBeans: RMI on steroids\nRMI is great for writing and running remote services. But \nyou wouldn’t run something like an Amazon or eBay on RMI \nalone. For a large, deadly serious, enterprise application, you \nneed something more. You need something that can handle \ntransactions, heavy concurrency issues (like a gazillion \npeople are hitting your server at once to buy those organic \ndog kibbles), security (not just anyone should hit your \npayroll database), and data management. For that, you need \nan enterprise application server.\nIn Java, that means a Java 2 Enterprise Edition (J2EE) server. \nA J2EE server includes both a web server and an Enterprise \nJavaBeans(EJB) server, 50 that you can deploy an application \nthat includes both servlets and EJBs. Like servlets, EJB is \nway beyond the scope of this book, and there’5 no way to \nshow “just a little” EJB example with code, but we will take \na quick look at how it works. (For a much more detailed \ntreatment of EJB, we can recommend the lively Head First \nEJB certification study guide.)\nE\nJ\n8\n \n0\nb\nj\ne\nc\nt\n \nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nC\nli\ne\nn\nt\n \nh\ne\n1\np\ner\n5\ne\nr\nv\ni\nc\ne\n \nh\ne\n1\np\ne\nr\nClient\nRMI STUB\nRMI SKELETON\nThis client could be ANYTHING, but \ntypically an EJB client is a servlet \nrunning in the same J2EE server.\ne\nn\nt\ne\nr\np\nr\ni\n5\ne\n \nb\ne\na\nn\n \nHere’5 where the EJB server gets \ninvolved! The EJB object intercepts \nthe calls to the bean (the bean holds \nthe real business logic) and layers in \nall the services provided by the EJB \nserver (security, transactions, etc.)\nEJB server\nThe bean object is protected from \ndirect client access! Only the server \ncan actually talk to the bean. This \nlets the server do things like say, \n“Whoa! This client doesn’t have \nthe security clearance to call this \nmethod...” Almost everything you pay \nfor in an EJB server happens right \nHERE, where the server steps in!\nDB\nAn EJB server adds a bunch \nof services that you don’t get \nwith straight RMI. Things \nlike transactions, security, \nconcurrency, database \nmanagement, and networking. \nAn EJB server steps into the \nmiddle of an RMI call and \nlayers in all of the services.\nThis is only a small part of the EJB picture!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x136)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x97)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (53x75)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (50x105)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (128x122)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x118)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n631\nEnterprise JavaBeans: RMI on steroids\nRMI is great for writing and running remote services. But \nyou wouldn’t run something like an Amazon or eBay on RMI \nalone. For a large, deadly serious, enterprise application, you \nneed something more. You need something that can handle \ntransactions, heavy concurrency issues (like a gazillion \npeople are hitting your server at once to buy those organic \ndog kibbles), security (not just anyone should hit your \npayroll database), and data management. For that, you need \nan enterprise application server.\nIn Java, that means a Java 2 Enterprise Edition (J2EE) server. \nA J2EE server includes both a web server and an Enterprise \nJavaBeans(EJB) server, 50 that you can deploy an application \nthat includes both servlets and EJBs. Like servlets, EJB is \nway beyond the scope of this book, and there’5 no way to \nshow “just a little” EJB example with code, but we will take \na quick look at how it works. (For a much more detailed \ntreatment of EJB, we can recommend the lively Head First \nEJB certification study guide.)\nE\nJ\n8\n \n0\nb\nj\ne\nc\nt\n \nC\nli\ne\nn\nt\n \n0\nb\nj\nect\n \nC\nli\ne\nn\nt\n \nh\ne\n1\np\ner\n5\ne\nr\nv\ni\nc\ne\n \nh\ne\n1\np\ne\nr\nClient\nRMI STUB\nRMI SKELETON\nThis client could be ANYTHING, but \ntypically an EJB client is a servlet \nrunning in the same J2EE server.\ne\nn\nt\ne\nr\np\nr\ni\n5\ne\n \nb\ne\na\nn\n \nHere’5 where the EJB server gets \ninvolved! The EJB object intercepts \nthe calls to the bean (the bean holds \nthe real business logic) and layers in \nall the services provided by the EJB \nserver (security, transactions, etc.)\nEJB server\nThe bean object is protected from \ndirect client access! Only the server \ncan actually talk to the bean. This \nlets the server do things like say, \n“Whoa! This client doesn’t have \nthe security clearance to call this \nmethod...” Almost everything you pay \nfor in an EJB server happens right \nHERE, where the server steps in!\nDB\nAn EJB server adds a bunch \nof services that you don’t get \nwith straight RMI. Things \nlike transactions, security, \nconcurrency, database \nmanagement, and networking. \nAn EJB server steps into the \nmiddle of an RMI call and \nlayers in all of the services.\nThis is only a small part of the EJB picture!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 665,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 665,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2242 chars",
+      "severity": "info"
+    },
+    {
+      "page": 665,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 665,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

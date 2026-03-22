@@ -1,0 +1,877 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.8041,
+    "correction_applied": true,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়",
+      "confidence": 0.516,
+      "bbox": [
+        324,
+        2,
+        818,
+        54
+      ]
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "খুলনা-৯২০৩",
+      "confidence": 0.9997,
+      "bbox": [
+        481,
+        61,
+        641,
+        99
+      ]
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিজ্ঞপ্তি",
+      "confidence": 0.9049,
+      "bbox": [
+        513,
+        127,
+        623,
+        175
+      ]
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অত্র",
+      "confidence": 0.9411,
+      "bbox": [
+        92,
+        248,
+        134,
+        272
+      ]
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিশ্ববিদ্যালয়ের সম্মানিত শিক্ষক , কর্মকর্তা ও",
+      "confidence": 0.3282,
+      "bbox": [
+        133,
+        237,
+        581,
+        282
+      ]
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কর্মচারীবৃন্দের অবগতির জন্য জানানো যাচ্ছে যে , খুলনা",
+      "confidence": 0.5869,
+      "bbox": [
+        580,
+        230,
+        1142,
+        284
+      ]
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রকৌশল",
+      "confidence": 0.7075,
+      "bbox": [
+        0,
+        279,
+        97,
+        315
+      ]
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ও",
+      "confidence": 0.6477,
+      "bbox": [
+        105,
+        287,
+        125,
+        309
+      ]
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রযুক্তি বিশ্ববিদ্যালয়ের সম্মানিত শিক্ষক, কর্মকর্তা ও কর্মচারীগণের জন্য অনুমোদিত জনতা",
+      "confidence": 0.4504,
+      "bbox": [
+        132,
+        270,
+        1068,
+        321
+      ]
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ব্যাংক",
+      "confidence": 0.989,
+      "bbox": [
+        1074,
+        280,
+        1140,
+        308
+      ]
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কর্পোরেট ঋণ মঞ্জুরীর সংশোধিত নীতিমালা",
+      "confidence": 0.6567,
+      "bbox": [
+        0,
+        312,
+        430,
+        356
+      ]
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মার্চ ২০২৬ হতে জুন ২০২৬ প্রান্তিকের জনতা ব্যাংক কর্পোরেট",
+      "confidence": 0.3931,
+      "bbox": [
+        511,
+        311,
+        1141,
+        353
+      ]
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঋণ বিতরণের নিমিত্তে সংযুক্ত নির্ধারিত ফরমে আবেদন আহ্বান করা যাচ্ছে |",
+      "confidence": 0.4273,
+      "bbox": [
+        1,
+        353,
+        731,
+        393
+      ]
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নির্ধারিত ফরমে আগামী ২৬০০২ ২০২৬ইং তারিখের মধ্যে কম্পট্রোলার দপ্তরের ডাটা এন্ট্রি অপারেটর",
+      "confidence": 0.2894,
+      "bbox": [
+        89,
+        411,
+        1133,
+        455
+      ]
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কোহিনুর পান্নার নিকট আবেদনপত্র জমা দেয়ার জন্য অনুরোধ করা হলো",
+      "confidence": 0.8538,
+      "bbox": [
+        1,
+        453,
+        729,
+        493
+      ]
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "উল্লেখ্য , ত্রুটিপূর্ণ অসম্পূর্ণ আবেদন ঋণ",
+      "confidence": 0.3391,
+      "bbox": [
+        743,
+        448,
+        1143,
+        492
+      ]
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রাপ্তির ক্ষেত্রে বিবেচনা করা সম্ভব হবে না /",
+      "confidence": 0.454,
+      "bbox": [
+        1,
+        491,
+        414,
+        527
+      ]
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "en",
+      "text": "[6702/^'",
+      "confidence": 0.2226,
+      "bbox": [
+        1032,
+        573,
+        1195,
+        635
+      ]
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(প্রফেসর ড মোহাম্মদ সুলতান মাহমুদ)",
+      "confidence": 0.5911,
+      "bbox": [
+        749,
+        626,
+        1141,
+        662
+      ]
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ডীন",
+      "confidence": 0.9914,
+      "bbox": [
+        902,
+        662,
+        950,
+        694
+      ]
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মেকানিক্যাল ইঞ্জিনিয়ারিং অনুষদ",
+      "confidence": 0.3543,
+      "bbox": [
+        783,
+        699,
+        1105,
+        737
+      ]
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সভাপতি",
+      "confidence": 0.6757,
+      "bbox": [
+        920,
+        776,
+        1010,
+        808
+      ]
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কর্পোরেট ঋণ আবেদন যাচাই-",
+      "confidence": 0.7063,
+      "bbox": [
+        827,
+        810,
+        1130,
+        852
+      ]
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাচাই ও চুড়ান্ত সুপারিশ প্রণয়ণের",
+      "confidence": 0.3743,
+      "bbox": [
+        815,
+        848,
+        1141,
+        892
+      ]
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নিমিত্তে গঠিত কমিটি",
+      "confidence": 0.5759,
+      "bbox": [
+        824,
+        887,
+        1041,
+        926
+      ]
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "স্মারক নং- খুপ্রবি/ ১১৮০",
+      "confidence": 0.4857,
+      "bbox": [
+        3,
+        1008,
+        277,
+        1046
+      ]
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তাং-",
+      "confidence": 0.9674,
+      "bbox": [
+        824,
+        1010,
+        876,
+        1038
+      ]
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "১৬০০২ ২০২৬ইং",
+      "confidence": 0.4219,
+      "bbox": [
+        876,
+        1002,
+        1067,
+        1044
+      ]
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সদয় অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহণের জন্য অনুলিপি প্রেরণ করা হলো (জ্যেষ্ঠতার ক্রমানুসারে নয়)",
+      "confidence": 0.3878,
+      "bbox": [
+        3,
+        1084,
+        987,
+        1127
+      ]
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "en",
+      "text": "8",
+      "confidence": 0.8535,
+      "bbox": [
+        993,
+        1097,
+        1007,
+        1119
+      ]
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১",
+      "confidence": 1.0,
+      "bbox": [
+        5,
+        1147,
+        25,
+        1171
+      ]
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সকল",
+      "confidence": 0.3357,
+      "bbox": [
+        40,
+        1146,
+        94,
+        1170
+      ]
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ডীন , ইনষ্টিটিউট পরিচালক , রেজিস্ট্রার, বিভাগীয় প্রধান , পরিচালক",
+      "confidence": 0.4352,
+      "bbox": [
+        93,
+        1137,
+        709,
+        1175
+      ]
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চেয়ারম্যান",
+      "confidence": 0.3602,
+      "bbox": [
+        716,
+        1144,
+        820,
+        1168
+      ]
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "হল",
+      "confidence": 0.9508,
+      "bbox": [
+        830,
+        1144,
+        866,
+        1168
+      ]
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রভোস্ট ও শাখা দপ্তর প্রধান ,",
+      "confidence": 0.5012,
+      "bbox": [
+        863,
+        1135,
+        1144,
+        1174
+      ]
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অত্র",
+      "confidence": 0.9716,
+      "bbox": [
+        40,
+        1182,
+        80,
+        1206
+      ]
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিশ্ববিদ্যালয় (তাঁর অধীনে কর্মরত শিক্ষক , কর্মকর্তা ও কর্মচারীবৃন্দকে বিষয়টি অবগত করানাের অনুরোধসহ)",
+      "confidence": 0.3549,
+      "bbox": [
+        76,
+        1166,
+        1048,
+        1215
+      ]
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২",
+      "confidence": 0.9259,
+      "bbox": [
+        9,
+        1219,
+        27,
+        1241
+      ]
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চেয়ারম্যান , কেন্দ্রীয় কম্পিউটার সেন্টার , অত্র বিশ্ববিদ্যালয় (বিজ্ঞপ্তিটি ওয়েব সাইটে প্রকাশের অনুরোধ করা হলো)",
+      "confidence": 0.4196,
+      "bbox": [
+        41,
+        1204,
+        1055,
+        1245
+      ]
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৩",
+      "confidence": 1.0,
+      "bbox": [
+        6,
+        1252,
+        30,
+        1276
+      ]
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কম্পট্রোলার ,",
+      "confidence": 0.8131,
+      "bbox": [
+        43,
+        1245,
+        161,
+        1281
+      ]
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অত্র",
+      "confidence": 0.9121,
+      "bbox": [
+        166,
+        1250,
+        206,
+        1274
+      ]
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিশ্ববিদ্যালয়",
+      "confidence": 0.3285,
+      "bbox": [
+        203,
+        1243,
+        327,
+        1279
+      ]
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "en",
+      "text": "8",
+      "confidence": 0.9254,
+      "bbox": [
+        7,
+        1287,
+        25,
+        1311
+      ]
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কমিটির সম্মানীত সকল সদস্য",
+      "confidence": 0.5808,
+      "bbox": [
+        40,
+        1280,
+        312,
+        1312
+      ]
+    },
+    {
+      "block_id": 47,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৫",
+      "confidence": 0.9632,
+      "bbox": [
+        7,
+        1323,
+        27,
+        1345
+      ]
+    },
+    {
+      "block_id": 48,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পিএস টু ভিসি (ভাইস-চ্যান্সেলর মহোদয়কে অবগত করানোের অনুরোধসহ) , অত্র বিশ্ববিদ্যালয়",
+      "confidence": 0.4447,
+      "bbox": [
+        39,
+        1310,
+        877,
+        1353
+      ]
+    },
+    {
+      "block_id": 49,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৬",
+      "confidence": 1.0,
+      "bbox": [
+        6,
+        1358,
+        30,
+        1382
+      ]
+    },
+    {
+      "block_id": 50,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সংরক্ষণ নথি",
+      "confidence": 0.8605,
+      "bbox": [
+        43,
+        1352,
+        168,
+        1385
+      ]
+    },
+    {
+      "block_id": 51,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(রনজিত রায়)",
+      "confidence": 0.7077,
+      "bbox": [
+        904,
+        1495,
+        1056,
+        1535
+      ]
+    },
+    {
+      "block_id": 52,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ডেপুটি কম্পট্রোলার",
+      "confidence": 0.5879,
+      "bbox": [
+        889,
+        1537,
+        1087,
+        1573
+      ]
+    },
+    {
+      "block_id": 53,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সদস্য সাচব",
+      "confidence": 0.7685,
+      "bbox": [
+        920,
+        1616,
+        1042,
+        1644
+      ]
+    },
+    {
+      "block_id": 54,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কর্পোরেট ঋণ আবেদন যাচাই-",
+      "confidence": 0.8175,
+      "bbox": [
+        829,
+        1649,
+        1133,
+        1685
+      ]
+    },
+    {
+      "block_id": 55,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বাচাই ও চুড়ান্ত",
+      "confidence": 0.5795,
+      "bbox": [
+        819,
+        1689,
+        971,
+        1727
+      ]
+    },
+    {
+      "block_id": 56,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সুপারিশ প্রণয়ণের",
+      "confidence": 0.5183,
+      "bbox": [
+        964,
+        1683,
+        1145,
+        1728
+      ]
+    },
+    {
+      "block_id": 57,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নিমিত্তে গঠিত কমিটি",
+      "confidence": 0.4752,
+      "bbox": [
+        829,
+        1725,
+        1043,
+        1761
+      ]
+    },
+    {
+      "block_id": 58,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অনুযায়ী",
+      "confidence": 0.7738,
+      "bbox": [
+        425.28,
+        309.96,
+        514.72,
+        359.04
+      ]
+    },
+    {
+      "block_id": 59,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ফ",
+      "confidence": 0.0582,
+      "bbox": [
+        890.61,
+        511.68,
+        1051.39,
+        606.32
+      ]
+    },
+    {
+      "block_id": 60,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কুয়েট",
+      "confidence": 0.4511,
+      "bbox": [
+        1043.28,
+        886.87,
+        1116.72,
+        930.13
+      ]
+    },
+    {
+      "block_id": 61,
+      "type": "paragraph",
+      "language": "en",
+      "text": "1৬ |1>",
+      "confidence": 0.0205,
+      "bbox": [
+        995.26,
+        1430.57,
+        1140.74,
+        1509.43
+      ]
+    },
+    {
+      "block_id": 62,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কুয়েট",
+      "confidence": 0.75,
+      "bbox": [
+        1047.14,
+        1724.93,
+        1119.86,
+        1766.07
+      ]
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1326x1960)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়\nখুলনা-৯২০৩\nবিজ্ঞপ্তি\nঅত্র\nবিশ্ববিদ্যালয়ের সম্মানিত শিক্ষক , কর্মকর্তা ও\nকর্মচারীবৃন্দের অবগতির জন্য জানানো যাচ্ছে যে , খুলনা\nপ্রকৌশল\nও\nপ্রযুক্তি বিশ্ববিদ্যালয়ের সম্মানিত শিক্ষক, কর্মকর্তা ও কর্মচারীগণের জন্য অনুমোদিত জনতা\nব্যাংক\nকর্পোরেট ঋণ মঞ্জুরীর সংশোধিত নীতিমালা\nমার্চ ২০২৬ হতে জুন ২০২৬ প্রান্তিকের জনতা ব্যাংক কর্পোরেট\nঋণ বিতরণের নিমিত্তে সংযুক্ত নির্ধারিত ফরমে আবেদন আহ্বান করা যাচ্ছে |\nনির্ধারিত ফরমে আগামী ২৬০০২ ২০২৬ইং তারিখের মধ্যে কম্পট্রোলার দপ্তরের ডাটা এন্ট্রি অপারেটর\nকোহিনুর পান্নার নিকট আবেদনপত্র জমা দেয়ার জন্য অনুরোধ করা হলো\nউল্লেখ্য , ত্রুটিপূর্ণ অসম্পূর্ণ আবেদন ঋণ\nপ্রাপ্তির ক্ষেত্রে বিবেচনা করা সম্ভব হবে না /\n[6702/^'\n(প্রফেসর ড মোহাম্মদ সুলতান মাহমুদ)\nডীন\nমেকানিক্যাল ইঞ্জিনিয়ারিং অনুষদ\nসভাপতি\nকর্পোরেট ঋণ আবেদন যাচাই-\nবাচাই ও চুড়ান্ত সুপারিশ প্রণয়ণের\nনিমিত্তে গঠিত কমিটি\nস্মারক নং- খুপ্রবি/ ১১৮০\nতাং-\n১৬০০২ ২০২৬ইং\nসদয় অবগতি ও প্রয়োজনীয় ব্যবস্থা গ্রহণের জন্য অনুলিপি প্রেরণ করা হলো (জ্যেষ্ঠতার ক্রমানুসারে নয়)\n8\n১\nসকল\nডীন , ইনষ্টিটিউট পরিচালক , রেজিস্ট্রার, বিভাগীয় প্রধান , পরিচালক\nচেয়ারম্যান\nহল\nপ্রভোস্ট ও শাখা দপ্তর প্রধান ,\nঅত্র\nবিশ্ববিদ্যালয় (তাঁর অধীনে কর্মরত শিক্ষক , কর্মকর্তা ও কর্মচারীবৃন্দকে বিষয়টি অবগত করানাের অনুরোধসহ)\n২\nচেয়ারম্যান , কেন্দ্রীয় কম্পিউটার সেন্টার , অত্র বিশ্ববিদ্যালয় (বিজ্ঞপ্তিটি ওয়েব সাইটে প্রকাশের অনুরোধ করা হলো)\n৩\nকম্পট্রোলার ,\nঅত্র\nবিশ্ববিদ্যালয়\n8\nকমিটির সম্মানীত সকল সদস্য\n৫\nপিএস টু ভিসি (ভাইস-চ্যান্সেলর মহোদয়কে অবগত করানোের অনুরোধসহ) , অত্র বিশ্ববিদ্যালয়\n৬\nসংরক্ষণ নথি\n(রনজিত রায়)\nডেপুটি কম্পট্রোলার\nসদস্য সাচব\nকর্পোরেট ঋণ আবেদন যাচাই-\nবাচাই ও চুড়ান্ত\nসুপারিশ প্রণয়ণের\nনিমিত্তে গঠিত কমিটি\nঅনুযায়ী\nফ \nকুয়েট\n1৬ |1>\nকুয়েট",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/মার্চ-২৬ হতে জুন-২৬ প্রান্তিকের কর্পোরেট ঋণ বিজ্ঞপ্তি_02aae137/page_1.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: scanned",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "trying_ollama_first",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "ollama_empty",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "ollama_failed_using_easyocr",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "easyocr: 62 detections",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=ocr_local, engine=EasyOCR",
+      "severity": "info"
+    }
+  ]
+}

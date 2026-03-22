@@ -1,0 +1,58 @@
+{
+  "page_number": 139,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n105\nJust the new stuff\nThe things we haven’t seen before \nare on this page. Stop worrying! The \nrest of the details are at the end of \nthe chapter. This is just enough to let \nyou keep going. \n1\nConverting a \nString to an int\n2\nThe for loop\nThe post-increment \noperator\n4\nbreak statement\nInteger.parseInt(“3”)\nA class that \nships with Java.\nA method in the \nInteger class that \nknows how to “parse” \na String into the int \nit represents.\nTakes a String.\nfor (int cell : locationCells) { }\nDeclare a variable that will hold one element \nfrom the array. Each time through the loop, \nthis variable (in this case an int variable named \n“cell”), will hold a different element from the \narray, until there are no more elements (or the \ncode does a “break”... see #4 below).\nnumOfHits++\nThe ++ means add 1 to \nwhatever’5 there (in other \nwords, increment by 1).\nnumOfHits++ is the same (in \nthis case) as saying numOfHits = \nnumOfHits + 1, except slightly \nmore efficient.\nbreak;\nGets you out of a loop. Immediately. Right here. \n No iteration, no boolean test, just get out now!\n prep code \ntest code\nreal code\nreal code \n1\n2\n3\n4\nThe array to iterate over in the loop. \nEach time through the loop, the next \nelement in the array will be assigned to \nthe variable “cell”. (More on this at the \nend of this chapter.)\nRead this for loop declaration as “repeat \nfor each element in the ‘locationCells’ \narray: take the next element in the array \nand assign it to the int variable ‘cell’.”\nThe colon (:) means “in”, 50 the \nwhole thing means “for each int \nvalue IN locationCells...”",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "you are here\nwriting a program\n105\nJust the new stuff\nThe things we haven’t seen before \nare on this page. Stop worrying! The \nrest of the details are at the end of \nthe chapter. This is just enough to let \nyou keep going. \n1\nConverting a \nString to an int\n2\nThe for loop\nThe post-increment \noperator\n4\nbreak statement\nInteger.parseInt(“3”)\nA class that \nships with Java.\nA method in the \nInteger class that \nknows how to “parse” \na String into the int \nit represents.\nTakes a String.\nfor (int cell : locationCells) { }\nDeclare a variable that will hold one element \nfrom the array. Each time through the loop, \nthis variable (in this case an int variable named \n“cell”), will hold a different element from the \narray, until there are no more elements (or the \ncode does a “break”... see #4 below).\nnumOfHits++\nThe ++ means add 1 to \nwhatever’5 there (in other \nwords, increment by 1).\nnumOfHits++ is the same (in \nthis case) as saying numOfHits = \nnumOfHits + 1, except slightly \nmore efficient.\nbreak;\nGets you out of a loop. Immediately. Right here. \n No iteration, no boolean test, just get out now!\n prep code \ntest code\nreal code\nreal code \n1\n2\n3\n4\nThe array to iterate over in the loop. \nEach time through the loop, the next \nelement in the array will be assigned to \nthe variable “cell”. (More on this at the \nend of this chapter.)\nRead this for loop declaration as “repeat \nfor each element in the ‘locationCells’ \narray: take the next element in the array \nand assign it to the int variable ‘cell’.”\nThe colon (:) means “in”, 50 the \nwhole thing means “for each int \nvalue IN locationCells...”",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 139,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 139,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1618 chars",
+      "severity": "info"
+    },
+    {
+      "page": 139,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "page_number": 602,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9325,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "568 \nchapter 16\nFinally, back to generics\nRemember earlier in the chapter we talked about how methods \nthat take arguments with generic types can be... weird. And we \nmean weird in the polymorphic sense. If things start to feel \nstrange here, just keep going—it takes a few pages to really tell \nthe whole story. \nWe’11 start with a reminder on how array arguments work, \npolymorphically, and then look at doing the same thing with \ngeneric lists. The code below compiles and runs without errors:\nimport java.util.*;\npublic class TestGenerics1 {\n public static void main(String[] args) {\n new TestGenerics1().go();\n }\n public void go() {\n Animal[] animals = {new Dog(), new Cat(), new Dog()};\n Dog[] dogs = {new Dog(), new Dog(), new Dog()};\n takeAnimals(animals);\n takeAnimals(dogs);\n }\n public void takeAnimals(Animal[] animals) {\n for(Animal a: animals) {\n a.eat();\n }\n }\n}\nabstract class Animal { \n void eat() {\n System.out.println(“animal eating”);\n }\n}\nclass Dog extends Animal {\n void bark() { }\n}\nclass Cat extends Animal { \n void meow() { }\n}\n \nDeclare and create an Animal array, \nthat holds both dogs and cats.\nIf a method argument is an array \nof Animals, it will also take an \narray of any Animal subtype.\nIn other words, if a method is \ndeclared as:\nvoid foo(Animal[] a) { }\nAssuming Dog extends Animal, \nyou are free to call both:\nfoo(anAnimalArray);\nfoo(aDogArray);\nDeclare and create a Dog array, \nthat holds only Dogs (the compiler \nwon’t let you put a Cat in).\nCall takeAnimals(), using both \narray types as arguments...\nThe crucial point is that the takeAnimals() \nmethod can take an Animal[] or a Dog[], since \nDog 15-A Animal. Polymorphism in action.\nRemember, we can call ONLY the methods declared in type \nanimal, since the animals parameter is of type Animal array, \nand we didn’t do any casting. (What would we cast it to? \nThat array might hold both Dogs and Cats.)\nThe simplified Animal class hierarchy.\ngeneric types\nHere’5 how it works with regular arrays:",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "568 \nchapter 16\nFinally, back to generics\nRemember earlier in the chapter we talked about how methods \nthat take arguments with generic types can be... weird. And we \nmean weird in the polymorphic sense. If things start to feel \nstrange here, just keep going—it takes a few pages to really tell \nthe whole story. \nWe’11 start with a reminder on how array arguments work, \npolymorphically, and then look at doing the same thing with \ngeneric lists. The code below compiles and runs without errors:\nimport java.util.*;\npublic class TestGenerics1 {\n public static void main(String[] args) {\n new TestGenerics1().go();\n }\n public void go() {\n Animal[] animals = {new Dog(), new Cat(), new Dog()};\n Dog[] dogs = {new Dog(), new Dog(), new Dog()};\n takeAnimals(animals);\n takeAnimals(dogs);\n }\n public void takeAnimals(Animal[] animals) {\n for(Animal a: animals) {\n a.eat();\n }\n }\n}\nabstract class Animal { \n void eat() {\n System.out.println(“animal eating”);\n }\n}\nclass Dog extends Animal {\n void bark() { }\n}\nclass Cat extends Animal { \n void meow() { }\n}\n \nDeclare and create an Animal array, \nthat holds both dogs and cats.\nIf a method argument is an array \nof Animals, it will also take an \narray of any Animal subtype.\nIn other words, if a method is \ndeclared as:\nvoid foo(Animal[] a) { }\nAssuming Dog extends Animal, \nyou are free to call both:\nfoo(anAnimalArray);\nfoo(aDogArray);\nDeclare and create a Dog array, \nthat holds only Dogs (the compiler \nwon’t let you put a Cat in).\nCall takeAnimals(), using both \narray types as arguments...\nThe crucial point is that the takeAnimals() \nmethod can take an Animal[] or a Dog[], since \nDog 15-A Animal. Polymorphism in action.\nRemember, we can call ONLY the methods declared in type \nanimal, since the animals parameter is of type Animal array, \nand we didn’t do any casting. (What would we cast it to? \nThat array might hold both Dogs and Cats.)\nThe simplified Animal class hierarchy.\ngeneric types\nHere’5 how it works with regular arrays:",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 602,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 602,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2048 chars",
+      "severity": "info"
+    },
+    {
+      "page": 602,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

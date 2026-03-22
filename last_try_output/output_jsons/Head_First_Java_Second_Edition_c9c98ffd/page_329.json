@@ -1,0 +1,46 @@
+{
+  "page_number": 329,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "numbers and statics\nyou are here\n295\nFormatting deconstructed...\nformat(“%, d”, 1000000000);\nAt the most basic level, formatting consists of two main parts \n(there is more, but we’11 start with this to keep it cleaner):\nFormatting instructions\n1\nThe argument to be formatted.\n2\n1\n2\nUse these instructions... on this argument.\nYou use special format specifiers that describe how \nthe argument should be formatted.\nAlthough there can be more than one argument, we’11 \nstart with just one. The argument type can’t be just \nanything... it has to be something that can be formatted \nusing the format specifiers in the formatting instructions. \nFor example, if your formatting instructions specify a \nfloating point number, you can’t pass in a Dog or even a \nString that looks like a floating point number.\nWhat do these instructions actually say?\n“Take the second argument to this method, and \nformat it as a decimal integer and insert commas.”\nHow do they say that?\nOn the next page we’11 look in more detail at what the syntax “%, \nd” actually means, but for starters, any time you see the percent \nsign (%) in a format String (which is always the first argument \nto a format() method), think of it as representing a variable, \nand the variable is the other argument to the method. The rest \nof the characters after the percent sign describe the formatting \ninstructions for the argument. \nDo this...\nto this.\nNote: if you already know printf() \nfrom c/C++, you can probably just \nskim the next few pages. Otherwise, \nread carefully!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "numbers and statics\nyou are here\n295\nFormatting deconstructed...\nformat(“%, d”, 1000000000);\nAt the most basic level, formatting consists of two main parts \n(there is more, but we’11 start with this to keep it cleaner):\nFormatting instructions\n1\nThe argument to be formatted.\n2\n1\n2\nUse these instructions... on this argument.\nYou use special format specifiers that describe how \nthe argument should be formatted.\nAlthough there can be more than one argument, we’11 \nstart with just one. The argument type can’t be just \nanything... it has to be something that can be formatted \nusing the format specifiers in the formatting instructions. \nFor example, if your formatting instructions specify a \nfloating point number, you can’t pass in a Dog or even a \nString that looks like a floating point number.\nWhat do these instructions actually say?\n“Take the second argument to this method, and \nformat it as a decimal integer and insert commas.”\nHow do they say that?\nOn the next page we’11 look in more detail at what the syntax “%, \nd” actually means, but for starters, any time you see the percent \nsign (%) in a format String (which is always the first argument \nto a format() method), think of it as representing a variable, \nand the variable is the other argument to the method. The rest \nof the characters after the percent sign describe the formatting \ninstructions for the argument. \nDo this...\nto this.\nNote: if you already know printf() \nfrom c/C++, you can probably just \nskim the next few pages. Otherwise, \nread carefully!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 329,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 329,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1533 chars",
+      "severity": "info"
+    },
+    {
+      "page": 329,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

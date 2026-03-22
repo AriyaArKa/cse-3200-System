@@ -1,0 +1,60 @@
+{
+  "page_number": 682,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "648 \nchapter 18\nCongratulations!\nYou made it to the end.\nWouldn’t it be \ndreamy if this were the end \nof the book? If there were no \nmore bullet points or puzzles \nor code listings or anything else? \nBut that’5 probably just a \nfantasy...\nOf course, there’5 still the two appendices.\nAnd the index.\nAnd then there’5 the web site...\nThere’5 no escape, really.\nthe end... sort of",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (606x747)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "648 \nchapter 18\nCongratulations!\nYou made it to the end.\nWouldn’t it be \ndreamy if this were the end \nof the book? If there were no \nmore bullet points or puzzles \nor code listings or anything else? \nBut that’5 probably just a \nfantasy...\nOf course, there’5 still the two appendices.\nAnd the index.\nAnd then there’5 the web site...\nThere’5 no escape, really.\nthe end... sort of",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 682,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 682,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 378 chars",
+      "severity": "info"
+    },
+    {
+      "page": 682,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 682,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

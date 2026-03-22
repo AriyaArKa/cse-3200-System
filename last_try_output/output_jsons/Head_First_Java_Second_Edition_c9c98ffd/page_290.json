@@ -1,0 +1,59 @@
+{
+  "page_number": 290,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "256 \nchapter 9\nInvoking one overloaded constructor \nfrom another\nWhat if you have overloaded constructors that, with \nthe exception of handling different argument types, \nall do the same thing? You know that you don’t want \nduplicate code sitting in each of the constructors (pain \nto maintain, etc.), 50 you’d like to put the bulk of the \nconstructor code (including the call to super()) in only \none of the overloaded constructors. You want whichever \nconstructor is first invoked to call The Real Constructor \nand let The Real Constructor finish the job of \nconstruction. It’5 simple: just say this(). Or this(aString). \nOr this(27, x). In other words, just imagine that the \nkeyword this is a reference to the current object\nYou can say this() only within a constructor, and it must \nbe the first statement in the constructor!\nBut that’5 a problem, isn’t it? Earlier we said that \nsuper() must be the first statement in the constructor. \nWell, that means you get a choice. \nEvery constructor can have a call to super() \nor this(), but never both!\ncalling overloaded constructors\nimport java.awt.Color;\nclass Mini extends Car {\n Color color;\n public Mini() {\n this(Color.RED);\n }\n public Mini(Color c) {\n super(“Mini”);\n color = c;\n // more initialization\n } \n public Mini(int size) {\n this(Color.RED);\n super(size);\n \n }\n} \nUse this() to call a \nconstructor from another \noverloaded constructor in \nthe same class.\nThe call to this() \ncan be used only in a \nconstructor, and must be \nthe f irst statement in a \nconstructor.\nA constructor can have a \ncall to super() OR this(), \nbut never both!\nThe no-arg constructor \nsupplies a default Color and \ncalls the overloaded Real \nConstructor (the one that \ncalls super()).\nThis is The Real Constructor that \ndoes The Real Work of initializing the \nobject (including the call to super())\nFile Edit Window Help Drive\njavac Mini.java\nMini.java:16: call to super must \nbe first statement in constructor\n super();\n ^\nWon’t work!! Can’t have \nsuper() and this() in the same \nconstructor, because they each \nmust be the first statement!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Drive"
+        ],
+        [
+          "javac Mini.java\nMini.java:16: call to super must\nbe first statement in constructor\nsuper();\n^"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "256 \nchapter 9\nInvoking one overloaded constructor \nfrom another\nWhat if you have overloaded constructors that, with \nthe exception of handling different argument types, \nall do the same thing? You know that you don’t want \nduplicate code sitting in each of the constructors (pain \nto maintain, etc.), 50 you’d like to put the bulk of the \nconstructor code (including the call to super()) in only \none of the overloaded constructors. You want whichever \nconstructor is first invoked to call The Real Constructor \nand let The Real Constructor finish the job of \nconstruction. It’5 simple: just say this(). Or this(aString). \nOr this(27, x). In other words, just imagine that the \nkeyword this is a reference to the current object\nYou can say this() only within a constructor, and it must \nbe the first statement in the constructor!\nBut that’5 a problem, isn’t it? Earlier we said that \nsuper() must be the first statement in the constructor. \nWell, that means you get a choice. \nEvery constructor can have a call to super() \nor this(), but never both!\ncalling overloaded constructors\nimport java.awt.Color;\nclass Mini extends Car {\n Color color;\n public Mini() {\n this(Color.RED);\n }\n public Mini(Color c) {\n super(“Mini”);\n color = c;\n // more initialization\n } \n public Mini(int size) {\n this(Color.RED);\n super(size);\n \n }\n} \nUse this() to call a \nconstructor from another \noverloaded constructor in \nthe same class.\nThe call to this() \ncan be used only in a \nconstructor, and must be \nthe f irst statement in a \nconstructor.\nA constructor can have a \ncall to super() OR this(), \nbut never both!\nThe no-arg constructor \nsupplies a default Color and \ncalls the overloaded Real \nConstructor (the one that \ncalls super()).\nThis is The Real Constructor that \ndoes The Real Work of initializing the \nobject (including the call to super())\nFile Edit Window Help Drive\njavac Mini.java\nMini.java:16: call to super must \nbe first statement in constructor\n super();\n ^\nWon’t work!! Can’t have \nsuper() and this() in the same \nconstructor, because they each \nmust be the first statement!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 290,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 290,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2167 chars",
+      "severity": "info"
+    },
+    {
+      "page": 290,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

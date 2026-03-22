@@ -1,0 +1,46 @@
+{
+  "page_number": 277,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n243\nInitializing the state of a new Duck\nMost people use constructors to initialize the state of an object. \nIn other words, to make and assign values to the object’5 \ninstance variables. \npublic Duck() {\n size = 34; \n}\nThat’5 all well and good when the Duck class developer knows \nhow big the Duck object should be. But what if we want the \nprogrammer who is using Duck to decide how big a particular \nDuck should be?\nImagine the Duck has a size instance variable, and you want the \nprogrammer using your Duck class to set the size of the new \nDuck. How could you do it? \nWell, you could add a setSize() setter method to the class. But \nthat leaves the Duck temporarily without a size*, and forces the \nDuck user to write two statements—one to create the Duck, and \none to call the setSize() method. The code below uses a setter \nmethod to set the initial size of the new Duck.\npublic class Duck {\n int size;\n public Duck() {\n System.out.println(“Quack”); \n }\n public void setSize(int newSize) {\n size = newSize;\n }\n}\npublic class UseADuck {\n public static void main (String[] args){\n Duck d = new Duck();\n \n d.setSize(42);\n }\n}\nconstructor \ninstance variable\nsetter method\nThere’5 a bad thing here. The Duck is alive at \nthis point in the code, but without a size!* \nAnd then you’re relying on the Duck-user \nto KNOW that Duck creation is a two-part \nprocess: one to call the constructor and one \nto call the setter.\nthere are no\nDumb Questions\nQ: Why do you need to write \na constructor if the compiler \nwrites one for you?\nA: If you need code to help \ninitialize your object and get \nit ready for use, you’11 have to \nwrite your own constructor. You \nmight, for example, be depen-\ndent on input from the user \nbefore you can finish making \nthe object ready. There’5 another \nreason you might have to write \na constructor, even if you don’t \nneed any constructor code \nyourself. It has to do with your \nsuperclass constructor, and we’11 \ntalk about that in a few minutes.\nQ: How can you tell a con-\nstructor from a method? Can \nyou also have a method that’5 \nthe same name as the class?\nA: Java lets you declare a \nmethod with the same name as \nyour class. That doesn’t make it \na constructor, though. The thing \nthat separates a method from a \nconstructor is the return type. \nMethods must have a return \ntype, but constructors cannot \nhave a return type.\nQ: Are constructors inher-\nited? If you don’t provide a \nconstructor but your superclass \ndoes, do you get the superclass \nconstructor instead of the \ndefault?\nA: Nope. Constructors are \nnot inherited. We’11 look at that \nin just a few pages.\n*Instance variables do have a default value. 0 or \n0.0 for numeric primitives, false for booleans, and \nnull for references.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "constructors and gc\nyou are here\n243\nInitializing the state of a new Duck\nMost people use constructors to initialize the state of an object. \nIn other words, to make and assign values to the object’5 \ninstance variables. \npublic Duck() {\n size = 34; \n}\nThat’5 all well and good when the Duck class developer knows \nhow big the Duck object should be. But what if we want the \nprogrammer who is using Duck to decide how big a particular \nDuck should be?\nImagine the Duck has a size instance variable, and you want the \nprogrammer using your Duck class to set the size of the new \nDuck. How could you do it? \nWell, you could add a setSize() setter method to the class. But \nthat leaves the Duck temporarily without a size*, and forces the \nDuck user to write two statements—one to create the Duck, and \none to call the setSize() method. The code below uses a setter \nmethod to set the initial size of the new Duck.\npublic class Duck {\n int size;\n public Duck() {\n System.out.println(“Quack”); \n }\n public void setSize(int newSize) {\n size = newSize;\n }\n}\npublic class UseADuck {\n public static void main (String[] args){\n Duck d = new Duck();\n \n d.setSize(42);\n }\n}\nconstructor \ninstance variable\nsetter method\nThere’5 a bad thing here. The Duck is alive at \nthis point in the code, but without a size!* \nAnd then you’re relying on the Duck-user \nto KNOW that Duck creation is a two-part \nprocess: one to call the constructor and one \nto call the setter.\nthere are no\nDumb Questions\nQ: Why do you need to write \na constructor if the compiler \nwrites one for you?\nA: If you need code to help \ninitialize your object and get \nit ready for use, you’11 have to \nwrite your own constructor. You \nmight, for example, be depen-\ndent on input from the user \nbefore you can finish making \nthe object ready. There’5 another \nreason you might have to write \na constructor, even if you don’t \nneed any constructor code \nyourself. It has to do with your \nsuperclass constructor, and we’11 \ntalk about that in a few minutes.\nQ: How can you tell a con-\nstructor from a method? Can \nyou also have a method that’5 \nthe same name as the class?\nA: Java lets you declare a \nmethod with the same name as \nyour class. That doesn’t make it \na constructor, though. The thing \nthat separates a method from a \nconstructor is the return type. \nMethods must have a return \ntype, but constructors cannot \nhave a return type.\nQ: Are constructors inher-\nited? If you don’t provide a \nconstructor but your superclass \ndoes, do you get the superclass \nconstructor instead of the \ndefault?\nA: Nope. Constructors are \nnot inherited. We’11 look at that \nin just a few pages.\n*Instance variables do have a default value. 0 or \n0.0 for numeric primitives, false for booleans, and \nnull for references.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 277,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 277,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2814 chars",
+      "severity": "info"
+    },
+    {
+      "page": 277,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

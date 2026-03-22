@@ -1,0 +1,60 @@
+{
+  "page_number": 411,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n377\nM\ny\n1\nn\nn\ne\nr\n \n0\nb\nj\ne\nc\nt\n \nRemember, when we talk about an inner class accessing \nsomething in the outer class, we’re really talking about an \ninstance of the inner class accessing something in an instance of \nthe outer class. But which instance?\nCan any arbitrary instance of the inner class access the methods \nand variables of any instance of the outer class? No! \nAn inner object must be tied to a specific outer object on \nthe heap.\nAn inner class instance must be tied to \nan outer class instance*. \nGetting in \ntouch with \nyour inner \nclass\nOver 65,536 copies sold!\nThe new bestseller from the \nauthor of “Who Moved my Char?” \nDr. Poly Morphism\n1\nM\ny\n0\nu\nt\ne\nr\n \nobj\ne\nct\n \nMake an instance of \nthe outer class\n2\nMake an instance of \nthe inner class, by \nusing the instance \nof the outer class.\ni\nn\nn\ne\nr\n3\nThe outer and inner objects \nare now intimately linked.\n0\nu\nt\ne\nr\nThese two objects on the heap \nhave a special bond. The inner \ncan use the outer’5 variables \n(and vice-versa). \nAn inner object \nshares a special \nbond with an \nouter object.\nint x\nString 5\n*There’5 an exception to this, for a very special case—an inner class defined \nwithin a static method. But we’re not going there, and you might go your entire \nJava life without ever encountering one of these.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n377\nM\ny\n1\nn\nn\ne\nr\n \n0\nb\nj\ne\nc\nt\n \nRemember, when we talk about an inner class accessing \nsomething in the outer class, we’re really talking about an \ninstance of the inner class accessing something in an instance of \nthe outer class. But which instance?\nCan any arbitrary instance of the inner class access the methods \nand variables of any instance of the outer class? No! \nAn inner object must be tied to a specific outer object on \nthe heap.\nAn inner class instance must be tied to \nan outer class instance*. \nGetting in \ntouch with \nyour inner \nclass\nOver 65,536 copies sold!\nThe new bestseller from the \nauthor of “Who Moved my Char?” \nDr. Poly Morphism\n1\nM\ny\n0\nu\nt\ne\nr\n \nobj\ne\nct\n \nMake an instance of \nthe outer class\n2\nMake an instance of \nthe inner class, by \nusing the instance \nof the outer class.\ni\nn\nn\ne\nr\n3\nThe outer and inner objects \nare now intimately linked.\n0\nu\nt\ne\nr\nThese two objects on the heap \nhave a special bond. The inner \ncan use the outer’5 variables \n(and vice-versa). \nAn inner object \nshares a special \nbond with an \nouter object.\nint x\nString 5\n*There’5 an exception to this, for a very special case—an inner class defined \nwithin a static method. But we’re not going there, and you might go your entire \nJava life without ever encountering one of these.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 411,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 411,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1315 chars",
+      "severity": "info"
+    },
+    {
+      "page": 411,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 411,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

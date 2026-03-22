@@ -1,0 +1,87 @@
+{
+  "page_number": 99,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nprimitives and references\n65\nx = x + 1;\nx = x + 2;\nx = x - 1;\nx < 4\nx < 5\nPool Puzzle\nYour job is to take code snippets from \nthe pool and place them into the \nblank lines in the code. You may \nuse the same snippet more than \nonce, and you won’t need to use \nall the snippets. Your goal is to \nmake a class that will compile and \nrun and produce the output listed. \nclass Triangle {\n double area;\n int height;\n int length;\n public static void main(String [] args) {\n ____________\n _______________________\n while ( __________ ) {\n __________________________\n ________.height = (x + 1) * 2;\n ________.length = x + 4;\n __________________________\n System.out.print(“triangle “+x+”, area”);\n System.out.println(“ = “ + _______.area);\n ________________\n }\n ______________\n x = 27;\n Triangle t5 = ta[2];\n ta[2].area = 343;\n System.out.print(“y = “ + y);\n System.out.println(“, t5 area = “+ t5.area);\n }\n void setArea() {\n ____________ = (height * length) / 2;\n }\n}\nNote: Each snippet \nfrom the pool can be \nused more than once!\nFile Edit Window Help Bermuda\n%java Triangle\ntriangle 0, area = 4.0\ntriangle 1, area = 10.0\ntriangle 2, area = 18.0\ntriangle 3, area = ____\ny = ______________________\nOutput\nTriangle [ ] ta = new Triangle(4);\nTriangle ta = new [ ] Triangle[4];\nTriangle [ ] ta = new Triangle[4];\nta = new Triangle();\nta[x] = new Triangle();\nta.x = new Triangle();\nta[x] = setArea();\nta.x = setArea();\nta[x].setArea();\nint x;\nint y;\nint x = 0;\nint x = 1;\nint y = x;\narea\nta.area\nta.x.area\nta[x].area\nta.x\nta(x)\nta[x]\nx\ny\nBonus Question!\n For extra bonus points, use snippets \nfrom the pool to fill in the missing \noutput (above).\n28.0\n30.0\n4, t5 area = 18.0\n4, t5 area = 343.0\n27, t5 area = 18.0\n27, t5 area = 343.0\n(Sometimes we don’t use a separate \ntest class, because we’re trying to \nsave space on the page)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Bermuda"
+        ],
+        [
+          "%java Triangle\ntriangle 0, area = 4.0\ntriangle 1, area = 10.0\ntriangle 2, area = 18.0\ntriangle 3, area = ____\ny = ______________________"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (1278x549)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nprimitives and references\n65\nx = x + 1;\nx = x + 2;\nx = x - 1;\nx < 4\nx < 5\nPool Puzzle\nYour job is to take code snippets from \nthe pool and place them into the \nblank lines in the code. You may \nuse the same snippet more than \nonce, and you won’t need to use \nall the snippets. Your goal is to \nmake a class that will compile and \nrun and produce the output listed. \nclass Triangle {\n double area;\n int height;\n int length;\n public static void main(String [] args) {\n ____________\n _______________________\n while ( __________ ) {\n __________________________\n ________.height = (x + 1) * 2;\n ________.length = x + 4;\n __________________________\n System.out.print(“triangle “+x+”, area”);\n System.out.println(“ = “ + _______.area);\n ________________\n }\n ______________\n x = 27;\n Triangle t5 = ta[2];\n ta[2].area = 343;\n System.out.print(“y = “ + y);\n System.out.println(“, t5 area = “+ t5.area);\n }\n void setArea() {\n ____________ = (height * length) / 2;\n }\n}\nNote: Each snippet \nfrom the pool can be \nused more than once!\nFile Edit Window Help Bermuda\n%java Triangle\ntriangle 0, area = 4.0\ntriangle 1, area = 10.0\ntriangle 2, area = 18.0\ntriangle 3, area = ____\ny = ______________________\nOutput\nTriangle [ ] ta = new Triangle(4);\nTriangle ta = new [ ] Triangle[4];\nTriangle [ ] ta = new Triangle[4];\nta = new Triangle();\nta[x] = new Triangle();\nta.x = new Triangle();\nta[x] = setArea();\nta.x = setArea();\nta[x].setArea();\nint x;\nint y;\nint x = 0;\nint x = 1;\nint y = x;\narea\nta.area\nta.x.area\nta[x].area\nta.x\nta(x)\nta[x]\nx\ny\nBonus Question!\n For extra bonus points, use snippets \nfrom the pool to fill in the missing \noutput (above).\n28.0\n30.0\n4, t5 area = 18.0\n4, t5 area = 343.0\n27, t5 area = 18.0\n27, t5 area = 343.0\n(Sometimes we don’t use a separate \ntest class, because we’re trying to \nsave space on the page)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 99,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 99,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1919 chars",
+      "severity": "info"
+    },
+    {
+      "page": 99,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 99,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

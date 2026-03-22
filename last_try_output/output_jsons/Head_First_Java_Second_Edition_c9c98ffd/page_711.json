@@ -1,0 +1,46 @@
+{
+  "page_number": 711,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nthe index\n677\nSymbols\n&, &&, |. || (boolean operators) 151, 660\n&, <<, >>, >>>, ^, |, ~ (bitwise operators) 660\n++ -- (increment/decrement) 105, 115\n+ (String concatenation operator) 17\n. (dot operator) 36\nreference 54\n<, <=, ==,!=, >, >= (comparison operators) 86, 114, \n151\n<, <=, ==, >, >= (comparison operators) 11\nA\nabandoned objects. See garbage collection\nabstract\nclass 200–210\nclass modifier 200\nabstract methods\ndeclaring 203\naccess\nand inheritance 180\nclass modifiers 667\nmethod modifiers 81, 667\nvariable modifiers 81, 667\naccessors and mutators. See getters and setters\nActionListener interface 358, 358–361\naddActionListener() 359–361\nadvice guy 480, 484\nAeron™ 28\nanimation 382–385\nAPI 154–155, 158–160\nArrayList 532\ncollections 558\nappendix A 649–658\nbeat box final client 650\nbeat box final server 657\nappendix 8\naccess levels and modifiers 667\nassertions 662\nbit manipulation 660\nblock scope 663\nimmutability 661\nlinked invocations 664\nmultidimensional arrays 670\nString and StringBuffer methods 669\napples and oranges 137\narguments\nmethod 74, 76, 78\npolymorphic 187\nArrayList 132, 133–138, 156, 208, 558\nAPI 532\nArrayList<Object> 211–213\nautoboxing 288–289\ncasting 229\narrays\nabout 17, 59, 135\nassigning 59\ncompared to ArrayList 134–137\ncreation 60\ndeclaring 59\nlength attribute 17\nmultidimensional 670\nobjects, of 60, 83\nprimitives, of 59\nassertions\nassertions 662\nassignments, primitive 52\nassignments, reference variables 55, 57, 83\natomic code blocks 510–512. See also threads\nIndex h\nd\nh\nd\nh",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "you are here\nthe index\n677\nSymbols\n&, &&, |. || (boolean operators) 151, 660\n&, <<, >>, >>>, ^, |, ~ (bitwise operators) 660\n++ -- (increment/decrement) 105, 115\n+ (String concatenation operator) 17\n. (dot operator) 36\nreference 54\n<, <=, ==,!=, >, >= (comparison operators) 86, 114, \n151\n<, <=, ==, >, >= (comparison operators) 11\nA\nabandoned objects. See garbage collection\nabstract\nclass 200–210\nclass modifier 200\nabstract methods\ndeclaring 203\naccess\nand inheritance 180\nclass modifiers 667\nmethod modifiers 81, 667\nvariable modifiers 81, 667\naccessors and mutators. See getters and setters\nActionListener interface 358, 358–361\naddActionListener() 359–361\nadvice guy 480, 484\nAeron™ 28\nanimation 382–385\nAPI 154–155, 158–160\nArrayList 532\ncollections 558\nappendix A 649–658\nbeat box final client 650\nbeat box final server 657\nappendix 8\naccess levels and modifiers 667\nassertions 662\nbit manipulation 660\nblock scope 663\nimmutability 661\nlinked invocations 664\nmultidimensional arrays 670\nString and StringBuffer methods 669\napples and oranges 137\narguments\nmethod 74, 76, 78\npolymorphic 187\nArrayList 132, 133–138, 156, 208, 558\nAPI 532\nArrayList<Object> 211–213\nautoboxing 288–289\ncasting 229\narrays\nabout 17, 59, 135\nassigning 59\ncompared to ArrayList 134–137\ncreation 60\ndeclaring 59\nlength attribute 17\nmultidimensional 670\nobjects, of 60, 83\nprimitives, of 59\nassertions\nassertions 662\nassignments, primitive 52\nassignments, reference variables 55, 57, 83\natomic code blocks 510–512. See also threads\nIndex h\nd\nh\nd\nh",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 711,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 711,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1591 chars",
+      "severity": "info"
+    },
+    {
+      "page": 711,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

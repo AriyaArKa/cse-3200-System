@@ -1,0 +1,67 @@
+{
+  "page_number": 634,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "600 \nchapter 17\nSteps for making and deploying \na Java Web Start app\n1\nMake an executable JAR \nfor your application.\nMyApp.jar\n2\nWrite a .jnlp file.\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\n3\nWeb Server\nMyApp.jar\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nroo.html\nLorper \n<iure \neugue \ntat vero \nconse \nMyApp.jnlp\nPlace your JAR and .jnlp \nfiles on your Web server.\n4\nAdd a new mime type to your Web server.\nThis causes the server to send the .jnlp file with the \ncorrect header, 50 that when the browser receives \nthe .jnlp file it knows what it is and knows to start \nthe JWS helper app. \napplication/x-java-jnlp-file\nWeb Server\nconfigure \nmime type\n5\nCreate a Web page with a link \nto your .jnlp file\n<HTML>\n <BODY> \n <a href=”MyApp2.jnlp”>Launch My Application</a> \n </BODY>\n</HTML>\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyJWSApp.html\ndeploying with JWS",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (65x101)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (330x242)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "600 \nchapter 17\nSteps for making and deploying \na Java Web Start app\n1\nMake an executable JAR \nfor your application.\nMyApp.jar\n2\nWrite a .jnlp file.\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyApp.jnlp\n3\nWeb Server\nMyApp.jar\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nroo.html\nLorper \n<iure \neugue \ntat vero \nconse \nMyApp.jnlp\nPlace your JAR and .jnlp \nfiles on your Web server.\n4\nAdd a new mime type to your Web server.\nThis causes the server to send the .jnlp file with the \ncorrect header, 50 that when the browser receives \nthe .jnlp file it knows what it is and knows to start \nthe JWS helper app. \napplication/x-java-jnlp-file\nWeb Server\nconfigure \nmime type\n5\nCreate a Web page with a link \nto your .jnlp file\n<HTML>\n <BODY> \n <a href=”MyApp2.jnlp”>Launch My Application</a> \n </BODY>\n</HTML>\nLorper \niure \neugue \ntat vero \nconse \neuguero-\nMyJWSApp.html\ndeploying with JWS",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 634,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 634,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 901 chars",
+      "severity": "info"
+    },
+    {
+      "page": 634,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 634,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

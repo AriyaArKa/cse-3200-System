@@ -1,0 +1,140 @@
+{
+  "page_number": 381,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n347\nWhen we’re done, we’11 have a working \nBeatBox that’5 also a Drum Chat Client. \nWe’11 need to learn about GUIs (includ-\ning event handling), 1/0, networking, and \nthreads. The next three chapters (12, 13, \nand 14) will get us there.\nWhere we’re headed with the rest \nof the CodeKitchens\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat\ndance beat\nChapter 15: the goal\nbeat one\nbeat two\nbeat three\nbeat four ...\nThis CodeKitchen lets us build a little \n“music video” (bit of a stretch to call it \nthat...) that draws random rectangles to \nthe beat of the MIDI music. We’11 learn \nhow to construct and play a lot of MIDI \nevents (instead of just a couple, as we do \nin the current chapter).\nChapter 12: MIDI events\nNow we’11 actually build the real BeatBox, \nGUI and all. But it’5 limited—as soon as you \nchange a pattern, the previous one is lost. \nThere’5 no Save and Restore feature, and \nit doesn’t communicate with the network. \n(But you can still use it to work on your \ndrum pattern skills.)\nChapter 13: Stand-alone \nBeatBox\nYou’ve made the perfect pattern, and \nnow you can save it to a file, and reload it \nwhen you want to play it again. This gets \nus ready for the final version (chapter 15), \nwhere instead of writing the pattern to a \nfile, we send it over a network to the chat \nserver.\nChapter 14: Save and \nRestore",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (561x379)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (181x181)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (466x333)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (101x167)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n347\nWhen we’re done, we’11 have a working \nBeatBox that’5 also a Drum Chat Client. \nWe’11 need to learn about GUIs (includ-\ning event handling), 1/0, networking, and \nthreads. The next three chapters (12, 13, \nand 14) will get us there.\nWhere we’re headed with the rest \nof the CodeKitchens\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat\ndance beat\nChapter 15: the goal\nbeat one\nbeat two\nbeat three\nbeat four ...\nThis CodeKitchen lets us build a little \n“music video” (bit of a stretch to call it \nthat...) that draws random rectangles to \nthe beat of the MIDI music. We’11 learn \nhow to construct and play a lot of MIDI \nevents (instead of just a couple, as we do \nin the current chapter).\nChapter 12: MIDI events\nNow we’11 actually build the real BeatBox, \nGUI and all. But it’5 limited—as soon as you \nchange a pattern, the previous one is lost. \nThere’5 no Save and Restore feature, and \nit doesn’t communicate with the network. \n(But you can still use it to work on your \ndrum pattern skills.)\nChapter 13: Stand-alone \nBeatBox\nYou’ve made the perfect pattern, and \nnow you can save it to a file, and reload it \nwhen you want to play it again. This gets \nus ready for the final version (chapter 15), \nwhere instead of writing the pattern to a \nfile, we send it over a network to the chat \nserver.\nChapter 14: Save and \nRestore",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 381,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 381,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1375 chars",
+      "severity": "info"
+    },
+    {
+      "page": 381,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 381,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

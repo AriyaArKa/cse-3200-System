@@ -18,6 +18,7 @@ import hashlib
 import io
 import json
 import logging
+import re
 import struct
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -38,7 +39,7 @@ from .core.pdf_router import (
 from .exceptions import LLMFallbackError
 from .extraction.image_processor import process_page_images
 from .extraction.table_handler import extract_tables_digital, extract_tables_scanned
-from .fallback.llm_fallback import gemini_text_to_blocks, ocr_page_with_fallback
+from .fallback.llm_fallback import gemini_text_to_blocks
 from .models import (
     ContentBlock,
     DocumentResult,
@@ -64,6 +65,8 @@ logger = logging.getLogger(__name__)
 
 def _build_page_decisions(page_num, page_log, method, engine):
     decisions = []
+    for entry in page_log.get("ollama_decisions", []):
+        decisions.append(entry)
     for step in page_log.get("steps", []):
         sev = "warning" if ("failed" in step or "error" in step) else "info"
         decisions.append({"page": page_num, "keyword": "PIPELINE_STEP",
@@ -86,20 +89,127 @@ def _get_file_hash(pdf_path: str) -> str:
     return h.hexdigest()[:16]
 
 
-def _ollama_is_available() -> bool:
-    from .fallback.llm_fallback import _service_status, _check_ollama_available
-    status = _service_status.get("ollama_available")
-    if status is True:
-        return True
-    if status is False:
-        return False
-    avail, model, err = _check_ollama_available()
-    _service_status["ollama_available"] = avail
-    _service_status["ollama_model"] = model
-    _service_status["ollama_error"] = err
-    config.set_status("ollama_available", avail)
-    config.set_status("ollama_model", model)
-    return avail
+_ollama_failed_this_session: bool = False
+
+
+def _try_ollama_page(
+    img_bytes: bytes,
+    page_num: int,
+    decisions: list,
+) -> Optional[str]:
+    """
+    Attempt Ollama with full failure transparency.
+    Returns result on success, None on any failure.
+    Caller MUST check return value and log engine name accordingly.
+    """
+    global _ollama_failed_this_session
+
+    from .fallback.llm_fallback import (
+        _ocr_with_ollama,
+        ensure_ollama_status,
+        refine_ollama_ocr_text,
+        _service_status,
+    )
+
+    if not config.OLLAMA_ENABLED or _ollama_failed_this_session:
+        decisions.append({
+            "page": page_num,
+            "keyword": "OLLAMA_SKIPPED",
+            "detail": "disabled or previous failure this session",
+            "severity": "info",
+        })
+        return None
+
+    ensure_ollama_status(force=False)
+
+    if not _service_status.get("ollama_available"):
+        decisions.append({
+            "page": page_num,
+            "keyword": "OLLAMA_SKIPPED",
+            "detail": _service_status.get("ollama_error") or "ollama unavailable",
+            "severity": "info",
+        })
+        return None
+
+    model = _service_status.get("ollama_model") or ""
+    if not model:
+        decisions.append({
+            "page": page_num,
+            "keyword": "OLLAMA_SKIPPED",
+            "detail": "no ollama model",
+            "severity": "info",
+        })
+        return None
+
+    t0 = time.time()
+    try:
+        text = _ocr_with_ollama(img_bytes, page_num, model)
+        elapsed = time.time() - t0
+        if text:
+            refined = refine_ollama_ocr_text(text, model)
+            if refined and refined != text:
+                text = refined
+                decisions.append({
+                    "page": page_num,
+                    "keyword": "OLLAMA_REFINED",
+                    "detail": "text-only cleanup pass applied",
+                    "severity": "info",
+                })
+            stat = config.get_status()
+            model_name = stat.get("ollama_model") or model
+            conf_proxy = min(1.0, len(text) / 5000.0)
+            decisions.append({
+                "page": page_num,
+                "keyword": "OLLAMA_SUCCESS",
+                "detail": (
+                    f"model={model_name} elapsed={elapsed:.1f}s conf={conf_proxy:.3f}"
+                ),
+                "severity": "info",
+            })
+            return text
+
+        decisions.append({
+            "page": page_num,
+            "keyword": "OLLAMA_FAILED",
+            "detail": "empty or short response",
+            "severity": "warning",
+        })
+        return None
+
+    except Exception as exc:
+        elapsed = time.time() - t0
+        logger.warning(
+            "Ollama FAILED page %d after %.1fs — %s: %s",
+            page_num,
+            elapsed,
+            type(exc).__name__,
+            str(exc)[:120],
+        )
+        decisions.append({
+            "page": page_num,
+            "keyword": "OLLAMA_FAILED",
+            "detail": f"{type(exc).__name__}: {str(exc)[:100]}",
+            "severity": "warning",
+        })
+        config.set_status("ollama_available", False)
+        _service_status["ollama_available"] = False
+        _ollama_failed_this_session = True
+        return None
+
+
+def _llm_ocr_image(img_bytes: bytes, page_num: int, page_log: dict) -> tuple[Optional[str], str]:
+    """Try Ollama (with transparency), then Gemini. Updates page_log['ollama_decisions']."""
+    ollama_pre: list = []
+    api_text = _try_ollama_page(img_bytes, page_num, ollama_pre)
+    page_log.setdefault("ollama_decisions", []).extend(ollama_pre)
+    if api_text:
+        model = config.get_status().get("ollama_model", "unknown")
+        return api_text, f"ollama:{model}"
+    from .fallback.llm_fallback import _ocr_with_gemini
+    gemini_text = _ocr_with_gemini(img_bytes, page_num)
+    if gemini_text:
+        return gemini_text, "Gemini"
+    return None, "None"
 
 
 def _get_best_page_image(page: fitz.Page) -> bytes:
@@ -161,6 +271,31 @@ def _is_valid_ocr_response(text: str, img_bytes: bytes) -> tuple[bool, str]:
         return False, f"suspicious: {char_count} chars, no digits"
 
     return True, "ok"
+
+
+def _easyocr_output_is_noisy(blocks: list[ContentBlock]) -> tuple[bool, str]:
+    """Heuristic guardrail for EasyOCR gibberish-heavy outputs on Bangla scans."""
+    if not blocks:
+        return True, "no blocks"
+
+    total = len(blocks)
+    low_conf = sum(1 for b in blocks if b.confidence < 0.35)
+    single_char = sum(1 for b in blocks if len(b.text.strip()) <= 1)
+    noisy_token = sum(
+        1
+        for b in blocks
+        if re.search(r"[\[\]{}|`~^#@]", b.text or "")
+        or bool(re.fullmatch(r"[^\u0980-\u09FFA-Za-z0-9]{2,}", (b.text or "").strip()))
+    )
+
+    if low_conf / total >= 0.25:
+        return True, f"low_conf_ratio={low_conf/total:.2f}"
+    if single_char / total >= 0.20:
+        return True, f"single_char_ratio={single_char/total:.2f}"
+    if noisy_token / total >= 0.12:
+        return True, f"noise_token_ratio={noisy_token/total:.2f}"
+
+    return False, "ok"
 
 
 def _apply_corrections(blocks: list, page_log: dict, source: str = "easyocr") -> tuple:
@@ -248,7 +383,7 @@ def _process_single_page(pdf_path, page_num, doc_id, domain="unknown"):
             page_log["steps"].append("digital_rejected_corrupted_font")
             img_bytes = _get_best_page_image(page)
             source_image_path = _save_img(img_bytes)
-            api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
+            api_text, api_engine = _llm_ocr_image(img_bytes, page_num, page_log)
             if api_text:
                 _v, _r = _is_valid_ocr_response(api_text, img_bytes)
                 if _v:
@@ -272,60 +407,60 @@ def _process_single_page(pdf_path, page_num, doc_id, domain="unknown"):
         detections: list = []
         used_llm = False
 
-        # ── Ollama FIRST ── always try when available ─────────────────────
+        # ── LLM chain: Ollama (transparent) → Gemini → else EasyOCR ───────
         # Do NOT use EasyOCR crop to estimate Bangla ratio (circular failure).
-        # Ollama preserves conjuncts, matras, dates. Try it unconditionally.
-        if _ollama_is_available():
-            page_log["steps"].append("trying_ollama_first")
-            api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
+        api_text, api_engine = _llm_ocr_image(img_bytes, page_num, page_log)
 
-            if api_text:
-                _v, _r = _is_valid_ocr_response(api_text, img_bytes)
+        if api_text:
+            _v, _r = _is_valid_ocr_response(api_text, img_bytes)
 
-                # Retry at DPI_HIGH if hallucination detected
-                if not _v:
-                    page_log["steps"].append(f"ollama_rejected: {_r}")
-                    page_log["steps"].append("ollama_retry_dpi_high")
-                    img_hq = render_page_to_image(page, dpi=config.DPI_HIGH)
-                    api_text2, api_engine2 = ocr_page_with_fallback(img_hq, page_num)
-                    if api_text2:
-                        _v2, _r2 = _is_valid_ocr_response(api_text2, img_hq)
-                        if _v2:
-                            api_text, api_engine = api_text2, api_engine2
-                            img_bytes = img_hq
-                            _v = True
-                            page_log["steps"].append(
-                                f"ollama_hq_success: {len(api_text)} chars"
-                            )
-                        else:
-                            api_text = None
-                            page_log["steps"].append(f"ollama_hq_bad: {_r2}")
+            # Retry at DPI_HIGH if hallucination detected
+            if not _v:
+                page_log["steps"].append(f"ollama_rejected: {_r}")
+                page_log["steps"].append("ollama_retry_dpi_high")
+                img_hq = render_page_to_image(page, dpi=config.DPI_HIGH)
+                api_text2, api_engine2 = _llm_ocr_image(img_hq, page_num, page_log)
+                if api_text2:
+                    _v2, _r2 = _is_valid_ocr_response(api_text2, img_hq)
+                    if _v2:
+                        api_text, api_engine = api_text2, api_engine2
+                        img_bytes = img_hq
+                        _v = True
+                        page_log["steps"].append(
+                            f"ollama_hq_success: {len(api_text)} chars"
+                        )
                     else:
                         api_text = None
+                        page_log["steps"].append(f"ollama_hq_bad: {_r2}")
+                else:
+                    api_text = None
 
-                if api_text and _v:
-                    content_blocks = gemini_text_to_blocks(api_text, page_num)
-                    content_blocks, correction_applied = _apply_corrections(
-                        content_blocks, page_log, source="ollama"
-                    )
-                    method, engine, sent_to_api, used_llm = (
-                        "ocr_api", api_engine, True, True
-                    )
-                    page_log["steps"].append(
-                        f"ollama_success: {len(api_text)} chars, "
-                        f"{len(content_blocks)} blocks"
-                    )
-            else:
-                page_log["steps"].append("ollama_empty")
+            if api_text and _v:
+                content_blocks = gemini_text_to_blocks(api_text, page_num)
+                content_blocks, correction_applied = _apply_corrections(
+                    content_blocks, page_log, source="ollama"
+                )
+                method, engine, sent_to_api, used_llm = (
+                    "ocr_api", api_engine, True, True
+                )
+                page_log["steps"].append(
+                    f"llm_ocr_success: {len(api_text)} chars, "
+                    f"{len(content_blocks)} blocks"
+                )
+        else:
+            page_log["steps"].append("llm_ocr_empty")
 
         # ── EasyOCR fallback ──────────────────────────────────────────────
         if not used_llm:
             page_log["steps"].append(
                 "ollama_failed_using_easyocr"
-                if _ollama_is_available()
+                if page_log.get("ollama_decisions")
                 else "ollama_unavailable_using_easyocr"
             )
-            method, engine = "ocr_local", "EasyOCR"
+            _easy_src = (
+                "easyocr_fallback" if page_log.get("ollama_decisions") else "easyocr"
+            )
+            method, engine = "ocr_local", _easy_src
 
             img_ocr = render_page_to_image(page, dpi=config.DPI)
             detections = run_dual_ocr(img_ocr)
@@ -333,17 +468,25 @@ def _process_single_page(pdf_path, page_num, doc_id, domain="unknown"):
 
             content_blocks = detections_to_blocks(detections)
             content_blocks, correction_applied = _apply_corrections(
-                content_blocks, page_log, source="easyocr"
+                content_blocks, page_log, source=_easy_src
             )
 
             is_bn = any(b.language in ("bn", "mixed") for b in content_blocks)
             local_conf = score_blocks(content_blocks, is_bn)
             page_log["local_confidence"] = local_conf
+            noisy_easyocr, noisy_reason = _easyocr_output_is_noisy(content_blocks)
+            page_log["easyocr_noise_check"] = {
+                "noisy": noisy_easyocr,
+                "reason": noisy_reason,
+            }
 
-            # Secondary Ollama attempt on low-confidence EasyOCR output
-            if needs_api_fallback(local_conf, is_bn) and _ollama_is_available():
+            # Secondary LLM attempt on low-confidence EasyOCR output
+            should_secondary_llm = needs_api_fallback(local_conf, is_bn) or noisy_easyocr
+            if should_secondary_llm:
                 page_log["steps"].append("secondary_ollama_fallback")
-                api_text, api_engine = ocr_page_with_fallback(img_bytes, page_num)
+                if noisy_easyocr:
+                    page_log["steps"].append(f"easyocr_noisy: {noisy_reason}")
+                api_text, api_engine = _llm_ocr_image(img_bytes, page_num, page_log)
                 if api_text:
                     _v, _r = _is_valid_ocr_response(api_text, img_bytes)
                     if _v:
@@ -365,7 +508,7 @@ def _process_single_page(pdf_path, page_num, doc_id, domain="unknown"):
                         if len(dets_hq) > len(detections):
                             content_blocks = detections_to_blocks(dets_hq)
                             content_blocks, _ = _apply_corrections(
-                                content_blocks, page_log, source="easyocr"
+                                content_blocks, page_log, source=_easy_src
                             )
                             page_log["steps"].append(
                                 f"dpi_escalation: {len(dets_hq)} blocks"

@@ -1,0 +1,73 @@
+{
+  "page_number": 385,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n351\nclass MyEx extends Exception { }\npublic class ExTestDrive {\n public static void main(String [] args) {\n String test = args[0];\n try {\n System.out.print(“t”);\n doRisky(test);\n System.out.print(“0”);\n } catch ( MyEx e) {\n System.out.print(“a”);\n } finally {\n System.out.print(“w”);\n }\n System.out.println(“5”); \n }\n static void doRisky(String t) throws MyEx {\n System.out.print(“h”);\n if (“yes”.equals(t)) {\n throw new MyEx();\n }\n System.out.print(“r”);\n }\n}\nFile Edit Window Help Chill\n% java ExTestDrive yes\nthaws\n% java ExTestDrive no\nthrows\n1. False, either or both.\n2. False, you can declare the exception.\n3. True.\n4. False, runtime exception can be caught.\n5. True.\n6. True, both are acceptable.\n7. False, the declaration is sufficient.\n8. False, but if it doesn’t the JVM may shut down.\n9. True.\n10. False.\n11. True. It’5 often used to clean-up partially \ncompleted tasks.\n12. False.\n13. False.\n14. False, ducking is synonymous with declaring.\n15. False, broadest exceptions must be caught by \nthe last catch blocks.\n16. False, if you don’t have a catch block, you must \ndeclare.\n17. False.\nTrue or False\nExercise Solutions\nCode Magnets",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Chill"
+        ],
+        [
+          "% java ExTestDrive yes\nthaws\n% java ExTestDrive no\nthrows"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (162x136)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n351\nclass MyEx extends Exception { }\npublic class ExTestDrive {\n public static void main(String [] args) {\n String test = args[0];\n try {\n System.out.print(“t”);\n doRisky(test);\n System.out.print(“0”);\n } catch ( MyEx e) {\n System.out.print(“a”);\n } finally {\n System.out.print(“w”);\n }\n System.out.println(“5”); \n }\n static void doRisky(String t) throws MyEx {\n System.out.print(“h”);\n if (“yes”.equals(t)) {\n throw new MyEx();\n }\n System.out.print(“r”);\n }\n}\nFile Edit Window Help Chill\n% java ExTestDrive yes\nthaws\n% java ExTestDrive no\nthrows\n1. False, either or both.\n2. False, you can declare the exception.\n3. True.\n4. False, runtime exception can be caught.\n5. True.\n6. True, both are acceptable.\n7. False, the declaration is sufficient.\n8. False, but if it doesn’t the JVM may shut down.\n9. True.\n10. False.\n11. True. It’5 often used to clean-up partially \ncompleted tasks.\n12. False.\n13. False.\n14. False, ducking is synonymous with declaring.\n15. False, broadest exceptions must be caught by \nthe last catch blocks.\n16. False, if you don’t have a catch block, you must \ndeclare.\n17. False.\nTrue or False\nExercise Solutions\nCode Magnets",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 385,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 385,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1259 chars",
+      "severity": "info"
+    },
+    {
+      "page": 385,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 385,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

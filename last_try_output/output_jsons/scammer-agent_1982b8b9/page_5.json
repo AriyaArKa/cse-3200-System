@@ -1,0 +1,46 @@
+{
+  "page_number": 5,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "References\nJosh Achiam, Steven Adler, Sandhini Agarwal, Lama\nAhmad, Ilge Akkaya, Florencia Leoni Aleman,\nDiogo Almeida, Janko Altenschmidt, Sam Altman,\nShyamal Anadkat, et al. 2023. Gpt-4 technical report.\narXiv preprint arXiv:2303.08774.\nShannon Bond. 2024. Ai-generated spam is starting to\nfill social media. here’5 why.\nTom Brown, Benjamin Mann, Nick Ryder, Melanie\nSubbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind\nNeelakantan, Pranav Shyam, Girish Sastry, Amanda\nAskell, et al. 2020. Language models are few-shot\nlearners. Advances in neural information processing\nsystems, 33:1877–1901.\nHeather Chen. 2024.\nFinance worker pays out $25\nmillion after video call with deepfake ‘chief financial\nofficer’.\nRichard Fang, Rohan Bindu, Akul Gupta, Qiusi\nZhan, and Daniel Kang. 2024a.\nLlm agents\ncan autonomously hack websites.\nPreprint,\narXiv:2402.06664.\nRichard Fang, Rohan Bindu, Akul Gupta, Qiusi Zhan,\nand Daniel Kang. 2024b.\nTeams of llm agents\ncan exploit zero-day vulnerabilities. arXiv preprint\narXiv:2406.01637.\nYaniv Hanoch and Stacey Wood. 2021.\nThe scams\namong us: Who falls prey and why. Current Direc-\ntions in Psychological Science, 30(3):260–266.\nDaniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin,\nMatei Zaharia, and Tatsunori Hashimoto. 2024. Ex-\nploiting programmatic behavior of llms: Dual-use\nthrough standard security attacks. In 2024 IEEE Se-\ncurity and Privacy Workshops (SPW), pages 132–143.\nIEEE.\nPatrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio\nPetroni, Vladimir Karpukhin, Naman Goyal, Hein-\nrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rock-\ntäschel, et al. 2020. Retrieval-augmented generation\nfor knowledge-intensive nlp tasks. Advances in Neu-\nral Information Processing Systems, 33:9459–9474.\nOpenAI. 2024. Introducing the realtime api.\nKen Paxton. 2024. Common scams.\nFrancesco Salvi, Manoel Horta Ribeiro, Riccardo\nGallotti, and Robert West. 2024.\nOn the con-\nversational persuasiveness of large language mod-\nels: A randomized controlled trial. arXiv preprint\narXiv:2403.14380.\nBrian Schwalb. 2024. Consumer alert: Telemarketing\nscams.\nFabio Urbina, Filippa Lentzos, Cédric Invernizzi, and\nSean Ekins. 2022. Dual use of artificial-intelligence-\npowered drug discovery.\nNature machine intelli-\ngence, 4(3):189–191.\nLaura Weidinger, John Mellor, Maribeth Rauh, Conor\nGriffin, Jonathan Uesato, Po-Sen Huang, Myra\nCheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh,\net al. 2021. Ethical and social risks of harm from\nlanguage models. arXiv preprint arXiv:2112.04359.\nLaura Weidinger, Jonathan Uesato, Maribeth Rauh,\nConor Griffin, Po-Sen Huang, John Mellor, Amelia\nGlaese, Myra Cheng, Borja Balle, Atoosa Kasirzadeh,\net al. 2022. Taxonomy of risks posed by language\nmodels. In 2022 ACM Conference on Fairness, Ac-\ncountability, and Transparency, pages 214–229.\n5",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "References\nJosh Achiam, Steven Adler, Sandhini Agarwal, Lama\nAhmad, Ilge Akkaya, Florencia Leoni Aleman,\nDiogo Almeida, Janko Altenschmidt, Sam Altman,\nShyamal Anadkat, et al. 2023. Gpt-4 technical report.\narXiv preprint arXiv:2303.08774.\nShannon Bond. 2024. Ai-generated spam is starting to\nfill social media. here’5 why.\nTom Brown, Benjamin Mann, Nick Ryder, Melanie\nSubbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind\nNeelakantan, Pranav Shyam, Girish Sastry, Amanda\nAskell, et al. 2020. Language models are few-shot\nlearners. Advances in neural information processing\nsystems, 33:1877–1901.\nHeather Chen. 2024.\nFinance worker pays out $25\nmillion after video call with deepfake ‘chief financial\nofficer’.\nRichard Fang, Rohan Bindu, Akul Gupta, Qiusi\nZhan, and Daniel Kang. 2024a.\nLlm agents\ncan autonomously hack websites.\nPreprint,\narXiv:2402.06664.\nRichard Fang, Rohan Bindu, Akul Gupta, Qiusi Zhan,\nand Daniel Kang. 2024b.\nTeams of llm agents\ncan exploit zero-day vulnerabilities. arXiv preprint\narXiv:2406.01637.\nYaniv Hanoch and Stacey Wood. 2021.\nThe scams\namong us: Who falls prey and why. Current Direc-\ntions in Psychological Science, 30(3):260–266.\nDaniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin,\nMatei Zaharia, and Tatsunori Hashimoto. 2024. Ex-\nploiting programmatic behavior of llms: Dual-use\nthrough standard security attacks. In 2024 IEEE Se-\ncurity and Privacy Workshops (SPW), pages 132–143.\nIEEE.\nPatrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio\nPetroni, Vladimir Karpukhin, Naman Goyal, Hein-\nrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rock-\ntäschel, et al. 2020. Retrieval-augmented generation\nfor knowledge-intensive nlp tasks. Advances in Neu-\nral Information Processing Systems, 33:9459–9474.\nOpenAI. 2024. Introducing the realtime api.\nKen Paxton. 2024. Common scams.\nFrancesco Salvi, Manoel Horta Ribeiro, Riccardo\nGallotti, and Robert West. 2024.\nOn the con-\nversational persuasiveness of large language mod-\nels: A randomized controlled trial. arXiv preprint\narXiv:2403.14380.\nBrian Schwalb. 2024. Consumer alert: Telemarketing\nscams.\nFabio Urbina, Filippa Lentzos, Cédric Invernizzi, and\nSean Ekins. 2022. Dual use of artificial-intelligence-\npowered drug discovery.\nNature machine intelli-\ngence, 4(3):189–191.\nLaura Weidinger, John Mellor, Maribeth Rauh, Conor\nGriffin, Jonathan Uesato, Po-Sen Huang, Myra\nCheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh,\net al. 2021. Ethical and social risks of harm from\nlanguage models. arXiv preprint arXiv:2112.04359.\nLaura Weidinger, Jonathan Uesato, Maribeth Rauh,\nConor Griffin, Po-Sen Huang, John Mellor, Amelia\nGlaese, Myra Cheng, Borja Balle, Atoosa Kasirzadeh,\net al. 2022. Taxonomy of risks posed by language\nmodels. In 2022 ACM Conference on Fairness, Ac-\ncountability, and Transparency, pages 214–229.\n5",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 5,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 5,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2797 chars",
+      "severity": "info"
+    },
+    {
+      "page": 5,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

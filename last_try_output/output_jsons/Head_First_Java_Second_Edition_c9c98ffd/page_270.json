@@ -1,0 +1,67 @@
+{
+  "page_number": 270,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "236 \nchapter 9\nThe Stack and the Heap: where things live\nBefore we can understand what really happens when \nyou create an object, we have to step back a bit. We \nneed to learn more about where everything lives \n(and for how long) in Java. That means we need to \nlearn more about the Stack and the Heap. In Java, we \n(programmers) care about two areas of memory—\nthe one where objects live (the heap), and the one \nwhere method invocations and local variables live \n(the stack). When a JVM starts up, it gets a chunk of \nmemory from the underlying 05, and uses it to run \nyour Java program. How much memory, and whether \nor not you can tweak it, is dependent on which \nversion of the JVM (and on which platform) you’re \nrunning. But usually you won’t have anything to say \nabout it. And with good programming, you probably \nwon’t care (more on that a little later).\nWe know that all objects live on the garbage-collectible \nheap, but we haven’t yet looked at where variables \nlive. And where a variable lives depends on what kind \nof variable it is. And by “kind”, we don’t mean type \n(i.e. primitive or object reference). The two kinds of \nvariables whose lives we care about now are instance \nvariables and local variables. Local variables are also \nknown as stack variables, which is a big clue for where \nthey live.\nThe Stack\nWhere method invocations \nand local variables live\nmain()\ndoStuff()\ngo()\n8\nu\nt\nt\n0\nn\n \n0\nb\nj\ne\nc\nt\n \nD\nu\nc\nk\n \n0\nb\nj\nec\nt\n \n5\nn\n0\nw\nb\n0\na\nr\nd\n \n \n0\nb\nj\ne\nct\n \nThe Heap \nalso known as \n“The Garbage-\nCollectible Heap”\nWhere ALL objects live\nInstance Variables\nLocal Variables\nInstance variables are declared inside a class but not \ninside a method. They represent the “fields” that each \nindividual object has (which can be filled with different \nvalues for each instance of the class). Instance variables \nlive inside the object they belong to.\npublic class Duck {\n int size;\n}\nEvery Duck has a “size” \ninstance variable.\nLocal variables are declared inside a method, including \nmethod parameters. They’re temporary, and live only as \nlong as the method is on the stack (in other words, as long as \nthe method has not reached the closing curly brace).\npublic void foo(int x) {\n int i = x + 3;\n boolean b = true; \n}\nThe parameter x and \nthe variables i and b \nare all local variables.\nthe stack and the heap",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (375x265)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (106x107)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "236 \nchapter 9\nThe Stack and the Heap: where things live\nBefore we can understand what really happens when \nyou create an object, we have to step back a bit. We \nneed to learn more about where everything lives \n(and for how long) in Java. That means we need to \nlearn more about the Stack and the Heap. In Java, we \n(programmers) care about two areas of memory—\nthe one where objects live (the heap), and the one \nwhere method invocations and local variables live \n(the stack). When a JVM starts up, it gets a chunk of \nmemory from the underlying 05, and uses it to run \nyour Java program. How much memory, and whether \nor not you can tweak it, is dependent on which \nversion of the JVM (and on which platform) you’re \nrunning. But usually you won’t have anything to say \nabout it. And with good programming, you probably \nwon’t care (more on that a little later).\nWe know that all objects live on the garbage-collectible \nheap, but we haven’t yet looked at where variables \nlive. And where a variable lives depends on what kind \nof variable it is. And by “kind”, we don’t mean type \n(i.e. primitive or object reference). The two kinds of \nvariables whose lives we care about now are instance \nvariables and local variables. Local variables are also \nknown as stack variables, which is a big clue for where \nthey live.\nThe Stack\nWhere method invocations \nand local variables live\nmain()\ndoStuff()\ngo()\n8\nu\nt\nt\n0\nn\n \n0\nb\nj\ne\nc\nt\n \nD\nu\nc\nk\n \n0\nb\nj\nec\nt\n \n5\nn\n0\nw\nb\n0\na\nr\nd\n \n \n0\nb\nj\ne\nct\n \nThe Heap \nalso known as \n“The Garbage-\nCollectible Heap”\nWhere ALL objects live\nInstance Variables\nLocal Variables\nInstance variables are declared inside a class but not \ninside a method. They represent the “fields” that each \nindividual object has (which can be filled with different \nvalues for each instance of the class). Instance variables \nlive inside the object they belong to.\npublic class Duck {\n int size;\n}\nEvery Duck has a “size” \ninstance variable.\nLocal variables are declared inside a method, including \nmethod parameters. They’re temporary, and live only as \nlong as the method is on the stack (in other words, as long as \nthe method has not reached the closing curly brace).\npublic void foo(int x) {\n int i = x + 3;\n boolean b = true; \n}\nThe parameter x and \nthe variables i and b \nare all local variables.\nthe stack and the heap",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 270,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 270,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2341 chars",
+      "severity": "info"
+    },
+    {
+      "page": 270,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 270,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

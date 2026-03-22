@@ -1,0 +1,60 @@
+{
+  "page_number": 186,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "152 \nchapter 6\nimport java.io.*;\nimport java.util.*;\npublic class GameHelper {\n private static final String alphabet = “abcdefg”;\n private int gridLength = 7;\n private int gridSize = 49;\n private int [] grid = new int[gridSize];\n private int comCount = 0;\n public String getUserInput(String prompt) {\n String inputLine = null;\n System.out.print(prompt + “ “);\n try {\n BufferedReader is = new BufferedReader(\n \n new InputStreamReader(System.in));\n inputLine = is.readLine();\n if (inputLine.length() == 0 ) return null; \n } catch (IOException e) {\n System.out.println(“IOException: “ + e);\n }\n return inputLine.toLowerCase();\n } \n \n public ArrayList<String> placeDotCom(int comSize) { \n ArrayList<String> alphaCells = new ArrayList<String>();\n \n \n \n \n \n \n \n \n // holds ‘f6’ type coords\n String temp = null; // temporary String for concat\n int [] coords = new int[comSize]; // current candidate coords\n int attempts = 0; // current attempts counter\n boolean success = false; // flag = found a good location ?\n int location = 0; // current starting location\n \n comCount++; // nth dot com to place\n int incr = 1; // set horizontal increment\n if ((comCount % 2) == 1) { // if odd dot com (place vertically)\n incr = gridLength; // set vertical increment\n }\n while ( !success & attempts++ < 200 ) { // main search loop (32)\n \nlocation = (int) (Math.random() * gridSize); // get random starting point\n //System.out.print(“ try “ + location);\n \nint x = 0; // nth position in dotcom to place\n success = true; // assume success\n while (success && x < comSize) { // look for adjacent unused spots\n if (grid[location] == 0) { // if not already used\nReady-bake \nCode\nThis is the helper class for the game. Besides the user input method \n(that prompts the user and reads input from the command-line), the \nhelper’5 Big Service is to create the cell locations for the DotComs. \nIf we were you, we’d just back away slowly from this code, except \nto type it in and compile it. We tried to keep it fairly small 50 you \nwouldn’t have to type 50 much, but that means it isn’t the most \nreadable code. And remember, you won’t be able to compile the \nDotComBust game class until you have this class.\nNote: For extra credit, you might \ntry ‘un-commenting’ the \nSystem.out.print(ln)’5 in the \nplaceDotCom( ) method, just \nto watch it work! These print \nstatements will let you “cheat” \nby giving you the location of the \nDotComs, but it will help you test it.\nReady-bake: GameHelper",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (137x137)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "152 \nchapter 6\nimport java.io.*;\nimport java.util.*;\npublic class GameHelper {\n private static final String alphabet = “abcdefg”;\n private int gridLength = 7;\n private int gridSize = 49;\n private int [] grid = new int[gridSize];\n private int comCount = 0;\n public String getUserInput(String prompt) {\n String inputLine = null;\n System.out.print(prompt + “ “);\n try {\n BufferedReader is = new BufferedReader(\n \n new InputStreamReader(System.in));\n inputLine = is.readLine();\n if (inputLine.length() == 0 ) return null; \n } catch (IOException e) {\n System.out.println(“IOException: “ + e);\n }\n return inputLine.toLowerCase();\n } \n \n public ArrayList<String> placeDotCom(int comSize) { \n ArrayList<String> alphaCells = new ArrayList<String>();\n \n \n \n \n \n \n \n \n // holds ‘f6’ type coords\n String temp = null; // temporary String for concat\n int [] coords = new int[comSize]; // current candidate coords\n int attempts = 0; // current attempts counter\n boolean success = false; // flag = found a good location ?\n int location = 0; // current starting location\n \n comCount++; // nth dot com to place\n int incr = 1; // set horizontal increment\n if ((comCount % 2) == 1) { // if odd dot com (place vertically)\n incr = gridLength; // set vertical increment\n }\n while ( !success & attempts++ < 200 ) { // main search loop (32)\n \nlocation = (int) (Math.random() * gridSize); // get random starting point\n //System.out.print(“ try “ + location);\n \nint x = 0; // nth position in dotcom to place\n success = true; // assume success\n while (success && x < comSize) { // look for adjacent unused spots\n if (grid[location] == 0) { // if not already used\nReady-bake \nCode\nThis is the helper class for the game. Besides the user input method \n(that prompts the user and reads input from the command-line), the \nhelper’5 Big Service is to create the cell locations for the DotComs. \nIf we were you, we’d just back away slowly from this code, except \nto type it in and compile it. We tried to keep it fairly small 50 you \nwouldn’t have to type 50 much, but that means it isn’t the most \nreadable code. And remember, you won’t be able to compile the \nDotComBust game class until you have this class.\nNote: For extra credit, you might \ntry ‘un-commenting’ the \nSystem.out.print(ln)’5 in the \nplaceDotCom( ) method, just \nto watch it work! These print \nstatements will let you “cheat” \nby giving you the location of the \nDotComs, but it will help you test it.\nReady-bake: GameHelper",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 186,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 186,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3002 chars",
+      "severity": "info"
+    },
+    {
+      "page": 186,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 186,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

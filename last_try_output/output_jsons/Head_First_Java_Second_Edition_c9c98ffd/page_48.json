@@ -1,0 +1,74 @@
+{
+  "page_number": 48,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "14 \nchapter 1\nCoding a Serious Business \nApplication\nLet’5 put all your new Java skills to good use with \nsomething practical. We need a class with a main(), an int \nand a String variable, a while loop, and an if test. A little \nmore polish, and you’11 be building that business back-\nend in no time. But before you look at the code on this \npage, think for a moment about how you would code that \nclassic children’5 favorite, “99 bottles of beer.”\npublic class BeerSong {\n public static void main (String[] args) {\n int beerNum = 99;\n String word = “bottles”;\n while (beerNum > 0) {\n if (beerNum == 1) {\n word = “bottle”; // singular, as in ONE bottle.\n }\n System.out.println(beerNum + “ ” + word + “ of beer on the wall”);\n System.out.println(beerNum + “ ” + word + “ of beer.”);\n System.out.println(“Take one down.”);\n System.out.println(“Pass it around.”);\n beerNum = beerNum - 1;\n if (beerNum > 0) {\n System.out.println(beerNum + “ ” + word + “ of beer on the wall”);\n } else {\n System.out.println(“No more bottles of beer on the wall”);\n } // end else\n } // end while loop\n } // end main method\n} // end class\nThere’5 still one little flaw in our \ncode. It compiles and runs, but the \noutput isn’t 100% perfect. See if \nyou can spot the flaw , and fix it.\nserious Java app",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (123x447)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (102x370)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (136x493)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "14 \nchapter 1\nCoding a Serious Business \nApplication\nLet’5 put all your new Java skills to good use with \nsomething practical. We need a class with a main(), an int \nand a String variable, a while loop, and an if test. A little \nmore polish, and you’11 be building that business back-\nend in no time. But before you look at the code on this \npage, think for a moment about how you would code that \nclassic children’5 favorite, “99 bottles of beer.”\npublic class BeerSong {\n public static void main (String[] args) {\n int beerNum = 99;\n String word = “bottles”;\n while (beerNum > 0) {\n if (beerNum == 1) {\n word = “bottle”; // singular, as in ONE bottle.\n }\n System.out.println(beerNum + “ ” + word + “ of beer on the wall”);\n System.out.println(beerNum + “ ” + word + “ of beer.”);\n System.out.println(“Take one down.”);\n System.out.println(“Pass it around.”);\n beerNum = beerNum - 1;\n if (beerNum > 0) {\n System.out.println(beerNum + “ ” + word + “ of beer on the wall”);\n } else {\n System.out.println(“No more bottles of beer on the wall”);\n } // end else\n } // end while loop\n } // end main method\n} // end class\nThere’5 still one little flaw in our \ncode. It compiles and runs, but the \noutput isn’t 100% perfect. See if \nyou can spot the flaw , and fix it.\nserious Java app",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 48,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 48,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1398 chars",
+      "severity": "info"
+    },
+    {
+      "page": 48,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 48,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

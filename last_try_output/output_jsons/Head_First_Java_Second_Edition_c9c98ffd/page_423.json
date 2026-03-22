@@ -1,0 +1,46 @@
+{
+  "page_number": 423,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n389\nimport javax.sound.midi.*;\npublic class MiniMusicPlayer1 { \n \n public static void main(String[] args) { \n try {\n Sequencer sequencer = MidiSystem.getSequencer(); \n sequencer.open();\n \n \n Sequence seq = new Sequence(Sequence.PPQ, 4);\n Track track = seq.createTrack(); \n \n for (int i = 5; i < 61; i+= 4) {\n \n track.add(makeEvent(144,1,i,100,i));\n track.add(makeEvent(128,1,i,100,i + 2));\n } // end loop\n \n sequencer.setSequence(seq);\n sequencer.setTempoInBPM(220);\n sequencer.start();\n } catch (Exception ex) {ex.printStackTrace();}\n } // close main\n public static MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {\n MidiEvent event = null;\n try {\n ShortMessage a = new ShortMessage();\n a.setMessage(comd, chan, one, two);\n event = new MidiEvent(a, tick);\n \n }catch(Exception e) { }\n return event;\n }\n} // close class\nmake (and open) a sequencer\nmake a sequence \nand a track\nmake a bunch of events to make the notes keep \ngoing up (from piano note 5 to piano note 61) \ndon’t forget the import\ncall our new makeEvent() method to make the \nmessage and event, then add the result (the \nMidiEvent returned from makeEvent()) to \nthe track. These are NOTE ON (144) and \nNOTE OFF (128) pairs\nstart it running\nThere’5 no event handling or graphics here, just a sequence of 15 \nnotes that go up the scale. The point of this code is simply to learn \nhow to use our new makeEvent() method. The code for the next \ntwo versions is much smaller and simpler thanks to this method.\nExample: how to use the new static \nmakeEvent() method",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "getting gui\nyou are here\n389\nimport javax.sound.midi.*;\npublic class MiniMusicPlayer1 { \n \n public static void main(String[] args) { \n try {\n Sequencer sequencer = MidiSystem.getSequencer(); \n sequencer.open();\n \n \n Sequence seq = new Sequence(Sequence.PPQ, 4);\n Track track = seq.createTrack(); \n \n for (int i = 5; i < 61; i+= 4) {\n \n track.add(makeEvent(144,1,i,100,i));\n track.add(makeEvent(128,1,i,100,i + 2));\n } // end loop\n \n sequencer.setSequence(seq);\n sequencer.setTempoInBPM(220);\n sequencer.start();\n } catch (Exception ex) {ex.printStackTrace();}\n } // close main\n public static MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {\n MidiEvent event = null;\n try {\n ShortMessage a = new ShortMessage();\n a.setMessage(comd, chan, one, two);\n event = new MidiEvent(a, tick);\n \n }catch(Exception e) { }\n return event;\n }\n} // close class\nmake (and open) a sequencer\nmake a sequence \nand a track\nmake a bunch of events to make the notes keep \ngoing up (from piano note 5 to piano note 61) \ndon’t forget the import\ncall our new makeEvent() method to make the \nmessage and event, then add the result (the \nMidiEvent returned from makeEvent()) to \nthe track. These are NOTE ON (144) and \nNOTE OFF (128) pairs\nstart it running\nThere’5 no event handling or graphics here, just a sequence of 15 \nnotes that go up the scale. The point of this code is simply to learn \nhow to use our new makeEvent() method. The code for the next \ntwo versions is much smaller and simpler thanks to this method.\nExample: how to use the new static \nmakeEvent() method",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 423,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 423,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1815 chars",
+      "severity": "info"
+    },
+    {
+      "page": 423,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

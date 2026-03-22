@@ -1,0 +1,60 @@
+{
+  "page_number": 7,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Head First Java™\nSecond Edition\nBeijing • Cambridge • Köln • Sebastopol • Tokyo\nWouldn’t it be dreamy \nif there was a Java book \nthat was more stimulating \nthan waiting in line at the \nDMV to renew your driver’5 \nlicense? It’5 probably just a \nfantasy...\nKathy Sierra\nBert Bates",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (410x505)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "Head First Java™\nSecond Edition\nBeijing • Cambridge • Köln • Sebastopol • Tokyo\nWouldn’t it be dreamy \nif there was a Java book \nthat was more stimulating \nthan waiting in line at the \nDMV to renew your driver’5 \nlicense? It’5 probably just a \nfantasy...\nKathy Sierra\nBert Bates",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 7,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 7,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 287 chars",
+      "severity": "info"
+    },
+    {
+      "page": 7,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 7,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "page_number": 659,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n625\nThanks \nKathy\nSierra\nBob’5\nPets\nKathy\nSierra\nWhat about Servlets?\nServlets are Java programs that run on (and with) an HTTP web server. When a client uses a \nweb browser to interact with a web page, a request is sent back to the web server. If the request \nneeds the help of a Java servlet, the web server runs (or calls, if the servlet is already running) \nthe servlet code. Servlet code is simply code that runs on the server, to do work as a result of \nwhatever the client requests (for example, save information to a text file or database on the \nserver). If you’re familiar with CGI scripts written in Perl, you know exactly what we’re talking \nabout. Web developers use CGI scripts or servlets to do everything from sending user-submitted \ninfo to a database, to running a web-site’5 discussion board.\nAnd even servlets can use RMI!\nBy far, the most common use of J2EE technology is to mix servlets and EJBs together, where \nservlets are the client of the EJB. And in that case, the servlet is using RMI to talk to the EJBs. \n(Although the way you use RMI with EJB is a little different from the process we just looked at.)\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServlet.class\nWeb Server \nWeb Browser\n(client)\n“client requests RegisterServlet”\n1\nClient fills out a registration form and clicks ‘submit’.\nThe HTTP server (i.e. web server) gets the request, sees that \nit’5 for a servlet, and sends the request to the servlet.\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServlet.class\nWeb Server \nWeb Browser\n(client)\n“client requests RegisterServlet”\n2\nServlet (Java code) runs, adds data to the database, \ncomposes a web page (with custom info) and sends it back to \nthe client where it displays in the browser.\nconfirm.html\n<HTML>\n <BODY>\n Java \nrules!\n <BODY>\n<HTML>\n“here’5 a confirmation page”\n100% Local Combination 100% Remote\nServlets\nHTTP\nWeb Start \nFile Edit View\nHTTP\nRMI app\nFile Edit View\nRMI\nExecutable \nJar\nFile Edit View\nServlets\nHTTP\nServlets\nHTTP",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit View\nExecutable\nJar",
+          "File Edit View File Edit View\nHTTP RMI\nWeb Start RMI app",
+          "HHTTTTPP\nHTTP\nSSeervrvleletsts\nServlets"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Bob’5\nPets\nKathy"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x229)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (31x49)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (31x49)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (380x280)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n625\nThanks \nKathy\nSierra\nBob’5\nPets\nKathy\nSierra\nWhat about Servlets?\nServlets are Java programs that run on (and with) an HTTP web server. When a client uses a \nweb browser to interact with a web page, a request is sent back to the web server. If the request \nneeds the help of a Java servlet, the web server runs (or calls, if the servlet is already running) \nthe servlet code. Servlet code is simply code that runs on the server, to do work as a result of \nwhatever the client requests (for example, save information to a text file or database on the \nserver). If you’re familiar with CGI scripts written in Perl, you know exactly what we’re talking \nabout. Web developers use CGI scripts or servlets to do everything from sending user-submitted \ninfo to a database, to running a web-site’5 discussion board.\nAnd even servlets can use RMI!\nBy far, the most common use of J2EE technology is to mix servlets and EJBs together, where \nservlets are the client of the EJB. And in that case, the servlet is using RMI to talk to the EJBs. \n(Although the way you use RMI with EJB is a little different from the process we just looked at.)\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServlet.class\nWeb Server \nWeb Browser\n(client)\n“client requests RegisterServlet”\n1\nClient fills out a registration form and clicks ‘submit’.\nThe HTTP server (i.e. web server) gets the request, sees that \nit’5 for a servlet, and sends the request to the servlet.\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServlet.class\nWeb Server \nWeb Browser\n(client)\n“client requests RegisterServlet”\n2\nServlet (Java code) runs, adds data to the database, \ncomposes a web page (with custom info) and sends it back to \nthe client where it displays in the browser.\nconfirm.html\n<HTML>\n <BODY>\n Java \nrules!\n <BODY>\n<HTML>\n“here’5 a confirmation page”\n100% Local Combination 100% Remote\nServlets\nHTTP\nWeb Start \nFile Edit View\nHTTP\nRMI app\nFile Edit View\nRMI\nExecutable \nJar\nFile Edit View\nServlets\nHTTP\nServlets\nHTTP",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 659,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 659,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2034 chars",
+      "severity": "info"
+    },
+    {
+      "page": 659,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 659,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

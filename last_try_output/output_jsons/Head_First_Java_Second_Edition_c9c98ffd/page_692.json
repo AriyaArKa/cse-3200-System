@@ -1,0 +1,46 @@
+{
+  "page_number": 692,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "final BeatBox code\n658 \nappendix A\n public void go() {\n clientOutputStreams = new ArrayList<ObjectOutputStream>();\n try {\n ServerSocket serverSock = new ServerSocket(4242);\n while(true) {\n Socket clientSocket = serverSock.accept();\n ObjectOutputStream out = new ObjectOutputStream(clientSocket.getOutputStream());\n clientOutputStreams.add(out);\n Thread t = new Thread(new ClientHandler(clientSocket));\n t.start();\n System.out.println(“got a connection”);\n }\n }catch(Exception ex) {\n ex.printStackTrace();\n }\n } // close go\n public void tellEveryone(Object one, Object two) {\n Iterator it = clientOutputStreams.iterator();\n while(it.hasNext()) {\n try {\n ObjectOutputStream out = (ObjectOutputStream) it.next();\n out.writeObject(one);\n out.writeObject(two);\n }catch(Exception ex) {ex.printStackTrace();}\n }\n } // close tellEveryone\n } // close class",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "final BeatBox code\n658 \nappendix A\n public void go() {\n clientOutputStreams = new ArrayList<ObjectOutputStream>();\n try {\n ServerSocket serverSock = new ServerSocket(4242);\n while(true) {\n Socket clientSocket = serverSock.accept();\n ObjectOutputStream out = new ObjectOutputStream(clientSocket.getOutputStream());\n clientOutputStreams.add(out);\n Thread t = new Thread(new ClientHandler(clientSocket));\n t.start();\n System.out.println(“got a connection”);\n }\n }catch(Exception ex) {\n ex.printStackTrace();\n }\n } // close go\n public void tellEveryone(Object one, Object two) {\n Iterator it = clientOutputStreams.iterator();\n while(it.hasNext()) {\n try {\n ObjectOutputStream out = (ObjectOutputStream) it.next();\n out.writeObject(one);\n out.writeObject(two);\n }catch(Exception ex) {ex.printStackTrace();}\n }\n } // close tellEveryone\n } // close class",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 692,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 692,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1055 chars",
+      "severity": "info"
+    },
+    {
+      "page": 692,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

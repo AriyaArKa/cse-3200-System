@@ -1,0 +1,62 @@
+{
+  "page_number": 258,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "224 \nchapter 8\nInterface to the rescue!\nPet\nabstract void beFriendly();\nabstract void play();\nA Java interface is like a \n100% pure abstract class.\nAll methods in an interface are \nabstract, 50 any class that 15-A \nPet MUST implement (i.e. override) \nthe methods of Pet. \nJava gives you a solution. An interface. Not a GUI interface, not the generic \nuse of the word interface as in, “That’5 the public interface for the Button \nclass API,” but the Java keyword interface.\nA Java interface solves your multiple inheritance problem by giving you \nmuch of the polymorphic benefits of multiple inheritance without the pain \nand suffering from the Deadly Diamond of Death (DDD).\nThe way in which interfaces side-step the DDD is surprisingly simple: make \nall the methods abstract! That way, the subclass must implement the methods \n(remember, abstract methods must be implemented by the first concrete \nsubclass), 50 at runtime the JVM isn’t confused about which of the two \ninherited versions it’5 supposed to call.\nTo DEFINE an interface:\nTo IMPLEMENT an interface:\npublic interface Pet {...}\npublic class Dog extends Canine implements Pet {...}\nUse the keyword “interface” \ninstead of “class”\nUse the keyword “implements” followed \nby the interface name. Note that \nwhen you implement an interface you \nstill get to extend a class \ninterfaces",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          "Pet"
+        ],
+        [
+          ""
+        ],
+        [
+          "abstract void beFriendly();\nabstract void play();"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "224 \nchapter 8\nInterface to the rescue!\nPet\nabstract void beFriendly();\nabstract void play();\nA Java interface is like a \n100% pure abstract class.\nAll methods in an interface are \nabstract, 50 any class that 15-A \nPet MUST implement (i.e. override) \nthe methods of Pet. \nJava gives you a solution. An interface. Not a GUI interface, not the generic \nuse of the word interface as in, “That’5 the public interface for the Button \nclass API,” but the Java keyword interface.\nA Java interface solves your multiple inheritance problem by giving you \nmuch of the polymorphic benefits of multiple inheritance without the pain \nand suffering from the Deadly Diamond of Death (DDD).\nThe way in which interfaces side-step the DDD is surprisingly simple: make \nall the methods abstract! That way, the subclass must implement the methods \n(remember, abstract methods must be implemented by the first concrete \nsubclass), 50 at runtime the JVM isn’t confused about which of the two \ninherited versions it’5 supposed to call.\nTo DEFINE an interface:\nTo IMPLEMENT an interface:\npublic interface Pet {...}\npublic class Dog extends Canine implements Pet {...}\nUse the keyword “interface” \ninstead of “class”\nUse the keyword “implements” followed \nby the interface name. Note that \nwhen you implement an interface you \nstill get to extend a class \ninterfaces",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 258,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 258,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1343 chars",
+      "severity": "info"
+    },
+    {
+      "page": 258,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The Global Cooperation \nBarometer 2024\n1 N 5 1 6 H T R E P 0 R T\nJ A N U A R Y 2 0 2 4\nIn collaboration with \nMcKinsey & Company",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1191x1684)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "The Global Cooperation \nBarometer 2024\n1 N 5 1 6 H T R E P 0 R T\nJ A N U A R Y 2 0 2 4\nIn collaboration with \nMcKinsey & Company",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 131 chars",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

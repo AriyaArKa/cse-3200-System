@@ -1,0 +1,81 @@
+{
+  "page_number": 430,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Pool Puzzle\nYour job is to take code snippets from \nthe pool and place them into the blank \nlines in the code. You may use the \nsame snippet more than once, and \nyou won’t need to use all the snip-\npets. Your goal is to make a class \nthat will compile and run and \nproduce the output listed. \nNote: Each snippet \nfrom the pool can be \nused more than once!\nOutput\ndrawP.setSize(500,270)\nframe.setSize(500,270)\npanel.setSize(500,270)\nx++\ny++\nThe Amazing, Shrinking, Blue Rectangle.\nThis program will produce a blue \nrectangle that will shrink and shrink and \ndisappear into a field of white.\ng.setColor(blue)\ng.setColor(white)\ng.setColor(Color.blue)\ng.setColor(Color.white)\ng.fillRect(x,y,x-500,y-250)\ng.fillRect(x,y,500-x*2,250-y*2)\ng.fillRect(500-x*2,250-y*2,x,y)\ng.fillRect(0,0,250,500)\ng.fillRect(0,0,500,250)\ng\ndraw\nframe\npanel\ni++\ni++, y++\ni++, y++, x++\nAnimate frame = new Animate()\nMyDrawP drawP = new MyDrawP()\nContentPane drawP = new ContentPane()\ndrawP.paint()\ndraw.repaint()\ndrawP.repaint()\npuzzle: Pool Puzzle\nimport javax.swing.*;\nimport java.awt.*;\npublic class Animate {\n int x = 1;\n int y = 1;\n public static void main (String[] args) {\n Animate gui = new Animate ();\n gui.go();\n }\n public void go() {\n JFrame _________ = new JFrame();\n frame.setDefaultCloseOperation(\n \n \n \nJFrame.EXIT_ON_CLOSE);\n ______________________________________; \n _________.getContentPane().add(drawP);\n __________________________;\n _________.setVisible(true);\n for (int i=0; i<124; _______________) {\n _____________________;\n _____________________;\n try {\n Thread.sleep(50);\n } catch(Exception ex) { }\n }\n }\n class MyDrawP extends JPanel {\n public void paintComponent (Graphics\n _________) {\n __________________________________;\n \n __________________________________;\n __________________________________;\n __________________________________;\n }\n }\n}\n396 \nchapter 12",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1218x638)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (282x282)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (492x269)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "Pool Puzzle\nYour job is to take code snippets from \nthe pool and place them into the blank \nlines in the code. You may use the \nsame snippet more than once, and \nyou won’t need to use all the snip-\npets. Your goal is to make a class \nthat will compile and run and \nproduce the output listed. \nNote: Each snippet \nfrom the pool can be \nused more than once!\nOutput\ndrawP.setSize(500,270)\nframe.setSize(500,270)\npanel.setSize(500,270)\nx++\ny++\nThe Amazing, Shrinking, Blue Rectangle.\nThis program will produce a blue \nrectangle that will shrink and shrink and \ndisappear into a field of white.\ng.setColor(blue)\ng.setColor(white)\ng.setColor(Color.blue)\ng.setColor(Color.white)\ng.fillRect(x,y,x-500,y-250)\ng.fillRect(x,y,500-x*2,250-y*2)\ng.fillRect(500-x*2,250-y*2,x,y)\ng.fillRect(0,0,250,500)\ng.fillRect(0,0,500,250)\ng\ndraw\nframe\npanel\ni++\ni++, y++\ni++, y++, x++\nAnimate frame = new Animate()\nMyDrawP drawP = new MyDrawP()\nContentPane drawP = new ContentPane()\ndrawP.paint()\ndraw.repaint()\ndrawP.repaint()\npuzzle: Pool Puzzle\nimport javax.swing.*;\nimport java.awt.*;\npublic class Animate {\n int x = 1;\n int y = 1;\n public static void main (String[] args) {\n Animate gui = new Animate ();\n gui.go();\n }\n public void go() {\n JFrame _________ = new JFrame();\n frame.setDefaultCloseOperation(\n \n \n \nJFrame.EXIT_ON_CLOSE);\n ______________________________________; \n _________.getContentPane().add(drawP);\n __________________________;\n _________.setVisible(true);\n for (int i=0; i<124; _______________) {\n _____________________;\n _____________________;\n try {\n Thread.sleep(50);\n } catch(Exception ex) { }\n }\n }\n class MyDrawP extends JPanel {\n public void paintComponent (Graphics\n _________) {\n __________________________________;\n \n __________________________________;\n __________________________________;\n __________________________________;\n }\n }\n}\n396 \nchapter 12",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 430,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 430,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2055 chars",
+      "severity": "info"
+    },
+    {
+      "page": 430,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 430,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

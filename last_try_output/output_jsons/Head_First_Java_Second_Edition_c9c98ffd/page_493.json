@@ -1,0 +1,108 @@
+{
+  "page_number": 493,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n459\nthere are no\nDumb Questions\nQ:OK, 1 look in the API and there are about five \nmillion classes in the java.io package. How the heck do \nyou know which ones to use?\nA:The 1/0 API uses the modular ‘chaining’ concept 50 \nthat you can hook together connection streams and chain \nstreams (also called ‘filter’ streams) in a wide range of \ncombinations to get just about anything you could want. \nThe chains don’t have to stop at two levels; you can hook \nmultiple chain streams to one another to get just the right \namount of processing you need.\nMost of the time, though, you’11 use the same \nsmall handful of classes. If you’re writing text files, \nBufferedReader and BufferedWriter (chained to FileReader \nand FileWriter) are probably all you need. If you’re writing \nserialized objects, you can use ObjectOutputStream and \nObjectInputStream (chained to FileInputStream and \nFileOutputStream).\nIn other words, 90% of what you might typically do with \nJava 1/0 can use what we’ve already covered. \nQ:What about the new 1/0 nio classes added in 1.4?\nA:The java.nio classes bring a big performance \nimprovement and take greater advantage of native \ncapabilities of the machine your program is running \non. One of the key new features of nio is that you have \ndirect control of buffers. Another new feature is non-\nblocking 1/0, which means your 1/0 code doesn’t just sit \nthere, waiting, if there’5 nothing to read or write. Some \nof the existing classes (including FileInputStream and \nFileOutputStream) take advantage of some of the new \nfeatures, under the covers. The nio classes are more \ncomplicated to use, however, 50 unless you really need the \nnew features, you might want to stick with the simpler \nversions we’ve used here. Plus, if you’re not careful, nio can \nlead to a performance 1055. Non-nio 1/0 is probably right \nfor 90% of what you’11 normally do, especially if you’re just \ngetting started in Java.\nBut you can ease your way into the nio classes, by using \nFileInputStream and accessing its channel through the \ngetChannel() method (added to FileInputStream as of \nversion 1.4).\n BULLET POINTS\n \nTo write a text file, start with a FileWriter \nconnection stream.\n \nChain the FileWriter to a BufferedWriter for \nefficiency.\n \nA File object represents a file at a particular \npath, but does not represent the actual \ncontents of the file.\n \nWith a File object you can create, traverse, \nand delete directories.\n \nMost streams that can use a String filename \ncan use a File object as well, and a File object \ncan be safer to use.\n \nTo read a text file, start with a FileReader \nconnection stream.\n \nChain the FileReader to a BufferedReader for \nefficiency.\n \nTo parse a text file, you need to be sure the \nfile is written with some way to recognize the \ndifferent elements. A common approach is to \nuse some kind of character to separate the \nindividual pieces.\n \nUse the String split() method to split a String \nup into individual tokens. A String with one \nseparator will have two tokens, one on each \nside of the separator. The separator doesn’t \ncount as a token.\nMake it Stick\nRoses are first, violets are next.\nReaders and Writers are only for text.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (66x64)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "serialization and file 1/0\nyou are here\n459\nthere are no\nDumb Questions\nQ:OK, 1 look in the API and there are about five \nmillion classes in the java.io package. How the heck do \nyou know which ones to use?\nA:The 1/0 API uses the modular ‘chaining’ concept 50 \nthat you can hook together connection streams and chain \nstreams (also called ‘filter’ streams) in a wide range of \ncombinations to get just about anything you could want. \nThe chains don’t have to stop at two levels; you can hook \nmultiple chain streams to one another to get just the right \namount of processing you need.\nMost of the time, though, you’11 use the same \nsmall handful of classes. If you’re writing text files, \nBufferedReader and BufferedWriter (chained to FileReader \nand FileWriter) are probably all you need. If you’re writing \nserialized objects, you can use ObjectOutputStream and \nObjectInputStream (chained to FileInputStream and \nFileOutputStream).\nIn other words, 90% of what you might typically do with \nJava 1/0 can use what we’ve already covered. \nQ:What about the new 1/0 nio classes added in 1.4?\nA:The java.nio classes bring a big performance \nimprovement and take greater advantage of native \ncapabilities of the machine your program is running \non. One of the key new features of nio is that you have \ndirect control of buffers. Another new feature is non-\nblocking 1/0, which means your 1/0 code doesn’t just sit \nthere, waiting, if there’5 nothing to read or write. Some \nof the existing classes (including FileInputStream and \nFileOutputStream) take advantage of some of the new \nfeatures, under the covers. The nio classes are more \ncomplicated to use, however, 50 unless you really need the \nnew features, you might want to stick with the simpler \nversions we’ve used here. Plus, if you’re not careful, nio can \nlead to a performance 1055. Non-nio 1/0 is probably right \nfor 90% of what you’11 normally do, especially if you’re just \ngetting started in Java.\nBut you can ease your way into the nio classes, by using \nFileInputStream and accessing its channel through the \ngetChannel() method (added to FileInputStream as of \nversion 1.4).\n BULLET POINTS\n \nTo write a text file, start with a FileWriter \nconnection stream.\n \nChain the FileWriter to a BufferedWriter for \nefficiency.\n \nA File object represents a file at a particular \npath, but does not represent the actual \ncontents of the file.\n \nWith a File object you can create, traverse, \nand delete directories.\n \nMost streams that can use a String filename \ncan use a File object as well, and a File object \ncan be safer to use.\n \nTo read a text file, start with a FileReader \nconnection stream.\n \nChain the FileReader to a BufferedReader for \nefficiency.\n \nTo parse a text file, you need to be sure the \nfile is written with some way to recognize the \ndifferent elements. A common approach is to \nuse some kind of character to separate the \nindividual pieces.\n \nUse the String split() method to split a String \nup into individual tokens. A String with one \nseparator will have two tokens, one on each \nside of the separator. The separator doesn’t \ncount as a token.\nMake it Stick\nRoses are first, violets are next.\nReaders and Writers are only for text.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 493,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 493,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3223 chars",
+      "severity": "info"
+    },
+    {
+      "page": 493,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 493,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

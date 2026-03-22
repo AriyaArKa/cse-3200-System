@@ -1,0 +1,71 @@
+{
+  "page_number": 392,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "358 \nchapter 12\nevent listeners\nA listener interface is the bridge between the \nlistener (you) and event source (the button). \n<<interface>>\nKeyListener\nkeyPressed(KeyEvent ev)\nkeyReleased(KeyEvent ev)\nkeyTyped(KeyEvent ev)\n<<interface>>\nItemListener\nitemStateChanged(ItemEvent ev)\n<<interface>>\nActionListener\nactionPerformed(ActionEvent ev)\nThe Swing GUI components are event sources. In Java terms, \nan event source is an object that can turn user actions (click \na mouse, type a key, close a window) into events. And like \nvirtually everything else in Java, an event is represented as an \nobject. An object of some event class. If you scan through the \njava.awt.event package in the API, you’11 see a bunch of event \nclasses (easy to spot—they all have Event in the name). You’11 \nfind MouseEvent, KeyEvent, WindowEvent, ActionEvent, and \nseveral others. \nAn event source (like a button) creates an event object when the \nuser does something that matters (like click the button). Most \nof the code you write (and all the code in this book) will receive \nevents rather than create events. In other words, you’11 spend \nmost of your time as an event listener rather than an event source.\nEvery event type has a matching listener interface. If you want \nMouseEvents, implement the MouseListener interface. Want \nWindowEvents? Implement WindowListener. You get the idea. \nAnd remember your interface rules—to implement an interface \nyou declare that you implement it (class Dog implements Pet), \nwhich means you must write implementation methods for every \nmethod in the interface.\nSome interfaces have more than one method because the \nevent itself comes in different flavors. If you implement \nMouseListener, for example, you can get events for \nmousePressed, mouseReleased, mouseMoved, etc. Each of \nthose mouse events has a separate method in the interface, \neven though they all take a MouseEvent. If you implement \nMouseListener, the mousePressed() method is called when the \nuser (you guessed it) presses the mouse. And when the user lets \ngo, the mouseReleased() method is called. 50 for mouse events, \nthere’5 only one event object, MouseEvent, but several different \nevent methods, representing the different types of mouse events.\nIf you care about the button’5 events, \nimplement an interface that says, \n“1’m listening for your events.” \nWhen you implement a \nlistener interface, you give \nthe button a way to call \nyou back. The interface is \nwhere the call-back method \nis declared.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "actionPerfo A c < t < i 0 in n t L e r i 5 fa te c n e e > r >\nrm e d ( A c t i 0 n E v e n t ev)\nface>>",
+          ""
+        ],
+        [
+          "",
+          "face>>"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "< K < e i y n L te is rf t a e c n e e > r >\nk k e k e y e y T y R y P p e r e 1 e e d 5 a ( 5 5 K e e e d d y ( ( E K K v e e e y y n E E t v v e e e v n n ) t t e e v v ) )",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "358 \nchapter 12\nevent listeners\nA listener interface is the bridge between the \nlistener (you) and event source (the button). \n<<interface>>\nKeyListener\nkeyPressed(KeyEvent ev)\nkeyReleased(KeyEvent ev)\nkeyTyped(KeyEvent ev)\n<<interface>>\nItemListener\nitemStateChanged(ItemEvent ev)\n<<interface>>\nActionListener\nactionPerformed(ActionEvent ev)\nThe Swing GUI components are event sources. In Java terms, \nan event source is an object that can turn user actions (click \na mouse, type a key, close a window) into events. And like \nvirtually everything else in Java, an event is represented as an \nobject. An object of some event class. If you scan through the \njava.awt.event package in the API, you’11 see a bunch of event \nclasses (easy to spot—they all have Event in the name). You’11 \nfind MouseEvent, KeyEvent, WindowEvent, ActionEvent, and \nseveral others. \nAn event source (like a button) creates an event object when the \nuser does something that matters (like click the button). Most \nof the code you write (and all the code in this book) will receive \nevents rather than create events. In other words, you’11 spend \nmost of your time as an event listener rather than an event source.\nEvery event type has a matching listener interface. If you want \nMouseEvents, implement the MouseListener interface. Want \nWindowEvents? Implement WindowListener. You get the idea. \nAnd remember your interface rules—to implement an interface \nyou declare that you implement it (class Dog implements Pet), \nwhich means you must write implementation methods for every \nmethod in the interface.\nSome interfaces have more than one method because the \nevent itself comes in different flavors. If you implement \nMouseListener, for example, you can get events for \nmousePressed, mouseReleased, mouseMoved, etc. Each of \nthose mouse events has a separate method in the interface, \neven though they all take a MouseEvent. If you implement \nMouseListener, the mousePressed() method is called when the \nuser (you guessed it) presses the mouse. And when the user lets \ngo, the mouseReleased() method is called. 50 for mouse events, \nthere’5 only one event object, MouseEvent, but several different \nevent methods, representing the different types of mouse events.\nIf you care about the button’5 events, \nimplement an interface that says, \n“1’m listening for your events.” \nWhen you implement a \nlistener interface, you give \nthe button a way to call \nyou back. The interface is \nwhere the call-back method \nis declared.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 392,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 392,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2504 chars",
+      "severity": "info"
+    },
+    {
+      "page": 392,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

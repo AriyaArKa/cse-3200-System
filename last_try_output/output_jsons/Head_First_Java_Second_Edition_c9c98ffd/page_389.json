@@ -1,0 +1,60 @@
+{
+  "page_number": 389,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n355\nimport javax.swing.*;\npublic class SimpleGui1 {\n public static void main (String[] args) {\n JFrame frame = new JFrame();\n JButton button = new JButton(“click me”);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.getContentPane().add(button);\n frame.setSize(300,300);\n frame.setVisible(true);\n }\n}\nWhoa! That’5 a \nReally Big Button.\nThe button fills all the \navailable space in the frame. \nLater we’11 learn to control \nwhere (and how big) the \nbutton is on the frame.\nYour first GUI: a button on a frame\ndon’t forget to import this \nswing package\n(you can pass the button constructor \nthe text you want on the button)\ngive the frame a size, in pixels\nfinally, make it visible!! (if you forget \nthis step, you won’t see anything when \nyou run this code)\nadd the button to the frame’5 \ncontent pane\nLet’5 see what happens when we run it: \n%java SimpleGui1\nmake a frame and a button\nthis line makes the program quit as soon as you \nclose the window (if you leave this out it will \njust sit there on the screen forever)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (285x301)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n355\nimport javax.swing.*;\npublic class SimpleGui1 {\n public static void main (String[] args) {\n JFrame frame = new JFrame();\n JButton button = new JButton(“click me”);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.getContentPane().add(button);\n frame.setSize(300,300);\n frame.setVisible(true);\n }\n}\nWhoa! That’5 a \nReally Big Button.\nThe button fills all the \navailable space in the frame. \nLater we’11 learn to control \nwhere (and how big) the \nbutton is on the frame.\nYour first GUI: a button on a frame\ndon’t forget to import this \nswing package\n(you can pass the button constructor \nthe text you want on the button)\ngive the frame a size, in pixels\nfinally, make it visible!! (if you forget \nthis step, you won’t see anything when \nyou run this code)\nadd the button to the frame’5 \ncontent pane\nLet’5 see what happens when we run it: \n%java SimpleGui1\nmake a frame and a button\nthis line makes the program quit as soon as you \nclose the window (if you leave this out it will \njust sit there on the screen forever)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 389,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 389,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1102 chars",
+      "severity": "info"
+    },
+    {
+      "page": 389,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 389,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

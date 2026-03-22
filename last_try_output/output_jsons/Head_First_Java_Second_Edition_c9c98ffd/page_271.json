@@ -1,0 +1,88 @@
+{
+  "page_number": 271,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n237\n public void doStuff() {\n boolean b = true;\n go(4);\n }\n public void go(int x) {\n int z = x + 24;\n crazy();\n // imagine more code here\n }\n public void crazy() {\n char c = ‘a’;\n }\nMethods are stacked\nWhen you call a method, the method lands on \nthe top of a call stack. That new thing that’5 \nactually pushed onto the stack is the stack \nframe, and it holds the state of the method \nincluding which line of code is executing, and \nthe values of all local variables. \nThe method at the top of the stack is always \nthe currently-running method for that stack \n(for now, assume there’5 only one stack,but in \nchapter 14 we’11 add more.) A method stays on \nthe stack until the method hits its closing curly \nbrace (which means the method’5 done). If \nmethod foo() calls method bar(), method bar() is \nstacked on top of method foo().\nbar()\nfoo()\nstack frames\nbottom of the stack\ntop of the stack\nlocal variables \n(including \nparameter x)\nA call stack with two methods\n1\nCode from another \nclass calls doStuff(), \nand doStuff() goes \ninto a stack frame \nat the top of the \nstack.The boolean \nvariable named ‘b’ \ngoes on the doStuff() \nstack frame.\n5\nb\nx i\ndoStuff() b\ngo()\ndoStuff() b\nx\nz\n2 doStuff() calls go(), \ngo() is pushed on \ntop of the stack. \nVariables ‘x’ and ‘z’ \nare in the go() stack \nframe. \ncrazy() c\ndoStuff() b\ngo()\nx\nz\ngo()\ndoStuff() b\nx\nz\n3 go() calls crazy(), \ncrazy() is now on the \ntop of the stack, \nwith variable ‘c’ in \nthe frame.\n4 crazy() completes, \nand its stack frame is \npopped off the stack. \nExecution goes back \nto the go() method, \nand picks up at the \nline following the call \nto crazy().\nThe code on the left is a snippet (we don’t care what the rest of the \nclass looks like) with three methods. The first method (doStuff()) calls \nthe second method (go()), and the second method calls the third \n(crazy()). Each method declares one local variable within the body \nof the method, and method go() also declares a parameter variable \n(which means go() has two local variables).\nA stack scenario\nThe method on the top of the \nstack is always the currently-\nexecuting method.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (388x193)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (35x49)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (240x108)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x174)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x239)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n237\n public void doStuff() {\n boolean b = true;\n go(4);\n }\n public void go(int x) {\n int z = x + 24;\n crazy();\n // imagine more code here\n }\n public void crazy() {\n char c = ‘a’;\n }\nMethods are stacked\nWhen you call a method, the method lands on \nthe top of a call stack. That new thing that’5 \nactually pushed onto the stack is the stack \nframe, and it holds the state of the method \nincluding which line of code is executing, and \nthe values of all local variables. \nThe method at the top of the stack is always \nthe currently-running method for that stack \n(for now, assume there’5 only one stack,but in \nchapter 14 we’11 add more.) A method stays on \nthe stack until the method hits its closing curly \nbrace (which means the method’5 done). If \nmethod foo() calls method bar(), method bar() is \nstacked on top of method foo().\nbar()\nfoo()\nstack frames\nbottom of the stack\ntop of the stack\nlocal variables \n(including \nparameter x)\nA call stack with two methods\n1\nCode from another \nclass calls doStuff(), \nand doStuff() goes \ninto a stack frame \nat the top of the \nstack.The boolean \nvariable named ‘b’ \ngoes on the doStuff() \nstack frame.\n5\nb\nx i\ndoStuff() b\ngo()\ndoStuff() b\nx\nz\n2 doStuff() calls go(), \ngo() is pushed on \ntop of the stack. \nVariables ‘x’ and ‘z’ \nare in the go() stack \nframe. \ncrazy() c\ndoStuff() b\ngo()\nx\nz\ngo()\ndoStuff() b\nx\nz\n3 go() calls crazy(), \ncrazy() is now on the \ntop of the stack, \nwith variable ‘c’ in \nthe frame.\n4 crazy() completes, \nand its stack frame is \npopped off the stack. \nExecution goes back \nto the go() method, \nand picks up at the \nline following the call \nto crazy().\nThe code on the left is a snippet (we don’t care what the rest of the \nclass looks like) with three methods. The first method (doStuff()) calls \nthe second method (go()), and the second method calls the third \n(crazy()). Each method declares one local variable within the body \nof the method, and method go() also declares a parameter variable \n(which means go() has two local variables).\nA stack scenario\nThe method on the top of the \nstack is always the currently-\nexecuting method.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 271,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 271,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2170 chars",
+      "severity": "info"
+    },
+    {
+      "page": 271,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 271,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

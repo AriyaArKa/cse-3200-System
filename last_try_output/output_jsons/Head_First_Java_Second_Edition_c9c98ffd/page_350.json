@@ -1,0 +1,82 @@
+{
+  "page_number": 350,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "316 chapter 11\nbuilding the MIDI Music Player\nLet’5 make a Music Machine\nOver the next three chapters, we’11 build a few different sound \napplications, including a BeatBox Drum Machine. In fact, \nbefore the book is done, we’11 have a multi-player version 50 \nyou can send your drum loops to another player, kind of like \na chat room. You’re going to write the whole thing, although \nyou can choose to use Ready-bake code for the GUI parts. \nOK, 50 not every IT department is looking for a new BeatBox \nserver, but we’re doing this to learn more about Java. Building \na BeatBox is just a way to have fun while we’re learning Java.\nThe finished BeatBox looks something like this:\nyour message, that gets \nsent to the other players, \nalong with your current \nbeat pattern, when you \nhit “SendIt”\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat\ndance beat\nincoming messages from \nother players. Click one \nto load the pattern that \ngoes with it, and then click \n‘Start’ to play it.\nPut checkmarks in the boxes for each of the 16 ‘beats’. For example, on beat \n1 (of 16) the Bass drum and the Maracas will play, on beat 2 nothing, and \non beat 3 the Maracas and Closed Hi-Hat... you get the idea. When you hit \n‘Start’, it plays your pattern in a loop until you hit ‘Stop’. At any time, you \ncan “capture” one of your own patterns by sending it to the BeatBox server \n(which means any other players can listen to it). You can also load any of the \nincoming patterns by clicking on the message that goes with it.\nYou make a beatbox loop (a 16-beat drum pattern) \nby putting checkmarks in the boxes.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "dance beat\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (599x404)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (374x486)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "316 chapter 11\nbuilding the MIDI Music Player\nLet’5 make a Music Machine\nOver the next three chapters, we’11 build a few different sound \napplications, including a BeatBox Drum Machine. In fact, \nbefore the book is done, we’11 have a multi-player version 50 \nyou can send your drum loops to another player, kind of like \na chat room. You’re going to write the whole thing, although \nyou can choose to use Ready-bake code for the GUI parts. \nOK, 50 not every IT department is looking for a new BeatBox \nserver, but we’re doing this to learn more about Java. Building \na BeatBox is just a way to have fun while we’re learning Java.\nThe finished BeatBox looks something like this:\nyour message, that gets \nsent to the other players, \nalong with your current \nbeat pattern, when you \nhit “SendIt”\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat\ndance beat\nincoming messages from \nother players. Click one \nto load the pattern that \ngoes with it, and then click \n‘Start’ to play it.\nPut checkmarks in the boxes for each of the 16 ‘beats’. For example, on beat \n1 (of 16) the Bass drum and the Maracas will play, on beat 2 nothing, and \non beat 3 the Maracas and Closed Hi-Hat... you get the idea. When you hit \n‘Start’, it plays your pattern in a loop until you hit ‘Stop’. At any time, you \ncan “capture” one of your own patterns by sending it to the BeatBox server \n(which means any other players can listen to it). You can also load any of the \nincoming patterns by clicking on the message that goes with it.\nYou make a beatbox loop (a 16-beat drum pattern) \nby putting checkmarks in the boxes.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 350,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 350,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1603 chars",
+      "severity": "info"
+    },
+    {
+      "page": 350,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 350,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

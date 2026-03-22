@@ -1,0 +1,46 @@
+{
+  "page_number": 334,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "300 \nchapter 10\nWhat happens if 1 have more than one argument?\nImagine you want a String that looks like this:\n“The rank is 20,456,654 out of 100,567,890.24.”\nBut the numbers are coming from variables. What do you do? You simply add two \narguments after the format String (first argument), 50 that means your call to format() \nwill have three arguments instead of two. And inside that first argument (the format \nString), you’11 have two different format specifiers (two things that start with “%”). The \nfirst format specifier will insert the second argument to the method, and the second \nformat specifier will insert the third argument to the method. In other words, the \nvariable insertions in the format String use the order in which the other arguments are \npassed into the format() method.\nint one = 20456654;\ndouble two = 100567890.248907;\nString 5 = String.format(“The rank is %,d out of %,.2f”, one, two);\nWhen you have more than one \nargument, they’re inserted \nusing the order in which you \npass them to the format() \nmethod.\nAs you’11 see when we get to date formatting, you might actually want to apply different \nformatting specifiers to the same argument. That’5 probably hard to imagine until you \nsee how date formatting (as opposed to the number formating we’ve been doing) works. \nJust know that in a minute, you’11 see how to be more specific about which format \nspecifiers are applied to which arguments.\nThe rank is 20,456,654 out of 100,567,890.25\nWe added commas to both variables, \nand restricted the floating point \nnumber (the second variable) to two \ndecimal places.\nQ: Um, there’5 something REALLY strange going on here. Just how many arguments can 1 \npass? 1 mean, how many overloaded format() methods are IN the String class? 50, what happens \nif 1 want to pass, say, ten different arguments to be formatted for a single output String?\nA: Good catch. Yes, there is something strange (or at least new and different) going on, and \nno there are not a bunch of overloaded format() methods to take a different number of possible \narguments. In order to support this new formatting (printf-like) API in Java, the language needed \nanother new feature—variable argument lists (called varargs for short). We’11 talk about varargs \nonly in the appendix because outside of formatting, you probably won’t use them much in a well-\ndesigned system.\nformat arguments",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "300 \nchapter 10\nWhat happens if 1 have more than one argument?\nImagine you want a String that looks like this:\n“The rank is 20,456,654 out of 100,567,890.24.”\nBut the numbers are coming from variables. What do you do? You simply add two \narguments after the format String (first argument), 50 that means your call to format() \nwill have three arguments instead of two. And inside that first argument (the format \nString), you’11 have two different format specifiers (two things that start with “%”). The \nfirst format specifier will insert the second argument to the method, and the second \nformat specifier will insert the third argument to the method. In other words, the \nvariable insertions in the format String use the order in which the other arguments are \npassed into the format() method.\nint one = 20456654;\ndouble two = 100567890.248907;\nString 5 = String.format(“The rank is %,d out of %,.2f”, one, two);\nWhen you have more than one \nargument, they’re inserted \nusing the order in which you \npass them to the format() \nmethod.\nAs you’11 see when we get to date formatting, you might actually want to apply different \nformatting specifiers to the same argument. That’5 probably hard to imagine until you \nsee how date formatting (as opposed to the number formating we’ve been doing) works. \nJust know that in a minute, you’11 see how to be more specific about which format \nspecifiers are applied to which arguments.\nThe rank is 20,456,654 out of 100,567,890.25\nWe added commas to both variables, \nand restricted the floating point \nnumber (the second variable) to two \ndecimal places.\nQ: Um, there’5 something REALLY strange going on here. Just how many arguments can 1 \npass? 1 mean, how many overloaded format() methods are IN the String class? 50, what happens \nif 1 want to pass, say, ten different arguments to be formatted for a single output String?\nA: Good catch. Yes, there is something strange (or at least new and different) going on, and \nno there are not a bunch of overloaded format() methods to take a different number of possible \narguments. In order to support this new formatting (printf-like) API in Java, the language needed \nanother new feature—variable argument lists (called varargs for short). We’11 talk about varargs \nonly in the appendix because outside of formatting, you probably won’t use them much in a well-\ndesigned system.\nformat arguments",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 334,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 334,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2388 chars",
+      "severity": "info"
+    },
+    {
+      "page": 334,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

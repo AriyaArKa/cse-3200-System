@@ -1,0 +1,74 @@
+{
+  "page_number": 641,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "this is a new chapter\n607\nBeing remote doesn’t have to be a bad thing. Sure, things are easier when \nall the parts of your application are in one place, in one heap, with one JVM to rule them all. But \nthat’5 not always possible. Or desirable. What if your application handles powerful computations, \nbut the end-users are on a wimpy little Java-enabled device? What if your app needs data \nfrom a database, but for security reasons, only code on your server can access the database? \nImagine a big e-commerce back-end, that has to run within a transaction-management system? \nSometimes, part of your app must run on a server, while another part (usually a client) must \nrun on a different machine. In this chapter, we’11 learn to use Java’5 amazingly simple Remote \nMethod Invocation (RMI) technology. We’11 also take a quick peek at Servlets, Enterprise Java \nBeans (EJB) , and Jini, and look at the ways in which EJB and Jini depend on RMI. We’11 end the \nbook by writing one of the coolest things you can make in Java, a universal service browser.\n Distributed \nComputing\n18 remote deployment with RMI\nEveryone says long-\ndistance relationships are hard, \nbut with RMI, it’5 easy. No \nmatter how far apart we really \nare, RMI makes it seem like \nwe’re together.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (583x767)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "this is a new chapter\n607\nBeing remote doesn’t have to be a bad thing. Sure, things are easier when \nall the parts of your application are in one place, in one heap, with one JVM to rule them all. But \nthat’5 not always possible. Or desirable. What if your application handles powerful computations, \nbut the end-users are on a wimpy little Java-enabled device? What if your app needs data \nfrom a database, but for security reasons, only code on your server can access the database? \nImagine a big e-commerce back-end, that has to run within a transaction-management system? \nSometimes, part of your app must run on a server, while another part (usually a client) must \nrun on a different machine. In this chapter, we’11 learn to use Java’5 amazingly simple Remote \nMethod Invocation (RMI) technology. We’11 also take a quick peek at Servlets, Enterprise Java \nBeans (EJB) , and Jini, and look at the ways in which EJB and Jini depend on RMI. We’11 end the \nbook by writing one of the coolest things you can make in Java, a universal service browser.\n Distributed \nComputing\n18 remote deployment with RMI\nEveryone says long-\ndistance relationships are hard, \nbut with RMI, it’5 easy. No \nmatter how far apart we really \nare, RMI makes it seem like \nwe’re together.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 641,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 641,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1269 chars",
+      "severity": "info"
+    },
+    {
+      "page": 641,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 641,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

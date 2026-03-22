@@ -1,0 +1,423 @@
+{
+  "page_number": 207,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "inheritance and polymorphism\nyou are here\n173\nWe look at our classes and see \nthat Wolf and Dog might have some \nbehavior in common, and the same goes \nfor Lion, Tiger, and Cat. \n4\nLook for more opportunities to use \nabstraction, by finding two or more \nsubclasses that might need common \nbehavior.\nThe class hierarchy is starting to shape up. We \nhave each subclass override the makeNoise() and \neat() methods, 50 that there’5 no mistaking a Dog \nbark from a Cat meow (quite insulting to both \nparties). And a Hippo won’t eat like a Lion. \nBut perhaps there’5 more we can do. We have to \nlook at the subclasses of Animal, and see if two \nor more can be grouped together in some way, \nand given code that’5 common to only that new \ngroup. Wolf and Dog have similarities. 50 do \nLion, Tiger, and Cat.\nLooking for more inheritance \nopportunities\nAnimal\nsize\npicture\nfood\nprey\nDog\nsize\npicture\nfood\nprey\nWolf\nsize\npicture\nfood\nprey\nCat\nsize\npicture\nfood\nprey\nTiger\nsize\npicture\nfood\nprey\nHippo\nsize\npicture\nfood\nprey\nLion\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nHmmm... 1 wonder if Lion, \nTiger, and Cat would have \nsomething in common.\nWolf and Dog are both canines... \nmaybe there’5 something that \nBOTH classes could use...\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "picture\nfood\nhunger\nboundaries\nlocation"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6632,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Lion",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Lion",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "siz",
+          "e",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Wolf",
+          "",
+          ""
+        ],
+        [
+          "",
+          "pic",
+          "ture",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Wolf",
+          ""
+        ],
+        [
+          "",
+          "mfoaokdeNoise()",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "size",
+          ""
+        ],
+        [
+          "",
+          "eparet(y)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "picture",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "fmooadkeNoise()\nprey",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Cat",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Hippo",
+          "",
+          "",
+          "",
+          "Tiger",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "size",
+          "",
+          "eat()",
+          ""
+        ],
+        [
+          "",
+          "size",
+          "",
+          "",
+          "size\npict",
+          "ure",
+          "",
+          "",
+          "D",
+          "og",
+          "",
+          "",
+          "picture\nfood",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "picture",
+          "",
+          "",
+          "fmooa",
+          "dkeNoise(",
+          ")",
+          "5",
+          "ize",
+          "",
+          "",
+          "",
+          "makeNoise()\nprey\neat()",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "food\nmakeNoise()",
+          "",
+          "",
+          "peraety()",
+          "y)",
+          "",
+          "p",
+          "ictur",
+          "e",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "prey\neat()",
+          "prey\neat()",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "fm",
+          "ooadke",
+          "Noise()",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "p",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (71x111)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (103x129)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (188x135)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (229x108)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (191x118)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (127x131)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "inheritance and polymorphism\nyou are here\n173\nWe look at our classes and see \nthat Wolf and Dog might have some \nbehavior in common, and the same goes \nfor Lion, Tiger, and Cat. \n4\nLook for more opportunities to use \nabstraction, by finding two or more \nsubclasses that might need common \nbehavior.\nThe class hierarchy is starting to shape up. We \nhave each subclass override the makeNoise() and \neat() methods, 50 that there’5 no mistaking a Dog \nbark from a Cat meow (quite insulting to both \nparties). And a Hippo won’t eat like a Lion. \nBut perhaps there’5 more we can do. We have to \nlook at the subclasses of Animal, and see if two \nor more can be grouped together in some way, \nand given code that’5 common to only that new \ngroup. Wolf and Dog have similarities. 50 do \nLion, Tiger, and Cat.\nLooking for more inheritance \nopportunities\nAnimal\nsize\npicture\nfood\nprey\nDog\nsize\npicture\nfood\nprey\nWolf\nsize\npicture\nfood\nprey\nCat\nsize\npicture\nfood\nprey\nTiger\nsize\npicture\nfood\nprey\nHippo\nsize\npicture\nfood\nprey\nLion\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nHmmm... 1 wonder if Lion, \nTiger, and Cat would have \nsomething in common.\nWolf and Dog are both canines... \nmaybe there’5 something that \nBOTH classes could use...\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 207,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 207,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1367 chars",
+      "severity": "info"
+    },
+    {
+      "page": 207,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 207,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 509,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n475\nMake a network Socket connection\nTo connect to another machine, we need a Socket connection. \nA Socket ( java.net.Socket class) is an object that represents \na network connection between two machines. What’5 a \nconnection? A relationship between two machines, where two \npieces of software know about each other. Most importantly, \nthose two pieces of software know how to communicate with \neach other. In other words, how to send bits to each other. \nWe don’t care about the low-level details, thankfully, because \nthey’re handled at a much lower place in the ‘networking \nstack’. If you don’t know what the ‘networking stack’ is, don’t \nworry about it. It’5 just a way of looking at the layers that \ninformation (bits) must travel through to get from a Java \nprogram running in a JVM on some 05, to physical hardware \n(ethernet cables, for example), and back again on some other \nmachine. Somebody has to take care of all the dirty details. \nBut not you. That somebody is a combination of 05-specific \nsoftware and the Java networking API. The part that you have \nto worry about is high-level—make that very high-level—and \nshockingly simple. Ready?\nSocket chatSocket = new Socket(“196.164.1.103”, 5000);\nIP address for the server\nTo make a Socket \nconnection, you need \nto know two things \nabout the server: who \nit is, and which port \nit’5 running on.\nIn other words, \nIP address and TCP \nport number.\nTCP port number\nSocket connection \nto port 5000 \non the server at \n196.164.1.103\nSocket connection \nback to the client at \n196.164.1.100, port \n4242\nA Socket connection means the two machines have \ninformation about each other, including network \nlocation (IP address) and TCP port.\nServer\nClient\nThis client is at \n196.164.1.100, port 4242. \nWhen 1 need to talk to \nhim, that’5 where 1’11 send \nthe message.\nThe chat server is at \n196.164.1.103, port 5000. \nWhen 1 need to talk to him, \nthat’5 where 1’11 send \nthe message.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (798x364)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n475\nMake a network Socket connection\nTo connect to another machine, we need a Socket connection. \nA Socket ( java.net.Socket class) is an object that represents \na network connection between two machines. What’5 a \nconnection? A relationship between two machines, where two \npieces of software know about each other. Most importantly, \nthose two pieces of software know how to communicate with \neach other. In other words, how to send bits to each other. \nWe don’t care about the low-level details, thankfully, because \nthey’re handled at a much lower place in the ‘networking \nstack’. If you don’t know what the ‘networking stack’ is, don’t \nworry about it. It’5 just a way of looking at the layers that \ninformation (bits) must travel through to get from a Java \nprogram running in a JVM on some 05, to physical hardware \n(ethernet cables, for example), and back again on some other \nmachine. Somebody has to take care of all the dirty details. \nBut not you. That somebody is a combination of 05-specific \nsoftware and the Java networking API. The part that you have \nto worry about is high-level—make that very high-level—and \nshockingly simple. Ready?\nSocket chatSocket = new Socket(“196.164.1.103”, 5000);\nIP address for the server\nTo make a Socket \nconnection, you need \nto know two things \nabout the server: who \nit is, and which port \nit’5 running on.\nIn other words, \nIP address and TCP \nport number.\nTCP port number\nSocket connection \nto port 5000 \non the server at \n196.164.1.103\nSocket connection \nback to the client at \n196.164.1.100, port \n4242\nA Socket connection means the two machines have \ninformation about each other, including network \nlocation (IP address) and TCP port.\nServer\nClient\nThis client is at \n196.164.1.100, port 4242. \nWhen 1 need to talk to \nhim, that’5 where 1’11 send \nthe message.\nThe chat server is at \n196.164.1.103, port 5000. \nWhen 1 need to talk to him, \nthat’5 where 1’11 send \nthe message.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 509,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 509,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1973 chars",
+      "severity": "info"
+    },
+    {
+      "page": 509,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 509,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

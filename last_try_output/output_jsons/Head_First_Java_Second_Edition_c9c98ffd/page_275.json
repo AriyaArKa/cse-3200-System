@@ -1,0 +1,46 @@
+{
+  "page_number": 275,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n241\nAre we calling a method named Duck()? \nBecause it sure looks like it.\nA constructor does look and feel a lot like a method, but it’5 not \na method. It’5 got the code that runs when you say new. In other \nwords, the code that runs when you instantiate an object.\nThe only way to invoke a constructor is with the keyword new \nfollowed by the class name. The JVM finds that class and invokes \nthe constructor in that class. (OK, technically this isn’t the only \nway to invoke a constructor. But it’5 the only way to do it from \noutside a constructor. You can call a constructor from within \nanother constructor, with restrictions, but we’11 get into all that \nlater in the chapter.)\nDuck myDuck = new Duck();\nIt looks like we’re calling \na method named Duck(), \nbecause of the parentheses.\nNo. \nWe’re calling the Duck constructor.\nBut where is the constructor? \nIf we didn’t write it, who did?\nYou can write a constructor for your class (we’re about to do \nthat), but if you don’t, the compiler writes one for you! \nHere’5 what the compiler’5 default constructor looks like:\npublic Duck() {\n \n}\nWhere’5 the return type? \nIf this were a method, \nyou’d need a return type \nbetween “public” and \n“Duck()”.\nNotice something missing? How is this \ndifferent from a method?\npublic Duck() {\n // constructor code goes here\n}\nIts name is the same as the \nclass name. That’5 mandatory.\nA constructor has the \ncode that runs when you \ninstantiate an object. In \nother words, the code that \nruns when you say new on \na class type. \nEvery class you create has \na constructor, even if you \ndon’t write it yourself.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "constructors and gc\nyou are here\n241\nAre we calling a method named Duck()? \nBecause it sure looks like it.\nA constructor does look and feel a lot like a method, but it’5 not \na method. It’5 got the code that runs when you say new. In other \nwords, the code that runs when you instantiate an object.\nThe only way to invoke a constructor is with the keyword new \nfollowed by the class name. The JVM finds that class and invokes \nthe constructor in that class. (OK, technically this isn’t the only \nway to invoke a constructor. But it’5 the only way to do it from \noutside a constructor. You can call a constructor from within \nanother constructor, with restrictions, but we’11 get into all that \nlater in the chapter.)\nDuck myDuck = new Duck();\nIt looks like we’re calling \na method named Duck(), \nbecause of the parentheses.\nNo. \nWe’re calling the Duck constructor.\nBut where is the constructor? \nIf we didn’t write it, who did?\nYou can write a constructor for your class (we’re about to do \nthat), but if you don’t, the compiler writes one for you! \nHere’5 what the compiler’5 default constructor looks like:\npublic Duck() {\n \n}\nWhere’5 the return type? \nIf this were a method, \nyou’d need a return type \nbetween “public” and \n“Duck()”.\nNotice something missing? How is this \ndifferent from a method?\npublic Duck() {\n // constructor code goes here\n}\nIts name is the same as the \nclass name. That’5 mandatory.\nA constructor has the \ncode that runs when you \ninstantiate an object. In \nother words, the code that \nruns when you say new on \na class type. \nEvery class you create has \na constructor, even if you \ndon’t write it yourself.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 275,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 275,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1641 chars",
+      "severity": "info"
+    },
+    {
+      "page": 275,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

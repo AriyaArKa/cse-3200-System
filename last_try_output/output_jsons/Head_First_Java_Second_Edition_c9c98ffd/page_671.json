@@ -1,0 +1,109 @@
+{
+  "page_number": 671,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n637\nHow it works:\n1\nClient starts up and \ndoes a lookup on the \nRMI registry for \nthe service called \n“ServiceServer”, and \ngets back the stub.\nServer \nService Browser\n(client)\n“Please give me the thing named \n“ServiceServer”\nServer \nService Browser\n(client)\n“getServiceList()”\n“OK, here’5 an array of services”\n5\ne\nr\nv\ni\nc\ne\n5\ne\nr\nv\ne\nr\n \nService\nServer\nStub\nRMI registry (on server)\n“OK, here’5 the stub”\n2\nClient calls getServiceList() on the stub. The ServiceServer \nreturns an array of services\nServer \nService Browser\n(client)\n5\ne\nr\nv\ni\nc\ne\n5\ne\nr\nv\ne\nr\n \n3\nClient displays the list of services in a GUI\n5\ne\nr\nv\ni\nc\ne\n5\ne\nr\nv\ne\nr",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x229)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (380x280)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (103x103)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (317x184)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (67x68)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (40x41)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (88x67)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (46x47)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "remote deployment with RMI\nyou are here\n637\nHow it works:\n1\nClient starts up and \ndoes a lookup on the \nRMI registry for \nthe service called \n“ServiceServer”, and \ngets back the stub.\nServer \nService Browser\n(client)\n“Please give me the thing named \n“ServiceServer”\nServer \nService Browser\n(client)\n“getServiceList()”\n“OK, here’5 an array of services”\n5\ne\nr\nv\ni\nc\ne\n5\ne\nr\nv\ne\nr\n \nService\nServer\nStub\nRMI registry (on server)\n“OK, here’5 the stub”\n2\nClient calls getServiceList() on the stub. The ServiceServer \nreturns an array of services\nServer \nService Browser\n(client)\n5\ne\nr\nv\ni\nc\ne\n5\ne\nr\nv\ne\nr\n \n3\nClient displays the list of services in a GUI\n5\ne\nr\nv\ni\nc\ne\n5\ne\nr\nv\ne\nr",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 671,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 671,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 678 chars",
+      "severity": "info"
+    },
+    {
+      "page": 671,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 8",
+      "severity": "info"
+    },
+    {
+      "page": 671,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

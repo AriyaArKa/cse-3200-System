@@ -1,0 +1,60 @@
+{
+  "page_number": 549,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n515\nA\n1\nThread A runs for awhile\nAttempt to enter the increment() method.\nThe method is synchronized, 50 get the key for this object\nPut the value of balance into variable i.\nBalance is 0, 50 i is now 0.\nSet the value of balance to the result of i + 1.\nNow balance is 1.\nReturn the key (it completed the increment() method).\nRe-enter the increment() method and get the key.\nPut the value of balance into variable i.\nBalance is 1, 50 i is now 1.\n[now thread A is sent back to runnable, but since it has not \ncompleted the synchronized method, Thread A keeps the key] \n8\n2\nThread 8 is selected to run\nAttempt to enter the increment() method. The method is \nsynchronized, 50 we need to get the key.\nThe key is not available.\n[now thread 8 is sent into a ‘object lock not available’ lounge]\nA\n3\nThread A runs again, picking up where it left off \n (remember, it still has the key)\nSet the value of balance to the result of i + 1.\nNow balance is 2.\nReturn the key.\n[now thread A is sent back to runnable, but since it \nhas completed the increment() method, the thread \ndoes NOT hold on to the key]\n8\n4\nThread 8 is selected to run\nAttempt to enter the increment() method. The method is \nsynchronized, 50 we need to get the key.\nThis time, the key 15 available, get the key.\nPut the value of balance into variable i.\n[continues to run...]",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (99x234)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n515\nA\n1\nThread A runs for awhile\nAttempt to enter the increment() method.\nThe method is synchronized, 50 get the key for this object\nPut the value of balance into variable i.\nBalance is 0, 50 i is now 0.\nSet the value of balance to the result of i + 1.\nNow balance is 1.\nReturn the key (it completed the increment() method).\nRe-enter the increment() method and get the key.\nPut the value of balance into variable i.\nBalance is 1, 50 i is now 1.\n[now thread A is sent back to runnable, but since it has not \ncompleted the synchronized method, Thread A keeps the key] \n8\n2\nThread 8 is selected to run\nAttempt to enter the increment() method. The method is \nsynchronized, 50 we need to get the key.\nThe key is not available.\n[now thread 8 is sent into a ‘object lock not available’ lounge]\nA\n3\nThread A runs again, picking up where it left off \n (remember, it still has the key)\nSet the value of balance to the result of i + 1.\nNow balance is 2.\nReturn the key.\n[now thread A is sent back to runnable, but since it \nhas completed the increment() method, the thread \ndoes NOT hold on to the key]\n8\n4\nThread 8 is selected to run\nAttempt to enter the increment() method. The method is \nsynchronized, 50 we need to get the key.\nThis time, the key 15 available, get the key.\nPut the value of balance into variable i.\n[continues to run...]",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 549,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 549,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1374 chars",
+      "severity": "info"
+    },
+    {
+      "page": 549,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 549,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

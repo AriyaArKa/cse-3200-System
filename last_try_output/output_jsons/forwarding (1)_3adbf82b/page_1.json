@@ -1,0 +1,1143 @@
+{
+  "page_number": 1,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.7787,
+    "correction_applied": true,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার",
+      "confidence": 0.6583,
+      "bbox": [
+        643,
+        205,
+        929,
+        243
+      ]
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পরিচালকের কার্যালয়",
+      "confidence": 0.9057,
+      "bbox": [
+        685,
+        243,
+        888,
+        276
+      ]
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মাধ্যমিক",
+      "confidence": 0.9523,
+      "bbox": [
+        582,
+        276,
+        674,
+        308
+      ]
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "উচ্চ",
+      "confidence": 0.9974,
+      "bbox": [
+        696,
+        280,
+        734,
+        306
+      ]
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "শিক্ষা; খুলনা অঞ্চল, খুলনা |",
+      "confidence": 0.3793,
+      "bbox": [
+        729,
+        272,
+        992,
+        320
+      ]
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "en",
+      "text": "www.dshedir khulnadiv gov bd",
+      "confidence": 0.4914,
+      "bbox": [
+        551,
+        311,
+        1021,
+        353
+      ]
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "০৫ ফাল্গুন ১৪৩২",
+      "confidence": 0.7145,
+      "bbox": [
+        1290,
+        416,
+        1450,
+        448
+      ]
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "স্মারক নং: ৩৭.৭২.৪৭০০ ০০০ ০০১ ৯৯০০৫৩ ২৬ ৫৩",
+      "confidence": 0.3821,
+      "bbox": [
+        216,
+        436,
+        726,
+        466
+      ]
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তারিখ:",
+      "confidence": 0.9157,
+      "bbox": [
+        1192,
+        442,
+        1266,
+        472
+      ]
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১৮",
+      "confidence": 0.7505,
+      "bbox": [
+        1290,
+        478,
+        1324,
+        504
+      ]
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২০২৬",
+      "confidence": 0.9996,
+      "bbox": [
+        1412,
+        480,
+        1478,
+        506
+      ]
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিষয়",
+      "confidence": 0.8808,
+      "bbox": [
+        214,
+        528,
+        274,
+        560
+      ]
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "২০২৫-২৬ অর্থবছরে সংখ্যালঘু সম্প্রদায়",
+      "confidence": 0.6033,
+      "bbox": [
+        285,
+        529,
+        655,
+        569
+      ]
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তফসিলী (হিন্দু)/বৌদ্ধ খ্রীস্টান সশস্ত্র বাহিনী/দৃষ্টি প্রতিবন্ধী/প্রতিবন্ধী (দৃষ্টি ও",
+      "confidence": 0.4313,
+      "bbox": [
+        665,
+        531,
+        1329,
+        573
+      ]
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অটিস্টিক ব্যতীত) অটিস্টিক উপজাতীয় (ক্ষুদ্র ণৃ-গোষ্ঠী) উপবৃত্তির জন্য শিক্ষার্থীদের আবেদনপত্র দাখিল ও অগ্রায়ণ প্রসঙ্গে|",
+      "confidence": 0.3679,
+      "bbox": [
+        213,
+        562,
+        1297,
+        605
+      ]
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সূত্র: মাউশি স্মারক নং: ৩৭,০২ ০০০০ ১১৭ ৩৭ ০২৯ ১২-১৮;",
+      "confidence": 0.2603,
+      "bbox": [
+        213,
+        631,
+        751,
+        667
+      ]
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তারিখ: ০৯1০২ ২০২৬খ্রি",
+      "confidence": 0.479,
+      "bbox": [
+        759,
+        636,
+        975,
+        673
+      ]
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "উপর্যুক্ত",
+      "confidence": 0.796,
+      "bbox": [
+        211,
+        699,
+        289,
+        737
+      ]
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিষয়",
+      "confidence": 0.6966,
+      "bbox": [
+        300,
+        700,
+        360,
+        732
+      ]
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সূত্রের",
+      "confidence": 0.8863,
+      "bbox": [
+        412,
+        706,
+        474,
+        738
+      ]
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "প্রেক্ষিতে",
+      "confidence": 0.635,
+      "bbox": [
+        486,
+        702,
+        572,
+        734
+      ]
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "জানানো",
+      "confidence": 0.7317,
+      "bbox": [
+        586,
+        708,
+        668,
+        734
+      ]
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "যাচ্ছে",
+      "confidence": 0.6894,
+      "bbox": [
+        680,
+        706,
+        741,
+        736
+      ]
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "যে",
+      "confidence": 0.9999,
+      "bbox": [
+        754,
+        710,
+        788,
+        734
+      ]
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২০২৫-২৬",
+      "confidence": 0.9999,
+      "bbox": [
+        806,
+        710,
+        904,
+        736
+      ]
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অর্থবছরে",
+      "confidence": 0.9135,
+      "bbox": [
+        922,
+        708,
+        1014,
+        738
+      ]
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সম্প্রদায়",
+      "confidence": 0.3127,
+      "bbox": [
+        1134,
+        712,
+        1218,
+        738
+      ]
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তফসিলী",
+      "confidence": 0.7022,
+      "bbox": [
+        1260,
+        705,
+        1351,
+        744
+      ]
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(হিন্দু)/বৌদ্ধ/খ্রীস্টান সশস্ত্র বাহিনী/দৃষ্টি প্রতিবন্ধীপ্রতিবন্ধী (দৃষ্টি",
+      "confidence": 0.2829,
+      "bbox": [
+        211,
+        739,
+        797,
+        781
+      ]
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অটিস্টিক ব্যতীত) অটিস্টিক উপজাতীয় (ক্ষুদ্র ণৃ-গোষ্ঠী)",
+      "confidence": 0.438,
+      "bbox": [
+        833,
+        745,
+        1349,
+        787
+      ]
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "উপবৃত্তি প্রদান করা হবে]",
+      "confidence": 0.5027,
+      "bbox": [
+        211,
+        781,
+        459,
+        817
+      ]
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "লক্ষ্যে",
+      "confidence": 0.441,
+      "bbox": [
+        494,
+        788,
+        554,
+        814
+      ]
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "কলেজ",
+      "confidence": 0.9351,
+      "bbox": [
+        560,
+        790,
+        628,
+        814
+      ]
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিশ্ববিদ্যালয়়সমূহে একাদশ",
+      "confidence": 0.4614,
+      "bbox": [
+        661,
+        782,
+        919,
+        826
+      ]
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "হতে স্নাতকোত্তর শ্রেণিতে অধ্যয়নরত আগ্রহী",
+      "confidence": 0.6666,
+      "bbox": [
+        925,
+        789,
+        1351,
+        825
+      ]
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "শিক্ষার্থীদের পূরণকৃত ফরম (ফরম নং-০২) ও সংশ্লিষ্ট কাগজপত্রের হার্ডকপি আঞ্চুলিক পরিচালকের কার্যালয়ে এবং সংযুক্ত",
+      "confidence": 0.5587,
+      "bbox": [
+        207,
+        817,
+        1350,
+        871
+      ]
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তথ্য",
+      "confidence": 0.4406,
+      "bbox": [
+        212,
+        864,
+        258,
+        890
+      ]
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মোতাবেক",
+      "confidence": 0.8506,
+      "bbox": [
+        360,
+        864,
+        462,
+        892
+      ]
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সফটকপি",
+      "confidence": 0.5427,
+      "bbox": [
+        492,
+        864,
+        588,
+        896
+      ]
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "en",
+      "text": "NikoshBAN",
+      "confidence": 0.7564,
+      "bbox": [
+        657,
+        866,
+        837,
+        898
+      ]
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "en",
+      "text": "Excel",
+      "confidence": 0.995,
+      "bbox": [
+        954,
+        868,
+        1044,
+        900
+      ]
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "en",
+      "text": "sheet",
+      "confidence": 1.0,
+      "bbox": [
+        1075,
+        867,
+        1165,
+        903
+      ]
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পূরণপূর্বক",
+      "confidence": 0.5999,
+      "bbox": [
+        1249,
+        869,
+        1349,
+        907
+      ]
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "stipend dshekln@gmail com মেইলে আগামী",
+      "confidence": 0.6687,
+      "bbox": [
+        208,
+        903,
+        816,
+        951
+      ]
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "৩১/০৩/২০২৬ খ্রি",
+      "confidence": 0.3139,
+      "bbox": [
+        830,
+        916,
+        1008,
+        946
+      ]
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তারিখের মধ্যে প্রেরণ করার",
+      "confidence": 0.3685,
+      "bbox": [
+        1018,
+        918,
+        1294,
+        949
+      ]
+    },
+    {
+      "block_id": 47,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "জন্য",
+      "confidence": 0.9945,
+      "bbox": [
+        1300,
+        924,
+        1346,
+        948
+      ]
+    },
+    {
+      "block_id": 48,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অনুরোধ করা হলো|",
+      "confidence": 0.4109,
+      "bbox": [
+        208,
+        951,
+        397,
+        990
+      ]
+    },
+    {
+      "block_id": 49,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিদ্র (সফ্টকপি প্রেরণ সংক্রান্ত):",
+      "confidence": 0.5092,
+      "bbox": [
+        205,
+        1027,
+        535,
+        1071
+      ]
+    },
+    {
+      "block_id": 50,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১.",
+      "confidence": 0.6647,
+      "bbox": [
+        254,
+        1078,
+        280,
+        1102
+      ]
+    },
+    {
+      "block_id": 51,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সফটকপি সংযুক্ত তথ্য ছকে পূরণ করতে হবে| সংযুক্ত ছক ব্যতীত অন্য কোন ছকে প্রেরিত তথ্য গ্রহণযোগ্য হবে না |",
+      "confidence": 0.2988,
+      "bbox": [
+        297,
+        1071,
+        1333,
+        1113
+      ]
+    },
+    {
+      "block_id": 52,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১",
+      "confidence": 0.8949,
+      "bbox": [
+        257,
+        1121,
+        281,
+        1141
+      ]
+    },
+    {
+      "block_id": 53,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "সফটকপি NikoshBAN",
+      "confidence": 0.7324,
+      "bbox": [
+        297,
+        1110,
+        579,
+        1146
+      ]
+    },
+    {
+      "block_id": 54,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পূরণ করতে হবেো NikoshBAN ফন্ট ব্যতীত অন্য কোন ফন্টে প্রেরিত",
+      "confidence": 0.5957,
+      "bbox": [
+        635,
+        1114,
+        1347,
+        1152
+      ]
+    },
+    {
+      "block_id": 55,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তথ্য গ্রহণযোগ্য হবে না1",
+      "confidence": 0.7204,
+      "bbox": [
+        298,
+        1156,
+        522,
+        1185
+      ]
+    },
+    {
+      "block_id": 56,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৩",
+      "confidence": 0.9914,
+      "bbox": [
+        255,
+        1201,
+        277,
+        1221
+      ]
+    },
+    {
+      "block_id": 57,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সফটকপি Excel sheet এ পূরণ করতে হবে1 Excel sheet ব্যতীত অন্য কোন ডকুমেন্ট গ্রহণযোগ্য হবে",
+      "confidence": 0.4449,
+      "bbox": [
+        296,
+        1192,
+        1344,
+        1240
+      ]
+    },
+    {
+      "block_id": 58,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "না1 Excel sheet এ পূরণকৃত মূল ফাইলটি প্রেরণ করতে হবে, pdf ফাইল গ্রহণযোগ্য হবে না1",
+      "confidence": 0.3724,
+      "bbox": [
+        295,
+        1233,
+        1199,
+        1277
+      ]
+    },
+    {
+      "block_id": 59,
+      "type": "paragraph",
+      "language": "en",
+      "text": "8",
+      "confidence": 0.99,
+      "bbox": [
+        253,
+        1287,
+        273,
+        1309
+      ]
+    },
+    {
+      "block_id": 60,
+      "type": "paragraph",
+      "language": "mixed",
+      "text": "সফটকপি নির্ধারিত মেইল (stipend dshekln@gmail com)",
+      "confidence": 0.6719,
+      "bbox": [
+        294,
+        1276,
+        1022,
+        1325
+      ]
+    },
+    {
+      "block_id": 61,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "-এ প্রেরণ করতে হবে1 নির্ধারিত",
+      "confidence": 0.4743,
+      "bbox": [
+        1026,
+        1288,
+        1344,
+        1320
+      ]
+    },
+    {
+      "block_id": 62,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মেইল ব্যতীত এই তথ্য অন্য কোন মেইলে প্রেরণ করলে সেটি গ্রহণযোগ্য হবে না1",
+      "confidence": 0.5403,
+      "bbox": [
+        295,
+        1321,
+        1019,
+        1361
+      ]
+    },
+    {
+      "block_id": 63,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৫ .",
+      "confidence": 0.7914,
+      "bbox": [
+        252,
+        1366,
+        280,
+        1392
+      ]
+    },
+    {
+      "block_id": 64,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সংযুক্ত ছকের ২ এবং ৩ নম্বর কলামে জেলা, উপজেলার নামের ক্ষেত্রে, শিক্ষা প্রতিষ্ঠান যে জেলা, উপজেলায় অবস্থিত",
+      "confidence": 0.4362,
+      "bbox": [
+        295,
+        1365,
+        1345,
+        1403
+      ]
+    },
+    {
+      "block_id": 65,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তার নাম উল্লেখ করতে হবে| এক্ষেত্রে আবেদনকারীর নিজ জেলা, উপজেলার নাম গ্রহণযোগ্য নয়1",
+      "confidence": 0.2869,
+      "bbox": [
+        295,
+        1403,
+        1163,
+        1441
+      ]
+    },
+    {
+      "block_id": 66,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সংযুক্তি:",
+      "confidence": 0.8129,
+      "bbox": [
+        205,
+        1483,
+        293,
+        1521
+      ]
+    },
+    {
+      "block_id": 67,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১.",
+      "confidence": 0.9433,
+      "bbox": [
+        250,
+        1546,
+        276,
+        1572
+      ]
+    },
+    {
+      "block_id": 68,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ফরম নং-০২",
+      "confidence": 0.9969,
+      "bbox": [
+        293,
+        1545,
+        418,
+        1573
+      ]
+    },
+    {
+      "block_id": 69,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২",
+      "confidence": 0.9916,
+      "bbox": [
+        251,
+        1585,
+        271,
+        1607
+      ]
+    },
+    {
+      "block_id": 70,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তথ্য ছক",
+      "confidence": 0.928,
+      "bbox": [
+        294,
+        1582,
+        380,
+        1608
+      ]
+    },
+    {
+      "block_id": 71,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(প্রফেসর ড মো আনিস-আর-রেজা)",
+      "confidence": 0.6254,
+      "bbox": [
+        950,
+        1696,
+        1284,
+        1728
+      ]
+    },
+    {
+      "block_id": 72,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পরিচালক",
+      "confidence": 0.6621,
+      "bbox": [
+        1070,
+        1738,
+        1166,
+        1766
+      ]
+    },
+    {
+      "block_id": 73,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ফোন: ০২৪৭৭৭০৩৪৯৯",
+      "confidence": 0.6467,
+      "bbox": [
+        1004,
+        1780,
+        1228,
+        1806
+      ]
+    },
+    {
+      "block_id": 74,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ভাইস চ্যানস্সেলর অধ্যক্ষ,",
+      "confidence": 0.4266,
+      "bbox": [
+        216,
+        1797,
+        436,
+        1828
+      ]
+    },
+    {
+      "block_id": 75,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পাবলিক বিশ্ববিদ্যালয় সরকারি বেসরকারি কলেজ (সকল)",
+      "confidence": 0.4499,
+      "bbox": [
+        215,
+        1826,
+        739,
+        1867
+      ]
+    },
+    {
+      "block_id": 76,
+      "type": "paragraph",
+      "language": "en",
+      "text": "director dshekln@gmail com",
+      "confidence": 0.52,
+      "bbox": [
+        951,
+        1817,
+        1281,
+        1854
+      ]
+    },
+    {
+      "block_id": 77,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "খুলনা অঞ্চল|",
+      "confidence": 0.5205,
+      "bbox": [
+        215,
+        1867,
+        343,
+        1903
+      ]
+    },
+    {
+      "block_id": 78,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ফেব্রুয়ারি",
+      "confidence": 0.5922,
+      "bbox": [
+        1322.28,
+        471.35,
+        1417.72,
+        513.65
+      ]
+    },
+    {
+      "block_id": 79,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সংখ্যালঘু",
+      "confidence": 0.5535,
+      "bbox": [
+        1021.07,
+        703.13,
+        1127.93,
+        748.87
+      ]
+    },
+    {
+      "block_id": 80,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ফন্টে",
+      "confidence": 0.4507,
+      "bbox": [
+        868.48,
+        866.4,
+        923.52,
+        898.6
+      ]
+    },
+    {
+      "block_id": 81,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ফন্টে",
+      "confidence": 0.4127,
+      "bbox": [
+        578.6,
+        1112.37,
+        635.4,
+        1146.63
+      ]
+    },
+    {
+      "block_id": 82,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৮ / ০7[2 '",
+      "confidence": 0.0771,
+      "bbox": [
+        1174.01,
+        1642.27,
+        1343.99,
+        1703.73
+      ]
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1700x2200)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার\nপরিচালকের কার্যালয়\nমাধ্যমিক\nউচ্চ\nশিক্ষা; খুলনা অঞ্চল, খুলনা |\nwww.dshedir khulnadiv gov bd\n০৫ ফাল্গুন ১৪৩২\nস্মারক নং: ৩৭.৭২.৪৭০০ ০০০ ০০১ ৯৯০০৫৩ ২৬ ৫৩\nতারিখ:\n১৮\n২০২৬\nবিষয়\n২০২৫-২৬ অর্থবছরে সংখ্যালঘু সম্প্রদায়\nতফসিলী (হিন্দু)/বৌদ্ধ খ্রীস্টান সশস্ত্র বাহিনী/দৃষ্টি প্রতিবন্ধী/প্রতিবন্ধী (দৃষ্টি ও\nঅটিস্টিক ব্যতীত) অটিস্টিক উপজাতীয় (ক্ষুদ্র ণৃ-গোষ্ঠী) উপবৃত্তির জন্য শিক্ষার্থীদের আবেদনপত্র দাখিল ও অগ্রায়ণ প্রসঙ্গে|\nসূত্র: মাউশি স্মারক নং: ৩৭,০২ ০০০০ ১১৭ ৩৭ ০২৯ ১২-১৮;\nতারিখ: ০৯1০২ ২০২৬খ্রি\nউপর্যুক্ত\nবিষয়\nসূত্রের\nপ্রেক্ষিতে\nজানানো\nযাচ্ছে\nযে\n২০২৫-২৬\nঅর্থবছরে\nসম্প্রদায়\nতফসিলী\n(হিন্দু)/বৌদ্ধ/খ্রীস্টান সশস্ত্র বাহিনী/দৃষ্টি প্রতিবন্ধীপ্রতিবন্ধী (দৃষ্টি\nঅটিস্টিক ব্যতীত) অটিস্টিক উপজাতীয় (ক্ষুদ্র ণৃ-গোষ্ঠী)\nউপবৃত্তি প্রদান করা হবে]\nলক্ষ্যে\nকলেজ\nবিশ্ববিদ্যালয়়সমূহে একাদশ\nহতে স্নাতকোত্তর শ্রেণিতে অধ্যয়নরত আগ্রহী\nশিক্ষার্থীদের পূরণকৃত ফরম (ফরম নং-০২) ও সংশ্লিষ্ট কাগজপত্রের হার্ডকপি আঞ্চুলিক পরিচালকের কার্যালয়ে এবং সংযুক্ত\nতথ্য\nমোতাবেক\nসফটকপি\nNikoshBAN\nExcel\nsheet\nপূরণপূর্বক\nstipend dshekln@gmail com মেইলে আগামী\n৩১/০৩/২০২৬ খ্রি\nতারিখের মধ্যে প্রেরণ করার\nজন্য\nঅনুরোধ করা হলো|\nবিদ্র (সফ্টকপি প্রেরণ সংক্রান্ত):\n১.\nসফটকপি সংযুক্ত তথ্য ছকে পূরণ করতে হবে| সংযুক্ত ছক ব্যতীত অন্য কোন ছকে প্রেরিত তথ্য গ্রহণযোগ্য হবে না |\n১\nসফটকপি NikoshBAN\nপূরণ করতে হবেো NikoshBAN ফন্ট ব্যতীত অন্য কোন ফন্টে প্রেরিত\nতথ্য গ্রহণযোগ্য হবে না1\n৩\nসফটকপি Excel sheet এ পূরণ করতে হবে1 Excel sheet ব্যতীত অন্য কোন ডকুমেন্ট গ্রহণযোগ্য হবে\nনা1 Excel sheet এ পূরণকৃত মূল ফাইলটি প্রেরণ করতে হবে, pdf ফাইল গ্রহণযোগ্য হবে না1\n8\nসফটকপি নির্ধারিত মেইল (stipend dshekln@gmail com)\n-এ প্রেরণ করতে হবে1 নির্ধারিত\nমেইল ব্যতীত এই তথ্য অন্য কোন মেইলে প্রেরণ করলে সেটি গ্রহণযোগ্য হবে না1\n৫ .\nসংযুক্ত ছকের ২ এবং ৩ নম্বর কলামে জেলা, উপজেলার নামের ক্ষেত্রে, শিক্ষা প্রতিষ্ঠান যে জেলা, উপজেলায় অবস্থিত\nতার নাম উল্লেখ করতে হবে| এক্ষেত্রে আবেদনকারীর নিজ জেলা, উপজেলার নাম গ্রহণযোগ্য নয়1\nসংযুক্তি:\n১.\nফরম নং-০২\n২\nতথ্য ছক\n(প্রফেসর ড মো আনিস-আর-রেজা)\nপরিচালক\nফোন: ০২৪৭৭৭০৩৪৯৯\nভাইস চ্যানস্সেলর অধ্যক্ষ,\nপাবলিক বিশ্ববিদ্যালয় সরকারি বেসরকারি কলেজ (সকল)\ndirector dshekln@gmail com\nখুলনা অঞ্চল|\nফেব্রুয়ারি \nসংখ্যালঘু\nফন্টে\nফন্টে\n৮ / ০7[2 '",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/forwarding (1)_3adbf82b/page_1.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: scanned",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "rendered_to_image (DPI=180)",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "quick_bangla_estimate: 0.86",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "bangla_direct_to_ollama",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "bangla_direct_failed_falling_to_easyocr",
+      "severity": "warning"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "easyocr: 82 detections",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 1,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=ocr_local, engine=EasyOCR",
+      "severity": "info"
+    }
+  ]
+}

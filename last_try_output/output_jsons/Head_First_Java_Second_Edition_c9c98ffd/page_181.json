@@ -1,0 +1,58 @@
+{
+  "page_number": 181,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n147\n private void checkUserGuess(String userGuess) {\n \n numOfGuesses++;\n \n String result = “miss”; \n for (DotCom dotComToTest : dotComsList) {\n result = dotComToTest.checkYourself(userGuess); \n if (result.equals(“hit”)) {\n break;\n }\n if (result.equals(“kill”)) { \n dotComsList.remove(dotComToTest); \n break;\n } \n } // close for\n System.out.println(result);\n } // close method\n \n private void finishGame() {\n System.out.println(“All Dot Coms are dead! Your stock is now worthless.”);\n if (numOfGuesses <= 18) {\n System.out.println(“It only took you “ + numOfGuesses + “ guesses.”);\n \n System.out.println(“ You got out before your options sank.”);\n } else { \n System.out.println(“Took you long enough. “+ numOfGuesses + “ guesses.”);\n System.out.println(“Fish are dancing with your options.”);\n }\n } // close method\n \n \n public static void main (String[] args) {\n DotComBust game = new DotComBust();\n game.setUpGame();\n game.startPlaying();\n } // close method\n}\nincrement the number of guesses the user has made\nassume it’5 a ‘miss’, unless told otherwise\nrepeat with all DotComs in the list\nask the DotCom to check the user guess, \nlooking for a hit (or kill)\nget out of the loop \nearly, no point in testing \nthe others\nthis guy’5 dead, 50 take him out of the \nDotComs list then get out of the loop\nprint the \nresult for \nthe user\nprint a message telling the \nuser how he did in the game\ntell the game object to start the main \ngame play loop (keeps asking for user \ninput and checking the guess)\n prep code \ntest code\nreal code\nreal code \n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\ntell the game object \nto set up the game\ncreate the game object\n11\nWhatever you do, \nDON’T turn the \npage!\nNot until you’ve \nfinished this \nexercise. \nOur version is on \nthe next page.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "get to know the Java API \nyou are here\n147\n private void checkUserGuess(String userGuess) {\n \n numOfGuesses++;\n \n String result = “miss”; \n for (DotCom dotComToTest : dotComsList) {\n result = dotComToTest.checkYourself(userGuess); \n if (result.equals(“hit”)) {\n break;\n }\n if (result.equals(“kill”)) { \n dotComsList.remove(dotComToTest); \n break;\n } \n } // close for\n System.out.println(result);\n } // close method\n \n private void finishGame() {\n System.out.println(“All Dot Coms are dead! Your stock is now worthless.”);\n if (numOfGuesses <= 18) {\n System.out.println(“It only took you “ + numOfGuesses + “ guesses.”);\n \n System.out.println(“ You got out before your options sank.”);\n } else { \n System.out.println(“Took you long enough. “+ numOfGuesses + “ guesses.”);\n System.out.println(“Fish are dancing with your options.”);\n }\n } // close method\n \n \n public static void main (String[] args) {\n DotComBust game = new DotComBust();\n game.setUpGame();\n game.startPlaying();\n } // close method\n}\nincrement the number of guesses the user has made\nassume it’5 a ‘miss’, unless told otherwise\nrepeat with all DotComs in the list\nask the DotCom to check the user guess, \nlooking for a hit (or kill)\nget out of the loop \nearly, no point in testing \nthe others\nthis guy’5 dead, 50 take him out of the \nDotComs list then get out of the loop\nprint the \nresult for \nthe user\nprint a message telling the \nuser how he did in the game\ntell the game object to start the main \ngame play loop (keeps asking for user \ninput and checking the guess)\n prep code \ntest code\nreal code\nreal code \n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\ntell the game object \nto set up the game\ncreate the game object\n11\nWhatever you do, \nDON’T turn the \npage!\nNot until you’ve \nfinished this \nexercise. \nOur version is on \nthe next page.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 181,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 181,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2016 chars",
+      "severity": "info"
+    },
+    {
+      "page": 181,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

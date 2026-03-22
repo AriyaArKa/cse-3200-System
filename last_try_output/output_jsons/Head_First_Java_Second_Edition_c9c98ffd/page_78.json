@@ -1,0 +1,87 @@
+{
+  "page_number": 78,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "44 \nchapter 2\nx == 3\nx == 4\nx < 4\nx < 5\nx > 0\nx > 1\nPool Puzzle\nYour job is to take code snippets from \nthe pool and place them into the \nblank lines in the code. You may \nuse the same snippet more than \nonce, and you won’t need to use \nall the snippets. Your goal is to \nmake classes that will compile and \nrun and produce the output listed. \nSome of the exercises and puzzles in \nthis book might have more than one \ncorrect answer. If you find another cor-\nrect answer, give yourself bonus points! \npublic class EchoTestDrive {\n public static void main(String [] args) {\n Echo e1 = new Echo();\n _________________________\n int x = 0;\n while ( ___________ ) {\n e1.hello();\n __________________________\n if ( ____________ ) {\n e2.count = e2.count + 1;\n }\n if ( ____________ ) {\n e2.count = e2.count + e1.count;\n }\n x = x + 1;\n }\n System.out.println(e2.count);\n }\n}\n class ____________ {\n int _________ = 0;\n void ___________ {\n System.out.println(“helloooo... “);\n }\n }\nNote: Each snippet \nfrom the pool can be \nused more than once!\nFile Edit Window Help Implode\n%java EchoTestDrive\nhelloooo...\nhelloooo...\nhelloooo...\nhelloooo...\n10\nOutput\ne1 = e1 + 1;\ne1 = count + 1;\ne1.count = count + 1;\ne1.count = e1.count + 1;\ne2 = e1;\nEcho e2;\nEcho e2 = e1;\nEcho e2 = new Echo( );\nx\ny\ne2\ncount\nEcho\nTester\necho( )\ncount( )\nhello( )\nBonus Question !\nIf the last line of output was \n24 instead of 10 how would \nyou complete the puzzle ?\npuzzle: Pool Puzzle",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Implode"
+        ],
+        [
+          "%java EchoTestDrive\nhelloooo...\nhelloooo...\nhelloooo...\nhelloooo...\n10"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (1278x549)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x208)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (226x226)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "44 \nchapter 2\nx == 3\nx == 4\nx < 4\nx < 5\nx > 0\nx > 1\nPool Puzzle\nYour job is to take code snippets from \nthe pool and place them into the \nblank lines in the code. You may \nuse the same snippet more than \nonce, and you won’t need to use \nall the snippets. Your goal is to \nmake classes that will compile and \nrun and produce the output listed. \nSome of the exercises and puzzles in \nthis book might have more than one \ncorrect answer. If you find another cor-\nrect answer, give yourself bonus points! \npublic class EchoTestDrive {\n public static void main(String [] args) {\n Echo e1 = new Echo();\n _________________________\n int x = 0;\n while ( ___________ ) {\n e1.hello();\n __________________________\n if ( ____________ ) {\n e2.count = e2.count + 1;\n }\n if ( ____________ ) {\n e2.count = e2.count + e1.count;\n }\n x = x + 1;\n }\n System.out.println(e2.count);\n }\n}\n class ____________ {\n int _________ = 0;\n void ___________ {\n System.out.println(“helloooo... “);\n }\n }\nNote: Each snippet \nfrom the pool can be \nused more than once!\nFile Edit Window Help Implode\n%java EchoTestDrive\nhelloooo...\nhelloooo...\nhelloooo...\nhelloooo...\n10\nOutput\ne1 = e1 + 1;\ne1 = count + 1;\ne1.count = count + 1;\ne1.count = e1.count + 1;\ne2 = e1;\nEcho e2;\nEcho e2 = e1;\nEcho e2 = new Echo( );\nx\ny\ne2\ncount\nEcho\nTester\necho( )\ncount( )\nhello( )\nBonus Question !\nIf the last line of output was \n24 instead of 10 how would \nyou complete the puzzle ?\npuzzle: Pool Puzzle",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 78,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 78,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1536 chars",
+      "severity": "info"
+    },
+    {
+      "page": 78,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 78,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "page_number": 255,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "interfaces and polymorphism\nyou are here\n221\nPut the pet methods ONLY in the \nclasses where they belong.\n3\nOption three\nNo more worries about Hippos greeting you at the \ndoor or licking your face. The methods are where \nthey belong, and ONLY where they belong. Dogs can \nimplement the methods and Cats can implement the \nmethods, but nobody else has to know about them.\nPros:\nTwo Big Problems with this approach. First off, you’d \nhave to agree to a protocol, and all programmers of \npet Animal classes now and in the future would have \nto KNOW about the protocol. By protocol, we mean \nthe exact methods that we’ve decided all pets should \nhave. The pet contract without anything to back it up. \nBut what if one of the programmers gets it just a tiny \nbit wrong? Like, a method takes a String when it was \nsupposed to take an int? Or they named it doFriendly() \ninstead of beFriendly()? Since it isn’t in a contract, \nthe compiler has no way to check you to see if you’ve \nimplemented the methods correctly. Someone \ncould easily come along to use the pet Animal \nclasses and find that not all of them work \nquite right.\nAnd second, you don’t get to use \npolymorphism for the pet methods. \nEvery class that needs to use \npet behaviors would have to \nknow about each and every \nclass! In other words, \nyou can’t use Animal \nas the polymorphic \ntype now, because the \ncompiler won’t let you call \na Pet method on an Animal \nreference (even if it’5 really a \nDog object) because class Animal \ndoesn’t have the method.\nCons:\nPut the pet methods ONLY in the \nAnimal classes that can be pets, \ninstead of in Animal.\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.66,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Canine",
+          ""
+        ],
+        [
+          "Hippo",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Hippo",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.65,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cat",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Cat",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x110)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (193x92)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x111)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x100)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x94)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x114)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "interfaces and polymorphism\nyou are here\n221\nPut the pet methods ONLY in the \nclasses where they belong.\n3\nOption three\nNo more worries about Hippos greeting you at the \ndoor or licking your face. The methods are where \nthey belong, and ONLY where they belong. Dogs can \nimplement the methods and Cats can implement the \nmethods, but nobody else has to know about them.\nPros:\nTwo Big Problems with this approach. First off, you’d \nhave to agree to a protocol, and all programmers of \npet Animal classes now and in the future would have \nto KNOW about the protocol. By protocol, we mean \nthe exact methods that we’ve decided all pets should \nhave. The pet contract without anything to back it up. \nBut what if one of the programmers gets it just a tiny \nbit wrong? Like, a method takes a String when it was \nsupposed to take an int? Or they named it doFriendly() \ninstead of beFriendly()? Since it isn’t in a contract, \nthe compiler has no way to check you to see if you’ve \nimplemented the methods correctly. Someone \ncould easily come along to use the pet Animal \nclasses and find that not all of them work \nquite right.\nAnd second, you don’t get to use \npolymorphism for the pet methods. \nEvery class that needs to use \npet behaviors would have to \nknow about each and every \nclass! In other words, \nyou can’t use Animal \nas the polymorphic \ntype now, because the \ncompiler won’t let you call \na Pet method on an Animal \nreference (even if it’5 really a \nDog object) because class Animal \ndoesn’t have the method.\nCons:\nPut the pet methods ONLY in the \nAnimal classes that can be pets, \ninstead of in Animal.\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 255,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 255,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1663 chars",
+      "severity": "info"
+    },
+    {
+      "page": 255,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 255,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

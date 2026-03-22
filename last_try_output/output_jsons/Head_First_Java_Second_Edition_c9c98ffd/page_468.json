@@ -1,0 +1,81 @@
+{
+  "page_number": 468,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "434 \nchapter 14\nObjects on the heap have state—\nthe value of the object’5 instance \nvariables. These values make one \ninstance of a class different from \nanother instance of the same class.\nWhat really happens to an object \nwhen it’5 serialized?\nFoo myFoo = new Foo();\nmyFoo.setWidth(37);\nmyFoo.setHeight(70);\nFileOutputStream fs = new FileOutputStream(“foo.ser”);\nObjectOutputStream 05 = new ObjectOutputStream(fs);\nos.writeObject(myFoo);\n1\nObject on the heap\n2\nObject serialized\nserialized objects\n00100101\nwidth\n01000110\nheight\n00100101\n01000110\nSerialized objects save the values \nof the instance variables, 50 that \nan identical instance (object) can be \nbrought back to life on the heap.\nThe instance variable values \nfor width and height are \nsaved to the file “foo.ser”, \nalong with a little more info \nthe JVM needs to restore \nthe object (like what its \nclass type is).\nfoo.ser\nObject with two primitive \ninstance variables.\nThe values are sucked \nout and pumped into \nthe stream.\nMake a FileOutputStream that connects \nto the file “foo.ser”, then chain an \nObjectOutputStream to it, and tell the \nObjectOutputStream to write the object.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (334x334)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (575x391)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (335x235)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "434 \nchapter 14\nObjects on the heap have state—\nthe value of the object’5 instance \nvariables. These values make one \ninstance of a class different from \nanother instance of the same class.\nWhat really happens to an object \nwhen it’5 serialized?\nFoo myFoo = new Foo();\nmyFoo.setWidth(37);\nmyFoo.setHeight(70);\nFileOutputStream fs = new FileOutputStream(“foo.ser”);\nObjectOutputStream 05 = new ObjectOutputStream(fs);\nos.writeObject(myFoo);\n1\nObject on the heap\n2\nObject serialized\nserialized objects\n00100101\nwidth\n01000110\nheight\n00100101\n01000110\nSerialized objects save the values \nof the instance variables, 50 that \nan identical instance (object) can be \nbrought back to life on the heap.\nThe instance variable values \nfor width and height are \nsaved to the file “foo.ser”, \nalong with a little more info \nthe JVM needs to restore \nthe object (like what its \nclass type is).\nfoo.ser\nObject with two primitive \ninstance variables.\nThe values are sucked \nout and pumped into \nthe stream.\nMake a FileOutputStream that connects \nto the file “foo.ser”, then chain an \nObjectOutputStream to it, and tell the \nObjectOutputStream to write the object.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 468,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 468,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1148 chars",
+      "severity": "info"
+    },
+    {
+      "page": 468,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 468,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

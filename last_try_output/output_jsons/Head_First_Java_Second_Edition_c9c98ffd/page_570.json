@@ -1,0 +1,46 @@
+{
+  "page_number": 570,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "536 \nchapter 16\nBut now you need Song objects, \nnot just simple Strings.\nNow your boss wants actual Song class instances in the list, not just \nStrings, 50 that each Song can have more data. The new jukebox \ndevice outputs more information, 50 this time the file will have four \npieces (tokens) instead of just two.\nThe Song class is really simple, with only one interesting feature—\nthe overridden toString() method. Remember, the toString() \nmethod is defined in class Object, 50 every class in Java inherits the \nmethod. And since the toString() method is called on an object \nwhen it’5 printed (System.out.println(anObject)), you should \noverride it to print something more readable than the default \nunique identifier code. When you print a list, the toString() \nmethod will be called on each object.\nSongListMore.txt\nPink Moon/Nick Drake/5/80\nSomersault/Zero 7/4/84\nShiva Moon/Prem Joshua/6/120\nCircles/BT/5/110\nDeep Channel/Afro Celts/4/120\nPassenger/Headmix/4/100\nListen/Tahiti 80/5/90\nclass Song {\n \nString title;\n \nString artist;\n \nString rating;\n \nString bpm; \n \n \nSong(String t, String a, String r, String b) {\n \n \ntitle = t;\n \n \nartist = a;\n \n \nrating = r;\n \n \nbpm = b;\n \n}\n \n \npublic String getTitle() {\n \n \nreturn title;\n \n}\n \n \npublic String getArtist() { \n \n \nreturn artist;\n \n}\n \n \npublic String getRating() {\n \n \nreturn rating;\n \n}\n \n \npublic String getBpm() {\n \n \nreturn bpm;\n \n}\n \n \n \npublic String toString() {\n \n \nreturn title; \n \n} \n}\nFour instance variables for the \nfour song attributes in the file.\nThe new song file holds four \nattributes instead of just two. \nAnd we want ALL of them in our \nlist, 50 we need to make a Song \nclass with instance variables for all \nfour song attributes.\nThe variables are all set in \nthe constructor when the \nnew Song is created.\nThe getter methods for \nthe four attributes.\nWe override toString(), because when you do a System.\nout.println(aSongObject), we want to see the title. \nWhen you do a System.out.println(aListOfSongs), it calls \nthe toString() method of EACH element in the list.\nsorting your own objects",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "536 \nchapter 16\nBut now you need Song objects, \nnot just simple Strings.\nNow your boss wants actual Song class instances in the list, not just \nStrings, 50 that each Song can have more data. The new jukebox \ndevice outputs more information, 50 this time the file will have four \npieces (tokens) instead of just two.\nThe Song class is really simple, with only one interesting feature—\nthe overridden toString() method. Remember, the toString() \nmethod is defined in class Object, 50 every class in Java inherits the \nmethod. And since the toString() method is called on an object \nwhen it’5 printed (System.out.println(anObject)), you should \noverride it to print something more readable than the default \nunique identifier code. When you print a list, the toString() \nmethod will be called on each object.\nSongListMore.txt\nPink Moon/Nick Drake/5/80\nSomersault/Zero 7/4/84\nShiva Moon/Prem Joshua/6/120\nCircles/BT/5/110\nDeep Channel/Afro Celts/4/120\nPassenger/Headmix/4/100\nListen/Tahiti 80/5/90\nclass Song {\n \nString title;\n \nString artist;\n \nString rating;\n \nString bpm; \n \n \nSong(String t, String a, String r, String b) {\n \n \ntitle = t;\n \n \nartist = a;\n \n \nrating = r;\n \n \nbpm = b;\n \n}\n \n \npublic String getTitle() {\n \n \nreturn title;\n \n}\n \n \npublic String getArtist() { \n \n \nreturn artist;\n \n}\n \n \npublic String getRating() {\n \n \nreturn rating;\n \n}\n \n \npublic String getBpm() {\n \n \nreturn bpm;\n \n}\n \n \n \npublic String toString() {\n \n \nreturn title; \n \n} \n}\nFour instance variables for the \nfour song attributes in the file.\nThe new song file holds four \nattributes instead of just two. \nAnd we want ALL of them in our \nlist, 50 we need to make a Song \nclass with instance variables for all \nfour song attributes.\nThe variables are all set in \nthe constructor when the \nnew Song is created.\nThe getter methods for \nthe four attributes.\nWe override toString(), because when you do a System.\nout.println(aSongObject), we want to see the title. \nWhen you do a System.out.println(aListOfSongs), it calls \nthe toString() method of EACH element in the list.\nsorting your own objects",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 570,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 570,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2079 chars",
+      "severity": "info"
+    },
+    {
+      "page": 570,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

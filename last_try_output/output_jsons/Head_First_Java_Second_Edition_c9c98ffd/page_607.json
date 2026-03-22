@@ -1,0 +1,60 @@
+{
+  "page_number": 607,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n573\nWouldn’t it be dreamy if there were \na way to still use polymorphic collection \ntypes as method arguments, 50 that my \nveterinary program could take Dog lists \nand Cat lists? That way 1 could loop through \nthe lists and call their immunize() method, \nbut it would still have to be safe 50 that you \ncouldn’t add a Cat in to the Dog list. But 1 \nguess that’5 just a fantasy...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (606x747)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "collections with generics\nyou are here\n573\nWouldn’t it be dreamy if there were \na way to still use polymorphic collection \ntypes as method arguments, 50 that my \nveterinary program could take Dog lists \nand Cat lists? That way 1 could loop through \nthe lists and call their immunize() method, \nbut it would still have to be safe 50 that you \ncouldn’t add a Cat in to the Dog list. But 1 \nguess that’5 just a fantasy...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 607,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 607,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 420 chars",
+      "severity": "info"
+    },
+    {
+      "page": 607,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 607,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

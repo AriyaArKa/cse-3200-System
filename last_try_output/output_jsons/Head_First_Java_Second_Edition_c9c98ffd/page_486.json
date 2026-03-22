@@ -1,0 +1,60 @@
+{
+  "page_number": 486,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "452 \nchapter 14\nThe java.io.File class\nThe java.io.File class represents a file on disk, but doesn’t \nactually represent the contents of the file. What? Think of \na File object as something more like a pathname of a file \n(or even a directory) rather than The Actual File Itself. \nThe File class does not, for example, have methods for \nreading and writing. One VERY useful thing about a File \nobject is that it offers a much safer way to represent a \nfile than just using a String file name. For example, most \nclasses that take a String file name in their constructor \n(like FileWriter or FileInputStream) can take a File \nobject instead. You can construct a File object, verify \nthat you’ve got a valid path, etc. and then give that File \nobject to the FileWriter or FileInputStream.\nwriting files\n50,Elf,bow, sword,dust\n200,Troll,bare hands,big ax\n120,Magician,spells,invisibility\n A File object represents the name \nand path of a file or directory on \ndisk, for example:\n/Users/Kathy/Data/GameFile.txt\nBut it does NOT represent, or give \nyou access to, the data in the file!\nSome things you can do with a File object:\nGameFile.txt\nA File object does NOT \nrepresent (or give you \ndirect access to) the \ndata inside the file!\nA File object represents the \nfilename “GameFile.txt”\nFile f = new File(“MyCode.txt”); \nMake a File object representing an \nexisting file\n1\nFile dir = new File(“Chapter7”); \ndir.mkdir();\nMake a new directory\n2\nif (dir.isDirectory()) {\n String[] dirContents = dir.list();\n for (int i = 0; i < dirContents.length; i++) {\n System.out.println(dirContents[i]);\n }\n}\nList the contents of a directory\n3\nSystem.out.println(dir.getAbsolutePath());\nGet the absolute path of a file or directory\n4\nboolean isDeleted = f.delete();\nDelete a file or directory (returns true if \nsuccessful)\n5\nAn address is NOT the \nsame as the actual \nhouse! A File object is \nlike a street address... \nit represents the name \nand location of a par-\nticular file, but it isn’t \nthe file itself.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (317x183)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "452 \nchapter 14\nThe java.io.File class\nThe java.io.File class represents a file on disk, but doesn’t \nactually represent the contents of the file. What? Think of \na File object as something more like a pathname of a file \n(or even a directory) rather than The Actual File Itself. \nThe File class does not, for example, have methods for \nreading and writing. One VERY useful thing about a File \nobject is that it offers a much safer way to represent a \nfile than just using a String file name. For example, most \nclasses that take a String file name in their constructor \n(like FileWriter or FileInputStream) can take a File \nobject instead. You can construct a File object, verify \nthat you’ve got a valid path, etc. and then give that File \nobject to the FileWriter or FileInputStream.\nwriting files\n50,Elf,bow, sword,dust\n200,Troll,bare hands,big ax\n120,Magician,spells,invisibility\n A File object represents the name \nand path of a file or directory on \ndisk, for example:\n/Users/Kathy/Data/GameFile.txt\nBut it does NOT represent, or give \nyou access to, the data in the file!\nSome things you can do with a File object:\nGameFile.txt\nA File object does NOT \nrepresent (or give you \ndirect access to) the \ndata inside the file!\nA File object represents the \nfilename “GameFile.txt”\nFile f = new File(“MyCode.txt”); \nMake a File object representing an \nexisting file\n1\nFile dir = new File(“Chapter7”); \ndir.mkdir();\nMake a new directory\n2\nif (dir.isDirectory()) {\n String[] dirContents = dir.list();\n for (int i = 0; i < dirContents.length; i++) {\n System.out.println(dirContents[i]);\n }\n}\nList the contents of a directory\n3\nSystem.out.println(dir.getAbsolutePath());\nGet the absolute path of a file or directory\n4\nboolean isDeleted = f.delete();\nDelete a file or directory (returns true if \nsuccessful)\n5\nAn address is NOT the \nsame as the actual \nhouse! A File object is \nlike a street address... \nit represents the name \nand location of a par-\nticular file, but it isn’t \nthe file itself.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 486,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 486,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2016 chars",
+      "severity": "info"
+    },
+    {
+      "page": 486,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 486,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

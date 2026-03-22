@@ -1,0 +1,46 @@
+{
+  "page_number": 694,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "660\nappendix 8\n#10 Bit Manipulation\nWhy do you care?\nWe’ve talked about the fact that there are 8 bits in a byte, \n16 bits in a short, and 50 on. You might have occasion to \nturn individual bits on or off. For instance you might find \nyourself writing code for your new Java enabled toaster, \nand realize that due to severe memory limitations, certain \ntoaster settings are controlled at the bit level. For easier \nreading, we’re showing only the last 8 bits in the comments \nrather than the full 32 for an int).\nBitwise NOT Operator: ~ \nThis operator ‘flips all the bits’ of a primitive.\nint x = 10; // bits are 00001010\nx = ~x; // bits are now 11110101\nThe next three operators compare two primitives on a bit by \nbit basis, and return a result based on comparing these bits. \nWe’11 use the following example for the next three opera-\ntors:\nint x = 10; // bits are 00001010\nint y = 6; // bits are 00000110\n \nBitwise AND Operator: &\nThis operator returns a value whose bits are turned on only \nif both original bits are turned on:\nint a = x & y; // bits are 00000010\nBitwise OR Operator: |\nThis operator returns a value whose bits are turned on only \nif either of the original bits are turned on:\nint a = x | y; // bits are 00001110\nBitwise XOR (exclusive OR) Operator: ^\nThis operator returns a value whose bits are turned on only \nif exactly one of the original bits are turned on:\nint a = x ^ y; // bits are 00001100\nThe Shift Operators\nThese operators take a single integer primitive and shift (or \nslide) all of its bits in one direction or another. If you want \nto dust off your binary math skills, you might realize that \nshifting bits left effectively multiplies a number by a power of \ntwo, and shifting bits right effectively divides a number by a \npower of two.\nWe’11 use the following example for the next three operators:\nint x = -11; // bits are 11110101\nOk, ok, we’ve been putting it off, here is the world’5 \nshortest explanation of storing negative numbers, and \ntwo’5 complement. Remember, the leftmost bit of an integer \nnumber is called the sign bit. A negative integer number in \nJava always has its sign bit turned on (i.e. set to 1). A positive \ninteger number always has its sign bit turned off (0). Java \nuses the two’5 complement formula to store negative numbers. \nTo change a number’5 sign using two’5 complement, flip all \nthe bits, then add 1 (with a byte, for example, that would \nmean adding 00000001 to the flipped value). \nRight Shift Operator: >> \nThis operator shifts all of a number’5 bits right by a certain \nnumber, and fills all of the bits on the left side with whatever \nthe original leftmost bit was. The sign bit does not change:\nint y = x >> 2; // bits are 11111101\n \nUnsigned Right Shift Operator: >>>\nJust like the right shift operator BUT it ALWAYS fills the \nleftmost bits with zeros. The sign bit might change:\nint y = x >>> 2; // bits are 00111101\nLeft Shift Operator: <<\nJust like the unsigned right shift operator, but in the other \ndirection; the rightmost bits are filled with zeros. The sign bit \nmight change.\nint y = x << 2; // bits are 11010100\nbit manipulation",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "660\nappendix 8\n#10 Bit Manipulation\nWhy do you care?\nWe’ve talked about the fact that there are 8 bits in a byte, \n16 bits in a short, and 50 on. You might have occasion to \nturn individual bits on or off. For instance you might find \nyourself writing code for your new Java enabled toaster, \nand realize that due to severe memory limitations, certain \ntoaster settings are controlled at the bit level. For easier \nreading, we’re showing only the last 8 bits in the comments \nrather than the full 32 for an int).\nBitwise NOT Operator: ~ \nThis operator ‘flips all the bits’ of a primitive.\nint x = 10; // bits are 00001010\nx = ~x; // bits are now 11110101\nThe next three operators compare two primitives on a bit by \nbit basis, and return a result based on comparing these bits. \nWe’11 use the following example for the next three opera-\ntors:\nint x = 10; // bits are 00001010\nint y = 6; // bits are 00000110\n \nBitwise AND Operator: &\nThis operator returns a value whose bits are turned on only \nif both original bits are turned on:\nint a = x & y; // bits are 00000010\nBitwise OR Operator: |\nThis operator returns a value whose bits are turned on only \nif either of the original bits are turned on:\nint a = x | y; // bits are 00001110\nBitwise XOR (exclusive OR) Operator: ^\nThis operator returns a value whose bits are turned on only \nif exactly one of the original bits are turned on:\nint a = x ^ y; // bits are 00001100\nThe Shift Operators\nThese operators take a single integer primitive and shift (or \nslide) all of its bits in one direction or another. If you want \nto dust off your binary math skills, you might realize that \nshifting bits left effectively multiplies a number by a power of \ntwo, and shifting bits right effectively divides a number by a \npower of two.\nWe’11 use the following example for the next three operators:\nint x = -11; // bits are 11110101\nOk, ok, we’ve been putting it off, here is the world’5 \nshortest explanation of storing negative numbers, and \ntwo’5 complement. Remember, the leftmost bit of an integer \nnumber is called the sign bit. A negative integer number in \nJava always has its sign bit turned on (i.e. set to 1). A positive \ninteger number always has its sign bit turned off (0). Java \nuses the two’5 complement formula to store negative numbers. \nTo change a number’5 sign using two’5 complement, flip all \nthe bits, then add 1 (with a byte, for example, that would \nmean adding 00000001 to the flipped value). \nRight Shift Operator: >> \nThis operator shifts all of a number’5 bits right by a certain \nnumber, and fills all of the bits on the left side with whatever \nthe original leftmost bit was. The sign bit does not change:\nint y = x >> 2; // bits are 11111101\n \nUnsigned Right Shift Operator: >>>\nJust like the right shift operator BUT it ALWAYS fills the \nleftmost bits with zeros. The sign bit might change:\nint y = x >>> 2; // bits are 00111101\nLeft Shift Operator: <<\nJust like the unsigned right shift operator, but in the other \ndirection; the rightmost bits are filled with zeros. The sign bit \nmight change.\nint y = x << 2; // bits are 11010100\nbit manipulation",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 694,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 694,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3178 chars",
+      "severity": "info"
+    },
+    {
+      "page": 694,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

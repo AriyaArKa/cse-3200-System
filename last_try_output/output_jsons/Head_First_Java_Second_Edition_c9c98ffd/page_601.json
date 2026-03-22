@@ -1,0 +1,85 @@
+{
+  "page_number": 601,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9225,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "collections with generics\nyou are here\n567\nWe’ve seen Lists and Sets, now we’11 use a Map\nLists and Sets are great, but sometimes a Map is the best collection (not Collection \nwith a capital “C”—remember that Maps are part of Java collections but they don’t \nimplement the Collection interface).\nImagine you want a collection that acts like a property list, where you give it a name \nand it gives you back the value associated with that name. Although keys will often be \nStrings, they can be any Java object (or, through autoboxing, a primitive).\nimport java.util.*;\npublic class TestMap {\n public static void main(String[] args) {\n HashMap<String, Integer> scores = new HashMap<String, Integer>();\n scores.put(“Kathy”, 42);\n scores.put(“Bert”, 343);\n scores.put(“Skyler”, 420);\n System.out.println(scores);\n System.out.println(scores.get(“Bert”));\n }\n}\nMap\n“Ball” “Fish” “Car”\n“Ball1” “Ball2” “Ball3” “Ball4”\nEach element in a Map is actually \nTWO objects—a key and a value.\nYou can have duplicate values, but \nNOT duplicate keys.\nMap example\nHashMap needs TWO type parameters—\none for the key and one for the value.\nUse put() instead of add(), and now of course \nit takes two arguments (key, value). \n%java TestMap\n{Skyler=420, Bert=343, Kathy=42}\n343\nFile Edit Window Help WhereAmI\nWhen you print a Map, it gives you the key=value, \nin braces { } instead of the brackets [ ] you see \nwhen you print lists and sets.\nvalue\nkey\nThe get() method takes a key, and \nreturns the value (in this case, an Integer).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "““BBaalll1l””",
+          "“ 8 a“lFl2i”5",
+          "h “”8 a 1 13 “”",
+          "C a“Bra”114”"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help WhereAmI"
+        ],
+        [
+          "%java TestMap\n{Skyler=420, Bert=343, Kathy=42}\n343"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (109x86)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "collections with generics\nyou are here\n567\nWe’ve seen Lists and Sets, now we’11 use a Map\nLists and Sets are great, but sometimes a Map is the best collection (not Collection \nwith a capital “C”—remember that Maps are part of Java collections but they don’t \nimplement the Collection interface).\nImagine you want a collection that acts like a property list, where you give it a name \nand it gives you back the value associated with that name. Although keys will often be \nStrings, they can be any Java object (or, through autoboxing, a primitive).\nimport java.util.*;\npublic class TestMap {\n public static void main(String[] args) {\n HashMap<String, Integer> scores = new HashMap<String, Integer>();\n scores.put(“Kathy”, 42);\n scores.put(“Bert”, 343);\n scores.put(“Skyler”, 420);\n System.out.println(scores);\n System.out.println(scores.get(“Bert”));\n }\n}\nMap\n“Ball” “Fish” “Car”\n“Ball1” “Ball2” “Ball3” “Ball4”\nEach element in a Map is actually \nTWO objects—a key and a value.\nYou can have duplicate values, but \nNOT duplicate keys.\nMap example\nHashMap needs TWO type parameters—\none for the key and one for the value.\nUse put() instead of add(), and now of course \nit takes two arguments (key, value). \n%java TestMap\n{Skyler=420, Bert=343, Kathy=42}\n343\nFile Edit Window Help WhereAmI\nWhen you print a Map, it gives you the key=value, \nin braces { } instead of the brackets [ ] you see \nwhen you print lists and sets.\nvalue\nkey\nThe get() method takes a key, and \nreturns the value (in this case, an Integer).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 601,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 601,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1561 chars",
+      "severity": "info"
+    },
+    {
+      "page": 601,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 601,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

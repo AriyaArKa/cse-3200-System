@@ -1,0 +1,73 @@
+{
+  "page_number": 140,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "106 \nchapter 5\nthere are no\nDumb Questions\nQ:What happens in Integer.\nparseInt() if the thing you pass \nisn’t a number? And does it rec-\nognize spelled-out numbers, like \n“three”?\nA:Integer.parseInt() works only \non Strings that represent the ascii \nvalues for digits (0,1,2,3,4,5,6,7,8,9). \nIf you try to parse something like \n“two” or “blurp”, the code will blow \nup at runtime. (By blow up, we \nactually mean throw an exception, \nbut we don’t talk about exceptions \nuntil the Exceptions chapter. 50 for \nnow, blow up is close enough.)\nQ:In the beginning of the \nbook, there was an example of a \nfor loop that was really different \nfrom this one—are there two \ndifferent styles of for loops?\nA:Yes! From the first version of \nJava there has been a single kind \nof for loop (explained later in this \nchapter) that looks like this:\nfor (int i = 0; i < 10; i++) {\n // do something 10 times\n}\nYou can use this format for any \nkind of loop you need. But... \nbeginning with Java 5.0 (Tiger), \nyou can also use the enhanced for \nloop (that’5 the official description) \nwhen your loop needs to iterate \nover the elements in an array (or \nanother kind of collection, as you’11 \nsee in the next chapter). You can \nalways use the plain old for loop \nto iterate over an array, but the \nenhanced for loop makes it easier.\nFinal code for SimpleDotCom and SimpleDotComTester\npublic class SimpleDotComTestDrive {\n public static void main (String[] args) {\n SimpleDotCom dot = new SimpleDotCom();\n int[] locations = {2,3,4};\n dot.setLocationCells(locations); \n String userGuess = “2”;\n String result = dot.checkYourself(userGuess); \n }\n}\npublic class SimpleDotCom {\n int[] locationCells;\n int numOfHits = 0;\n \n public void setLocationCells(int[] locs) {\n locationCells = locs;\n }\n public String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++; \n break;\n }\n } // out of the loop\n if (numOfHits ==\n locationCells.length) {\n result = “kill”;\n }\n System.out.println(result);\n return result;\n } // close method \n} // close class\nWhat should we see \nwhen we run this code?\nThe test code makes a \nSimpleDotCom object \nand gives it a location at \n2,3,4. Then it sends a fake \nuser guess of “2” into the \ncheckYouself() method. \nIf the code is working \ncorrectly, we should see the \nresult print out: \njava SimpleDotComTestDrive \nhit \npassed\n prep code \ntest code\nreal code\nreal code \nThere’5 a little bug lurking here. It compiles and \nruns, but sometimes... don’t worry about it for now, \nbut we will have to face it a little later.\nSimpleDotCom class",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "What should we see\nwhen we run this code?\nThe test code makes a\nSimpleDotCom object\nand gives it a location at\n2,3,4. Then it sends a fake\nuser guess of “2” into the\ncheckYouself() method.\nIf the code is working\ncorrectly, we should see the\nresult print out:"
+        ],
+        [
+          "java SimpleDotComTestDrive\nhit"
+        ],
+        [
+          "passed"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "106 \nchapter 5\nthere are no\nDumb Questions\nQ:What happens in Integer.\nparseInt() if the thing you pass \nisn’t a number? And does it rec-\nognize spelled-out numbers, like \n“three”?\nA:Integer.parseInt() works only \non Strings that represent the ascii \nvalues for digits (0,1,2,3,4,5,6,7,8,9). \nIf you try to parse something like \n“two” or “blurp”, the code will blow \nup at runtime. (By blow up, we \nactually mean throw an exception, \nbut we don’t talk about exceptions \nuntil the Exceptions chapter. 50 for \nnow, blow up is close enough.)\nQ:In the beginning of the \nbook, there was an example of a \nfor loop that was really different \nfrom this one—are there two \ndifferent styles of for loops?\nA:Yes! From the first version of \nJava there has been a single kind \nof for loop (explained later in this \nchapter) that looks like this:\nfor (int i = 0; i < 10; i++) {\n // do something 10 times\n}\nYou can use this format for any \nkind of loop you need. But... \nbeginning with Java 5.0 (Tiger), \nyou can also use the enhanced for \nloop (that’5 the official description) \nwhen your loop needs to iterate \nover the elements in an array (or \nanother kind of collection, as you’11 \nsee in the next chapter). You can \nalways use the plain old for loop \nto iterate over an array, but the \nenhanced for loop makes it easier.\nFinal code for SimpleDotCom and SimpleDotComTester\npublic class SimpleDotComTestDrive {\n public static void main (String[] args) {\n SimpleDotCom dot = new SimpleDotCom();\n int[] locations = {2,3,4};\n dot.setLocationCells(locations); \n String userGuess = “2”;\n String result = dot.checkYourself(userGuess); \n }\n}\npublic class SimpleDotCom {\n int[] locationCells;\n int numOfHits = 0;\n \n public void setLocationCells(int[] locs) {\n locationCells = locs;\n }\n public String checkYourself(String stringGuess) {\n int guess = Integer.parseInt(stringGuess);\n String result = “miss”;\n for (int cell : locationCells) {\n if (guess == cell) {\n result = “hit”;\n numOfHits++; \n break;\n }\n } // out of the loop\n if (numOfHits ==\n locationCells.length) {\n result = “kill”;\n }\n System.out.println(result);\n return result;\n } // close method \n} // close class\nWhat should we see \nwhen we run this code?\nThe test code makes a \nSimpleDotCom object \nand gives it a location at \n2,3,4. Then it sends a fake \nuser guess of “2” into the \ncheckYouself() method. \nIf the code is working \ncorrectly, we should see the \nresult print out: \njava SimpleDotComTestDrive \nhit \npassed\n prep code \ntest code\nreal code\nreal code \nThere’5 a little bug lurking here. It compiles and \nruns, but sometimes... don’t worry about it for now, \nbut we will have to face it a little later.\nSimpleDotCom class",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 140,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 140,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2864 chars",
+      "severity": "info"
+    },
+    {
+      "page": 140,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "page_number": 112,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "78 \nchapter 4\nthere are no\nDumb Questions\nQ:What happens if the argument you want to \npass is an object instead of a primitive?\nA:You’11 learn more about this in later chapters, \nbut you already know the answer. Java passes \neverything by value. Everything. But... value means \nbits inside the variable. And remember, you don’t \nstuff objects into variables; the variable is a remote \ncontrol—a reference to an object. 50 if you pass a \nreference to an object into a method, you’re passing \na copy of the remote control. Stay tuned, though, \nwe’11 have lots more to say about this.\nQ:Can a method declare multiple return values? \nOr is there some way to return more than one \nvalue?\nA:Sort of. A method can declare only one return \nvalue. BUT... if you want to return, say, three int \nvalues, then the declared return type can be an int \narray. Stuff those ints into the array, and pass it on \nback. It’5 a little more involved to return multiple \nvalues with different types; we’11 be talking about \nthat in a later chapter when we talk about ArrayList.\nQ:Do 1 have to return the exact type 1 declared?\nA:You can return anything that can be implicitly \npromoted to that type. 50, you can pass a byte where \nan int is expected. The caller won’t care, because the \nbyte fits just fine into the int the caller will use for \nassigning the result. You must use an explicit cast \nwhen the declared type is smaller than what you’re \ntrying to return.\nQ:Do 1 have to do something with the return \nvalue of a method? Can 1 just ignore it?\nA:Java doesn’t require you to acknowledge a \nreturn value. You might want to call a method with \na non-void return type, even though you don’t care \nabout the return value. In this case, you’re calling \nthe method for the work it does inside the method, \nrather than for what the method gives returns. In \nJava, you don’t have to assign or use the return value.\narguments and return values\n BULLET POINTS\n \nClasses define what an object knows and what an \nobject does.\n \nThings an object knows are its instance variables \n(state). \n \nThings an object does are its methods (behavior). \n \nMethods can use instance variables 50 that objects \nof the same type can behave differently. \n \nA method can have parameters, which means you \ncan pass one or more values in to the method. \n \nThe number and type of values you pass in must \nmatch the order and type of the parameters \ndeclared by the method.\n \nValues passed in and out of methods can be \nimplicitly promoted to a larger type or explicitly cast \nto a smaller type.\n \nThe value you pass as an argument to a method \ncan be a literal value (2, ‘c’, etc.) or a variable of \nthe declared parameter type (for example, x where \nx is an int variable). (There are other things you \ncan pass as arguments, but we’re not there yet.)\n \nA method must declare a return type. A void return \ntype means the method doesn’t return anything.\n \nIf a method declares a non-void return type, it must \nreturn a value compatible with the declared return \ntype.\nReminder: Java \ncares about type!\nYou can’t return a Giraffe when the \nreturn type is declared as a Rabbit. \nSame thing with parameters. You \ncan’t pass a Giraffe into a method \nthat takes a Rabbit.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (256x430)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "78 \nchapter 4\nthere are no\nDumb Questions\nQ:What happens if the argument you want to \npass is an object instead of a primitive?\nA:You’11 learn more about this in later chapters, \nbut you already know the answer. Java passes \neverything by value. Everything. But... value means \nbits inside the variable. And remember, you don’t \nstuff objects into variables; the variable is a remote \ncontrol—a reference to an object. 50 if you pass a \nreference to an object into a method, you’re passing \na copy of the remote control. Stay tuned, though, \nwe’11 have lots more to say about this.\nQ:Can a method declare multiple return values? \nOr is there some way to return more than one \nvalue?\nA:Sort of. A method can declare only one return \nvalue. BUT... if you want to return, say, three int \nvalues, then the declared return type can be an int \narray. Stuff those ints into the array, and pass it on \nback. It’5 a little more involved to return multiple \nvalues with different types; we’11 be talking about \nthat in a later chapter when we talk about ArrayList.\nQ:Do 1 have to return the exact type 1 declared?\nA:You can return anything that can be implicitly \npromoted to that type. 50, you can pass a byte where \nan int is expected. The caller won’t care, because the \nbyte fits just fine into the int the caller will use for \nassigning the result. You must use an explicit cast \nwhen the declared type is smaller than what you’re \ntrying to return.\nQ:Do 1 have to do something with the return \nvalue of a method? Can 1 just ignore it?\nA:Java doesn’t require you to acknowledge a \nreturn value. You might want to call a method with \na non-void return type, even though you don’t care \nabout the return value. In this case, you’re calling \nthe method for the work it does inside the method, \nrather than for what the method gives returns. In \nJava, you don’t have to assign or use the return value.\narguments and return values\n BULLET POINTS\n \nClasses define what an object knows and what an \nobject does.\n \nThings an object knows are its instance variables \n(state). \n \nThings an object does are its methods (behavior). \n \nMethods can use instance variables 50 that objects \nof the same type can behave differently. \n \nA method can have parameters, which means you \ncan pass one or more values in to the method. \n \nThe number and type of values you pass in must \nmatch the order and type of the parameters \ndeclared by the method.\n \nValues passed in and out of methods can be \nimplicitly promoted to a larger type or explicitly cast \nto a smaller type.\n \nThe value you pass as an argument to a method \ncan be a literal value (2, ‘c’, etc.) or a variable of \nthe declared parameter type (for example, x where \nx is an int variable). (There are other things you \ncan pass as arguments, but we’re not there yet.)\n \nA method must declare a return type. A void return \ntype means the method doesn’t return anything.\n \nIf a method declares a non-void return type, it must \nreturn a value compatible with the declared return \ntype.\nReminder: Java \ncares about type!\nYou can’t return a Giraffe when the \nreturn type is declared as a Rabbit. \nSame thing with parameters. You \ncan’t pass a Giraffe into a method \nthat takes a Rabbit.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 112,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 112,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3234 chars",
+      "severity": "info"
+    },
+    {
+      "page": 112,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 112,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

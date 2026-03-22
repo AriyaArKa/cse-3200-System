@@ -1,0 +1,46 @@
+{
+  "page_number": 588,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "554 \nchapter 16\nReverse Engineer\nAssume this code exists in \na single file. Your job is \nto fill in the blanks 50 the \nthe program will create the \noutput shown.\nimport __________________;\npublic class SortMountains {\n LinkedList______________ mtn = new LinkedList____________();\n class NameCompare ___________________________________ {\n public int compare(Mountain one, Mountain two) {\n return ___________________________;\n }\n }\n class HeightCompare _______________________________ {\n public int compare(Mountain one, Mountain two) {\n return (__________________________);\n }\n }\n public static void main(String [] args) {\n new SortMountains().go();\n }\n public void go() {\n mtn.add(new Mountain(“Longs”, 14255));\n mtn.add(new Mountain(“Elbert”, 14433));\n mtn.add(new Mountain(“Maroon”, 14156));\n mtn.add(new Mountain(“Castle”, 14265));\n System.out.println(“as entered:\\n” + mtn);\n NameCompare nc = new NameCompare();\n _________________________________;\n System.out.println(“by name:\\n” + mtn); \n HeightCompare hc = new HeightCompare();\n _________________________________;\n System.out.println(“by height:\\n” + mtn); \n }\n}\nclass Mountain {\n __________________;\n _________________;\n ______________________ {\n _________________;\n _________________;\n }\n _________________________ {\n ______________________________;\n }\n}\nFile Edit Window Help ThisOne’sForBob\n%java SortMountains\nas entered:\n[Longs 14255, Elbert 14433, Maroon 14156, Castle 14265]\nby name:\n[Castle 14265, Elbert 14433, Longs 14255, Maroon 14156]\nby height:\n[Elbert 14433, Castle 14265, Longs 14255, Maroon 14156]\nOutput:\nSharpen your pencil\ncollections exercise\nNote: answers are at the end of \nthe chapter.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "554 \nchapter 16\nReverse Engineer\nAssume this code exists in \na single file. Your job is \nto fill in the blanks 50 the \nthe program will create the \noutput shown.\nimport __________________;\npublic class SortMountains {\n LinkedList______________ mtn = new LinkedList____________();\n class NameCompare ___________________________________ {\n public int compare(Mountain one, Mountain two) {\n return ___________________________;\n }\n }\n class HeightCompare _______________________________ {\n public int compare(Mountain one, Mountain two) {\n return (__________________________);\n }\n }\n public static void main(String [] args) {\n new SortMountains().go();\n }\n public void go() {\n mtn.add(new Mountain(“Longs”, 14255));\n mtn.add(new Mountain(“Elbert”, 14433));\n mtn.add(new Mountain(“Maroon”, 14156));\n mtn.add(new Mountain(“Castle”, 14265));\n System.out.println(“as entered:\\n” + mtn);\n NameCompare nc = new NameCompare();\n _________________________________;\n System.out.println(“by name:\\n” + mtn); \n HeightCompare hc = new HeightCompare();\n _________________________________;\n System.out.println(“by height:\\n” + mtn); \n }\n}\nclass Mountain {\n __________________;\n _________________;\n ______________________ {\n _________________;\n _________________;\n }\n _________________________ {\n ______________________________;\n }\n}\nFile Edit Window Help ThisOne’sForBob\n%java SortMountains\nas entered:\n[Longs 14255, Elbert 14433, Maroon 14156, Castle 14265]\nby name:\n[Castle 14265, Elbert 14433, Longs 14255, Maroon 14156]\nby height:\n[Elbert 14433, Castle 14265, Longs 14255, Maroon 14156]\nOutput:\nSharpen your pencil\ncollections exercise\nNote: answers are at the end of \nthe chapter.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 588,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 588,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1755 chars",
+      "severity": "info"
+    },
+    {
+      "page": 588,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

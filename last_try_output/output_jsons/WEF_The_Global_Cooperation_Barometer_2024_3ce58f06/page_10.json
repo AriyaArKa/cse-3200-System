@@ -1,0 +1,60 @@
+{
+  "page_number": 10,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.945,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "2012-2022: Moderate growth \nin cooperation, followed by \npandemic-related shake-ups\nGlobal cooperation in the trade and capital pillar \nincreased at an average annual rate of 0.9% \nbetween 2012-2020, driven by growth in the stock \nof foreign direct investment (FDI) positions across \nmany countries. Globally, FDI stock rose from 30% \nin 2012 to 49% in 2020, as a share of GDP. \nTrade presents a more mixed story in this period. \nServices flows (as a percentage of GDP) rose \nsteadily between 2012-2019, when a collapse in \ntravel triggered a fall in services from 13.7% of GDP \nin 2019 to 11.8% in 2020. Goods flows declined \nfrom 49.3% of GDP in 2012 to 41.9% in 2020. \nThe COVID-19 pandemic and the years that \nfollowed shook up trade and capital flows. Despite \nthis, there has been a continued net increase, \nthough it has been moderate. Trade flows fell \nin the immediate wake of quarantines and then \nrebounded strongly. At the onset of the pandemic, \nconsumer demand decreased sharply and some \nproduction and shipping ground to a halt. Yet, trade \nsoon rebounded as homebound consumers started \nspending more on goods. Countries remained \ninterconnected and cooperative out of necessity as \nthe world navigated a once-in-a-century event and \nthis pattern persisted through 2022. For example, \nfrom 2021 to 2022, the flow of goods as a share of \nGDP increased by 10%, reaching a historical peak \nat 51% of GDP (up from 46.7% in 2021).\nAs for capital flows, they normalized after an initial \nspike in 2020 (for FDI) and 2021 (for foreign portfolio \ninvestment).14 As COVID-19 surged, flows of capital \nincreased as banks reallocated liquidity around the \nworld and more multinationals relied on financing \nto navigate the disruption. After this initial surge, \nhowever, capital flows normalized. FDI stocks \nretreated to 44% of GDP in 2022 relative to 49% \nand 47% in 2020 and 2021, respectively.\nInclusive potential and \nunanswered questions\nIn a sign of what may come next, trade in 2023 \ngrew more slowly than GDP, at an estimated 0.8% \n(nearly 2 percentage points lower than 2022) as \ncompared to GDP growth of 2.6%.15 If barriers \nto trade continue to grow, some countries could \nsuffer from slower economic growth and a decline \nin the diffusion of productivity and innovation.16 \nNonetheless, a recent examination17 indicates \nthat advanced economies have been boosting \ntrade with emerging market economies, and also \nincreasing greenfield FDI perhaps in advance of \nlarger increases to come. For example, the United \nStates has been trading more with Mexico and \nViet Nam, and China has increased trade and \ninvestment across South-East Asia.\nThese trends could improve opportunities for global \nparticipation in trade and capital flows. Today, \nthere is great disparity in global integration – some \nsmaller European and Asian city-state economies \nare among the most integrated, while many \nemerging nations show low levels of trade relative \nto their size. Closing this gap between more and \nless integrated countries could lead to significant \neconomic benefits. The question is whether leaders \nwill work to rebuild the economic connections \nneeded to promote growth, foster diversity, provide \nresilience, improve domestic economies and ensure \nthat vulnerable people are not left behind.\nThe Global Cooperation Barometer 2024\n10",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1195x666)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "2012-2022: Moderate growth \nin cooperation, followed by \npandemic-related shake-ups\nGlobal cooperation in the trade and capital pillar \nincreased at an average annual rate of 0.9% \nbetween 2012-2020, driven by growth in the stock \nof foreign direct investment (FDI) positions across \nmany countries. Globally, FDI stock rose from 30% \nin 2012 to 49% in 2020, as a share of GDP. \nTrade presents a more mixed story in this period. \nServices flows (as a percentage of GDP) rose \nsteadily between 2012-2019, when a collapse in \ntravel triggered a fall in services from 13.7% of GDP \nin 2019 to 11.8% in 2020. Goods flows declined \nfrom 49.3% of GDP in 2012 to 41.9% in 2020. \nThe COVID-19 pandemic and the years that \nfollowed shook up trade and capital flows. Despite \nthis, there has been a continued net increase, \nthough it has been moderate. Trade flows fell \nin the immediate wake of quarantines and then \nrebounded strongly. At the onset of the pandemic, \nconsumer demand decreased sharply and some \nproduction and shipping ground to a halt. Yet, trade \nsoon rebounded as homebound consumers started \nspending more on goods. Countries remained \ninterconnected and cooperative out of necessity as \nthe world navigated a once-in-a-century event and \nthis pattern persisted through 2022. For example, \nfrom 2021 to 2022, the flow of goods as a share of \nGDP increased by 10%, reaching a historical peak \nat 51% of GDP (up from 46.7% in 2021).\nAs for capital flows, they normalized after an initial \nspike in 2020 (for FDI) and 2021 (for foreign portfolio \ninvestment).14 As COVID-19 surged, flows of capital \nincreased as banks reallocated liquidity around the \nworld and more multinationals relied on financing \nto navigate the disruption. After this initial surge, \nhowever, capital flows normalized. FDI stocks \nretreated to 44% of GDP in 2022 relative to 49% \nand 47% in 2020 and 2021, respectively.\nInclusive potential and \nunanswered questions\nIn a sign of what may come next, trade in 2023 \ngrew more slowly than GDP, at an estimated 0.8% \n(nearly 2 percentage points lower than 2022) as \ncompared to GDP growth of 2.6%.15 If barriers \nto trade continue to grow, some countries could \nsuffer from slower economic growth and a decline \nin the diffusion of productivity and innovation.16 \nNonetheless, a recent examination17 indicates \nthat advanced economies have been boosting \ntrade with emerging market economies, and also \nincreasing greenfield FDI perhaps in advance of \nlarger increases to come. For example, the United \nStates has been trading more with Mexico and \nViet Nam, and China has increased trade and \ninvestment across South-East Asia.\nThese trends could improve opportunities for global \nparticipation in trade and capital flows. Today, \nthere is great disparity in global integration – some \nsmaller European and Asian city-state economies \nare among the most integrated, while many \nemerging nations show low levels of trade relative \nto their size. Closing this gap between more and \nless integrated countries could lead to significant \neconomic benefits. The question is whether leaders \nwill work to rebuild the economic connections \nneeded to promote growth, foster diversity, provide \nresilience, improve domestic economies and ensure \nthat vulnerable people are not left behind.\nThe Global Cooperation Barometer 2024\n10",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 10,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 10,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 3354 chars",
+      "severity": "info"
+    },
+    {
+      "page": 10,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 10,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

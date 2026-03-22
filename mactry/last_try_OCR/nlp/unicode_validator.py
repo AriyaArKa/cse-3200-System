@@ -162,6 +162,39 @@ def has_invalid_combining(text: str) -> bool:
     return False
 
 
+# ── Bijoy/SutonnyMJ early detection (prevents 478s processing loops) ──────
+_BRACKET_NOISE_RE = re.compile(r"\d+\[\d+\]\d+")
+_MIXED_WORD_RE = re.compile(r"[\u0980-\u09FF]+[a-zA-Z]+[\u0980-\u09FF]*")
+_GARBLED_EMAIL_RE = re.compile(r"[\u0980-\u09FF]+@|@[\u0980-\u09FF]")
+
+
+def _detect_bijoy_font(text: str) -> bool:
+    """
+    Detect Bijoy/SutonnyMJ legacy Bengali font in PyMuPDF-extracted text.
+    These PDFs look digital (many chars) but are Bijoy-encoded garbage.
+
+    Tested against: Bangla Academy PDF (d972f997...) — 81[64]47 pattern,
+    garbled email 'paruaacademirogmail.con', mixed word 'বাংনা' etc.
+    Returns True → caller must reroute page to OCR engine.
+    """
+    if len(text) < 200:
+        return False
+
+    score = 0
+    if len(_MIXED_WORD_RE.findall(text)) >= 3:
+        score += 2  # 'বাংনা', 'সেশলাচ'
+    if _GARBLED_EMAIL_RE.search(text):
+        score += 2  # email with Bengali
+    if len(_BRACKET_NOISE_RE.findall(text)) >= 1:
+        score += 2  # '81[64]47'
+    if bangla_char_ratio(text) < 0.15 and len(text) > 500:
+        score += 1
+    if winansa_artifact_count(text) >= 2:
+        score += 1
+
+    return score >= 3
+
+
 def validate_digital_text(text: str) -> Tuple[bool, dict]:
     """
     Validate extracted digital text for Bangla corruption.
@@ -170,6 +203,19 @@ def validate_digital_text(text: str) -> Tuple[bool, dict]:
     If is_valid is False, page should be re-routed to OCR.
     """
     report = {}
+
+    # FAST EXIT: Bijoy/SutonnyMJ font — prevents 478-second processing loops.
+    # Must be first check. If triggered, skip ALL other validation.
+    if _detect_bijoy_font(text):
+        report["bijoy_detected"] = True
+        report["is_valid"] = False
+        report["rejection_reasons"] = [
+            "Bijoy/SutonnyMJ legacy font detected — rerouting page to OCR engine"
+        ]
+        logger.warning(
+            "Bijoy font early exit: text len=%d — rerouting to OCR", len(text)
+        )
+        return False, report
 
     # 1. Bangla ratio
     bn_ratio = bangla_char_ratio(text)

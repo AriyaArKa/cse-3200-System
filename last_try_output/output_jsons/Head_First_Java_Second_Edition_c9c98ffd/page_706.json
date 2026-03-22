@@ -1,0 +1,46 @@
+{
+  "page_number": 706,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "when arrays aren’t enough\n672\nappendix 8\npublic enum Members { JERRY, BOBBY, PHIL };\npublic Members selectedBandMember;\n// later in the code\nif (selectedBandMember == Members.JERRY) {\n // do JERRY related stuff\n}\nThe same situation using a genuine Java 5.0 enum. While this is a very basic \nenumeration, most enumerations usually are this simple.\nA new, official “enum”:\n#1 Enumerations, cont.\nThis kind of looks like a simple class definition \ndoesn’t it? It turns out that enums ARE a \nspecial kind of class. Here we’ve created a new \nenumerated type called “Members”.\nThe “selectedBandMember” variable is of type \n“Members”, and can ONLY have a value of \n“JERRY”, “BOBBY”, or “PHIL”.\nNo need to worry about this variable’5 value!\nWhen you create an enum, you’re creating a new class, and you’re implicitly extending \njava.lang.Enum. You can declare an enum as its own standalone class, in its own \nsource file, or as a member of another class. \nYour enum extends java.lang.Enum\nUsing “if” and “switch” with Enums\nUsing the enum we just created, we can perform branches in our code using either \nthe if or switch statement. Also notice that we can compare enum instances using \neither == or the .equals() method. Usually == is considered better style.\nMembers n = Members.BOBBY;\nif (n.equals(Members.JERRY)) System.out.println(“Jerrrry!”);\nif (n == Members.BOBBY) System.out.println(“Rat Dog”);\nMembers ifName = Members.PHIL;\nswitch (ifName) {\n case JERRY: System.out.print(“make it sing “);\n case PHIL: System.out.print(“go deep “);\n case BOBBY: System.out.println(“Cassidy! ”);\n}\nThe syntax to refer to an enum “instance”.\nBoth of these work fine! \n“Rat Dog” is printed.\nPop Quiz! What’5 the output?\ngo deep Cassidy!\nAnswer:\nAssigning an enum value to a variable.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "when arrays aren’t enough\n672\nappendix 8\npublic enum Members { JERRY, BOBBY, PHIL };\npublic Members selectedBandMember;\n// later in the code\nif (selectedBandMember == Members.JERRY) {\n // do JERRY related stuff\n}\nThe same situation using a genuine Java 5.0 enum. While this is a very basic \nenumeration, most enumerations usually are this simple.\nA new, official “enum”:\n#1 Enumerations, cont.\nThis kind of looks like a simple class definition \ndoesn’t it? It turns out that enums ARE a \nspecial kind of class. Here we’ve created a new \nenumerated type called “Members”.\nThe “selectedBandMember” variable is of type \n“Members”, and can ONLY have a value of \n“JERRY”, “BOBBY”, or “PHIL”.\nNo need to worry about this variable’5 value!\nWhen you create an enum, you’re creating a new class, and you’re implicitly extending \njava.lang.Enum. You can declare an enum as its own standalone class, in its own \nsource file, or as a member of another class. \nYour enum extends java.lang.Enum\nUsing “if” and “switch” with Enums\nUsing the enum we just created, we can perform branches in our code using either \nthe if or switch statement. Also notice that we can compare enum instances using \neither == or the .equals() method. Usually == is considered better style.\nMembers n = Members.BOBBY;\nif (n.equals(Members.JERRY)) System.out.println(“Jerrrry!”);\nif (n == Members.BOBBY) System.out.println(“Rat Dog”);\nMembers ifName = Members.PHIL;\nswitch (ifName) {\n case JERRY: System.out.print(“make it sing “);\n case PHIL: System.out.print(“go deep “);\n case BOBBY: System.out.println(“Cassidy! ”);\n}\nThe syntax to refer to an enum “instance”.\nBoth of these work fine! \n“Rat Dog” is printed.\nPop Quiz! What’5 the output?\ngo deep Cassidy!\nAnswer:\nAssigning an enum value to a variable.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 706,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 706,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1774 chars",
+      "severity": "info"
+    },
+    {
+      "page": 706,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

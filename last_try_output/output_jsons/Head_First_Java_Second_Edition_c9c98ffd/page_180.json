@@ -1,0 +1,58 @@
+{
+  "page_number": 180,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9325,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "146 \nchapter 6\nimport java.util.*;\npublic class DotComBust {\n private GameHelper helper = new GameHelper();\n private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>(); \n private int numOfGuesses = 0; \n private void setUpGame() { \n // first make some dot coms and give them locations\n DotCom one = new DotCom();\n one.setName(“Pets.com”);\n DotCom two = new DotCom();\n two.setName(“eToys.com”);\n DotCom three = new DotCom();\n three.setName(“Go2.com”);\n dotComsList.add(one);\n dotComsList.add(two);\n dotComsList.add(three);\n System.out.println(“Your goal is to sink three dot coms.”);\n System.out.println(“Pets.com, eToys.com, Go2.com”);\n System.out.println(“Try to sink them all in the fewest number of guesses”);\n \n for (DotCom dotComToSet : dotComsList) { \n ArrayList<String> newLocation = helper.placeDotCom(3);\n dotComToSet.setLocationCells(newLocation); \n } // close for loop\n } // close setUpGame method\n private void startPlaying() { \n while(!dotComsList.isEmpty()) { \n String userGuess = helper.getUserInput(“Enter a guess”); \n checkUserGuess(userGuess); \n } // close while\n finishGame();\n } // close startPlaying method\n prep code \ntest code\nreal code\nreal code \n1\n2\n3\n4\n5\n6\n7\n8\n10\n9\nas long as the DotCom \nlist is NOT empty\nget user input\ncall our own checkUserGuess method\ncall our own finishGame method\nprint brief \ninstructions for \nuser\ndeclare and initialize \nthe variables we’11 need\nrepeat with each DotCom in the list\nmake three DotCom objects, give ‘em \nnames, and stick ‘em in the ArrayList\nask the helper for a DotCom location\ncall the setter method on this DotCom \nto give it the location you just got \nfrom the helper\nSharpen your pencil\nAnnotate the code \nyourself!\nMatch the \nannotations at the \nbottom of each page \nwith the numbers \nin the code. Write \nthe number in the \nslot in front of the \ncorresponding \nannotation. \nYou’11 use each \nannotation just once, \nand you’11 need all of \nthe annotations.\nthe DotComBust code (the game)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "146 \nchapter 6\nimport java.util.*;\npublic class DotComBust {\n private GameHelper helper = new GameHelper();\n private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>(); \n private int numOfGuesses = 0; \n private void setUpGame() { \n // first make some dot coms and give them locations\n DotCom one = new DotCom();\n one.setName(“Pets.com”);\n DotCom two = new DotCom();\n two.setName(“eToys.com”);\n DotCom three = new DotCom();\n three.setName(“Go2.com”);\n dotComsList.add(one);\n dotComsList.add(two);\n dotComsList.add(three);\n System.out.println(“Your goal is to sink three dot coms.”);\n System.out.println(“Pets.com, eToys.com, Go2.com”);\n System.out.println(“Try to sink them all in the fewest number of guesses”);\n \n for (DotCom dotComToSet : dotComsList) { \n ArrayList<String> newLocation = helper.placeDotCom(3);\n dotComToSet.setLocationCells(newLocation); \n } // close for loop\n } // close setUpGame method\n private void startPlaying() { \n while(!dotComsList.isEmpty()) { \n String userGuess = helper.getUserInput(“Enter a guess”); \n checkUserGuess(userGuess); \n } // close while\n finishGame();\n } // close startPlaying method\n prep code \ntest code\nreal code\nreal code \n1\n2\n3\n4\n5\n6\n7\n8\n10\n9\nas long as the DotCom \nlist is NOT empty\nget user input\ncall our own checkUserGuess method\ncall our own finishGame method\nprint brief \ninstructions for \nuser\ndeclare and initialize \nthe variables we’11 need\nrepeat with each DotCom in the list\nmake three DotCom objects, give ‘em \nnames, and stick ‘em in the ArrayList\nask the helper for a DotCom location\ncall the setter method on this DotCom \nto give it the location you just got \nfrom the helper\nSharpen your pencil\nAnnotate the code \nyourself!\nMatch the \nannotations at the \nbottom of each page \nwith the numbers \nin the code. Write \nthe number in the \nslot in front of the \ncorresponding \nannotation. \nYou’11 use each \nannotation just once, \nand you’11 need all of \nthe annotations.\nthe DotComBust code (the game)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 180,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 180,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2144 chars",
+      "severity": "info"
+    },
+    {
+      "page": 180,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

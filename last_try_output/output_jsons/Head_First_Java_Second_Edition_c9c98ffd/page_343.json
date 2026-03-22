@@ -1,0 +1,46 @@
+{
+  "page_number": 343,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "numbers and statics\nyou are here\n309\nUm, aren’t you forgetting something? \nStatic variables are about as un-00 as it gets!! \nGee why not just go take a giant backwards \nstep and do some procedural programming \nwhile we’re at it.\nYou’re like a global variable, and any \nprogrammer worth his PDA knows that’5 \nusually a Bad Thing.\nYeah you live in a class, but they don’t call \nit Class-Oriented programming. That’5 just \nstupid. You’re a relic. Something to help the \nold-timers make the leap to java.\nWell, OK, every once in a while sure, it makes \nsense to use a static, but let me tell you, abuse \nof static variables (and methods) is the mark \nof an immature 00 programmer. A designer \nshould be thinking about object state, not class \nstate.\nStatic methods are the worst things of all, \nbecause it usually means the programmer is \nthinking procedurally instead of about objects \ndoing things based on their unique object \nstate.\nRiiiiiight. Whatever you need to tell yourself...\nWhat?\nWhat do you mean un-00? \n1 am NOT a global variable. There’5 no such \nthing. 1 live in a class! That’5 pretty 00 you \nknow, a CLASS. 1’m not just sitting out there \nin space somewhere; 1’m a natural part of the \nstate of an object; the only difference is that \n1’m shared by all instances of a class. Very \nefficient.\nAlright just stop right there. THAT is \ndefinitely not true. Some static variables are \nabsolutely crucial to a system. And even the \nones that aren’t crucial sure are handy.\nWhy do you say that? And what’5 wrong with \nstatic methods?\nSure, 1 know that objects should be the focus \nof an 00 design, but just because there are \nsome clueless programmers out there... don’t \nthrow the baby out with the bytecode. There’5 \na time and place for statics, and when you \nneed one, nothing else beats it.\nInstance Variable\nStatic Variable",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "numbers and statics\nyou are here\n309\nUm, aren’t you forgetting something? \nStatic variables are about as un-00 as it gets!! \nGee why not just go take a giant backwards \nstep and do some procedural programming \nwhile we’re at it.\nYou’re like a global variable, and any \nprogrammer worth his PDA knows that’5 \nusually a Bad Thing.\nYeah you live in a class, but they don’t call \nit Class-Oriented programming. That’5 just \nstupid. You’re a relic. Something to help the \nold-timers make the leap to java.\nWell, OK, every once in a while sure, it makes \nsense to use a static, but let me tell you, abuse \nof static variables (and methods) is the mark \nof an immature 00 programmer. A designer \nshould be thinking about object state, not class \nstate.\nStatic methods are the worst things of all, \nbecause it usually means the programmer is \nthinking procedurally instead of about objects \ndoing things based on their unique object \nstate.\nRiiiiiight. Whatever you need to tell yourself...\nWhat?\nWhat do you mean un-00? \n1 am NOT a global variable. There’5 no such \nthing. 1 live in a class! That’5 pretty 00 you \nknow, a CLASS. 1’m not just sitting out there \nin space somewhere; 1’m a natural part of the \nstate of an object; the only difference is that \n1’m shared by all instances of a class. Very \nefficient.\nAlright just stop right there. THAT is \ndefinitely not true. Some static variables are \nabsolutely crucial to a system. And even the \nones that aren’t crucial sure are handy.\nWhy do you say that? And what’5 wrong with \nstatic methods?\nSure, 1 know that objects should be the focus \nof an 00 design, but just because there are \nsome clueless programmers out there... don’t \nthrow the baby out with the bytecode. There’5 \na time and place for statics, and when you \nneed one, nothing else beats it.\nInstance Variable\nStatic Variable",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 343,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 343,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1840 chars",
+      "severity": "info"
+    },
+    {
+      "page": 343,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

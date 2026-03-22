@@ -1,0 +1,250 @@
+{
+  "page_number": 559,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n525\n try {\nThread.sleep(50);\nCode Magnets, continued..\ncounter += add;\nreturn a;\nimplements Runnable {\npublic void run() {\nreturn counter;\none.start();\na.updateCounter(1000);\nThread one = new Thread(t1);\n try {\npublic static void main(String [] args) {\nfor(int x=0; x < 99; x++) {\n} catch(InterruptedException ex) { }\nprivate static Accum a = new Accum();\n} catch(InterruptedException ex) { }\nimplements Runnable {\nAccum a = Accum.getAccum();\nAccum a = Accum.getAccum();\npublic void run() {\nfor(int x=0; x < 98; x++) {\ntwo.start();\nThreadOne t1 = new ThreadOne();\nThreadTwo t2 = new ThreadTwo();\npublic void updateCounter(int add) {\nprivate Accum() { }\npublic int getCount() {\nSystem.out.println(“two “+a.getCount());\nSystem.out.println(“one “+a.getCount());\npublic static Accum getAccum() {\nprivate int counter = 0;\na.updateCounter(1);\nThread two = new Thread(t2);",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "",
+          "Accum a = Accum.getAccum();",
+          "",
+          ""
+        ],
+        [
+          "“+a.getCount());\nSystem.out.println(“two",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ThreadTwo t2 = new ThreadTwo ( ) ;",
+          "",
+          "",
+          "try {"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Thread(t1);\nThread one = new"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "",
+          "; counter += add;",
+          "",
+          "",
+          ""
+        ],
+        [
+          "return counter",
+          ";",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "implements Runnable {",
+          "",
+          "",
+          "one.start();",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.7333,
+      "rows": [
+        [
+          "",
+          "Thread\ntwo = new Thread(t2);",
+          ""
+        ],
+        [
+          "Accum a = Accum.getAccum();",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "catch(InterruptedException ex) { }\n}",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "public void run() {\nTh",
+          ""
+        ],
+        [
+          "",
+          "Th"
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 0.6667,
+      "rows": [
+        [
+          "a.updateCounter(1000);",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 8,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "public\nint getCount()\n{"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 9,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "return a;"
+        ],
+        [
+          "“one “+a."
+        ]
+      ]
+    },
+    {
+      "table_id": 10,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "for(int x=0; x < 98; x++) {",
+          "",
+          "t",
+          "wo.start();"
+        ],
+        [
+          "try {",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 11,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          "private Accum() { }",
+          "",
+          "ThreadOne();\nThreadOne t1 = new"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "networking and threads\nyou are here\n525\n try {\nThread.sleep(50);\nCode Magnets, continued..\ncounter += add;\nreturn a;\nimplements Runnable {\npublic void run() {\nreturn counter;\none.start();\na.updateCounter(1000);\nThread one = new Thread(t1);\n try {\npublic static void main(String [] args) {\nfor(int x=0; x < 99; x++) {\n} catch(InterruptedException ex) { }\nprivate static Accum a = new Accum();\n} catch(InterruptedException ex) { }\nimplements Runnable {\nAccum a = Accum.getAccum();\nAccum a = Accum.getAccum();\npublic void run() {\nfor(int x=0; x < 98; x++) {\ntwo.start();\nThreadOne t1 = new ThreadOne();\nThreadTwo t2 = new ThreadTwo();\npublic void updateCounter(int add) {\nprivate Accum() { }\npublic int getCount() {\nSystem.out.println(“two “+a.getCount());\nSystem.out.println(“one “+a.getCount());\npublic static Accum getAccum() {\nprivate int counter = 0;\na.updateCounter(1);\nThread two = new Thread(t2);",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 559,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 559,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 912 chars",
+      "severity": "info"
+    },
+    {
+      "page": 559,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

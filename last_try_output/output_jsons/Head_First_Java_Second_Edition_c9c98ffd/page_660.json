@@ -1,0 +1,74 @@
+{
+  "page_number": 660,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "626 \nchapter 18\nvery simple servlet\nSteps for making and running a servlet\n1\nFind out where your servlets need to be placed.\nFor these examples, we’11 assume that you already have a web server up \nand running, and that it’5 already configured to support servlets. The \nmost important thing is to find out exactly where your servlet class files \nhave to be placed in order for your server to ‘see’ them. If you have a web \nsite hosted by an ISP, the hosting service can tell you where to put your \nservlets, just as they’11 tell you where to place your CGI scripts. \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServletA.class\nWeb Server \nServlets\n2\nGet the servlets.jar and add it to your classpath\nServlets aren’t part of the standard Java libraries; you need the servlets \nclasses packaged into the servlets.jar file. You can download the servlets \nclasses from java.sun.com, or you can get them from your Java-enabled \nweb server (like Apache Tomcat, at the apache.org site). Without these \nclasses, you won’t be able to compile your servlets.\n3\nWrite a servlet class by extending HttpServlet\nA servlet is just a Java class that extends HttpServlet (from the javax.\nservlet.http package). There are other types of servlets you can make, but \nmost of the time we care only about HttpServlet. \npublic class MyServletA extends HttpServlet { ... }\nservlets.jar\n4\nWrite an HTML page that invokes your servlet\nWhen the user clicks a link that references your servlet, the web server \nwill find the servlet and invoke the appropriate method depending on the \nHTTP command (GET, POST, etc.)\n<a href=”servlets/MyServletA”>This is the most amazing servlet.</a>\n5\nMake your servlet and HTML page available to your server\nThis is completely dependent on your web server (and more specifically, \non which version of Java Servlets that you’re using). Your ISP may simply \ntell you to drop it into a “Servlets” directory on your web site. But if \nyou’re using, say, the latest version of Tomcat, you’11 have a lot more work \nto do to get the servlet (and web page) into the right location. (We just \nhappen to have a book on this too .)\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServletA.class\nMyPage.html\n<HTML>\n <BODY>\n Java \nrules!\n <BODY>\n<HTML>\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServletA.class\nWeb Server \nServlets\nMyPage.html\n<HTML>\n <BODY>\n Java \nrules!\n <BODY>\n<HTML>",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (475x350)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (146x118)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (110x174)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "626 \nchapter 18\nvery simple servlet\nSteps for making and running a servlet\n1\nFind out where your servlets need to be placed.\nFor these examples, we’11 assume that you already have a web server up \nand running, and that it’5 already configured to support servlets. The \nmost important thing is to find out exactly where your servlet class files \nhave to be placed in order for your server to ‘see’ them. If you have a web \nsite hosted by an ISP, the hosting service can tell you where to put your \nservlets, just as they’11 tell you where to place your CGI scripts. \n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServletA.class\nWeb Server \nServlets\n2\nGet the servlets.jar and add it to your classpath\nServlets aren’t part of the standard Java libraries; you need the servlets \nclasses packaged into the servlets.jar file. You can download the servlets \nclasses from java.sun.com, or you can get them from your Java-enabled \nweb server (like Apache Tomcat, at the apache.org site). Without these \nclasses, you won’t be able to compile your servlets.\n3\nWrite a servlet class by extending HttpServlet\nA servlet is just a Java class that extends HttpServlet (from the javax.\nservlet.http package). There are other types of servlets you can make, but \nmost of the time we care only about HttpServlet. \npublic class MyServletA extends HttpServlet { ... }\nservlets.jar\n4\nWrite an HTML page that invokes your servlet\nWhen the user clicks a link that references your servlet, the web server \nwill find the servlet and invoke the appropriate method depending on the \nHTTP command (GET, POST, etc.)\n<a href=”servlets/MyServletA”>This is the most amazing servlet.</a>\n5\nMake your servlet and HTML page available to your server\nThis is completely dependent on your web server (and more specifically, \non which version of Java Servlets that you’re using). Your ISP may simply \ntell you to drop it into a “Servlets” directory on your web site. But if \nyou’re using, say, the latest version of Tomcat, you’11 have a lot more work \nto do to get the servlet (and web page) into the right location. (We just \nhappen to have a book on this too .)\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServletA.class\nMyPage.html\n<HTML>\n <BODY>\n Java \nrules!\n <BODY>\n<HTML>\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMyServletA.class\nWeb Server \nServlets\nMyPage.html\n<HTML>\n <BODY>\n Java \nrules!\n <BODY>\n<HTML>",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 660,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 660,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2381 chars",
+      "severity": "info"
+    },
+    {
+      "page": 660,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 660,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

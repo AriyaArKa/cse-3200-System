@@ -1,0 +1,109 @@
+{
+  "page_number": 96,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "62 \nchapter 3\nusing references \nclass Dog {\n String name;\n public static void main (String[] args) {\n // make a Dog object and access it\n Dog dog1 = new Dog();\n dog1.bark();\n dog1.name = “Bart”;\n // now make a Dog array\n Dog[] myDogs = new Dog[3];\n // and put some dogs in it\n myDogs[0] = new Dog();\n myDogs[1] = new Dog();\n myDogs[2] = dog1;\n // now access the Dogs using the array\n // references\n myDogs[0].name = “Fred”;\n myDogs[1].name = “Marge”;\n \n // Hmmmm... what is myDogs[2] name?\n System.out.print(“last dog’5 name is “);\n System.out.println(myDogs[2].name);\n // now loop through the array\n // and tell all dogs to bark\n int x = 0;\n while(x < myDogs.length) {\n myDogs[x].bark();\n x = x + 1;\n }\n }\n public void bark() {\n System.out.println(name + “ says Ruff!”);\n }\n public void eat() { }\n public void chaseCat() { }\n}\nDog\nname\nbark()\neat()\nchaseCat()\nA Dog example\nFile Edit Window Help Howl\n%java Dog\nnull says Ruff!\nlast dog’5 name is Bart\nFred says Ruff!\nMarge says Ruff!\nBart says Ruff!\nOutput\n BULLET POINTS\n \nVariables come in two flavors: primitive and \nreference.\n \nVariables must always be declared with a name \nand a type. \n \nA primitive variable value is the bits representing \nthe value (5, ‘a’, true, 3.1416, etc.).\n \nA reference variable value is the bits \nrepresenting a way to get to an object on the \nheap.\n \nA reference variable is like a remote control. \nUsing the dot operator (.) on a reference \nvariable is like pressing a button on the remote \ncontrol to access a method or instance variable.\n \nA reference variable has a value of null when \nit is not referencing any object.\n \nAn array is always an object, even if the array \nis declared to hold primitives. There is no such \nthing as a primitive array, only an array that \nholds primitives.\narrays have a variable ‘length’ \nthat gives you the number of \nelements in the array",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Dog"
+        ],
+        [
+          "name"
+        ],
+        [
+          "bark()\neat()\nchaseCat()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Howl"
+        ],
+        [
+          "%java Dog\nnull says Ruff!\nlast dog’5 name is Bart\nFred says Ruff!\nMarge says Ruff!\nBart says Ruff!"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (141x128)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "62 \nchapter 3\nusing references \nclass Dog {\n String name;\n public static void main (String[] args) {\n // make a Dog object and access it\n Dog dog1 = new Dog();\n dog1.bark();\n dog1.name = “Bart”;\n // now make a Dog array\n Dog[] myDogs = new Dog[3];\n // and put some dogs in it\n myDogs[0] = new Dog();\n myDogs[1] = new Dog();\n myDogs[2] = dog1;\n // now access the Dogs using the array\n // references\n myDogs[0].name = “Fred”;\n myDogs[1].name = “Marge”;\n \n // Hmmmm... what is myDogs[2] name?\n System.out.print(“last dog’5 name is “);\n System.out.println(myDogs[2].name);\n // now loop through the array\n // and tell all dogs to bark\n int x = 0;\n while(x < myDogs.length) {\n myDogs[x].bark();\n x = x + 1;\n }\n }\n public void bark() {\n System.out.println(name + “ says Ruff!”);\n }\n public void eat() { }\n public void chaseCat() { }\n}\nDog\nname\nbark()\neat()\nchaseCat()\nA Dog example\nFile Edit Window Help Howl\n%java Dog\nnull says Ruff!\nlast dog’5 name is Bart\nFred says Ruff!\nMarge says Ruff!\nBart says Ruff!\nOutput\n BULLET POINTS\n \nVariables come in two flavors: primitive and \nreference.\n \nVariables must always be declared with a name \nand a type. \n \nA primitive variable value is the bits representing \nthe value (5, ‘a’, true, 3.1416, etc.).\n \nA reference variable value is the bits \nrepresenting a way to get to an object on the \nheap.\n \nA reference variable is like a remote control. \nUsing the dot operator (.) on a reference \nvariable is like pressing a button on the remote \ncontrol to access a method or instance variable.\n \nA reference variable has a value of null when \nit is not referencing any object.\n \nAn array is always an object, even if the array \nis declared to hold primitives. There is no such \nthing as a primitive array, only an array that \nholds primitives.\narrays have a variable ‘length’ \nthat gives you the number of \nelements in the array",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 96,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 96,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1965 chars",
+      "severity": "info"
+    },
+    {
+      "page": 96,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 96,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 527,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n493\nEvery Thread needs a job to do. \nA method to put on the new thread stack.\nA Thread object needs a job. A job the thread will run when the \nthread is started. That job is actually the first method that goes on \nthe new thread’5 stack, and it must always be a method that looks \nlike this:\n \npublic void run() {\n // code that will be run by the new thread\n \n}\nHow does the thread know which method to put at the bottom of \nthe stack? Because Runnable defines a contract. Because Runnable \nis an interface. A thread’5 job can be defined in any class that \nimplements the Runnable interface. The thread cares only that you \npass the Thread constructor an object of a class that implements \nRunnable.\nWhen you pass a Runnable to a Thread constructor, you’re really \njust giving the Thread a way to get to a run() method. You’re giving \nthe Thread its job to do.\nRunnable is to a \nThread what a job is to \na worker. A Runnable \nis the job a thread is \nsupposed to run.\nA Runnable holds the \nmethod that goes on \nthe bottom of the new \nthread’5 stack: run().\nThread\nAll 1 need is a real job. \nJust give me a Runnable \nand 1’11 get to work!\nThe Runnable interface defines only one \nmethod, public void run(). (Remember, it’5 an \ninterface 50 the method is public regardless \nof whether you type it in that way.)\n.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (257x607)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n493\nEvery Thread needs a job to do. \nA method to put on the new thread stack.\nA Thread object needs a job. A job the thread will run when the \nthread is started. That job is actually the first method that goes on \nthe new thread’5 stack, and it must always be a method that looks \nlike this:\n \npublic void run() {\n // code that will be run by the new thread\n \n}\nHow does the thread know which method to put at the bottom of \nthe stack? Because Runnable defines a contract. Because Runnable \nis an interface. A thread’5 job can be defined in any class that \nimplements the Runnable interface. The thread cares only that you \npass the Thread constructor an object of a class that implements \nRunnable.\nWhen you pass a Runnable to a Thread constructor, you’re really \njust giving the Thread a way to get to a run() method. You’re giving \nthe Thread its job to do.\nRunnable is to a \nThread what a job is to \na worker. A Runnable \nis the job a thread is \nsupposed to run.\nA Runnable holds the \nmethod that goes on \nthe bottom of the new \nthread’5 stack: run().\nThread\nAll 1 need is a real job. \nJust give me a Runnable \nand 1’11 get to work!\nThe Runnable interface defines only one \nmethod, public void run(). (Remember, it’5 an \ninterface 50 the method is public regardless \nof whether you type it in that way.)\n.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 527,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 527,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1372 chars",
+      "severity": "info"
+    },
+    {
+      "page": 527,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 527,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

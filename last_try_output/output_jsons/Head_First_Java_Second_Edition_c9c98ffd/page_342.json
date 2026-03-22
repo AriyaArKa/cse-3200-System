@@ -1,0 +1,60 @@
+{
+  "page_number": 342,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "308 \nchapter 10\nInstance Variable\n1 don’t even know why we’re doing this. \nEveryone knows static variables are just used \nfor constants. And how many of those are \nthere? 1 think the whole API must have, what, \nfour? And it’5 not like anybody ever uses \nthem.\nFull of it. Yeah, you can say that again. OK, \n50 there are a few in the Swing library, but \neverybody knows Swing is just a special case. \nOk, but besides a few GUI things, give me an \nexample of just one static variable that anyone \nwould actually use. In the real world.\nWell, that’5 another special case. And nobody \nuses that except for debugging anyway.\nStatic Variable\nYou really should check your facts. When \nwas the last time you looked at the API? It’5 \nfrickin’ loaded with statics! It even has entire \nclasses dedicated to holding constant values. \nThere’5 a class called SwingConstants, for \nexample, that’5 just full of them.\nIt might be a special case, but it’5 a really \nimportant one! And what about the Color \nclass? What a pain if you had to remember the \nRGB values to make the standard colors? But \nthe color class already has constants defined \nfor blue, purple, white, red, etc. Very handy.\nHow’5 System.out for starters? The out in \nSystem.out is a static variable of the System \nclass. You personally don’t make a new \ninstance of the System, you just ask the System \nclass for its out variable.\nOh, like debugging isn’t important? \nAnd here’5 something that probably never \ncrossed your narrow mind—let’5 face it, static \nvariables are more efficient. One per class \ninstead of one per instance. The memory \nsavings might be huge!\nTonight’5 Talk: An instance variable \ntakes cheap shots at a static variable\nstatic vs. instance",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (362x192)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "308 \nchapter 10\nInstance Variable\n1 don’t even know why we’re doing this. \nEveryone knows static variables are just used \nfor constants. And how many of those are \nthere? 1 think the whole API must have, what, \nfour? And it’5 not like anybody ever uses \nthem.\nFull of it. Yeah, you can say that again. OK, \n50 there are a few in the Swing library, but \neverybody knows Swing is just a special case. \nOk, but besides a few GUI things, give me an \nexample of just one static variable that anyone \nwould actually use. In the real world.\nWell, that’5 another special case. And nobody \nuses that except for debugging anyway.\nStatic Variable\nYou really should check your facts. When \nwas the last time you looked at the API? It’5 \nfrickin’ loaded with statics! It even has entire \nclasses dedicated to holding constant values. \nThere’5 a class called SwingConstants, for \nexample, that’5 just full of them.\nIt might be a special case, but it’5 a really \nimportant one! And what about the Color \nclass? What a pain if you had to remember the \nRGB values to make the standard colors? But \nthe color class already has constants defined \nfor blue, purple, white, red, etc. Very handy.\nHow’5 System.out for starters? The out in \nSystem.out is a static variable of the System \nclass. You personally don’t make a new \ninstance of the System, you just ask the System \nclass for its out variable.\nOh, like debugging isn’t important? \nAnd here’5 something that probably never \ncrossed your narrow mind—let’5 face it, static \nvariables are more efficient. One per class \ninstead of one per instance. The memory \nsavings might be huge!\nTonight’5 Talk: An instance variable \ntakes cheap shots at a static variable\nstatic vs. instance",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 342,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 342,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1715 chars",
+      "severity": "info"
+    },
+    {
+      "page": 342,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 342,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "page_number": 97,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nprimitives and references\n63\nEach of the Java files on this page \nrepresents a complete source file. \nYour job is to play compiler and \ndetermine whether each of these \nfiles will compile and run \nwithout exception. If \nthey won’t, how would \nyou fix them?\n \n \n A\nclass Books {\n String title;\n String author;\n}\nclass BooksTestDrive {\n public static void main(String [] args) {\n Books [] myBooks = new Books[3];\n int x = 0;\n myBooks[0].title = “The Grapes of Java”;\n myBooks[1].title = “The Java Gatsby”;\n myBooks[2].title = “The Java Cookbook”;\n myBooks[0].author = “bob”;\n myBooks[1].author = “sue”;\n myBooks[2].author = “ian”;\n while (x < 3) {\n System.out.print(myBooks[x].title);\n System.out.print(“ by “);\n System.out.println(myBooks[x].author);\n x = x + 1;\n }\n }\n}\n \n \n 8\nclass Hobbits {\n String name;\n public static void main(String [] args) {\n Hobbits [] h = new Hobbits[3];\n int z = 0;\n while (z < 4) {\n z = z + 1;\n h[z] = new Hobbits();\n h[z].name = “bilbo”;\n if (z == 1) {\n h[z].name = “frodo”;\n }\n if (z == 2) {\n h[z].name = “sam”;\n }\n System.out.print(h[z].name + “ is a “);\n System.out.println(“good Hobbit name”);\n }\n }\n}\nExercise\nBE the compiler",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (300x347)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (165x138)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nprimitives and references\n63\nEach of the Java files on this page \nrepresents a complete source file. \nYour job is to play compiler and \ndetermine whether each of these \nfiles will compile and run \nwithout exception. If \nthey won’t, how would \nyou fix them?\n \n \n A\nclass Books {\n String title;\n String author;\n}\nclass BooksTestDrive {\n public static void main(String [] args) {\n Books [] myBooks = new Books[3];\n int x = 0;\n myBooks[0].title = “The Grapes of Java”;\n myBooks[1].title = “The Java Gatsby”;\n myBooks[2].title = “The Java Cookbook”;\n myBooks[0].author = “bob”;\n myBooks[1].author = “sue”;\n myBooks[2].author = “ian”;\n while (x < 3) {\n System.out.print(myBooks[x].title);\n System.out.print(“ by “);\n System.out.println(myBooks[x].author);\n x = x + 1;\n }\n }\n}\n \n \n 8\nclass Hobbits {\n String name;\n public static void main(String [] args) {\n Hobbits [] h = new Hobbits[3];\n int z = 0;\n while (z < 4) {\n z = z + 1;\n h[z] = new Hobbits();\n h[z].name = “bilbo”;\n if (z == 1) {\n h[z].name = “frodo”;\n }\n if (z == 2) {\n h[z].name = “sam”;\n }\n System.out.print(h[z].name + “ is a “);\n System.out.println(“good Hobbit name”);\n }\n }\n}\nExercise\nBE the compiler",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 97,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 97,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1318 chars",
+      "severity": "info"
+    },
+    {
+      "page": 97,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 97,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "page_number": 297,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n263\nObject-killer #3\nExplicitly set the \nreference to null\npublic class ReRef {\n \n Duck d = new Duck();\n public void go() {\n d = null;\n }\n}\nThe new Duck goes on the Heap, referenced \nby ‘d’. Since ‘d’ is an instance variable, the \nDuck will live as long as the ReRef object \nthat instantiated it is alive. Unless...\nD\nu\nc\nk\n \n \n0\nb\nj\ne\nc\nt \nHeap\n1\nd\n‘d’ is set to null, which is just like having a remote \ncontrol that isn’t programmed to anything. You’re not \neven allowed to use the dot operator on ‘d’ until it’5 \nreprogrammed (assigned an object).\nD\nu\nc\nk\n \n \n0\nb\nj\ne\nc\nt \nHeap\n2\nd\nThis Duck is abandoned. \nHis only reference has been \nset to null.\nThe meaning of null\nWhen you set a reference to null, you’re \ndeprogramming the remote control. \nIn other words, you’ve got a remote \ncontrol, but no TV at the other end. A null \nreference has bits representing ‘null’ (we \ndon’t know or care what those bits are, as \nlong as the JVM knows). \nIf you have an unprogrammed remote \ncontrol, in the real world, the buttons \ndon’t do anything when you press them. \nBut in Java, you can’t press the buttons \n(i.e. use the dot operator) on a null \nreference, because the JVM knows (this is \na runtime issue, not a compiler error) that \nyou’re expecting a bark but there’5 no Dog \nthere to do it!\nIf you use the dot operator on \na null reference, you’11 get a \nNullPointerException at runtime. You’11 \nlearn all about Exceptions in the Risky \nBehavior chapter.\nR\ne\nR\ne\nf\n \n0\nb\nj\nect\n \nR\ne\nR\ne\nf\n \n0\nb\nj\nect",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (348x251)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (106x107)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (170x170)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (85x160)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n263\nObject-killer #3\nExplicitly set the \nreference to null\npublic class ReRef {\n \n Duck d = new Duck();\n public void go() {\n d = null;\n }\n}\nThe new Duck goes on the Heap, referenced \nby ‘d’. Since ‘d’ is an instance variable, the \nDuck will live as long as the ReRef object \nthat instantiated it is alive. Unless...\nD\nu\nc\nk\n \n \n0\nb\nj\ne\nc\nt \nHeap\n1\nd\n‘d’ is set to null, which is just like having a remote \ncontrol that isn’t programmed to anything. You’re not \neven allowed to use the dot operator on ‘d’ until it’5 \nreprogrammed (assigned an object).\nD\nu\nc\nk\n \n \n0\nb\nj\ne\nc\nt \nHeap\n2\nd\nThis Duck is abandoned. \nHis only reference has been \nset to null.\nThe meaning of null\nWhen you set a reference to null, you’re \ndeprogramming the remote control. \nIn other words, you’ve got a remote \ncontrol, but no TV at the other end. A null \nreference has bits representing ‘null’ (we \ndon’t know or care what those bits are, as \nlong as the JVM knows). \nIf you have an unprogrammed remote \ncontrol, in the real world, the buttons \ndon’t do anything when you press them. \nBut in Java, you can’t press the buttons \n(i.e. use the dot operator) on a null \nreference, because the JVM knows (this is \na runtime issue, not a compiler error) that \nyou’re expecting a bark but there’5 no Dog \nthere to do it!\nIf you use the dot operator on \na null reference, you’11 get a \nNullPointerException at runtime. You’11 \nlearn all about Exceptions in the Risky \nBehavior chapter.\nR\ne\nR\ne\nf\n \n0\nb\nj\nect\n \nR\ne\nR\ne\nf\n \n0\nb\nj\nect",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 297,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 297,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1554 chars",
+      "severity": "info"
+    },
+    {
+      "page": 297,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 4",
+      "severity": "info"
+    },
+    {
+      "page": 297,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

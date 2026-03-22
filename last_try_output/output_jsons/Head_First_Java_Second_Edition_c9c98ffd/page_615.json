@@ -1,0 +1,74 @@
+{
+  "page_number": 615,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "this is a new chapter\n581\nIt’5 time to let go. You wrote your code. You tested your code. You refined your code. \nYou told everyone you know that if you never saw a line of code again, that’d be fine. But in the \nend, you’ve created a work of art. The thing actually runs! But now what? How do you give it to \nend users? What exactly do you give to end users? What if you don’t even know who your end \nusers are? In these final two chapters, we’11 explore how to organize, package, and deploy your \nJava code. We’11 look at local, semi-local, and remote deployment options including executable \njars, Java Web Start, RMI, and Servlets. In this chapter, we’11 spend most of our time on organizing \nand packaging your code—things you’11 need to know regardless of your ultimate deployment \nchoice. In the final chapter, we’11 finish with one of the coolest things you can do in Java. Relax. \nReleasing your code is not saying goodbye. There’5 always maintenance...\nRelease Your Code\n17 package, jars and deployment",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (602x776)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "this is a new chapter\n581\nIt’5 time to let go. You wrote your code. You tested your code. You refined your code. \nYou told everyone you know that if you never saw a line of code again, that’d be fine. But in the \nend, you’ve created a work of art. The thing actually runs! But now what? How do you give it to \nend users? What exactly do you give to end users? What if you don’t even know who your end \nusers are? In these final two chapters, we’11 explore how to organize, package, and deploy your \nJava code. We’11 look at local, semi-local, and remote deployment options including executable \njars, Java Web Start, RMI, and Servlets. In this chapter, we’11 spend most of our time on organizing \nand packaging your code—things you’11 need to know regardless of your ultimate deployment \nchoice. In the final chapter, we’11 finish with one of the coolest things you can do in Java. Relax. \nReleasing your code is not saying goodbye. There’5 always maintenance...\nRelease Your Code\n17 package, jars and deployment",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 615,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 615,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1016 chars",
+      "severity": "info"
+    },
+    {
+      "page": 615,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 615,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

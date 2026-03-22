@@ -1,0 +1,74 @@
+{
+  "page_number": 543,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "networking and threads\nyou are here\n509\nThe lock works like this:\nThey need a lock for account access!\n1\nThere’5 a lock associated with the bank \naccount transaction (checking the balance \nand withdrawing money). There’5 only \none key, and it stays with the lock until \nsomebody wants to access the account.\n2\nWhen Ryan wants to access the bank \naccount (to check the balance and withdraw \nmoney), he locks the lock and puts the key \nin his pocket. Now nobody else can access \nthe account, since the key is gone.\n3\nRyan keeps the key in his pocket until he \nfinishes the transaction. He has the only \nkey, 50 Monica can’t access the account \n(or the checkbook) until Ryan unlocks the \naccount and returns the key. \nNow, even if Ryan falls asleep after he \nchecks the balance, he has a guarantee \nthat the balance will be the same when he \nwakes up, because he kept the key while he \nwas asleep!\nThe bank account \ntransaction is \nunlocked when \nnobody is using \nthe account.\nWhen Ryan \nwants to access \nthe account, he \nsecures the lock \nand takes the key. \nWhen Ryan is \nfinished, he \nunlocks the lock \nand returns the \nkey. Now the key \nis available for \nMonica (or Ryan \nagain) to access \nthe account.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (189x217)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (77x152)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (166x174)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "networking and threads\nyou are here\n509\nThe lock works like this:\nThey need a lock for account access!\n1\nThere’5 a lock associated with the bank \naccount transaction (checking the balance \nand withdrawing money). There’5 only \none key, and it stays with the lock until \nsomebody wants to access the account.\n2\nWhen Ryan wants to access the bank \naccount (to check the balance and withdraw \nmoney), he locks the lock and puts the key \nin his pocket. Now nobody else can access \nthe account, since the key is gone.\n3\nRyan keeps the key in his pocket until he \nfinishes the transaction. He has the only \nkey, 50 Monica can’t access the account \n(or the checkbook) until Ryan unlocks the \naccount and returns the key. \nNow, even if Ryan falls asleep after he \nchecks the balance, he has a guarantee \nthat the balance will be the same when he \nwakes up, because he kept the key while he \nwas asleep!\nThe bank account \ntransaction is \nunlocked when \nnobody is using \nthe account.\nWhen Ryan \nwants to access \nthe account, he \nsecures the lock \nand takes the key. \nWhen Ryan is \nfinished, he \nunlocks the lock \nand returns the \nkey. Now the key \nis available for \nMonica (or Ryan \nagain) to access \nthe account.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 543,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 543,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1206 chars",
+      "severity": "info"
+    },
+    {
+      "page": 543,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 543,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "page_number": 367,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nexception handling\n333\ntry {\n laundry.doLaundry();\n } catch(ClothingException cex) {\n // recovery from ClothingException\n } catch(LingerieException lex) {\n // recovery from LingerieException\n } catch(ShirtException sex) {\n // recovery from ShirtException\n }\n \n \nSize matters when \nyou have multiple catch \nblocks. The one with the biggest \nbasket has to be on the bottom. \nOtherwise, the ones with \nsmaller baskets are useless.\nYou can’t put bigger baskets \nabove smaller baskets.\nWell, you can but it won’t compile. Catch \nblocks are not like overloaded methods \nwhere the best match is picked. With catch \nblocks, the JVM simply starts at the first one \nand works its way down until it finds a catch \nthat’5 broad enough (in other words, high \nenough on the inheritance tree) to handle \nthe exception. If your first catch block is \ncatch(Exception ex), the compiler \nknows there’5 no point in adding any \nothers—they’11 never be reached.\nSiblings can be in any order, because they \ncan’t catch one another’5 exceptions. \nYou could put ShirtException above \nLingerieException and nobody would mind. \nBecause even though ShirtException is a bigger \n(broader) type because it can catch other classes \n(its own subclasses), ShirtException can’t catch a \nLingerieException 50 there’5 no problem.\nDon’t do this!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (229x199)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x93)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (61x140)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (153x133)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (106x132)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (153x85)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (96x89)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 8,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (122x107)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 9,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (488x613)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nexception handling\n333\ntry {\n laundry.doLaundry();\n } catch(ClothingException cex) {\n // recovery from ClothingException\n } catch(LingerieException lex) {\n // recovery from LingerieException\n } catch(ShirtException sex) {\n // recovery from ShirtException\n }\n \n \nSize matters when \nyou have multiple catch \nblocks. The one with the biggest \nbasket has to be on the bottom. \nOtherwise, the ones with \nsmaller baskets are useless.\nYou can’t put bigger baskets \nabove smaller baskets.\nWell, you can but it won’t compile. Catch \nblocks are not like overloaded methods \nwhere the best match is picked. With catch \nblocks, the JVM simply starts at the first one \nand works its way down until it finds a catch \nthat’5 broad enough (in other words, high \nenough on the inheritance tree) to handle \nthe exception. If your first catch block is \ncatch(Exception ex), the compiler \nknows there’5 no point in adding any \nothers—they’11 never be reached.\nSiblings can be in any order, because they \ncan’t catch one another’5 exceptions. \nYou could put ShirtException above \nLingerieException and nobody would mind. \nBecause even though ShirtException is a bigger \n(broader) type because it can catch other classes \n(its own subclasses), ShirtException can’t catch a \nLingerieException 50 there’5 no problem.\nDon’t do this!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 367,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 367,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1339 chars",
+      "severity": "info"
+    },
+    {
+      "page": 367,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 9",
+      "severity": "info"
+    },
+    {
+      "page": 367,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

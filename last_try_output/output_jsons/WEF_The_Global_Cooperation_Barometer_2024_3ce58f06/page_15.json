@@ -1,0 +1,123 @@
+{
+  "page_number": 15,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.94,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "The health and wellness pillar examines the \nimpact of global cooperation in enabling people \nworldwide to lead longer and healthier lives. The \nfocus is on understanding the burden of disease \non the duration and quality of life and the growing \ncommitments to global public health standards and \ncollaboration through flows of goods, R&D/IP and \nhealth financing.\nCooperation on health and wellness rose \nconsistently from 2012 to 2020 and was essential in \ncertain ways to navigate the COVID-19 pandemic, \nfor example through the development of vaccines \n(though not their distribution). Since the peak in \n2020, cooperation in these areas has declined \nslightly (Figure 6).\nHealth and wellness\nPillar 4: Health and wellness \nF 1 6 U R E 6\n2012-2022: Steady growth and \nthen a pandemic surge, with \noutcomes negatively impacted \nby COVID-19 \nPrior to 2020, most indicators of health cooperation \n– development assistance for health, trade in health \ngoods, and flows of health-related R&D and IP – \ngrew slowly and steadily. Health outcomes – life \nexpectancy, disability-adjusted life years (DALYs), \nmaternal and child mortality – improved from \n2012 through 2019, due in part to an increase in \nhealthcare development aid and global efforts to \naddress preventable and controllable diseases. \nIn 2020, cooperation in certain areas surged in \nresponse to the pandemic. Cross-border flows of \npharma R&D/IP (as a share of GDP) nearly doubled. \nDevelopment assistance for health jumped 40%. \nInternational scientists made the COVID-19 genome \nfreely available, accelerating vaccine development, \nand health-related aid flowed to emerging \neconomies. International agencies, such as Gavi, \nalso played a pivotal role in providing basic life-\nsaving vaccines.32 \nWhile there were major boosts to some aspects \nof global cooperation in reaction to the pandemic, \nother areas lagged significantly and, in some cases, \nreinforced existing inequities. Disparities in the \ndistribution of vaccines33 and competition for scarce \n*Outcome metrics\nNotes: 1. Metrics were reflected given negative connotation. Note: Due to missing data in \nsome metrics, data from the closest years are used to calculate the trend. These metrics \ninclude labour migration, international students, cross-border IP R&D, trade in IT services, \nterrestrial protected areas, cross-border flows of pharma R&D, development assistance for \nhealth, child mortality, maternal mortality.\nSource: McKinsey & Company\nHealth and wellness index\nChild mortality*\nHealth-related goods trade\nMaternal mortality*\nIHR score\nDALYs*\nLife expectancy at birth*\n,1\nDevelopment assistance for health\nCross-border pharma R&D\nCompound annual \ngrowth rate (CAGR) %\nIndex [2020=1]\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\n14\n15\n16\n17\n18\n19\n20\n21 2022\n2012-2020\n2020-2022\n,1\n,1\n-5\n0\n5\n10\n-\n2012 13\nPillar 4\nThe Global Cooperation Barometer 2024\n15",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Index [2020=1]\n1.1\n1.0\n0.9\n0.8\n0.7\n0.6\n201213 14 15 16 17 18\n*Outcome metrics\nNotes: 1. Metrics were reflecte\nsome metrics, data from the clo\ninclude labour migration, intern\nterrestrial protected areas, cros\nhealth, child mortality, maternal\nSource: McKinsey & Company",
+          "Compound annual --5 0 5 10\ngrowth rate (CAGR) %\nHealth and wellness index\nChild mortality*,1\nHealth-related goods trade\nMaternal mortality*,1\nIHR score\nDALYs*,1\nLife expectancy at birth*\nDevelopment assistance for health\nCross-border pharma R&D\n2012-2020 2020-2022\n19 20 212022\nd given negative connotation. Note: Due to missing data in\nsest years are used to calculate the trend. These metrics\national students, cross-border IP R&D, trade in IT services,\n5-border flows of pharma R&D, development assistance for\nmortality."
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 0.6,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "The health and wellness pillar examines the \nimpact of global cooperation in enabling people \nworldwide to lead longer and healthier lives. The \nfocus is on understanding the burden of disease \non the duration and quality of life and the growing \ncommitments to global public health standards and \ncollaboration through flows of goods, R&D/IP and \nhealth financing.\nCooperation on health and wellness rose \nconsistently from 2012 to 2020 and was essential in \ncertain ways to navigate the COVID-19 pandemic, \nfor example through the development of vaccines \n(though not their distribution). Since the peak in \n2020, cooperation in these areas has declined \nslightly (Figure 6).\nHealth and wellness\nPillar 4: Health and wellness \nF 1 6 U R E 6\n2012-2022: Steady growth and \nthen a pandemic surge, with \noutcomes negatively impacted \nby COVID-19 \nPrior to 2020, most indicators of health cooperation \n– development assistance for health, trade in health \ngoods, and flows of health-related R&D and IP – \ngrew slowly and steadily. Health outcomes – life \nexpectancy, disability-adjusted life years (DALYs), \nmaternal and child mortality – improved from \n2012 through 2019, due in part to an increase in \nhealthcare development aid and global efforts to \naddress preventable and controllable diseases. \nIn 2020, cooperation in certain areas surged in \nresponse to the pandemic. Cross-border flows of \npharma R&D/IP (as a share of GDP) nearly doubled. \nDevelopment assistance for health jumped 40%. \nInternational scientists made the COVID-19 genome \nfreely available, accelerating vaccine development, \nand health-related aid flowed to emerging \neconomies. International agencies, such as Gavi, \nalso played a pivotal role in providing basic life-\nsaving vaccines.32 \nWhile there were major boosts to some aspects \nof global cooperation in reaction to the pandemic, \nother areas lagged significantly and, in some cases, \nreinforced existing inequities. Disparities in the \ndistribution of vaccines33 and competition for scarce \n*Outcome metrics\nNotes: 1. Metrics were reflected given negative connotation. Note: Due to missing data in \nsome metrics, data from the closest years are used to calculate the trend. These metrics \ninclude labour migration, international students, cross-border IP R&D, trade in IT services, \nterrestrial protected areas, cross-border flows of pharma R&D, development assistance for \nhealth, child mortality, maternal mortality.\nSource: McKinsey & Company\nHealth and wellness index\nChild mortality*\nHealth-related goods trade\nMaternal mortality*\nIHR score\nDALYs*\nLife expectancy at birth*\n,1\nDevelopment assistance for health\nCross-border pharma R&D\nCompound annual \ngrowth rate (CAGR) %\nIndex [2020=1]\n0.6\n0.7\n0.8\n0.9\n1.0\n1.1\n14\n15\n16\n17\n18\n19\n20\n21 2022\n2012-2020\n2020-2022\n,1\n,1\n-5\n0\n5\n10\n-\n2012 13\nPillar 4\nThe Global Cooperation Barometer 2024\n15",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 15,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 15,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2876 chars",
+      "severity": "info"
+    },
+    {
+      "page": 15,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

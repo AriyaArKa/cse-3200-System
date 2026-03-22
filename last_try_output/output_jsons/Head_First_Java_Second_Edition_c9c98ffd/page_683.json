@@ -1,0 +1,67 @@
+{
+  "page_number": 683,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "649\nAppendix A:\nFinal Code Kitchen\nFinally, the complete version of the BeatBox! \nIt connects to a simple MusicServer 50 that you can \nsend and receive beat patterns with other clients.\nYour message gets sent to \nthe other players, along \nwith your current beat \npattern, when you hit \n“sendIt”.\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat\ndance beat\nIncoming messages from \nplayers. Click one to load \nthe pattern that goes \nwith it, and then click \n‘Start’ to play it.\nthis is a new appendix",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (82x82)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (599x404)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "649\nAppendix A:\nFinal Code Kitchen\nFinally, the complete version of the BeatBox! \nIt connects to a simple MusicServer 50 that you can \nsend and receive beat patterns with other clients.\nYour message gets sent to \nthe other players, along \nwith your current beat \npattern, when you hit \n“sendIt”.\nAndy: groove #2\nChris: groove2 revised\nNigel: dance beat\ndance beat\nIncoming messages from \nplayers. Click one to load \nthe pattern that goes \nwith it, and then click \n‘Start’ to play it.\nthis is a new appendix",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 683,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 683,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 507 chars",
+      "severity": "info"
+    },
+    {
+      "page": 683,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 683,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

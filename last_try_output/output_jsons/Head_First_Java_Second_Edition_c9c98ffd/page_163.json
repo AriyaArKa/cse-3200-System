@@ -1,0 +1,60 @@
+{
+  "page_number": 163,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n129\nWe could just keep the one original array, but change the value of any hit \ncells to -1. That way, we only have ONE array to check and manipulate\n2\nOption two\nOption one is too clunky\nOption one seems like more work than you’d expect. It means that each \ntime the user makes a hit, you have to change the state of the second \narray (the ‘hitCells’ array), oh -- but first you have to CHECK the ‘hitCells’ \narray to see if that cell has already been hit anyway. It would work, but \nthere’5 got to be something better...\n0\n1\n2\n4\n5\n-1\nlocationCells \n(instance variable of \nthe DotCom)\na -1 at a particular cell location means that the cell \nhas already been hit, 50 we’re only looking for non-\nnegative numbers in the array.\nOption two is a little less clunky than option one, but it’5 not very efficient. You’d \nstill have to loop through all three slots (index positions) in the array, even if \none or more are already invalid because they’ve been ‘hit’ (and have a -1 value). \nThere has to be something better...\nOption two is a little better, but \nstill pretty clunky",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (69x98)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "get to know the Java API \nyou are here\n129\nWe could just keep the one original array, but change the value of any hit \ncells to -1. That way, we only have ONE array to check and manipulate\n2\nOption two\nOption one is too clunky\nOption one seems like more work than you’d expect. It means that each \ntime the user makes a hit, you have to change the state of the second \narray (the ‘hitCells’ array), oh -- but first you have to CHECK the ‘hitCells’ \narray to see if that cell has already been hit anyway. It would work, but \nthere’5 got to be something better...\n0\n1\n2\n4\n5\n-1\nlocationCells \n(instance variable of \nthe DotCom)\na -1 at a particular cell location means that the cell \nhas already been hit, 50 we’re only looking for non-\nnegative numbers in the array.\nOption two is a little less clunky than option one, but it’5 not very efficient. You’d \nstill have to loop through all three slots (index positions) in the array, even if \none or more are already invalid because they’ve been ‘hit’ (and have a -1 value). \nThere has to be something better...\nOption two is a little better, but \nstill pretty clunky",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 163,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 163,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1123 chars",
+      "severity": "info"
+    },
+    {
+      "page": 163,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 163,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

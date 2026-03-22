@@ -1,0 +1,85 @@
+{
+  "page_number": 276,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "242 \nchapter 9\nconstructing a new Duck\nConstruct a Duck\nThe key feature of a constructor is that it runs \nbefore the object can be assigned to a reference. \nThat means you get a chance to step in and \ndo things to get the object ready for use. In \nother words, before anyone can use the remote \ncontrol for an object, the object has a chance to \nhelp construct itself. In our Duck constructor, \nwe’re not doing anything useful, but it still \ndemonstrates the sequence of events.\nIf it Quacks like a \nconstructor...\npublic class UseADuck {\n public static void main (String[] args) {\n Duck d = new Duck();\n }\n}\npublic class Duck {\n public Duck() {\n System.out.println(“Quack”);\n }\n}\nFile Edit Window Help Quack\n% java UseADuck\nQuack\nConstructor code.\nThis calls the Duck \nconstructor.\nThe constructor gives \nyou a chance to step into \nthe middle of new.\nSharpen your pencil\nA constructor lets you jump into the middle \nof the object creation step—into the middle \nof new. Can you imagine conditions where \nthat would be useful? Which of these might \nbe useful in a Car class constructor, if the Car \nis part of a Racing Game? Check off the ones \nthat you came up with a scenario for.\n® Increment a counter to track how many objects of this class type \nhave been made.\n® Assign runtime-specific state (data about what’5 happening NOW).\n® Assign values to the object’5 important instance variables.\n® Get and save a reference to the object that’5 creating the new object.\n® Add the object to an ArrayList.\n® Create HAS-A objects.\n® ________________________________________ (your idea here)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Quack"
+        ],
+        [
+          "% java UseADuck\nQuack"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          ""
+        ],
+        [
+          "Sharpen your pencil"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (592x390)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "242 \nchapter 9\nconstructing a new Duck\nConstruct a Duck\nThe key feature of a constructor is that it runs \nbefore the object can be assigned to a reference. \nThat means you get a chance to step in and \ndo things to get the object ready for use. In \nother words, before anyone can use the remote \ncontrol for an object, the object has a chance to \nhelp construct itself. In our Duck constructor, \nwe’re not doing anything useful, but it still \ndemonstrates the sequence of events.\nIf it Quacks like a \nconstructor...\npublic class UseADuck {\n public static void main (String[] args) {\n Duck d = new Duck();\n }\n}\npublic class Duck {\n public Duck() {\n System.out.println(“Quack”);\n }\n}\nFile Edit Window Help Quack\n% java UseADuck\nQuack\nConstructor code.\nThis calls the Duck \nconstructor.\nThe constructor gives \nyou a chance to step into \nthe middle of new.\nSharpen your pencil\nA constructor lets you jump into the middle \nof the object creation step—into the middle \nof new. Can you imagine conditions where \nthat would be useful? Which of these might \nbe useful in a Car class constructor, if the Car \nis part of a Racing Game? Check off the ones \nthat you came up with a scenario for.\n® Increment a counter to track how many objects of this class type \nhave been made.\n® Assign runtime-specific state (data about what’5 happening NOW).\n® Assign values to the object’5 important instance variables.\n® Get and save a reference to the object that’5 creating the new object.\n® Add the object to an ArrayList.\n® Create HAS-A objects.\n® ________________________________________ (your idea here)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 276,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 276,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1619 chars",
+      "severity": "info"
+    },
+    {
+      "page": 276,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 276,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

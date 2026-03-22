@@ -1,0 +1,46 @@
+{
+  "page_number": 651,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n617\nStep two: Make a Remote Implementation\n1\nImplement the Remote interface\nMyRemoteImpl.java\npublic interface \nMyRemote extends \nRemote { }\nYour service has to implement the remote interface—the one \nwith the methods your client is going to call. \npublic class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {\n public String sayHello() {\n return “Server says, ‘Hey’”;\n }\n // more code in class\n}\n2\nExtend UnicastRemoteObject\nIn order to work as a remote service object, your object needs some \nfunctionality related to ‘being remote’. The simplest way is to extend \nUnicastRemoteObject (from the java.rmi.server package) and let that \nclass (your superclass) do the work for you.\npublic class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {\n3\nWrite a no-arg constructor that declares a RemoteException\nYour new superclass, UnicastRemoteObject, has one little problem—its \nconstructor throws a RemoteException. The only way to deal with this is \nto declare a constructor for your remote implementation, just 50 that you \nhave a place to declare the RemoteException. Remember, when a class is \ninstantiated, its superclass constructor is always called. If your superclass \nconstructor throws an exception, you have no choice but to declare that \nyour constructor also throws an exception.\npublic MyRemoteImpl() throws RemoteException { }\n4\nRegister the service with the RMI registry\nNow that you’ve got a remote service, you have to make it available to \nremote clients. You do this by instantiating it and putting it into the RMI \nregistry (which must be running or this line of code fails). When you \nregister the implementation object, the RMI system actually puts the stub in \nthe registry, since that’5 what the client really needs. Register your service \nusing the static rebind() method of the java.rmi.Naming class.\ntry {\n MyRemote service = new MyRemoteImpl();\n Naming.rebind(“Remote Hello”, service);\n} catch(Exception ex) {...} \nThe compiler will make sure that \nyou’ve implemented all the methods \nfrom the interface you implement. In \nthis case, there’5 only one.\nYou don’t have to put anything in \nthe constructor. You just need a \nway to declare that your superclass \nconstructor throws an exception.\nGive your service a name (that clients can use \nto look it up in the registry) and register it \nwith the RMI registry. When you bind the \nservice object, RMI swaps the service for the \nstub and puts the stub in the registry.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "remote deployment with RMI\nyou are here\n617\nStep two: Make a Remote Implementation\n1\nImplement the Remote interface\nMyRemoteImpl.java\npublic interface \nMyRemote extends \nRemote { }\nYour service has to implement the remote interface—the one \nwith the methods your client is going to call. \npublic class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {\n public String sayHello() {\n return “Server says, ‘Hey’”;\n }\n // more code in class\n}\n2\nExtend UnicastRemoteObject\nIn order to work as a remote service object, your object needs some \nfunctionality related to ‘being remote’. The simplest way is to extend \nUnicastRemoteObject (from the java.rmi.server package) and let that \nclass (your superclass) do the work for you.\npublic class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {\n3\nWrite a no-arg constructor that declares a RemoteException\nYour new superclass, UnicastRemoteObject, has one little problem—its \nconstructor throws a RemoteException. The only way to deal with this is \nto declare a constructor for your remote implementation, just 50 that you \nhave a place to declare the RemoteException. Remember, when a class is \ninstantiated, its superclass constructor is always called. If your superclass \nconstructor throws an exception, you have no choice but to declare that \nyour constructor also throws an exception.\npublic MyRemoteImpl() throws RemoteException { }\n4\nRegister the service with the RMI registry\nNow that you’ve got a remote service, you have to make it available to \nremote clients. You do this by instantiating it and putting it into the RMI \nregistry (which must be running or this line of code fails). When you \nregister the implementation object, the RMI system actually puts the stub in \nthe registry, since that’5 what the client really needs. Register your service \nusing the static rebind() method of the java.rmi.Naming class.\ntry {\n MyRemote service = new MyRemoteImpl();\n Naming.rebind(“Remote Hello”, service);\n} catch(Exception ex) {...} \nThe compiler will make sure that \nyou’ve implemented all the methods \nfrom the interface you implement. In \nthis case, there’5 only one.\nYou don’t have to put anything in \nthe constructor. You just need a \nway to declare that your superclass \nconstructor throws an exception.\nGive your service a name (that clients can use \nto look it up in the registry) and register it \nwith the RMI registry. When you bind the \nservice object, RMI swaps the service for the \nstub and puts the stub in the registry.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 651,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 651,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2535 chars",
+      "severity": "info"
+    },
+    {
+      "page": 651,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

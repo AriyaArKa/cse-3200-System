@@ -1,0 +1,58 @@
+{
+  "page_number": 145,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nwriting a program\n111\nrandom() and getUserInput()\nTwo things that need a bit more \nexplaining, are on this page. This is \njust a quick look to keep you going; \nmore details on the GameHelper \nclass are at the end of this chapter.\n1\nGetting user input \nusing the GameHelper \nclass\n2\nMake a random \nnumber\nint randomNum = (int) (Math.random() * 5)\n prep code \ntest code\nreal code\nreal code \n2\n1\nThis is a ‘cast’, and it forces the thing \nimmediately after it to become the \ntype of the cast (i.e. the type in the \nparens). Math.random returns a double, \n50 we have to cast it to be an int (we \nwant a nice whole number between 0 \nand 4). In this case, the cast lops off \nthe fractional part of the double.\nWe declare an int variable to hold \nthe random number we get back.\nA class that comes \nwith Java.\nA method of the \nMath class.\nThe Math.random method \nreturns a number from zero to \njust less than one. 50 this formula \n(with the cast), returns a number \nfrom 0 to 4. (i.e. 0 - 4.999.., \ncast to an int)\nString guess = helper.getUserInput(“enter a number”);\nWe declare a String variable to \nhold the user input String we \nget back (“3”, “5”, etc.).\nAn instance we made earlier, \nof a class that we built to \nhelp with the game. It’5 called \nGameHelper and you haven’t \nseen it yet (you will).\nA method of the GameHelper class \nthat asks the user for command-\nline input, reads it in after the \nuser hits RETURN, and gives back \nthe result as a String.\nThis method takes a String \nargument that it uses to prompt \nthe user at the command-line. \nWhatever you pass in here gets \ndisplayed in the terminal just \nbefore the method starts \nlooking for user input.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "prep code",
+          "test code",
+          "rreeaal lc cooddee"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "you are here\nwriting a program\n111\nrandom() and getUserInput()\nTwo things that need a bit more \nexplaining, are on this page. This is \njust a quick look to keep you going; \nmore details on the GameHelper \nclass are at the end of this chapter.\n1\nGetting user input \nusing the GameHelper \nclass\n2\nMake a random \nnumber\nint randomNum = (int) (Math.random() * 5)\n prep code \ntest code\nreal code\nreal code \n2\n1\nThis is a ‘cast’, and it forces the thing \nimmediately after it to become the \ntype of the cast (i.e. the type in the \nparens). Math.random returns a double, \n50 we have to cast it to be an int (we \nwant a nice whole number between 0 \nand 4). In this case, the cast lops off \nthe fractional part of the double.\nWe declare an int variable to hold \nthe random number we get back.\nA class that comes \nwith Java.\nA method of the \nMath class.\nThe Math.random method \nreturns a number from zero to \njust less than one. 50 this formula \n(with the cast), returns a number \nfrom 0 to 4. (i.e. 0 - 4.999.., \ncast to an int)\nString guess = helper.getUserInput(“enter a number”);\nWe declare a String variable to \nhold the user input String we \nget back (“3”, “5”, etc.).\nAn instance we made earlier, \nof a class that we built to \nhelp with the game. It’5 called \nGameHelper and you haven’t \nseen it yet (you will).\nA method of the GameHelper class \nthat asks the user for command-\nline input, reads it in after the \nuser hits RETURN, and gives back \nthe result as a String.\nThis method takes a String \nargument that it uses to prompt \nthe user at the command-line. \nWhatever you pass in here gets \ndisplayed in the terminal just \nbefore the method starts \nlooking for user input.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 145,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 145,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1680 chars",
+      "severity": "info"
+    },
+    {
+      "page": 145,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

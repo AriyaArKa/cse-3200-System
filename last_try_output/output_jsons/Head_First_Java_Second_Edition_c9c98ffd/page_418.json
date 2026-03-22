@@ -1,0 +1,46 @@
+{
+  "page_number": 418,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "384 \nchapter 12\nanimation using an inner class\nimport javax.swing.*;\nimport java.awt.*;\npublic class SimpleAnimation {\n int x = 70;\n int y = 70;\n public static void main (String[] args) {\n SimpleAnimation gui = new SimpleAnimation ();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame();\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n MyDrawPanel drawPanel = new MyDrawPanel(); \n frame.getContentPane().add(drawPanel);\n frame.setSize(300,300);\n frame.setVisible(true);\n for (int i = 0; i < 130; i++) {\n x++;\n y++;\n drawPanel.repaint();\n \n try {\n Thread.sleep(50);\n } catch(Exception ex) { }\n }\n \n }// close go() method\n class MyDrawPanel extends JPanel {\n \n public void paintComponent(Graphics g) {\n g.setColor(Color.green);\n g.fillOval(x,y,40,40);\n }\n } // close inner class\n} // close outer class\nmake two instance variables in the \nmain GUI class, for the x and y \ncoordinates of the circle.\nThis is where the \naction is! \nNothing new here. Make the widgets \nand put them in the frame.\nrepeat this 130 times\nincrement the x and y \ncoordinates\ntell the panel to repaint itself (50 we \ncan see the circle in the new location)\nSlow it down a little (otherwise it will move 50 \nquickly you won’t SEE it move). Don’t worry, you \nweren’t supposed to already know this. We’11 get to \nthreads in chapter 15.\nUse the continually-updated x and y \ncoordinates of the outer class.\nNow it’5 an \ninner class.\nThe complete simple animation code",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "384 \nchapter 12\nanimation using an inner class\nimport javax.swing.*;\nimport java.awt.*;\npublic class SimpleAnimation {\n int x = 70;\n int y = 70;\n public static void main (String[] args) {\n SimpleAnimation gui = new SimpleAnimation ();\n gui.go();\n }\n public void go() {\n JFrame frame = new JFrame();\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n MyDrawPanel drawPanel = new MyDrawPanel(); \n frame.getContentPane().add(drawPanel);\n frame.setSize(300,300);\n frame.setVisible(true);\n for (int i = 0; i < 130; i++) {\n x++;\n y++;\n drawPanel.repaint();\n \n try {\n Thread.sleep(50);\n } catch(Exception ex) { }\n }\n \n }// close go() method\n class MyDrawPanel extends JPanel {\n \n public void paintComponent(Graphics g) {\n g.setColor(Color.green);\n g.fillOval(x,y,40,40);\n }\n } // close inner class\n} // close outer class\nmake two instance variables in the \nmain GUI class, for the x and y \ncoordinates of the circle.\nThis is where the \naction is! \nNothing new here. Make the widgets \nand put them in the frame.\nrepeat this 130 times\nincrement the x and y \ncoordinates\ntell the panel to repaint itself (50 we \ncan see the circle in the new location)\nSlow it down a little (otherwise it will move 50 \nquickly you won’t SEE it move). Don’t worry, you \nweren’t supposed to already know this. We’11 get to \nthreads in chapter 15.\nUse the continually-updated x and y \ncoordinates of the outer class.\nNow it’5 an \ninner class.\nThe complete simple animation code",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 418,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 418,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1633 chars",
+      "severity": "info"
+    },
+    {
+      "page": 418,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

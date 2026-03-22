@@ -1,0 +1,73 @@
+{
+  "page_number": 74,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "40 \nchapter 2\nFile Edit Window Help Explode\n%java GameLauncher\n1’m thinking of a number between 0 and 9...\nNumber to guess is 7\n1’m guessing 1\n1’m guessing 9\n1’m guessing 9\nPlayer one guessed 1\nPlayer two guessed 9\nPlayer three guessed 9\nPlayers will have to try again.\nNumber to guess is 7\n1’m guessing 3\n1’m guessing 0\n1’m guessing 9\nPlayer one guessed 3\nPlayer two guessed 0\nPlayer three guessed 9\nPlayers will have to try again.\nNumber to guess is 7\n1’m guessing 7\n1’m guessing 5\n1’m guessing 0\nPlayer one guessed 7\nPlayer two guessed 5\nPlayer three guessed 0\nWe have a winner!\nPlayer one got it right? true\nPlayer two got it right? false\nPlayer three got it right? false\nGame is over.\nOutput (it will be different each time you run it) \nRunning the Guessing Game\nGuessing Game\npublic class Player {\n int number = 0; // where the guess goes\n \n public void guess() {\n number = (int) (Math.random() * 10);\n System.out.println(“1’m guessing “ \n + number);\n }\n}\npublic class GameLauncher {\n public static void main (String[] args) {\n GuessGame game = new GuessGame();\n game.startGame();\n }\n}\nJava takes out the \nGarbage\nEach time an object is created \nin Java, it goes into an area of \nmemory known as The Heap. \nAll objects—no matter when, where, \nor how they’re created – live on the \nheap. But it’5 not just any old memory \nheap; the Java heap is actually called the \nGarbage-Collectible Heap. When you \ncreate an object, Java allocates memory \nspace on the heap according to how \nmuch that particular object needs. An \nobject with, say, 15 instance variables, \nwill probably need more space than an \nobject with only two instance variables. \nBut what happens when you need to \nreclaim that space? How do you get an \nobject out of the heap when you’re done \nwith it? Java manages that memory \nfor you! When the JVM can ‘see’ that an \nobject can never be used again, that \nobject becomes eligible for garbage \ncollection. And if you’re running low on \nmemory, the Garbage Collector will run, \nthrow out the unreachable objects, and \nfree up the space, 50 that the space can \nbe reused. In later chapters you’11 learn \nmore about how this works.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Explode"
+        ],
+        [
+          "%java GameLauncher\n1’m thinking of a number between 0 and 9...\nNumber to guess is 7\n1’m guessing 1\n1’m guessing 9\n1’m guessing 9\nPlayer one guessed 1\nPlayer two guessed 9\nPlayer three guessed 9\nPlayers will have to try again.\nNumber to guess is 7\n1’m guessing 3\n1’m guessing 0\n1’m guessing 9\nPlayer one guessed 3\nPlayer two guessed 0\nPlayer three guessed 9\nPlayers will have to try again.\nNumber to guess is 7\n1’m guessing 7\n1’m guessing 5\n1’m guessing 0\nPlayer one guessed 7\nPlayer two guessed 5\nPlayer three guessed 0\nWe have a winner!\nPlayer one got it right? true\nPlayer two got it right? false\nPlayer three got it right? false\nGame is over."
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (117x198)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "40 \nchapter 2\nFile Edit Window Help Explode\n%java GameLauncher\n1’m thinking of a number between 0 and 9...\nNumber to guess is 7\n1’m guessing 1\n1’m guessing 9\n1’m guessing 9\nPlayer one guessed 1\nPlayer two guessed 9\nPlayer three guessed 9\nPlayers will have to try again.\nNumber to guess is 7\n1’m guessing 3\n1’m guessing 0\n1’m guessing 9\nPlayer one guessed 3\nPlayer two guessed 0\nPlayer three guessed 9\nPlayers will have to try again.\nNumber to guess is 7\n1’m guessing 7\n1’m guessing 5\n1’m guessing 0\nPlayer one guessed 7\nPlayer two guessed 5\nPlayer three guessed 0\nWe have a winner!\nPlayer one got it right? true\nPlayer two got it right? false\nPlayer three got it right? false\nGame is over.\nOutput (it will be different each time you run it) \nRunning the Guessing Game\nGuessing Game\npublic class Player {\n int number = 0; // where the guess goes\n \n public void guess() {\n number = (int) (Math.random() * 10);\n System.out.println(“1’m guessing “ \n + number);\n }\n}\npublic class GameLauncher {\n public static void main (String[] args) {\n GuessGame game = new GuessGame();\n game.startGame();\n }\n}\nJava takes out the \nGarbage\nEach time an object is created \nin Java, it goes into an area of \nmemory known as The Heap. \nAll objects—no matter when, where, \nor how they’re created – live on the \nheap. But it’5 not just any old memory \nheap; the Java heap is actually called the \nGarbage-Collectible Heap. When you \ncreate an object, Java allocates memory \nspace on the heap according to how \nmuch that particular object needs. An \nobject with, say, 15 instance variables, \nwill probably need more space than an \nobject with only two instance variables. \nBut what happens when you need to \nreclaim that space? How do you get an \nobject out of the heap when you’re done \nwith it? Java manages that memory \nfor you! When the JVM can ‘see’ that an \nobject can never be used again, that \nobject becomes eligible for garbage \ncollection. And if you’re running low on \nmemory, the Garbage Collector will run, \nthrow out the unreachable objects, and \nfree up the space, 50 that the space can \nbe reused. In later chapters you’11 learn \nmore about how this works.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 74,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 74,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2208 chars",
+      "severity": "info"
+    },
+    {
+      "page": 74,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 74,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

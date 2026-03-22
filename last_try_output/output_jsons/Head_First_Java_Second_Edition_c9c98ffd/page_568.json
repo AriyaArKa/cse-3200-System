@@ -1,0 +1,59 @@
+{
+  "page_number": 568,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "534 \nchapter 16\nIf you put all the Strings (the song titles) into a TreeSet instead of \nan ArrayList, the Strings would automatically land in the right place, \nalphabetically sorted. Whenever you printed the list, the elements would \nalways come out in alphabetical order.\nAnd that’5 great when you need a set (we’11 \ntalk about sets in a few minutes) or when \nyou know that the list must always stay \nsorted alphabetically.\nOn the other hand, if you don’t need the \nlist to stay sorted, TreeSet might be more \nexpensive than you need—every time you \ninsert into a TreeSet, the TreeSet has to take \nthe time to figure out where in the tree the new \nelement must go. With ArrayList, inserts can \nbe blindingly fast because the new element \njust goes in at the end.\nYou could use a TreeSet...\nOr you could use the Collections.sort() method\nCollections.sort()\npublic static void copy(List destination, List source)\npublic static List emptyList()\npublic static void fill(List listToFill, Object objToFillItWith)\npublic static int frequency(Collection c, Object 0)\npublic static void reverse(List list)\npublic static void rotate(List list, int distance)\npublic static void shuffle(List list)\npublic static void sort(List list)\npublic static boolean replaceAll(List list, Object oldVal, Object newVal)\n// many more methods...\njava.util.Collections\nQ: But you CAN add something to an \nArrayList at a specific index instead of just at \nthe end—there’5 an overloaded add() method \nthat takes an int along with the element to add. \n50 wouldn’t it be slower than inserting at the end?\nA: Yes, it’5 slower to insert something in an ArrayList \nsomewhere other than at the end. 50 using the overloaded \nadd(index, element) method doesn’t work as quickly as calling \nthe add(element)—which puts the added element at the end. \nBut most of the time you use ArrayLists, you won’t need to put \nsomething at a specific index.\nQ: 1 see there’5 a LinkedList class, 50 wouldn’t that be better for \ndoing inserts somewhere in the middle? At least if 1 remember my Data \nStructures class from college...\nA: Yes, good spot. The LinkedList can be quicker when you insert or \nremove something from the middle, but for most applications, the difference \nbetween middle inserts into a LinkedList and ArrayList is usually not enough \nto care about unless you’re dealing with a huge number of elements. We’11 \nlook more at LinkedList in a few minutes.\nHmmm... there 15 a sort() method \nin the Collections class. It takes \na List, and since ArrayList \nimplements the List interface, \nArrayList 15-A List. Thanks \nto polymorphism, you can pass an \nArrayList to a method declared \nto take List. \nNote: this is NOT the real Collections \nclass API; we simplified it here by leaving \nout the generic type information (which \nyou’11 see in a few pages).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "replaceAll(List list, Object oldVal, Object newVal\nolean\nmethods...\nHmmm... there 15 a sort() method\ni"
+        ],
+        [
+          "n the Collections\nclass. It takes\na List, and since ArrayList\nimplements\nthe List interface,\nArrayList\n15-A List. Thanks\nto polymorphism,\nyou can pass an\nArrayList\nto a method declared\nto take List."
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "534 \nchapter 16\nIf you put all the Strings (the song titles) into a TreeSet instead of \nan ArrayList, the Strings would automatically land in the right place, \nalphabetically sorted. Whenever you printed the list, the elements would \nalways come out in alphabetical order.\nAnd that’5 great when you need a set (we’11 \ntalk about sets in a few minutes) or when \nyou know that the list must always stay \nsorted alphabetically.\nOn the other hand, if you don’t need the \nlist to stay sorted, TreeSet might be more \nexpensive than you need—every time you \ninsert into a TreeSet, the TreeSet has to take \nthe time to figure out where in the tree the new \nelement must go. With ArrayList, inserts can \nbe blindingly fast because the new element \njust goes in at the end.\nYou could use a TreeSet...\nOr you could use the Collections.sort() method\nCollections.sort()\npublic static void copy(List destination, List source)\npublic static List emptyList()\npublic static void fill(List listToFill, Object objToFillItWith)\npublic static int frequency(Collection c, Object 0)\npublic static void reverse(List list)\npublic static void rotate(List list, int distance)\npublic static void shuffle(List list)\npublic static void sort(List list)\npublic static boolean replaceAll(List list, Object oldVal, Object newVal)\n// many more methods...\njava.util.Collections\nQ: But you CAN add something to an \nArrayList at a specific index instead of just at \nthe end—there’5 an overloaded add() method \nthat takes an int along with the element to add. \n50 wouldn’t it be slower than inserting at the end?\nA: Yes, it’5 slower to insert something in an ArrayList \nsomewhere other than at the end. 50 using the overloaded \nadd(index, element) method doesn’t work as quickly as calling \nthe add(element)—which puts the added element at the end. \nBut most of the time you use ArrayLists, you won’t need to put \nsomething at a specific index.\nQ: 1 see there’5 a LinkedList class, 50 wouldn’t that be better for \ndoing inserts somewhere in the middle? At least if 1 remember my Data \nStructures class from college...\nA: Yes, good spot. The LinkedList can be quicker when you insert or \nremove something from the middle, but for most applications, the difference \nbetween middle inserts into a LinkedList and ArrayList is usually not enough \nto care about unless you’re dealing with a huge number of elements. We’11 \nlook more at LinkedList in a few minutes.\nHmmm... there 15 a sort() method \nin the Collections class. It takes \na List, and since ArrayList \nimplements the List interface, \nArrayList 15-A List. Thanks \nto polymorphism, you can pass an \nArrayList to a method declared \nto take List. \nNote: this is NOT the real Collections \nclass API; we simplified it here by leaving \nout the generic type information (which \nyou’11 see in a few pages).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 568,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 568,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2815 chars",
+      "severity": "info"
+    },
+    {
+      "page": 568,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "page_number": 292,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "258 \nchapter 9\nNow we know how an object is born, \nbut how long does an object live?\nAn object’5 life depends entirely on the life of references \nreferring to it. If the reference is considered “alive”, the \nobject is still alive on the Heap. If the reference dies \n(and we’11 look at what that means in just a moment), the \nobject will die. \n50 if an object’5 life depends on the reference \nvariable’5 life, how long does a variable live?\nThat depends on whether the variable is a local variable \nor an instance variable. The code below shows the life of a \nlocal variable. In the example, the variable is a primitive, \nbut variable lifetime is the same whether it’5 a primitive or \nreference variable.\nsleep()\nread() 5\npublic class TestLifeOne {\n public void read() {\n int 5 = 42;\n sleep();\n }\n public void sleep() {\n 5 = 7;\n }\n}\nA local variable lives only \nwithin the method that \ndeclared the variable.\nVariable ‘5’ can be used only within the \nread() method. In other words, the variable \nis in scope only within its own method. No \nother code in the class (or any other class) \ncan see ‘5’.\n1\n2\n‘5’ is scoped to the read() \nmethod, 50 it can’t be used \nanywhere else\nAn instance variable lives \nas long as the object \ndoes. If the object is still \nalive, 50 are its instance \nvariables.\npublic void read() {\n int 5 = 42;\n // ‘5’ can be used only\n // within this method.\n // When this method ends,\n // ‘5’ disappears completely.\n}\npublic class Life {\n int size;\n public void setSize(int 5) {\n size = 5;\n // ‘5’ disappears at the \n // end of this method,\n // but ‘size’ can be used\n // anywhere in the class\n }\n}\nVariable ‘5’ (this time a method parameter) \nis in scope only within the setSize() \nmethod. But instance variable size is \nscoped to the life of the object as opposed \nto the life of the method.\nBAD!! Not legal to \nuse ‘5’ here!\nThe variable ‘5’ is alive, but in scope only within the \nread() method. When sleep() completes and read() is \non top of the Stack and running again, read() can \nstill see ‘5’. When read() completes and is popped off \nthe Stack, ‘5’ is dead. Pushing up digital daisies.\nsleep() can’t see the ‘5’ variable. Since \nit’5 not in sleep()’5 own Stack frame, \nsleep() doesn’t know anything about it.\nobject lifespan",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x174)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (35x49)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "258 \nchapter 9\nNow we know how an object is born, \nbut how long does an object live?\nAn object’5 life depends entirely on the life of references \nreferring to it. If the reference is considered “alive”, the \nobject is still alive on the Heap. If the reference dies \n(and we’11 look at what that means in just a moment), the \nobject will die. \n50 if an object’5 life depends on the reference \nvariable’5 life, how long does a variable live?\nThat depends on whether the variable is a local variable \nor an instance variable. The code below shows the life of a \nlocal variable. In the example, the variable is a primitive, \nbut variable lifetime is the same whether it’5 a primitive or \nreference variable.\nsleep()\nread() 5\npublic class TestLifeOne {\n public void read() {\n int 5 = 42;\n sleep();\n }\n public void sleep() {\n 5 = 7;\n }\n}\nA local variable lives only \nwithin the method that \ndeclared the variable.\nVariable ‘5’ can be used only within the \nread() method. In other words, the variable \nis in scope only within its own method. No \nother code in the class (or any other class) \ncan see ‘5’.\n1\n2\n‘5’ is scoped to the read() \nmethod, 50 it can’t be used \nanywhere else\nAn instance variable lives \nas long as the object \ndoes. If the object is still \nalive, 50 are its instance \nvariables.\npublic void read() {\n int 5 = 42;\n // ‘5’ can be used only\n // within this method.\n // When this method ends,\n // ‘5’ disappears completely.\n}\npublic class Life {\n int size;\n public void setSize(int 5) {\n size = 5;\n // ‘5’ disappears at the \n // end of this method,\n // but ‘size’ can be used\n // anywhere in the class\n }\n}\nVariable ‘5’ (this time a method parameter) \nis in scope only within the setSize() \nmethod. But instance variable size is \nscoped to the life of the object as opposed \nto the life of the method.\nBAD!! Not legal to \nuse ‘5’ here!\nThe variable ‘5’ is alive, but in scope only within the \nread() method. When sleep() completes and read() is \non top of the Stack and running again, read() can \nstill see ‘5’. When read() completes and is popped off \nthe Stack, ‘5’ is dead. Pushing up digital daisies.\nsleep() can’t see the ‘5’ variable. Since \nit’5 not in sleep()’5 own Stack frame, \nsleep() doesn’t know anything about it.\nobject lifespan",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 292,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 292,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2319 chars",
+      "severity": "info"
+    },
+    {
+      "page": 292,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 292,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

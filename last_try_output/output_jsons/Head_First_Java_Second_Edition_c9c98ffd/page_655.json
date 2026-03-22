@@ -1,0 +1,46 @@
+{
+  "page_number": 655,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n621\nHow does the client get the stub class?\nNow we get to the interesting question. Somehow, someway, the \nclient must have the stub class (that you generated earlier using \nrmic) at the time the client does the lookup, or else the stub won’t \nbe deserialized on the client and the whole thing blows up. In a \nsimple system, you can simply hand-deliver the stub class to the \nclient. \nThere’5 a much cooler way, though, although it’5 beyond the \nscope of this book. But just in case you’re interested, the cooler \nway is called “dynamic class downloading”. With dynamic class \ndownloading, a stub object (or really any Serialized object) is \n‘stamped’ with a URL that tells the RMI system on the client \nwhere to find the class file for that object. Then, in the process of \ndeserializing an object, if RMI can’t find the class locally, it uses \nthat URL to do an HTTP Get to retrieve the class file. 50 you’d \nneed a simple Web server to serve up class files, and you’d also \nneed to change some security parameters on the client. There are \na few other tricky issues with dynamic class downloading, but that’5 \nthe overview. \nimport java.rmi.*;\npublic class MyRemoteClient {\n public static void main (String[] args) {\n new MyRemoteClient().go();\n }\n public void go() {\n try {\n MyRemote service = (MyRemote) Naming.lookup(“rmi://127.0.0.1/Remote Hello”);\n String 5 = service.sayHello(); \n System.out.println(5);\n } catch(Exception ex) {\n ex.printStackTrace();\n }\n }\n}\nComplete client code\nThe Naming class (for doing the \nremiregistry lookup) is in the \njava.rmi package\nIt comes out of the registry as type \nObject, 50 don’t forget the cast\nyou need the IP address \nor hostname\nand the name used to \nbind/rebind the service\nIt looks just like a regular old method \ncall! (Except it must acknowledge the \nRemoteException)",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "remote deployment with RMI\nyou are here\n621\nHow does the client get the stub class?\nNow we get to the interesting question. Somehow, someway, the \nclient must have the stub class (that you generated earlier using \nrmic) at the time the client does the lookup, or else the stub won’t \nbe deserialized on the client and the whole thing blows up. In a \nsimple system, you can simply hand-deliver the stub class to the \nclient. \nThere’5 a much cooler way, though, although it’5 beyond the \nscope of this book. But just in case you’re interested, the cooler \nway is called “dynamic class downloading”. With dynamic class \ndownloading, a stub object (or really any Serialized object) is \n‘stamped’ with a URL that tells the RMI system on the client \nwhere to find the class file for that object. Then, in the process of \ndeserializing an object, if RMI can’t find the class locally, it uses \nthat URL to do an HTTP Get to retrieve the class file. 50 you’d \nneed a simple Web server to serve up class files, and you’d also \nneed to change some security parameters on the client. There are \na few other tricky issues with dynamic class downloading, but that’5 \nthe overview. \nimport java.rmi.*;\npublic class MyRemoteClient {\n public static void main (String[] args) {\n new MyRemoteClient().go();\n }\n public void go() {\n try {\n MyRemote service = (MyRemote) Naming.lookup(“rmi://127.0.0.1/Remote Hello”);\n String 5 = service.sayHello(); \n System.out.println(5);\n } catch(Exception ex) {\n ex.printStackTrace();\n }\n }\n}\nComplete client code\nThe Naming class (for doing the \nremiregistry lookup) is in the \njava.rmi package\nIt comes out of the registry as type \nObject, 50 don’t forget the cast\nyou need the IP address \nor hostname\nand the name used to \nbind/rebind the service\nIt looks just like a regular old method \ncall! (Except it must acknowledge the \nRemoteException)",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 655,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 655,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1921 chars",
+      "severity": "info"
+    },
+    {
+      "page": 655,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

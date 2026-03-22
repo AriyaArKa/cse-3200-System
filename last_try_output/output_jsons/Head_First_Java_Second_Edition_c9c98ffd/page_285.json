@@ -1,0 +1,104 @@
+{
+  "page_number": 285,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n251\nThe role of superclass constructors \nin an object’5 life.\nAll the constructors in an object’5 inheritance \ntree must run when you make a new object. \nLet that sink in.\nThat means every superclass has a constructor \n(because every class has a constructor), and each \nconstructor up the hierarchy runs at the time an \nobject of a subclass is created. \nSaying new is a Big Deal. It starts the \nwhole constructor chain reaction. And yes, \neven abstract classes have constructors. \nAlthough you can never say new on an \nabstract class, an abstract class is still \na superclass, 50 its constructor runs \nwhen someone makes an instance of a \nconcrete subclass.\nThe super constructors run to build \nout the superclass parts of the object. \nRemember, a subclass might inherit \nmethods that depend on superclass state \n(in other words, the value of instance variables \nin the superclass). For an object to be fully-\nformed, all the superclass parts of itself must be \nfully-formed, and that’5 why the super constructor \nmust run. All instance variables from every class \nin the inheritance tree have to be declared and \ninitialized. Even if Animal has instance variables \nthat Hippo doesn’t inherit (if the variables are \nprivate, for example), the Hippo still depends on \nthe Animal methods that use those variables.\nWhen a constructor runs, it immediately calls its \nsuperclass constructor, all the way up the chain \nuntil you get to the class Object constructor. \nOn the next few pages, you’11 learn how superclass \nconstructors are called, and how you can call \nthem yourself. You’11 also learn what to do if your \nsuperclass constructor has arguments!\nA new Hippo object also 15-A Animal \nand 15-A Object. If you want to make a \nHippo, you must also make the Animal \nand Object parts of the Hippo. \nThis all happens in a process called \nConstructor Chaining.\nHippo\nA single Hippo object on the heap\nObject\na\nY\nX\nk\nV\n5\nC\nb\nAnimal\nAnimal\nObject\nHIppo",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Object"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "HIppo"
+        ],
+        [
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (42x59)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (52x94)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n251\nThe role of superclass constructors \nin an object’5 life.\nAll the constructors in an object’5 inheritance \ntree must run when you make a new object. \nLet that sink in.\nThat means every superclass has a constructor \n(because every class has a constructor), and each \nconstructor up the hierarchy runs at the time an \nobject of a subclass is created. \nSaying new is a Big Deal. It starts the \nwhole constructor chain reaction. And yes, \neven abstract classes have constructors. \nAlthough you can never say new on an \nabstract class, an abstract class is still \na superclass, 50 its constructor runs \nwhen someone makes an instance of a \nconcrete subclass.\nThe super constructors run to build \nout the superclass parts of the object. \nRemember, a subclass might inherit \nmethods that depend on superclass state \n(in other words, the value of instance variables \nin the superclass). For an object to be fully-\nformed, all the superclass parts of itself must be \nfully-formed, and that’5 why the super constructor \nmust run. All instance variables from every class \nin the inheritance tree have to be declared and \ninitialized. Even if Animal has instance variables \nthat Hippo doesn’t inherit (if the variables are \nprivate, for example), the Hippo still depends on \nthe Animal methods that use those variables.\nWhen a constructor runs, it immediately calls its \nsuperclass constructor, all the way up the chain \nuntil you get to the class Object constructor. \nOn the next few pages, you’11 learn how superclass \nconstructors are called, and how you can call \nthem yourself. You’11 also learn what to do if your \nsuperclass constructor has arguments!\nA new Hippo object also 15-A Animal \nand 15-A Object. If you want to make a \nHippo, you must also make the Animal \nand Object parts of the Hippo. \nThis all happens in a process called \nConstructor Chaining.\nHippo\nA single Hippo object on the heap\nObject\na\nY\nX\nk\nV\n5\nC\nb\nAnimal\nAnimal\nObject\nHIppo",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 285,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 285,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1982 chars",
+      "severity": "info"
+    },
+    {
+      "page": 285,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 285,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

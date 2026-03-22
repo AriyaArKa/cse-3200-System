@@ -1,0 +1,74 @@
+{
+  "page_number": 105,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "4 methods use instance variables\nthis is a new chapter\n71\nState affects behavior, behavior affects state. We know that objects \nhave state and behavior, represented by instance variables and methods. But until now, we \nhaven’t looked at how state and behavior are related. We already know that each instance of a \nclass (each object of a particular type) can have its own unique values for its instance variables. \nDog A can have a name “Fido” and a weight of 70 pounds. Dog 8 is “Killer” and weighs 9 pounds. \nAnd if the Dog class has a method makeNoise(), well, don’t you think a 70-pound dog barks a \nbit deeper than the little 9-pounder? (Assuming that annoying yippy sound can be considered \na bark.) Fortunately, that’5 the whole point of an object—it has behavior that acts on its state. In \nother words, methods use instance variable values. Like, “if dog is less than 14 pounds, make \nyippy sound, else...” or “increase weight by 5”. Let’5 go change some state.\n How Objects Behave\nThis oughta \nchange her state!",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (50x57)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (64x60)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (822x664)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "4 methods use instance variables\nthis is a new chapter\n71\nState affects behavior, behavior affects state. We know that objects \nhave state and behavior, represented by instance variables and methods. But until now, we \nhaven’t looked at how state and behavior are related. We already know that each instance of a \nclass (each object of a particular type) can have its own unique values for its instance variables. \nDog A can have a name “Fido” and a weight of 70 pounds. Dog 8 is “Killer” and weighs 9 pounds. \nAnd if the Dog class has a method makeNoise(), well, don’t you think a 70-pound dog barks a \nbit deeper than the little 9-pounder? (Assuming that annoying yippy sound can be considered \na bark.) Fortunately, that’5 the whole point of an object—it has behavior that acts on its state. In \nother words, methods use instance variable values. Like, “if dog is less than 14 pounds, make \nyippy sound, else...” or “increase weight by 5”. Let’5 go change some state.\n How Objects Behave\nThis oughta \nchange her state!",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 105,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 105,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1031 chars",
+      "severity": "info"
+    },
+    {
+      "page": 105,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 105,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

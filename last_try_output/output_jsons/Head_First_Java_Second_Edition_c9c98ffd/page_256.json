@@ -1,0 +1,199 @@
+{
+  "page_number": 256,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "222 \nchapter 8\n50 what we REALLY need is:\nÆ A way to have pet behavior in just the pet classes\nÆ A way to guarantee that all pet classes have all of the same \nmethods defined (same name, same arguments, same return \ntypes, no missing methods, etc.), without having to cross your \nfingers and hope all the programmers get it right.\nÆ A way to take advantage of polymorphism 50 that all pets can have \ntheir pet methods called, without having to use arguments, return \ntypes, and arrays for each and every pet class.\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline\nPet\nIt looks like we need TWO \nsuperclasses at the top\nWe make a new abstract \nsuperclass called Pet, and \ngive it all the pet methods.\nCat now extends \nfrom both Animal \nAND Pet, 50 it gets \nthe methods of both.\nDog extends both \nPet and Animal\nThe non-pet Animals \ndon’t have any inherited \nPet stuff.\nmultiple inheritance?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.63,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Feline",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Cat",
+          "",
+          "Lion",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.664,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "Canine",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "Canine"
+        ],
+        [
+          "Hippo",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Hippo",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x109)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (193x91)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x110)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x93)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "222 \nchapter 8\n50 what we REALLY need is:\nÆ A way to have pet behavior in just the pet classes\nÆ A way to guarantee that all pet classes have all of the same \nmethods defined (same name, same arguments, same return \ntypes, no missing methods, etc.), without having to cross your \nfingers and hope all the programmers get it right.\nÆ A way to take advantage of polymorphism 50 that all pets can have \ntheir pet methods called, without having to use arguments, return \ntypes, and arrays for each and every pet class.\nTiger\nAnimal\nCanine\nHippo\nDog\nWolf\nCat\nLion\nFeline\nPet\nIt looks like we need TWO \nsuperclasses at the top\nWe make a new abstract \nsuperclass called Pet, and \ngive it all the pet methods.\nCat now extends \nfrom both Animal \nAND Pet, 50 it gets \nthe methods of both.\nDog extends both \nPet and Animal\nThe non-pet Animals \ndon’t have any inherited \nPet stuff.\nmultiple inheritance?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 256,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 256,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 895 chars",
+      "severity": "info"
+    },
+    {
+      "page": 256,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 256,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

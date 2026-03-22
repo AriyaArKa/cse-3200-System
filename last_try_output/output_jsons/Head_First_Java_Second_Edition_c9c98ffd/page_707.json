@@ -1,0 +1,62 @@
+{
+  "page_number": 707,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "appendix 8 Top Ten Reference\nyou are here\n673\npublic class HfjEnum {\n enum Names { \n JERRY(“lead guitar”) { public String sings() {\n return “plaintively”; }\n },\n BOBBY(“rhythm guitar”) { public String sings() {\n return “hoarsely”; }\n },\n PHIL(“bass”);\n private String instrument;\n Names(String instrument) {\n this.instrument = instrument;\n }\n public String getInstrument() {\n return this.instrument;\n }\n public String sings() {\n return “occasionally”;\n }\n }\n public static void main(String [] args) {\n for (Names n : Names.values()) {\n System.out.print(n);\n System.out.print(“, instrument: “+ n.getInstrument());\n System.out.println(“, sings: “ + n.sings());\n }\n }\n}\n#1 Enumerations, completed\nenumerations\nYou can add a bunch of things to your enum like a constructor, methods, \nvariables, and something called a constant-specific class body. They’re \nnot common, but you might run into them:\nA really tricked-out version of a similar enum\n%java HfjEnum\nJERRY, instrument: lead guitar, sings: plaintively\nBOBBY, instrument: rhythm guitar, sings: hoarsely\nPHIL, instrument: bass, sings: occasionally\n%\nFile Edit Window Help Bootleg \nThese are the 50-called \n“constant-specific class bodies”. \nThink of them as overriding the \nbasic enum method (in this case \nthe “sing()” method), if sing() is \ncalled on a variable with an enum \nvalue of JERRY or BOBBY.\nNotice that the basic “sing()” \nmethod is only called when the \nenum value has no constant-\nspecific class body.\nThis is an argument passed in to \nthe constructor declared below.\nThis is the enum’5 constructor. It runs \nonce for each declared enum value (in \nthis case it runs three times).\nYou’11 see these methods being called from “main()”.\nEvery enum comes with a \nbuilt-in “values()” method \nwhich is typically used in a \n“for” loop as shown.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Bootleg"
+        ],
+        [
+          "%java HfjEnum\nJERRY, instrument: lead guitar, sings: plaintively\nBOBBY, instrument: rhythm guitar, sings: hoarsely\nPHIL, instrument: bass, sings: occasionally\n%"
+        ],
+        [
+          "%java HfjEnum\nJERRY, instrument: lead guitar, sings: plaintively\nBOBBY, instrument: rhythm guitar, sings: hoarsely\nPHIL, instrument: bass, sings: occasionally\n%"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "appendix 8 Top Ten Reference\nyou are here\n673\npublic class HfjEnum {\n enum Names { \n JERRY(“lead guitar”) { public String sings() {\n return “plaintively”; }\n },\n BOBBY(“rhythm guitar”) { public String sings() {\n return “hoarsely”; }\n },\n PHIL(“bass”);\n private String instrument;\n Names(String instrument) {\n this.instrument = instrument;\n }\n public String getInstrument() {\n return this.instrument;\n }\n public String sings() {\n return “occasionally”;\n }\n }\n public static void main(String [] args) {\n for (Names n : Names.values()) {\n System.out.print(n);\n System.out.print(“, instrument: “+ n.getInstrument());\n System.out.println(“, sings: “ + n.sings());\n }\n }\n}\n#1 Enumerations, completed\nenumerations\nYou can add a bunch of things to your enum like a constructor, methods, \nvariables, and something called a constant-specific class body. They’re \nnot common, but you might run into them:\nA really tricked-out version of a similar enum\n%java HfjEnum\nJERRY, instrument: lead guitar, sings: plaintively\nBOBBY, instrument: rhythm guitar, sings: hoarsely\nPHIL, instrument: bass, sings: occasionally\n%\nFile Edit Window Help Bootleg \nThese are the 50-called \n“constant-specific class bodies”. \nThink of them as overriding the \nbasic enum method (in this case \nthe “sing()” method), if sing() is \ncalled on a variable with an enum \nvalue of JERRY or BOBBY.\nNotice that the basic “sing()” \nmethod is only called when the \nenum value has no constant-\nspecific class body.\nThis is an argument passed in to \nthe constructor declared below.\nThis is the enum’5 constructor. It runs \nonce for each declared enum value (in \nthis case it runs three times).\nYou’11 see these methods being called from “main()”.\nEvery enum comes with a \nbuilt-in “values()” method \nwhich is typically used in a \n“for” loop as shown.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 707,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 707,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1962 chars",
+      "severity": "info"
+    },
+    {
+      "page": 707,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 409,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n375\nWouldn’t it be wonderful if you \ncould have two different listener classes, \nbut the listener classes could access the \ninstance variables of the main GUI class, \nalmost as if the listener classes belonged \nto the other class. Then you’d have the best \nof both worlds. Yeah, that would be dreamy. \nBut it’5 just a fantasy...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (606x747)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n375\nWouldn’t it be wonderful if you \ncould have two different listener classes, \nbut the listener classes could access the \ninstance variables of the main GUI class, \nalmost as if the listener classes belonged \nto the other class. Then you’d have the best \nof both worlds. Yeah, that would be dreamy. \nBut it’5 just a fantasy...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 409,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 409,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 355 chars",
+      "severity": "info"
+    },
+    {
+      "page": 409,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 409,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

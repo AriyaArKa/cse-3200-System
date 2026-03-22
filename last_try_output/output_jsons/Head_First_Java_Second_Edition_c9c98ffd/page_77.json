@@ -1,0 +1,149 @@
+{
+  "page_number": 77,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "you are here\nclasses and objects\n43\nA Java program is all scrambled up on \nthe fridge. Can you reconstruct the \ncode snippets to make a working Java \nprogram that produces the output listed \nbelow? Some of the curly braces fell on \nthe floor and they were too small to pick \nup, 50 feel free to add as many of those \nas you need.\nboolean topHat = true;\nboolean snare = true;\nvoid playSnare() {\n System.out.println(“bang bang ba-bang”);\n}\n if (d.snare == true) {\n d.playSnare();\n }\n d.snare = false;\nclass DrumKitTestDrive {\n d.playTopHat();\n public static void main(String [] args) {\nFile Edit Window Help Dance\n% java DrumKitTestDrive\nbang bang ba-bang\nding ding da-ding\n void playTopHat () {\n System.out.println(“ding ding da-ding”);\n }\nclass DrumKit {\nDrumKit d = new DrumKit();\nCode Magnets\nd.playSnare();\nExercise",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.7,
+      "rows": [
+        [
+          "d.playSnare();",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "boolean topHat = true;\nboolean snare = true;",
+          ""
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "v",
+          ""
+        ],
+        [
+          "",
+          "v"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 0.7067,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "d.snare = false;"
+        ],
+        [
+          "",
+          "class DrumKitTestDrive {",
+          ""
+        ],
+        [
+          "d.playTopHat();\nclass D",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "class D"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Dance"
+        ],
+        [
+          "% java DrumKitTestDrive\nbang bang ba-bang\nding ding da-ding"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (135x200)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (142x119)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "you are here\nclasses and objects\n43\nA Java program is all scrambled up on \nthe fridge. Can you reconstruct the \ncode snippets to make a working Java \nprogram that produces the output listed \nbelow? Some of the curly braces fell on \nthe floor and they were too small to pick \nup, 50 feel free to add as many of those \nas you need.\nboolean topHat = true;\nboolean snare = true;\nvoid playSnare() {\n System.out.println(“bang bang ba-bang”);\n}\n if (d.snare == true) {\n d.playSnare();\n }\n d.snare = false;\nclass DrumKitTestDrive {\n d.playTopHat();\n public static void main(String [] args) {\nFile Edit Window Help Dance\n% java DrumKitTestDrive\nbang bang ba-bang\nding ding da-ding\n void playTopHat () {\n System.out.println(“ding ding da-ding”);\n }\nclass DrumKit {\nDrumKit d = new DrumKit();\nCode Magnets\nd.playSnare();\nExercise",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 77,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 77,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 865 chars",
+      "severity": "info"
+    },
+    {
+      "page": 77,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 77,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

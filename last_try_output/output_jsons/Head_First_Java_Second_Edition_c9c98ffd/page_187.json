@@ -1,0 +1,60 @@
+{
+  "page_number": 187,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "get to know the Java API \nyou are here\n153\n coords[x++] = location; // save location\n location += incr; // try ‘next’ adjacent\n if (location >= gridSize){ // out of bounds - ‘bottom’\n success = false; // failure\n }\n if (x>0 && (location % gridLength == 0)) { // out of bounds - right edge\n success = false; // failure\n }\n } else { // found already used location\n // System.out.print(“ used “ + location);\n success = false; // failure\n }\n }\n } // end while\n \n int x = 0; // turn location into alpha coords\n int row = 0;\n int column = 0;\n // System.out.println(“\\n”);\n while (x < comSize) {\n grid[coords[x]] = 1; // mark master grid pts. as ‘used’\n row = (int) (coords[x] / gridLength); // get row value\n column = coords[x] % gridLength; // get numeric column value\n temp = String.valueOf(alphabet.charAt(column)); // convert to alpha\n \n alphaCells.add(temp.concat(Integer.toString(row)));\n x++; \n // System.out.print(“ coord “+x+” = “ + alphaCells.get(x-1));\n }\n \n // System.out.println(“\\n”);\n \n return alphaCells;\n }\n}\nReady-bake \nCode\nGameHelper class code continued...\nThis is the statement that \ntells you exactly where the \nDotCom is located.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (137x137)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "get to know the Java API \nyou are here\n153\n coords[x++] = location; // save location\n location += incr; // try ‘next’ adjacent\n if (location >= gridSize){ // out of bounds - ‘bottom’\n success = false; // failure\n }\n if (x>0 && (location % gridLength == 0)) { // out of bounds - right edge\n success = false; // failure\n }\n } else { // found already used location\n // System.out.print(“ used “ + location);\n success = false; // failure\n }\n }\n } // end while\n \n int x = 0; // turn location into alpha coords\n int row = 0;\n int column = 0;\n // System.out.println(“\\n”);\n while (x < comSize) {\n grid[coords[x]] = 1; // mark master grid pts. as ‘used’\n row = (int) (coords[x] / gridLength); // get row value\n column = coords[x] % gridLength; // get numeric column value\n temp = String.valueOf(alphabet.charAt(column)); // convert to alpha\n \n alphaCells.add(temp.concat(Integer.toString(row)));\n x++; \n // System.out.print(“ coord “+x+” = “ + alphaCells.get(x-1));\n }\n \n // System.out.println(“\\n”);\n \n return alphaCells;\n }\n}\nReady-bake \nCode\nGameHelper class code continued...\nThis is the statement that \ntells you exactly where the \nDotCom is located.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 187,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 187,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1705 chars",
+      "severity": "info"
+    },
+    {
+      "page": 187,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 187,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

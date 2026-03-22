@@ -1,0 +1,46 @@
+{
+  "page_number": 691,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "appendix A Final Code Kitchen \nyou are here\n657\nimport java.io.*;\nimport java.net.*;\nimport java.util.*;\npublic class MusicServer {\n ArrayList<ObjectOutputStream> clientOutputStreams;\n public static void main (String[] args) {\n new MusicServer().go();\n }\n public class ClientHandler implements Runnable {\n ObjectInputStream in; \n Socket clientSocket;\n \n public ClientHandler(Socket socket) {\n try {\n clientSocket = socket;\n in = new ObjectInputStream(clientSocket.getInputStream());\n \n } catch(Exception ex) {ex.printStackTrace();}\n } // close constructor\n public void run() {\n Object 02 = null;\n Object 01 = null;\n try {\n while ((01 = in.readObject()) != null) {\n \n 02 = in.readObject();\n \n System.out.println(“read two objects”);\n tellEveryone(01, 02);\n } // close while\n } catch(Exception ex) {ex.printStackTrace();}\n } // close run\n } // close inner class \nFinal BeatBox server program\nMost of this code is identical to the SimpleChatServer we made in the \nNetworking and Threads chapter. The only difference, in fact, is that this server \nreceives, and then re-sends, two serialized objects instead of a plain String \n(although one of the serialized objects happens to be a String).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [],
+  "full_text": "appendix A Final Code Kitchen \nyou are here\n657\nimport java.io.*;\nimport java.net.*;\nimport java.util.*;\npublic class MusicServer {\n ArrayList<ObjectOutputStream> clientOutputStreams;\n public static void main (String[] args) {\n new MusicServer().go();\n }\n public class ClientHandler implements Runnable {\n ObjectInputStream in; \n Socket clientSocket;\n \n public ClientHandler(Socket socket) {\n try {\n clientSocket = socket;\n in = new ObjectInputStream(clientSocket.getInputStream());\n \n } catch(Exception ex) {ex.printStackTrace();}\n } // close constructor\n public void run() {\n Object 02 = null;\n Object 01 = null;\n try {\n while ((01 = in.readObject()) != null) {\n \n 02 = in.readObject();\n \n System.out.println(“read two objects”);\n tellEveryone(01, 02);\n } // close while\n } catch(Exception ex) {ex.printStackTrace();}\n } // close run\n } // close inner class \nFinal BeatBox server program\nMost of this code is identical to the SimpleChatServer we made in the \nNetworking and Threads chapter. The only difference, in fact, is that this server \nreceives, and then re-sends, two serialized objects instead of a plain String \n(although one of the serialized objects happens to be a String).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 691,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 691,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1446 chars",
+      "severity": "info"
+    },
+    {
+      "page": 691,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

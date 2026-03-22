@@ -1,0 +1,67 @@
+{
+  "page_number": 218,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "184 \nchapter 7\nthe way polymorphism works\nDog myDog = new Dog();\nTells the JVM to allocate space for a ref-\nerence variable. The reference variable \nis, forever, of type Dog. In other words, \na remote control that has buttons to \ncontrol a Dog, but not a Cat or a Button \nor a Socket. \n1\nDeclare a reference \nvariable\nDog\nmyDog\nDog myDog = new Dog();\nTells the JVM to allocate space for \na new Dog object on the garbage \ncollectible heap.\n2\nCreate an object\nDog myDog = new Dog();\nThe 3 steps of object \ndeclaration and assignment\n1\n2\n3\nDog object\nDog myDog = new Dog();\nAssigns the new Dog to the refer-\nence variable myDog. In other \nwords, program the remote control.\n3\nLink the object \nand the reference\nDog object\nDog\nmyDog\nTo see how polymorphism \nworks, we have to step back \nand look at the way we \nnormally declare a reference \nand create an object...",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (222x215)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (119x226)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "184 \nchapter 7\nthe way polymorphism works\nDog myDog = new Dog();\nTells the JVM to allocate space for a ref-\nerence variable. The reference variable \nis, forever, of type Dog. In other words, \na remote control that has buttons to \ncontrol a Dog, but not a Cat or a Button \nor a Socket. \n1\nDeclare a reference \nvariable\nDog\nmyDog\nDog myDog = new Dog();\nTells the JVM to allocate space for \na new Dog object on the garbage \ncollectible heap.\n2\nCreate an object\nDog myDog = new Dog();\nThe 3 steps of object \ndeclaration and assignment\n1\n2\n3\nDog object\nDog myDog = new Dog();\nAssigns the new Dog to the refer-\nence variable myDog. In other \nwords, program the remote control.\n3\nLink the object \nand the reference\nDog object\nDog\nmyDog\nTo see how polymorphism \nworks, we have to step back \nand look at the way we \nnormally declare a reference \nand create an object...",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 218,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 218,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 861 chars",
+      "severity": "info"
+    },
+    {
+      "page": 218,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 218,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 376,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "342 chapter 11\nimport javax.sound.midi.*;\npublic class MiniMiniMusicApp { \n \n public static void main(String[] args) {\n MiniMiniMusicApp mini = new MiniMiniMusicApp();\n mini.play();\n } // close main\n public void play() {\n try {\n Sequencer player = MidiSystem.getSequencer();\n player.open();\n \n Sequence seq = new Sequence(Sequence.PPQ, 4);\n \n Track track = seq.createTrack(); \n \n ShortMessage a = new ShortMessage();\n a.setMessage(144, 1, 44, 100);\n MidiEvent noteOn = new MidiEvent(a, 1); \n track.add(noteOn);\n ShortMessage b = new ShortMessage();\n b.setMessage(128, 1, 44, 100);\n MidiEvent noteOff = new MidiEvent(b, 16); \n track.add(noteOff);\n \n player.setSequence(seq);\n \n player.start();\n } catch (Exception ex) {\n ex.printStackTrace();\n }\n } // close play\n} // close class\nget a Sequencer and open it \n(50 we can use it... a Sequencer \ndoesn’t come already open)\nDon’t worry about the arguments to the \nSequence constructor. Just copy these (think \nof ‘em as Ready-bake arguments). \nAsk the Sequence for a Track. Remember, the \nTrack lives in the Sequence, and the MIDI data \nlives in the Track.\nPut some MidiEvents into the Track. This part \nis mostly Ready-bake code. The only thing you’11 \nhave to care about are the arguments to the \nsetMessage() method, and the arguments to \nthe MidiEvent constructor. We’11 look at those \narguments on the next page.\nStart() the Sequencer (like pushing PLAY)\nDon’t forget to import the midi package\nYour very first sound player app\n1\n2\n3\n4\nType it in and run it. You’11 hear the sound of someone playing a \nsingle note on a piano! (OK, maybe not someone, but something.) \nGive the Sequence to the Sequencer (like \nputting the CD in the CD player)\na sound application",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (105x106)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "342 chapter 11\nimport javax.sound.midi.*;\npublic class MiniMiniMusicApp { \n \n public static void main(String[] args) {\n MiniMiniMusicApp mini = new MiniMiniMusicApp();\n mini.play();\n } // close main\n public void play() {\n try {\n Sequencer player = MidiSystem.getSequencer();\n player.open();\n \n Sequence seq = new Sequence(Sequence.PPQ, 4);\n \n Track track = seq.createTrack(); \n \n ShortMessage a = new ShortMessage();\n a.setMessage(144, 1, 44, 100);\n MidiEvent noteOn = new MidiEvent(a, 1); \n track.add(noteOn);\n ShortMessage b = new ShortMessage();\n b.setMessage(128, 1, 44, 100);\n MidiEvent noteOff = new MidiEvent(b, 16); \n track.add(noteOff);\n \n player.setSequence(seq);\n \n player.start();\n } catch (Exception ex) {\n ex.printStackTrace();\n }\n } // close play\n} // close class\nget a Sequencer and open it \n(50 we can use it... a Sequencer \ndoesn’t come already open)\nDon’t worry about the arguments to the \nSequence constructor. Just copy these (think \nof ‘em as Ready-bake arguments). \nAsk the Sequence for a Track. Remember, the \nTrack lives in the Sequence, and the MIDI data \nlives in the Track.\nPut some MidiEvents into the Track. This part \nis mostly Ready-bake code. The only thing you’11 \nhave to care about are the arguments to the \nsetMessage() method, and the arguments to \nthe MidiEvent constructor. We’11 look at those \narguments on the next page.\nStart() the Sequencer (like pushing PLAY)\nDon’t forget to import the midi package\nYour very first sound player app\n1\n2\n3\n4\nType it in and run it. You’11 hear the sound of someone playing a \nsingle note on a piano! (OK, maybe not someone, but something.) \nGive the Sequence to the Sequencer (like \nputting the CD in the CD player)\na sound application",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 376,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 376,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1926 chars",
+      "severity": "info"
+    },
+    {
+      "page": 376,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 376,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

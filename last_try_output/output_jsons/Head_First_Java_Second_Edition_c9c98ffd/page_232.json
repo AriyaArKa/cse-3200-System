@@ -1,0 +1,238 @@
+{
+  "page_number": 232,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "198 \nchapter 8\nAnimal\nFeline\nroam()\nCanine\nsize\npicture\nfood\nprey\nLion\nsize\npicture\nfood\nprey\nTiger\nsize\npicture\nfood\nprey\nCat\nsize\npicture\nfood\nprey\nWolf\nsize\npicture\nfood\nprey\nDog\nsize\npicture\nfood\nprey\nHippo\nmakeNoise()\neat()\nroam()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()\ndesigning with inheritance \nDid we forget about something \nwhen we designed this?\nThe class structure isn’t too bad. We’ve designed \nit 50 that duplicate code is kept to a minimum, \nand we’ve overridden the methods that we think \nshould have subclass-specific implementations. \nWe’ve made it nice and flexible from a \npolymorphic perspective, because we can design \nAnimal-using programs with Animal arguments \n(and array declarations), 50 that any Animal \nsubtype—including those we never imagined at the \ntime we wrote our code—can be passed in and used \nat runtime. We’ve put the common protocol for \nall Animals (the four methods that we want the \nworld to know all Animals have) in the Animal \nsuperclass, and we’re ready to start making new \nLions and Tigers and Hippos.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "picture\nfood\nhunger\nboundaries\nlocation"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          "Feline"
+        ],
+        [
+          ""
+        ],
+        [
+          "roam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 0.8667,
+      "rows": [
+        [
+          "Canine"
+        ],
+        [
+          ""
+        ],
+        [
+          "roam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Hippo"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Lion"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Dog"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          "Cat"
+        ],
+        [
+          "Tiger\nsize\npicture\nfmooakdeNoise()\nperaet(y)",
+          "size\npicture"
+        ],
+        [
+          "",
+          "mfoaokdeNoise()\neparet(y)"
+        ]
+      ]
+    },
+    {
+      "table_id": 8,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Tiger"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "fmooakdeNoise()\nperaet(y)"
+        ]
+      ]
+    },
+    {
+      "table_id": 9,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Wolf"
+        ],
+        [
+          "size\npicture"
+        ],
+        [
+          "food\nmakeNoise()\nprey\neat()"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (59x93)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (86x109)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (158x113)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (193x91)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (107x110)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "198 \nchapter 8\nAnimal\nFeline\nroam()\nCanine\nsize\npicture\nfood\nprey\nLion\nsize\npicture\nfood\nprey\nTiger\nsize\npicture\nfood\nprey\nCat\nsize\npicture\nfood\nprey\nWolf\nsize\npicture\nfood\nprey\nDog\nsize\npicture\nfood\nprey\nHippo\nmakeNoise()\neat()\nroam()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\nmakeNoise()\neat()\npicture\nfood\nhunger\nboundaries\nlocation\nmakeNoise()\neat()\nsleep()\nroam()\ndesigning with inheritance \nDid we forget about something \nwhen we designed this?\nThe class structure isn’t too bad. We’ve designed \nit 50 that duplicate code is kept to a minimum, \nand we’ve overridden the methods that we think \nshould have subclass-specific implementations. \nWe’ve made it nice and flexible from a \npolymorphic perspective, because we can design \nAnimal-using programs with Animal arguments \n(and array declarations), 50 that any Animal \nsubtype—including those we never imagined at the \ntime we wrote our code—can be passed in and used \nat runtime. We’ve put the common protocol for \nall Animals (the four methods that we want the \nworld to know all Animals have) in the Animal \nsuperclass, and we’re ready to start making new \nLions and Tigers and Hippos.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 232,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 232,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1177 chars",
+      "severity": "info"
+    },
+    {
+      "page": 232,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 232,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

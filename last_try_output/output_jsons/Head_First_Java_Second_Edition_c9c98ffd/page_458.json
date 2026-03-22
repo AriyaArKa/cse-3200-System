@@ -1,0 +1,102 @@
+{
+  "page_number": 458,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "424 \nchapter 13\n1\n3\n2\n4\n5\n6 ?\nExercise\nWhich code goes with \nwhich layout?\nFive of the six screens below were made from one \nof the code fragments on the opposite page. Match \neach of the five code fragments with the layout that \nfragment would produce.\nexercise: Which Layout?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (252x202)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (257x214)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (254x204)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (254x204)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (255x204)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (254x204)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 7,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (166x139)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "424 \nchapter 13\n1\n3\n2\n4\n5\n6 ?\nExercise\nWhich code goes with \nwhich layout?\nFive of the six screens below were made from one \nof the code fragments on the opposite page. Match \neach of the five code fragments with the layout that \nfragment would produce.\nexercise: Which Layout?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 458,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 458,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 278 chars",
+      "severity": "info"
+    },
+    {
+      "page": 458,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 7",
+      "severity": "info"
+    },
+    {
+      "page": 458,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

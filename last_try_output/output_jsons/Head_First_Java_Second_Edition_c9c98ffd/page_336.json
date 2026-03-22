@@ -1,0 +1,60 @@
+{
+  "page_number": 336,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "302 \nchapter 10\nWorking with Dates\nYou need to do more with dates than just get \ntoday’5 date. You need your programs to adjust \ndates, find elapsed times, prioritize schedules, \nheck, make schedules. You need industrial \nstrength date manipulation capabilities. \nYou could make your own date routines of \ncourse... (and don’t forget about leap years!) \nAnd, ouch, those occasional, pesky leap-\nseconds. Wow, this could get complicated. The \ngood news is that the Java API is rich with \nclasses that can help you manipulate dates. \nSometimes it feels a little too rich...\nLet’5 see... how many work \ndays will there be if the \nproject starts on Feb 27th and \nends on August 5th?\nmanipulating dates",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "diagram",
+      "detected_text": "",
+      "description": "A diagram (278x866)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "302 \nchapter 10\nWorking with Dates\nYou need to do more with dates than just get \ntoday’5 date. You need your programs to adjust \ndates, find elapsed times, prioritize schedules, \nheck, make schedules. You need industrial \nstrength date manipulation capabilities. \nYou could make your own date routines of \ncourse... (and don’t forget about leap years!) \nAnd, ouch, those occasional, pesky leap-\nseconds. Wow, this could get complicated. The \ngood news is that the Java API is rich with \nclasses that can help you manipulate dates. \nSometimes it feels a little too rich...\nLet’5 see... how many work \ndays will there be if the \nproject starts on Feb 27th and \nends on August 5th?\nmanipulating dates",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 336,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 336,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 698 chars",
+      "severity": "info"
+    },
+    {
+      "page": 336,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 336,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

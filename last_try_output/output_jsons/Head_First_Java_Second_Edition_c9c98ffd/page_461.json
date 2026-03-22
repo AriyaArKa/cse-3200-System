@@ -1,0 +1,95 @@
+{
+  "page_number": 461,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "using swing\nyou are here\n427\n1\n3\n2\n4\n6\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n JButton button = new JButton(“tesuji”);\n JButton buttonTwo = new JButton(“watari”); \n panel.add(buttonTwo);\n frame.getContentPane().add(BorderLayout.CENTER,button);\n frame.getContentPane().add(BorderLayout.EAST, panel);\n8\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nC\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(button);\nframe.getContentPane().add(BorderLayout.NORTH,buttonTwo);\nframe.getContentPane().add(BorderLayout.EAST, panel);\nA\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\nframe.getContentPane().add(BorderLayout.SOUTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.NORTH,button);\nE\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”); \nframe.getContentPane().add(BorderLayout.NORTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nD\nExercise Solutions",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (230x185)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (230x185)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (230x185)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (228x183)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (233x194)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 6,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (122x102)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "using swing\nyou are here\n427\n1\n3\n2\n4\n6\n JFrame frame = new JFrame(); \n JPanel panel = new JPanel();\n panel.setBackground(Color.darkGray); \n JButton button = new JButton(“tesuji”);\n JButton buttonTwo = new JButton(“watari”); \n panel.add(buttonTwo);\n frame.getContentPane().add(BorderLayout.CENTER,button);\n frame.getContentPane().add(BorderLayout.EAST, panel);\n8\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nC\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\npanel.add(button);\nframe.getContentPane().add(BorderLayout.NORTH,buttonTwo);\nframe.getContentPane().add(BorderLayout.EAST, panel);\nA\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”);\nframe.getContentPane().add(BorderLayout.SOUTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.NORTH,button);\nE\nJFrame frame = new JFrame(); \nJPanel panel = new JPanel();\npanel.setBackground(Color.darkGray); \nJButton button = new JButton(“tesuji”);\nJButton buttonTwo = new JButton(“watari”); \nframe.getContentPane().add(BorderLayout.NORTH,panel);\npanel.add(buttonTwo);\nframe.getContentPane().add(BorderLayout.CENTER,button);\nD\nExercise Solutions",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 461,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 461,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1617 chars",
+      "severity": "info"
+    },
+    {
+      "page": 461,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 6",
+      "severity": "info"
+    },
+    {
+      "page": 461,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

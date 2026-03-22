@@ -1,0 +1,81 @@
+{
+  "page_number": 642,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "608 \nchapter 18\n100% Local Combination 100% Remote\nServlets\nHTTP\nWeb Start \nFile Edit View\nHTTP\nRMI app\nFile Edit View\nRMI\nExecutable \nJar\nFile Edit View\nRMI app\nFile Edit View\nRMI\n50 far in this book, every method we’ve invoked has been on \nan object running in the same virtual machine as the caller. \nIn other words, the calling object and the callee (the object \nwe’re invoking the method on) live on the same heap.\nMethod calls are always between \ntwo objects on the same heap.\nclass Foo {\n void go() {\n Bar b = new Bar();\n b.doStuff();\n }\n public static void main (String[] args) {\n Foo f = new Foo();\n f.go();\n }\n}\nF\n0\n0\n \n0\nb\nj\ne\nc\nt\n8\na\nr\n \n0\nb\nj\ne\nc\nt \ndoStuff()\nIn most applications, when one object \ncalls a method on another, both objects \nare on the same heap. In other words, \nboth are running within the same JVM.\none heap, two objects\nIn the code above, we know that the Foo instance \nreferenced by f and the Bar object referenced by b are \nboth on the same heap, run by the same JVM. Remember, \nthe JVM is responsible for stuffing bits into the reference \nvariable that represent how to get to an object on the heap. \nThe JVM always knows where each object is, and how to \nget to it. But the JVM can know about references on only \nits own heap! You can’t, for example, have a JVM running \non one machine knowing about the heap space of a JVM \nrunning on a different machine. In fact, a JVM running on \none machine can’t know anything about a different JVM \nrunning on the same machine. It makes no difference if \nthe JVMs are on the same or different physical machines; \nit matters only that the two JVMs are, well, two different \ninvocations of the JVM.\nhow many heaps?",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.8,
+      "rows": [
+        [
+          "File Edit View\nExecutable\nJar",
+          "File Edit View\nHTTP\nWeb Start",
+          "File EdiFt iVleie Ewdit View\nRMRIMI\nRMRIM apI appp",
+          "5",
+          "HTTP\nervlets"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (152x153)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "608 \nchapter 18\n100% Local Combination 100% Remote\nServlets\nHTTP\nWeb Start \nFile Edit View\nHTTP\nRMI app\nFile Edit View\nRMI\nExecutable \nJar\nFile Edit View\nRMI app\nFile Edit View\nRMI\n50 far in this book, every method we’ve invoked has been on \nan object running in the same virtual machine as the caller. \nIn other words, the calling object and the callee (the object \nwe’re invoking the method on) live on the same heap.\nMethod calls are always between \ntwo objects on the same heap.\nclass Foo {\n void go() {\n Bar b = new Bar();\n b.doStuff();\n }\n public static void main (String[] args) {\n Foo f = new Foo();\n f.go();\n }\n}\nF\n0\n0\n \n0\nb\nj\ne\nc\nt\n8\na\nr\n \n0\nb\nj\ne\nc\nt \ndoStuff()\nIn most applications, when one object \ncalls a method on another, both objects \nare on the same heap. In other words, \nboth are running within the same JVM.\none heap, two objects\nIn the code above, we know that the Foo instance \nreferenced by f and the Bar object referenced by b are \nboth on the same heap, run by the same JVM. Remember, \nthe JVM is responsible for stuffing bits into the reference \nvariable that represent how to get to an object on the heap. \nThe JVM always knows where each object is, and how to \nget to it. But the JVM can know about references on only \nits own heap! You can’t, for example, have a JVM running \non one machine knowing about the heap space of a JVM \nrunning on a different machine. In fact, a JVM running on \none machine can’t know anything about a different JVM \nrunning on the same machine. It makes no difference if \nthe JVMs are on the same or different physical machines; \nit matters only that the two JVMs are, well, two different \ninvocations of the JVM.\nhow many heaps?",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 642,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 642,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1739 chars",
+      "severity": "info"
+    },
+    {
+      "page": 642,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 642,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

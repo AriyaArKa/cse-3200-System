@@ -1,0 +1,60 @@
+{
+  "page_number": 50,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "16 \nchapter 1\nlet’5 write a program\nTry my new \nphrase-0-matic and \nyou’11 be a slick talker \njust like the boss or \nthose guys in marketing.\npublic class PhraseOMatic {\n public static void main (String[] args) {\n // make three sets of words to choose from. Add your own!\n String[] wordListOne = {“24/7”,”multi-\nTier”,”30,000 foot”,”8-to-8”,”win-win”,”front-\nend”, “web-based”,”pervasive”, “smart”, “six-\nsigma”,”critical-path”, “dynamic”};\n String[] wordListTwo = {“empowered”, “sticky”, \n“value-added”, “oriented”, “centric”, “distributed”, \n“clustered”, “branded”,”outside-the-box”, “positioned”, \n“networked”, “focused”, “leveraged”, “aligned”, \n“targeted”, “shared”, “cooperative”, “accelerated”};\n String[] wordListThree = {“process”, “tipping-\npoint”, “solution”, “architecture”, “core competency”, \n“strategy”, “mindshare”, “portal”, “space”, “vision”, \n“paradigm”, “mission”};\n // find out how many words are in each list\n int oneLength = wordListOne.length;\n int twoLength = wordListTwo.length;\n int threeLength = wordListThree.length;\n // generate three random numbers\n int rand1 = (int) (Math.random() * oneLength);\n int rand2 = (int) (Math.random() * twoLength);\n int rand3 = (int) (Math.random() * threeLength);\n // now build a phrase\n String phrase = wordListOne[rand1] + “ “ + \nwordListTwo[rand2] + “ “ + wordListThree[rand3];\n // print out the phrase\n System.out.println(“What we need is a “ + phrase);\n } \n} \n1\n2\n3\n4\n5\nOK, 50 the beer song wasn’t really a seri-\nous business application. Still need some-\nthing practical to show the boss? Check \nout the Phrase-0-Matic code. \nnote: when you type this into an editor, let \nthe code do its own word/line-wrapping! \nNever hit the return key when you’re typing \na String (a thing between “quotes”) or it \nwon’t compile. 50 the hyphens you see on \nthis page are real, and you can type them, \nbut don’t hit the return key until AFTER \nyou’ve closed a String.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (496x657)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "16 \nchapter 1\nlet’5 write a program\nTry my new \nphrase-0-matic and \nyou’11 be a slick talker \njust like the boss or \nthose guys in marketing.\npublic class PhraseOMatic {\n public static void main (String[] args) {\n // make three sets of words to choose from. Add your own!\n String[] wordListOne = {“24/7”,”multi-\nTier”,”30,000 foot”,”8-to-8”,”win-win”,”front-\nend”, “web-based”,”pervasive”, “smart”, “six-\nsigma”,”critical-path”, “dynamic”};\n String[] wordListTwo = {“empowered”, “sticky”, \n“value-added”, “oriented”, “centric”, “distributed”, \n“clustered”, “branded”,”outside-the-box”, “positioned”, \n“networked”, “focused”, “leveraged”, “aligned”, \n“targeted”, “shared”, “cooperative”, “accelerated”};\n String[] wordListThree = {“process”, “tipping-\npoint”, “solution”, “architecture”, “core competency”, \n“strategy”, “mindshare”, “portal”, “space”, “vision”, \n“paradigm”, “mission”};\n // find out how many words are in each list\n int oneLength = wordListOne.length;\n int twoLength = wordListTwo.length;\n int threeLength = wordListThree.length;\n // generate three random numbers\n int rand1 = (int) (Math.random() * oneLength);\n int rand2 = (int) (Math.random() * twoLength);\n int rand3 = (int) (Math.random() * threeLength);\n // now build a phrase\n String phrase = wordListOne[rand1] + “ “ + \nwordListTwo[rand2] + “ “ + wordListThree[rand3];\n // print out the phrase\n System.out.println(“What we need is a “ + phrase);\n } \n} \n1\n2\n3\n4\n5\nOK, 50 the beer song wasn’t really a seri-\nous business application. Still need some-\nthing practical to show the boss? Check \nout the Phrase-0-Matic code. \nnote: when you type this into an editor, let \nthe code do its own word/line-wrapping! \nNever hit the return key when you’re typing \na String (a thing between “quotes”) or it \nwon’t compile. 50 the hyphens you see on \nthis page are real, and you can type them, \nbut don’t hit the return key until AFTER \nyou’ve closed a String.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 50,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 50,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1963 chars",
+      "severity": "info"
+    },
+    {
+      "page": 50,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 50,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

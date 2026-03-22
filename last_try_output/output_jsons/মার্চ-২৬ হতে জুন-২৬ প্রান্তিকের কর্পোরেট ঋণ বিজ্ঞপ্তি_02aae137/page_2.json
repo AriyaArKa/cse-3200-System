@@ -1,0 +1,812 @@
+{
+  "page_number": 2,
+  "extraction": {
+    "method": "ocr_local",
+    "engine": "EasyOCR",
+    "confidence_score": 0.828,
+    "correction_applied": true,
+    "numeric_validation_passed": true
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্বিদ্যালয়",
+      "confidence": 0.461,
+      "bbox": [
+        337,
+        0,
+        887,
+        59
+      ]
+    },
+    {
+      "block_id": 2,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "খুললী-১২০৩",
+      "confidence": 0.4345,
+      "bbox": [
+        554,
+        78,
+        668,
+        106
+      ]
+    },
+    {
+      "block_id": 3,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "জনতা ব্যাংক কর্পোরেট ঋণ আবেদন ফর্ম",
+      "confidence": 0.6634,
+      "bbox": [
+        375,
+        112,
+        844,
+        162
+      ]
+    },
+    {
+      "block_id": 4,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "জাইডি নং-",
+      "confidence": 0.3861,
+      "bbox": [
+        920,
+        163,
+        1039,
+        206
+      ]
+    },
+    {
+      "block_id": 5,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১",
+      "confidence": 0.9997,
+      "bbox": [
+        25,
+        263,
+        43,
+        287
+      ]
+    },
+    {
+      "block_id": 6,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "আবেদনকারীর নাম (বাংলায়)",
+      "confidence": 0.6666,
+      "bbox": [
+        105,
+        256,
+        395,
+        297
+      ]
+    },
+    {
+      "block_id": 7,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(ইংরেজি বড় হরফে)",
+      "confidence": 0.8164,
+      "bbox": [
+        185,
+        307,
+        399,
+        345
+      ]
+    },
+    {
+      "block_id": 8,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "খ) মাতার নাম",
+      "confidence": 0.4509,
+      "bbox": [
+        72,
+        356,
+        226,
+        386
+      ]
+    },
+    {
+      "block_id": 9,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গ) পিতার নাম",
+      "confidence": 0.561,
+      "bbox": [
+        71,
+        399,
+        227,
+        437
+      ]
+    },
+    {
+      "block_id": 10,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "৭) স্ত্রী স্বামী (প্রযোজ্যক্ষেত্রে) :",
+      "confidence": 0.1731,
+      "bbox": [
+        71,
+        445,
+        351,
+        485
+      ]
+    },
+    {
+      "block_id": 11,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "৬) জাতীয় পরিচয়পত্র নম্বর (কপি সংযুক্ত করুন)",
+      "confidence": 0.4814,
+      "bbox": [
+        69,
+        489,
+        529,
+        534
+      ]
+    },
+    {
+      "block_id": 12,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চ) মোরাইলঃ .",
+      "confidence": 0.5271,
+      "bbox": [
+        69,
+        539,
+        207,
+        577
+      ]
+    },
+    {
+      "block_id": 13,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ই-মেইলঃ",
+      "confidence": 0.9867,
+      "bbox": [
+        605,
+        545,
+        697,
+        575
+      ]
+    },
+    {
+      "block_id": 14,
+      "type": "paragraph",
+      "language": "en",
+      "text": "২",
+      "confidence": 0.9956,
+      "bbox": [
+        21,
+        595,
+        41,
+        617
+      ]
+    },
+    {
+      "block_id": 15,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পদবী",
+      "confidence": 0.4621,
+      "bbox": [
+        69,
+        585,
+        145,
+        621
+      ]
+    },
+    {
+      "block_id": 16,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ইিনস্টিটিউট বিভাগ দপ্তর",
+      "confidence": 0.455,
+      "bbox": [
+        652,
+        591,
+        885,
+        629
+      ]
+    },
+    {
+      "block_id": 17,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৩",
+      "confidence": 0.9988,
+      "bbox": [
+        18,
+        640,
+        42,
+        664
+      ]
+    },
+    {
+      "block_id": 18,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চাকুরীতে ১ম যোগদানের তারিখ",
+      "confidence": 0.5262,
+      "bbox": [
+        67,
+        633,
+        381,
+        671
+      ]
+    },
+    {
+      "block_id": 19,
+      "type": "paragraph",
+      "language": "en",
+      "text": "8",
+      "confidence": 0.694,
+      "bbox": [
+        19,
+        689,
+        39,
+        711
+      ]
+    },
+    {
+      "block_id": 20,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চাকুরীর সময়কাল (আবেদনের শেষ তারিখে)",
+      "confidence": 0.5524,
+      "bbox": [
+        65,
+        681,
+        482,
+        724
+      ]
+    },
+    {
+      "block_id": 21,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৫",
+      "confidence": 0.9917,
+      "bbox": [
+        16,
+        734,
+        40,
+        760
+      ]
+    },
+    {
+      "block_id": 22,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চাকুরিতে ১ম নিয়মিত করণের তারিখ",
+      "confidence": 0.3871,
+      "bbox": [
+        65,
+        729,
+        425,
+        767
+      ]
+    },
+    {
+      "block_id": 23,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৬",
+      "confidence": 1.0,
+      "bbox": [
+        17,
+        783,
+        37,
+        805
+      ]
+    },
+    {
+      "block_id": 24,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "মাসিক মূল বেতন টাকা",
+      "confidence": 0.8173,
+      "bbox": [
+        63,
+        775,
+        297,
+        813
+      ]
+    },
+    {
+      "block_id": 25,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "(গ্রেড",
+      "confidence": 0.9695,
+      "bbox": [
+        520,
+        784,
+        580,
+        816
+      ]
+    },
+    {
+      "block_id": 26,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৭",
+      "confidence": 0.8965,
+      "bbox": [
+        17,
+        829,
+        37,
+        851
+      ]
+    },
+    {
+      "block_id": 27,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বতমন",
+      "confidence": 0.8698,
+      "bbox": [
+        64,
+        828,
+        136,
+        852
+      ]
+    },
+    {
+      "block_id": 28,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঠিকানা",
+      "confidence": 0.6099,
+      "bbox": [
+        133,
+        821,
+        223,
+        857
+      ]
+    },
+    {
+      "block_id": 29,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৮",
+      "confidence": 1.0,
+      "bbox": [
+        13,
+        923,
+        33,
+        947
+      ]
+    },
+    {
+      "block_id": 30,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "স্থায়ী ঠিকানা ৪",
+      "confidence": 0.6131,
+      "bbox": [
+        63,
+        915,
+        197,
+        951
+      ]
+    },
+    {
+      "block_id": 31,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৯.",
+      "confidence": 0.8528,
+      "bbox": [
+        10,
+        1016,
+        38,
+        1040
+      ]
+    },
+    {
+      "block_id": 32,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঋণের প্রকার (টিক দিন) ৪ গৃহ নির্মাণের উদ্দেশ্যে জমি ক্রয় গৃহ নির্মাণ গৃহ ক্রয় ফ্লাট ক্রয়",
+      "confidence": 0.5181,
+      "bbox": [
+        51,
+        1008,
+        858,
+        1056
+      ]
+    },
+    {
+      "block_id": 33,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১০.",
+      "confidence": 0.8794,
+      "bbox": [
+        10,
+        1060,
+        50,
+        1086
+      ]
+    },
+    {
+      "block_id": 34,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "চাহিদাকৃত ঋণের পরিমাণ (পূর্ণ সংখ্যায় এবং হাজার",
+      "confidence": 0.4141,
+      "bbox": [
+        55,
+        1054,
+        537,
+        1097
+      ]
+    },
+    {
+      "block_id": 35,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিভাজ্য)",
+      "confidence": 0.6369,
+      "bbox": [
+        594,
+        1058,
+        679,
+        1097
+      ]
+    },
+    {
+      "block_id": 36,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১১",
+      "confidence": 0.9991,
+      "bbox": [
+        8,
+        1108,
+        42,
+        1132
+      ]
+    },
+    {
+      "block_id": 37,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অপরিশোধিত কর্পোরেট ঋণের তথ্য (যদি থাকে)",
+      "confidence": 0.6007,
+      "bbox": [
+        55,
+        1101,
+        519,
+        1143
+      ]
+    },
+    {
+      "block_id": 38,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "১ ! গ্রহণের তারিখ",
+      "confidence": 0.4926,
+      "bbox": [
+        88,
+        1150,
+        278,
+        1182
+      ]
+    },
+    {
+      "block_id": 39,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "গৃহীত ঋণের পরিমান :",
+      "confidence": 0.7026,
+      "bbox": [
+        609,
+        1153,
+        823,
+        1191
+      ]
+    },
+    {
+      "block_id": 40,
+      "type": "paragraph",
+      "language": "en",
+      "text": "৩",
+      "confidence": 0.9981,
+      "bbox": [
+        87,
+        1203,
+        109,
+        1223
+      ]
+    },
+    {
+      "block_id": 41,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অপরিশোধিত কিস্তির সংখ্যা :",
+      "confidence": 0.5258,
+      "bbox": [
+        121,
+        1195,
+        397,
+        1231
+      ]
+    },
+    {
+      "block_id": 42,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১২",
+      "confidence": 0.9997,
+      "bbox": [
+        4,
+        1244,
+        42,
+        1270
+      ]
+    },
+    {
+      "block_id": 43,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "ঋণ",
+      "confidence": 0.7487,
+      "bbox": [
+        54,
+        1242,
+        92,
+        1268
+      ]
+    },
+    {
+      "block_id": 44,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তফসিলীকরণ (নবায়ন) সংখ্যা ৪",
+      "confidence": 0.8787,
+      "bbox": [
+        89,
+        1233,
+        382,
+        1281
+      ]
+    },
+    {
+      "block_id": 45,
+      "type": "paragraph",
+      "language": "en",
+      "text": "১২",
+      "confidence": 0.5522,
+      "bbox": [
+        4,
+        1290,
+        40,
+        1316
+      ]
+    },
+    {
+      "block_id": 46,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "জনতা ব্যাংক হিসাব নম্বর (স্যালারী হিসাব)",
+      "confidence": 0.6183,
+      "bbox": [
+        53,
+        1283,
+        467,
+        1325
+      ]
+    },
+    {
+      "block_id": 47,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "আমি অঙ্গীকার করছি যে; খুলনা প্রকৌশল ও প্রযুক্তি বিশবিদ্যালয়ের জনতা ব্যাংক কর্পোরেট ঋণ নীতিমালা মেনে চলবো",
+      "confidence": 0.3794,
+      "bbox": [
+        51,
+        1331,
+        1159,
+        1375
+      ]
+    },
+    {
+      "block_id": 48,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "অন্যথায় , কতৃপক্ষ",
+      "confidence": 0.4818,
+      "bbox": [
+        1,
+        1379,
+        167,
+        1415
+      ]
+    },
+    {
+      "block_id": 49,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিষয়ে কোন ব্যবস্থা গ্রহণ করলে",
+      "confidence": 0.7017,
+      "bbox": [
+        199,
+        1377,
+        521,
+        1415
+      ]
+    },
+    {
+      "block_id": 50,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "আমার কোন আপত্তি থাকবে না ! আমার নামে ঋণ মঞ্জুর করা হলে",
+      "confidence": 0.5147,
+      "bbox": [
+        525,
+        1381,
+        1171,
+        1419
+      ]
+    },
+    {
+      "block_id": 51,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "সরবরাহকৃত ছকে বন্ড সম্পীদন করে জমা দিতে বাধ্য থাকিব",
+      "confidence": 0.5262,
+      "bbox": [
+        0,
+        1424,
+        553,
+        1464
+      ]
+    },
+    {
+      "block_id": 52,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "আবেদনকারীর স্বাক্ষর",
+      "confidence": 0.898,
+      "bbox": [
+        747,
+        1567,
+        949,
+        1603
+      ]
+    },
+    {
+      "block_id": 53,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "নাম",
+      "confidence": 0.7864,
+      "bbox": [
+        744,
+        1618,
+        808,
+        1647
+      ]
+    },
+    {
+      "block_id": 54,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "তারিখঃ",
+      "confidence": 0.9995,
+      "bbox": [
+        78,
+        1658,
+        154,
+        1686
+      ]
+    },
+    {
+      "block_id": 55,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "পদবী",
+      "confidence": 0.5818,
+      "bbox": [
+        746,
+        1660,
+        822,
+        1692
+      ]
+    },
+    {
+      "block_id": 56,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "বিভাগ",
+      "confidence": 0.6045,
+      "bbox": [
+        746,
+        1708,
+        828,
+        1740
+      ]
+    },
+    {
+      "block_id": 57,
+      "type": "paragraph",
+      "language": "bn",
+      "text": "টাকায় '",
+      "confidence": 0.8392,
+      "bbox": [
+        527.19,
+        1056.15,
+        602.81,
+        1098.85
+      ]
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (1371x1933)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্বিদ্যালয়\nখুললী-১২০৩\nজনতা ব্যাংক কর্পোরেট ঋণ আবেদন ফর্ম\nজাইডি নং-\n১\nআবেদনকারীর নাম (বাংলায়) \n(ইংরেজি বড় হরফে) \nখ) মাতার নাম \nগ) পিতার নাম \n৭) স্ত্রী স্বামী (প্রযোজ্যক্ষেত্রে) :\n৬) জাতীয় পরিচয়পত্র নম্বর (কপি সংযুক্ত করুন) \nচ) মোরাইলঃ .\nই-মেইলঃ\n২\nপদবী \nইিনস্টিটিউট বিভাগ দপ্তর \n৩\nচাকুরীতে ১ম যোগদানের তারিখ \n8\nচাকুরীর সময়কাল (আবেদনের শেষ তারিখে)\n৫\nচাকুরিতে ১ম নিয়মিত করণের তারিখ \n৬\nমাসিক মূল বেতন টাকা \n(গ্রেড\n৭\nবতমন\nঠিকানা \n৮\nস্থায়ী ঠিকানা ৪\n৯.\nঋণের প্রকার (টিক দিন) ৪ গৃহ নির্মাণের উদ্দেশ্যে জমি ক্রয় গৃহ নির্মাণ গৃহ ক্রয় ফ্লাট ক্রয়\n১০.\nচাহিদাকৃত ঋণের পরিমাণ (পূর্ণ সংখ্যায় এবং হাজার\nবিভাজ্য)\n১১\nঅপরিশোধিত কর্পোরেট ঋণের তথ্য (যদি থাকে) \n১ ! গ্রহণের তারিখ \nগৃহীত ঋণের পরিমান :\n৩\nঅপরিশোধিত কিস্তির সংখ্যা :\n১২\nঋণ\nতফসিলীকরণ (নবায়ন) সংখ্যা ৪\n১২\nজনতা ব্যাংক হিসাব নম্বর (স্যালারী হিসাব) \nআমি অঙ্গীকার করছি যে; খুলনা প্রকৌশল ও প্রযুক্তি বিশবিদ্যালয়ের জনতা ব্যাংক কর্পোরেট ঋণ নীতিমালা মেনে চলবো\nঅন্যথায় , কতৃপক্ষ\nবিষয়ে কোন ব্যবস্থা গ্রহণ করলে\nআমার কোন আপত্তি থাকবে না ! আমার নামে ঋণ মঞ্জুর করা হলে\nসরবরাহকৃত ছকে বন্ড সম্পীদন করে জমা দিতে বাধ্য থাকিব\nআবেদনকারীর স্বাক্ষর\nনাম \nতারিখঃ\nপদবী \nবিভাগ \nটাকায় '",
+  "source_image_path": "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/last_try_output/output_images/মার্চ-২৬ হতে জুন-২৬ প্রান্তিকের কর্পোরেট ঋণ বিজ্ঞপ্তি_02aae137/page_2.png",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: scanned",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "trying_ollama_first",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "ollama_empty",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "ollama_failed_using_easyocr",
+      "severity": "warning"
+    },
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "easyocr: 57 detections",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 2,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=ocr_local, engine=EasyOCR",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "page_number": 487,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "serialization and file 1/0\nyou are here\n453\nString\nBufferedWriter\n(a chain stream that \nworks with characters)\nis written to\nString is put into a buffer \nwith other Strings\nFileWriter\n(a connection stream \nthat writes characters \nas opposed to bytes)\n“Aspen Denver Boulder”\nWhen the buffer is full, the \nStrings are all written to\nAspen\nDenver\nBoulder\nFile\ndestination\nis chained to\n“Boulder”\n“Boulder”\n“Denver”“Aspen”\nThe beauty of buffers\nIf there were no buffers, it would be like \nshopping without a cart. You’d have to \ncarry each thing out to your car, one soup \ncan or toilet paper roll at a time.\nThe cool thing about buffers is that they’re much more efficient than \nworking without them. You can write to a file using FileWriter alone, by \ncalling write(someString), but FileWriter writes each and every thing you \npass to the file each and every time. That’5 overhead you don’t want or \nneed, since every trip to the disk is a Big Deal compared to manipulating \ndata in memory. By chaining a BufferedWriter onto a FileWriter, the \nBufferedWriter will hold all the stuff you write to it until it’5 full. Only when \nthe buffer is full will the FileWriter actually be told to write to the file on disk. \nIf you do want to send data before the buffer is full, you do have control.\n Just Flush It. Calls to writer.flush() say, “send whatever’5 in the buffer, now!”\nbuffers give you a temporary holding \nplace to group things until the holder \n(like the cart) is full. You get to make \nfar fewer trips when you use a buffer.\nBufferedWriter writer = new BufferedWriter(new FileWriter(aFile));\nNotice that we don’t even \nneed to keep a reference to \nthe FileWriter object. The \nonly thing we care about is the \nBufferedWriter, because that’5 \nthe object we’11 call methods \non, and when we close the \nBufferedWriter, it will take \ncare of the rest of the chain.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (443x434)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "serialization and file 1/0\nyou are here\n453\nString\nBufferedWriter\n(a chain stream that \nworks with characters)\nis written to\nString is put into a buffer \nwith other Strings\nFileWriter\n(a connection stream \nthat writes characters \nas opposed to bytes)\n“Aspen Denver Boulder”\nWhen the buffer is full, the \nStrings are all written to\nAspen\nDenver\nBoulder\nFile\ndestination\nis chained to\n“Boulder”\n“Boulder”\n“Denver”“Aspen”\nThe beauty of buffers\nIf there were no buffers, it would be like \nshopping without a cart. You’d have to \ncarry each thing out to your car, one soup \ncan or toilet paper roll at a time.\nThe cool thing about buffers is that they’re much more efficient than \nworking without them. You can write to a file using FileWriter alone, by \ncalling write(someString), but FileWriter writes each and every thing you \npass to the file each and every time. That’5 overhead you don’t want or \nneed, since every trip to the disk is a Big Deal compared to manipulating \ndata in memory. By chaining a BufferedWriter onto a FileWriter, the \nBufferedWriter will hold all the stuff you write to it until it’5 full. Only when \nthe buffer is full will the FileWriter actually be told to write to the file on disk. \nIf you do want to send data before the buffer is full, you do have control.\n Just Flush It. Calls to writer.flush() say, “send whatever’5 in the buffer, now!”\nbuffers give you a temporary holding \nplace to group things until the holder \n(like the cart) is full. You get to make \nfar fewer trips when you use a buffer.\nBufferedWriter writer = new BufferedWriter(new FileWriter(aFile));\nNotice that we don’t even \nneed to keep a reference to \nthe FileWriter object. The \nonly thing we care about is the \nBufferedWriter, because that’5 \nthe object we’11 call methods \non, and when we close the \nBufferedWriter, it will take \ncare of the rest of the chain.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 487,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 487,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1868 chars",
+      "severity": "info"
+    },
+    {
+      "page": 487,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 487,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

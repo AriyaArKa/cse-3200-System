@@ -1,0 +1,74 @@
+{
+  "page_number": 397,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "getting gui\nyou are here\n363\nNow that we know a little about how events work (we’11 learn \nmore later), let’5 get back to putting stuff on the screen. \nWe’11 spend a few minutes playing with some fun ways to get \ngraphic, before returning to event handling. \nGetting back to graphics...\nThree ways to put things on your GUI:\nPut widgets on a frame\n Add buttons, menus, radio buttons, etc.\nframe.getContentPane().add(myButton);\nThe javax.swing package has more than a dozen \nwidget types.\n1\nPut a JPEG on a widget\nYou can put your own images on a widget.\ngraphics.drawImage(myPic,10,10,this);\n3\nDraw 2D graphics on a widget\nUse a graphics object to paint shapes.\ngraphics.fillOval(70,70,100,100);\nYou can paint a lot more than boxes and circles; \nthe Java2D API is full of fun, sophisticated \ngraphics methods.\n2\nNumber of Head \nFirst Java books \nmistakenly \nbought by coffee \nhouse baristas.\nart, games, \nsimulations, etc.\ncharts, \nbusiness \ngraphics, \netc.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (217x216)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (401x331)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (325x324)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "getting gui\nyou are here\n363\nNow that we know a little about how events work (we’11 learn \nmore later), let’5 get back to putting stuff on the screen. \nWe’11 spend a few minutes playing with some fun ways to get \ngraphic, before returning to event handling. \nGetting back to graphics...\nThree ways to put things on your GUI:\nPut widgets on a frame\n Add buttons, menus, radio buttons, etc.\nframe.getContentPane().add(myButton);\nThe javax.swing package has more than a dozen \nwidget types.\n1\nPut a JPEG on a widget\nYou can put your own images on a widget.\ngraphics.drawImage(myPic,10,10,this);\n3\nDraw 2D graphics on a widget\nUse a graphics object to paint shapes.\ngraphics.fillOval(70,70,100,100);\nYou can paint a lot more than boxes and circles; \nthe Java2D API is full of fun, sophisticated \ngraphics methods.\n2\nNumber of Head \nFirst Java books \nmistakenly \nbought by coffee \nhouse baristas.\nart, games, \nsimulations, etc.\ncharts, \nbusiness \ngraphics, \netc.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 397,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 397,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 959 chars",
+      "severity": "info"
+    },
+    {
+      "page": 397,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 3",
+      "severity": "info"
+    },
+    {
+      "page": 397,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

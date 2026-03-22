@@ -1,0 +1,149 @@
+{
+  "page_number": 673,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "remote deployment with RMI\nyou are here\n639\n1\ninterface ServiceServer implements Remote\nA regular old RMI remote interface for the remote service (the \nremote service has the method for getting the service list and \nreturning a selected service).\nThe classes and interfaces:\n2\nclass ServiceServerImpl implements ServiceServer\nThe actual RMI remote service (extends UnicastRemoteObject). \nIts job is to instantiate and store all the services (the things \nthat will be shipped to the client), and register the server itself \n(ServiceServerImpl) with the RMI registry.\n3\nclass ServiceBrowser\nThe client. It builds a very simple GUI, does a lookup in the RMI \nregistry to get the ServiceServer stub, then calls a remote method on \nit to get the list of services to display in the GUI list.\n4\ninterface Service\nThis is the key to everything. This very simple interface has just one \nmethod, getGuiPanel(). Every service that gets shipped over to the \nclient must implement this interface. This is what makes the whole thing \nUNIVERSAL! By implementing this interface, a service can come over \neven though the client has no idea what the actual class (or classes) \nare that make up that service. All the client knows is that whatever \ncomes over, it implements the Service interface, 50 it MUST have a \ngetGuiPanel() method. \nThe client gets a serialized object as a result of calling \ngetService(selectedSvc) on the ServiceServer stub, and all the client \nsays to that object is, “1 don’t know who or what you are, but 1 DO \nknow that you implement the Service interface, 50 1 know 1 can call \ngetGuiPanel() on you. And since getGuiPanel() returns a JPanel, 1’11 just \nslap it into the browser GUI and start interacting with it!\n5\nclass DiceService implements Service\nGot dice? If not, but you need some, use this service to roll anywhere \nfrom 1 to 6 virtual dice for you.\n6\nclass MiniMusicService implements Service\nRemember that fabulous little ‘music video’ program from the first \nGUI Code Kitchen? We’ve turned it into a service, and you can play it \nover and over and over until your roommates finally leave.\n7\nclass DayOfTheWeekService implements Service\nWere you born on a Friday? Type in your birthday and find out.\nServiceServer\ngetServicesList()\ngetService()\nServiceServerImpl\ngetServicesList()\ngetService()\nServiceBrowser\nmain()\nService\ngetGuiPanel()\nDiceService\ngetGuiPanel()\nMiniMusicService\ngetGuiPanel()\nDayOfTheWeekService\ngetGuiPanel()",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "ServiceServer"
+        ],
+        [
+          "getServicesList()\ngetService()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "ServiceServerImpl"
+        ],
+        [
+          "getServicesList()\ngetService()"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "ServiceBrowser"
+        ],
+        [
+          "main()"
+        ]
+      ]
+    },
+    {
+      "table_id": 4,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Service"
+        ],
+        [
+          "getGuiPanel()"
+        ]
+      ]
+    },
+    {
+      "table_id": 5,
+      "structure_confidence": 0.75,
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "DiceServ\ngetGuiPanel",
+          "",
+          "",
+          "ice\n()"
+        ],
+        [
+          "",
+          "DiceServ",
+          "",
+          "ice"
+        ],
+        [
+          "",
+          "getGuiPanel",
+          "",
+          "()"
+        ]
+      ]
+    },
+    {
+      "table_id": 6,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "MiniMusicService"
+        ],
+        [
+          "getGuiPanel()"
+        ]
+      ]
+    },
+    {
+      "table_id": 7,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "DayOfTheWeekService"
+        ],
+        [
+          "getGuiPanel()"
+        ]
+      ]
+    }
+  ],
+  "images": [],
+  "full_text": "remote deployment with RMI\nyou are here\n639\n1\ninterface ServiceServer implements Remote\nA regular old RMI remote interface for the remote service (the \nremote service has the method for getting the service list and \nreturning a selected service).\nThe classes and interfaces:\n2\nclass ServiceServerImpl implements ServiceServer\nThe actual RMI remote service (extends UnicastRemoteObject). \nIts job is to instantiate and store all the services (the things \nthat will be shipped to the client), and register the server itself \n(ServiceServerImpl) with the RMI registry.\n3\nclass ServiceBrowser\nThe client. It builds a very simple GUI, does a lookup in the RMI \nregistry to get the ServiceServer stub, then calls a remote method on \nit to get the list of services to display in the GUI list.\n4\ninterface Service\nThis is the key to everything. This very simple interface has just one \nmethod, getGuiPanel(). Every service that gets shipped over to the \nclient must implement this interface. This is what makes the whole thing \nUNIVERSAL! By implementing this interface, a service can come over \neven though the client has no idea what the actual class (or classes) \nare that make up that service. All the client knows is that whatever \ncomes over, it implements the Service interface, 50 it MUST have a \ngetGuiPanel() method. \nThe client gets a serialized object as a result of calling \ngetService(selectedSvc) on the ServiceServer stub, and all the client \nsays to that object is, “1 don’t know who or what you are, but 1 DO \nknow that you implement the Service interface, 50 1 know 1 can call \ngetGuiPanel() on you. And since getGuiPanel() returns a JPanel, 1’11 just \nslap it into the browser GUI and start interacting with it!\n5\nclass DiceService implements Service\nGot dice? If not, but you need some, use this service to roll anywhere \nfrom 1 to 6 virtual dice for you.\n6\nclass MiniMusicService implements Service\nRemember that fabulous little ‘music video’ program from the first \nGUI Code Kitchen? We’ve turned it into a service, and you can play it \nover and over and over until your roommates finally leave.\n7\nclass DayOfTheWeekService implements Service\nWere you born on a Friday? Type in your birthday and find out.\nServiceServer\ngetServicesList()\ngetService()\nServiceServerImpl\ngetServicesList()\ngetService()\nServiceBrowser\nmain()\nService\ngetGuiPanel()\nDiceService\ngetGuiPanel()\nMiniMusicService\ngetGuiPanel()\nDayOfTheWeekService\ngetGuiPanel()",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 673,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 673,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2454 chars",
+      "severity": "info"
+    },
+    {
+      "page": 673,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

@@ -1,39 +1,12 @@
-Extract all text from this document image exactly as printed.
+Extract all visible text from this document image.
 
-BANGLA RULES:
-1. Preserve every matra (া ি ী ু ূ ে ো ৌ), hasanta (্), anusvara (ং), chandrabindu (ঁ).
-2. Do NOT split conjuncts: ক্ষ জ্ঞ ত্র ন্ত ন্দ ন্ধ ম্ব ল্ল ষ্ট ষ্ঠ হ্ম ব্র দ্ব দ্ধ
-3. Bengali digits (০১২৩৪৫৬৭৮৯) — read each digit individually, never guess:
-   ৩ vs ৫ → ৩ has curved top, ৫ has FLAT horizontal top bar
-   ৮ vs ৪ → ৮ has TWO loops, ৪ has ONE open curve
-   ৬ vs ৯ → ৬ curves LEFT at bottom, ৯ curves RIGHT
-   ২ vs ৩ → ২ has ONE belly, ৩ has TWO bellies
-   ১ vs ৭ → ১ is a simple stroke, ৭ has a hooked top
-
-GOVERNMENT DOCUMENT PATTERNS — preserve exactly:
-- স্মারক নং (Smarak No): reference number, preserve every digit
-- তারিখ (Date): e.g. ২৩/০৬/২০২৫ — verify day 1-31, month 01-12
-- বিষয়: (Subject): copy the full line
-- গণপ্রজাতন্ত্রী বাংলাদেশ সরকার — standard header spelling
-- মহোদয় — preserve as-is
-- অনুলিপি — preserve as-is
-
-COMMON BANGLA OCR MISTAKES TO AVOID:
-- র and ব look similar in some fonts — check carefully
-- ণ and ন look similar — check carefully
-- শ and স look similar — check carefully
-- রেফ (র্) is written above the consonant — do not drop it
-- হসন্ত (্) joins two consonants into a conjunct — keep them joined
-- দন্ড (।) is the Bangla full stop — do not read it as the digit 1
-
-LAYOUT:
-- Tables: use | between columns, newline between rows
-- Seals/stamps: write [SEAL: description]
-- Signatures: write [SIGNATURE]
-- Handwritten text: mark [HANDWRITTEN]
-- Headers/footers: include them
-
-OUTPUT:
-- Plain text only
-- Reading order: top to bottom, left to right
-- No JSON, no markdown, no explanation
+Rules:
+1. Return plain text only (no markdown, no JSON, no explanation).
+2. Preserve Bangla Unicode exactly: matra, hasanta, conjuncts, punctuation.
+3. Use Bangla sentence end punctuation । (danda), not |.
+4. Keep Bangla digits as Bangla: ০১২৩৪৫৬৭৮৯.
+5. Preserve key government patterns exactly when visible: স্মারক নং, তারিখ, বিষয়, অনুলিপি.
+6. Keep email and URL text in Latin exactly as printed.
+7. Keep reading order top-to-bottom, left-to-right.
+8. For stamp/seal regions, write [SEAL]. For signatures, write [SIGNATURE].
+9. Skip isolated noise glyphs that are not meaningful words.

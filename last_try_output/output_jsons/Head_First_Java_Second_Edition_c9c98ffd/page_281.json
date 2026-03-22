@@ -1,0 +1,89 @@
+{
+  "page_number": 281,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "constructors and gc\nyou are here\n247\n BULLET POINTS\n$ Instance variables live within the object they belong to, on \nthe Heap.\n$ If the instance variable is a reference to an object, both \nthe reference and the object it refers to are on the Heap.\n$ A constructor is the code that runs when you say new on \na class type.\n$ A constructor must have the same name as the class, and \nmust not have a return type.\n$ You can use a constructor to initialize the state (i.e. the \ninstance variables) of the object being constructed.\n$ If you don’t put a constructor in your class, the compiler \nwill put in a default constructor.\n$ The default constructor is always a no-arg constructor.\n$ If you put a constructor—any constructor—in your class, \nthe compiler will not build the default constructor.\n$ If you want a no-arg constructor, and you’ve already put \nin a constructor with arguments, you’11 have to build the \nno-arg constructor yourself.\n$ Always provide a no-arg constructor if you can, to make it \neasy for programmers to make a working object. Supply \ndefault values.\n$ Overloaded constructors means you have more than one \nconstructor in your class.\n$ Overloaded constructors must have different argument \nlists.\n$ You cannot have two constructors with the same \nargument lists. An argument list includes the order and/or \ntype of arguments.\n$ Instance variables are assigned a default value, even \nwhen you don’t explicitly assign one. The default values \nare 0/0.0/false for primitives, and null for references.\nFive different constructors \nmeans five different ways to \nmake a new mushroom. \npublic class Mushroom {\n public Mushroom(int size) { }\n public Mushroom( ) { }\n public Mushroom(boolean isMagic) { }\n public Mushroom(boolean isMagic, int size) { }\n public Mushroom(int size, boolean isMagic) { }\n}\nwhen you know the size, but you \ndon’t know if it’5 magic \nwhen you don’t know anything\nwhen you know if it’5 magic or not, \nbut don’t know the size\nwhen you know \nwhether or not it’5 \nmagic, AND you know \nthe size as well\nOverloaded constructors means you have \nmore than one constructor in your class. \nTo compile, each constructor must have a \ndifferent argument list!\nThe class below is legal because all five constructors have \ndifferent argument lists. If you had two constructors that took \nonly an int, for example, the class wouldn’t compile. What you \nname the parameter variable doesn’t count. It’5 the variable \ntype (int, Dog, etc.) and order that matters. You can have two \nconstructors that have identical types, as long as the order is \ndifferent. A constructor that takes a String followed by an int, is \nnot the same as one that takes an int followed by a String.\nthese two have the \nsame args, but in \ndifferent order, 50 \nit’5 OK",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 0.6889,
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "BULLET P",
+          "OINTS",
+          ""
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (114x104)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (217x239)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "constructors and gc\nyou are here\n247\n BULLET POINTS\n$ Instance variables live within the object they belong to, on \nthe Heap.\n$ If the instance variable is a reference to an object, both \nthe reference and the object it refers to are on the Heap.\n$ A constructor is the code that runs when you say new on \na class type.\n$ A constructor must have the same name as the class, and \nmust not have a return type.\n$ You can use a constructor to initialize the state (i.e. the \ninstance variables) of the object being constructed.\n$ If you don’t put a constructor in your class, the compiler \nwill put in a default constructor.\n$ The default constructor is always a no-arg constructor.\n$ If you put a constructor—any constructor—in your class, \nthe compiler will not build the default constructor.\n$ If you want a no-arg constructor, and you’ve already put \nin a constructor with arguments, you’11 have to build the \nno-arg constructor yourself.\n$ Always provide a no-arg constructor if you can, to make it \neasy for programmers to make a working object. Supply \ndefault values.\n$ Overloaded constructors means you have more than one \nconstructor in your class.\n$ Overloaded constructors must have different argument \nlists.\n$ You cannot have two constructors with the same \nargument lists. An argument list includes the order and/or \ntype of arguments.\n$ Instance variables are assigned a default value, even \nwhen you don’t explicitly assign one. The default values \nare 0/0.0/false for primitives, and null for references.\nFive different constructors \nmeans five different ways to \nmake a new mushroom. \npublic class Mushroom {\n public Mushroom(int size) { }\n public Mushroom( ) { }\n public Mushroom(boolean isMagic) { }\n public Mushroom(boolean isMagic, int size) { }\n public Mushroom(int size, boolean isMagic) { }\n}\nwhen you know the size, but you \ndon’t know if it’5 magic \nwhen you don’t know anything\nwhen you know if it’5 magic or not, \nbut don’t know the size\nwhen you know \nwhether or not it’5 \nmagic, AND you know \nthe size as well\nOverloaded constructors means you have \nmore than one constructor in your class. \nTo compile, each constructor must have a \ndifferent argument list!\nThe class below is legal because all five constructors have \ndifferent argument lists. If you had two constructors that took \nonly an int, for example, the class wouldn’t compile. What you \nname the parameter variable doesn’t count. It’5 the variable \ntype (int, Dog, etc.) and order that matters. You can have two \nconstructors that have identical types, as long as the order is \ndifferent. A constructor that takes a String followed by an int, is \nnot the same as one that takes an int followed by a String.\nthese two have the \nsame args, but in \ndifferent order, 50 \nit’5 OK",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 281,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 281,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 2790 chars",
+      "severity": "info"
+    },
+    {
+      "page": 281,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 2",
+      "severity": "info"
+    },
+    {
+      "page": 281,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

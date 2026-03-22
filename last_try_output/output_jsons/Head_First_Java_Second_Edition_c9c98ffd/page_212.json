@@ -1,0 +1,97 @@
+{
+  "page_number": 212,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "exploiting the power of objects \n178 \nchapter 7\nBut wait! There’5 more!\nThe 15-A test works anywhere in the inheritance tree. If your \ninheritance tree is well-designed, the 15-A test should make \nsense when you ask any subclass if it 15-A any of its supertypes.\nIf class 8 extends class A, class 8 15-A class A.\nThis is true anywhere in the inheritance tree. If \nclass C extends class 8, class C passes the 15-A \ntest for both 8 and A.\nsize\npicture\nfood\nprey\nWolf\nCanine\nroam()\nmakeNoise()\neat()\nAnimal\nmakeNoise()\neat()\nsleep()\nroam()\nCanine extends Animal\nWolf extends Canine\nWolf extends Animal\nCanine 15-A Animal\nWolf 15-A Canine\nWolf 15-A Animal\nWith an inheritance tree like the \none shown here, you’re always \nallowed to say “Wolf extends \nAnimal” or “Wolf 15-A Animal”. \nIt makes no difference if Animal \nis the superclass of the superclass \nof Wolf. In fact, as long as Animal \nis somewhere in the inheritance \nhierarchy above Wolf, Wolf 15-A \nAnimal will always be true.\nThe structure of the Animal \ninheritance tree says to the world:\n“Wolf 15-A Canine, 50 Wolf can do \nanything a Canine can do. And \nWolf 15-A Animal, 50 Wolf can do \nanything an Animal can do.” \nIt makes no difference if Wolf \noverrides some of the methods \nin Animal or Canine. As far as \nthe world (of other code) is \nconcerned, a Wolf can do those \nfour methods. How he does them, \nor in which class they’re overridden \nmakes no difference. A Wolf can \nmakeNoise(), eat(), sleep(), and \nroam() because a Wolf extends \nfrom class Animal.",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Animal"
+        ],
+        [
+          "makeNoise()\neat()\nsleep()\nroam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 2,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Canine"
+        ],
+        [
+          "roam()"
+        ]
+      ]
+    },
+    {
+      "table_id": 3,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "Wolf"
+        ],
+        [
+          "size\nmpicatkuerNeoise()\nefoaot(d)\nprey"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (161x99)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "exploiting the power of objects \n178 \nchapter 7\nBut wait! There’5 more!\nThe 15-A test works anywhere in the inheritance tree. If your \ninheritance tree is well-designed, the 15-A test should make \nsense when you ask any subclass if it 15-A any of its supertypes.\nIf class 8 extends class A, class 8 15-A class A.\nThis is true anywhere in the inheritance tree. If \nclass C extends class 8, class C passes the 15-A \ntest for both 8 and A.\nsize\npicture\nfood\nprey\nWolf\nCanine\nroam()\nmakeNoise()\neat()\nAnimal\nmakeNoise()\neat()\nsleep()\nroam()\nCanine extends Animal\nWolf extends Canine\nWolf extends Animal\nCanine 15-A Animal\nWolf 15-A Canine\nWolf 15-A Animal\nWith an inheritance tree like the \none shown here, you’re always \nallowed to say “Wolf extends \nAnimal” or “Wolf 15-A Animal”. \nIt makes no difference if Animal \nis the superclass of the superclass \nof Wolf. In fact, as long as Animal \nis somewhere in the inheritance \nhierarchy above Wolf, Wolf 15-A \nAnimal will always be true.\nThe structure of the Animal \ninheritance tree says to the world:\n“Wolf 15-A Canine, 50 Wolf can do \nanything a Canine can do. And \nWolf 15-A Animal, 50 Wolf can do \nanything an Animal can do.” \nIt makes no difference if Wolf \noverrides some of the methods \nin Animal or Canine. As far as \nthe world (of other code) is \nconcerned, a Wolf can do those \nfour methods. How he does them, \nor in which class they’re overridden \nmakes no difference. A Wolf can \nmakeNoise(), eat(), sleep(), and \nroam() because a Wolf extends \nfrom class Animal.",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 212,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 212,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1524 chars",
+      "severity": "info"
+    },
+    {
+      "page": 212,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 212,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

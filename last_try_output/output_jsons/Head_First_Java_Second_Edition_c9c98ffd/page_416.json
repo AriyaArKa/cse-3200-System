@@ -1,0 +1,60 @@
+{
+  "page_number": 416,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "382 \nchapter 12\nWe saw why inner classes are handy for event listeners, because \nyou get to implement the same event-handling method more \nthan once. But now we’11 look at how useful an inner class is when \nused as a subclass of something the outer class doesn’t extend. In \nother words, when the outer class and inner class are in different \ninheritance trees!\nOur goal is to make a simple animation, where the circle moves \nacross the screen from the upper left down to the lower right.\nUsing an inner class for animation\nstart\nfinish\nHow simple animation works\n1\nPaint an object at a particular x and y coordinate\ng.fillOval(20,50,100,100);\n20 pixels from the left, \n50 pixels from the top\n2\nRepaint the object at a different x and y coordinate\ng.fillOval(25,55,100,100);\n25 pixels from the left, 55 \npixels from the top\n(the object moved a little \ndown and to the right) \n 3\nRepeat the previous step with changing x and y values \nfor as long as the animation is supposed to continue.\nthere are no\nDumb Questions\nQ:Why are we learning about \nanimation here? 1 doubt if 1’m \ngoing to be making games. \nA:You might not be making \ngames, but you might be \ncreating simulations, where \nthings change over time to show \nthe results of a process. Or you \nmight be building a visualization \ntool that, for example, updates \na graphic to show how much \nmemory a program is using, \nor to show you how much \ntraffic is coming through \nyour load-balancing server. \nAnything that needs to take a \nset of continuously-changing \nnumbers and translate them into \nsomething useful for getting \ninformation out of the numbers.\nDoesn’t that all sound business-\nlike? That’5 just the “official \njustification”, of course. The real \nreason we’re covering it here is \njust because it’5 a simple way \nto demonstrate another use \nof inner classes. (And because \nwe just like animation, and our \nnext Head First book is about \nJ2EE and we know we can’t get \nanimation in that one.)\ninner classes",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (258x258)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "382 \nchapter 12\nWe saw why inner classes are handy for event listeners, because \nyou get to implement the same event-handling method more \nthan once. But now we’11 look at how useful an inner class is when \nused as a subclass of something the outer class doesn’t extend. In \nother words, when the outer class and inner class are in different \ninheritance trees!\nOur goal is to make a simple animation, where the circle moves \nacross the screen from the upper left down to the lower right.\nUsing an inner class for animation\nstart\nfinish\nHow simple animation works\n1\nPaint an object at a particular x and y coordinate\ng.fillOval(20,50,100,100);\n20 pixels from the left, \n50 pixels from the top\n2\nRepaint the object at a different x and y coordinate\ng.fillOval(25,55,100,100);\n25 pixels from the left, 55 \npixels from the top\n(the object moved a little \ndown and to the right) \n 3\nRepeat the previous step with changing x and y values \nfor as long as the animation is supposed to continue.\nthere are no\nDumb Questions\nQ:Why are we learning about \nanimation here? 1 doubt if 1’m \ngoing to be making games. \nA:You might not be making \ngames, but you might be \ncreating simulations, where \nthings change over time to show \nthe results of a process. Or you \nmight be building a visualization \ntool that, for example, updates \na graphic to show how much \nmemory a program is using, \nor to show you how much \ntraffic is coming through \nyour load-balancing server. \nAnything that needs to take a \nset of continuously-changing \nnumbers and translate them into \nsomething useful for getting \ninformation out of the numbers.\nDoesn’t that all sound business-\nlike? That’5 just the “official \njustification”, of course. The real \nreason we’re covering it here is \njust because it’5 a simple way \nto demonstrate another use \nof inner classes. (And because \nwe just like animation, and our \nnext Head First book is about \nJ2EE and we know we can’t get \nanimation in that one.)\ninner classes",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 416,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 416,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1975 chars",
+      "severity": "info"
+    },
+    {
+      "page": 416,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 1",
+      "severity": "info"
+    },
+    {
+      "page": 416,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}

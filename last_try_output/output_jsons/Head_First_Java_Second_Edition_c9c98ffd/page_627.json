@@ -1,0 +1,101 @@
+{
+  "page_number": 627,
+  "extraction": {
+    "method": "digital",
+    "engine": "PyMuPDF",
+    "confidence_score": 0.9425,
+    "correction_applied": false,
+    "numeric_validation_passed": false
+  },
+  "content_blocks": [
+    {
+      "block_id": 1,
+      "type": "paragraph",
+      "language": "en",
+      "text": "package, jars and deployment\nyou are here\n593\n50 where did the manifest file go?\n-tf stands for ‘Table File’ as in \n“show me a table of the JAR file”\nwe put the JAR file into a \ndirectory named Skyler\nWhy don’t we look inside the JAR and find out? From the \ncommand-line, the jar tool can do more than just create and run a \nJAR. You can extract the contents of a JAR (just like ‘unzipping’ or \n‘untarring’).\nImagine you’ve put the packEx.jar into a directory named Skyler. \npackEx.jar\njar commands for listing and extracting \n1\nList the contents of a JAR\n% jar -tf packEx.jar\nFile Edit Window Help Pickle\n% cd Skyler\n% jar -tf packEx.jar\nMETA-INF/\nMETA-INF/MANIFEST.MF\ncom/\ncom/headfirstjava/\ncom/headfirstjava/\nPackageExercise.class\n-xf stands for ‘Extract File’ and it \nworks just like unzipping or untarring. If \nyou extract the packEx.jar, you’11 see \nthe META-INF directory and the com \ndirectory in your current directory \n2\nExtract the contents of a JAR (i.e. unjar)\n% cd Skyler\n% jar -xf packEx.jar\nMANIFEST.MF\nMain-Class: MiniApp\ncom\nheadfirstjava\nPackageExercise.class\nMETA-INF\nSkyler\nthe jar tool automatically \nbuilds a META-INF \ndirectory, and puts the \nmanifest inside.\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nSkyler\nMANIFEST.MF\nMain-Class: MiniApp\ncom\nheadfirstjava\nMETA-INF\nPackageExercise.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMETA-INF stands for ‘meta \ninformation’. The jar tool creates \nthe META-INF directory as \nwell as the MANIFEST.MF file. \nIt also takes the contents of \nyour manifest file, and puts it \ninto the MANIFEST.MF file. 50, \nyour manifest file doesn’t go into \nthe JAR, but the contents of it \nare put into the ‘real’ manifest \n(MANIFEST.MF).",
+      "confidence": 0.95
+    }
+  ],
+  "tables": [
+    {
+      "table_id": 1,
+      "structure_confidence": 1.0,
+      "rows": [
+        [
+          "File Edit Window Help Pickle"
+        ],
+        [
+          "% cd Skyler\n% jar -tf packEx.jar\nMETA-INF/\nMETA-INF/MANIFEST.MF\ncom/\ncom/headfirstjava/\ncom/headfirstjava/\nPackageExercise.class"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "image_id": 1,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (172x279)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 2,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (157x127)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 3,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (163x129)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 4,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (122x97)",
+      "confidence": 0.6
+    },
+    {
+      "image_id": 5,
+      "type": "photo",
+      "detected_text": "",
+      "description": "A photograph or image (118x95)",
+      "confidence": 0.6
+    }
+  ],
+  "full_text": "package, jars and deployment\nyou are here\n593\n50 where did the manifest file go?\n-tf stands for ‘Table File’ as in \n“show me a table of the JAR file”\nwe put the JAR file into a \ndirectory named Skyler\nWhy don’t we look inside the JAR and find out? From the \ncommand-line, the jar tool can do more than just create and run a \nJAR. You can extract the contents of a JAR (just like ‘unzipping’ or \n‘untarring’).\nImagine you’ve put the packEx.jar into a directory named Skyler. \npackEx.jar\njar commands for listing and extracting \n1\nList the contents of a JAR\n% jar -tf packEx.jar\nFile Edit Window Help Pickle\n% cd Skyler\n% jar -tf packEx.jar\nMETA-INF/\nMETA-INF/MANIFEST.MF\ncom/\ncom/headfirstjava/\ncom/headfirstjava/\nPackageExercise.class\n-xf stands for ‘Extract File’ and it \nworks just like unzipping or untarring. If \nyou extract the packEx.jar, you’11 see \nthe META-INF directory and the com \ndirectory in your current directory \n2\nExtract the contents of a JAR (i.e. unjar)\n% cd Skyler\n% jar -xf packEx.jar\nMANIFEST.MF\nMain-Class: MiniApp\ncom\nheadfirstjava\nPackageExercise.class\nMETA-INF\nSkyler\nthe jar tool automatically \nbuilds a META-INF \ndirectory, and puts the \nmanifest inside.\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nSkyler\nMANIFEST.MF\nMain-Class: MiniApp\ncom\nheadfirstjava\nMETA-INF\nPackageExercise.class\n101101 \n10 110 1 \n0 11 0 \n001 10 \n001 01 \nMETA-INF stands for ‘meta \ninformation’. The jar tool creates \nthe META-INF directory as \nwell as the MANIFEST.MF file. \nIt also takes the contents of \nyour manifest file, and puts it \ninto the MANIFEST.MF file. 50, \nyour manifest file doesn’t go into \nthe JAR, but the contents of it \nare put into the ‘real’ manifest \n(MANIFEST.MF).",
+  "source_image_path": "",
+  "verified": false,
+  "domain": "unknown",
+  "confidence_tier": "silver",
+  "decisions": [
+    {
+      "page": 627,
+      "keyword": "PIPELINE_STEP",
+      "detail": "type_detection: digital",
+      "severity": "info"
+    },
+    {
+      "page": 627,
+      "keyword": "PIPELINE_STEP",
+      "detail": "digital_extraction: 1700 chars",
+      "severity": "info"
+    },
+    {
+      "page": 627,
+      "keyword": "PIPELINE_STEP",
+      "detail": "images_extracted: 5",
+      "severity": "info"
+    },
+    {
+      "page": 627,
+      "keyword": "FINAL_ENGINE",
+      "detail": "method=digital, engine=PyMuPDF",
+      "severity": "info"
+    }
+  ]
+}
