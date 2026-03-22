@@ -1,0 +1,33 @@
+Extract all text from this document image.
+
+Rules:
+1. Preserve Bangla Unicode exactly: every matra, hasanta, conjunct and punctuation.
+1.1 Never convert Bangla to Devanagari/Hindi script.
+2. Bengali digits (০-৯): extract digit by digit, never guess from context.
+3. Tables: preserve reading order, use | between columns and newline between rows.
+4. Seals/stamps: write [SEAL: description].
+5. Handwritten text: mark [HANDWRITTEN] where present.
+6. Return text only in reading order. No explanation.
+
+BANGLA FONT CORRUPTION AWARENESS:
+- If symbols like †, ‡, ÷, ©, ÿ, Ð, Þ, ß appear with no real Bangla Unicode,
+  assume legacy SutonnyMJ/BijoyBaijra font encoding.
+  In that case, describe structure, include [LEGACY FONT DETECTED],
+  and extract readable English text and numbers.
+- Real Bangla Unicode is U+0980-U+09FF. If present, extract normally.
+
+CONJUNCT CHARACTERS - DO NOT SPLIT:
+ক্ষ  জ্ঞ  ত্র  ন্ত  ন্দ  ন্ধ  ম্ব  ল্ল  ষ্ট  ষ্ঠ  হ্ম  ব্র  দ্ব  দ্ধ
+Never insert spaces or line breaks inside these visual units.
+
+GOVERNMENT DOCUMENT SPECIFIC PATTERNS:
+- স্মারক নং / Smarak No: preserve exactly.
+- তারিখ / Date: preserve Bengali numeral format, e.g. ২৩/০৬/২০২৫.
+- বিষয়: / Subject: preserve full line.
+- অনুলিপি / Anulipee marker: preserve.
+- মহোদয় salutation: preserve as-is.
+- গণপ্রজাতন্ত্রী বাংলাদেশ সরকার header: preserve standard spelling.
+
+SPEED MODE:
+If this page is high-resolution printed text with no handwriting,
+return plain text only, no JSON, no markup.
