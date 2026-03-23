@@ -177,7 +177,7 @@ bangladoc_surya_clean/
 
 ```mermaid
 flowchart TD
-    A[Input PDF<br/>API / CLI] --> B[document_processor.process_pdf]
+    A[Input PDF - API or CLI] --> B[document_processor.process_pdf]
     B --> C[config.refresh_config]
     C --> D[Open PDF with pdf_router.open_pdf]
     D --> E{For each page}
@@ -232,7 +232,7 @@ flowchart LR
     B --> C[bangla_corrector.correct_bangla_text]
     C --> D[unicode_validator.strip_devanagari_dominant_lines]
     D --> E[Updated blocks]
-    E --> F[numeric_validator.validate_and_fix_numbers<br/>(digital path)]
+    E --> F[numeric_validator.validate_and_fix_numbers - digital path]
     F --> G[Cleaned page text]
 ```
 
