@@ -117,6 +117,11 @@ FAST_MODE: bool
 FAST_MODE_BANGLA: bool
 
 LOG_LEVEL: str
+DATABASE_URL: str
+SECRET_KEY: str
+JWT_ALGORITHM: str
+ACCESS_TOKEN_EXPIRE_MINUTES: int
+REDIS_URL: str
 
 
 def refresh_config() -> None:
@@ -136,6 +141,7 @@ def refresh_config() -> None:
     global SURYA_ENABLED, SURYA_MIN_BANGLA_RATIO, SURYA_DEVANAGARI_REJECT_THRESHOLD
     global OCR_MIN_BANGLA_RATIO, OCR_DEVANAGARI_REJECT_THRESHOLD, OCR_FLOW_MODE
     global MAX_WORKERS, FAST_MODE, FAST_MODE_BANGLA, LOG_LEVEL
+    global DATABASE_URL, SECRET_KEY, JWT_ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, REDIS_URL
 
     load_dotenv(dotenv_path=PROJECT_ROOT / "backend" / ".env", override=True)
 
@@ -177,6 +183,14 @@ def refresh_config() -> None:
     FAST_MODE_BANGLA = os.getenv("FAST_MODE_BANGLA", "true").lower() == "true"
 
     LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
+    DATABASE_URL = os.getenv(
+        "DATABASE_URL",
+        "postgresql+asyncpg://bangladoc:bangladoc@localhost:5432/bangladoc",
+    )
+    SECRET_KEY = os.getenv("SECRET_KEY", "CHANGE_ME_BEFORE_FIRST_RUN")
+    JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
+    ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "60"))
+    REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
 
 refresh_config()

@@ -85,8 +85,21 @@ cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/banglad
 source venv/bin/activate
 uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
 
+# Run Celery worker in another terminal (required for async OCR jobs)
+cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
+source venv/bin/activate
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
 Open in browser:
 http://127.0.0.1:8000
+
+# UI bridge flow (login + upload + report)
+# 1) Enter email/password in the page and click Register (first time only)
+# 2) Click Login
+# 3) Select one or more PDFs
+# 4) Click Upload & OCR
+# 5) UI waits for job completion and then renders report pages
+# 6) Use "My Documents" -> "Open report" to reopen old completed reports
 
 5) Run tests
 ------------
@@ -111,11 +124,71 @@ find data -maxdepth 3 -type f | head -n 50
 7) Stop services
 ----------------
 # stop api with Ctrl+C in API terminal
+# stop celery with Ctrl+C in worker terminal
 # stop ollama with Ctrl+C in Ollama terminal
 cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
 docker compose down
 
-8) Troubleshooting
+8) Daily clean startup (recommended)
+------------------------------------
+# Terminal 1: API
+cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
+source venv/bin/activate
+uvicorn bangladoc_ocr.server.app:app --host 0.0.0.0 --port 8000
+
+# Terminal 2: Worker
+cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
+source venv/bin/activate
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
+# Terminal 3: Redis check
+redis-cli ping
+
+# Open UI
+open http://127.0.0.1:8000
+
+9) What to inspect in pgAdmin
+------------------------------
+# Connection
+# Host: localhost
+# Port: 5432
+# Database: bangladoc
+# Username: bangladoc
+# Password: arka
+
+# Useful tables (public schema)
+# users      -> registered accounts
+# documents  -> each uploaded file metadata and status
+# ocr_jobs   -> async processing job status and errors
+# pages      -> per-page extracted text, confidence, verified flag
+
+# Sample checks in Query Tool
+SELECT id, email, role, created_at FROM users ORDER BY created_at DESC;
+SELECT id, filename, doc_id, status, total_pages, created_at FROM documents ORDER BY created_at DESC;
+SELECT id, document_id, status, error_msg, started_at, completed_at FROM ocr_jobs ORDER BY started_at DESC NULLS LAST;
+SELECT document_id, page_number, engine, confidence_score, verified FROM pages ORDER BY document_id, page_number;
+
+10) Frontend clean structure (modular)
+--------------------------------------
+# HTML shell
+# backend/bangladoc_ocr/static/index.html
+
+# CSS
+# backend/bangladoc_ocr/static/css/app.css
+
+# JS modules
+# backend/bangladoc_ocr/static/js/main.js         -> app bootstrap and wiring
+# backend/bangladoc_ocr/static/js/dom.js          -> DOM bindings
+# backend/bangladoc_ocr/static/js/state.js        -> shared UI state
+# backend/bangladoc_ocr/static/js/api.js          -> API helpers + auth headers
+# backend/bangladoc_ocr/static/js/auth.js         -> register/login/logout/session
+# backend/bangladoc_ocr/static/js/files.js        -> file queue UI
+# backend/bangladoc_ocr/static/js/progress.js     -> progress polling
+# backend/bangladoc_ocr/static/js/upload.js       -> OCR upload + job tracking
+# backend/bangladoc_ocr/static/js/documents.js    -> My Documents list + open report
+# backend/bangladoc_ocr/static/js/reports.js      -> report rendering + verify action
+
+11) Troubleshooting
 ------------------
 # If Surya import fails
 source /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend/venv/bin/activate
@@ -135,6 +208,33 @@ ollama list
 cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
 source backend/venv/bin/activate
 python -m pip install -e "./backend[dev]"
+
+# If API says: address already in use (port 8000)
+# 1) Check whether API is already running:
+python - <<'PY'
+import requests
+try:
+	r = requests.get('http://127.0.0.1:8000/health', timeout=3)
+	print('API already running:', r.status_code, r.text)
+except Exception as e:
+	print('API not reachable:', e)
+PY
+# 2) If already running, do NOT start another uvicorn process.
+
+# If Celery crashes with WorkerLostError / SIGABRT on macOS MPS
+# Use non-fork worker pool:
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
+# If macOS shows "Python quit unexpectedly" during worker run
+# 1) Stop all old celery workers first (duplicate workers cause instability)
+pkill -f "celery -A bangladoc_ocr.celery_app:celery_app worker" || true
+pkill -f "python -m celery -A bangladoc_ocr.celery_app:celery_app worker" || true
+
+# 2) Confirm no worker remains
+pgrep -fl "celery" || true
+
+# 3) Start one stable worker only (single process, no forking)
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
 
 # OCR mode control is ENV-ONLY (edit backend/.env, then restart API/CLI process)
 # SURYA_ENABLED=true
