@@ -1,6 +1,7 @@
 """Image-related helpers for page output and descriptions."""
 
 import asyncio
+import concurrent.futures
 from pathlib import Path
 
 from bangladoc_ocr.core.image_describer import classify_heuristic, describe
@@ -24,9 +25,11 @@ def describe_embedded_images(raw_images: list[dict], output_dir: Path, page_numb
 
         description_text = ""
         try:
-            loop = asyncio.new_event_loop()
-            description_text = loop.run_until_complete(describe(img_bytes, image_type))
-            loop.close()
+            description_text = asyncio.run(describe(img_bytes, image_type))
+        except RuntimeError:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
+                fut = ex.submit(asyncio.run, describe(img_bytes, image_type))
+                description_text = fut.result()
         except Exception:
             description_text = ""
 

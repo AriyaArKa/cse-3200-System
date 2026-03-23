@@ -4,11 +4,12 @@ import io
 import logging
 import os
 import re
+import threading
 
 from PIL import Image
 
 from bangladoc_ocr import config
-from bangladoc_ocr.nlp.unicode_validator import bangla_char_ratio
+from bangladoc_ocr.nlp.unicode_validator import bangla_char_ratio, strip_devanagari_dominant_lines
 
 os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 
@@ -19,6 +20,7 @@ _detector = None
 _recognizer = None
 _load_attempted = False
 _available = False
+_load_lock = threading.Lock()
 
 _HTML_TAG = re.compile(r"<[^>]+>")
 _NOISE_WORDS = frozenset({"HERE", "SEAL", "COPY", "STAMP"})
@@ -36,23 +38,27 @@ def load() -> bool:
     if _load_attempted:
         return _available
 
-    _load_attempted = True
-    try:
-        from surya.detection import DetectionPredictor
-        from surya.foundation import FoundationPredictor
-        from surya.recognition import RecognitionPredictor
+    with _load_lock:
+        if _load_attempted:
+            return _available
 
-        logger.info("Loading Surya models...")
-        _foundation = FoundationPredictor()
-        _detector = DetectionPredictor()
-        _recognizer = RecognitionPredictor(_foundation)
-        _available = True
-        config.set_status("surya_available", True)
-        logger.info("Surya ready")
-    except Exception as exc:
-        _available = False
-        config.set_status("surya_available", False)
-        logger.warning("Surya unavailable, fallback chain will continue: %s", exc)
+        _load_attempted = True
+        try:
+            from surya.detection import DetectionPredictor
+            from surya.foundation import FoundationPredictor
+            from surya.recognition import RecognitionPredictor
+
+            logger.info("Loading Surya models...")
+            _foundation = FoundationPredictor()
+            _detector = DetectionPredictor()
+            _recognizer = RecognitionPredictor(_foundation)
+            _available = True
+            config.set_status("surya_available", True)
+            logger.info("Surya ready")
+        except Exception as exc:
+            _available = False
+            config.set_status("surya_available", False)
+            logger.warning("Surya unavailable, fallback chain will continue: %s", exc)
 
     return _available
 
@@ -75,10 +81,13 @@ def ocr_bytes(img_bytes: bytes) -> str:
         )
         lines = [line.text for line in preds[0].text_lines]
         text = _clean(lines)
+        text, was_stripped = strip_devanagari_dominant_lines(text)
+        if was_stripped:
+            logger.info("Surya: stripped Devanagari-contaminated lines")
+        if not text or len(text.strip()) < config.SURYA_MIN_TEXT_LEN:
+            return ""
         if _looks_like_wrong_script(text):
-            logger.warning(
-                "Surya produced Devanagari-heavy text for Bangla pipeline; forcing fallback"
-            )
+            logger.warning("Surya: still invalid after stripping")
             return ""
         return text
     except Exception as exc:

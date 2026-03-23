@@ -7,7 +7,7 @@ from typing import Optional
 
 from bangladoc_ocr import config
 
-from .state import API_STATS
+from .state import increment_stat
 
 logger = logging.getLogger(__name__)
 
@@ -33,22 +33,24 @@ def ocr_with_gemini(img_bytes: bytes, page_number: int, prompt: str) -> Optional
                 )
                 text = (response.text or "").strip()
                 if text:
-                    API_STATS["gemini_calls"] += 1
-                    API_STATS["total_calls"] += 1
+                    increment_stat("gemini_calls")
+                    increment_stat("total_calls")
                     tokens = getattr(getattr(response, "usage_metadata", None), "total_token_count", 0)
-                    API_STATS["gemini_tokens"] += tokens
-                    API_STATS["total_tokens"] += tokens
+                    increment_stat("gemini_tokens", int(tokens or 0))
+                    increment_stat("total_tokens", int(tokens or 0))
                     logger.info("Gemini page %s: %d chars", page_number, len(text))
                     return text
+                logger.warning("Gemini: empty response, not retrying")
+                break
             except Exception:
                 if attempt < config.GEMINI_MAX_RETRIES - 1:
                     time.sleep(config.GEMINI_RETRY_DELAY)
                 else:
                     raise
 
-        API_STATS["gemini_errors"] += 1
+        increment_stat("gemini_errors")
         return None
     except Exception as exc:
         logger.warning("Gemini OCR failed on page %s: %s", page_number, exc)
-        API_STATS["gemini_errors"] += 1
+        increment_stat("gemini_errors")
         return None

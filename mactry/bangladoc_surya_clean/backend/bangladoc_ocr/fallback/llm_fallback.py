@@ -12,8 +12,13 @@ from .llm_tasks.gemini import ocr_with_gemini as _ocr_with_gemini
 from .llm_tasks.ollama import ensure_ollama_status, ocr_with_ollama as _ocr_with_ollama_impl
 from .llm_tasks.parser import text_to_blocks as _text_to_blocks
 from .llm_tasks.prompts import load_prompts
-from .llm_tasks.state import API_STATS as _api_stats
-from .llm_tasks.state import SERVICE_STATUS as _service_status
+from .llm_tasks.state import (
+    get_api_stats_snapshot,
+    get_service_status as _get_service_status_value,
+    get_service_status_snapshot,
+    increment_stat,
+    set_stat,
+)
 
 _OCR_PROMPT, _OLLAMA_PROMPT = load_prompts()
 
@@ -32,15 +37,15 @@ def ocr_page_with_fallback(img_bytes: bytes, page_number: int) -> Tuple[Optional
     if avail and model:
         text = _ocr_with_ollama(img_bytes, page_number, model)
         if text:
-            _api_stats["last_engine_used"] = "ollama"
+            set_stat("last_engine_used", "ollama")
             return text, f"ollama:{model}"
-        ollama_err = _service_status.get("ollama_error") or "ollama_ocr_failed"
+        ollama_err = _get_service_status_value("ollama_error") or "ollama_ocr_failed"
     else:
         ollama_err = ollama_err or "ollama_unavailable"
 
     text = _ocr_with_gemini_page(img_bytes, page_number)
     if text:
-        _api_stats["last_engine_used"] = "gemini"
+        set_stat("last_engine_used", "gemini")
         return text, "gemini"
 
     if not config.GEMINI_ENABLED:
@@ -50,8 +55,8 @@ def ocr_page_with_fallback(img_bytes: bytes, page_number: int) -> Tuple[Optional
     else:
         gemini_reason = "gemini_failed"
 
-    _api_stats["errors"] += 1
-    _api_stats["last_engine_used"] = None
+    increment_stat("errors")
+    set_stat("last_engine_used", None)
     return None, f"none:ollama={ollama_err};gemini={gemini_reason}"
 
 
@@ -68,8 +73,8 @@ def gemini_text_to_blocks(text: str, page_number: int, offset: int = 1) -> List[
 
 
 def get_service_status() -> dict:
-    return dict(_service_status)
+    return get_service_status_snapshot()
 
 
 def get_api_stats() -> dict:
-    return dict(_api_stats)
+    return get_api_stats_snapshot()

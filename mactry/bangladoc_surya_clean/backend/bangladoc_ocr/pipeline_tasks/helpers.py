@@ -10,7 +10,8 @@ from bangladoc_ocr.nlp.unicode_validator import bangla_char_ratio, strip_devanag
 
 def text_to_blocks(text: str) -> list[ContentBlock]:
     blocks: list[ContentBlock] = []
-    paragraphs = [part.strip() for part in text.split("\n\n") if part.strip()]
+    separator = "\n\n" if "\n\n" in text else "\n"
+    paragraphs = [p.strip() for p in text.split(separator) if p.strip()]
     for i, paragraph in enumerate(paragraphs, start=1):
         ratio = bangla_char_ratio(paragraph)
         language = "bn" if ratio > 0.5 else ("mixed" if ratio > 0.1 else "en")

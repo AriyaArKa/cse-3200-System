@@ -62,7 +62,22 @@ def process_page(
         scan_bytes = render_page_to_image(page, dpi=config.DPI)
         source_image_path = save_page_image(scan_bytes, output_dirs["images"], page_number)
         blocks, method, engine, correction_applied = run_scanned_ocr(scan_bytes, page_number, log)
-        tables = extract_tables_scanned(scan_bytes, [], page_number)
+        detection_tuples = [
+            (
+                b.text,
+                b.confidence,
+                [
+                    [b.bbox.x1, b.bbox.y1],
+                    [b.bbox.x2, b.bbox.y1],
+                    [b.bbox.x2, b.bbox.y2],
+                    [b.bbox.x1, b.bbox.y2],
+                ]
+                if b.bbox
+                else [],
+            )
+            for b in blocks
+        ]
+        tables = extract_tables_scanned(scan_bytes, detection_tuples, page_number)
 
     embedded_images = extract_page_images(page)
     if embedded_images:

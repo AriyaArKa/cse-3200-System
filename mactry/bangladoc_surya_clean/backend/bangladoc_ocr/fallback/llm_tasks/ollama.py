@@ -10,7 +10,11 @@ import requests
 
 from bangladoc_ocr import config
 
-from .state import API_STATS, SERVICE_STATUS
+from .state import (
+    get_service_status,
+    increment_stat,
+    set_service_status,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -49,23 +53,23 @@ def check_ollama_available() -> Tuple[bool, Optional[str], Optional[str]]:
 
 def ensure_ollama_status(force: bool = False) -> Tuple[bool, Optional[str], Optional[str]]:
     now = time.time()
-    last_checked = float(SERVICE_STATUS.get("ollama_last_checked") or 0.0)
-    cached = SERVICE_STATUS.get("ollama_available")
+    last_checked = float(get_service_status("ollama_last_checked") or 0.0)
+    cached = get_service_status("ollama_available")
     stale_unavailable = cached is False and (now - last_checked) >= config.OLLAMA_STATUS_RECHECK_SECONDS
 
     if force or cached is None or stale_unavailable:
         avail, model, err = check_ollama_available()
-        SERVICE_STATUS["ollama_available"] = avail
-        SERVICE_STATUS["ollama_model"] = model
-        SERVICE_STATUS["ollama_error"] = err
-        SERVICE_STATUS["ollama_last_checked"] = now
+        set_service_status("ollama_available", avail)
+        set_service_status("ollama_model", model)
+        set_service_status("ollama_error", err)
+        set_service_status("ollama_last_checked", now)
         config.set_status("ollama_available", avail)
         config.set_status("ollama_model", model)
 
     return (
-        bool(SERVICE_STATUS.get("ollama_available")),
-        SERVICE_STATUS.get("ollama_model"),
-        SERVICE_STATUS.get("ollama_error"),
+        bool(get_service_status("ollama_available")),
+        get_service_status("ollama_model"),
+        get_service_status("ollama_error"),
     )
 
 
@@ -108,7 +112,7 @@ def call_ollama(
     response = requests.post(endpoint, json=payload, timeout=timeout_s)
     if response.status_code != 200:
         err_preview = (response.text or "").strip().replace("\n", " ")[:180]
-        SERVICE_STATUS["ollama_error"] = f"HTTP {response.status_code}: {err_preview}"
+        set_service_status("ollama_error", f"HTTP {response.status_code}: {err_preview}")
         return None
 
     data = response.json()
@@ -117,9 +121,9 @@ def call_ollama(
     else:
         text = (data.get("response") or "").strip()
     if text:
-        SERVICE_STATUS["ollama_error"] = None
+        set_service_status("ollama_error", None)
     else:
-        SERVICE_STATUS["ollama_error"] = "Empty response from Ollama"
+        set_service_status("ollama_error", "Empty response from Ollama")
     return text or None
 
 
@@ -150,17 +154,17 @@ def ocr_with_ollama(img_bytes: bytes, page_number: int, model: str, prompt: str)
         )
 
         if text and len(text) >= 20:
-            API_STATS["ollama_calls"] += 1
-            API_STATS["total_calls"] += 1
+            increment_stat("ollama_calls")
+            increment_stat("total_calls")
             logger.info("Ollama page %s: %d chars", page_number, len(text))
             return text
 
-        API_STATS["ollama_errors"] += 1
-        if not SERVICE_STATUS.get("ollama_error"):
-            SERVICE_STATUS["ollama_error"] = "No usable OCR text returned"
+        increment_stat("ollama_errors")
+        if not get_service_status("ollama_error"):
+            set_service_status("ollama_error", "No usable OCR text returned")
         return None
     except Exception as exc:
         logger.warning("Ollama OCR failed on page %s: %s", page_number, exc)
-        API_STATS["ollama_errors"] += 1
-        SERVICE_STATUS["ollama_error"] = str(exc)
+        increment_stat("ollama_errors")
+        set_service_status("ollama_error", str(exc))
         return None

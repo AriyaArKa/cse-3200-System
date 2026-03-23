@@ -13,7 +13,7 @@ from bangladoc_ocr.core.surya_engine import is_available as surya_available
 from bangladoc_ocr.core.surya_engine import ocr_bytes as surya_ocr
 from bangladoc_ocr.fallback.llm_fallback import gemini_text_to_blocks, ocr_page_with_fallback
 from bangladoc_ocr.models import ContentBlock
-from bangladoc_ocr.nlp.confidence_scorer import score_blocks
+from bangladoc_ocr.nlp.confidence_scorer import needs_api_fallback, score_blocks
 from bangladoc_ocr.nlp.unicode_validator import is_wrong_script_for_bangla
 
 from .helpers import apply_corrections, text_to_blocks
@@ -92,6 +92,15 @@ def run_scanned_ocr(
             return blocks, "ocr_local", "surya", corrected
     else:
         log["steps"].append("surya:skipped_by_env")
+
+    quick_detections = run_dual_ocr(img_bytes, fast_mode=True)
+    quick_blocks = detections_to_blocks(quick_detections)
+    is_bn = any(b.language in ("bn", "mixed") for b in quick_blocks)
+    quick_conf = score_blocks(quick_blocks, is_bn)
+    if not needs_api_fallback(quick_conf, is_bn):
+        log["steps"].append(f"llm:skipped_sufficient_local:{quick_conf:.3f}")
+        blocks, corrected = apply_corrections(quick_blocks, source="easyocr")
+        return blocks, "ocr_local", "easyocr", corrected
 
     llm_attempt = _try_llm(log, img_bytes, page_number)
     if llm_attempt:
