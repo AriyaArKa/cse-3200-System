@@ -1,0 +1,101 @@
+BanglaDOC DB + Queue + API Run/Test Commands (Mac)
+===================================================
+
+Current verified credentials
+----------------------------
+- PostgreSQL superuser (existing server from pgAdmin):
+  user: postgres
+  password: arka
+- App DB user:
+  user: bangladoc
+  password: arka
+  database: bangladoc
+- Redis:
+  URL: redis://localhost:6379/0
+
+Current backend env values used
+-------------------------------
+DATABASE_URL=postgresql+asyncpg://bangladoc:arka@localhost:5432/bangladoc
+REDIS_URL=redis://localhost:6379/0
+SECRET_KEY=6fe65b5d78896970145acbf546b198c0dfd14207e269e6e6f1e4875d75c74d7d
+JWT_ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+
+1) DB setup / verify
+--------------------
+# Check DB login with app user
+psql "postgresql://bangladoc:arka@localhost:5432/bangladoc" -Atc "select current_user||':'||current_database();"
+
+# Create app role if missing (run as postgres)
+psql "postgresql://postgres:arka@localhost:5432/postgres" -c "DO $$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname='bangladoc') THEN CREATE ROLE bangladoc LOGIN PASSWORD 'arka'; END IF; END $$;"
+
+# Create app DB if missing (run as postgres)
+psql "postgresql://postgres:arka@localhost:5432/postgres" -c "SELECT 'CREATE DATABASE bangladoc OWNER bangladoc' WHERE NOT EXISTS (SELECT 1 FROM pg_database WHERE datname='bangladoc')\\gexec"
+
+# Grant privileges
+psql "postgresql://postgres:arka@localhost:5432/postgres" -c "GRANT ALL PRIVILEGES ON DATABASE bangladoc TO bangladoc;"
+
+2) Redis setup / verify
+-----------------------
+# Install (if needed)
+brew install redis
+
+# Start service
+brew services start redis
+
+# Verify
+redis-cli ping
+# expected: PONG
+
+3) Python dependencies
+----------------------
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+source venv/bin/activate
+python -m pip install -e ".[dev]"
+python -m pip install greenlet
+
+4) Run API and worker
+---------------------
+# Terminal A (API)
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+source venv/bin/activate
+uvicorn bangladoc_ocr.server.app:app --host 0.0.0.0 --port 8000
+
+# Terminal B (Celery worker)
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+source venv/bin/activate
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
+# If you get "Python quit unexpectedly", run recovery once:
+pkill -f "celery -A bangladoc_ocr.celery_app:celery_app worker" || true
+pkill -f "python -m celery -A bangladoc_ocr.celery_app:celery_app worker" || true
+pgrep -fl "celery" || true
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
+5) Smoke tests
+--------------
+# API endpoints
+python - <<'PY'
+import requests
+for u in ('http://127.0.0.1:8000/health','http://127.0.0.1:8000/stats'):
+    r=requests.get(u,timeout=10)
+    print(u, r.status_code)
+PY
+
+# DB connectivity
+psql "postgresql://bangladoc:arka@localhost:5432/bangladoc" -c "select current_user, current_database();"
+
+# Redis connectivity
+redis-cli ping
+
+# Unit tests
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+source venv/bin/activate
+pytest -q
+
+6) Stop services
+----------------
+# Stop API/worker with Ctrl+C in their terminals
+
+# Stop redis service (optional)
+brew services stop redis
