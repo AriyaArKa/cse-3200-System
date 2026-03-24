@@ -1,0 +1,1 @@
+"""BanglaDOC OCR package."""
