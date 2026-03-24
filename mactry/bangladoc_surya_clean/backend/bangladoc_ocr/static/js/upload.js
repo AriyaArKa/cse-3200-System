@@ -1,55 +1,18 @@
 import { apiFetch } from "./api.js";
 import { state } from "./state.js";
-import { sleep } from "./utils.js";
-import { renderResults } from "./reports.js";
 import { startPolling, stopPolling } from "./progress.js";
 import { renderDocumentsList } from "./documents.js";
 
-async function waitForJob(dom, jobId) {
-  const maxPolls = 300;
-  for (let i = 0; i < maxPolls; i += 1) {
-    const res = await apiFetch(dom, `/jobs/${encodeURIComponent(jobId)}`);
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(data.detail || `Job ${jobId} failed to load`);
+function scheduleDocumentsRefresh(dom) {
+  let attempts = 0;
+  const maxAttempts = 40;
+  const intervalId = setInterval(async () => {
+    attempts += 1;
+    await renderDocumentsList(dom);
+    if (attempts >= maxAttempts) {
+      clearInterval(intervalId);
     }
-    const status = String(data.status || "").toLowerCase();
-    if (status === "done") return data;
-    if (status === "failed") {
-      throw new Error(data.error_msg || `Job ${jobId} failed`);
-    }
-    await sleep(1000);
-  }
-  throw new Error(`Job ${jobId} timed out`);
-}
-
-async function fetchReport(dom, docId) {
-  const res = await apiFetch(dom, `/documents/${encodeURIComponent(docId)}/report`);
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.detail || `Report not available for ${docId}`);
-  }
-  return data;
-}
-
-async function runJobsAndCollectReports(dom, jobs) {
-  const reports = [];
-  for (let i = 0; i < jobs.length; i += 1) {
-    const job = jobs[i];
-    dom.progressText.textContent = `Waiting for job ${i + 1}/${jobs.length}...`;
-    try {
-      const done = await waitForJob(dom, job.job_id);
-      const docId = done.document && done.document.doc_id ? done.document.doc_id : job.doc_id;
-      const report = await fetchReport(dom, docId);
-      reports.push(report);
-    } catch (err) {
-      reports.push({
-        filename: job.doc_id || `job-${job.job_id}`,
-        error: err.message,
-      });
-    }
-  }
-  return reports;
+  }, 3000);
 }
 
 export async function upload(dom) {
@@ -87,11 +50,10 @@ export async function upload(dom) {
       throw new Error("No OCR jobs were created.");
     }
 
-    const reports = await runJobsAndCollectReports(dom, jobs);
     dom.progressBar.style.width = "100%";
-    dom.progressText.textContent = "Processing complete.";
-    renderResults(dom, { documents: reports });
+    dom.progressText.textContent = `Queued ${jobs.length} job(s). Processing in background. Use My Documents to open report when done.`;
     await renderDocumentsList(dom);
+    scheduleDocumentsRefresh(dom);
   } catch (err) {
     dom.error.textContent = err.message;
   } finally {

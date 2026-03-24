@@ -574,6 +574,47 @@ flowchart TD
   - `./venv/bin/python -m pytest bangladoc_ocr/tests/ -q`
 - Keep `backend/.env` local; do not commit secrets.
 
+### Reopen VS Code, Run, and Test (Daily Flow)
+
+From the project root (`bangladoc_surya_clean`):
+
+1. Reopen workspace and activate environment
+  - `code .`
+  - `source backend/venv/bin/activate`
+  - `export PYTORCH_ENABLE_MPS_FALLBACK=1`
+
+2. Refresh before running
+  - `git pull`
+  - `python -m pip install -e "./backend[dev]"`
+  - Restart API and worker after pulling updates
+
+3. Ensure required services are running
+  - `docker compose up -d postgres`
+  - Start Ollama in another terminal: `ollama serve`
+
+4. Start API and worker (two terminals)
+  - API terminal:
+    - `cd backend`
+    - `source venv/bin/activate`
+    - `uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000`
+  - Worker terminal:
+    - `cd backend`
+    - `source venv/bin/activate`
+    - `python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h`
+
+5. Open UI
+  - `http://127.0.0.1:8000`
+  - Hard refresh browser after frontend/code updates: `Cmd+Shift+R`
+
+6. Run tests
+  - `cd backend`
+  - `source venv/bin/activate`
+  - `pytest -q`
+
+7. Stop services when done
+  - Stop API/worker/Ollama with `Ctrl+C` in their terminals
+  - `docker compose down`
+
 ## Notes on Backward Compatibility
 
 - Merged outputs now use engine suffix naming; loader supports legacy names.
