@@ -31,13 +31,13 @@ Docker is **the easiest way** to get running on any OS (Windows, Linux, Mac). No
 
 ```bash
 # Clone or navigate to project
-cd bangladoc_surya_clean
+cd "Varnoq System"
 
 # Build Docker image (one time, includes all dependencies)
-docker-compose build
+docker compose build
 
 # Start all services
-docker-compose up -d
+docker compose up -d
 
 # Check services are healthy
 docker ps  # should show postgres
@@ -47,7 +47,7 @@ open http://localhost:8000
 # or on Windows: start http://localhost:8000
 
 # Stop all services when done
-docker-compose down
+docker compose down
 ```
 
 #### Verify Docker Setup Works
@@ -101,7 +101,7 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 **1. Clone and navigate**
 ```bash
 git clone <repo-url>
-cd bangladoc_surya_clean
+cd "Varnoq System"
 ```
 
 **2. Copy environment file**
@@ -360,7 +360,7 @@ curl http://localhost:11434/api/tags
 ## Project Structure Diagram
 
 ```text
-bangladoc_surya_clean/
+Varnoq System/
 ├── README.md
 ├── cmd.txt
 ├── docker-compose.yml
@@ -983,7 +983,7 @@ Most important controls:
   - `true`: Surya-first scanned flow.
   - `false`: skip Surya and begin from local/LLM chain.
 - `DATA_DIR=...`
-  - Relative paths are resolved from project root (`bangladoc_surya_clean`).
+  - Relative paths are resolved from project root (`Varnoq System`).
 - `GEMINI_ENABLED`, `GEMINI_API_KEY`
   - Enables Gemini fallback when Ollama fails.
 - `OLLAMA_BASE_URL`, `OLLAMA_IMAGE_MODEL`
@@ -1153,7 +1153,7 @@ flowchart TD
 
 - Symptom: OCR succeeds but files are not found in your expected folder.
 - Check: `DATA_DIR` in `backend/.env`.
-- Behavior: relative `DATA_DIR` is resolved from project root (`bangladoc_surya_clean`), not shell cwd.
+- Behavior: relative `DATA_DIR` is resolved from project root (`Varnoq System`), not shell cwd.
 - Fix: set an absolute path or correct relative path, then run OCR again.
 
 ### 2) Surya is enabled but not used
@@ -1218,7 +1218,7 @@ flowchart TD
 
 ### Reopen VS Code, Run, and Test (Daily Flow)
 
-From the project root (`bangladoc_surya_clean`):
+From the project root (`Varnoq System`):
 
 1. Reopen workspace and activate environment
   - `code .`

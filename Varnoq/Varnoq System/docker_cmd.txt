@@ -1,0 +1,46 @@
+Varnoq System - Docker Commands
+===============================
+
+Use this file only for Docker-based run.
+Project root:
+/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System
+
+----------------------------------------
+macOS / Linux
+----------------------------------------
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System"
+docker compose build
+docker compose up -d
+
+Check:
+docker ps
+curl http://127.0.0.1:8000/health
+
+Open app:
+open http://127.0.0.1:8000
+
+Stop:
+docker compose down
+
+Reset all data:
+docker compose down -v && docker compose up -d
+
+----------------------------------------
+Windows (PowerShell)
+----------------------------------------
+cd "C:\Users\YourName\Documents\Varnoq System"
+docker compose build
+docker compose up -d
+
+Check:
+docker ps
+curl http://127.0.0.1:8000/health
+
+Open app:
+start http://127.0.0.1:8000
+
+Stop:
+docker compose down
+
+Reset all data:
+docker compose down -v && docker compose up -d

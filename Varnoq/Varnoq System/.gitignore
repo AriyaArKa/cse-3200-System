@@ -15,6 +15,11 @@ backend/venv/
 venv/
 .venv/
 env/
+/.venv/
+/venv/
+
+# Local Python tooling
+.python-version
 
 # Environment Files
 .env
@@ -40,6 +45,7 @@ backend/logs/
 
 # macOS
 .DS_Store
+**/.DS_Store
 
 # IDE & Editors
 .vscode/settings.json

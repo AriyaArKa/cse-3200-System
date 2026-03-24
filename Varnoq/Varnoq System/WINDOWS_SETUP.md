@@ -26,14 +26,14 @@ This guide is for teammates on **Windows 10/11**. Choose **Option A (Docker)** f
 ```powershell
 # Open PowerShell in your desired folder
 cd C:\Users\YourName\Documents
-git clone https://github.com/your-repo/bangladoc_surya_clean.git
-cd bangladoc_surya_clean
+git clone <repo-url>
+cd "Varnoq System"
 ```
 
 **3. Start All Services**
 ```powershell
 # This builds and runs everything
-docker-compose up -d
+docker compose up -d
 
 # Wait 30 seconds for services to start
 Start-Sleep -Seconds 30
@@ -58,7 +58,7 @@ start http://localhost:8000
 
 **6. Stop Services**
 ```powershell
-docker-compose down
+docker compose down
 ```
 
 ---
@@ -95,8 +95,8 @@ docker-compose down
 **Step 1: Get the Code**
 ```powershell
 cd C:\Users\YourName\Documents
-git clone https://github.com/your-repo/bangladoc_surya_clean.git
-cd bangladoc_surya_clean
+git clone <repo-url>
+cd "Varnoq System"
 ```
 
 **Step 2: Setup Database (PostgreSQL)**
@@ -124,7 +124,7 @@ docker stop bangladoc-db
 
 **Step 3: Create Python Virtual Environment**
 ```powershell
-cd bangladoc_surya_clean
+cd "Varnoq System"
 
 # Create venv
 python -m venv backend/venv
@@ -178,7 +178,7 @@ DATA_DIR=../data
 
 **Window 1: API Server**
 ```powershell
-cd bangladoc_surya_clean\backend
+cd "Varnoq System\backend"
 backend/venv/Scripts/Activate.ps1
 uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
 
@@ -187,7 +187,7 @@ uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
 
 **Window 2: Celery Worker**
 ```powershell
-cd bangladoc_surya_clean\backend
+cd "Varnoq System\backend"
 backend/venv/Scripts/Activate.ps1
 python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
 
@@ -228,7 +228,7 @@ start http://localhost:8000
 ```powershell
 # This assumes: Python, Ollama, PostgreSQL already installed
 
-# 1. Open 3 PowerShell windows in bangladoc_surya_clean folder
+# 1. Open 3 PowerShell windows in Varnoq System folder
 
 # Window 1: API
 cd backend
@@ -254,7 +254,7 @@ If you need to install additional Python packages:
 
 ```powershell
 # Make sure venv is active
-cd bangladoc_surya_clean
+cd "Varnoq System"
 backend/venv/Scripts/Activate.ps1
 
 # Install new package
