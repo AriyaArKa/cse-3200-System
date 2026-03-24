@@ -1,0 +1,26 @@
+.git
+.gitignore
+.DS_Store
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+backend/venv/
+
+# Runtime data and local outputs
+data/
+backend/.env
+
+# Editor
+.vscode/
+.idea/

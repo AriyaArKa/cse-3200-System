@@ -2,6 +2,16 @@ Varnoq System - Docker Commands
 ===============================
 
 Use this file only for Docker-based run.
+Auto-update flow:
+- Push to `main` -> GitHub Actions builds and pushes `arkanath55/varnoq_system_project:latest`
+- Teammates run `docker compose pull && docker compose up -d` to get latest image
+- Optional fully automatic updates: run compose with profile `autoupdate` (Watchtower)
+
+Manual push (optional):
+docker login
+docker build -t arkanath55/varnoq_system_project:tagname .
+docker push arkanath55/varnoq_system_project:tagname
+
 Project root:
 /Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System
 
@@ -9,8 +19,12 @@ Project root:
 macOS / Linux
 ----------------------------------------
 cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System"
-docker compose build
+docker login
+docker compose pull
 docker compose up -d
+
+# Optional: auto-pull and restart on new image every 60s
+docker compose --profile autoupdate up -d
 
 Check:
 docker ps
@@ -29,8 +43,12 @@ docker compose down -v && docker compose up -d
 Windows (PowerShell)
 ----------------------------------------
 cd "C:\Users\YourName\Documents\Varnoq System"
-docker compose build
+docker login
+docker compose pull
 docker compose up -d
+
+# Optional: auto-pull and restart on new image every 60s
+docker compose --profile autoupdate up -d
 
 Check:
 docker ps

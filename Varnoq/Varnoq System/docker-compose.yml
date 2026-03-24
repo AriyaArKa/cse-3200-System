@@ -1,7 +1,7 @@
-version: '3.9'
 services:
   postgres:
     image: postgres:16-alpine
+    container_name: varnoq-postgres
     environment:
       POSTGRES_USER: bangladoc
       POSTGRES_PASSWORD: bangladoc
@@ -11,8 +11,78 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U bangladoc"]
+      test: ["CMD-SHELL", "pg_isready -U bangladoc -d bangladoc"]
       interval: 5s
-      retries: 5
+      timeout: 5s
+      retries: 12
+
+  redis:
+    image: redis:7-alpine
+    container_name: varnoq-redis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  api:
+    image: arkanath55/varnoq_system_project:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: varnoq-api
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://bangladoc:bangladoc@postgres:5432/bangladoc
+      REDIS_URL: redis://redis:6379/0
+      DATA_DIR: /app/backend/data
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/backend/data
+      - ./backend/.env:/app/backend/.env:ro
+    command: ["python", "-m", "uvicorn", "bangladoc_ocr.server.app:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  worker:
+    image: arkanath55/varnoq_system_project:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: varnoq-worker
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://bangladoc:bangladoc@postgres:5432/bangladoc
+      REDIS_URL: redis://redis:6379/0
+      DATA_DIR: /app/backend/data
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/backend/data
+      - ./backend/.env:/app/backend/.env:ro
+    command: ["python", "-m", "celery", "-A", "bangladoc_ocr.celery_app:celery_app", "worker", "--loglevel=info", "--pool=solo", "-n", "worker1@%h"]
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: varnoq-watchtower
+    profiles: ["autoupdate"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: ["--interval", "60", "varnoq-api", "varnoq-worker"]
+
 volumes:
   pgdata:
