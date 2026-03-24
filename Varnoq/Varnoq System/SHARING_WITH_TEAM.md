@@ -125,7 +125,7 @@ If your team is mixed OS (Windows/Mac/Linux):
 - ✅ No Python version conflicts
 - ✅ No system dependencies headaches
 - ✅ Instant PostgreSQL/Redis setup
-- ✅ Easy to reset with `docker-compose down && docker-compose up`
+- ✅ Easy to reset with `docker compose down && docker compose up`
 
 **Con:**
 - Slight performance overhead (negligible for OCR)
@@ -133,13 +133,13 @@ If your team is mixed OS (Windows/Mac/Linux):
 **Command for team:**
 ```bash
 # One command to start everything
-docker-compose up -d
+docker compose up -d
 
 # One command to stop everything  
-docker-compose down
+docker compose down
 
 # One command to reset (nuke all data)
-docker-compose down -v && docker-compose up -d
+docker compose down -v && docker compose up -d
 ```
 
 ---
@@ -176,7 +176,7 @@ Once they're set up, they use:
 **If they update dependencies:**
 ```bash
 # After pulling new code
-docker-compose build  # if using Docker
+docker compose build  # if using Docker
 # or
 python -m pip install -e "./backend[dev]"  # if native
 ```
@@ -189,7 +189,7 @@ python -m pip install -e "./backend[dev]"  # if native
 **Cause:** Previous session still running
 **Solution:** 
 ```bash
-# Docker: docker-compose down
+# Docker: docker compose down
 # Native: Ctrl+C in API window and restart
 ```
 
@@ -206,7 +206,7 @@ pkill -f "celery -A"  # or use Task Manager on Windows
 **Cause:** Database not running
 **Solution:**
 ```bash
-# Docker: docker-compose up -d
+# Docker: docker compose up -d
 # Windows: Services → postgresql-15 → Start
 # Mac: brew services start postgresql
 ```
@@ -246,7 +246,7 @@ Before first day of teammate contributions:
 
 ### Monthly
 - Update dependencies: `python -m pip install --upgrade`
-- Clean old data: `docker-compose down -v && docker-compose up -d`
+- Clean old data: `docker compose down -v && docker compose up -d`
 - Backup corpus data from `data/corpus/`
 
 ---
@@ -285,10 +285,10 @@ Before first day of teammate contributions:
 2. Tell them:
    - Windows? → Read WINDOWS_SETUP.md
    - Mac/Linux? → Read README.md "Getting Started"
-   - Prefer Docker? → Use docker-compose (1 command)
+   - Prefer Docker? → Use docker compose (1 command)
 
 3. Have them test by uploading a PDF
 
-**Success = They can run `docker-compose up -d` or the native equivalent, access the UI, and process a PDF without help.**
+**Success = They can run `docker compose up -d` or the native equivalent, access the UI, and process a PDF without help.**
 
 Good luck with your team! 🚀

@@ -49,7 +49,7 @@ redis-cli ping
 
 3) Python dependencies
 ----------------------
-cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System/backend"
 source venv/bin/activate
 python -m pip install -e ".[dev]"
 python -m pip install greenlet
@@ -57,12 +57,12 @@ python -m pip install greenlet
 4) Run API and worker
 ---------------------
 # Terminal A (API)
-cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System/backend"
 source venv/bin/activate
 uvicorn bangladoc_ocr.server.app:app --host 0.0.0.0 --port 8000
 
 # Terminal B (Celery worker)
-cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System/backend"
 source venv/bin/activate
 python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
 
@@ -89,7 +89,7 @@ psql "postgresql://bangladoc:arka@localhost:5432/bangladoc" -c "select current_u
 redis-cli ping
 
 # Unit tests
-cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend"
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System/backend"
 source venv/bin/activate
 pytest -q
 

@@ -127,7 +127,7 @@ REDIS_URL: str
 def refresh_config() -> None:
     """Reload backend/.env and refresh all environment-derived settings.
 
-    Relative DATA_DIR paths are resolved against the project root (bangladoc_surya_clean),
+    Relative DATA_DIR paths are resolved against the project root (Varnoq System),
     not the process current working directory, so outputs land in a stable location.
 
     Call this at the start of each OCR run (CLI / HTTP) so toggles like SURYA_ENABLED

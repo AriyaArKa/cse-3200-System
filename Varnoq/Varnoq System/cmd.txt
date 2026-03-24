@@ -1,197 +1,123 @@
-BanglaDOC Surya Clean - Quick Commands (macOS + Windows + Docker)
-===================================================================
+Varnoq System - Native Commands Only (No Docker)
+=================================================
 
-⚡ FOR WINDOWS USERS: See WINDOWS-SPECIFIC section below
-===============================================
+Docker commands are in a separate file:
+docker_cmd.txt
 
-===============================================
-WINDOWS 10/11 - QUICKSTART (NATIVE SETUP)
-===============================================
+Project root:
+/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System
 
-0) Prerequisites - Install Once
--------------------------------
-- Python 3.12+ (https://www.python.org/downloads/)
-- Git Bash or PowerShell
-- PostgreSQL 15+ OR Docker
-- VS Code
+========================================
+macOS - Step by Step
+========================================
 
-1) Clone and navigate (PowerShell)
-----------------------------------
-git clone <repo>
-cd bangladoc_surya_clean
-
-2) First-time setup (PowerShell)
--------------------------------
-# Copy environment
-copy backend\.env.example backend\.env
-
-# Create virtual environment
-python -m venv backend/venv
-backend/venv/Scripts/Activate.ps1
-
-# Install dependencies
-python -m pip install --upgrade pip
-python -m pip install -e "./backend[dev]"
-
-# Start PostgreSQL (Services or Docker)
-# If Docker: docker run -d --name bangladoc-db -e POSTGRES_USER=bangladoc -e POSTGRES_PASSWORD=arka -e POSTGRES_DB=bangladoc -p 5432:5432 postgres:15
-
-3) Daily startup (PowerShell - 3 terminals)
--------------------------------------------
-# Terminal 1: API Server
-cd bangladoc_surya_clean/backend
-backend/venv/Scripts/Activate.ps1
-uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
-
-# Terminal 2: Celery Worker
-cd bangladoc_surya_clean/backend
-backend/venv/Scripts/Activate.ps1
-python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
-
-# Terminal 3: Ollama (optional but recommended)
-ollama serve
-
-# Then open browser: http://localhost:8000
-
-4) Test it works
----------------
-# PowerShell: Upload PDF via browser at http://localhost:8000
-# Or CLI:
-cd bangladoc_surya_clean/backend
-backend/venv/Scripts/Activate.ps1
-bangladoc C:\path\to\test.pdf --verbose
-
-5) Stop everything
-------------------
-# Ctrl+C in each terminal
-# Then: docker stop bangladoc-db (if using Docker for DB)
-
-===============================================
-WINDOWS - DOCKER SETUP (Even Easier!)
-===============================================
-
-0) Install Docker Desktop (https://www.docker.com/products/docker-desktop)
-
-1) Start everything (PowerShell)
--------------------------------
-cd bangladoc_surya_clean
-docker-compose build
-docker-compose up -d
-
-2) Check services
------------------
-docker ps
-curl http://localhost:8000/health
-
-3) Open UI
----------
-start http://localhost:8000
-
-4) Stop everything
-------------------
-docker-compose down
-
-===============================================
-macOS / Linux - Standard Setup
-===============================================
-
-1) Reopen project in VS Code
-----------------------------
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
-code .
-
-2) Refresh and run each time (daily start)
-------------------------------------------
-# Pull latest code
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
-git pull
-
-# Activate venv
-source backend/venv/bin/activate
-export PYTORCH_ENABLE_MPS_FALLBACK=1
-
-# If dependencies changed, refresh install
-python -m pip install -e "./backend[dev]"
-
-# Start required services
-docker compose up -d postgres
-# In another terminal:
-ollama serve
-
-# Start API and worker (two terminals)
-cd backend
-source venv/bin/activate
-uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
-
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
-source venv/bin/activate
-python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
-
-# Refresh browser/UI
-open http://127.0.0.1:8000
-# Hard refresh in browser: Cmd+Shift+R
-
-3) Activate Python environment (every new terminal)
-----------------------------------------------------
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
-source backend/venv/bin/activate
-export PYTORCH_ENABLE_MPS_FALLBACK=1
-
-4) Start required services
---------------------------
-# 3.1 Start PostgreSQL
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
-docker compose up -d postgres
-
-# 3.2 Start Ollama in a separate terminal
-ollama serve
-
-5) Run backend (API + Celery worker)
-------------------------------------
-# Terminal A: FastAPI server
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
-source venv/bin/activate
-uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
-
-# Terminal B: Celery worker
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
-source venv/bin/activate
-python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
-
-# Open the app
-open http://127.0.0.1:8000
-
-6) CLI OCR run (optional)
--------------------------
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
-source venv/bin/activate
-bangladoc /path/to/your/file.pdf --verbose
-
-7) How to test
---------------
-# Run all tests
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean/backend
-source venv/bin/activate
-pytest -q
-
-# Run one test file
-pytest -q bangladoc_ocr/tests/test_unicode_validator.py
-
-# Quick health checks
-curl -s http://127.0.0.1:8000/health
-curl -s http://127.0.0.1:8000/stats
-
-8) Stop everything
-------------------
-# In running terminals: Ctrl+C (API, worker, ollama)
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
-docker compose down
-
-9) First-time setup only (if backend/venv does not exist)
-----------------------------------------------------------
-cd /Users/arkabrajaprasadnath/3-2/System\ PRoject/cse-3200-System/mactry/bangladoc_surya_clean
+1) First-time setup (one time)
+------------------------------
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System"
 cp backend/.env.example backend/.env
+# Use only this project env path: backend/venv (do not create another .venv elsewhere)
 python3 -m venv backend/venv
 source backend/venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
 python -m pip install -e "./backend[dev]"
+
+# Optional for Apple Silicon
+export PYTORCH_ENABLE_MPS_FALLBACK=1
+
+2) Start PostgreSQL locally
+---------------------------
+brew services start postgresql
+
+3) Start Redis locally
+----------------------
+brew services start redis
+
+4) Start Ollama (optional)
+--------------------------
+ollama serve
+
+5) Start API (new terminal)
+---------------------------
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System/backend"
+source venv/bin/activate
+uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
+
+6) Start worker (new terminal)
+------------------------------
+cd "/Users/arkabrajaprasadnath/3-2/System PRoject/cse-3200-System/Varnoq/Varnoq System/backend"
+source venv/bin/activate
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
+7) Open app
+-----------
+open http://127.0.0.1:8000
+
+8) Quick checks
+---------------
+curl -s http://127.0.0.1:8000/health
+curl -s http://127.0.0.1:8000/stats
+
+9) Stop
+-------
+# Stop API/worker/ollama with Ctrl+C
+brew services stop redis
+brew services stop postgresql
+
+========================================
+Windows - Step by Step
+========================================
+
+1) First-time setup (one time)
+------------------------------
+cd C:\Users\YourName\Documents
+git clone <repo-url>
+cd "Varnoq System"
+copy backend\.env.example backend\.env
+python -m venv backend/venv
+backend/venv/Scripts/Activate.ps1
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -e "./backend[dev]"
+
+2) Start PostgreSQL service
+---------------------------
+# Open Services app (services.msc)
+# Start: postgresql-15 (or your installed version)
+
+3) Start Redis locally
+----------------------
+# If Redis is installed as service, start it.
+# If not installed, use Docker version from docker_cmd.txt.
+
+4) Start Ollama (optional)
+--------------------------
+ollama serve
+
+5) Start API (new PowerShell)
+-----------------------------
+cd "Varnoq System\backend"
+backend/venv/Scripts/Activate.ps1
+uvicorn bangladoc_ocr.server.app:app --reload --host 0.0.0.0 --port 8000
+
+6) Start worker (new PowerShell)
+--------------------------------
+cd "Varnoq System\backend"
+backend/venv/Scripts/Activate.ps1
+python -m celery -A bangladoc_ocr.celery_app:celery_app worker --loglevel=info --pool=solo -n worker1@%h
+
+7) Open app
+-----------
+start http://127.0.0.1:8000
+
+8) Stop
+-------
+# Stop API/worker/ollama with Ctrl+C
+
+========================================
+Important activation fix
+========================================
+
+macOS uses:
+source backend/venv/bin/activate
+
+Windows uses:
+backend/venv/Scripts/Activate.ps1

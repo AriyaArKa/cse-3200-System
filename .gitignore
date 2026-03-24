@@ -1,0 +1,11 @@
+# macOS Finder
+.DS_Store
+**/.DS_Store
+
+# Local workspace Python envs
+Varnoq/.venv/
+Varnoq/**/.venv/
+Varnoq/**/venv/
+
+# Local Python version manager marker
+.python-version
